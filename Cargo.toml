@@ -1,0 +1,26 @@
+[package]
+name = "lpc550x"
+edition = "2021"
+version = "0.1.0"
+authors = ["Thomas Bénéteau <thomas@bitwise.me>"]
+description = "Register mappings for the NXP LPC550x/LPC55S0x family of Cortex-M33 microcontrollers"
+documentation = "https://docs.rs/lpc550x"
+repository = "https://github.com/TomCrypto/lpc550x"
+license = "MIT"
+readme = "README.md"
+categories = ["embedded", "hardware-support", "no-std"]
+keywords = ["arm", "cortex-m", "nxp", "lpc", "svd2rust"]
+exclude = [".vscode/*", "svd/*", "generate.sh"]
+
+[dependencies.cortex-m]
+version = "0.7"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.13"
+
+[dependencies.vcell]
+version = "0.1"
+
+[features]
+rt = ["cortex-m-rt/device"]
