@@ -81,13 +81,13 @@ pub struct RegisterBlock {
     #[doc = "0x130 - Security access rules for AHB_SEC_CTRL_AHB."]
     pub sec_ctrl_ahb_sec_ctrl_mem_rule: SEC_CTRL_AHB_SEC_CTRL_MEM_RULE,
     _reserved31: [u8; 0x0ccc],
-    #[doc = "0xe00..0xe28 - most recent security violation address for AHB layer n"]
+    #[doc = "0xe00..0xe28 - most recent security violation address for AHB layer n."]
     pub sec_vio_addr: [SEC_VIO_ADDR; 10],
     _reserved32: [u8; 0x58],
-    #[doc = "0xe80..0xea8 - most recent security violation miscellaneous information for AHB layer n"]
+    #[doc = "0xe80..0xea8 - most recent security violation miscellaneous information for AHB layer n."]
     pub sec_vio_misc_info: [SEC_VIO_MISC_INFO; 10],
     _reserved33: [u8; 0x58],
-    #[doc = "0xf00 - security violation address/information registers valid flags"]
+    #[doc = "0xf00 - security violation address/information registers valid flags."]
     pub sec_vio_info_valid: SEC_VIO_INFO_VALID,
     _reserved34: [u8; 0x7c],
     #[doc = "0xf80 - Secure GPIO mask for port 0 pins."]
@@ -98,17 +98,17 @@ pub struct RegisterBlock {
     #[doc = "0xfbc - Security General Purpose register access control."]
     pub sec_mask_lock: SEC_MASK_LOCK,
     _reserved37: [u8; 0x10],
-    #[doc = "0xfd0 - master secure level register"]
+    #[doc = "0xfd0 - master secure level register."]
     pub master_sec_level: MASTER_SEC_LEVEL,
-    #[doc = "0xfd4 - master secure level anti-pole register"]
+    #[doc = "0xfd4 - master secure level anti-pole register."]
     pub master_sec_anti_pol_reg: MASTER_SEC_ANTI_POL_REG,
     _reserved39: [u8; 0x14],
     #[doc = "0xfec - Miscalleneous control signals for in Cortex M33 (CPU0)"]
     pub cpu0_lock_reg: CPU0_LOCK_REG,
     _reserved40: [u8; 0x08],
-    #[doc = "0xff8 - secure control duplicate register"]
+    #[doc = "0xff8 - secure control duplicate register."]
     pub misc_ctrl_dp_reg: MISC_CTRL_DP_REG,
-    #[doc = "0xffc - secure control register"]
+    #[doc = "0xffc - secure control register."]
     pub misc_ctrl_reg: MISC_CTRL_REG,
 }
 #[doc = "SEC_CTRL_FLASH_ROM_SLAVE_RULE (rw) register accessor: an alias for `Reg<SEC_CTRL_FLASH_ROM_SLAVE_RULE_SPEC>`"]
@@ -264,15 +264,15 @@ pub type SEC_CTRL_AHB_SEC_CTRL_MEM_RULE =
 pub mod sec_ctrl_ahb_sec_ctrl_mem_rule;
 #[doc = "sec_vio_addr (r) register accessor: an alias for `Reg<SEC_VIO_ADDR_SPEC>`"]
 pub type SEC_VIO_ADDR = crate::Reg<sec_vio_addr::SEC_VIO_ADDR_SPEC>;
-#[doc = "most recent security violation address for AHB layer n"]
+#[doc = "most recent security violation address for AHB layer n."]
 pub mod sec_vio_addr;
 #[doc = "sec_vio_misc_info (r) register accessor: an alias for `Reg<SEC_VIO_MISC_INFO_SPEC>`"]
 pub type SEC_VIO_MISC_INFO = crate::Reg<sec_vio_misc_info::SEC_VIO_MISC_INFO_SPEC>;
-#[doc = "most recent security violation miscellaneous information for AHB layer n"]
+#[doc = "most recent security violation miscellaneous information for AHB layer n."]
 pub mod sec_vio_misc_info;
 #[doc = "SEC_VIO_INFO_VALID (rw) register accessor: an alias for `Reg<SEC_VIO_INFO_VALID_SPEC>`"]
 pub type SEC_VIO_INFO_VALID = crate::Reg<sec_vio_info_valid::SEC_VIO_INFO_VALID_SPEC>;
-#[doc = "security violation address/information registers valid flags"]
+#[doc = "security violation address/information registers valid flags."]
 pub mod sec_vio_info_valid;
 #[doc = "SEC_GPIO_MASK0 (rw) register accessor: an alias for `Reg<SEC_GPIO_MASK0_SPEC>`"]
 pub type SEC_GPIO_MASK0 = crate::Reg<sec_gpio_mask0::SEC_GPIO_MASK0_SPEC>;
@@ -288,12 +288,12 @@ pub type SEC_MASK_LOCK = crate::Reg<sec_mask_lock::SEC_MASK_LOCK_SPEC>;
 pub mod sec_mask_lock;
 #[doc = "MASTER_SEC_LEVEL (rw) register accessor: an alias for `Reg<MASTER_SEC_LEVEL_SPEC>`"]
 pub type MASTER_SEC_LEVEL = crate::Reg<master_sec_level::MASTER_SEC_LEVEL_SPEC>;
-#[doc = "master secure level register"]
+#[doc = "master secure level register."]
 pub mod master_sec_level;
 #[doc = "MASTER_SEC_ANTI_POL_REG (rw) register accessor: an alias for `Reg<MASTER_SEC_ANTI_POL_REG_SPEC>`"]
 pub type MASTER_SEC_ANTI_POL_REG =
     crate::Reg<master_sec_anti_pol_reg::MASTER_SEC_ANTI_POL_REG_SPEC>;
-#[doc = "master secure level anti-pole register"]
+#[doc = "master secure level anti-pole register."]
 pub mod master_sec_anti_pol_reg;
 #[doc = "CPU0_LOCK_REG (rw) register accessor: an alias for `Reg<CPU0_LOCK_REG_SPEC>`"]
 pub type CPU0_LOCK_REG = crate::Reg<cpu0_lock_reg::CPU0_LOCK_REG_SPEC>;
@@ -301,9 +301,9 @@ pub type CPU0_LOCK_REG = crate::Reg<cpu0_lock_reg::CPU0_LOCK_REG_SPEC>;
 pub mod cpu0_lock_reg;
 #[doc = "MISC_CTRL_DP_REG (rw) register accessor: an alias for `Reg<MISC_CTRL_DP_REG_SPEC>`"]
 pub type MISC_CTRL_DP_REG = crate::Reg<misc_ctrl_dp_reg::MISC_CTRL_DP_REG_SPEC>;
-#[doc = "secure control duplicate register"]
+#[doc = "secure control duplicate register."]
 pub mod misc_ctrl_dp_reg;
 #[doc = "MISC_CTRL_REG (rw) register accessor: an alias for `Reg<MISC_CTRL_REG_SPEC>`"]
 pub type MISC_CTRL_REG = crate::Reg<misc_ctrl_reg::MISC_CTRL_REG_SPEC>;
-#[doc = "secure control register"]
+#[doc = "secure control register."]
 pub mod misc_ctrl_reg;

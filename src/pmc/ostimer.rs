@@ -57,13 +57,13 @@ pub type OSTIMERCLKSEL_R = crate::FieldReader<u8, OSTIMERCLKSEL_A>;
 #[repr(u8)]
 pub enum OSTIMERCLKSEL_A {
     #[doc = "0: Oscillator 32 kHz clock."]
-    ENUM_0X0 = 0,
+    OSC_32KHZ = 0,
     #[doc = "1: FRO 1MHz clock."]
-    ENUM_0X1 = 1,
+    FRO_1MHZ = 1,
     #[doc = "2: Main clock for OS timer."]
-    ENUM_0X2 = 2,
+    MAIN_CLOCK = 2,
     #[doc = "3: No clock."]
-    ENUM_0X3 = 3,
+    NONE = 3,
 }
 impl From<OSTIMERCLKSEL_A> for u8 {
     #[inline(always)]
@@ -76,32 +76,32 @@ impl OSTIMERCLKSEL_R {
     #[inline(always)]
     pub fn variant(&self) -> OSTIMERCLKSEL_A {
         match self.bits {
-            0 => OSTIMERCLKSEL_A::ENUM_0X0,
-            1 => OSTIMERCLKSEL_A::ENUM_0X1,
-            2 => OSTIMERCLKSEL_A::ENUM_0X2,
-            3 => OSTIMERCLKSEL_A::ENUM_0X3,
+            0 => OSTIMERCLKSEL_A::OSC_32KHZ,
+            1 => OSTIMERCLKSEL_A::FRO_1MHZ,
+            2 => OSTIMERCLKSEL_A::MAIN_CLOCK,
+            3 => OSTIMERCLKSEL_A::NONE,
             _ => unreachable!(),
         }
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X0`"]
+    #[doc = "Checks if the value of the field is `OSC_32KHZ`"]
     #[inline(always)]
-    pub fn is_enum_0x0(&self) -> bool {
-        *self == OSTIMERCLKSEL_A::ENUM_0X0
+    pub fn is_osc_32khz(&self) -> bool {
+        *self == OSTIMERCLKSEL_A::OSC_32KHZ
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X1`"]
+    #[doc = "Checks if the value of the field is `FRO_1MHZ`"]
     #[inline(always)]
-    pub fn is_enum_0x1(&self) -> bool {
-        *self == OSTIMERCLKSEL_A::ENUM_0X1
+    pub fn is_fro_1mhz(&self) -> bool {
+        *self == OSTIMERCLKSEL_A::FRO_1MHZ
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X2`"]
+    #[doc = "Checks if the value of the field is `MAIN_CLOCK`"]
     #[inline(always)]
-    pub fn is_enum_0x2(&self) -> bool {
-        *self == OSTIMERCLKSEL_A::ENUM_0X2
+    pub fn is_main_clock(&self) -> bool {
+        *self == OSTIMERCLKSEL_A::MAIN_CLOCK
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X3`"]
+    #[doc = "Checks if the value of the field is `NONE`"]
     #[inline(always)]
-    pub fn is_enum_0x3(&self) -> bool {
-        *self == OSTIMERCLKSEL_A::ENUM_0X3
+    pub fn is_none(&self) -> bool {
+        *self == OSTIMERCLKSEL_A::NONE
     }
 }
 #[doc = "Field `OSTIMERCLKSEL` writer - OS event timer clock select."]
@@ -110,23 +110,23 @@ pub type OSTIMERCLKSEL_W<'a, const O: u8> =
 impl<'a, const O: u8> OSTIMERCLKSEL_W<'a, O> {
     #[doc = "Oscillator 32 kHz clock."]
     #[inline(always)]
-    pub fn enum_0x0(self) -> &'a mut W {
-        self.variant(OSTIMERCLKSEL_A::ENUM_0X0)
+    pub fn osc_32khz(self) -> &'a mut W {
+        self.variant(OSTIMERCLKSEL_A::OSC_32KHZ)
     }
     #[doc = "FRO 1MHz clock."]
     #[inline(always)]
-    pub fn enum_0x1(self) -> &'a mut W {
-        self.variant(OSTIMERCLKSEL_A::ENUM_0X1)
+    pub fn fro_1mhz(self) -> &'a mut W {
+        self.variant(OSTIMERCLKSEL_A::FRO_1MHZ)
     }
     #[doc = "Main clock for OS timer."]
     #[inline(always)]
-    pub fn enum_0x2(self) -> &'a mut W {
-        self.variant(OSTIMERCLKSEL_A::ENUM_0X2)
+    pub fn main_clock(self) -> &'a mut W {
+        self.variant(OSTIMERCLKSEL_A::MAIN_CLOCK)
     }
     #[doc = "No clock."]
     #[inline(always)]
-    pub fn enum_0x3(self) -> &'a mut W {
-        self.variant(OSTIMERCLKSEL_A::ENUM_0X3)
+    pub fn none(self) -> &'a mut W {
+        self.variant(OSTIMERCLKSEL_A::NONE)
     }
 }
 impl R {

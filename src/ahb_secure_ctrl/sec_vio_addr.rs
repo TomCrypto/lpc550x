@@ -13,16 +13,16 @@ impl From<crate::R<SEC_VIO_ADDR_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `SEC_VIO_ADDR` reader - security violation address for AHB layer"]
+#[doc = "Field `SEC_VIO_ADDR` reader - security violation address for AHB layer."]
 pub type SEC_VIO_ADDR_R = crate::FieldReader<u32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - security violation address for AHB layer"]
+    #[doc = "Bits 0:31 - security violation address for AHB layer."]
     #[inline(always)]
     pub fn sec_vio_addr(&self) -> SEC_VIO_ADDR_R {
         SEC_VIO_ADDR_R::new(self.bits)
     }
 }
-#[doc = "most recent security violation address for AHB layer n\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sec_vio_addr](index.html) module"]
+#[doc = "most recent security violation address for AHB layer n.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sec_vio_addr](index.html) module"]
 pub struct SEC_VIO_ADDR_SPEC;
 impl crate::RegisterSpec for SEC_VIO_ADDR_SPEC {
     type Ux = u32;

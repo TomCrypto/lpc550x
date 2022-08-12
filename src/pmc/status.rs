@@ -74,7 +74,7 @@ impl R {
         BOOTMODE_R::new(((self.bits >> 18) & 3) as u8)
     }
 }
-#[doc = "Power Management Controller FSM (Finite State Machines) status\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [status](index.html) module"]
+#[doc = "Power Management Controller FSM (Finite State Machines) status.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [status](index.html) module"]
 pub struct STATUS_SPEC;
 impl crate::RegisterSpec for STATUS_SPEC {
     type Ux = u32;

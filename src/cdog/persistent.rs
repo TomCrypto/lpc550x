@@ -34,19 +34,19 @@ impl From<crate::W<PERSISTENT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `PERSIS` reader - 32 regs free for user SW to enjoy"]
+#[doc = "Field `PERSIS` reader - 32 regs free for user SW to enjoy."]
 pub type PERSIS_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `PERSIS` writer - 32 regs free for user SW to enjoy"]
+#[doc = "Field `PERSIS` writer - 32 regs free for user SW to enjoy."]
 pub type PERSIS_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PERSISTENT_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - 32 regs free for user SW to enjoy"]
+    #[doc = "Bits 0:31 - 32 regs free for user SW to enjoy."]
     #[inline(always)]
     pub fn persis(&self) -> PERSIS_R {
         PERSIS_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - 32 regs free for user SW to enjoy"]
+    #[doc = "Bits 0:31 - 32 regs free for user SW to enjoy."]
     #[inline(always)]
     pub fn persis(&mut self) -> PERSIS_W<0> {
         PERSIS_W::new(self)
@@ -58,7 +58,7 @@ impl W {
         self
     }
 }
-#[doc = "Persistent (Ad. Hoc., quasi-NV) data storage\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [persistent](index.html) module"]
+#[doc = "Persistent (Ad. Hoc., quasi-NV) data storage.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [persistent](index.html) module"]
 pub struct PERSISTENT_SPEC;
 impl crate::RegisterSpec for PERSISTENT_SPEC {
     type Ux = u32;

@@ -34,9 +34,9 @@ impl From<crate::W<FRO_1MHZ_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FRO1M_TRIM_VALID` reader - no description available"]
+#[doc = "Field `FRO1M_TRIM_VALID` reader - no description available."]
 pub type FRO1M_TRIM_VALID_R = crate::BitReader<bool>;
-#[doc = "Field `FRO1M_TRIM_VALID` writer - no description available"]
+#[doc = "Field `FRO1M_TRIM_VALID` writer - no description available."]
 pub type FRO1M_TRIM_VALID_W<'a, const O: u8> = crate::BitWriter<'a, u32, FRO_1MHZ_SPEC, bool, O>;
 #[doc = "Field `FRO1M_FREQSEL` reader - Frequency trimming bits."]
 pub type FRO1M_FREQSEL_R = crate::FieldReader<u8, u8>;
@@ -44,7 +44,7 @@ pub type FRO1M_FREQSEL_R = crate::FieldReader<u8, u8>;
 pub type FRO1M_FREQSEL_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, FRO_1MHZ_SPEC, u8, u8, 7, O>;
 impl R {
-    #[doc = "Bit 0 - no description available"]
+    #[doc = "Bit 0 - no description available."]
     #[inline(always)]
     pub fn fro1m_trim_valid(&self) -> FRO1M_TRIM_VALID_R {
         FRO1M_TRIM_VALID_R::new((self.bits & 1) != 0)
@@ -56,7 +56,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - no description available"]
+    #[doc = "Bit 0 - no description available."]
     #[inline(always)]
     pub fn fro1m_trim_valid(&mut self) -> FRO1M_TRIM_VALID_W<0> {
         FRO1M_TRIM_VALID_W::new(self)
@@ -73,7 +73,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [fro_1mhz](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [fro_1mhz](index.html) module"]
 pub struct FRO_1MHZ_SPEC;
 impl crate::RegisterSpec for FRO_1MHZ_SPEC {
     type Ux = u32;

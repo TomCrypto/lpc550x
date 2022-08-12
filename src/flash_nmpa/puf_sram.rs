@@ -38,13 +38,13 @@ impl From<crate::W<PUF_SRAM_SPEC>> for W {
 pub type PUF_SRAM_VALID_R = crate::BitReader<bool>;
 #[doc = "Field `PUF_SRAM_VALID` writer - 1: PUF_SRAM is valid."]
 pub type PUF_SRAM_VALID_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
-#[doc = "Field `mode` reader - PUF SRAM Controller operating mode"]
+#[doc = "Field `mode` reader - PUF SRAM Controller operating mode."]
 pub type MODE_R = crate::BitReader<bool>;
-#[doc = "Field `mode` writer - PUF SRAM Controller operating mode"]
+#[doc = "Field `mode` writer - PUF SRAM Controller operating mode."]
 pub type MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
-#[doc = "Field `ckgating` reader - PUF SRAM Clock Gating control"]
+#[doc = "Field `ckgating` reader - PUF SRAM Clock Gating control."]
 pub type CKGATING_R = crate::BitReader<bool>;
-#[doc = "Field `ckgating` writer - PUF SRAM Clock Gating control"]
+#[doc = "Field `ckgating` writer - PUF SRAM Clock Gating control."]
 pub type CKGATING_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
 #[doc = "Field `SMB` reader - Source Biasing voltage."]
 pub type SMB_R = crate::FieldReader<u8, SMB_A>;
@@ -136,25 +136,25 @@ pub type WM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PUF_SRAM_SPEC, u8, 
 pub type WRME_R = crate::BitReader<bool>;
 #[doc = "Field `WRME` writer - Write read margin enable."]
 pub type WRME_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
-#[doc = "Field `RAEN` reader - SRAM Read Assist Enable"]
+#[doc = "Field `RAEN` reader - SRAM Read Assist Enable."]
 pub type RAEN_R = crate::BitReader<bool>;
-#[doc = "Field `RAEN` writer - SRAM Read Assist Enable"]
+#[doc = "Field `RAEN` writer - SRAM Read Assist Enable."]
 pub type RAEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
-#[doc = "Field `RAM` reader - SRAM Read Assist settings"]
+#[doc = "Field `RAM` reader - SRAM Read Assist settings."]
 pub type RAM_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `RAM` writer - SRAM Read Assist settings"]
+#[doc = "Field `RAM` writer - SRAM Read Assist settings."]
 pub type RAM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PUF_SRAM_SPEC, u8, u8, 4, O>;
-#[doc = "Field `WAEN` reader - SRAM Write Assist Enable"]
+#[doc = "Field `WAEN` reader - SRAM Write Assist Enable."]
 pub type WAEN_R = crate::BitReader<bool>;
-#[doc = "Field `WAEN` writer - SRAM Write Assist Enable"]
+#[doc = "Field `WAEN` writer - SRAM Write Assist Enable."]
 pub type WAEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
-#[doc = "Field `WAM` reader - SRAM Write Assist settings"]
+#[doc = "Field `WAM` reader - SRAM Write Assist settings."]
 pub type WAM_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `WAM` writer - SRAM Write Assist settings"]
+#[doc = "Field `WAM` writer - SRAM Write Assist settings."]
 pub type WAM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PUF_SRAM_SPEC, u8, u8, 2, O>;
-#[doc = "Field `STBP` reader - STBP"]
+#[doc = "Field `STBP` reader - STBP."]
 pub type STBP_R = crate::BitReader<bool>;
-#[doc = "Field `STBP` writer - STBP"]
+#[doc = "Field `STBP` writer - STBP."]
 pub type STBP_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, bool, O>;
 impl R {
     #[doc = "Bit 0 - 1: PUF_SRAM is valid."]
@@ -162,12 +162,12 @@ impl R {
     pub fn puf_sram_valid(&self) -> PUF_SRAM_VALID_R {
         PUF_SRAM_VALID_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - PUF SRAM Controller operating mode"]
+    #[doc = "Bit 1 - PUF SRAM Controller operating mode."]
     #[inline(always)]
     pub fn mode(&self) -> MODE_R {
         MODE_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - PUF SRAM Clock Gating control"]
+    #[doc = "Bit 2 - PUF SRAM Clock Gating control."]
     #[inline(always)]
     pub fn ckgating(&self) -> CKGATING_R {
         CKGATING_R::new(((self.bits >> 2) & 1) != 0)
@@ -192,27 +192,27 @@ impl R {
     pub fn wrme(&self) -> WRME_R {
         WRME_R::new(((self.bits >> 16) & 1) != 0)
     }
-    #[doc = "Bit 17 - SRAM Read Assist Enable"]
+    #[doc = "Bit 17 - SRAM Read Assist Enable."]
     #[inline(always)]
     pub fn raen(&self) -> RAEN_R {
         RAEN_R::new(((self.bits >> 17) & 1) != 0)
     }
-    #[doc = "Bits 18:21 - SRAM Read Assist settings"]
+    #[doc = "Bits 18:21 - SRAM Read Assist settings."]
     #[inline(always)]
     pub fn ram(&self) -> RAM_R {
         RAM_R::new(((self.bits >> 18) & 0x0f) as u8)
     }
-    #[doc = "Bit 22 - SRAM Write Assist Enable"]
+    #[doc = "Bit 22 - SRAM Write Assist Enable."]
     #[inline(always)]
     pub fn waen(&self) -> WAEN_R {
         WAEN_R::new(((self.bits >> 22) & 1) != 0)
     }
-    #[doc = "Bits 23:24 - SRAM Write Assist settings"]
+    #[doc = "Bits 23:24 - SRAM Write Assist settings."]
     #[inline(always)]
     pub fn wam(&self) -> WAM_R {
         WAM_R::new(((self.bits >> 23) & 3) as u8)
     }
-    #[doc = "Bit 25 - STBP"]
+    #[doc = "Bit 25 - STBP."]
     #[inline(always)]
     pub fn stbp(&self) -> STBP_R {
         STBP_R::new(((self.bits >> 25) & 1) != 0)
@@ -224,12 +224,12 @@ impl W {
     pub fn puf_sram_valid(&mut self) -> PUF_SRAM_VALID_W<0> {
         PUF_SRAM_VALID_W::new(self)
     }
-    #[doc = "Bit 1 - PUF SRAM Controller operating mode"]
+    #[doc = "Bit 1 - PUF SRAM Controller operating mode."]
     #[inline(always)]
     pub fn mode(&mut self) -> MODE_W<1> {
         MODE_W::new(self)
     }
-    #[doc = "Bit 2 - PUF SRAM Clock Gating control"]
+    #[doc = "Bit 2 - PUF SRAM Clock Gating control."]
     #[inline(always)]
     pub fn ckgating(&mut self) -> CKGATING_W<2> {
         CKGATING_W::new(self)
@@ -254,27 +254,27 @@ impl W {
     pub fn wrme(&mut self) -> WRME_W<16> {
         WRME_W::new(self)
     }
-    #[doc = "Bit 17 - SRAM Read Assist Enable"]
+    #[doc = "Bit 17 - SRAM Read Assist Enable."]
     #[inline(always)]
     pub fn raen(&mut self) -> RAEN_W<17> {
         RAEN_W::new(self)
     }
-    #[doc = "Bits 18:21 - SRAM Read Assist settings"]
+    #[doc = "Bits 18:21 - SRAM Read Assist settings."]
     #[inline(always)]
     pub fn ram(&mut self) -> RAM_W<18> {
         RAM_W::new(self)
     }
-    #[doc = "Bit 22 - SRAM Write Assist Enable"]
+    #[doc = "Bit 22 - SRAM Write Assist Enable."]
     #[inline(always)]
     pub fn waen(&mut self) -> WAEN_W<22> {
         WAEN_W::new(self)
     }
-    #[doc = "Bits 23:24 - SRAM Write Assist settings"]
+    #[doc = "Bits 23:24 - SRAM Write Assist settings."]
     #[inline(always)]
     pub fn wam(&mut self) -> WAM_W<23> {
         WAM_W::new(self)
     }
-    #[doc = "Bit 25 - STBP"]
+    #[doc = "Bit 25 - STBP."]
     #[inline(always)]
     pub fn stbp(&mut self) -> STBP_W<25> {
         STBP_W::new(self)
@@ -286,7 +286,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [puf_sram](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [puf_sram](index.html) module"]
 pub struct PUF_SRAM_SPEC;
 impl crate::RegisterSpec for PUF_SRAM_SPEC {
     type Ux = u32;

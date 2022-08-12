@@ -50,7 +50,7 @@ impl R {
         RF1L_R::new(((self.bits >> 25) & 1) != 0)
     }
 }
-#[doc = "Rx FIFO 1 Status\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rxf1s](index.html) module"]
+#[doc = "Rx FIFO 1 Status.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rxf1s](index.html) module"]
 pub struct RXF1S_SPEC;
 impl crate::RegisterSpec for RXF1S_SPEC {
     type Ux = u32;

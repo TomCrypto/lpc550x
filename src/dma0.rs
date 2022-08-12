@@ -44,73 +44,73 @@ pub struct RegisterBlock {
     #[doc = "0x78 - Channel Abort control for all DMA channels."]
     pub abort0: ABORT0,
     _reserved15: [u8; 0x0384],
-    #[doc = "0x400..0x40c - no description available"]
+    #[doc = "0x400..0x40c - no description available."]
     pub channel0: CHANNEL,
     _reserved16: [u8; 0x04],
-    #[doc = "0x410..0x41c - no description available"]
+    #[doc = "0x410..0x41c - no description available."]
     pub channel1: CHANNEL,
     _reserved17: [u8; 0x04],
-    #[doc = "0x420..0x42c - no description available"]
+    #[doc = "0x420..0x42c - no description available."]
     pub channel2: CHANNEL,
     _reserved18: [u8; 0x04],
-    #[doc = "0x430..0x43c - no description available"]
+    #[doc = "0x430..0x43c - no description available."]
     pub channel3: CHANNEL,
     _reserved19: [u8; 0x04],
-    #[doc = "0x440..0x44c - no description available"]
+    #[doc = "0x440..0x44c - no description available."]
     pub channel4: CHANNEL,
     _reserved20: [u8; 0x04],
-    #[doc = "0x450..0x45c - no description available"]
+    #[doc = "0x450..0x45c - no description available."]
     pub channel5: CHANNEL,
     _reserved21: [u8; 0x04],
-    #[doc = "0x460..0x46c - no description available"]
+    #[doc = "0x460..0x46c - no description available."]
     pub channel6: CHANNEL,
     _reserved22: [u8; 0x04],
-    #[doc = "0x470..0x47c - no description available"]
+    #[doc = "0x470..0x47c - no description available."]
     pub channel7: CHANNEL,
     _reserved23: [u8; 0x04],
-    #[doc = "0x480..0x48c - no description available"]
+    #[doc = "0x480..0x48c - no description available."]
     pub channel8: CHANNEL,
     _reserved24: [u8; 0x04],
-    #[doc = "0x490..0x49c - no description available"]
+    #[doc = "0x490..0x49c - no description available."]
     pub channel9: CHANNEL,
     _reserved25: [u8; 0x04],
-    #[doc = "0x4a0..0x4ac - no description available"]
+    #[doc = "0x4a0..0x4ac - no description available."]
     pub channel10: CHANNEL,
     _reserved26: [u8; 0x04],
-    #[doc = "0x4b0..0x4bc - no description available"]
+    #[doc = "0x4b0..0x4bc - no description available."]
     pub channel11: CHANNEL,
     _reserved27: [u8; 0x04],
-    #[doc = "0x4c0..0x4cc - no description available"]
+    #[doc = "0x4c0..0x4cc - no description available."]
     pub channel12: CHANNEL,
     _reserved28: [u8; 0x04],
-    #[doc = "0x4d0..0x4dc - no description available"]
+    #[doc = "0x4d0..0x4dc - no description available."]
     pub channel13: CHANNEL,
     _reserved29: [u8; 0x04],
-    #[doc = "0x4e0..0x4ec - no description available"]
+    #[doc = "0x4e0..0x4ec - no description available."]
     pub channel14: CHANNEL,
     _reserved30: [u8; 0x04],
-    #[doc = "0x4f0..0x4fc - no description available"]
+    #[doc = "0x4f0..0x4fc - no description available."]
     pub channel15: CHANNEL,
     _reserved31: [u8; 0x04],
-    #[doc = "0x500..0x50c - no description available"]
+    #[doc = "0x500..0x50c - no description available."]
     pub channel16: CHANNEL,
     _reserved32: [u8; 0x04],
-    #[doc = "0x510..0x51c - no description available"]
+    #[doc = "0x510..0x51c - no description available."]
     pub channel17: CHANNEL,
     _reserved33: [u8; 0x04],
-    #[doc = "0x520..0x52c - no description available"]
+    #[doc = "0x520..0x52c - no description available."]
     pub channel18: CHANNEL,
     _reserved34: [u8; 0x04],
-    #[doc = "0x530..0x53c - no description available"]
+    #[doc = "0x530..0x53c - no description available."]
     pub channel19: CHANNEL,
     _reserved35: [u8; 0x04],
-    #[doc = "0x540..0x54c - no description available"]
+    #[doc = "0x540..0x54c - no description available."]
     pub channel20: CHANNEL,
     _reserved36: [u8; 0x04],
-    #[doc = "0x550..0x55c - no description available"]
+    #[doc = "0x550..0x55c - no description available."]
     pub channel21: CHANNEL,
     _reserved37: [u8; 0x04],
-    #[doc = "0x560..0x56c - no description available"]
+    #[doc = "0x560..0x56c - no description available."]
     pub channel22: CHANNEL,
 }
 #[doc = "CTRL (rw) register accessor: an alias for `Reg<CTRL_SPEC>`"]
@@ -173,8 +173,8 @@ pub mod settrig0;
 pub type ABORT0 = crate::Reg<abort0::ABORT0_SPEC>;
 #[doc = "Channel Abort control for all DMA channels."]
 pub mod abort0;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub use channel::CHANNEL;
 #[doc = r"Cluster"]
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod channel;

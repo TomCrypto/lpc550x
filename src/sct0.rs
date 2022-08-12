@@ -1,887 +1,747 @@
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    #[doc = "0x00 - SCT configuration register"]
+    #[doc = "0x00 - SCT configuration register."]
     pub config: CONFIG,
-    #[doc = "0x04 - SCT control register"]
+    #[doc = "0x04 - SCT control register."]
     pub ctrl: CTRL,
-    #[doc = "0x08 - SCT limit event select register"]
+    #[doc = "0x08 - SCT limit event select register."]
     pub limit: LIMIT,
-    #[doc = "0x0c - SCT halt event select register"]
+    #[doc = "0x0c - SCT halt event select register."]
     pub halt: HALT,
-    #[doc = "0x10 - SCT stop event select register"]
+    #[doc = "0x10 - SCT stop event select register."]
     pub stop: STOP,
-    #[doc = "0x14 - SCT start event select register"]
+    #[doc = "0x14 - SCT start event select register."]
     pub start: START,
     _reserved6: [u8; 0x28],
-    #[doc = "0x40 - SCT counter register"]
+    #[doc = "0x40 - SCT counter register."]
     pub count: COUNT,
-    #[doc = "0x44 - SCT state register"]
+    #[doc = "0x44 - SCT state register."]
     pub state: STATE,
-    #[doc = "0x48 - SCT input register"]
+    #[doc = "0x48 - SCT input register."]
     pub input: INPUT,
-    #[doc = "0x4c - SCT match/capture mode register"]
+    #[doc = "0x4c - SCT match/capture mode register."]
     pub regmode: REGMODE,
-    #[doc = "0x50 - SCT output register"]
+    #[doc = "0x50 - SCT output register."]
     pub output: OUTPUT,
-    #[doc = "0x54 - SCT output counter direction control register"]
+    #[doc = "0x54 - SCT output counter direction control register."]
     pub outputdirctrl: OUTPUTDIRCTRL,
-    #[doc = "0x58 - SCT conflict resolution register"]
+    #[doc = "0x58 - SCT conflict resolution register."]
     pub res: RES,
-    #[doc = "0x5c - SCT DMA request 0 register"]
+    #[doc = "0x5c - SCT DMA request 0 register."]
     pub dmareq0: DMAREQ0,
-    #[doc = "0x60 - SCT DMA request 1 register"]
+    #[doc = "0x60 - SCT DMA request 1 register."]
     pub dmareq1: DMAREQ1,
     _reserved15: [u8; 0x8c],
-    #[doc = "0xf0 - SCT event interrupt enable register"]
+    #[doc = "0xf0 - SCT event interrupt enable register."]
     pub even: EVEN,
-    #[doc = "0xf4 - SCT event flag register"]
+    #[doc = "0xf4 - SCT event flag register."]
     pub evflag: EVFLAG,
-    #[doc = "0xf8 - SCT conflict interrupt enable register"]
+    #[doc = "0xf8 - SCT conflict interrupt enable register."]
     pub conen: CONEN,
-    #[doc = "0xfc - SCT conflict flag register"]
+    #[doc = "0xfc - SCT conflict flag register."]
     pub conflag: CONFLAG,
-    _reserved_19_cap_match: [u8; 0x04],
-    _reserved_20_cap_match: [u8; 0x04],
-    _reserved_21_cap_match: [u8; 0x04],
-    _reserved_22_cap_match: [u8; 0x04],
-    _reserved_23_cap_match: [u8; 0x04],
-    _reserved_24_cap_match: [u8; 0x04],
-    _reserved_25_cap_match: [u8; 0x04],
-    _reserved_26_cap_match: [u8; 0x04],
-    _reserved_27_cap_match: [u8; 0x04],
-    _reserved_28_cap_match: [u8; 0x04],
-    _reserved_29_cap_match: [u8; 0x04],
-    _reserved_30_cap_match: [u8; 0x04],
-    _reserved_31_cap_match: [u8; 0x04],
-    _reserved_32_cap_match: [u8; 0x04],
-    _reserved_33_cap_match: [u8; 0x04],
-    _reserved_34_cap_match: [u8; 0x04],
+    _reserved_19_cap0: [u8; 0x04],
+    _reserved_20_cap1: [u8; 0x04],
+    _reserved_21_cap2: [u8; 0x04],
+    _reserved_22_cap3: [u8; 0x04],
+    _reserved_23_cap4: [u8; 0x04],
+    _reserved_24_cap5: [u8; 0x04],
+    _reserved_25_cap6: [u8; 0x04],
+    _reserved_26_cap7: [u8; 0x04],
+    _reserved_27_cap8: [u8; 0x04],
+    _reserved_28_cap9: [u8; 0x04],
+    _reserved_29_cap10: [u8; 0x04],
+    _reserved_30_cap11: [u8; 0x04],
+    _reserved_31_cap12: [u8; 0x04],
+    _reserved_32_cap13: [u8; 0x04],
+    _reserved_33_cap14: [u8; 0x04],
+    _reserved_34_cap15: [u8; 0x04],
     _reserved35: [u8; 0xc0],
-    _reserved_35_capctrl_matchrel: [u8; 0x04],
-    _reserved_36_capctrl_matchrel: [u8; 0x04],
-    _reserved_37_capctrl_matchrel: [u8; 0x04],
-    _reserved_38_capctrl_matchrel: [u8; 0x04],
-    _reserved_39_capctrl_matchrel: [u8; 0x04],
-    _reserved_40_capctrl_matchrel: [u8; 0x04],
-    _reserved_41_capctrl_matchrel: [u8; 0x04],
-    _reserved_42_capctrl_matchrel: [u8; 0x04],
-    _reserved_43_capctrl_matchrel: [u8; 0x04],
-    _reserved_44_capctrl_matchrel: [u8; 0x04],
-    _reserved_45_capctrl_matchrel: [u8; 0x04],
-    _reserved_46_capctrl_matchrel: [u8; 0x04],
-    _reserved_47_capctrl_matchrel: [u8; 0x04],
-    _reserved_48_capctrl_matchrel: [u8; 0x04],
-    _reserved_49_capctrl_matchrel: [u8; 0x04],
-    _reserved_50_capctrl_matchrel: [u8; 0x04],
+    _reserved_35_capctrl0: [u8; 0x04],
+    _reserved_36_capctrl1: [u8; 0x04],
+    _reserved_37_capctrl2: [u8; 0x04],
+    _reserved_38_capctrl3: [u8; 0x04],
+    _reserved_39_capctrl4: [u8; 0x04],
+    _reserved_40_capctrl5: [u8; 0x04],
+    _reserved_41_capctrl6: [u8; 0x04],
+    _reserved_42_capctrl7: [u8; 0x04],
+    _reserved_43_capctrl8: [u8; 0x04],
+    _reserved_44_capctrl9: [u8; 0x04],
+    _reserved_45_capctrl10: [u8; 0x04],
+    _reserved_46_capctrl11: [u8; 0x04],
+    _reserved_47_capctrl12: [u8; 0x04],
+    _reserved_48_capctrl13: [u8; 0x04],
+    _reserved_49_capctrl14: [u8; 0x04],
+    _reserved_50_capctrl15: [u8; 0x04],
     _reserved51: [u8; 0xc0],
-    #[doc = "0x300..0x380 - no description available"]
+    #[doc = "0x300..0x380 - no description available."]
     pub ev: [EV; 16],
     _reserved52: [u8; 0x0180],
-    #[doc = "0x500..0x550 - no description available"]
+    #[doc = "0x500..0x550 - no description available."]
     pub out: [OUT; 10],
 }
 impl RegisterBlock {
-    #[doc = "0x100 - SCT match value register of match channels"]
+    #[doc = "0x100 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match0(&self) -> &CAP_MATCH_MATCH0 {
-        unsafe { &*(((self as *const Self) as *const u8).add(256usize) as *const CAP_MATCH_MATCH0) }
+    pub fn match0(&self) -> &MATCH0 {
+        unsafe { &*(((self as *const Self) as *const u8).add(256usize) as *const MATCH0) }
     }
-    #[doc = "0x100 - SCT capture register of capture channel"]
+    #[doc = "0x100 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap0(&self) -> &CAP_MATCH_CAP0 {
-        unsafe { &*(((self as *const Self) as *const u8).add(256usize) as *const CAP_MATCH_CAP0) }
+    pub fn cap0(&self) -> &CAP0 {
+        unsafe { &*(((self as *const Self) as *const u8).add(256usize) as *const CAP0) }
     }
-    #[doc = "0x104 - SCT match value register of match channels"]
+    #[doc = "0x104 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match1(&self) -> &CAP_MATCH_MATCH1 {
-        unsafe { &*(((self as *const Self) as *const u8).add(260usize) as *const CAP_MATCH_MATCH1) }
+    pub fn match1(&self) -> &MATCH1 {
+        unsafe { &*(((self as *const Self) as *const u8).add(260usize) as *const MATCH1) }
     }
-    #[doc = "0x104 - SCT capture register of capture channel"]
+    #[doc = "0x104 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap1(&self) -> &CAP_MATCH_CAP1 {
-        unsafe { &*(((self as *const Self) as *const u8).add(260usize) as *const CAP_MATCH_CAP1) }
+    pub fn cap1(&self) -> &CAP1 {
+        unsafe { &*(((self as *const Self) as *const u8).add(260usize) as *const CAP1) }
     }
-    #[doc = "0x108 - SCT match value register of match channels"]
+    #[doc = "0x108 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match2(&self) -> &CAP_MATCH_MATCH2 {
-        unsafe { &*(((self as *const Self) as *const u8).add(264usize) as *const CAP_MATCH_MATCH2) }
+    pub fn match2(&self) -> &MATCH2 {
+        unsafe { &*(((self as *const Self) as *const u8).add(264usize) as *const MATCH2) }
     }
-    #[doc = "0x108 - SCT capture register of capture channel"]
+    #[doc = "0x108 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap2(&self) -> &CAP_MATCH_CAP2 {
-        unsafe { &*(((self as *const Self) as *const u8).add(264usize) as *const CAP_MATCH_CAP2) }
+    pub fn cap2(&self) -> &CAP2 {
+        unsafe { &*(((self as *const Self) as *const u8).add(264usize) as *const CAP2) }
     }
-    #[doc = "0x10c - SCT match value register of match channels"]
+    #[doc = "0x10c - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match3(&self) -> &CAP_MATCH_MATCH3 {
-        unsafe { &*(((self as *const Self) as *const u8).add(268usize) as *const CAP_MATCH_MATCH3) }
+    pub fn match3(&self) -> &MATCH3 {
+        unsafe { &*(((self as *const Self) as *const u8).add(268usize) as *const MATCH3) }
     }
-    #[doc = "0x10c - SCT capture register of capture channel"]
+    #[doc = "0x10c - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap3(&self) -> &CAP_MATCH_CAP3 {
-        unsafe { &*(((self as *const Self) as *const u8).add(268usize) as *const CAP_MATCH_CAP3) }
+    pub fn cap3(&self) -> &CAP3 {
+        unsafe { &*(((self as *const Self) as *const u8).add(268usize) as *const CAP3) }
     }
-    #[doc = "0x110 - SCT match value register of match channels"]
+    #[doc = "0x110 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match4(&self) -> &CAP_MATCH_MATCH4 {
-        unsafe { &*(((self as *const Self) as *const u8).add(272usize) as *const CAP_MATCH_MATCH4) }
+    pub fn match4(&self) -> &MATCH4 {
+        unsafe { &*(((self as *const Self) as *const u8).add(272usize) as *const MATCH4) }
     }
-    #[doc = "0x110 - SCT capture register of capture channel"]
+    #[doc = "0x110 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap4(&self) -> &CAP_MATCH_CAP4 {
-        unsafe { &*(((self as *const Self) as *const u8).add(272usize) as *const CAP_MATCH_CAP4) }
+    pub fn cap4(&self) -> &CAP4 {
+        unsafe { &*(((self as *const Self) as *const u8).add(272usize) as *const CAP4) }
     }
-    #[doc = "0x114 - SCT match value register of match channels"]
+    #[doc = "0x114 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match5(&self) -> &CAP_MATCH_MATCH5 {
-        unsafe { &*(((self as *const Self) as *const u8).add(276usize) as *const CAP_MATCH_MATCH5) }
+    pub fn match5(&self) -> &MATCH5 {
+        unsafe { &*(((self as *const Self) as *const u8).add(276usize) as *const MATCH5) }
     }
-    #[doc = "0x114 - SCT capture register of capture channel"]
+    #[doc = "0x114 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap5(&self) -> &CAP_MATCH_CAP5 {
-        unsafe { &*(((self as *const Self) as *const u8).add(276usize) as *const CAP_MATCH_CAP5) }
+    pub fn cap5(&self) -> &CAP5 {
+        unsafe { &*(((self as *const Self) as *const u8).add(276usize) as *const CAP5) }
     }
-    #[doc = "0x118 - SCT match value register of match channels"]
+    #[doc = "0x118 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match6(&self) -> &CAP_MATCH_MATCH6 {
-        unsafe { &*(((self as *const Self) as *const u8).add(280usize) as *const CAP_MATCH_MATCH6) }
+    pub fn match6(&self) -> &MATCH6 {
+        unsafe { &*(((self as *const Self) as *const u8).add(280usize) as *const MATCH6) }
     }
-    #[doc = "0x118 - SCT capture register of capture channel"]
+    #[doc = "0x118 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap6(&self) -> &CAP_MATCH_CAP6 {
-        unsafe { &*(((self as *const Self) as *const u8).add(280usize) as *const CAP_MATCH_CAP6) }
+    pub fn cap6(&self) -> &CAP6 {
+        unsafe { &*(((self as *const Self) as *const u8).add(280usize) as *const CAP6) }
     }
-    #[doc = "0x11c - SCT match value register of match channels"]
+    #[doc = "0x11c - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match7(&self) -> &CAP_MATCH_MATCH7 {
-        unsafe { &*(((self as *const Self) as *const u8).add(284usize) as *const CAP_MATCH_MATCH7) }
+    pub fn match7(&self) -> &MATCH7 {
+        unsafe { &*(((self as *const Self) as *const u8).add(284usize) as *const MATCH7) }
     }
-    #[doc = "0x11c - SCT capture register of capture channel"]
+    #[doc = "0x11c - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap7(&self) -> &CAP_MATCH_CAP7 {
-        unsafe { &*(((self as *const Self) as *const u8).add(284usize) as *const CAP_MATCH_CAP7) }
+    pub fn cap7(&self) -> &CAP7 {
+        unsafe { &*(((self as *const Self) as *const u8).add(284usize) as *const CAP7) }
     }
-    #[doc = "0x120 - SCT match value register of match channels"]
+    #[doc = "0x120 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match8(&self) -> &CAP_MATCH_MATCH8 {
-        unsafe { &*(((self as *const Self) as *const u8).add(288usize) as *const CAP_MATCH_MATCH8) }
+    pub fn match8(&self) -> &MATCH8 {
+        unsafe { &*(((self as *const Self) as *const u8).add(288usize) as *const MATCH8) }
     }
-    #[doc = "0x120 - SCT capture register of capture channel"]
+    #[doc = "0x120 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap8(&self) -> &CAP_MATCH_CAP8 {
-        unsafe { &*(((self as *const Self) as *const u8).add(288usize) as *const CAP_MATCH_CAP8) }
+    pub fn cap8(&self) -> &CAP8 {
+        unsafe { &*(((self as *const Self) as *const u8).add(288usize) as *const CAP8) }
     }
-    #[doc = "0x124 - SCT match value register of match channels"]
+    #[doc = "0x124 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match9(&self) -> &CAP_MATCH_MATCH9 {
-        unsafe { &*(((self as *const Self) as *const u8).add(292usize) as *const CAP_MATCH_MATCH9) }
+    pub fn match9(&self) -> &MATCH9 {
+        unsafe { &*(((self as *const Self) as *const u8).add(292usize) as *const MATCH9) }
     }
-    #[doc = "0x124 - SCT capture register of capture channel"]
+    #[doc = "0x124 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap9(&self) -> &CAP_MATCH_CAP9 {
-        unsafe { &*(((self as *const Self) as *const u8).add(292usize) as *const CAP_MATCH_CAP9) }
+    pub fn cap9(&self) -> &CAP9 {
+        unsafe { &*(((self as *const Self) as *const u8).add(292usize) as *const CAP9) }
     }
-    #[doc = "0x128 - SCT match value register of match channels"]
+    #[doc = "0x128 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match10(&self) -> &CAP_MATCH_MATCH10 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(296usize) as *const CAP_MATCH_MATCH10)
-        }
+    pub fn match10(&self) -> &MATCH10 {
+        unsafe { &*(((self as *const Self) as *const u8).add(296usize) as *const MATCH10) }
     }
-    #[doc = "0x128 - SCT capture register of capture channel"]
+    #[doc = "0x128 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap10(&self) -> &CAP_MATCH_CAP10 {
-        unsafe { &*(((self as *const Self) as *const u8).add(296usize) as *const CAP_MATCH_CAP10) }
+    pub fn cap10(&self) -> &CAP10 {
+        unsafe { &*(((self as *const Self) as *const u8).add(296usize) as *const CAP10) }
     }
-    #[doc = "0x12c - SCT match value register of match channels"]
+    #[doc = "0x12c - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match11(&self) -> &CAP_MATCH_MATCH11 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(300usize) as *const CAP_MATCH_MATCH11)
-        }
+    pub fn match11(&self) -> &MATCH11 {
+        unsafe { &*(((self as *const Self) as *const u8).add(300usize) as *const MATCH11) }
     }
-    #[doc = "0x12c - SCT capture register of capture channel"]
+    #[doc = "0x12c - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap11(&self) -> &CAP_MATCH_CAP11 {
-        unsafe { &*(((self as *const Self) as *const u8).add(300usize) as *const CAP_MATCH_CAP11) }
+    pub fn cap11(&self) -> &CAP11 {
+        unsafe { &*(((self as *const Self) as *const u8).add(300usize) as *const CAP11) }
     }
-    #[doc = "0x130 - SCT match value register of match channels"]
+    #[doc = "0x130 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match12(&self) -> &CAP_MATCH_MATCH12 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(304usize) as *const CAP_MATCH_MATCH12)
-        }
+    pub fn match12(&self) -> &MATCH12 {
+        unsafe { &*(((self as *const Self) as *const u8).add(304usize) as *const MATCH12) }
     }
-    #[doc = "0x130 - SCT capture register of capture channel"]
+    #[doc = "0x130 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap12(&self) -> &CAP_MATCH_CAP12 {
-        unsafe { &*(((self as *const Self) as *const u8).add(304usize) as *const CAP_MATCH_CAP12) }
+    pub fn cap12(&self) -> &CAP12 {
+        unsafe { &*(((self as *const Self) as *const u8).add(304usize) as *const CAP12) }
     }
-    #[doc = "0x134 - SCT match value register of match channels"]
+    #[doc = "0x134 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match13(&self) -> &CAP_MATCH_MATCH13 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(308usize) as *const CAP_MATCH_MATCH13)
-        }
+    pub fn match13(&self) -> &MATCH13 {
+        unsafe { &*(((self as *const Self) as *const u8).add(308usize) as *const MATCH13) }
     }
-    #[doc = "0x134 - SCT capture register of capture channel"]
+    #[doc = "0x134 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap13(&self) -> &CAP_MATCH_CAP13 {
-        unsafe { &*(((self as *const Self) as *const u8).add(308usize) as *const CAP_MATCH_CAP13) }
+    pub fn cap13(&self) -> &CAP13 {
+        unsafe { &*(((self as *const Self) as *const u8).add(308usize) as *const CAP13) }
     }
-    #[doc = "0x138 - SCT match value register of match channels"]
+    #[doc = "0x138 - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match14(&self) -> &CAP_MATCH_MATCH14 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(312usize) as *const CAP_MATCH_MATCH14)
-        }
+    pub fn match14(&self) -> &MATCH14 {
+        unsafe { &*(((self as *const Self) as *const u8).add(312usize) as *const MATCH14) }
     }
-    #[doc = "0x138 - SCT capture register of capture channel"]
+    #[doc = "0x138 - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap14(&self) -> &CAP_MATCH_CAP14 {
-        unsafe { &*(((self as *const Self) as *const u8).add(312usize) as *const CAP_MATCH_CAP14) }
+    pub fn cap14(&self) -> &CAP14 {
+        unsafe { &*(((self as *const Self) as *const u8).add(312usize) as *const CAP14) }
     }
-    #[doc = "0x13c - SCT match value register of match channels"]
+    #[doc = "0x13c - SCT match value register of match channels."]
     #[inline(always)]
-    pub fn cap_match_match15(&self) -> &CAP_MATCH_MATCH15 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(316usize) as *const CAP_MATCH_MATCH15)
-        }
+    pub fn match15(&self) -> &MATCH15 {
+        unsafe { &*(((self as *const Self) as *const u8).add(316usize) as *const MATCH15) }
     }
-    #[doc = "0x13c - SCT capture register of capture channel"]
+    #[doc = "0x13c - SCT capture register of capture channel."]
     #[inline(always)]
-    pub fn cap_match_cap15(&self) -> &CAP_MATCH_CAP15 {
-        unsafe { &*(((self as *const Self) as *const u8).add(316usize) as *const CAP_MATCH_CAP15) }
+    pub fn cap15(&self) -> &CAP15 {
+        unsafe { &*(((self as *const Self) as *const u8).add(316usize) as *const CAP15) }
     }
-    #[doc = "0x200 - SCT match reload value register"]
+    #[doc = "0x200 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel0(&self) -> &CAPCTRL_MATCHREL_MATCHREL0 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(512usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL0)
-        }
+    pub fn matchrel0(&self) -> &MATCHREL0 {
+        unsafe { &*(((self as *const Self) as *const u8).add(512usize) as *const MATCHREL0) }
     }
-    #[doc = "0x200 - SCT capture control register"]
+    #[doc = "0x200 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl0(&self) -> &CAPCTRL_MATCHREL_CAPCTRL0 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(512usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL0)
-        }
+    pub fn capctrl0(&self) -> &CAPCTRL0 {
+        unsafe { &*(((self as *const Self) as *const u8).add(512usize) as *const CAPCTRL0) }
     }
-    #[doc = "0x204 - SCT match reload value register"]
+    #[doc = "0x204 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel1(&self) -> &CAPCTRL_MATCHREL_MATCHREL1 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(516usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL1)
-        }
+    pub fn matchrel1(&self) -> &MATCHREL1 {
+        unsafe { &*(((self as *const Self) as *const u8).add(516usize) as *const MATCHREL1) }
     }
-    #[doc = "0x204 - SCT capture control register"]
+    #[doc = "0x204 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl1(&self) -> &CAPCTRL_MATCHREL_CAPCTRL1 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(516usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL1)
-        }
+    pub fn capctrl1(&self) -> &CAPCTRL1 {
+        unsafe { &*(((self as *const Self) as *const u8).add(516usize) as *const CAPCTRL1) }
     }
-    #[doc = "0x208 - SCT match reload value register"]
+    #[doc = "0x208 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel2(&self) -> &CAPCTRL_MATCHREL_MATCHREL2 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(520usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL2)
-        }
+    pub fn matchrel2(&self) -> &MATCHREL2 {
+        unsafe { &*(((self as *const Self) as *const u8).add(520usize) as *const MATCHREL2) }
     }
-    #[doc = "0x208 - SCT capture control register"]
+    #[doc = "0x208 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl2(&self) -> &CAPCTRL_MATCHREL_CAPCTRL2 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(520usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL2)
-        }
+    pub fn capctrl2(&self) -> &CAPCTRL2 {
+        unsafe { &*(((self as *const Self) as *const u8).add(520usize) as *const CAPCTRL2) }
     }
-    #[doc = "0x20c - SCT match reload value register"]
+    #[doc = "0x20c - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel3(&self) -> &CAPCTRL_MATCHREL_MATCHREL3 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(524usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL3)
-        }
+    pub fn matchrel3(&self) -> &MATCHREL3 {
+        unsafe { &*(((self as *const Self) as *const u8).add(524usize) as *const MATCHREL3) }
     }
-    #[doc = "0x20c - SCT capture control register"]
+    #[doc = "0x20c - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl3(&self) -> &CAPCTRL_MATCHREL_CAPCTRL3 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(524usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL3)
-        }
+    pub fn capctrl3(&self) -> &CAPCTRL3 {
+        unsafe { &*(((self as *const Self) as *const u8).add(524usize) as *const CAPCTRL3) }
     }
-    #[doc = "0x210 - SCT match reload value register"]
+    #[doc = "0x210 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel4(&self) -> &CAPCTRL_MATCHREL_MATCHREL4 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(528usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL4)
-        }
+    pub fn matchrel4(&self) -> &MATCHREL4 {
+        unsafe { &*(((self as *const Self) as *const u8).add(528usize) as *const MATCHREL4) }
     }
-    #[doc = "0x210 - SCT capture control register"]
+    #[doc = "0x210 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl4(&self) -> &CAPCTRL_MATCHREL_CAPCTRL4 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(528usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL4)
-        }
+    pub fn capctrl4(&self) -> &CAPCTRL4 {
+        unsafe { &*(((self as *const Self) as *const u8).add(528usize) as *const CAPCTRL4) }
     }
-    #[doc = "0x214 - SCT match reload value register"]
+    #[doc = "0x214 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel5(&self) -> &CAPCTRL_MATCHREL_MATCHREL5 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(532usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL5)
-        }
+    pub fn matchrel5(&self) -> &MATCHREL5 {
+        unsafe { &*(((self as *const Self) as *const u8).add(532usize) as *const MATCHREL5) }
     }
-    #[doc = "0x214 - SCT capture control register"]
+    #[doc = "0x214 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl5(&self) -> &CAPCTRL_MATCHREL_CAPCTRL5 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(532usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL5)
-        }
+    pub fn capctrl5(&self) -> &CAPCTRL5 {
+        unsafe { &*(((self as *const Self) as *const u8).add(532usize) as *const CAPCTRL5) }
     }
-    #[doc = "0x218 - SCT match reload value register"]
+    #[doc = "0x218 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel6(&self) -> &CAPCTRL_MATCHREL_MATCHREL6 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(536usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL6)
-        }
+    pub fn matchrel6(&self) -> &MATCHREL6 {
+        unsafe { &*(((self as *const Self) as *const u8).add(536usize) as *const MATCHREL6) }
     }
-    #[doc = "0x218 - SCT capture control register"]
+    #[doc = "0x218 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl6(&self) -> &CAPCTRL_MATCHREL_CAPCTRL6 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(536usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL6)
-        }
+    pub fn capctrl6(&self) -> &CAPCTRL6 {
+        unsafe { &*(((self as *const Self) as *const u8).add(536usize) as *const CAPCTRL6) }
     }
-    #[doc = "0x21c - SCT match reload value register"]
+    #[doc = "0x21c - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel7(&self) -> &CAPCTRL_MATCHREL_MATCHREL7 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(540usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL7)
-        }
+    pub fn matchrel7(&self) -> &MATCHREL7 {
+        unsafe { &*(((self as *const Self) as *const u8).add(540usize) as *const MATCHREL7) }
     }
-    #[doc = "0x21c - SCT capture control register"]
+    #[doc = "0x21c - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl7(&self) -> &CAPCTRL_MATCHREL_CAPCTRL7 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(540usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL7)
-        }
+    pub fn capctrl7(&self) -> &CAPCTRL7 {
+        unsafe { &*(((self as *const Self) as *const u8).add(540usize) as *const CAPCTRL7) }
     }
-    #[doc = "0x220 - SCT match reload value register"]
+    #[doc = "0x220 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel8(&self) -> &CAPCTRL_MATCHREL_MATCHREL8 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(544usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL8)
-        }
+    pub fn matchrel8(&self) -> &MATCHREL8 {
+        unsafe { &*(((self as *const Self) as *const u8).add(544usize) as *const MATCHREL8) }
     }
-    #[doc = "0x220 - SCT capture control register"]
+    #[doc = "0x220 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl8(&self) -> &CAPCTRL_MATCHREL_CAPCTRL8 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(544usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL8)
-        }
+    pub fn capctrl8(&self) -> &CAPCTRL8 {
+        unsafe { &*(((self as *const Self) as *const u8).add(544usize) as *const CAPCTRL8) }
     }
-    #[doc = "0x224 - SCT match reload value register"]
+    #[doc = "0x224 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel9(&self) -> &CAPCTRL_MATCHREL_MATCHREL9 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(548usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL9)
-        }
+    pub fn matchrel9(&self) -> &MATCHREL9 {
+        unsafe { &*(((self as *const Self) as *const u8).add(548usize) as *const MATCHREL9) }
     }
-    #[doc = "0x224 - SCT capture control register"]
+    #[doc = "0x224 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl9(&self) -> &CAPCTRL_MATCHREL_CAPCTRL9 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(548usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL9)
-        }
+    pub fn capctrl9(&self) -> &CAPCTRL9 {
+        unsafe { &*(((self as *const Self) as *const u8).add(548usize) as *const CAPCTRL9) }
     }
-    #[doc = "0x228 - SCT match reload value register"]
+    #[doc = "0x228 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel10(&self) -> &CAPCTRL_MATCHREL_MATCHREL10 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(552usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL10)
-        }
+    pub fn matchrel10(&self) -> &MATCHREL10 {
+        unsafe { &*(((self as *const Self) as *const u8).add(552usize) as *const MATCHREL10) }
     }
-    #[doc = "0x228 - SCT capture control register"]
+    #[doc = "0x228 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl10(&self) -> &CAPCTRL_MATCHREL_CAPCTRL10 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(552usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL10)
-        }
+    pub fn capctrl10(&self) -> &CAPCTRL10 {
+        unsafe { &*(((self as *const Self) as *const u8).add(552usize) as *const CAPCTRL10) }
     }
-    #[doc = "0x22c - SCT match reload value register"]
+    #[doc = "0x22c - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel11(&self) -> &CAPCTRL_MATCHREL_MATCHREL11 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(556usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL11)
-        }
+    pub fn matchrel11(&self) -> &MATCHREL11 {
+        unsafe { &*(((self as *const Self) as *const u8).add(556usize) as *const MATCHREL11) }
     }
-    #[doc = "0x22c - SCT capture control register"]
+    #[doc = "0x22c - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl11(&self) -> &CAPCTRL_MATCHREL_CAPCTRL11 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(556usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL11)
-        }
+    pub fn capctrl11(&self) -> &CAPCTRL11 {
+        unsafe { &*(((self as *const Self) as *const u8).add(556usize) as *const CAPCTRL11) }
     }
-    #[doc = "0x230 - SCT match reload value register"]
+    #[doc = "0x230 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel12(&self) -> &CAPCTRL_MATCHREL_MATCHREL12 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(560usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL12)
-        }
+    pub fn matchrel12(&self) -> &MATCHREL12 {
+        unsafe { &*(((self as *const Self) as *const u8).add(560usize) as *const MATCHREL12) }
     }
-    #[doc = "0x230 - SCT capture control register"]
+    #[doc = "0x230 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl12(&self) -> &CAPCTRL_MATCHREL_CAPCTRL12 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(560usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL12)
-        }
+    pub fn capctrl12(&self) -> &CAPCTRL12 {
+        unsafe { &*(((self as *const Self) as *const u8).add(560usize) as *const CAPCTRL12) }
     }
-    #[doc = "0x234 - SCT match reload value register"]
+    #[doc = "0x234 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel13(&self) -> &CAPCTRL_MATCHREL_MATCHREL13 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(564usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL13)
-        }
+    pub fn matchrel13(&self) -> &MATCHREL13 {
+        unsafe { &*(((self as *const Self) as *const u8).add(564usize) as *const MATCHREL13) }
     }
-    #[doc = "0x234 - SCT capture control register"]
+    #[doc = "0x234 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl13(&self) -> &CAPCTRL_MATCHREL_CAPCTRL13 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(564usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL13)
-        }
+    pub fn capctrl13(&self) -> &CAPCTRL13 {
+        unsafe { &*(((self as *const Self) as *const u8).add(564usize) as *const CAPCTRL13) }
     }
-    #[doc = "0x238 - SCT match reload value register"]
+    #[doc = "0x238 - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel14(&self) -> &CAPCTRL_MATCHREL_MATCHREL14 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(568usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL14)
-        }
+    pub fn matchrel14(&self) -> &MATCHREL14 {
+        unsafe { &*(((self as *const Self) as *const u8).add(568usize) as *const MATCHREL14) }
     }
-    #[doc = "0x238 - SCT capture control register"]
+    #[doc = "0x238 - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl14(&self) -> &CAPCTRL_MATCHREL_CAPCTRL14 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(568usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL14)
-        }
+    pub fn capctrl14(&self) -> &CAPCTRL14 {
+        unsafe { &*(((self as *const Self) as *const u8).add(568usize) as *const CAPCTRL14) }
     }
-    #[doc = "0x23c - SCT match reload value register"]
+    #[doc = "0x23c - SCT match reload value register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_matchrel15(&self) -> &CAPCTRL_MATCHREL_MATCHREL15 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(572usize)
-                as *const CAPCTRL_MATCHREL_MATCHREL15)
-        }
+    pub fn matchrel15(&self) -> &MATCHREL15 {
+        unsafe { &*(((self as *const Self) as *const u8).add(572usize) as *const MATCHREL15) }
     }
-    #[doc = "0x23c - SCT capture control register"]
+    #[doc = "0x23c - SCT capture control register."]
     #[inline(always)]
-    pub fn capctrl_matchrel_capctrl15(&self) -> &CAPCTRL_MATCHREL_CAPCTRL15 {
-        unsafe {
-            &*(((self as *const Self) as *const u8).add(572usize)
-                as *const CAPCTRL_MATCHREL_CAPCTRL15)
-        }
+    pub fn capctrl15(&self) -> &CAPCTRL15 {
+        unsafe { &*(((self as *const Self) as *const u8).add(572usize) as *const CAPCTRL15) }
     }
 }
 #[doc = "CONFIG (rw) register accessor: an alias for `Reg<CONFIG_SPEC>`"]
 pub type CONFIG = crate::Reg<config::CONFIG_SPEC>;
-#[doc = "SCT configuration register"]
+#[doc = "SCT configuration register."]
 pub mod config;
 #[doc = "CTRL (rw) register accessor: an alias for `Reg<CTRL_SPEC>`"]
 pub type CTRL = crate::Reg<ctrl::CTRL_SPEC>;
-#[doc = "SCT control register"]
+#[doc = "SCT control register."]
 pub mod ctrl;
 #[doc = "LIMIT (rw) register accessor: an alias for `Reg<LIMIT_SPEC>`"]
 pub type LIMIT = crate::Reg<limit::LIMIT_SPEC>;
-#[doc = "SCT limit event select register"]
+#[doc = "SCT limit event select register."]
 pub mod limit;
 #[doc = "HALT (rw) register accessor: an alias for `Reg<HALT_SPEC>`"]
 pub type HALT = crate::Reg<halt::HALT_SPEC>;
-#[doc = "SCT halt event select register"]
+#[doc = "SCT halt event select register."]
 pub mod halt;
 #[doc = "STOP (rw) register accessor: an alias for `Reg<STOP_SPEC>`"]
 pub type STOP = crate::Reg<stop::STOP_SPEC>;
-#[doc = "SCT stop event select register"]
+#[doc = "SCT stop event select register."]
 pub mod stop;
 #[doc = "START (rw) register accessor: an alias for `Reg<START_SPEC>`"]
 pub type START = crate::Reg<start::START_SPEC>;
-#[doc = "SCT start event select register"]
+#[doc = "SCT start event select register."]
 pub mod start;
 #[doc = "COUNT (rw) register accessor: an alias for `Reg<COUNT_SPEC>`"]
 pub type COUNT = crate::Reg<count::COUNT_SPEC>;
-#[doc = "SCT counter register"]
+#[doc = "SCT counter register."]
 pub mod count;
 #[doc = "STATE (rw) register accessor: an alias for `Reg<STATE_SPEC>`"]
 pub type STATE = crate::Reg<state::STATE_SPEC>;
-#[doc = "SCT state register"]
+#[doc = "SCT state register."]
 pub mod state;
 #[doc = "INPUT (r) register accessor: an alias for `Reg<INPUT_SPEC>`"]
 pub type INPUT = crate::Reg<input::INPUT_SPEC>;
-#[doc = "SCT input register"]
+#[doc = "SCT input register."]
 pub mod input;
 #[doc = "REGMODE (rw) register accessor: an alias for `Reg<REGMODE_SPEC>`"]
 pub type REGMODE = crate::Reg<regmode::REGMODE_SPEC>;
-#[doc = "SCT match/capture mode register"]
+#[doc = "SCT match/capture mode register."]
 pub mod regmode;
 #[doc = "OUTPUT (rw) register accessor: an alias for `Reg<OUTPUT_SPEC>`"]
 pub type OUTPUT = crate::Reg<output::OUTPUT_SPEC>;
-#[doc = "SCT output register"]
+#[doc = "SCT output register."]
 pub mod output;
 #[doc = "OUTPUTDIRCTRL (rw) register accessor: an alias for `Reg<OUTPUTDIRCTRL_SPEC>`"]
 pub type OUTPUTDIRCTRL = crate::Reg<outputdirctrl::OUTPUTDIRCTRL_SPEC>;
-#[doc = "SCT output counter direction control register"]
+#[doc = "SCT output counter direction control register."]
 pub mod outputdirctrl;
 #[doc = "RES (rw) register accessor: an alias for `Reg<RES_SPEC>`"]
 pub type RES = crate::Reg<res::RES_SPEC>;
-#[doc = "SCT conflict resolution register"]
+#[doc = "SCT conflict resolution register."]
 pub mod res;
 #[doc = "DMAREQ0 (rw) register accessor: an alias for `Reg<DMAREQ0_SPEC>`"]
 pub type DMAREQ0 = crate::Reg<dmareq0::DMAREQ0_SPEC>;
-#[doc = "SCT DMA request 0 register"]
+#[doc = "SCT DMA request 0 register."]
 pub mod dmareq0;
 #[doc = "DMAREQ1 (rw) register accessor: an alias for `Reg<DMAREQ1_SPEC>`"]
 pub type DMAREQ1 = crate::Reg<dmareq1::DMAREQ1_SPEC>;
-#[doc = "SCT DMA request 1 register"]
+#[doc = "SCT DMA request 1 register."]
 pub mod dmareq1;
 #[doc = "EVEN (rw) register accessor: an alias for `Reg<EVEN_SPEC>`"]
 pub type EVEN = crate::Reg<even::EVEN_SPEC>;
-#[doc = "SCT event interrupt enable register"]
+#[doc = "SCT event interrupt enable register."]
 pub mod even;
 #[doc = "EVFLAG (rw) register accessor: an alias for `Reg<EVFLAG_SPEC>`"]
 pub type EVFLAG = crate::Reg<evflag::EVFLAG_SPEC>;
-#[doc = "SCT event flag register"]
+#[doc = "SCT event flag register."]
 pub mod evflag;
 #[doc = "CONEN (rw) register accessor: an alias for `Reg<CONEN_SPEC>`"]
 pub type CONEN = crate::Reg<conen::CONEN_SPEC>;
-#[doc = "SCT conflict interrupt enable register"]
+#[doc = "SCT conflict interrupt enable register."]
 pub mod conen;
 #[doc = "CONFLAG (rw) register accessor: an alias for `Reg<CONFLAG_SPEC>`"]
 pub type CONFLAG = crate::Reg<conflag::CONFLAG_SPEC>;
-#[doc = "SCT conflict flag register"]
+#[doc = "SCT conflict flag register."]
 pub mod conflag;
-#[doc = "CAP_MATCH_CAP0 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP0_SPEC>`"]
-pub type CAP_MATCH_CAP0 = crate::Reg<cap_match_cap0::CAP_MATCH_CAP0_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap0;
-#[doc = "CAP_MATCH_MATCH0 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH0_SPEC>`"]
-pub type CAP_MATCH_MATCH0 = crate::Reg<cap_match_match0::CAP_MATCH_MATCH0_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match0;
-#[doc = "CAP_MATCH_CAP1 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP1_SPEC>`"]
-pub type CAP_MATCH_CAP1 = crate::Reg<cap_match_cap1::CAP_MATCH_CAP1_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap1;
-#[doc = "CAP_MATCH_MATCH1 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH1_SPEC>`"]
-pub type CAP_MATCH_MATCH1 = crate::Reg<cap_match_match1::CAP_MATCH_MATCH1_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match1;
-#[doc = "CAP_MATCH_CAP2 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP2_SPEC>`"]
-pub type CAP_MATCH_CAP2 = crate::Reg<cap_match_cap2::CAP_MATCH_CAP2_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap2;
-#[doc = "CAP_MATCH_MATCH2 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH2_SPEC>`"]
-pub type CAP_MATCH_MATCH2 = crate::Reg<cap_match_match2::CAP_MATCH_MATCH2_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match2;
-#[doc = "CAP_MATCH_CAP3 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP3_SPEC>`"]
-pub type CAP_MATCH_CAP3 = crate::Reg<cap_match_cap3::CAP_MATCH_CAP3_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap3;
-#[doc = "CAP_MATCH_MATCH3 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH3_SPEC>`"]
-pub type CAP_MATCH_MATCH3 = crate::Reg<cap_match_match3::CAP_MATCH_MATCH3_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match3;
-#[doc = "CAP_MATCH_CAP4 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP4_SPEC>`"]
-pub type CAP_MATCH_CAP4 = crate::Reg<cap_match_cap4::CAP_MATCH_CAP4_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap4;
-#[doc = "CAP_MATCH_MATCH4 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH4_SPEC>`"]
-pub type CAP_MATCH_MATCH4 = crate::Reg<cap_match_match4::CAP_MATCH_MATCH4_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match4;
-#[doc = "CAP_MATCH_CAP5 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP5_SPEC>`"]
-pub type CAP_MATCH_CAP5 = crate::Reg<cap_match_cap5::CAP_MATCH_CAP5_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap5;
-#[doc = "CAP_MATCH_MATCH5 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH5_SPEC>`"]
-pub type CAP_MATCH_MATCH5 = crate::Reg<cap_match_match5::CAP_MATCH_MATCH5_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match5;
-#[doc = "CAP_MATCH_CAP6 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP6_SPEC>`"]
-pub type CAP_MATCH_CAP6 = crate::Reg<cap_match_cap6::CAP_MATCH_CAP6_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap6;
-#[doc = "CAP_MATCH_MATCH6 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH6_SPEC>`"]
-pub type CAP_MATCH_MATCH6 = crate::Reg<cap_match_match6::CAP_MATCH_MATCH6_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match6;
-#[doc = "CAP_MATCH_CAP7 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP7_SPEC>`"]
-pub type CAP_MATCH_CAP7 = crate::Reg<cap_match_cap7::CAP_MATCH_CAP7_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap7;
-#[doc = "CAP_MATCH_MATCH7 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH7_SPEC>`"]
-pub type CAP_MATCH_MATCH7 = crate::Reg<cap_match_match7::CAP_MATCH_MATCH7_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match7;
-#[doc = "CAP_MATCH_CAP8 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP8_SPEC>`"]
-pub type CAP_MATCH_CAP8 = crate::Reg<cap_match_cap8::CAP_MATCH_CAP8_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap8;
-#[doc = "CAP_MATCH_MATCH8 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH8_SPEC>`"]
-pub type CAP_MATCH_MATCH8 = crate::Reg<cap_match_match8::CAP_MATCH_MATCH8_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match8;
-#[doc = "CAP_MATCH_CAP9 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP9_SPEC>`"]
-pub type CAP_MATCH_CAP9 = crate::Reg<cap_match_cap9::CAP_MATCH_CAP9_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap9;
-#[doc = "CAP_MATCH_MATCH9 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH9_SPEC>`"]
-pub type CAP_MATCH_MATCH9 = crate::Reg<cap_match_match9::CAP_MATCH_MATCH9_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match9;
-#[doc = "CAP_MATCH_CAP10 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP10_SPEC>`"]
-pub type CAP_MATCH_CAP10 = crate::Reg<cap_match_cap10::CAP_MATCH_CAP10_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap10;
-#[doc = "CAP_MATCH_MATCH10 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH10_SPEC>`"]
-pub type CAP_MATCH_MATCH10 = crate::Reg<cap_match_match10::CAP_MATCH_MATCH10_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match10;
-#[doc = "CAP_MATCH_CAP11 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP11_SPEC>`"]
-pub type CAP_MATCH_CAP11 = crate::Reg<cap_match_cap11::CAP_MATCH_CAP11_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap11;
-#[doc = "CAP_MATCH_MATCH11 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH11_SPEC>`"]
-pub type CAP_MATCH_MATCH11 = crate::Reg<cap_match_match11::CAP_MATCH_MATCH11_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match11;
-#[doc = "CAP_MATCH_CAP12 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP12_SPEC>`"]
-pub type CAP_MATCH_CAP12 = crate::Reg<cap_match_cap12::CAP_MATCH_CAP12_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap12;
-#[doc = "CAP_MATCH_MATCH12 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH12_SPEC>`"]
-pub type CAP_MATCH_MATCH12 = crate::Reg<cap_match_match12::CAP_MATCH_MATCH12_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match12;
-#[doc = "CAP_MATCH_CAP13 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP13_SPEC>`"]
-pub type CAP_MATCH_CAP13 = crate::Reg<cap_match_cap13::CAP_MATCH_CAP13_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap13;
-#[doc = "CAP_MATCH_MATCH13 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH13_SPEC>`"]
-pub type CAP_MATCH_MATCH13 = crate::Reg<cap_match_match13::CAP_MATCH_MATCH13_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match13;
-#[doc = "CAP_MATCH_CAP14 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP14_SPEC>`"]
-pub type CAP_MATCH_CAP14 = crate::Reg<cap_match_cap14::CAP_MATCH_CAP14_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap14;
-#[doc = "CAP_MATCH_MATCH14 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH14_SPEC>`"]
-pub type CAP_MATCH_MATCH14 = crate::Reg<cap_match_match14::CAP_MATCH_MATCH14_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match14;
-#[doc = "CAP_MATCH_CAP15 (rw) register accessor: an alias for `Reg<CAP_MATCH_CAP15_SPEC>`"]
-pub type CAP_MATCH_CAP15 = crate::Reg<cap_match_cap15::CAP_MATCH_CAP15_SPEC>;
-#[doc = "SCT capture register of capture channel"]
-pub mod cap_match_cap15;
-#[doc = "CAP_MATCH_MATCH15 (rw) register accessor: an alias for `Reg<CAP_MATCH_MATCH15_SPEC>`"]
-pub type CAP_MATCH_MATCH15 = crate::Reg<cap_match_match15::CAP_MATCH_MATCH15_SPEC>;
-#[doc = "SCT match value register of match channels"]
-pub mod cap_match_match15;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL0 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL0_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL0 =
-    crate::Reg<capctrl_matchrel_capctrl0::CAPCTRL_MATCHREL_CAPCTRL0_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl0;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL0 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL0_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL0 =
-    crate::Reg<capctrl_matchrel_matchrel0::CAPCTRL_MATCHREL_MATCHREL0_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel0;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL1 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL1_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL1 =
-    crate::Reg<capctrl_matchrel_capctrl1::CAPCTRL_MATCHREL_CAPCTRL1_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl1;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL1 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL1_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL1 =
-    crate::Reg<capctrl_matchrel_matchrel1::CAPCTRL_MATCHREL_MATCHREL1_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel1;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL2 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL2_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL2 =
-    crate::Reg<capctrl_matchrel_capctrl2::CAPCTRL_MATCHREL_CAPCTRL2_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl2;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL2 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL2_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL2 =
-    crate::Reg<capctrl_matchrel_matchrel2::CAPCTRL_MATCHREL_MATCHREL2_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel2;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL3 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL3_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL3 =
-    crate::Reg<capctrl_matchrel_capctrl3::CAPCTRL_MATCHREL_CAPCTRL3_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl3;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL3 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL3_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL3 =
-    crate::Reg<capctrl_matchrel_matchrel3::CAPCTRL_MATCHREL_MATCHREL3_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel3;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL4 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL4_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL4 =
-    crate::Reg<capctrl_matchrel_capctrl4::CAPCTRL_MATCHREL_CAPCTRL4_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl4;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL4 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL4_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL4 =
-    crate::Reg<capctrl_matchrel_matchrel4::CAPCTRL_MATCHREL_MATCHREL4_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel4;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL5 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL5_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL5 =
-    crate::Reg<capctrl_matchrel_capctrl5::CAPCTRL_MATCHREL_CAPCTRL5_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl5;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL5 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL5_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL5 =
-    crate::Reg<capctrl_matchrel_matchrel5::CAPCTRL_MATCHREL_MATCHREL5_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel5;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL6 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL6_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL6 =
-    crate::Reg<capctrl_matchrel_capctrl6::CAPCTRL_MATCHREL_CAPCTRL6_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl6;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL6 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL6_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL6 =
-    crate::Reg<capctrl_matchrel_matchrel6::CAPCTRL_MATCHREL_MATCHREL6_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel6;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL7 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL7_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL7 =
-    crate::Reg<capctrl_matchrel_capctrl7::CAPCTRL_MATCHREL_CAPCTRL7_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl7;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL7 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL7_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL7 =
-    crate::Reg<capctrl_matchrel_matchrel7::CAPCTRL_MATCHREL_MATCHREL7_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel7;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL8 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL8_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL8 =
-    crate::Reg<capctrl_matchrel_capctrl8::CAPCTRL_MATCHREL_CAPCTRL8_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl8;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL8 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL8_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL8 =
-    crate::Reg<capctrl_matchrel_matchrel8::CAPCTRL_MATCHREL_MATCHREL8_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel8;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL9 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL9_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL9 =
-    crate::Reg<capctrl_matchrel_capctrl9::CAPCTRL_MATCHREL_CAPCTRL9_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl9;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL9 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL9_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL9 =
-    crate::Reg<capctrl_matchrel_matchrel9::CAPCTRL_MATCHREL_MATCHREL9_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel9;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL10 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL10_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL10 =
-    crate::Reg<capctrl_matchrel_capctrl10::CAPCTRL_MATCHREL_CAPCTRL10_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl10;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL10 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL10_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL10 =
-    crate::Reg<capctrl_matchrel_matchrel10::CAPCTRL_MATCHREL_MATCHREL10_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel10;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL11 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL11_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL11 =
-    crate::Reg<capctrl_matchrel_capctrl11::CAPCTRL_MATCHREL_CAPCTRL11_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl11;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL11 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL11_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL11 =
-    crate::Reg<capctrl_matchrel_matchrel11::CAPCTRL_MATCHREL_MATCHREL11_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel11;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL12 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL12_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL12 =
-    crate::Reg<capctrl_matchrel_capctrl12::CAPCTRL_MATCHREL_CAPCTRL12_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl12;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL12 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL12_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL12 =
-    crate::Reg<capctrl_matchrel_matchrel12::CAPCTRL_MATCHREL_MATCHREL12_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel12;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL13 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL13_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL13 =
-    crate::Reg<capctrl_matchrel_capctrl13::CAPCTRL_MATCHREL_CAPCTRL13_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl13;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL13 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL13_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL13 =
-    crate::Reg<capctrl_matchrel_matchrel13::CAPCTRL_MATCHREL_MATCHREL13_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel13;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL14 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL14_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL14 =
-    crate::Reg<capctrl_matchrel_capctrl14::CAPCTRL_MATCHREL_CAPCTRL14_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl14;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL14 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL14_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL14 =
-    crate::Reg<capctrl_matchrel_matchrel14::CAPCTRL_MATCHREL_MATCHREL14_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel14;
-#[doc = "CAPCTRL_MATCHREL_CAPCTRL15 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_CAPCTRL15_SPEC>`"]
-pub type CAPCTRL_MATCHREL_CAPCTRL15 =
-    crate::Reg<capctrl_matchrel_capctrl15::CAPCTRL_MATCHREL_CAPCTRL15_SPEC>;
-#[doc = "SCT capture control register"]
-pub mod capctrl_matchrel_capctrl15;
-#[doc = "CAPCTRL_MATCHREL_MATCHREL15 (rw) register accessor: an alias for `Reg<CAPCTRL_MATCHREL_MATCHREL15_SPEC>`"]
-pub type CAPCTRL_MATCHREL_MATCHREL15 =
-    crate::Reg<capctrl_matchrel_matchrel15::CAPCTRL_MATCHREL_MATCHREL15_SPEC>;
-#[doc = "SCT match reload value register"]
-pub mod capctrl_matchrel_matchrel15;
-#[doc = "no description available"]
+#[doc = "CAP0 (rw) register accessor: an alias for `Reg<CAP0_SPEC>`"]
+pub type CAP0 = crate::Reg<cap0::CAP0_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap0;
+#[doc = "MATCH0 (rw) register accessor: an alias for `Reg<MATCH0_SPEC>`"]
+pub type MATCH0 = crate::Reg<match0::MATCH0_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match0;
+#[doc = "CAP1 (rw) register accessor: an alias for `Reg<CAP1_SPEC>`"]
+pub type CAP1 = crate::Reg<cap1::CAP1_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap1;
+#[doc = "MATCH1 (rw) register accessor: an alias for `Reg<MATCH1_SPEC>`"]
+pub type MATCH1 = crate::Reg<match1::MATCH1_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match1;
+#[doc = "CAP2 (rw) register accessor: an alias for `Reg<CAP2_SPEC>`"]
+pub type CAP2 = crate::Reg<cap2::CAP2_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap2;
+#[doc = "MATCH2 (rw) register accessor: an alias for `Reg<MATCH2_SPEC>`"]
+pub type MATCH2 = crate::Reg<match2::MATCH2_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match2;
+#[doc = "CAP3 (rw) register accessor: an alias for `Reg<CAP3_SPEC>`"]
+pub type CAP3 = crate::Reg<cap3::CAP3_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap3;
+#[doc = "MATCH3 (rw) register accessor: an alias for `Reg<MATCH3_SPEC>`"]
+pub type MATCH3 = crate::Reg<match3::MATCH3_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match3;
+#[doc = "CAP4 (rw) register accessor: an alias for `Reg<CAP4_SPEC>`"]
+pub type CAP4 = crate::Reg<cap4::CAP4_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap4;
+#[doc = "MATCH4 (rw) register accessor: an alias for `Reg<MATCH4_SPEC>`"]
+pub type MATCH4 = crate::Reg<match4::MATCH4_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match4;
+#[doc = "CAP5 (rw) register accessor: an alias for `Reg<CAP5_SPEC>`"]
+pub type CAP5 = crate::Reg<cap5::CAP5_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap5;
+#[doc = "MATCH5 (rw) register accessor: an alias for `Reg<MATCH5_SPEC>`"]
+pub type MATCH5 = crate::Reg<match5::MATCH5_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match5;
+#[doc = "CAP6 (rw) register accessor: an alias for `Reg<CAP6_SPEC>`"]
+pub type CAP6 = crate::Reg<cap6::CAP6_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap6;
+#[doc = "MATCH6 (rw) register accessor: an alias for `Reg<MATCH6_SPEC>`"]
+pub type MATCH6 = crate::Reg<match6::MATCH6_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match6;
+#[doc = "CAP7 (rw) register accessor: an alias for `Reg<CAP7_SPEC>`"]
+pub type CAP7 = crate::Reg<cap7::CAP7_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap7;
+#[doc = "MATCH7 (rw) register accessor: an alias for `Reg<MATCH7_SPEC>`"]
+pub type MATCH7 = crate::Reg<match7::MATCH7_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match7;
+#[doc = "CAP8 (rw) register accessor: an alias for `Reg<CAP8_SPEC>`"]
+pub type CAP8 = crate::Reg<cap8::CAP8_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap8;
+#[doc = "MATCH8 (rw) register accessor: an alias for `Reg<MATCH8_SPEC>`"]
+pub type MATCH8 = crate::Reg<match8::MATCH8_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match8;
+#[doc = "CAP9 (rw) register accessor: an alias for `Reg<CAP9_SPEC>`"]
+pub type CAP9 = crate::Reg<cap9::CAP9_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap9;
+#[doc = "MATCH9 (rw) register accessor: an alias for `Reg<MATCH9_SPEC>`"]
+pub type MATCH9 = crate::Reg<match9::MATCH9_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match9;
+#[doc = "CAP10 (rw) register accessor: an alias for `Reg<CAP10_SPEC>`"]
+pub type CAP10 = crate::Reg<cap10::CAP10_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap10;
+#[doc = "MATCH10 (rw) register accessor: an alias for `Reg<MATCH10_SPEC>`"]
+pub type MATCH10 = crate::Reg<match10::MATCH10_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match10;
+#[doc = "CAP11 (rw) register accessor: an alias for `Reg<CAP11_SPEC>`"]
+pub type CAP11 = crate::Reg<cap11::CAP11_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap11;
+#[doc = "MATCH11 (rw) register accessor: an alias for `Reg<MATCH11_SPEC>`"]
+pub type MATCH11 = crate::Reg<match11::MATCH11_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match11;
+#[doc = "CAP12 (rw) register accessor: an alias for `Reg<CAP12_SPEC>`"]
+pub type CAP12 = crate::Reg<cap12::CAP12_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap12;
+#[doc = "MATCH12 (rw) register accessor: an alias for `Reg<MATCH12_SPEC>`"]
+pub type MATCH12 = crate::Reg<match12::MATCH12_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match12;
+#[doc = "CAP13 (rw) register accessor: an alias for `Reg<CAP13_SPEC>`"]
+pub type CAP13 = crate::Reg<cap13::CAP13_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap13;
+#[doc = "MATCH13 (rw) register accessor: an alias for `Reg<MATCH13_SPEC>`"]
+pub type MATCH13 = crate::Reg<match13::MATCH13_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match13;
+#[doc = "CAP14 (rw) register accessor: an alias for `Reg<CAP14_SPEC>`"]
+pub type CAP14 = crate::Reg<cap14::CAP14_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap14;
+#[doc = "MATCH14 (rw) register accessor: an alias for `Reg<MATCH14_SPEC>`"]
+pub type MATCH14 = crate::Reg<match14::MATCH14_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match14;
+#[doc = "CAP15 (rw) register accessor: an alias for `Reg<CAP15_SPEC>`"]
+pub type CAP15 = crate::Reg<cap15::CAP15_SPEC>;
+#[doc = "SCT capture register of capture channel."]
+pub mod cap15;
+#[doc = "MATCH15 (rw) register accessor: an alias for `Reg<MATCH15_SPEC>`"]
+pub type MATCH15 = crate::Reg<match15::MATCH15_SPEC>;
+#[doc = "SCT match value register of match channels."]
+pub mod match15;
+#[doc = "CAPCTRL0 (rw) register accessor: an alias for `Reg<CAPCTRL0_SPEC>`"]
+pub type CAPCTRL0 = crate::Reg<capctrl0::CAPCTRL0_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl0;
+#[doc = "MATCHREL0 (rw) register accessor: an alias for `Reg<MATCHREL0_SPEC>`"]
+pub type MATCHREL0 = crate::Reg<matchrel0::MATCHREL0_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel0;
+#[doc = "CAPCTRL1 (rw) register accessor: an alias for `Reg<CAPCTRL1_SPEC>`"]
+pub type CAPCTRL1 = crate::Reg<capctrl1::CAPCTRL1_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl1;
+#[doc = "MATCHREL1 (rw) register accessor: an alias for `Reg<MATCHREL1_SPEC>`"]
+pub type MATCHREL1 = crate::Reg<matchrel1::MATCHREL1_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel1;
+#[doc = "CAPCTRL2 (rw) register accessor: an alias for `Reg<CAPCTRL2_SPEC>`"]
+pub type CAPCTRL2 = crate::Reg<capctrl2::CAPCTRL2_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl2;
+#[doc = "MATCHREL2 (rw) register accessor: an alias for `Reg<MATCHREL2_SPEC>`"]
+pub type MATCHREL2 = crate::Reg<matchrel2::MATCHREL2_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel2;
+#[doc = "CAPCTRL3 (rw) register accessor: an alias for `Reg<CAPCTRL3_SPEC>`"]
+pub type CAPCTRL3 = crate::Reg<capctrl3::CAPCTRL3_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl3;
+#[doc = "MATCHREL3 (rw) register accessor: an alias for `Reg<MATCHREL3_SPEC>`"]
+pub type MATCHREL3 = crate::Reg<matchrel3::MATCHREL3_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel3;
+#[doc = "CAPCTRL4 (rw) register accessor: an alias for `Reg<CAPCTRL4_SPEC>`"]
+pub type CAPCTRL4 = crate::Reg<capctrl4::CAPCTRL4_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl4;
+#[doc = "MATCHREL4 (rw) register accessor: an alias for `Reg<MATCHREL4_SPEC>`"]
+pub type MATCHREL4 = crate::Reg<matchrel4::MATCHREL4_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel4;
+#[doc = "CAPCTRL5 (rw) register accessor: an alias for `Reg<CAPCTRL5_SPEC>`"]
+pub type CAPCTRL5 = crate::Reg<capctrl5::CAPCTRL5_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl5;
+#[doc = "MATCHREL5 (rw) register accessor: an alias for `Reg<MATCHREL5_SPEC>`"]
+pub type MATCHREL5 = crate::Reg<matchrel5::MATCHREL5_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel5;
+#[doc = "CAPCTRL6 (rw) register accessor: an alias for `Reg<CAPCTRL6_SPEC>`"]
+pub type CAPCTRL6 = crate::Reg<capctrl6::CAPCTRL6_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl6;
+#[doc = "MATCHREL6 (rw) register accessor: an alias for `Reg<MATCHREL6_SPEC>`"]
+pub type MATCHREL6 = crate::Reg<matchrel6::MATCHREL6_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel6;
+#[doc = "CAPCTRL7 (rw) register accessor: an alias for `Reg<CAPCTRL7_SPEC>`"]
+pub type CAPCTRL7 = crate::Reg<capctrl7::CAPCTRL7_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl7;
+#[doc = "MATCHREL7 (rw) register accessor: an alias for `Reg<MATCHREL7_SPEC>`"]
+pub type MATCHREL7 = crate::Reg<matchrel7::MATCHREL7_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel7;
+#[doc = "CAPCTRL8 (rw) register accessor: an alias for `Reg<CAPCTRL8_SPEC>`"]
+pub type CAPCTRL8 = crate::Reg<capctrl8::CAPCTRL8_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl8;
+#[doc = "MATCHREL8 (rw) register accessor: an alias for `Reg<MATCHREL8_SPEC>`"]
+pub type MATCHREL8 = crate::Reg<matchrel8::MATCHREL8_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel8;
+#[doc = "CAPCTRL9 (rw) register accessor: an alias for `Reg<CAPCTRL9_SPEC>`"]
+pub type CAPCTRL9 = crate::Reg<capctrl9::CAPCTRL9_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl9;
+#[doc = "MATCHREL9 (rw) register accessor: an alias for `Reg<MATCHREL9_SPEC>`"]
+pub type MATCHREL9 = crate::Reg<matchrel9::MATCHREL9_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel9;
+#[doc = "CAPCTRL10 (rw) register accessor: an alias for `Reg<CAPCTRL10_SPEC>`"]
+pub type CAPCTRL10 = crate::Reg<capctrl10::CAPCTRL10_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl10;
+#[doc = "MATCHREL10 (rw) register accessor: an alias for `Reg<MATCHREL10_SPEC>`"]
+pub type MATCHREL10 = crate::Reg<matchrel10::MATCHREL10_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel10;
+#[doc = "CAPCTRL11 (rw) register accessor: an alias for `Reg<CAPCTRL11_SPEC>`"]
+pub type CAPCTRL11 = crate::Reg<capctrl11::CAPCTRL11_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl11;
+#[doc = "MATCHREL11 (rw) register accessor: an alias for `Reg<MATCHREL11_SPEC>`"]
+pub type MATCHREL11 = crate::Reg<matchrel11::MATCHREL11_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel11;
+#[doc = "CAPCTRL12 (rw) register accessor: an alias for `Reg<CAPCTRL12_SPEC>`"]
+pub type CAPCTRL12 = crate::Reg<capctrl12::CAPCTRL12_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl12;
+#[doc = "MATCHREL12 (rw) register accessor: an alias for `Reg<MATCHREL12_SPEC>`"]
+pub type MATCHREL12 = crate::Reg<matchrel12::MATCHREL12_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel12;
+#[doc = "CAPCTRL13 (rw) register accessor: an alias for `Reg<CAPCTRL13_SPEC>`"]
+pub type CAPCTRL13 = crate::Reg<capctrl13::CAPCTRL13_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl13;
+#[doc = "MATCHREL13 (rw) register accessor: an alias for `Reg<MATCHREL13_SPEC>`"]
+pub type MATCHREL13 = crate::Reg<matchrel13::MATCHREL13_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel13;
+#[doc = "CAPCTRL14 (rw) register accessor: an alias for `Reg<CAPCTRL14_SPEC>`"]
+pub type CAPCTRL14 = crate::Reg<capctrl14::CAPCTRL14_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl14;
+#[doc = "MATCHREL14 (rw) register accessor: an alias for `Reg<MATCHREL14_SPEC>`"]
+pub type MATCHREL14 = crate::Reg<matchrel14::MATCHREL14_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel14;
+#[doc = "CAPCTRL15 (rw) register accessor: an alias for `Reg<CAPCTRL15_SPEC>`"]
+pub type CAPCTRL15 = crate::Reg<capctrl15::CAPCTRL15_SPEC>;
+#[doc = "SCT capture control register."]
+pub mod capctrl15;
+#[doc = "MATCHREL15 (rw) register accessor: an alias for `Reg<MATCHREL15_SPEC>`"]
+pub type MATCHREL15 = crate::Reg<matchrel15::MATCHREL15_SPEC>;
+#[doc = "SCT match reload value register."]
+pub mod matchrel15;
+#[doc = "no description available."]
 pub use ev::EV;
 #[doc = r"Cluster"]
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod ev;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub use out::OUT;
 #[doc = r"Cluster"]
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod out;

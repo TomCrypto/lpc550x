@@ -34,9 +34,9 @@ impl From<crate::W<CFG1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `MAINENABLE` reader - Main enable for I 2S function in this Flexcomm"]
+#[doc = "Field `MAINENABLE` reader - Main enable for I 2S function in this Flexcomm."]
 pub type MAINENABLE_R = crate::BitReader<MAINENABLE_A>;
-#[doc = "Main enable for I 2S function in this Flexcomm\n\nValue on reset: 0"]
+#[doc = "Main enable for I 2S function in this Flexcomm.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum MAINENABLE_A {
     #[doc = "0: All I 2S channel pairs in this Flexcomm are disabled and the internal state machines, counters, and flags are reset. No other channel pairs can be enabled."]
@@ -70,7 +70,7 @@ impl MAINENABLE_R {
         *self == MAINENABLE_A::ENABLED
     }
 }
-#[doc = "Field `MAINENABLE` writer - Main enable for I 2S function in this Flexcomm"]
+#[doc = "Field `MAINENABLE` writer - Main enable for I 2S function in this Flexcomm."]
 pub type MAINENABLE_W<'a, const O: u8> = crate::BitWriter<'a, u32, CFG1_SPEC, MAINENABLE_A, O>;
 impl<'a, const O: u8> MAINENABLE_W<'a, O> {
     #[doc = "All I 2S channel pairs in this Flexcomm are disabled and the internal state machines, counters, and flags are reset. No other channel pairs can be enabled."]
@@ -140,13 +140,13 @@ pub type PAIRCOUNT_R = crate::FieldReader<u8, PAIRCOUNT_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PAIRCOUNT_A {
-    #[doc = "0: 1 I2S channel pairs in this flexcomm"]
+    #[doc = "0: 1 I2S channel pairs in this flexcomm."]
     PAIRS_1 = 0,
-    #[doc = "1: 2 I2S channel pairs in this flexcomm"]
+    #[doc = "1: 2 I2S channel pairs in this flexcomm."]
     PAIRS_2 = 1,
-    #[doc = "2: 3 I2S channel pairs in this flexcomm"]
+    #[doc = "2: 3 I2S channel pairs in this flexcomm."]
     PAIRS_3 = 2,
-    #[doc = "3: 4 I2S channel pairs in this flexcomm"]
+    #[doc = "3: 4 I2S channel pairs in this flexcomm."]
     PAIRS_4 = 3,
 }
 impl From<PAIRCOUNT_A> for u8 {
@@ -192,22 +192,22 @@ impl PAIRCOUNT_R {
 pub type PAIRCOUNT_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, CFG1_SPEC, u8, PAIRCOUNT_A, 2, O>;
 impl<'a, const O: u8> PAIRCOUNT_W<'a, O> {
-    #[doc = "1 I2S channel pairs in this flexcomm"]
+    #[doc = "1 I2S channel pairs in this flexcomm."]
     #[inline(always)]
     pub fn pairs_1(self) -> &'a mut W {
         self.variant(PAIRCOUNT_A::PAIRS_1)
     }
-    #[doc = "2 I2S channel pairs in this flexcomm"]
+    #[doc = "2 I2S channel pairs in this flexcomm."]
     #[inline(always)]
     pub fn pairs_2(self) -> &'a mut W {
         self.variant(PAIRCOUNT_A::PAIRS_2)
     }
-    #[doc = "3 I2S channel pairs in this flexcomm"]
+    #[doc = "3 I2S channel pairs in this flexcomm."]
     #[inline(always)]
     pub fn pairs_3(self) -> &'a mut W {
         self.variant(PAIRCOUNT_A::PAIRS_3)
     }
-    #[doc = "4 I2S channel pairs in this flexcomm"]
+    #[doc = "4 I2S channel pairs in this flexcomm."]
     #[inline(always)]
     pub fn pairs_4(self) -> &'a mut W {
         self.variant(PAIRCOUNT_A::PAIRS_4)
@@ -620,12 +620,12 @@ impl<'a, const O: u8> WS_POL_W<'a, O> {
         self.variant(WS_POL_A::INVERTED)
     }
 }
-#[doc = "Field `DATALEN` reader - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length"]
+#[doc = "Field `DATALEN` reader - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length."]
 pub type DATALEN_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `DATALEN` writer - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length"]
+#[doc = "Field `DATALEN` writer - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length."]
 pub type DATALEN_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CFG1_SPEC, u8, u8, 5, O>;
 impl R {
-    #[doc = "Bit 0 - Main enable for I 2S function in this Flexcomm"]
+    #[doc = "Bit 0 - Main enable for I 2S function in this Flexcomm."]
     #[inline(always)]
     pub fn mainenable(&self) -> MAINENABLE_R {
         MAINENABLE_R::new((self.bits & 1) != 0)
@@ -675,14 +675,14 @@ impl R {
     pub fn ws_pol(&self) -> WS_POL_R {
         WS_POL_R::new(((self.bits >> 13) & 1) != 0)
     }
-    #[doc = "Bits 16:20 - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length"]
+    #[doc = "Bits 16:20 - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length."]
     #[inline(always)]
     pub fn datalen(&self) -> DATALEN_R {
         DATALEN_R::new(((self.bits >> 16) & 0x1f) as u8)
     }
 }
 impl W {
-    #[doc = "Bit 0 - Main enable for I 2S function in this Flexcomm"]
+    #[doc = "Bit 0 - Main enable for I 2S function in this Flexcomm."]
     #[inline(always)]
     pub fn mainenable(&mut self) -> MAINENABLE_W<0> {
         MAINENABLE_W::new(self)
@@ -732,7 +732,7 @@ impl W {
     pub fn ws_pol(&mut self) -> WS_POL_W<13> {
         WS_POL_W::new(self)
     }
-    #[doc = "Bits 16:20 - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length"]
+    #[doc = "Bits 16:20 - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length."]
     #[inline(always)]
     pub fn datalen(&mut self) -> DATALEN_W<16> {
         DATALEN_W::new(self)

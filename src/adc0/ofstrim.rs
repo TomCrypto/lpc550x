@@ -34,33 +34,33 @@ impl From<crate::W<OFSTRIM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `OFSTRIM_A` reader - Trim for offset"]
+#[doc = "Field `OFSTRIM_A` reader - Trim for offset."]
 pub type OFSTRIM_A_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `OFSTRIM_A` writer - Trim for offset"]
+#[doc = "Field `OFSTRIM_A` writer - Trim for offset."]
 pub type OFSTRIM_A_W<'a, const O: u8> = crate::FieldWriter<'a, u32, OFSTRIM_SPEC, u8, u8, 5, O>;
-#[doc = "Field `OFSTRIM_B` reader - Trim for offset"]
+#[doc = "Field `OFSTRIM_B` reader - Trim for offset."]
 pub type OFSTRIM_B_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `OFSTRIM_B` writer - Trim for offset"]
+#[doc = "Field `OFSTRIM_B` writer - Trim for offset."]
 pub type OFSTRIM_B_W<'a, const O: u8> = crate::FieldWriter<'a, u32, OFSTRIM_SPEC, u8, u8, 5, O>;
 impl R {
-    #[doc = "Bits 0:4 - Trim for offset"]
+    #[doc = "Bits 0:4 - Trim for offset."]
     #[inline(always)]
     pub fn ofstrim_a(&self) -> OFSTRIM_A_R {
         OFSTRIM_A_R::new((self.bits & 0x1f) as u8)
     }
-    #[doc = "Bits 16:20 - Trim for offset"]
+    #[doc = "Bits 16:20 - Trim for offset."]
     #[inline(always)]
     pub fn ofstrim_b(&self) -> OFSTRIM_B_R {
         OFSTRIM_B_R::new(((self.bits >> 16) & 0x1f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:4 - Trim for offset"]
+    #[doc = "Bits 0:4 - Trim for offset."]
     #[inline(always)]
     pub fn ofstrim_a(&mut self) -> OFSTRIM_A_W<0> {
         OFSTRIM_A_W::new(self)
     }
-    #[doc = "Bits 16:20 - Trim for offset"]
+    #[doc = "Bits 16:20 - Trim for offset."]
     #[inline(always)]
     pub fn ofstrim_b(&mut self) -> OFSTRIM_B_W<16> {
         OFSTRIM_B_W::new(self)
@@ -72,7 +72,7 @@ impl W {
         self
     }
 }
-#[doc = "ADC Offset Trim Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ofstrim](index.html) module"]
+#[doc = "ADC Offset Trim Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ofstrim](index.html) module"]
 pub struct OFSTRIM_SPEC;
 impl crate::RegisterSpec for OFSTRIM_SPEC {
     type Ux = u32;

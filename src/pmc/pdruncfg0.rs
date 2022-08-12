@@ -238,9 +238,9 @@ impl<'a, const O: u8> PDEN_XTAL32M_W<'a, O> {
         self.variant(PDEN_XTAL32M_A::POWEREDOFF)
     }
 }
-#[doc = "Field `PDEN_PLL0` reader - Controls power to System PLL (also refered as PLL0)."]
+#[doc = "Field `PDEN_PLL0` reader - Controls power to PLL0."]
 pub type PDEN_PLL0_R = crate::BitReader<PDEN_PLL0_A>;
-#[doc = "Controls power to System PLL (also refered as PLL0).\n\nValue on reset: 1"]
+#[doc = "Controls power to PLL0.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PDEN_PLL0_A {
     #[doc = "0: PLL0 is powered."]
@@ -274,7 +274,7 @@ impl PDEN_PLL0_R {
         *self == PDEN_PLL0_A::POWEREDOFF
     }
 }
-#[doc = "Field `PDEN_PLL0` writer - Controls power to System PLL (also refered as PLL0)."]
+#[doc = "Field `PDEN_PLL0` writer - Controls power to PLL0."]
 pub type PDEN_PLL0_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDRUNCFG0_SPEC, PDEN_PLL0_A, O>;
 impl<'a, const O: u8> PDEN_PLL0_W<'a, O> {
     #[doc = "PLL0 is powered."]
@@ -540,9 +540,9 @@ impl<'a, const O: u8> PDEN_RNG_W<'a, O> {
         self.variant(PDEN_RNG_A::POWEREDOFF)
     }
 }
-#[doc = "Field `PDEN_PLL0_SSCG` reader - Controls power to System PLL (PLL0) Spread Spectrum module."]
+#[doc = "Field `PDEN_PLL0_SSCG` reader - Controls power to PLL0 Spread Spectrum module."]
 pub type PDEN_PLL0_SSCG_R = crate::BitReader<PDEN_PLL0_SSCG_A>;
-#[doc = "Controls power to System PLL (PLL0) Spread Spectrum module.\n\nValue on reset: 1"]
+#[doc = "Controls power to PLL0 Spread Spectrum module.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PDEN_PLL0_SSCG_A {
     #[doc = "0: PLL0 Sread spectrum module is powered."]
@@ -576,7 +576,7 @@ impl PDEN_PLL0_SSCG_R {
         *self == PDEN_PLL0_SSCG_A::POWEREDOFF
     }
 }
-#[doc = "Field `PDEN_PLL0_SSCG` writer - Controls power to System PLL (PLL0) Spread Spectrum module."]
+#[doc = "Field `PDEN_PLL0_SSCG` writer - Controls power to PLL0 Spread Spectrum module."]
 pub type PDEN_PLL0_SSCG_W<'a, const O: u8> =
     crate::BitWriter<'a, u32, PDRUNCFG0_SPEC, PDEN_PLL0_SSCG_A, O>;
 impl<'a, const O: u8> PDEN_PLL0_SSCG_W<'a, O> {
@@ -612,7 +612,7 @@ impl R {
     pub fn pden_xtal32m(&self) -> PDEN_XTAL32M_R {
         PDEN_XTAL32M_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bit 9 - Controls power to System PLL (also refered as PLL0)."]
+    #[doc = "Bit 9 - Controls power to PLL0."]
     #[inline(always)]
     pub fn pden_pll0(&self) -> PDEN_PLL0_R {
         PDEN_PLL0_R::new(((self.bits >> 9) & 1) != 0)
@@ -642,7 +642,7 @@ impl R {
     pub fn pden_rng(&self) -> PDEN_RNG_R {
         PDEN_RNG_R::new(((self.bits >> 22) & 1) != 0)
     }
-    #[doc = "Bit 23 - Controls power to System PLL (PLL0) Spread Spectrum module."]
+    #[doc = "Bit 23 - Controls power to PLL0 Spread Spectrum module."]
     #[inline(always)]
     pub fn pden_pll0_sscg(&self) -> PDEN_PLL0_SSCG_R {
         PDEN_PLL0_SSCG_R::new(((self.bits >> 23) & 1) != 0)
@@ -669,7 +669,7 @@ impl W {
     pub fn pden_xtal32m(&mut self) -> PDEN_XTAL32M_W<8> {
         PDEN_XTAL32M_W::new(self)
     }
-    #[doc = "Bit 9 - Controls power to System PLL (also refered as PLL0)."]
+    #[doc = "Bit 9 - Controls power to PLL0."]
     #[inline(always)]
     pub fn pden_pll0(&mut self) -> PDEN_PLL0_W<9> {
         PDEN_PLL0_W::new(self)
@@ -699,7 +699,7 @@ impl W {
     pub fn pden_rng(&mut self) -> PDEN_RNG_W<22> {
         PDEN_RNG_W::new(self)
     }
-    #[doc = "Bit 23 - Controls power to System PLL (PLL0) Spread Spectrum module."]
+    #[doc = "Bit 23 - Controls power to PLL0 Spread Spectrum module."]
     #[inline(always)]
     pub fn pden_pll0_sscg(&mut self) -> PDEN_PLL0_SSCG_W<23> {
         PDEN_PLL0_SSCG_W::new(self)

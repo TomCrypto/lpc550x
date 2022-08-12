@@ -183,13 +183,13 @@ impl<'a, const O: u8> FILTER_CLKSEL_W<'a, O> {
         self.variant(FILTER_CLKSEL_A::OTHER_CLOCK)
     }
 }
-#[doc = "Field `LATCH_ENABLE` reader - latch the interrupt , then can be cleared with next bit INTR_CLEAR"]
+#[doc = "Field `LATCH_ENABLE` reader - latch the interrupt , then can be cleared with next bit INTR_CLEAR."]
 pub type LATCH_ENABLE_R = crate::BitReader<bool>;
-#[doc = "Field `LATCH_ENABLE` writer - latch the interrupt , then can be cleared with next bit INTR_CLEAR"]
+#[doc = "Field `LATCH_ENABLE` writer - latch the interrupt , then can be cleared with next bit INTR_CLEAR."]
 pub type LATCH_ENABLE_W<'a, const O: u8> = crate::BitWriter<'a, u32, WAKEINT_CTRL_SPEC, bool, O>;
-#[doc = "Field `INTR_CLEAR` reader - Write to clear wakeint_latched"]
+#[doc = "Field `INTR_CLEAR` reader - Write to clear wakeint_latched."]
 pub type INTR_CLEAR_R = crate::BitReader<bool>;
-#[doc = "Field `INTR_CLEAR` writer - Write to clear wakeint_latched"]
+#[doc = "Field `INTR_CLEAR` writer - Write to clear wakeint_latched."]
 pub type INTR_CLEAR_W<'a, const O: u8> = crate::BitWriter1C<'a, u32, WAKEINT_CTRL_SPEC, bool, O>;
 impl R {
     #[doc = "Bits 0:7 - Interrupt mask (which of the 8 PLU Outputs contribute to interrupt)"]
@@ -207,12 +207,12 @@ impl R {
     pub fn filter_clksel(&self) -> FILTER_CLKSEL_R {
         FILTER_CLKSEL_R::new(((self.bits >> 10) & 3) as u8)
     }
-    #[doc = "Bit 12 - latch the interrupt , then can be cleared with next bit INTR_CLEAR"]
+    #[doc = "Bit 12 - latch the interrupt , then can be cleared with next bit INTR_CLEAR."]
     #[inline(always)]
     pub fn latch_enable(&self) -> LATCH_ENABLE_R {
         LATCH_ENABLE_R::new(((self.bits >> 12) & 1) != 0)
     }
-    #[doc = "Bit 13 - Write to clear wakeint_latched"]
+    #[doc = "Bit 13 - Write to clear wakeint_latched."]
     #[inline(always)]
     pub fn intr_clear(&self) -> INTR_CLEAR_R {
         INTR_CLEAR_R::new(((self.bits >> 13) & 1) != 0)
@@ -234,12 +234,12 @@ impl W {
     pub fn filter_clksel(&mut self) -> FILTER_CLKSEL_W<10> {
         FILTER_CLKSEL_W::new(self)
     }
-    #[doc = "Bit 12 - latch the interrupt , then can be cleared with next bit INTR_CLEAR"]
+    #[doc = "Bit 12 - latch the interrupt , then can be cleared with next bit INTR_CLEAR."]
     #[inline(always)]
     pub fn latch_enable(&mut self) -> LATCH_ENABLE_W<12> {
         LATCH_ENABLE_W::new(self)
     }
-    #[doc = "Bit 13 - Write to clear wakeint_latched"]
+    #[doc = "Bit 13 - Write to clear wakeint_latched."]
     #[inline(always)]
     pub fn intr_clear(&mut self) -> INTR_CLEAR_W<13> {
         INTR_CLEAR_W::new(self)
@@ -251,7 +251,7 @@ impl W {
         self
     }
 }
-#[doc = "Wakeup interrupt control for PLU\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wakeint_ctrl](index.html) module"]
+#[doc = "Wakeup interrupt control for PLU.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wakeint_ctrl](index.html) module"]
 pub struct WAKEINT_CTRL_SPEC;
 impl crate::RegisterSpec for WAKEINT_CTRL_SPEC {
     type Ux = u32;

@@ -192,7 +192,7 @@ impl W {
         self
     }
 }
-#[doc = "FRO_HF (96MHz) clock divider\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [frohfdiv](index.html) module"]
+#[doc = "FRO_HF (96MHz) clock divider.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [frohfdiv](index.html) module"]
 pub struct FROHFDIV_SPEC;
 impl crate::RegisterSpec for FROHFDIV_SPEC {
     type Ux = u32;

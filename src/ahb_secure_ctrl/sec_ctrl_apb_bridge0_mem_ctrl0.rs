@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SYSCON_RULE` reader - System Configuration"]
+#[doc = "Field `SYSCON_RULE` reader - System Configuration."]
 pub type SYSCON_RULE_R = crate::FieldReader<u8, SYSCON_RULE_A>;
-#[doc = "System Configuration\n\nValue on reset: 0"]
+#[doc = "System Configuration.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum SYSCON_RULE_A {
@@ -88,7 +88,7 @@ impl SYSCON_RULE_R {
         *self == SYSCON_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `SYSCON_RULE` writer - System Configuration"]
+#[doc = "Field `SYSCON_RULE` writer - System Configuration."]
 pub type SYSCON_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, SYSCON_RULE_A, 2, O>;
 impl<'a, const O: u8> SYSCON_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> SYSCON_RULE_W<'a, O> {
         self.variant(SYSCON_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `IOCON_RULE` reader - I/O Configuration"]
+#[doc = "Field `IOCON_RULE` reader - I/O Configuration."]
 pub type IOCON_RULE_R = crate::FieldReader<u8, IOCON_RULE_A>;
-#[doc = "I/O Configuration\n\nValue on reset: 0"]
+#[doc = "I/O Configuration.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum IOCON_RULE_A {
@@ -167,7 +167,7 @@ impl IOCON_RULE_R {
         *self == IOCON_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `IOCON_RULE` writer - I/O Configuration"]
+#[doc = "Field `IOCON_RULE` writer - I/O Configuration."]
 pub type IOCON_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, IOCON_RULE_A, 2, O>;
 impl<'a, const O: u8> IOCON_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> IOCON_RULE_W<'a, O> {
         self.variant(IOCON_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `GINT0_RULE` reader - GPIO input Interrupt 0"]
+#[doc = "Field `GINT0_RULE` reader - GPIO input Interrupt 0."]
 pub type GINT0_RULE_R = crate::FieldReader<u8, GINT0_RULE_A>;
-#[doc = "GPIO input Interrupt 0\n\nValue on reset: 0"]
+#[doc = "GPIO input Interrupt 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum GINT0_RULE_A {
@@ -246,7 +246,7 @@ impl GINT0_RULE_R {
         *self == GINT0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `GINT0_RULE` writer - GPIO input Interrupt 0"]
+#[doc = "Field `GINT0_RULE` writer - GPIO input Interrupt 0."]
 pub type GINT0_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, GINT0_RULE_A, 2, O>;
 impl<'a, const O: u8> GINT0_RULE_W<'a, O> {
@@ -271,9 +271,9 @@ impl<'a, const O: u8> GINT0_RULE_W<'a, O> {
         self.variant(GINT0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `GINT1_RULE` reader - GPIO input Interrupt 1"]
+#[doc = "Field `GINT1_RULE` reader - GPIO input Interrupt 1."]
 pub type GINT1_RULE_R = crate::FieldReader<u8, GINT1_RULE_A>;
-#[doc = "GPIO input Interrupt 1\n\nValue on reset: 0"]
+#[doc = "GPIO input Interrupt 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum GINT1_RULE_A {
@@ -325,7 +325,7 @@ impl GINT1_RULE_R {
         *self == GINT1_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `GINT1_RULE` writer - GPIO input Interrupt 1"]
+#[doc = "Field `GINT1_RULE` writer - GPIO input Interrupt 1."]
 pub type GINT1_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, GINT1_RULE_A, 2, O>;
 impl<'a, const O: u8> GINT1_RULE_W<'a, O> {
@@ -350,9 +350,9 @@ impl<'a, const O: u8> GINT1_RULE_W<'a, O> {
         self.variant(GINT1_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `PINT_RULE` reader - Pin Interrupt and Pattern match"]
+#[doc = "Field `PINT_RULE` reader - Pin Interrupt and Pattern match."]
 pub type PINT_RULE_R = crate::FieldReader<u8, PINT_RULE_A>;
-#[doc = "Pin Interrupt and Pattern match\n\nValue on reset: 0"]
+#[doc = "Pin Interrupt and Pattern match.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PINT_RULE_A {
@@ -404,7 +404,7 @@ impl PINT_RULE_R {
         *self == PINT_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `PINT_RULE` writer - Pin Interrupt and Pattern match"]
+#[doc = "Field `PINT_RULE` writer - Pin Interrupt and Pattern match."]
 pub type PINT_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, PINT_RULE_A, 2, O>;
 impl<'a, const O: u8> PINT_RULE_W<'a, O> {
@@ -429,9 +429,9 @@ impl<'a, const O: u8> PINT_RULE_W<'a, O> {
         self.variant(PINT_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `SEC_PINT_RULE` reader - Secure Pin Interrupt and Pattern match"]
+#[doc = "Field `SEC_PINT_RULE` reader - Secure Pin Interrupt and Pattern match."]
 pub type SEC_PINT_RULE_R = crate::FieldReader<u8, SEC_PINT_RULE_A>;
-#[doc = "Secure Pin Interrupt and Pattern match\n\nValue on reset: 0"]
+#[doc = "Secure Pin Interrupt and Pattern match.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum SEC_PINT_RULE_A {
@@ -483,7 +483,7 @@ impl SEC_PINT_RULE_R {
         *self == SEC_PINT_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `SEC_PINT_RULE` writer - Secure Pin Interrupt and Pattern match"]
+#[doc = "Field `SEC_PINT_RULE` writer - Secure Pin Interrupt and Pattern match."]
 pub type SEC_PINT_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, SEC_PINT_RULE_A, 2, O>;
 impl<'a, const O: u8> SEC_PINT_RULE_W<'a, O> {
@@ -508,9 +508,9 @@ impl<'a, const O: u8> SEC_PINT_RULE_W<'a, O> {
         self.variant(SEC_PINT_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `INPUTMUX_RULE` reader - Peripheral input multiplexing"]
+#[doc = "Field `INPUTMUX_RULE` reader - Peripheral input multiplexing."]
 pub type INPUTMUX_RULE_R = crate::FieldReader<u8, INPUTMUX_RULE_A>;
-#[doc = "Peripheral input multiplexing\n\nValue on reset: 0"]
+#[doc = "Peripheral input multiplexing.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum INPUTMUX_RULE_A {
@@ -562,7 +562,7 @@ impl INPUTMUX_RULE_R {
         *self == INPUTMUX_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `INPUTMUX_RULE` writer - Peripheral input multiplexing"]
+#[doc = "Field `INPUTMUX_RULE` writer - Peripheral input multiplexing."]
 pub type INPUTMUX_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC, u8, INPUTMUX_RULE_A, 2, O>;
 impl<'a, const O: u8> INPUTMUX_RULE_W<'a, O> {
@@ -588,74 +588,74 @@ impl<'a, const O: u8> INPUTMUX_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - System Configuration"]
+    #[doc = "Bits 0:1 - System Configuration."]
     #[inline(always)]
     pub fn syscon_rule(&self) -> SYSCON_RULE_R {
         SYSCON_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - I/O Configuration"]
+    #[doc = "Bits 4:5 - I/O Configuration."]
     #[inline(always)]
     pub fn iocon_rule(&self) -> IOCON_RULE_R {
         IOCON_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 8:9 - GPIO input Interrupt 0"]
+    #[doc = "Bits 8:9 - GPIO input Interrupt 0."]
     #[inline(always)]
     pub fn gint0_rule(&self) -> GINT0_RULE_R {
         GINT0_RULE_R::new(((self.bits >> 8) & 3) as u8)
     }
-    #[doc = "Bits 12:13 - GPIO input Interrupt 1"]
+    #[doc = "Bits 12:13 - GPIO input Interrupt 1."]
     #[inline(always)]
     pub fn gint1_rule(&self) -> GINT1_RULE_R {
         GINT1_RULE_R::new(((self.bits >> 12) & 3) as u8)
     }
-    #[doc = "Bits 16:17 - Pin Interrupt and Pattern match"]
+    #[doc = "Bits 16:17 - Pin Interrupt and Pattern match."]
     #[inline(always)]
     pub fn pint_rule(&self) -> PINT_RULE_R {
         PINT_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - Secure Pin Interrupt and Pattern match"]
+    #[doc = "Bits 20:21 - Secure Pin Interrupt and Pattern match."]
     #[inline(always)]
     pub fn sec_pint_rule(&self) -> SEC_PINT_RULE_R {
         SEC_PINT_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
-    #[doc = "Bits 24:25 - Peripheral input multiplexing"]
+    #[doc = "Bits 24:25 - Peripheral input multiplexing."]
     #[inline(always)]
     pub fn inputmux_rule(&self) -> INPUTMUX_RULE_R {
         INPUTMUX_RULE_R::new(((self.bits >> 24) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - System Configuration"]
+    #[doc = "Bits 0:1 - System Configuration."]
     #[inline(always)]
     pub fn syscon_rule(&mut self) -> SYSCON_RULE_W<0> {
         SYSCON_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - I/O Configuration"]
+    #[doc = "Bits 4:5 - I/O Configuration."]
     #[inline(always)]
     pub fn iocon_rule(&mut self) -> IOCON_RULE_W<4> {
         IOCON_RULE_W::new(self)
     }
-    #[doc = "Bits 8:9 - GPIO input Interrupt 0"]
+    #[doc = "Bits 8:9 - GPIO input Interrupt 0."]
     #[inline(always)]
     pub fn gint0_rule(&mut self) -> GINT0_RULE_W<8> {
         GINT0_RULE_W::new(self)
     }
-    #[doc = "Bits 12:13 - GPIO input Interrupt 1"]
+    #[doc = "Bits 12:13 - GPIO input Interrupt 1."]
     #[inline(always)]
     pub fn gint1_rule(&mut self) -> GINT1_RULE_W<12> {
         GINT1_RULE_W::new(self)
     }
-    #[doc = "Bits 16:17 - Pin Interrupt and Pattern match"]
+    #[doc = "Bits 16:17 - Pin Interrupt and Pattern match."]
     #[inline(always)]
     pub fn pint_rule(&mut self) -> PINT_RULE_W<16> {
         PINT_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - Secure Pin Interrupt and Pattern match"]
+    #[doc = "Bits 20:21 - Secure Pin Interrupt and Pattern match."]
     #[inline(always)]
     pub fn sec_pint_rule(&mut self) -> SEC_PINT_RULE_W<20> {
         SEC_PINT_RULE_W::new(self)
     }
-    #[doc = "Bits 24:25 - Peripheral input multiplexing"]
+    #[doc = "Bits 24:25 - Peripheral input multiplexing."]
     #[inline(always)]
     pub fn inputmux_rule(&mut self) -> INPUTMUX_RULE_W<24> {
         INPUTMUX_RULE_W::new(self)

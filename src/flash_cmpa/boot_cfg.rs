@@ -40,17 +40,17 @@ pub type DEFAULT_ISP_MODE_R = crate::FieldReader<u8, DEFAULT_ISP_MODE_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum DEFAULT_ISP_MODE_A {
-    #[doc = "0: Auto ISP"]
+    #[doc = "0: Auto ISP."]
     AUTO_ISP = 0,
-    #[doc = "1: USB_HID_ISP"]
+    #[doc = "1: USB_HID_ISP."]
     USB_HID_ISP = 1,
-    #[doc = "2: UART ISP"]
+    #[doc = "2: UART ISP."]
     UART_ISP = 2,
-    #[doc = "3: SPI Slave ISP"]
+    #[doc = "3: SPI Slave ISP."]
     SPI_ISP = 3,
-    #[doc = "4: I2C Slave ISP"]
+    #[doc = "4: I2C Slave ISP."]
     I2C_ISP = 4,
-    #[doc = "7: Disable ISP fall through"]
+    #[doc = "7: Disable ISP fall through."]
     DISABLE = 7,
 }
 impl From<DEFAULT_ISP_MODE_A> for u8 {
@@ -108,32 +108,32 @@ impl DEFAULT_ISP_MODE_R {
 pub type DEFAULT_ISP_MODE_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, BOOT_CFG_SPEC, u8, DEFAULT_ISP_MODE_A, 3, O>;
 impl<'a, const O: u8> DEFAULT_ISP_MODE_W<'a, O> {
-    #[doc = "Auto ISP"]
+    #[doc = "Auto ISP."]
     #[inline(always)]
     pub fn auto_isp(self) -> &'a mut W {
         self.variant(DEFAULT_ISP_MODE_A::AUTO_ISP)
     }
-    #[doc = "USB_HID_ISP"]
+    #[doc = "USB_HID_ISP."]
     #[inline(always)]
     pub fn usb_hid_isp(self) -> &'a mut W {
         self.variant(DEFAULT_ISP_MODE_A::USB_HID_ISP)
     }
-    #[doc = "UART ISP"]
+    #[doc = "UART ISP."]
     #[inline(always)]
     pub fn uart_isp(self) -> &'a mut W {
         self.variant(DEFAULT_ISP_MODE_A::UART_ISP)
     }
-    #[doc = "SPI Slave ISP"]
+    #[doc = "SPI Slave ISP."]
     #[inline(always)]
     pub fn spi_isp(self) -> &'a mut W {
         self.variant(DEFAULT_ISP_MODE_A::SPI_ISP)
     }
-    #[doc = "I2C Slave ISP"]
+    #[doc = "I2C Slave ISP."]
     #[inline(always)]
     pub fn i2c_isp(self) -> &'a mut W {
         self.variant(DEFAULT_ISP_MODE_A::I2C_ISP)
     }
-    #[doc = "Disable ISP fall through"]
+    #[doc = "Disable ISP fall through."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(DEFAULT_ISP_MODE_A::DISABLE)
@@ -145,9 +145,9 @@ pub type BOOT_SPEED_R = crate::FieldReader<u8, BOOT_SPEED_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum BOOT_SPEED_A {
-    #[doc = "0: Defined by NMPA.SYSTEM_SPEED_CODE"]
+    #[doc = "0: Defined by NMPA.SYSTEM_SPEED_CODE."]
     VALUE_0 = 0,
-    #[doc = "2: 48MHz FRO"]
+    #[doc = "2: 48MHz FRO."]
     VALUE_2 = 2,
 }
 impl From<BOOT_SPEED_A> for u8 {
@@ -181,12 +181,12 @@ impl BOOT_SPEED_R {
 pub type BOOT_SPEED_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, BOOT_CFG_SPEC, u8, BOOT_SPEED_A, 2, O>;
 impl<'a, const O: u8> BOOT_SPEED_W<'a, O> {
-    #[doc = "Defined by NMPA.SYSTEM_SPEED_CODE"]
+    #[doc = "Defined by NMPA.SYSTEM_SPEED_CODE."]
     #[inline(always)]
     pub fn value_0(self) -> &'a mut W {
         self.variant(BOOT_SPEED_A::VALUE_0)
     }
-    #[doc = "48MHz FRO"]
+    #[doc = "48MHz FRO."]
     #[inline(always)]
     pub fn value_2(self) -> &'a mut W {
         self.variant(BOOT_SPEED_A::VALUE_2)
@@ -194,11 +194,11 @@ impl<'a, const O: u8> BOOT_SPEED_W<'a, O> {
 }
 #[doc = "Field `BOOT_FAILURE_PIN` reader - GPIO port and pin number to use for indicating failure reason. The toggle rate of the pin is used to decode the error type. \\[2:0\\]
 - Defines GPIO port \\[7:3\\]
-- Defines GPIO pin"]
+- Defines GPIO pin."]
 pub type BOOT_FAILURE_PIN_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `BOOT_FAILURE_PIN` writer - GPIO port and pin number to use for indicating failure reason. The toggle rate of the pin is used to decode the error type. \\[2:0\\]
 - Defines GPIO port \\[7:3\\]
-- Defines GPIO pin"]
+- Defines GPIO pin."]
 pub type BOOT_FAILURE_PIN_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, BOOT_CFG_SPEC, u8, u8, 8, O>;
 impl R {
@@ -214,7 +214,7 @@ impl R {
     }
     #[doc = "Bits 24:31 - GPIO port and pin number to use for indicating failure reason. The toggle rate of the pin is used to decode the error type. \\[2:0\\]
 - Defines GPIO port \\[7:3\\]
-- Defines GPIO pin"]
+- Defines GPIO pin."]
     #[inline(always)]
     pub fn boot_failure_pin(&self) -> BOOT_FAILURE_PIN_R {
         BOOT_FAILURE_PIN_R::new(((self.bits >> 24) & 0xff) as u8)
@@ -233,7 +233,7 @@ impl W {
     }
     #[doc = "Bits 24:31 - GPIO port and pin number to use for indicating failure reason. The toggle rate of the pin is used to decode the error type. \\[2:0\\]
 - Defines GPIO port \\[7:3\\]
-- Defines GPIO pin"]
+- Defines GPIO pin."]
     #[inline(always)]
     pub fn boot_failure_pin(&mut self) -> BOOT_FAILURE_PIN_W<24> {
         BOOT_FAILURE_PIN_W::new(self)
@@ -245,7 +245,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [boot_cfg](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [boot_cfg](index.html) module"]
 pub struct BOOT_CFG_SPEC;
 impl crate::RegisterSpec for BOOT_CFG_SPEC {
     type Ux = u32;

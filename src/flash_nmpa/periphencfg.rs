@@ -34,34 +34,34 @@ impl From<crate::W<PERIPHENCFG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `PERIPHERAL_CONFIGURATION` reader - no description available"]
+#[doc = "Field `PERIPHERAL_CONFIGURATION` reader - no description available."]
 pub type PERIPHERAL_CONFIGURATION_R = crate::FieldReader<u16, u16>;
-#[doc = "Field `PERIPHERAL_CONFIGURATION` writer - no description available"]
+#[doc = "Field `PERIPHERAL_CONFIGURATION` writer - no description available."]
 pub type PERIPHERAL_CONFIGURATION_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, PERIPHENCFG_SPEC, u16, u16, 16, O>;
-#[doc = "Field `CPU1_ENABLE` reader - no description available"]
+#[doc = "Field `CPU1_ENABLE` reader - no description available."]
 pub type CPU1_ENABLE_R = crate::BitReader<bool>;
-#[doc = "Field `CPU1_ENABLE` writer - no description available"]
+#[doc = "Field `CPU1_ENABLE` writer - no description available."]
 pub type CPU1_ENABLE_W<'a, const O: u8> = crate::BitWriter<'a, u32, PERIPHENCFG_SPEC, bool, O>;
 impl R {
-    #[doc = "Bits 0:15 - no description available"]
+    #[doc = "Bits 0:15 - no description available."]
     #[inline(always)]
     pub fn peripheral_configuration(&self) -> PERIPHERAL_CONFIGURATION_R {
         PERIPHERAL_CONFIGURATION_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bit 31 - no description available"]
+    #[doc = "Bit 31 - no description available."]
     #[inline(always)]
     pub fn cpu1_enable(&self) -> CPU1_ENABLE_R {
         CPU1_ENABLE_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bits 0:15 - no description available"]
+    #[doc = "Bits 0:15 - no description available."]
     #[inline(always)]
     pub fn peripheral_configuration(&mut self) -> PERIPHERAL_CONFIGURATION_W<0> {
         PERIPHERAL_CONFIGURATION_W::new(self)
     }
-    #[doc = "Bit 31 - no description available"]
+    #[doc = "Bit 31 - no description available."]
     #[inline(always)]
     pub fn cpu1_enable(&mut self) -> CPU1_ENABLE_W<31> {
         CPU1_ENABLE_W::new(self)
@@ -73,7 +73,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [periphencfg](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [periphencfg](index.html) module"]
 pub struct PERIPHENCFG_SPEC;
 impl crate::RegisterSpec for PERIPHENCFG_SPEC {
     type Ux = u32;

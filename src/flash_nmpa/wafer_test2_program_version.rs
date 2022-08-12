@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wafer_test2_program_version](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wafer_test2_program_version](index.html) module"]
 pub struct WAFER_TEST2_PROGRAM_VERSION_SPEC;
 impl crate::RegisterSpec for WAFER_TEST2_PROGRAM_VERSION_SPEC {
     type Ux = u32;

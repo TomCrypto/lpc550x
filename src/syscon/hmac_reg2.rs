@@ -34,20 +34,20 @@ impl From<crate::W<HMAC_REG2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `HMAC_REG2` reader - no description available"]
+#[doc = "Field `HMAC_REG2` reader - no description available."]
 pub type HMAC_REG2_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `HMAC_REG2` writer - no description available"]
+#[doc = "Field `HMAC_REG2` writer - no description available."]
 pub type HMAC_REG2_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, HMAC_REG2_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn hmac_reg2(&self) -> HMAC_REG2_R {
         HMAC_REG2_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn hmac_reg2(&mut self) -> HMAC_REG2_W<0> {
         HMAC_REG2_W::new(self)
@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "HMAC\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hmac_reg2](index.html) module"]
+#[doc = "HMAC.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hmac_reg2](index.html) module"]
 pub struct HMAC_REG2_SPEC;
 impl crate::RegisterSpec for HMAC_REG2_SPEC {
     type Ux = u32;

@@ -272,7 +272,7 @@ impl W {
         self
     }
 }
-#[doc = "Brown Out Detectors (BoDs) & DCDC interrupts generation control register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bod_dcdc_int_ctrl](index.html) module"]
+#[doc = "Brown Out Detectors (BoDs) & DCDC interrupts generation control register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bod_dcdc_int_ctrl](index.html) module"]
 pub struct BOD_DCDC_INT_CTRL_SPEC;
 impl crate::RegisterSpec for BOD_DCDC_INT_CTRL_SPEC {
     type Ux = u32;

@@ -88,9 +88,9 @@ impl<'a, const O: u8> HEVENT_W<'a, O> {
         self.variant(HEVENT_A::H_COUNTER)
     }
 }
-#[doc = "Field `OUTSEL` reader - Input/output select"]
+#[doc = "Field `OUTSEL` reader - Input/output select."]
 pub type OUTSEL_R = crate::BitReader<OUTSEL_A>;
-#[doc = "Input/output select\n\nValue on reset: 0"]
+#[doc = "Input/output select.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum OUTSEL_A {
     #[doc = "0: Selects the inputs selected by IOSEL."]
@@ -124,7 +124,7 @@ impl OUTSEL_R {
         *self == OUTSEL_A::OUTPUT
     }
 }
-#[doc = "Field `OUTSEL` writer - Input/output select"]
+#[doc = "Field `OUTSEL` writer - Input/output select."]
 pub type OUTSEL_W<'a, const O: u8> = crate::BitWriter<'a, u32, EV_CTRL_SPEC, OUTSEL_A, O>;
 impl<'a, const O: u8> OUTSEL_W<'a, O> {
     #[doc = "Selects the inputs selected by IOSEL."]
@@ -148,13 +148,13 @@ pub type IOCOND_R = crate::FieldReader<u8, IOCOND_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum IOCOND_A {
-    #[doc = "0: LOW"]
+    #[doc = "0: LOW."]
     LOW = 0,
-    #[doc = "1: Rise"]
+    #[doc = "1: Rise."]
     RISE = 1,
-    #[doc = "2: Fall"]
+    #[doc = "2: Fall."]
     FALL = 2,
-    #[doc = "3: HIGH"]
+    #[doc = "3: HIGH."]
     HIGH = 3,
 }
 impl From<IOCOND_A> for u8 {
@@ -200,22 +200,22 @@ impl IOCOND_R {
 pub type IOCOND_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, EV_CTRL_SPEC, u8, IOCOND_A, 2, O>;
 impl<'a, const O: u8> IOCOND_W<'a, O> {
-    #[doc = "LOW"]
+    #[doc = "LOW."]
     #[inline(always)]
     pub fn low(self) -> &'a mut W {
         self.variant(IOCOND_A::LOW)
     }
-    #[doc = "Rise"]
+    #[doc = "Rise."]
     #[inline(always)]
     pub fn rise(self) -> &'a mut W {
         self.variant(IOCOND_A::RISE)
     }
-    #[doc = "Fall"]
+    #[doc = "Fall."]
     #[inline(always)]
     pub fn fall(self) -> &'a mut W {
         self.variant(IOCOND_A::FALL)
     }
-    #[doc = "HIGH"]
+    #[doc = "HIGH."]
     #[inline(always)]
     pub fn high(self) -> &'a mut W {
         self.variant(IOCOND_A::HIGH)
@@ -358,9 +358,9 @@ pub type STATEV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, EV_CTRL_SPEC, u
 pub type MATCHMEM_R = crate::BitReader<bool>;
 #[doc = "Field `MATCHMEM` writer - If this bit is one and the COMBMODE field specifies a match component to the triggering of this event, then a match is considered to be active whenever the counter value is GREATER THAN OR EQUAL TO the value specified in the match register when counting up, LESS THEN OR EQUAL TO the match value when counting down. If this bit is zero, a match is only be active during the cycle when the counter is equal to the match value."]
 pub type MATCHMEM_W<'a, const O: u8> = crate::BitWriter<'a, u32, EV_CTRL_SPEC, bool, O>;
-#[doc = "Field `DIRECTION` reader - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field. Value 0x3 is reserved."]
+#[doc = "Field `DIRECTION` reader - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field."]
 pub type DIRECTION_R = crate::FieldReader<u8, DIRECTION_A>;
-#[doc = "Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field. Value 0x3 is reserved.\n\nValue on reset: 0"]
+#[doc = "Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum DIRECTION_A {
@@ -404,7 +404,7 @@ impl DIRECTION_R {
         *self == DIRECTION_A::COUNTING_DOWN
     }
 }
-#[doc = "Field `DIRECTION` writer - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field. Value 0x3 is reserved."]
+#[doc = "Field `DIRECTION` writer - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field."]
 pub type DIRECTION_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, EV_CTRL_SPEC, u8, DIRECTION_A, 2, O>;
 impl<'a, const O: u8> DIRECTION_W<'a, O> {
@@ -435,7 +435,7 @@ impl R {
     pub fn hevent(&self) -> HEVENT_R {
         HEVENT_R::new(((self.bits >> 4) & 1) != 0)
     }
-    #[doc = "Bit 5 - Input/output select"]
+    #[doc = "Bit 5 - Input/output select."]
     #[inline(always)]
     pub fn outsel(&self) -> OUTSEL_R {
         OUTSEL_R::new(((self.bits >> 5) & 1) != 0)
@@ -470,7 +470,7 @@ impl R {
     pub fn matchmem(&self) -> MATCHMEM_R {
         MATCHMEM_R::new(((self.bits >> 20) & 1) != 0)
     }
-    #[doc = "Bits 21:22 - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field. Value 0x3 is reserved."]
+    #[doc = "Bits 21:22 - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field."]
     #[inline(always)]
     pub fn direction(&self) -> DIRECTION_R {
         DIRECTION_R::new(((self.bits >> 21) & 3) as u8)
@@ -487,7 +487,7 @@ impl W {
     pub fn hevent(&mut self) -> HEVENT_W<4> {
         HEVENT_W::new(self)
     }
-    #[doc = "Bit 5 - Input/output select"]
+    #[doc = "Bit 5 - Input/output select."]
     #[inline(always)]
     pub fn outsel(&mut self) -> OUTSEL_W<5> {
         OUTSEL_W::new(self)
@@ -522,7 +522,7 @@ impl W {
     pub fn matchmem(&mut self) -> MATCHMEM_W<20> {
         MATCHMEM_W::new(self)
     }
-    #[doc = "Bits 21:22 - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field. Value 0x3 is reserved."]
+    #[doc = "Bits 21:22 - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field."]
     #[inline(always)]
     pub fn direction(&mut self) -> DIRECTION_W<21> {
         DIRECTION_W::new(self)
@@ -534,7 +534,7 @@ impl W {
         self
     }
 }
-#[doc = "SCT event control register 0\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ev_ctrl](index.html) module"]
+#[doc = "SCT event control register 0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ev_ctrl](index.html) module"]
 pub struct EV_CTRL_SPEC;
 impl crate::RegisterSpec for EV_CTRL_SPEC {
     type Ux = u32;

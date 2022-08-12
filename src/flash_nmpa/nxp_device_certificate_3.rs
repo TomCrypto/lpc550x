@@ -34,20 +34,20 @@ impl From<crate::W<NXP_DEVICE_CERTIFICATE_3_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FIELD` reader - no description available"]
+#[doc = "Field `FIELD` reader - no description available."]
 pub type FIELD_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `FIELD` writer - no description available"]
+#[doc = "Field `FIELD` writer - no description available."]
 pub type FIELD_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, NXP_DEVICE_CERTIFICATE_3_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn field(&self) -> FIELD_R {
         FIELD_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn field(&mut self) -> FIELD_W<0> {
         FIELD_W::new(self)

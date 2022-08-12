@@ -86,7 +86,7 @@ impl W {
         self
     }
 }
-#[doc = "System tick calibration for secure part of CPU0\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cpu0stckcal](index.html) module"]
+#[doc = "System tick calibration for secure part of CPU0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cpu0stckcal](index.html) module"]
 pub struct CPU0STCKCAL_SPEC;
 impl crate::RegisterSpec for CPU0STCKCAL_SPEC {
     type Ux = u32;

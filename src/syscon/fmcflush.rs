@@ -19,7 +19,7 @@ impl From<crate::W<FMCFLUSH_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Flush control\n\nValue on reset: 0"]
+#[doc = "Flush control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FLUSH_AW {
     #[doc = "0: No action is performed."]
@@ -33,7 +33,7 @@ impl From<FLUSH_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `FLUSH` writer - Flush control"]
+#[doc = "Field `FLUSH` writer - Flush control."]
 pub type FLUSH_W<'a, const O: u8> = crate::BitWriter<'a, u32, FMCFLUSH_SPEC, FLUSH_AW, O>;
 impl<'a, const O: u8> FLUSH_W<'a, O> {
     #[doc = "No action is performed."]
@@ -48,7 +48,7 @@ impl<'a, const O: u8> FLUSH_W<'a, O> {
     }
 }
 impl W {
-    #[doc = "Bit 0 - Flush control"]
+    #[doc = "Bit 0 - Flush control."]
     #[inline(always)]
     pub fn flush(&mut self) -> FLUSH_W<0> {
         FLUSH_W::new(self)
@@ -60,7 +60,7 @@ impl W {
         self
     }
 }
-#[doc = "FMCflush control\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [fmcflush](index.html) module"]
+#[doc = "FMCflush control.\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [fmcflush](index.html) module"]
 pub struct FMCFLUSH_SPEC;
 impl crate::RegisterSpec for FMCFLUSH_SPEC {
     type Ux = u32;

@@ -34,20 +34,20 @@ impl From<crate::W<BOOT_SEED_REG5_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `BOOT_SEED_REG5` reader - no description available"]
+#[doc = "Field `BOOT_SEED_REG5` reader - no description available."]
 pub type BOOT_SEED_REG5_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `BOOT_SEED_REG5` writer - no description available"]
+#[doc = "Field `BOOT_SEED_REG5` writer - no description available."]
 pub type BOOT_SEED_REG5_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, BOOT_SEED_REG5_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn boot_seed_reg5(&self) -> BOOT_SEED_REG5_R {
         BOOT_SEED_REG5_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn boot_seed_reg5(&mut self) -> BOOT_SEED_REG5_W<0> {
         BOOT_SEED_REG5_W::new(self)

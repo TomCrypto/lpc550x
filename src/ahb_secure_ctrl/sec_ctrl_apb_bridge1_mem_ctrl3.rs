@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL3_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RNG_RULE` reader - True Random Number Generator"]
+#[doc = "Field `RNG_RULE` reader - True Random Number Generator."]
 pub type RNG_RULE_R = crate::FieldReader<u8, RNG_RULE_A>;
-#[doc = "True Random Number Generator\n\nValue on reset: 0"]
+#[doc = "True Random Number Generator.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum RNG_RULE_A {
@@ -88,7 +88,7 @@ impl RNG_RULE_R {
         *self == RNG_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `RNG_RULE` writer - True Random Number Generator"]
+#[doc = "Field `RNG_RULE` writer - True Random Number Generator."]
 pub type RNG_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL3_SPEC, u8, RNG_RULE_A, 2, O>;
 impl<'a, const O: u8> RNG_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> RNG_RULE_W<'a, O> {
         self.variant(RNG_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `PUF_RULE` reader - PUF"]
+#[doc = "Field `PUF_RULE` reader - PUF."]
 pub type PUF_RULE_R = crate::FieldReader<u8, PUF_RULE_A>;
-#[doc = "PUF\n\nValue on reset: 0"]
+#[doc = "PUF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PUF_RULE_A {
@@ -167,7 +167,7 @@ impl PUF_RULE_R {
         *self == PUF_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `PUF_RULE` writer - PUF"]
+#[doc = "Field `PUF_RULE` writer - PUF."]
 pub type PUF_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL3_SPEC, u8, PUF_RULE_A, 2, O>;
 impl<'a, const O: u8> PUF_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> PUF_RULE_W<'a, O> {
         self.variant(PUF_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `PLU_RULE` reader - Programmable Look-Up logic"]
+#[doc = "Field `PLU_RULE` reader - Programmable Look-Up logic."]
 pub type PLU_RULE_R = crate::FieldReader<u8, PLU_RULE_A>;
-#[doc = "Programmable Look-Up logic\n\nValue on reset: 0"]
+#[doc = "Programmable Look-Up logic.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PLU_RULE_A {
@@ -246,7 +246,7 @@ impl PLU_RULE_R {
         *self == PLU_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `PLU_RULE` writer - Programmable Look-Up logic"]
+#[doc = "Field `PLU_RULE` writer - Programmable Look-Up logic."]
 pub type PLU_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL3_SPEC, u8, PLU_RULE_A, 2, O>;
 impl<'a, const O: u8> PLU_RULE_W<'a, O> {
@@ -272,34 +272,34 @@ impl<'a, const O: u8> PLU_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 8:9 - True Random Number Generator"]
+    #[doc = "Bits 8:9 - True Random Number Generator."]
     #[inline(always)]
     pub fn rng_rule(&self) -> RNG_RULE_R {
         RNG_RULE_R::new(((self.bits >> 8) & 3) as u8)
     }
-    #[doc = "Bits 12:13 - PUF"]
+    #[doc = "Bits 12:13 - PUF."]
     #[inline(always)]
     pub fn puf_rule(&self) -> PUF_RULE_R {
         PUF_RULE_R::new(((self.bits >> 12) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - Programmable Look-Up logic"]
+    #[doc = "Bits 20:21 - Programmable Look-Up logic."]
     #[inline(always)]
     pub fn plu_rule(&self) -> PLU_RULE_R {
         PLU_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 8:9 - True Random Number Generator"]
+    #[doc = "Bits 8:9 - True Random Number Generator."]
     #[inline(always)]
     pub fn rng_rule(&mut self) -> RNG_RULE_W<8> {
         RNG_RULE_W::new(self)
     }
-    #[doc = "Bits 12:13 - PUF"]
+    #[doc = "Bits 12:13 - PUF."]
     #[inline(always)]
     pub fn puf_rule(&mut self) -> PUF_RULE_W<12> {
         PUF_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - Programmable Look-Up logic"]
+    #[doc = "Bits 20:21 - Programmable Look-Up logic."]
     #[inline(always)]
     pub fn plu_rule(&mut self) -> PLU_RULE_W<20> {
         PLU_RULE_W::new(self)

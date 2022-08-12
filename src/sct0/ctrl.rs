@@ -50,9 +50,9 @@ pub type HALT_L_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, bool, 
 pub type CLRCTR_L_R = crate::BitReader<bool>;
 #[doc = "Field `CLRCTR_L` writer - Writing a 1 to this bit clears the L or unified counter. This bit always reads as 0."]
 pub type CLRCTR_L_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, bool, O>;
-#[doc = "Field `BIDIR_L` reader - L or unified counter direction select"]
+#[doc = "Field `BIDIR_L` reader - L or unified counter direction select."]
 pub type BIDIR_L_R = crate::BitReader<BIDIR_L_A>;
-#[doc = "L or unified counter direction select\n\nValue on reset: 0"]
+#[doc = "L or unified counter direction select.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum BIDIR_L_A {
     #[doc = "0: Up. The counter counts up to a limit condition, then is cleared to zero."]
@@ -86,7 +86,7 @@ impl BIDIR_L_R {
         *self == BIDIR_L_A::UP_DOWN
     }
 }
-#[doc = "Field `BIDIR_L` writer - L or unified counter direction select"]
+#[doc = "Field `BIDIR_L` writer - L or unified counter direction select."]
 pub type BIDIR_L_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, BIDIR_L_A, O>;
 impl<'a, const O: u8> BIDIR_L_W<'a, O> {
     #[doc = "Up. The counter counts up to a limit condition, then is cleared to zero."]
@@ -120,9 +120,9 @@ pub type HALT_H_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, bool, 
 pub type CLRCTR_H_R = crate::BitReader<bool>;
 #[doc = "Field `CLRCTR_H` writer - Writing a 1 to this bit clears the H counter. This bit always reads as 0."]
 pub type CLRCTR_H_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, bool, O>;
-#[doc = "Field `BIDIR_H` reader - Direction select"]
+#[doc = "Field `BIDIR_H` reader - Direction select."]
 pub type BIDIR_H_R = crate::BitReader<BIDIR_H_A>;
-#[doc = "Direction select\n\nValue on reset: 0"]
+#[doc = "Direction select.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum BIDIR_H_A {
     #[doc = "0: The H counter counts up to its limit condition, then is cleared to zero."]
@@ -156,7 +156,7 @@ impl BIDIR_H_R {
         *self == BIDIR_H_A::UP_DOWN
     }
 }
-#[doc = "Field `BIDIR_H` writer - Direction select"]
+#[doc = "Field `BIDIR_H` writer - Direction select."]
 pub type BIDIR_H_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, BIDIR_H_A, O>;
 impl<'a, const O: u8> BIDIR_H_W<'a, O> {
     #[doc = "The H counter counts up to its limit condition, then is cleared to zero."]
@@ -195,7 +195,7 @@ impl R {
     pub fn clrctr_l(&self) -> CLRCTR_L_R {
         CLRCTR_L_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 4 - L or unified counter direction select"]
+    #[doc = "Bit 4 - L or unified counter direction select."]
     #[inline(always)]
     pub fn bidir_l(&self) -> BIDIR_L_R {
         BIDIR_L_R::new(((self.bits >> 4) & 1) != 0)
@@ -225,7 +225,7 @@ impl R {
     pub fn clrctr_h(&self) -> CLRCTR_H_R {
         CLRCTR_H_R::new(((self.bits >> 19) & 1) != 0)
     }
-    #[doc = "Bit 20 - Direction select"]
+    #[doc = "Bit 20 - Direction select."]
     #[inline(always)]
     pub fn bidir_h(&self) -> BIDIR_H_R {
         BIDIR_H_R::new(((self.bits >> 20) & 1) != 0)
@@ -257,7 +257,7 @@ impl W {
     pub fn clrctr_l(&mut self) -> CLRCTR_L_W<3> {
         CLRCTR_L_W::new(self)
     }
-    #[doc = "Bit 4 - L or unified counter direction select"]
+    #[doc = "Bit 4 - L or unified counter direction select."]
     #[inline(always)]
     pub fn bidir_l(&mut self) -> BIDIR_L_W<4> {
         BIDIR_L_W::new(self)
@@ -287,7 +287,7 @@ impl W {
     pub fn clrctr_h(&mut self) -> CLRCTR_H_W<19> {
         CLRCTR_H_W::new(self)
     }
-    #[doc = "Bit 20 - Direction select"]
+    #[doc = "Bit 20 - Direction select."]
     #[inline(always)]
     pub fn bidir_h(&mut self) -> BIDIR_H_W<20> {
         BIDIR_H_W::new(self)
@@ -304,7 +304,7 @@ impl W {
         self
     }
 }
-#[doc = "SCT control register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](index.html) module"]
+#[doc = "SCT control register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](index.html) module"]
 pub struct CTRL_SPEC;
 impl crate::RegisterSpec for CTRL_SPEC {
     type Ux = u32;

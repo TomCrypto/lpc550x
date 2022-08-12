@@ -3,19 +3,19 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - The control fields, which constitute CONTROL, control all controllable attributes of the module, including those of CONTROL itself."]
     pub control: CONTROL,
-    #[doc = "0x04 - Instruction timer reload"]
+    #[doc = "0x04 - Instruction timer reload."]
     pub reload: RELOAD,
-    #[doc = "0x08 - The INSTRUCTION TIMER itself"]
+    #[doc = "0x08 - The INSTRUCTION TIMER itself."]
     pub instruction_timer: INSTRUCTION_TIMER,
-    #[doc = "0x0c - Also known as SEC_CNT"]
+    #[doc = "0x0c - Also known as SEC_CNT."]
     pub secure_counter: SECURE_COUNTER,
     #[doc = "0x10 - Status register (1 of 2)"]
     pub status: STATUS,
     #[doc = "0x14 - STATUS register (2 of 2)"]
     pub status2: STATUS2,
-    #[doc = "0x18 - Hardware flags"]
+    #[doc = "0x18 - Hardware flags."]
     pub flags: FLAGS,
-    #[doc = "0x1c - Persistent (Ad. Hoc., quasi-NV) data storage"]
+    #[doc = "0x1c - Persistent (Ad. Hoc., quasi-NV) data storage."]
     pub persistent: PERSISTENT,
     #[doc = "0x20 - Write address for issuing the START command."]
     pub start: START,
@@ -46,15 +46,15 @@ pub type CONTROL = crate::Reg<control::CONTROL_SPEC>;
 pub mod control;
 #[doc = "RELOAD (rw) register accessor: an alias for `Reg<RELOAD_SPEC>`"]
 pub type RELOAD = crate::Reg<reload::RELOAD_SPEC>;
-#[doc = "Instruction timer reload"]
+#[doc = "Instruction timer reload."]
 pub mod reload;
 #[doc = "INSTRUCTION_TIMER (rw) register accessor: an alias for `Reg<INSTRUCTION_TIMER_SPEC>`"]
 pub type INSTRUCTION_TIMER = crate::Reg<instruction_timer::INSTRUCTION_TIMER_SPEC>;
-#[doc = "The INSTRUCTION TIMER itself"]
+#[doc = "The INSTRUCTION TIMER itself."]
 pub mod instruction_timer;
 #[doc = "SECURE_COUNTER (rw) register accessor: an alias for `Reg<SECURE_COUNTER_SPEC>`"]
 pub type SECURE_COUNTER = crate::Reg<secure_counter::SECURE_COUNTER_SPEC>;
-#[doc = "Also known as SEC_CNT"]
+#[doc = "Also known as SEC_CNT."]
 pub mod secure_counter;
 #[doc = "STATUS (r) register accessor: an alias for `Reg<STATUS_SPEC>`"]
 pub type STATUS = crate::Reg<status::STATUS_SPEC>;
@@ -66,11 +66,11 @@ pub type STATUS2 = crate::Reg<status2::STATUS2_SPEC>;
 pub mod status2;
 #[doc = "FLAGS (rw) register accessor: an alias for `Reg<FLAGS_SPEC>`"]
 pub type FLAGS = crate::Reg<flags::FLAGS_SPEC>;
-#[doc = "Hardware flags"]
+#[doc = "Hardware flags."]
 pub mod flags;
 #[doc = "PERSISTENT (rw) register accessor: an alias for `Reg<PERSISTENT_SPEC>`"]
 pub type PERSISTENT = crate::Reg<persistent::PERSISTENT_SPEC>;
-#[doc = "Persistent (Ad. Hoc., quasi-NV) data storage"]
+#[doc = "Persistent (Ad. Hoc., quasi-NV) data storage."]
 pub mod persistent;
 #[doc = "START (w) register accessor: an alias for `Reg<START_SPEC>`"]
 pub type START = crate::Reg<start::START_SPEC>;

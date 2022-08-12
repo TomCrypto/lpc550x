@@ -40,69 +40,69 @@ pub type INP_R = crate::FieldReader<u8, INP_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum INP_A {
-    #[doc = "0: Pin interrupt 0"]
+    #[doc = "0: Pin interrupt 0."]
     VAL0 = 0,
-    #[doc = "1: Pin interrupt 1"]
+    #[doc = "1: Pin interrupt 1."]
     VAL1 = 1,
-    #[doc = "2: Pin interrupt 2"]
+    #[doc = "2: Pin interrupt 2."]
     VAL2 = 2,
-    #[doc = "3: Pin interrupt 3"]
+    #[doc = "3: Pin interrupt 3."]
     VAL3 = 3,
-    #[doc = "4: Timer CTIMER0 Match 0"]
+    #[doc = "4: Timer CTIMER0 Match 0."]
     VAL4 = 4,
-    #[doc = "5: Timer CTIMER0 Match 1"]
+    #[doc = "5: Timer CTIMER0 Match 1."]
     VAL5 = 5,
-    #[doc = "6: Timer CTIMER1 Match 0"]
+    #[doc = "6: Timer CTIMER1 Match 0."]
     VAL6 = 6,
-    #[doc = "7: Timer CTIMER1 Match 1"]
+    #[doc = "7: Timer CTIMER1 Match 1."]
     VAL7 = 7,
-    #[doc = "8: Timer CTIMER2 Match 0"]
+    #[doc = "8: Timer CTIMER2 Match 0."]
     VAL8 = 8,
-    #[doc = "9: Timer CTIMER2 Match 1"]
+    #[doc = "9: Timer CTIMER2 Match 1."]
     VAL9 = 9,
-    #[doc = "10: Timer CTIMER3 Match 0"]
+    #[doc = "10: Timer CTIMER3 Match 0."]
     VAL10 = 10,
-    #[doc = "11: Timer CTIMER3 Match 1"]
+    #[doc = "11: Timer CTIMER3 Match 1."]
     VAL11 = 11,
-    #[doc = "12: Timer CTIMER4 Match 0"]
+    #[doc = "12: Timer CTIMER4 Match 0."]
     VAL12 = 12,
-    #[doc = "13: Timer CTIMER4 Match 1"]
+    #[doc = "13: Timer CTIMER4 Match 1."]
     VAL13 = 13,
-    #[doc = "14: COMP_OUTPUT"]
+    #[doc = "14: COMP_OUTPUT."]
     VAL14 = 14,
-    #[doc = "15: DMA0 output trigger mux 0"]
+    #[doc = "15: DMA0 output trigger mux 0."]
     VAL15 = 15,
-    #[doc = "16: DMA0 output trigger mux 1"]
+    #[doc = "16: DMA0 output trigger mux 1."]
     VAL16 = 16,
-    #[doc = "17: DMA0 output trigger mux 1"]
+    #[doc = "17: DMA0 output trigger mux 1."]
     VAL17 = 17,
-    #[doc = "18: DMA0 output trigger mux 3"]
+    #[doc = "18: DMA0 output trigger mux 3."]
     VAL18 = 18,
-    #[doc = "19: SCT0 DMA request 0"]
+    #[doc = "19: SCT0 DMA request 0."]
     VAL19 = 19,
-    #[doc = "20: SCT0 DMA request 1"]
+    #[doc = "20: SCT0 DMA request 1."]
     VAL20 = 20,
-    #[doc = "21: HASH DMA RX trigger"]
+    #[doc = "21: HASH DMA RX trigger."]
     VAL21 = 21,
-    #[doc = "22: None"]
+    #[doc = "22: None."]
     VAL22 = 22,
-    #[doc = "23: None"]
+    #[doc = "23: None."]
     VAL23 = 23,
-    #[doc = "24: None"]
+    #[doc = "24: None."]
     VAL24 = 24,
-    #[doc = "25: None"]
+    #[doc = "25: None."]
     VAL25 = 25,
-    #[doc = "26: None"]
+    #[doc = "26: None."]
     VAL26 = 26,
-    #[doc = "27: None"]
+    #[doc = "27: None."]
     VAL27 = 27,
-    #[doc = "28: None"]
+    #[doc = "28: None."]
     VAL28 = 28,
-    #[doc = "29: None"]
+    #[doc = "29: None."]
     VAL29 = 29,
-    #[doc = "30: None"]
+    #[doc = "30: None."]
     VAL30 = 30,
-    #[doc = "31: None"]
+    #[doc = "31: None."]
     VAL31 = 31,
 }
 impl From<INP_A> for u8 {
@@ -316,162 +316,162 @@ impl INP_R {
 pub type INP_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, DMA0_ITRIG_INMUX_SPEC, u8, INP_A, 5, O>;
 impl<'a, const O: u8> INP_W<'a, O> {
-    #[doc = "Pin interrupt 0"]
+    #[doc = "Pin interrupt 0."]
     #[inline(always)]
     pub fn val0(self) -> &'a mut W {
         self.variant(INP_A::VAL0)
     }
-    #[doc = "Pin interrupt 1"]
+    #[doc = "Pin interrupt 1."]
     #[inline(always)]
     pub fn val1(self) -> &'a mut W {
         self.variant(INP_A::VAL1)
     }
-    #[doc = "Pin interrupt 2"]
+    #[doc = "Pin interrupt 2."]
     #[inline(always)]
     pub fn val2(self) -> &'a mut W {
         self.variant(INP_A::VAL2)
     }
-    #[doc = "Pin interrupt 3"]
+    #[doc = "Pin interrupt 3."]
     #[inline(always)]
     pub fn val3(self) -> &'a mut W {
         self.variant(INP_A::VAL3)
     }
-    #[doc = "Timer CTIMER0 Match 0"]
+    #[doc = "Timer CTIMER0 Match 0."]
     #[inline(always)]
     pub fn val4(self) -> &'a mut W {
         self.variant(INP_A::VAL4)
     }
-    #[doc = "Timer CTIMER0 Match 1"]
+    #[doc = "Timer CTIMER0 Match 1."]
     #[inline(always)]
     pub fn val5(self) -> &'a mut W {
         self.variant(INP_A::VAL5)
     }
-    #[doc = "Timer CTIMER1 Match 0"]
+    #[doc = "Timer CTIMER1 Match 0."]
     #[inline(always)]
     pub fn val6(self) -> &'a mut W {
         self.variant(INP_A::VAL6)
     }
-    #[doc = "Timer CTIMER1 Match 1"]
+    #[doc = "Timer CTIMER1 Match 1."]
     #[inline(always)]
     pub fn val7(self) -> &'a mut W {
         self.variant(INP_A::VAL7)
     }
-    #[doc = "Timer CTIMER2 Match 0"]
+    #[doc = "Timer CTIMER2 Match 0."]
     #[inline(always)]
     pub fn val8(self) -> &'a mut W {
         self.variant(INP_A::VAL8)
     }
-    #[doc = "Timer CTIMER2 Match 1"]
+    #[doc = "Timer CTIMER2 Match 1."]
     #[inline(always)]
     pub fn val9(self) -> &'a mut W {
         self.variant(INP_A::VAL9)
     }
-    #[doc = "Timer CTIMER3 Match 0"]
+    #[doc = "Timer CTIMER3 Match 0."]
     #[inline(always)]
     pub fn val10(self) -> &'a mut W {
         self.variant(INP_A::VAL10)
     }
-    #[doc = "Timer CTIMER3 Match 1"]
+    #[doc = "Timer CTIMER3 Match 1."]
     #[inline(always)]
     pub fn val11(self) -> &'a mut W {
         self.variant(INP_A::VAL11)
     }
-    #[doc = "Timer CTIMER4 Match 0"]
+    #[doc = "Timer CTIMER4 Match 0."]
     #[inline(always)]
     pub fn val12(self) -> &'a mut W {
         self.variant(INP_A::VAL12)
     }
-    #[doc = "Timer CTIMER4 Match 1"]
+    #[doc = "Timer CTIMER4 Match 1."]
     #[inline(always)]
     pub fn val13(self) -> &'a mut W {
         self.variant(INP_A::VAL13)
     }
-    #[doc = "COMP_OUTPUT"]
+    #[doc = "COMP_OUTPUT."]
     #[inline(always)]
     pub fn val14(self) -> &'a mut W {
         self.variant(INP_A::VAL14)
     }
-    #[doc = "DMA0 output trigger mux 0"]
+    #[doc = "DMA0 output trigger mux 0."]
     #[inline(always)]
     pub fn val15(self) -> &'a mut W {
         self.variant(INP_A::VAL15)
     }
-    #[doc = "DMA0 output trigger mux 1"]
+    #[doc = "DMA0 output trigger mux 1."]
     #[inline(always)]
     pub fn val16(self) -> &'a mut W {
         self.variant(INP_A::VAL16)
     }
-    #[doc = "DMA0 output trigger mux 1"]
+    #[doc = "DMA0 output trigger mux 1."]
     #[inline(always)]
     pub fn val17(self) -> &'a mut W {
         self.variant(INP_A::VAL17)
     }
-    #[doc = "DMA0 output trigger mux 3"]
+    #[doc = "DMA0 output trigger mux 3."]
     #[inline(always)]
     pub fn val18(self) -> &'a mut W {
         self.variant(INP_A::VAL18)
     }
-    #[doc = "SCT0 DMA request 0"]
+    #[doc = "SCT0 DMA request 0."]
     #[inline(always)]
     pub fn val19(self) -> &'a mut W {
         self.variant(INP_A::VAL19)
     }
-    #[doc = "SCT0 DMA request 1"]
+    #[doc = "SCT0 DMA request 1."]
     #[inline(always)]
     pub fn val20(self) -> &'a mut W {
         self.variant(INP_A::VAL20)
     }
-    #[doc = "HASH DMA RX trigger"]
+    #[doc = "HASH DMA RX trigger."]
     #[inline(always)]
     pub fn val21(self) -> &'a mut W {
         self.variant(INP_A::VAL21)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val22(self) -> &'a mut W {
         self.variant(INP_A::VAL22)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val23(self) -> &'a mut W {
         self.variant(INP_A::VAL23)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val24(self) -> &'a mut W {
         self.variant(INP_A::VAL24)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val25(self) -> &'a mut W {
         self.variant(INP_A::VAL25)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val26(self) -> &'a mut W {
         self.variant(INP_A::VAL26)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val27(self) -> &'a mut W {
         self.variant(INP_A::VAL27)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val28(self) -> &'a mut W {
         self.variant(INP_A::VAL28)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val29(self) -> &'a mut W {
         self.variant(INP_A::VAL29)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val30(self) -> &'a mut W {
         self.variant(INP_A::VAL30)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val31(self) -> &'a mut W {
         self.variant(INP_A::VAL31)
@@ -497,7 +497,7 @@ impl W {
         self
     }
 }
-#[doc = "Trigger select register for DMA0 channel\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma0_itrig_inmux](index.html) module"]
+#[doc = "Trigger select register for DMA0 channel.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma0_itrig_inmux](index.html) module"]
 pub struct DMA0_ITRIG_INMUX_SPEC;
 impl crate::RegisterSpec for DMA0_ITRIG_INMUX_SPEC {
     type Ux = u32;

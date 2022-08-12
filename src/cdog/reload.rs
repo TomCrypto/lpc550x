@@ -34,19 +34,19 @@ impl From<crate::W<RELOAD_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RLOAD` reader - Inst. Timer reload value"]
+#[doc = "Field `RLOAD` reader - Inst. Timer reload value."]
 pub type RLOAD_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `RLOAD` writer - Inst. Timer reload value"]
+#[doc = "Field `RLOAD` writer - Inst. Timer reload value."]
 pub type RLOAD_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RELOAD_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - Inst. Timer reload value"]
+    #[doc = "Bits 0:31 - Inst. Timer reload value."]
     #[inline(always)]
     pub fn rload(&self) -> RLOAD_R {
         RLOAD_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Inst. Timer reload value"]
+    #[doc = "Bits 0:31 - Inst. Timer reload value."]
     #[inline(always)]
     pub fn rload(&mut self) -> RLOAD_W<0> {
         RLOAD_W::new(self)
@@ -58,7 +58,7 @@ impl W {
         self
     }
 }
-#[doc = "Instruction timer reload\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [reload](index.html) module"]
+#[doc = "Instruction timer reload.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [reload](index.html) module"]
 pub struct RELOAD_SPEC;
 impl crate::RegisterSpec for RELOAD_SPEC {
     type Ux = u32;

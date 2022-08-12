@@ -44,7 +44,7 @@ pub struct RegisterBlock {
     #[doc = "0xe40 - FIFO data read with no FIFO pop."]
     pub fifordnopop: FIFORDNOPOP,
     _reserved18: [u8; 0x04],
-    #[doc = "0xe48 - FIFO size register"]
+    #[doc = "0xe48 - FIFO size register."]
     pub fifosize: FIFOSIZE,
     _reserved19: [u8; 0x01b0],
     #[doc = "0xffc - Peripheral identification register."]
@@ -124,7 +124,7 @@ pub type FIFORDNOPOP = crate::Reg<fifordnopop::FIFORDNOPOP_SPEC>;
 pub mod fifordnopop;
 #[doc = "FIFOSIZE (rw) register accessor: an alias for `Reg<FIFOSIZE_SPEC>`"]
 pub type FIFOSIZE = crate::Reg<fifosize::FIFOSIZE_SPEC>;
-#[doc = "FIFO size register"]
+#[doc = "FIFO size register."]
 pub mod fifosize;
 #[doc = "ID (rw) register accessor: an alias for `Reg<ID_SPEC>`"]
 pub type ID = crate::Reg<id::ID_SPEC>;

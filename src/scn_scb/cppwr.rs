@@ -841,7 +841,7 @@ pub type SU10_R = crate::BitReader<SU10_A>;
 pub enum SU10_A {
     #[doc = "0: The floating-point state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
-    #[doc = "1: The floating-point state is permitted to become UNKNOWN"]
+    #[doc = "1: The floating-point state is permitted to become UNKNOWN."]
     UNKNOWN_PERMITTED = 1,
 }
 impl From<SU10_A> for bool {
@@ -878,7 +878,7 @@ impl<'a, const O: u8> SU10_W<'a, O> {
     pub fn unknown_not_permitted(self) -> &'a mut W {
         self.variant(SU10_A::UNKNOWN_NOT_PERMITTED)
     }
-    #[doc = "The floating-point state is permitted to become UNKNOWN"]
+    #[doc = "The floating-point state is permitted to become UNKNOWN."]
     #[inline(always)]
     pub fn unknown_permitted(self) -> &'a mut W {
         self.variant(SU10_A::UNKNOWN_PERMITTED)
@@ -1152,7 +1152,7 @@ impl W {
         self
     }
 }
-#[doc = "Coprocessor Power Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cppwr](index.html) module"]
+#[doc = "Coprocessor Power Control Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cppwr](index.html) module"]
 pub struct CPPWR_SPEC;
 impl crate::RegisterSpec for CPPWR_SPEC {
     type Ux = u32;

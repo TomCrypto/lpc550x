@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_PORT8_SLAVE0_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CRC_RULE` reader - CRC engine"]
+#[doc = "Field `CRC_RULE` reader - CRC engine."]
 pub type CRC_RULE_R = crate::FieldReader<u8, CRC_RULE_A>;
-#[doc = "CRC engine\n\nValue on reset: 0"]
+#[doc = "CRC engine.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CRC_RULE_A {
@@ -88,7 +88,7 @@ impl CRC_RULE_R {
         *self == CRC_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CRC_RULE` writer - CRC engine"]
+#[doc = "Field `CRC_RULE` writer - CRC engine."]
 pub type CRC_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT8_SLAVE0_RULE_SPEC, u8, CRC_RULE_A, 2, O>;
 impl<'a, const O: u8> CRC_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> CRC_RULE_W<'a, O> {
         self.variant(CRC_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `FLEXCOMM5_RULE` reader - Flexcomm interface 5"]
+#[doc = "Field `FLEXCOMM5_RULE` reader - Flexcomm interface 5."]
 pub type FLEXCOMM5_RULE_R = crate::FieldReader<u8, FLEXCOMM5_RULE_A>;
-#[doc = "Flexcomm interface 5\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 5.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM5_RULE_A {
@@ -167,7 +167,7 @@ impl FLEXCOMM5_RULE_R {
         *self == FLEXCOMM5_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM5_RULE` writer - Flexcomm interface 5"]
+#[doc = "Field `FLEXCOMM5_RULE` writer - Flexcomm interface 5."]
 pub type FLEXCOMM5_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -199,9 +199,9 @@ impl<'a, const O: u8> FLEXCOMM5_RULE_W<'a, O> {
         self.variant(FLEXCOMM5_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `FLEXCOMM6_RULE` reader - Flexcomm interface 6"]
+#[doc = "Field `FLEXCOMM6_RULE` reader - Flexcomm interface 6."]
 pub type FLEXCOMM6_RULE_R = crate::FieldReader<u8, FLEXCOMM6_RULE_A>;
-#[doc = "Flexcomm interface 6\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 6.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM6_RULE_A {
@@ -253,7 +253,7 @@ impl FLEXCOMM6_RULE_R {
         *self == FLEXCOMM6_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM6_RULE` writer - Flexcomm interface 6"]
+#[doc = "Field `FLEXCOMM6_RULE` writer - Flexcomm interface 6."]
 pub type FLEXCOMM6_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -286,34 +286,34 @@ impl<'a, const O: u8> FLEXCOMM6_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 20:21 - CRC engine"]
+    #[doc = "Bits 20:21 - CRC engine."]
     #[inline(always)]
     pub fn crc_rule(&self) -> CRC_RULE_R {
         CRC_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
-    #[doc = "Bits 24:25 - Flexcomm interface 5"]
+    #[doc = "Bits 24:25 - Flexcomm interface 5."]
     #[inline(always)]
     pub fn flexcomm5_rule(&self) -> FLEXCOMM5_RULE_R {
         FLEXCOMM5_RULE_R::new(((self.bits >> 24) & 3) as u8)
     }
-    #[doc = "Bits 28:29 - Flexcomm interface 6"]
+    #[doc = "Bits 28:29 - Flexcomm interface 6."]
     #[inline(always)]
     pub fn flexcomm6_rule(&self) -> FLEXCOMM6_RULE_R {
         FLEXCOMM6_RULE_R::new(((self.bits >> 28) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 20:21 - CRC engine"]
+    #[doc = "Bits 20:21 - CRC engine."]
     #[inline(always)]
     pub fn crc_rule(&mut self) -> CRC_RULE_W<20> {
         CRC_RULE_W::new(self)
     }
-    #[doc = "Bits 24:25 - Flexcomm interface 5"]
+    #[doc = "Bits 24:25 - Flexcomm interface 5."]
     #[inline(always)]
     pub fn flexcomm5_rule(&mut self) -> FLEXCOMM5_RULE_W<24> {
         FLEXCOMM5_RULE_W::new(self)
     }
-    #[doc = "Bits 28:29 - Flexcomm interface 6"]
+    #[doc = "Bits 28:29 - Flexcomm interface 6."]
     #[inline(always)]
     pub fn flexcomm6_rule(&mut self) -> FLEXCOMM6_RULE_W<28> {
         FLEXCOMM6_RULE_W::new(self)

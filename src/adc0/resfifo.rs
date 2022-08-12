@@ -13,11 +13,11 @@ impl From<crate::R<RESFIFO_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `D` reader - Data result"]
+#[doc = "Field `D` reader - Data result."]
 pub type D_R = crate::FieldReader<u16, u16>;
-#[doc = "Field `TSRC` reader - Trigger Source"]
+#[doc = "Field `TSRC` reader - Trigger Source."]
 pub type TSRC_R = crate::FieldReader<u8, TSRC_A>;
-#[doc = "Trigger Source\n\nValue on reset: 0"]
+#[doc = "Trigger Source.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum TSRC_A {
@@ -125,9 +125,9 @@ impl TSRC_R {
         *self == TSRC_A::TSRC_15
     }
 }
-#[doc = "Field `LOOPCNT` reader - Loop count value"]
+#[doc = "Field `LOOPCNT` reader - Loop count value."]
 pub type LOOPCNT_R = crate::FieldReader<u8, LOOPCNT_A>;
-#[doc = "Loop count value\n\nValue on reset: 0"]
+#[doc = "Loop count value.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum LOOPCNT_A {
@@ -235,9 +235,9 @@ impl LOOPCNT_R {
         *self == LOOPCNT_A::LOOPCNT_15
     }
 }
-#[doc = "Field `CMDSRC` reader - Command Buffer Source"]
+#[doc = "Field `CMDSRC` reader - Command Buffer Source."]
 pub type CMDSRC_R = crate::FieldReader<u8, CMDSRC_A>;
-#[doc = "Command Buffer Source\n\nValue on reset: 0"]
+#[doc = "Command Buffer Source.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CMDSRC_A {
@@ -345,9 +345,9 @@ impl CMDSRC_R {
         *self == CMDSRC_A::CMDSRC_15
     }
 }
-#[doc = "Field `VALID` reader - FIFO entry is valid"]
+#[doc = "Field `VALID` reader - FIFO entry is valid."]
 pub type VALID_R = crate::BitReader<VALID_A>;
-#[doc = "FIFO entry is valid\n\nValue on reset: 0"]
+#[doc = "FIFO entry is valid.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum VALID_A {
     #[doc = "0: FIFO is empty. Discard any read from RESFIFO."]
@@ -382,33 +382,33 @@ impl VALID_R {
     }
 }
 impl R {
-    #[doc = "Bits 0:15 - Data result"]
+    #[doc = "Bits 0:15 - Data result."]
     #[inline(always)]
     pub fn d(&self) -> D_R {
         D_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bits 16:19 - Trigger Source"]
+    #[doc = "Bits 16:19 - Trigger Source."]
     #[inline(always)]
     pub fn tsrc(&self) -> TSRC_R {
         TSRC_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
-    #[doc = "Bits 20:23 - Loop count value"]
+    #[doc = "Bits 20:23 - Loop count value."]
     #[inline(always)]
     pub fn loopcnt(&self) -> LOOPCNT_R {
         LOOPCNT_R::new(((self.bits >> 20) & 0x0f) as u8)
     }
-    #[doc = "Bits 24:27 - Command Buffer Source"]
+    #[doc = "Bits 24:27 - Command Buffer Source."]
     #[inline(always)]
     pub fn cmdsrc(&self) -> CMDSRC_R {
         CMDSRC_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
-    #[doc = "Bit 31 - FIFO entry is valid"]
+    #[doc = "Bit 31 - FIFO entry is valid."]
     #[inline(always)]
     pub fn valid(&self) -> VALID_R {
         VALID_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
-#[doc = "ADC Data Result FIFO Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [resfifo](index.html) module"]
+#[doc = "ADC Data Result FIFO Register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [resfifo](index.html) module"]
 pub struct RESFIFO_SPEC;
 impl crate::RegisterSpec for RESFIFO_SPEC {
     type Ux = u32;

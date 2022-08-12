@@ -34,9 +34,9 @@ impl From<crate::W<FREQ_ME_CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CAPVAL_SCALE` reader - Frequency measure result /Frequency measur scale"]
+#[doc = "Field `CAPVAL_SCALE` reader - Frequency measure result /Frequency measur scale."]
 pub type CAPVAL_SCALE_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `CAPVAL_SCALE` writer - Frequency measure result /Frequency measur scale"]
+#[doc = "Field `CAPVAL_SCALE` writer - Frequency measure result /Frequency measur scale."]
 pub type CAPVAL_SCALE_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, FREQ_ME_CTRL_SPEC, u32, u32, 31, O>;
 #[doc = "Field `PROG` reader - Set this bit to one to initiate a frequency measurement cycle. Hardware clears this bit when the measurement cycle has completed and there is valid capture data in the CAPVAL field (bits 30:0)."]
@@ -44,7 +44,7 @@ pub type PROG_R = crate::BitReader<bool>;
 #[doc = "Field `PROG` writer - Set this bit to one to initiate a frequency measurement cycle. Hardware clears this bit when the measurement cycle has completed and there is valid capture data in the CAPVAL field (bits 30:0)."]
 pub type PROG_W<'a, const O: u8> = crate::BitWriter<'a, u32, FREQ_ME_CTRL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bits 0:30 - Frequency measure result /Frequency measur scale"]
+    #[doc = "Bits 0:30 - Frequency measure result /Frequency measur scale."]
     #[inline(always)]
     pub fn capval_scale(&self) -> CAPVAL_SCALE_R {
         CAPVAL_SCALE_R::new((self.bits & 0x7fff_ffff) as u32)
@@ -56,7 +56,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 0:30 - Frequency measure result /Frequency measur scale"]
+    #[doc = "Bits 0:30 - Frequency measure result /Frequency measur scale."]
     #[inline(always)]
     pub fn capval_scale(&mut self) -> CAPVAL_SCALE_W<0> {
         CAPVAL_SCALE_W::new(self)
@@ -73,7 +73,7 @@ impl W {
         self
     }
 }
-#[doc = "Frequency Measure function control register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [freq_me_ctrl](index.html) module"]
+#[doc = "Frequency Measure function control register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [freq_me_ctrl](index.html) module"]
 pub struct FREQ_ME_CTRL_SPEC;
 impl crate::RegisterSpec for FREQ_ME_CTRL_SPEC {
     type Ux = u32;

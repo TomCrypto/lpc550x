@@ -34,9 +34,9 @@ impl From<crate::W<SWTRIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SWT0` reader - Software trigger 0 event"]
+#[doc = "Field `SWT0` reader - Software trigger 0 event."]
 pub type SWT0_R = crate::BitReader<SWT0_A>;
-#[doc = "Software trigger 0 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 0 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT0_A {
     #[doc = "0: No trigger 0 event generated."]
@@ -70,7 +70,7 @@ impl SWT0_R {
         *self == SWT0_A::SWT0_1
     }
 }
-#[doc = "Field `SWT0` writer - Software trigger 0 event"]
+#[doc = "Field `SWT0` writer - Software trigger 0 event."]
 pub type SWT0_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT0_A, O>;
 impl<'a, const O: u8> SWT0_W<'a, O> {
     #[doc = "No trigger 0 event generated."]
@@ -84,9 +84,9 @@ impl<'a, const O: u8> SWT0_W<'a, O> {
         self.variant(SWT0_A::SWT0_1)
     }
 }
-#[doc = "Field `SWT1` reader - Software trigger 1 event"]
+#[doc = "Field `SWT1` reader - Software trigger 1 event."]
 pub type SWT1_R = crate::BitReader<SWT1_A>;
-#[doc = "Software trigger 1 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 1 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT1_A {
     #[doc = "0: No trigger 1 event generated."]
@@ -120,7 +120,7 @@ impl SWT1_R {
         *self == SWT1_A::SWT1_1
     }
 }
-#[doc = "Field `SWT1` writer - Software trigger 1 event"]
+#[doc = "Field `SWT1` writer - Software trigger 1 event."]
 pub type SWT1_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT1_A, O>;
 impl<'a, const O: u8> SWT1_W<'a, O> {
     #[doc = "No trigger 1 event generated."]
@@ -134,9 +134,9 @@ impl<'a, const O: u8> SWT1_W<'a, O> {
         self.variant(SWT1_A::SWT1_1)
     }
 }
-#[doc = "Field `SWT2` reader - Software trigger 2 event"]
+#[doc = "Field `SWT2` reader - Software trigger 2 event."]
 pub type SWT2_R = crate::BitReader<SWT2_A>;
-#[doc = "Software trigger 2 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 2 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT2_A {
     #[doc = "0: No trigger 2 event generated."]
@@ -170,7 +170,7 @@ impl SWT2_R {
         *self == SWT2_A::SWT2_1
     }
 }
-#[doc = "Field `SWT2` writer - Software trigger 2 event"]
+#[doc = "Field `SWT2` writer - Software trigger 2 event."]
 pub type SWT2_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT2_A, O>;
 impl<'a, const O: u8> SWT2_W<'a, O> {
     #[doc = "No trigger 2 event generated."]
@@ -184,9 +184,9 @@ impl<'a, const O: u8> SWT2_W<'a, O> {
         self.variant(SWT2_A::SWT2_1)
     }
 }
-#[doc = "Field `SWT3` reader - Software trigger 3 event"]
+#[doc = "Field `SWT3` reader - Software trigger 3 event."]
 pub type SWT3_R = crate::BitReader<SWT3_A>;
-#[doc = "Software trigger 3 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 3 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT3_A {
     #[doc = "0: No trigger 3 event generated."]
@@ -220,7 +220,7 @@ impl SWT3_R {
         *self == SWT3_A::SWT3_1
     }
 }
-#[doc = "Field `SWT3` writer - Software trigger 3 event"]
+#[doc = "Field `SWT3` writer - Software trigger 3 event."]
 pub type SWT3_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT3_A, O>;
 impl<'a, const O: u8> SWT3_W<'a, O> {
     #[doc = "No trigger 3 event generated."]
@@ -234,9 +234,9 @@ impl<'a, const O: u8> SWT3_W<'a, O> {
         self.variant(SWT3_A::SWT3_1)
     }
 }
-#[doc = "Field `SWT4` reader - Software trigger 4 event"]
+#[doc = "Field `SWT4` reader - Software trigger 4 event."]
 pub type SWT4_R = crate::BitReader<SWT4_A>;
-#[doc = "Software trigger 4 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 4 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT4_A {
     #[doc = "0: No trigger 4 event generated."]
@@ -270,7 +270,7 @@ impl SWT4_R {
         *self == SWT4_A::SWT4_1
     }
 }
-#[doc = "Field `SWT4` writer - Software trigger 4 event"]
+#[doc = "Field `SWT4` writer - Software trigger 4 event."]
 pub type SWT4_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT4_A, O>;
 impl<'a, const O: u8> SWT4_W<'a, O> {
     #[doc = "No trigger 4 event generated."]
@@ -284,9 +284,9 @@ impl<'a, const O: u8> SWT4_W<'a, O> {
         self.variant(SWT4_A::SWT4_1)
     }
 }
-#[doc = "Field `SWT5` reader - Software trigger 5 event"]
+#[doc = "Field `SWT5` reader - Software trigger 5 event."]
 pub type SWT5_R = crate::BitReader<SWT5_A>;
-#[doc = "Software trigger 5 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 5 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT5_A {
     #[doc = "0: No trigger 5 event generated."]
@@ -320,7 +320,7 @@ impl SWT5_R {
         *self == SWT5_A::SWT5_1
     }
 }
-#[doc = "Field `SWT5` writer - Software trigger 5 event"]
+#[doc = "Field `SWT5` writer - Software trigger 5 event."]
 pub type SWT5_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT5_A, O>;
 impl<'a, const O: u8> SWT5_W<'a, O> {
     #[doc = "No trigger 5 event generated."]
@@ -334,9 +334,9 @@ impl<'a, const O: u8> SWT5_W<'a, O> {
         self.variant(SWT5_A::SWT5_1)
     }
 }
-#[doc = "Field `SWT6` reader - Software trigger 6 event"]
+#[doc = "Field `SWT6` reader - Software trigger 6 event."]
 pub type SWT6_R = crate::BitReader<SWT6_A>;
-#[doc = "Software trigger 6 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 6 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT6_A {
     #[doc = "0: No trigger 6 event generated."]
@@ -370,7 +370,7 @@ impl SWT6_R {
         *self == SWT6_A::SWT6_1
     }
 }
-#[doc = "Field `SWT6` writer - Software trigger 6 event"]
+#[doc = "Field `SWT6` writer - Software trigger 6 event."]
 pub type SWT6_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT6_A, O>;
 impl<'a, const O: u8> SWT6_W<'a, O> {
     #[doc = "No trigger 6 event generated."]
@@ -384,9 +384,9 @@ impl<'a, const O: u8> SWT6_W<'a, O> {
         self.variant(SWT6_A::SWT6_1)
     }
 }
-#[doc = "Field `SWT7` reader - Software trigger 7 event"]
+#[doc = "Field `SWT7` reader - Software trigger 7 event."]
 pub type SWT7_R = crate::BitReader<SWT7_A>;
-#[doc = "Software trigger 7 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 7 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT7_A {
     #[doc = "0: No trigger 7 event generated."]
@@ -420,7 +420,7 @@ impl SWT7_R {
         *self == SWT7_A::SWT7_1
     }
 }
-#[doc = "Field `SWT7` writer - Software trigger 7 event"]
+#[doc = "Field `SWT7` writer - Software trigger 7 event."]
 pub type SWT7_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT7_A, O>;
 impl<'a, const O: u8> SWT7_W<'a, O> {
     #[doc = "No trigger 7 event generated."]
@@ -434,9 +434,9 @@ impl<'a, const O: u8> SWT7_W<'a, O> {
         self.variant(SWT7_A::SWT7_1)
     }
 }
-#[doc = "Field `SWT8` reader - Software trigger 8 event"]
+#[doc = "Field `SWT8` reader - Software trigger 8 event."]
 pub type SWT8_R = crate::BitReader<SWT8_A>;
-#[doc = "Software trigger 8 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 8 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT8_A {
     #[doc = "0: No trigger 8 event generated."]
@@ -470,7 +470,7 @@ impl SWT8_R {
         *self == SWT8_A::SWT8_1
     }
 }
-#[doc = "Field `SWT8` writer - Software trigger 8 event"]
+#[doc = "Field `SWT8` writer - Software trigger 8 event."]
 pub type SWT8_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT8_A, O>;
 impl<'a, const O: u8> SWT8_W<'a, O> {
     #[doc = "No trigger 8 event generated."]
@@ -484,9 +484,9 @@ impl<'a, const O: u8> SWT8_W<'a, O> {
         self.variant(SWT8_A::SWT8_1)
     }
 }
-#[doc = "Field `SWT9` reader - Software trigger 9 event"]
+#[doc = "Field `SWT9` reader - Software trigger 9 event."]
 pub type SWT9_R = crate::BitReader<SWT9_A>;
-#[doc = "Software trigger 9 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 9 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT9_A {
     #[doc = "0: No trigger 9 event generated."]
@@ -520,7 +520,7 @@ impl SWT9_R {
         *self == SWT9_A::SWT9_1
     }
 }
-#[doc = "Field `SWT9` writer - Software trigger 9 event"]
+#[doc = "Field `SWT9` writer - Software trigger 9 event."]
 pub type SWT9_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT9_A, O>;
 impl<'a, const O: u8> SWT9_W<'a, O> {
     #[doc = "No trigger 9 event generated."]
@@ -534,9 +534,9 @@ impl<'a, const O: u8> SWT9_W<'a, O> {
         self.variant(SWT9_A::SWT9_1)
     }
 }
-#[doc = "Field `SWT10` reader - Software trigger 10 event"]
+#[doc = "Field `SWT10` reader - Software trigger 10 event."]
 pub type SWT10_R = crate::BitReader<SWT10_A>;
-#[doc = "Software trigger 10 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 10 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT10_A {
     #[doc = "0: No trigger 10 event generated."]
@@ -570,7 +570,7 @@ impl SWT10_R {
         *self == SWT10_A::SWT10_1
     }
 }
-#[doc = "Field `SWT10` writer - Software trigger 10 event"]
+#[doc = "Field `SWT10` writer - Software trigger 10 event."]
 pub type SWT10_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT10_A, O>;
 impl<'a, const O: u8> SWT10_W<'a, O> {
     #[doc = "No trigger 10 event generated."]
@@ -584,9 +584,9 @@ impl<'a, const O: u8> SWT10_W<'a, O> {
         self.variant(SWT10_A::SWT10_1)
     }
 }
-#[doc = "Field `SWT11` reader - Software trigger 11 event"]
+#[doc = "Field `SWT11` reader - Software trigger 11 event."]
 pub type SWT11_R = crate::BitReader<SWT11_A>;
-#[doc = "Software trigger 11 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 11 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT11_A {
     #[doc = "0: No trigger 11 event generated."]
@@ -620,7 +620,7 @@ impl SWT11_R {
         *self == SWT11_A::SWT11_1
     }
 }
-#[doc = "Field `SWT11` writer - Software trigger 11 event"]
+#[doc = "Field `SWT11` writer - Software trigger 11 event."]
 pub type SWT11_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT11_A, O>;
 impl<'a, const O: u8> SWT11_W<'a, O> {
     #[doc = "No trigger 11 event generated."]
@@ -634,9 +634,9 @@ impl<'a, const O: u8> SWT11_W<'a, O> {
         self.variant(SWT11_A::SWT11_1)
     }
 }
-#[doc = "Field `SWT12` reader - Software trigger 12 event"]
+#[doc = "Field `SWT12` reader - Software trigger 12 event."]
 pub type SWT12_R = crate::BitReader<SWT12_A>;
-#[doc = "Software trigger 12 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 12 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT12_A {
     #[doc = "0: No trigger 12 event generated."]
@@ -670,7 +670,7 @@ impl SWT12_R {
         *self == SWT12_A::SWT12_1
     }
 }
-#[doc = "Field `SWT12` writer - Software trigger 12 event"]
+#[doc = "Field `SWT12` writer - Software trigger 12 event."]
 pub type SWT12_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT12_A, O>;
 impl<'a, const O: u8> SWT12_W<'a, O> {
     #[doc = "No trigger 12 event generated."]
@@ -684,9 +684,9 @@ impl<'a, const O: u8> SWT12_W<'a, O> {
         self.variant(SWT12_A::SWT12_1)
     }
 }
-#[doc = "Field `SWT13` reader - Software trigger 13 event"]
+#[doc = "Field `SWT13` reader - Software trigger 13 event."]
 pub type SWT13_R = crate::BitReader<SWT13_A>;
-#[doc = "Software trigger 13 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 13 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT13_A {
     #[doc = "0: No trigger 13 event generated."]
@@ -720,7 +720,7 @@ impl SWT13_R {
         *self == SWT13_A::SWT13_1
     }
 }
-#[doc = "Field `SWT13` writer - Software trigger 13 event"]
+#[doc = "Field `SWT13` writer - Software trigger 13 event."]
 pub type SWT13_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT13_A, O>;
 impl<'a, const O: u8> SWT13_W<'a, O> {
     #[doc = "No trigger 13 event generated."]
@@ -734,9 +734,9 @@ impl<'a, const O: u8> SWT13_W<'a, O> {
         self.variant(SWT13_A::SWT13_1)
     }
 }
-#[doc = "Field `SWT14` reader - Software trigger 14 event"]
+#[doc = "Field `SWT14` reader - Software trigger 14 event."]
 pub type SWT14_R = crate::BitReader<SWT14_A>;
-#[doc = "Software trigger 14 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 14 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT14_A {
     #[doc = "0: No trigger 14 event generated."]
@@ -770,7 +770,7 @@ impl SWT14_R {
         *self == SWT14_A::SWT14_1
     }
 }
-#[doc = "Field `SWT14` writer - Software trigger 14 event"]
+#[doc = "Field `SWT14` writer - Software trigger 14 event."]
 pub type SWT14_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT14_A, O>;
 impl<'a, const O: u8> SWT14_W<'a, O> {
     #[doc = "No trigger 14 event generated."]
@@ -784,9 +784,9 @@ impl<'a, const O: u8> SWT14_W<'a, O> {
         self.variant(SWT14_A::SWT14_1)
     }
 }
-#[doc = "Field `SWT15` reader - Software trigger 15 event"]
+#[doc = "Field `SWT15` reader - Software trigger 15 event."]
 pub type SWT15_R = crate::BitReader<SWT15_A>;
-#[doc = "Software trigger 15 event\n\nValue on reset: 0"]
+#[doc = "Software trigger 15 event.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWT15_A {
     #[doc = "0: No trigger 15 event generated."]
@@ -820,7 +820,7 @@ impl SWT15_R {
         *self == SWT15_A::SWT15_1
     }
 }
-#[doc = "Field `SWT15` writer - Software trigger 15 event"]
+#[doc = "Field `SWT15` writer - Software trigger 15 event."]
 pub type SWT15_W<'a, const O: u8> = crate::BitWriter<'a, u32, SWTRIG_SPEC, SWT15_A, O>;
 impl<'a, const O: u8> SWT15_W<'a, O> {
     #[doc = "No trigger 15 event generated."]
@@ -835,164 +835,164 @@ impl<'a, const O: u8> SWT15_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Software trigger 0 event"]
+    #[doc = "Bit 0 - Software trigger 0 event."]
     #[inline(always)]
     pub fn swt0(&self) -> SWT0_R {
         SWT0_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - Software trigger 1 event"]
+    #[doc = "Bit 1 - Software trigger 1 event."]
     #[inline(always)]
     pub fn swt1(&self) -> SWT1_R {
         SWT1_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - Software trigger 2 event"]
+    #[doc = "Bit 2 - Software trigger 2 event."]
     #[inline(always)]
     pub fn swt2(&self) -> SWT2_R {
         SWT2_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bit 3 - Software trigger 3 event"]
+    #[doc = "Bit 3 - Software trigger 3 event."]
     #[inline(always)]
     pub fn swt3(&self) -> SWT3_R {
         SWT3_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 4 - Software trigger 4 event"]
+    #[doc = "Bit 4 - Software trigger 4 event."]
     #[inline(always)]
     pub fn swt4(&self) -> SWT4_R {
         SWT4_R::new(((self.bits >> 4) & 1) != 0)
     }
-    #[doc = "Bit 5 - Software trigger 5 event"]
+    #[doc = "Bit 5 - Software trigger 5 event."]
     #[inline(always)]
     pub fn swt5(&self) -> SWT5_R {
         SWT5_R::new(((self.bits >> 5) & 1) != 0)
     }
-    #[doc = "Bit 6 - Software trigger 6 event"]
+    #[doc = "Bit 6 - Software trigger 6 event."]
     #[inline(always)]
     pub fn swt6(&self) -> SWT6_R {
         SWT6_R::new(((self.bits >> 6) & 1) != 0)
     }
-    #[doc = "Bit 7 - Software trigger 7 event"]
+    #[doc = "Bit 7 - Software trigger 7 event."]
     #[inline(always)]
     pub fn swt7(&self) -> SWT7_R {
         SWT7_R::new(((self.bits >> 7) & 1) != 0)
     }
-    #[doc = "Bit 8 - Software trigger 8 event"]
+    #[doc = "Bit 8 - Software trigger 8 event."]
     #[inline(always)]
     pub fn swt8(&self) -> SWT8_R {
         SWT8_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bit 9 - Software trigger 9 event"]
+    #[doc = "Bit 9 - Software trigger 9 event."]
     #[inline(always)]
     pub fn swt9(&self) -> SWT9_R {
         SWT9_R::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bit 10 - Software trigger 10 event"]
+    #[doc = "Bit 10 - Software trigger 10 event."]
     #[inline(always)]
     pub fn swt10(&self) -> SWT10_R {
         SWT10_R::new(((self.bits >> 10) & 1) != 0)
     }
-    #[doc = "Bit 11 - Software trigger 11 event"]
+    #[doc = "Bit 11 - Software trigger 11 event."]
     #[inline(always)]
     pub fn swt11(&self) -> SWT11_R {
         SWT11_R::new(((self.bits >> 11) & 1) != 0)
     }
-    #[doc = "Bit 12 - Software trigger 12 event"]
+    #[doc = "Bit 12 - Software trigger 12 event."]
     #[inline(always)]
     pub fn swt12(&self) -> SWT12_R {
         SWT12_R::new(((self.bits >> 12) & 1) != 0)
     }
-    #[doc = "Bit 13 - Software trigger 13 event"]
+    #[doc = "Bit 13 - Software trigger 13 event."]
     #[inline(always)]
     pub fn swt13(&self) -> SWT13_R {
         SWT13_R::new(((self.bits >> 13) & 1) != 0)
     }
-    #[doc = "Bit 14 - Software trigger 14 event"]
+    #[doc = "Bit 14 - Software trigger 14 event."]
     #[inline(always)]
     pub fn swt14(&self) -> SWT14_R {
         SWT14_R::new(((self.bits >> 14) & 1) != 0)
     }
-    #[doc = "Bit 15 - Software trigger 15 event"]
+    #[doc = "Bit 15 - Software trigger 15 event."]
     #[inline(always)]
     pub fn swt15(&self) -> SWT15_R {
         SWT15_R::new(((self.bits >> 15) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 0 - Software trigger 0 event"]
+    #[doc = "Bit 0 - Software trigger 0 event."]
     #[inline(always)]
     pub fn swt0(&mut self) -> SWT0_W<0> {
         SWT0_W::new(self)
     }
-    #[doc = "Bit 1 - Software trigger 1 event"]
+    #[doc = "Bit 1 - Software trigger 1 event."]
     #[inline(always)]
     pub fn swt1(&mut self) -> SWT1_W<1> {
         SWT1_W::new(self)
     }
-    #[doc = "Bit 2 - Software trigger 2 event"]
+    #[doc = "Bit 2 - Software trigger 2 event."]
     #[inline(always)]
     pub fn swt2(&mut self) -> SWT2_W<2> {
         SWT2_W::new(self)
     }
-    #[doc = "Bit 3 - Software trigger 3 event"]
+    #[doc = "Bit 3 - Software trigger 3 event."]
     #[inline(always)]
     pub fn swt3(&mut self) -> SWT3_W<3> {
         SWT3_W::new(self)
     }
-    #[doc = "Bit 4 - Software trigger 4 event"]
+    #[doc = "Bit 4 - Software trigger 4 event."]
     #[inline(always)]
     pub fn swt4(&mut self) -> SWT4_W<4> {
         SWT4_W::new(self)
     }
-    #[doc = "Bit 5 - Software trigger 5 event"]
+    #[doc = "Bit 5 - Software trigger 5 event."]
     #[inline(always)]
     pub fn swt5(&mut self) -> SWT5_W<5> {
         SWT5_W::new(self)
     }
-    #[doc = "Bit 6 - Software trigger 6 event"]
+    #[doc = "Bit 6 - Software trigger 6 event."]
     #[inline(always)]
     pub fn swt6(&mut self) -> SWT6_W<6> {
         SWT6_W::new(self)
     }
-    #[doc = "Bit 7 - Software trigger 7 event"]
+    #[doc = "Bit 7 - Software trigger 7 event."]
     #[inline(always)]
     pub fn swt7(&mut self) -> SWT7_W<7> {
         SWT7_W::new(self)
     }
-    #[doc = "Bit 8 - Software trigger 8 event"]
+    #[doc = "Bit 8 - Software trigger 8 event."]
     #[inline(always)]
     pub fn swt8(&mut self) -> SWT8_W<8> {
         SWT8_W::new(self)
     }
-    #[doc = "Bit 9 - Software trigger 9 event"]
+    #[doc = "Bit 9 - Software trigger 9 event."]
     #[inline(always)]
     pub fn swt9(&mut self) -> SWT9_W<9> {
         SWT9_W::new(self)
     }
-    #[doc = "Bit 10 - Software trigger 10 event"]
+    #[doc = "Bit 10 - Software trigger 10 event."]
     #[inline(always)]
     pub fn swt10(&mut self) -> SWT10_W<10> {
         SWT10_W::new(self)
     }
-    #[doc = "Bit 11 - Software trigger 11 event"]
+    #[doc = "Bit 11 - Software trigger 11 event."]
     #[inline(always)]
     pub fn swt11(&mut self) -> SWT11_W<11> {
         SWT11_W::new(self)
     }
-    #[doc = "Bit 12 - Software trigger 12 event"]
+    #[doc = "Bit 12 - Software trigger 12 event."]
     #[inline(always)]
     pub fn swt12(&mut self) -> SWT12_W<12> {
         SWT12_W::new(self)
     }
-    #[doc = "Bit 13 - Software trigger 13 event"]
+    #[doc = "Bit 13 - Software trigger 13 event."]
     #[inline(always)]
     pub fn swt13(&mut self) -> SWT13_W<13> {
         SWT13_W::new(self)
     }
-    #[doc = "Bit 14 - Software trigger 14 event"]
+    #[doc = "Bit 14 - Software trigger 14 event."]
     #[inline(always)]
     pub fn swt14(&mut self) -> SWT14_W<14> {
         SWT14_W::new(self)
     }
-    #[doc = "Bit 15 - Software trigger 15 event"]
+    #[doc = "Bit 15 - Software trigger 15 event."]
     #[inline(always)]
     pub fn swt15(&mut self) -> SWT15_W<15> {
         SWT15_W::new(self)
@@ -1004,7 +1004,7 @@ impl W {
         self
     }
 }
-#[doc = "Software Trigger Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [swtrig](index.html) module"]
+#[doc = "Software Trigger Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [swtrig](index.html) module"]
 pub struct SWTRIG_SPEC;
 impl crate::RegisterSpec for SWTRIG_SPEC {
     type Ux = u32;

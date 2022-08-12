@@ -22,7 +22,7 @@ impl R {
         EVTIMER_COUNT_VALUE_R::new(self.bits)
     }
 }
-#[doc = "EVTIMER Low Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [evtimerl](index.html) module"]
+#[doc = "EVTIMER Low Register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [evtimerl](index.html) module"]
 pub struct EVTIMERL_SPEC;
 impl crate::RegisterSpec for EVTIMERL_SPEC {
     type Ux = u32;

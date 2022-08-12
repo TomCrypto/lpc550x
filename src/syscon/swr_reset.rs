@@ -62,7 +62,7 @@ impl W {
         self
     }
 }
-#[doc = "generate a software_reset\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [swr_reset](index.html) module"]
+#[doc = "generate a software_reset.\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [swr_reset](index.html) module"]
 pub struct SWR_RESET_SPEC;
 impl crate::RegisterSpec for SWR_RESET_SPEC {
     type Ux = u32;

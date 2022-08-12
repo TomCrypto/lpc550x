@@ -13,9 +13,9 @@ impl From<crate::R<VERID_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `RES` reader - Resolution"]
+#[doc = "Field `RES` reader - Resolution."]
 pub type RES_R = crate::BitReader<RES_A>;
-#[doc = "Resolution\n\nValue on reset: 1"]
+#[doc = "Resolution.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum RES_A {
     #[doc = "0: Up to 13-bit differential/12-bit single ended resolution supported."]
@@ -49,9 +49,9 @@ impl RES_R {
         *self == RES_A::RES_1
     }
 }
-#[doc = "Field `DIFFEN` reader - Differential Supported"]
+#[doc = "Field `DIFFEN` reader - Differential Supported."]
 pub type DIFFEN_R = crate::BitReader<DIFFEN_A>;
-#[doc = "Differential Supported\n\nValue on reset: 1"]
+#[doc = "Differential Supported.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum DIFFEN_A {
     #[doc = "0: Differential operation not supported."]
@@ -86,9 +86,9 @@ impl DIFFEN_R {
         *self == DIFFEN_A::DIFFEN_1
     }
 }
-#[doc = "Field `MVI` reader - Multi Vref Implemented"]
+#[doc = "Field `MVI` reader - Multi Vref Implemented."]
 pub type MVI_R = crate::BitReader<MVI_A>;
-#[doc = "Multi Vref Implemented\n\nValue on reset: 1"]
+#[doc = "Multi Vref Implemented.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum MVI_A {
     #[doc = "0: Single voltage reference high (VREFH) input supported."]
@@ -122,9 +122,9 @@ impl MVI_R {
         *self == MVI_A::MVI_1
     }
 }
-#[doc = "Field `CSW` reader - Channel Scale Width"]
+#[doc = "Field `CSW` reader - Channel Scale Width."]
 pub type CSW_R = crate::FieldReader<u8, CSW_A>;
-#[doc = "Channel Scale Width\n\nValue on reset: 0"]
+#[doc = "Channel Scale Width.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CSW_A {
@@ -168,9 +168,9 @@ impl CSW_R {
         *self == CSW_A::CSW_6
     }
 }
-#[doc = "Field `VR1RNGI` reader - Voltage Reference 1 Range Control Bit Implemented"]
+#[doc = "Field `VR1RNGI` reader - Voltage Reference 1 Range Control Bit Implemented."]
 pub type VR1RNGI_R = crate::BitReader<VR1RNGI_A>;
-#[doc = "Voltage Reference 1 Range Control Bit Implemented\n\nValue on reset: 0"]
+#[doc = "Voltage Reference 1 Range Control Bit Implemented.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum VR1RNGI_A {
     #[doc = "0: Range control not required. CFG\\[VREF1RNG\\]
@@ -206,9 +206,9 @@ impl VR1RNGI_R {
         *self == VR1RNGI_A::VR1RNGI_1
     }
 }
-#[doc = "Field `IADCKI` reader - Internal ADC Clock implemented"]
+#[doc = "Field `IADCKI` reader - Internal ADC Clock implemented."]
 pub type IADCKI_R = crate::BitReader<IADCKI_A>;
-#[doc = "Internal ADC Clock implemented\n\nValue on reset: 0"]
+#[doc = "Internal ADC Clock implemented.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum IADCKI_A {
     #[doc = "0: Internal clock source not implemented."]
@@ -242,9 +242,9 @@ impl IADCKI_R {
         *self == IADCKI_A::IADCKI_1
     }
 }
-#[doc = "Field `CALOFSI` reader - Calibration Function Implemented"]
+#[doc = "Field `CALOFSI` reader - Calibration Function Implemented."]
 pub type CALOFSI_R = crate::BitReader<CALOFSI_A>;
-#[doc = "Calibration Function Implemented\n\nValue on reset: 1"]
+#[doc = "Calibration Function Implemented.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum CALOFSI_A {
     #[doc = "0: Calibration Not Implemented."]
@@ -278,9 +278,9 @@ impl CALOFSI_R {
         *self == CALOFSI_A::CALOFSI_1
     }
 }
-#[doc = "Field `NUM_SEC` reader - Number of Single Ended Outputs Supported"]
+#[doc = "Field `NUM_SEC` reader - Number of Single Ended Outputs Supported."]
 pub type NUM_SEC_R = crate::BitReader<NUM_SEC_A>;
-#[doc = "Number of Single Ended Outputs Supported\n\nValue on reset: 1"]
+#[doc = "Number of Single Ended Outputs Supported.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum NUM_SEC_A {
     #[doc = "0: This design supports one single ended conversion at a time."]
@@ -314,13 +314,13 @@ impl NUM_SEC_R {
         *self == NUM_SEC_A::NUM_SEC_1
     }
 }
-#[doc = "Field `NUM_FIFO` reader - Number of FIFOs"]
+#[doc = "Field `NUM_FIFO` reader - Number of FIFOs."]
 pub type NUM_FIFO_R = crate::FieldReader<u8, NUM_FIFO_A>;
-#[doc = "Number of FIFOs\n\nValue on reset: 2"]
+#[doc = "Number of FIFOs.\n\nValue on reset: 2"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum NUM_FIFO_A {
-    #[doc = "0: N/A"]
+    #[doc = "0: N/A."]
     NUM_FIFO_0 = 0,
     #[doc = "1: This design supports one result FIFO."]
     NUM_FIFO_1 = 1,
@@ -376,68 +376,68 @@ impl NUM_FIFO_R {
         *self == NUM_FIFO_A::NUM_FIFO_4
     }
 }
-#[doc = "Field `MINOR` reader - Minor Version Number"]
+#[doc = "Field `MINOR` reader - Minor Version Number."]
 pub type MINOR_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `MAJOR` reader - Major Version Number"]
+#[doc = "Field `MAJOR` reader - Major Version Number."]
 pub type MAJOR_R = crate::FieldReader<u8, u8>;
 impl R {
-    #[doc = "Bit 0 - Resolution"]
+    #[doc = "Bit 0 - Resolution."]
     #[inline(always)]
     pub fn res(&self) -> RES_R {
         RES_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - Differential Supported"]
+    #[doc = "Bit 1 - Differential Supported."]
     #[inline(always)]
     pub fn diffen(&self) -> DIFFEN_R {
         DIFFEN_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 3 - Multi Vref Implemented"]
+    #[doc = "Bit 3 - Multi Vref Implemented."]
     #[inline(always)]
     pub fn mvi(&self) -> MVI_R {
         MVI_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bits 4:6 - Channel Scale Width"]
+    #[doc = "Bits 4:6 - Channel Scale Width."]
     #[inline(always)]
     pub fn csw(&self) -> CSW_R {
         CSW_R::new(((self.bits >> 4) & 7) as u8)
     }
-    #[doc = "Bit 8 - Voltage Reference 1 Range Control Bit Implemented"]
+    #[doc = "Bit 8 - Voltage Reference 1 Range Control Bit Implemented."]
     #[inline(always)]
     pub fn vr1rngi(&self) -> VR1RNGI_R {
         VR1RNGI_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bit 9 - Internal ADC Clock implemented"]
+    #[doc = "Bit 9 - Internal ADC Clock implemented."]
     #[inline(always)]
     pub fn iadcki(&self) -> IADCKI_R {
         IADCKI_R::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bit 10 - Calibration Function Implemented"]
+    #[doc = "Bit 10 - Calibration Function Implemented."]
     #[inline(always)]
     pub fn calofsi(&self) -> CALOFSI_R {
         CALOFSI_R::new(((self.bits >> 10) & 1) != 0)
     }
-    #[doc = "Bit 11 - Number of Single Ended Outputs Supported"]
+    #[doc = "Bit 11 - Number of Single Ended Outputs Supported."]
     #[inline(always)]
     pub fn num_sec(&self) -> NUM_SEC_R {
         NUM_SEC_R::new(((self.bits >> 11) & 1) != 0)
     }
-    #[doc = "Bits 12:14 - Number of FIFOs"]
+    #[doc = "Bits 12:14 - Number of FIFOs."]
     #[inline(always)]
     pub fn num_fifo(&self) -> NUM_FIFO_R {
         NUM_FIFO_R::new(((self.bits >> 12) & 7) as u8)
     }
-    #[doc = "Bits 16:23 - Minor Version Number"]
+    #[doc = "Bits 16:23 - Minor Version Number."]
     #[inline(always)]
     pub fn minor(&self) -> MINOR_R {
         MINOR_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bits 24:31 - Major Version Number"]
+    #[doc = "Bits 24:31 - Major Version Number."]
     #[inline(always)]
     pub fn major(&self) -> MAJOR_R {
         MAJOR_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
-#[doc = "Version ID Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [verid](index.html) module"]
+#[doc = "Version ID Register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [verid](index.html) module"]
 pub struct VERID_SPEC;
 impl crate::RegisterSpec for VERID_SPEC {
     type Ux = u32;

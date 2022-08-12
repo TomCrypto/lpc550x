@@ -239,7 +239,7 @@ impl R {
         SIN15_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
-#[doc = "SCT input register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [input](index.html) module"]
+#[doc = "SCT input register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [input](index.html) module"]
 pub struct INPUT_SPEC;
 impl crate::RegisterSpec for INPUT_SPEC {
     type Ux = u32;

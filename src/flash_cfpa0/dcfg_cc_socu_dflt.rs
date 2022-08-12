@@ -34,14 +34,14 @@ impl From<crate::W<DCFG_CC_SOCU_DFLT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `NIDEN` reader - Non Secure non-invasive debug fixed state"]
+#[doc = "Field `NIDEN` reader - Non Secure non-invasive debug fixed state."]
 pub type NIDEN_R = crate::BitReader<NIDEN_A>;
-#[doc = "Non Secure non-invasive debug fixed state\n\nValue on reset: 0"]
+#[doc = "Non Secure non-invasive debug fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum NIDEN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<NIDEN_A> for bool {
@@ -70,28 +70,28 @@ impl NIDEN_R {
         *self == NIDEN_A::ENABLE
     }
 }
-#[doc = "Field `NIDEN` writer - Non Secure non-invasive debug fixed state"]
+#[doc = "Field `NIDEN` writer - Non Secure non-invasive debug fixed state."]
 pub type NIDEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, NIDEN_A, O>;
 impl<'a, const O: u8> NIDEN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(NIDEN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(NIDEN_A::ENABLE)
     }
 }
-#[doc = "Field `DBGEN` reader - Non Secure debug fixed state"]
+#[doc = "Field `DBGEN` reader - Non Secure debug fixed state."]
 pub type DBGEN_R = crate::BitReader<DBGEN_A>;
-#[doc = "Non Secure debug fixed state\n\nValue on reset: 0"]
+#[doc = "Non Secure debug fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum DBGEN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<DBGEN_A> for bool {
@@ -120,28 +120,28 @@ impl DBGEN_R {
         *self == DBGEN_A::ENABLE
     }
 }
-#[doc = "Field `DBGEN` writer - Non Secure debug fixed state"]
+#[doc = "Field `DBGEN` writer - Non Secure debug fixed state."]
 pub type DBGEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, DBGEN_A, O>;
 impl<'a, const O: u8> DBGEN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(DBGEN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(DBGEN_A::ENABLE)
     }
 }
-#[doc = "Field `SPNIDEN` reader - Secure non-invasive debug fixed state"]
+#[doc = "Field `SPNIDEN` reader - Secure non-invasive debug fixed state."]
 pub type SPNIDEN_R = crate::BitReader<SPNIDEN_A>;
-#[doc = "Secure non-invasive debug fixed state\n\nValue on reset: 0"]
+#[doc = "Secure non-invasive debug fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SPNIDEN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<SPNIDEN_A> for bool {
@@ -170,29 +170,29 @@ impl SPNIDEN_R {
         *self == SPNIDEN_A::ENABLE
     }
 }
-#[doc = "Field `SPNIDEN` writer - Secure non-invasive debug fixed state"]
+#[doc = "Field `SPNIDEN` writer - Secure non-invasive debug fixed state."]
 pub type SPNIDEN_W<'a, const O: u8> =
     crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, SPNIDEN_A, O>;
 impl<'a, const O: u8> SPNIDEN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(SPNIDEN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(SPNIDEN_A::ENABLE)
     }
 }
-#[doc = "Field `SPIDEN` reader - Secure invasive debug fixed state"]
+#[doc = "Field `SPIDEN` reader - Secure invasive debug fixed state."]
 pub type SPIDEN_R = crate::BitReader<SPIDEN_A>;
-#[doc = "Secure invasive debug fixed state\n\nValue on reset: 0"]
+#[doc = "Secure invasive debug fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SPIDEN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<SPIDEN_A> for bool {
@@ -221,28 +221,28 @@ impl SPIDEN_R {
         *self == SPIDEN_A::ENABLE
     }
 }
-#[doc = "Field `SPIDEN` writer - Secure invasive debug fixed state"]
+#[doc = "Field `SPIDEN` writer - Secure invasive debug fixed state."]
 pub type SPIDEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, SPIDEN_A, O>;
 impl<'a, const O: u8> SPIDEN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(SPIDEN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(SPIDEN_A::ENABLE)
     }
 }
-#[doc = "Field `TAPEN` reader - JTAG TAP fixed state"]
+#[doc = "Field `TAPEN` reader - JTAG TAP fixed state."]
 pub type TAPEN_R = crate::BitReader<TAPEN_A>;
-#[doc = "JTAG TAP fixed state\n\nValue on reset: 0"]
+#[doc = "JTAG TAP fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TAPEN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<TAPEN_A> for bool {
@@ -271,28 +271,28 @@ impl TAPEN_R {
         *self == TAPEN_A::ENABLE
     }
 }
-#[doc = "Field `TAPEN` writer - JTAG TAP fixed state"]
+#[doc = "Field `TAPEN` writer - JTAG TAP fixed state."]
 pub type TAPEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, TAPEN_A, O>;
 impl<'a, const O: u8> TAPEN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(TAPEN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(TAPEN_A::ENABLE)
     }
 }
-#[doc = "Field `ISP_CMD_EN` reader - ISP Boot Command fixed state"]
+#[doc = "Field `ISP_CMD_EN` reader - ISP Boot Command fixed state."]
 pub type ISP_CMD_EN_R = crate::BitReader<ISP_CMD_EN_A>;
-#[doc = "ISP Boot Command fixed state\n\nValue on reset: 0"]
+#[doc = "ISP Boot Command fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum ISP_CMD_EN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<ISP_CMD_EN_A> for bool {
@@ -321,29 +321,29 @@ impl ISP_CMD_EN_R {
         *self == ISP_CMD_EN_A::ENABLE
     }
 }
-#[doc = "Field `ISP_CMD_EN` writer - ISP Boot Command fixed state"]
+#[doc = "Field `ISP_CMD_EN` writer - ISP Boot Command fixed state."]
 pub type ISP_CMD_EN_W<'a, const O: u8> =
     crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, ISP_CMD_EN_A, O>;
 impl<'a, const O: u8> ISP_CMD_EN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(ISP_CMD_EN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(ISP_CMD_EN_A::ENABLE)
     }
 }
-#[doc = "Field `FA_ME_CMD_EN` reader - FA Command fixed state"]
+#[doc = "Field `FA_ME_CMD_EN` reader - FA Command fixed state."]
 pub type FA_ME_CMD_EN_R = crate::BitReader<FA_ME_CMD_EN_A>;
-#[doc = "FA Command fixed state\n\nValue on reset: 0"]
+#[doc = "FA Command fixed state.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FA_ME_CMD_EN_A {
-    #[doc = "0: Disable"]
+    #[doc = "0: Disable."]
     DISABLE = 0,
-    #[doc = "1: Enable"]
+    #[doc = "1: Enable."]
     ENABLE = 1,
 }
 impl From<FA_ME_CMD_EN_A> for bool {
@@ -372,16 +372,16 @@ impl FA_ME_CMD_EN_R {
         *self == FA_ME_CMD_EN_A::ENABLE
     }
 }
-#[doc = "Field `FA_ME_CMD_EN` writer - FA Command fixed state"]
+#[doc = "Field `FA_ME_CMD_EN` writer - FA Command fixed state."]
 pub type FA_ME_CMD_EN_W<'a, const O: u8> =
     crate::BitWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, FA_ME_CMD_EN_A, O>;
 impl<'a, const O: u8> FA_ME_CMD_EN_W<'a, O> {
-    #[doc = "Disable"]
+    #[doc = "Disable."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(FA_ME_CMD_EN_A::DISABLE)
     }
-    #[doc = "Enable"]
+    #[doc = "Enable."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(FA_ME_CMD_EN_A::ENABLE)
@@ -393,37 +393,37 @@ pub type INVERSE_VALUE_R = crate::FieldReader<u16, u16>;
 pub type INVERSE_VALUE_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, DCFG_CC_SOCU_DFLT_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bit 0 - Non Secure non-invasive debug fixed state"]
+    #[doc = "Bit 0 - Non Secure non-invasive debug fixed state."]
     #[inline(always)]
     pub fn niden(&self) -> NIDEN_R {
         NIDEN_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - Non Secure debug fixed state"]
+    #[doc = "Bit 1 - Non Secure debug fixed state."]
     #[inline(always)]
     pub fn dbgen(&self) -> DBGEN_R {
         DBGEN_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - Secure non-invasive debug fixed state"]
+    #[doc = "Bit 2 - Secure non-invasive debug fixed state."]
     #[inline(always)]
     pub fn spniden(&self) -> SPNIDEN_R {
         SPNIDEN_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bit 3 - Secure invasive debug fixed state"]
+    #[doc = "Bit 3 - Secure invasive debug fixed state."]
     #[inline(always)]
     pub fn spiden(&self) -> SPIDEN_R {
         SPIDEN_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 4 - JTAG TAP fixed state"]
+    #[doc = "Bit 4 - JTAG TAP fixed state."]
     #[inline(always)]
     pub fn tapen(&self) -> TAPEN_R {
         TAPEN_R::new(((self.bits >> 4) & 1) != 0)
     }
-    #[doc = "Bit 6 - ISP Boot Command fixed state"]
+    #[doc = "Bit 6 - ISP Boot Command fixed state."]
     #[inline(always)]
     pub fn isp_cmd_en(&self) -> ISP_CMD_EN_R {
         ISP_CMD_EN_R::new(((self.bits >> 6) & 1) != 0)
     }
-    #[doc = "Bit 7 - FA Command fixed state"]
+    #[doc = "Bit 7 - FA Command fixed state."]
     #[inline(always)]
     pub fn fa_me_cmd_en(&self) -> FA_ME_CMD_EN_R {
         FA_ME_CMD_EN_R::new(((self.bits >> 7) & 1) != 0)
@@ -435,37 +435,37 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - Non Secure non-invasive debug fixed state"]
+    #[doc = "Bit 0 - Non Secure non-invasive debug fixed state."]
     #[inline(always)]
     pub fn niden(&mut self) -> NIDEN_W<0> {
         NIDEN_W::new(self)
     }
-    #[doc = "Bit 1 - Non Secure debug fixed state"]
+    #[doc = "Bit 1 - Non Secure debug fixed state."]
     #[inline(always)]
     pub fn dbgen(&mut self) -> DBGEN_W<1> {
         DBGEN_W::new(self)
     }
-    #[doc = "Bit 2 - Secure non-invasive debug fixed state"]
+    #[doc = "Bit 2 - Secure non-invasive debug fixed state."]
     #[inline(always)]
     pub fn spniden(&mut self) -> SPNIDEN_W<2> {
         SPNIDEN_W::new(self)
     }
-    #[doc = "Bit 3 - Secure invasive debug fixed state"]
+    #[doc = "Bit 3 - Secure invasive debug fixed state."]
     #[inline(always)]
     pub fn spiden(&mut self) -> SPIDEN_W<3> {
         SPIDEN_W::new(self)
     }
-    #[doc = "Bit 4 - JTAG TAP fixed state"]
+    #[doc = "Bit 4 - JTAG TAP fixed state."]
     #[inline(always)]
     pub fn tapen(&mut self) -> TAPEN_W<4> {
         TAPEN_W::new(self)
     }
-    #[doc = "Bit 6 - ISP Boot Command fixed state"]
+    #[doc = "Bit 6 - ISP Boot Command fixed state."]
     #[inline(always)]
     pub fn isp_cmd_en(&mut self) -> ISP_CMD_EN_W<6> {
         ISP_CMD_EN_W::new(self)
     }
-    #[doc = "Bit 7 - FA Command fixed state"]
+    #[doc = "Bit 7 - FA Command fixed state."]
     #[inline(always)]
     pub fn fa_me_cmd_en(&mut self) -> FA_ME_CMD_EN_W<7> {
         FA_ME_CMD_EN_W::new(self)

@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CTIMER2_RULE` reader - Standard counter/Timer 2"]
+#[doc = "Field `CTIMER2_RULE` reader - Standard counter/Timer 2."]
 pub type CTIMER2_RULE_R = crate::FieldReader<u8, CTIMER2_RULE_A>;
-#[doc = "Standard counter/Timer 2\n\nValue on reset: 0"]
+#[doc = "Standard counter/Timer 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTIMER2_RULE_A {
@@ -88,7 +88,7 @@ impl CTIMER2_RULE_R {
         *self == CTIMER2_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CTIMER2_RULE` writer - Standard counter/Timer 2"]
+#[doc = "Field `CTIMER2_RULE` writer - Standard counter/Timer 2."]
 pub type CTIMER2_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC, u8, CTIMER2_RULE_A, 2, O>;
 impl<'a, const O: u8> CTIMER2_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> CTIMER2_RULE_W<'a, O> {
         self.variant(CTIMER2_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `CTIMER3_RULE` reader - Standard counter/Timer 3"]
+#[doc = "Field `CTIMER3_RULE` reader - Standard counter/Timer 3."]
 pub type CTIMER3_RULE_R = crate::FieldReader<u8, CTIMER3_RULE_A>;
-#[doc = "Standard counter/Timer 3\n\nValue on reset: 0"]
+#[doc = "Standard counter/Timer 3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTIMER3_RULE_A {
@@ -167,7 +167,7 @@ impl CTIMER3_RULE_R {
         *self == CTIMER3_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CTIMER3_RULE` writer - Standard counter/Timer 3"]
+#[doc = "Field `CTIMER3_RULE` writer - Standard counter/Timer 3."]
 pub type CTIMER3_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC, u8, CTIMER3_RULE_A, 2, O>;
 impl<'a, const O: u8> CTIMER3_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> CTIMER3_RULE_W<'a, O> {
         self.variant(CTIMER3_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `CTIMER4_RULE` reader - Standard counter/Timer 4"]
+#[doc = "Field `CTIMER4_RULE` reader - Standard counter/Timer 4."]
 pub type CTIMER4_RULE_R = crate::FieldReader<u8, CTIMER4_RULE_A>;
-#[doc = "Standard counter/Timer 4\n\nValue on reset: 0"]
+#[doc = "Standard counter/Timer 4.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTIMER4_RULE_A {
@@ -246,7 +246,7 @@ impl CTIMER4_RULE_R {
         *self == CTIMER4_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CTIMER4_RULE` writer - Standard counter/Timer 4"]
+#[doc = "Field `CTIMER4_RULE` writer - Standard counter/Timer 4."]
 pub type CTIMER4_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC, u8, CTIMER4_RULE_A, 2, O>;
 impl<'a, const O: u8> CTIMER4_RULE_W<'a, O> {
@@ -271,9 +271,9 @@ impl<'a, const O: u8> CTIMER4_RULE_W<'a, O> {
         self.variant(CTIMER4_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `RTC_RULE` reader - Real Time Counter"]
+#[doc = "Field `RTC_RULE` reader - Real Time Counter."]
 pub type RTC_RULE_R = crate::FieldReader<u8, RTC_RULE_A>;
-#[doc = "Real Time Counter\n\nValue on reset: 0"]
+#[doc = "Real Time Counter.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum RTC_RULE_A {
@@ -325,7 +325,7 @@ impl RTC_RULE_R {
         *self == RTC_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `RTC_RULE` writer - Real Time Counter"]
+#[doc = "Field `RTC_RULE` writer - Real Time Counter."]
 pub type RTC_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC, u8, RTC_RULE_A, 2, O>;
 impl<'a, const O: u8> RTC_RULE_W<'a, O> {
@@ -350,9 +350,9 @@ impl<'a, const O: u8> RTC_RULE_W<'a, O> {
         self.variant(RTC_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `OSEVENT_RULE` reader - OS Event Timer"]
+#[doc = "Field `OSEVENT_RULE` reader - OS Event Timer."]
 pub type OSEVENT_RULE_R = crate::FieldReader<u8, OSEVENT_RULE_A>;
-#[doc = "OS Event Timer\n\nValue on reset: 0"]
+#[doc = "OS Event Timer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum OSEVENT_RULE_A {
@@ -404,7 +404,7 @@ impl OSEVENT_RULE_R {
         *self == OSEVENT_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `OSEVENT_RULE` writer - OS Event Timer"]
+#[doc = "Field `OSEVENT_RULE` writer - OS Event Timer."]
 pub type OSEVENT_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC, u8, OSEVENT_RULE_A, 2, O>;
 impl<'a, const O: u8> OSEVENT_RULE_W<'a, O> {
@@ -430,54 +430,54 @@ impl<'a, const O: u8> OSEVENT_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Standard counter/Timer 2"]
+    #[doc = "Bits 0:1 - Standard counter/Timer 2."]
     #[inline(always)]
     pub fn ctimer2_rule(&self) -> CTIMER2_RULE_R {
         CTIMER2_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Standard counter/Timer 3"]
+    #[doc = "Bits 4:5 - Standard counter/Timer 3."]
     #[inline(always)]
     pub fn ctimer3_rule(&self) -> CTIMER3_RULE_R {
         CTIMER3_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 8:9 - Standard counter/Timer 4"]
+    #[doc = "Bits 8:9 - Standard counter/Timer 4."]
     #[inline(always)]
     pub fn ctimer4_rule(&self) -> CTIMER4_RULE_R {
         CTIMER4_RULE_R::new(((self.bits >> 8) & 3) as u8)
     }
-    #[doc = "Bits 16:17 - Real Time Counter"]
+    #[doc = "Bits 16:17 - Real Time Counter."]
     #[inline(always)]
     pub fn rtc_rule(&self) -> RTC_RULE_R {
         RTC_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - OS Event Timer"]
+    #[doc = "Bits 20:21 - OS Event Timer."]
     #[inline(always)]
     pub fn osevent_rule(&self) -> OSEVENT_RULE_R {
         OSEVENT_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Standard counter/Timer 2"]
+    #[doc = "Bits 0:1 - Standard counter/Timer 2."]
     #[inline(always)]
     pub fn ctimer2_rule(&mut self) -> CTIMER2_RULE_W<0> {
         CTIMER2_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - Standard counter/Timer 3"]
+    #[doc = "Bits 4:5 - Standard counter/Timer 3."]
     #[inline(always)]
     pub fn ctimer3_rule(&mut self) -> CTIMER3_RULE_W<4> {
         CTIMER3_RULE_W::new(self)
     }
-    #[doc = "Bits 8:9 - Standard counter/Timer 4"]
+    #[doc = "Bits 8:9 - Standard counter/Timer 4."]
     #[inline(always)]
     pub fn ctimer4_rule(&mut self) -> CTIMER4_RULE_W<8> {
         CTIMER4_RULE_W::new(self)
     }
-    #[doc = "Bits 16:17 - Real Time Counter"]
+    #[doc = "Bits 16:17 - Real Time Counter."]
     #[inline(always)]
     pub fn rtc_rule(&mut self) -> RTC_RULE_W<16> {
         RTC_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - OS Event Timer"]
+    #[doc = "Bits 20:21 - OS Event Timer."]
     #[inline(always)]
     pub fn osevent_rule(&mut self) -> OSEVENT_RULE_W<20> {
         OSEVENT_RULE_W::new(self)

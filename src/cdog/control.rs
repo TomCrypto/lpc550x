@@ -34,133 +34,133 @@ impl From<crate::W<CONTROL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `LOCK_CTRL` reader - Lock control field"]
+#[doc = "Field `LOCK_CTRL` reader - Lock control field."]
 pub type LOCK_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `LOCK_CTRL` writer - Lock control field"]
+#[doc = "Field `LOCK_CTRL` writer - Lock control field."]
 pub type LOCK_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 2, O>;
-#[doc = "Field `TIMEOUT_CTRL` reader - TIMEOUT control"]
+#[doc = "Field `TIMEOUT_CTRL` reader - TIMEOUT control."]
 pub type TIMEOUT_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `TIMEOUT_CTRL` writer - TIMEOUT control"]
+#[doc = "Field `TIMEOUT_CTRL` writer - TIMEOUT control."]
 pub type TIMEOUT_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `MISCOMPARE_CTRL` reader - MISCOMPARE control field"]
+#[doc = "Field `MISCOMPARE_CTRL` reader - MISCOMPARE control field."]
 pub type MISCOMPARE_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `MISCOMPARE_CTRL` writer - MISCOMPARE control field"]
+#[doc = "Field `MISCOMPARE_CTRL` writer - MISCOMPARE control field."]
 pub type MISCOMPARE_CTRL_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `SEQUENCE_CTRL` reader - SEQUENCE control field"]
+#[doc = "Field `SEQUENCE_CTRL` reader - SEQUENCE control field."]
 pub type SEQUENCE_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `SEQUENCE_CTRL` writer - SEQUENCE control field"]
+#[doc = "Field `SEQUENCE_CTRL` writer - SEQUENCE control field."]
 pub type SEQUENCE_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `CONTROL_CTRL` reader - CONTROL control field"]
+#[doc = "Field `CONTROL_CTRL` reader - CONTROL control field."]
 pub type CONTROL_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `CONTROL_CTRL` writer - CONTROL control field"]
+#[doc = "Field `CONTROL_CTRL` writer - CONTROL control field."]
 pub type CONTROL_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `STATE_CTRL` reader - STATE control field"]
+#[doc = "Field `STATE_CTRL` reader - STATE control field."]
 pub type STATE_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `STATE_CTRL` writer - STATE control field"]
+#[doc = "Field `STATE_CTRL` writer - STATE control field."]
 pub type STATE_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `ADDRESS_CTRL` reader - ADDRESS control field"]
+#[doc = "Field `ADDRESS_CTRL` reader - ADDRESS control field."]
 pub type ADDRESS_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `ADDRESS_CTRL` writer - ADDRESS control field"]
+#[doc = "Field `ADDRESS_CTRL` writer - ADDRESS control field."]
 pub type ADDRESS_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `IRQ_PAUSE` reader - IRQ pause control field"]
+#[doc = "Field `IRQ_PAUSE` reader - IRQ pause control field."]
 pub type IRQ_PAUSE_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `IRQ_PAUSE` writer - IRQ pause control field"]
+#[doc = "Field `IRQ_PAUSE` writer - IRQ pause control field."]
 pub type IRQ_PAUSE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 2, O>;
-#[doc = "Field `DEBUG_HALT_CTRL` reader - DEBUG_HALT control field"]
+#[doc = "Field `DEBUG_HALT_CTRL` reader - DEBUG_HALT control field."]
 pub type DEBUG_HALT_CTRL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `DEBUG_HALT_CTRL` writer - DEBUG_HALT control field"]
+#[doc = "Field `DEBUG_HALT_CTRL` writer - DEBUG_HALT control field."]
 pub type DEBUG_HALT_CTRL_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, CONTROL_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 0:1 - Lock control field"]
+    #[doc = "Bits 0:1 - Lock control field."]
     #[inline(always)]
     pub fn lock_ctrl(&self) -> LOCK_CTRL_R {
         LOCK_CTRL_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 2:4 - TIMEOUT control"]
+    #[doc = "Bits 2:4 - TIMEOUT control."]
     #[inline(always)]
     pub fn timeout_ctrl(&self) -> TIMEOUT_CTRL_R {
         TIMEOUT_CTRL_R::new(((self.bits >> 2) & 7) as u8)
     }
-    #[doc = "Bits 5:7 - MISCOMPARE control field"]
+    #[doc = "Bits 5:7 - MISCOMPARE control field."]
     #[inline(always)]
     pub fn miscompare_ctrl(&self) -> MISCOMPARE_CTRL_R {
         MISCOMPARE_CTRL_R::new(((self.bits >> 5) & 7) as u8)
     }
-    #[doc = "Bits 8:10 - SEQUENCE control field"]
+    #[doc = "Bits 8:10 - SEQUENCE control field."]
     #[inline(always)]
     pub fn sequence_ctrl(&self) -> SEQUENCE_CTRL_R {
         SEQUENCE_CTRL_R::new(((self.bits >> 8) & 7) as u8)
     }
-    #[doc = "Bits 11:13 - CONTROL control field"]
+    #[doc = "Bits 11:13 - CONTROL control field."]
     #[inline(always)]
     pub fn control_ctrl(&self) -> CONTROL_CTRL_R {
         CONTROL_CTRL_R::new(((self.bits >> 11) & 7) as u8)
     }
-    #[doc = "Bits 14:16 - STATE control field"]
+    #[doc = "Bits 14:16 - STATE control field."]
     #[inline(always)]
     pub fn state_ctrl(&self) -> STATE_CTRL_R {
         STATE_CTRL_R::new(((self.bits >> 14) & 7) as u8)
     }
-    #[doc = "Bits 17:19 - ADDRESS control field"]
+    #[doc = "Bits 17:19 - ADDRESS control field."]
     #[inline(always)]
     pub fn address_ctrl(&self) -> ADDRESS_CTRL_R {
         ADDRESS_CTRL_R::new(((self.bits >> 17) & 7) as u8)
     }
-    #[doc = "Bits 28:29 - IRQ pause control field"]
+    #[doc = "Bits 28:29 - IRQ pause control field."]
     #[inline(always)]
     pub fn irq_pause(&self) -> IRQ_PAUSE_R {
         IRQ_PAUSE_R::new(((self.bits >> 28) & 3) as u8)
     }
-    #[doc = "Bits 30:31 - DEBUG_HALT control field"]
+    #[doc = "Bits 30:31 - DEBUG_HALT control field."]
     #[inline(always)]
     pub fn debug_halt_ctrl(&self) -> DEBUG_HALT_CTRL_R {
         DEBUG_HALT_CTRL_R::new(((self.bits >> 30) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Lock control field"]
+    #[doc = "Bits 0:1 - Lock control field."]
     #[inline(always)]
     pub fn lock_ctrl(&mut self) -> LOCK_CTRL_W<0> {
         LOCK_CTRL_W::new(self)
     }
-    #[doc = "Bits 2:4 - TIMEOUT control"]
+    #[doc = "Bits 2:4 - TIMEOUT control."]
     #[inline(always)]
     pub fn timeout_ctrl(&mut self) -> TIMEOUT_CTRL_W<2> {
         TIMEOUT_CTRL_W::new(self)
     }
-    #[doc = "Bits 5:7 - MISCOMPARE control field"]
+    #[doc = "Bits 5:7 - MISCOMPARE control field."]
     #[inline(always)]
     pub fn miscompare_ctrl(&mut self) -> MISCOMPARE_CTRL_W<5> {
         MISCOMPARE_CTRL_W::new(self)
     }
-    #[doc = "Bits 8:10 - SEQUENCE control field"]
+    #[doc = "Bits 8:10 - SEQUENCE control field."]
     #[inline(always)]
     pub fn sequence_ctrl(&mut self) -> SEQUENCE_CTRL_W<8> {
         SEQUENCE_CTRL_W::new(self)
     }
-    #[doc = "Bits 11:13 - CONTROL control field"]
+    #[doc = "Bits 11:13 - CONTROL control field."]
     #[inline(always)]
     pub fn control_ctrl(&mut self) -> CONTROL_CTRL_W<11> {
         CONTROL_CTRL_W::new(self)
     }
-    #[doc = "Bits 14:16 - STATE control field"]
+    #[doc = "Bits 14:16 - STATE control field."]
     #[inline(always)]
     pub fn state_ctrl(&mut self) -> STATE_CTRL_W<14> {
         STATE_CTRL_W::new(self)
     }
-    #[doc = "Bits 17:19 - ADDRESS control field"]
+    #[doc = "Bits 17:19 - ADDRESS control field."]
     #[inline(always)]
     pub fn address_ctrl(&mut self) -> ADDRESS_CTRL_W<17> {
         ADDRESS_CTRL_W::new(self)
     }
-    #[doc = "Bits 28:29 - IRQ pause control field"]
+    #[doc = "Bits 28:29 - IRQ pause control field."]
     #[inline(always)]
     pub fn irq_pause(&mut self) -> IRQ_PAUSE_W<28> {
         IRQ_PAUSE_W::new(self)
     }
-    #[doc = "Bits 30:31 - DEBUG_HALT control field"]
+    #[doc = "Bits 30:31 - DEBUG_HALT control field."]
     #[inline(always)]
     pub fn debug_halt_ctrl(&mut self) -> DEBUG_HALT_CTRL_W<30> {
         DEBUG_HALT_CTRL_W::new(self)

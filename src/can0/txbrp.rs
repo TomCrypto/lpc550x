@@ -22,7 +22,7 @@ impl R {
         TRP_R::new(self.bits)
     }
 }
-#[doc = "Tx Buffer Request Pending\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [txbrp](index.html) module"]
+#[doc = "Tx Buffer Request Pending.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [txbrp](index.html) module"]
 pub struct TXBRP_SPEC;
 impl crate::RegisterSpec for TXBRP_SPEC {
     type Ux = u32;

@@ -43,7 +43,7 @@ impl R {
         ID_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
-#[doc = "Controller+Memory module identification\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [module_id](index.html) module"]
+#[doc = "Controller+Memory module identification.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [module_id](index.html) module"]
 pub struct MODULE_ID_SPEC;
 impl crate::RegisterSpec for MODULE_ID_SPEC {
     type Ux = u32;

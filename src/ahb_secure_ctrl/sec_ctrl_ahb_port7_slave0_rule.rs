@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_PORT7_SLAVE0_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `DMA0_RULE` reader - DMA Controller"]
+#[doc = "Field `DMA0_RULE` reader - DMA Controller."]
 pub type DMA0_RULE_R = crate::FieldReader<u8, DMA0_RULE_A>;
-#[doc = "DMA Controller\n\nValue on reset: 0"]
+#[doc = "DMA Controller.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum DMA0_RULE_A {
@@ -88,7 +88,7 @@ impl DMA0_RULE_R {
         *self == DMA0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `DMA0_RULE` writer - DMA Controller"]
+#[doc = "Field `DMA0_RULE` writer - DMA Controller."]
 pub type DMA0_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT7_SLAVE0_RULE_SPEC, u8, DMA0_RULE_A, 2, O>;
 impl<'a, const O: u8> DMA0_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> DMA0_RULE_W<'a, O> {
         self.variant(DMA0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `SCT_RULE` reader - SCTimer"]
+#[doc = "Field `SCT_RULE` reader - SCTimer."]
 pub type SCT_RULE_R = crate::FieldReader<u8, SCT_RULE_A>;
-#[doc = "SCTimer\n\nValue on reset: 0"]
+#[doc = "SCTimer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum SCT_RULE_A {
@@ -167,7 +167,7 @@ impl SCT_RULE_R {
         *self == SCT_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `SCT_RULE` writer - SCTimer"]
+#[doc = "Field `SCT_RULE` writer - SCTimer."]
 pub type SCT_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT7_SLAVE0_RULE_SPEC, u8, SCT_RULE_A, 2, O>;
 impl<'a, const O: u8> SCT_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> SCT_RULE_W<'a, O> {
         self.variant(SCT_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `FLEXCOMM0_RULE` reader - Flexcomm interface 0"]
+#[doc = "Field `FLEXCOMM0_RULE` reader - Flexcomm interface 0."]
 pub type FLEXCOMM0_RULE_R = crate::FieldReader<u8, FLEXCOMM0_RULE_A>;
-#[doc = "Flexcomm interface 0\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM0_RULE_A {
@@ -246,7 +246,7 @@ impl FLEXCOMM0_RULE_R {
         *self == FLEXCOMM0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM0_RULE` writer - Flexcomm interface 0"]
+#[doc = "Field `FLEXCOMM0_RULE` writer - Flexcomm interface 0."]
 pub type FLEXCOMM0_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -278,9 +278,9 @@ impl<'a, const O: u8> FLEXCOMM0_RULE_W<'a, O> {
         self.variant(FLEXCOMM0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `FLEXCOMM1_RULE` reader - Flexcomm interface 1"]
+#[doc = "Field `FLEXCOMM1_RULE` reader - Flexcomm interface 1."]
 pub type FLEXCOMM1_RULE_R = crate::FieldReader<u8, FLEXCOMM1_RULE_A>;
-#[doc = "Flexcomm interface 1\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM1_RULE_A {
@@ -332,7 +332,7 @@ impl FLEXCOMM1_RULE_R {
         *self == FLEXCOMM1_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM1_RULE` writer - Flexcomm interface 1"]
+#[doc = "Field `FLEXCOMM1_RULE` writer - Flexcomm interface 1."]
 pub type FLEXCOMM1_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -365,44 +365,44 @@ impl<'a, const O: u8> FLEXCOMM1_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 8:9 - DMA Controller"]
+    #[doc = "Bits 8:9 - DMA Controller."]
     #[inline(always)]
     pub fn dma0_rule(&self) -> DMA0_RULE_R {
         DMA0_RULE_R::new(((self.bits >> 8) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - SCTimer"]
+    #[doc = "Bits 20:21 - SCTimer."]
     #[inline(always)]
     pub fn sct_rule(&self) -> SCT_RULE_R {
         SCT_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
-    #[doc = "Bits 24:25 - Flexcomm interface 0"]
+    #[doc = "Bits 24:25 - Flexcomm interface 0."]
     #[inline(always)]
     pub fn flexcomm0_rule(&self) -> FLEXCOMM0_RULE_R {
         FLEXCOMM0_RULE_R::new(((self.bits >> 24) & 3) as u8)
     }
-    #[doc = "Bits 28:29 - Flexcomm interface 1"]
+    #[doc = "Bits 28:29 - Flexcomm interface 1."]
     #[inline(always)]
     pub fn flexcomm1_rule(&self) -> FLEXCOMM1_RULE_R {
         FLEXCOMM1_RULE_R::new(((self.bits >> 28) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 8:9 - DMA Controller"]
+    #[doc = "Bits 8:9 - DMA Controller."]
     #[inline(always)]
     pub fn dma0_rule(&mut self) -> DMA0_RULE_W<8> {
         DMA0_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - SCTimer"]
+    #[doc = "Bits 20:21 - SCTimer."]
     #[inline(always)]
     pub fn sct_rule(&mut self) -> SCT_RULE_W<20> {
         SCT_RULE_W::new(self)
     }
-    #[doc = "Bits 24:25 - Flexcomm interface 0"]
+    #[doc = "Bits 24:25 - Flexcomm interface 0."]
     #[inline(always)]
     pub fn flexcomm0_rule(&mut self) -> FLEXCOMM0_RULE_W<24> {
         FLEXCOMM0_RULE_W::new(self)
     }
-    #[doc = "Bits 28:29 - Flexcomm interface 1"]
+    #[doc = "Bits 28:29 - Flexcomm interface 1."]
     #[inline(always)]
     pub fn flexcomm1_rule(&mut self) -> FLEXCOMM1_RULE_W<28> {
         FLEXCOMM1_RULE_W::new(self)

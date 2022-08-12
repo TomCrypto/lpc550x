@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_PORT7_SLAVE1_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FLEXCOMM2_RULE` reader - Flexcomm interface 2"]
+#[doc = "Field `FLEXCOMM2_RULE` reader - Flexcomm interface 2."]
 pub type FLEXCOMM2_RULE_R = crate::FieldReader<u8, FLEXCOMM2_RULE_A>;
-#[doc = "Flexcomm interface 2\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM2_RULE_A {
@@ -88,7 +88,7 @@ impl FLEXCOMM2_RULE_R {
         *self == FLEXCOMM2_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM2_RULE` writer - Flexcomm interface 2"]
+#[doc = "Field `FLEXCOMM2_RULE` writer - Flexcomm interface 2."]
 pub type FLEXCOMM2_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -120,9 +120,9 @@ impl<'a, const O: u8> FLEXCOMM2_RULE_W<'a, O> {
         self.variant(FLEXCOMM2_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `FLEXCOMM3_RULE` reader - Flexcomm interface 3"]
+#[doc = "Field `FLEXCOMM3_RULE` reader - Flexcomm interface 3."]
 pub type FLEXCOMM3_RULE_R = crate::FieldReader<u8, FLEXCOMM3_RULE_A>;
-#[doc = "Flexcomm interface 3\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM3_RULE_A {
@@ -174,7 +174,7 @@ impl FLEXCOMM3_RULE_R {
         *self == FLEXCOMM3_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM3_RULE` writer - Flexcomm interface 3"]
+#[doc = "Field `FLEXCOMM3_RULE` writer - Flexcomm interface 3."]
 pub type FLEXCOMM3_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -206,9 +206,9 @@ impl<'a, const O: u8> FLEXCOMM3_RULE_W<'a, O> {
         self.variant(FLEXCOMM3_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `FLEXCOMM4_RULE` reader - Flexcomm interface 4"]
+#[doc = "Field `FLEXCOMM4_RULE` reader - Flexcomm interface 4."]
 pub type FLEXCOMM4_RULE_R = crate::FieldReader<u8, FLEXCOMM4_RULE_A>;
-#[doc = "Flexcomm interface 4\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 4.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM4_RULE_A {
@@ -260,7 +260,7 @@ impl FLEXCOMM4_RULE_R {
         *self == FLEXCOMM4_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM4_RULE` writer - Flexcomm interface 4"]
+#[doc = "Field `FLEXCOMM4_RULE` writer - Flexcomm interface 4."]
 pub type FLEXCOMM4_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -292,9 +292,9 @@ impl<'a, const O: u8> FLEXCOMM4_RULE_W<'a, O> {
         self.variant(FLEXCOMM4_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `GPIO0_RULE` reader - High Speed GPIO"]
+#[doc = "Field `GPIO0_RULE` reader - High Speed GPIO."]
 pub type GPIO0_RULE_R = crate::FieldReader<u8, GPIO0_RULE_A>;
-#[doc = "High Speed GPIO\n\nValue on reset: 0"]
+#[doc = "High Speed GPIO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum GPIO0_RULE_A {
@@ -346,7 +346,7 @@ impl GPIO0_RULE_R {
         *self == GPIO0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `GPIO0_RULE` writer - High Speed GPIO"]
+#[doc = "Field `GPIO0_RULE` writer - High Speed GPIO."]
 pub type GPIO0_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT7_SLAVE1_RULE_SPEC, u8, GPIO0_RULE_A, 2, O>;
 impl<'a, const O: u8> GPIO0_RULE_W<'a, O> {
@@ -372,44 +372,44 @@ impl<'a, const O: u8> GPIO0_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Flexcomm interface 2"]
+    #[doc = "Bits 0:1 - Flexcomm interface 2."]
     #[inline(always)]
     pub fn flexcomm2_rule(&self) -> FLEXCOMM2_RULE_R {
         FLEXCOMM2_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Flexcomm interface 3"]
+    #[doc = "Bits 4:5 - Flexcomm interface 3."]
     #[inline(always)]
     pub fn flexcomm3_rule(&self) -> FLEXCOMM3_RULE_R {
         FLEXCOMM3_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 8:9 - Flexcomm interface 4"]
+    #[doc = "Bits 8:9 - Flexcomm interface 4."]
     #[inline(always)]
     pub fn flexcomm4_rule(&self) -> FLEXCOMM4_RULE_R {
         FLEXCOMM4_RULE_R::new(((self.bits >> 8) & 3) as u8)
     }
-    #[doc = "Bits 16:17 - High Speed GPIO"]
+    #[doc = "Bits 16:17 - High Speed GPIO."]
     #[inline(always)]
     pub fn gpio0_rule(&self) -> GPIO0_RULE_R {
         GPIO0_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Flexcomm interface 2"]
+    #[doc = "Bits 0:1 - Flexcomm interface 2."]
     #[inline(always)]
     pub fn flexcomm2_rule(&mut self) -> FLEXCOMM2_RULE_W<0> {
         FLEXCOMM2_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - Flexcomm interface 3"]
+    #[doc = "Bits 4:5 - Flexcomm interface 3."]
     #[inline(always)]
     pub fn flexcomm3_rule(&mut self) -> FLEXCOMM3_RULE_W<4> {
         FLEXCOMM3_RULE_W::new(self)
     }
-    #[doc = "Bits 8:9 - Flexcomm interface 4"]
+    #[doc = "Bits 8:9 - Flexcomm interface 4."]
     #[inline(always)]
     pub fn flexcomm4_rule(&mut self) -> FLEXCOMM4_RULE_W<8> {
         FLEXCOMM4_RULE_W::new(self)
     }
-    #[doc = "Bits 16:17 - High Speed GPIO"]
+    #[doc = "Bits 16:17 - High Speed GPIO."]
     #[inline(always)]
     pub fn gpio0_rule(&mut self) -> GPIO0_RULE_W<16> {
         GPIO0_RULE_W::new(self)

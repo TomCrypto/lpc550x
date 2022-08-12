@@ -13,11 +13,11 @@ impl From<crate::R<GCC_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `GAIN_CAL` reader - Gain Calibration Value"]
+#[doc = "Field `GAIN_CAL` reader - Gain Calibration Value."]
 pub type GAIN_CAL_R = crate::FieldReader<u16, u16>;
-#[doc = "Field `RDY` reader - Gain Calibration Value Valid"]
+#[doc = "Field `RDY` reader - Gain Calibration Value Valid."]
 pub type RDY_R = crate::BitReader<RDY_A>;
-#[doc = "Gain Calibration Value Valid\n\nValue on reset: 0"]
+#[doc = "Gain Calibration Value Valid.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum RDY_A {
     #[doc = "0: The gain calibration value is invalid. Run the auto-calibration routine for this value to be written."]
@@ -53,18 +53,18 @@ impl RDY_R {
     }
 }
 impl R {
-    #[doc = "Bits 0:15 - Gain Calibration Value"]
+    #[doc = "Bits 0:15 - Gain Calibration Value."]
     #[inline(always)]
     pub fn gain_cal(&self) -> GAIN_CAL_R {
         GAIN_CAL_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bit 24 - Gain Calibration Value Valid"]
+    #[doc = "Bit 24 - Gain Calibration Value Valid."]
     #[inline(always)]
     pub fn rdy(&self) -> RDY_R {
         RDY_R::new(((self.bits >> 24) & 1) != 0)
     }
 }
-#[doc = "Gain Calibration Control\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gcc](index.html) module"]
+#[doc = "Gain Calibration Control.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gcc](index.html) module"]
 pub struct GCC_SPEC;
 impl crate::RegisterSpec for GCC_SPEC {
     type Ux = u32;

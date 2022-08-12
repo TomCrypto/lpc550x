@@ -34,20 +34,20 @@ impl From<crate::W<SECURE_COUNTER_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SECCNT` reader - Secure Counter"]
+#[doc = "Field `SECCNT` reader - Secure Counter."]
 pub type SECCNT_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `SECCNT` writer - Secure Counter"]
+#[doc = "Field `SECCNT` writer - Secure Counter."]
 pub type SECCNT_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, SECURE_COUNTER_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - Secure Counter"]
+    #[doc = "Bits 0:31 - Secure Counter."]
     #[inline(always)]
     pub fn seccnt(&self) -> SECCNT_R {
         SECCNT_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Secure Counter"]
+    #[doc = "Bits 0:31 - Secure Counter."]
     #[inline(always)]
     pub fn seccnt(&mut self) -> SECCNT_W<0> {
         SECCNT_W::new(self)
@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "Also known as SEC_CNT\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [secure_counter](index.html) module"]
+#[doc = "Also known as SEC_CNT.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [secure_counter](index.html) module"]
 pub struct SECURE_COUNTER_SPEC;
 impl crate::RegisterSpec for SECURE_COUNTER_SPEC {
     type Ux = u32;

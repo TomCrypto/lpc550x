@@ -46,13 +46,13 @@ pub type SLAVE_W<'a, const O: u8> = crate::BitWriter<'a, u32, XO32M_CTRL_SPEC, b
 pub type AMP_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `AMP` writer - Amplitude selection , Min amp : 001, Max amp : 110."]
 pub type AMP_W<'a, const O: u8> = crate::FieldWriter<'a, u32, XO32M_CTRL_SPEC, u8, u8, 3, O>;
-#[doc = "Field `OSC_CAP_IN` reader - Tune capa banks of High speed Crystal Oscillator input pin"]
+#[doc = "Field `OSC_CAP_IN` reader - Tune capa banks of High speed Crystal Oscillator input pin."]
 pub type OSC_CAP_IN_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `OSC_CAP_IN` writer - Tune capa banks of High speed Crystal Oscillator input pin"]
+#[doc = "Field `OSC_CAP_IN` writer - Tune capa banks of High speed Crystal Oscillator input pin."]
 pub type OSC_CAP_IN_W<'a, const O: u8> = crate::FieldWriter<'a, u32, XO32M_CTRL_SPEC, u8, u8, 7, O>;
-#[doc = "Field `OSC_CAP_OUT` reader - Tune capa banks of High speed Crystal Oscillator output pin"]
+#[doc = "Field `OSC_CAP_OUT` reader - Tune capa banks of High speed Crystal Oscillator output pin."]
 pub type OSC_CAP_OUT_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `OSC_CAP_OUT` writer - Tune capa banks of High speed Crystal Oscillator output pin"]
+#[doc = "Field `OSC_CAP_OUT` writer - Tune capa banks of High speed Crystal Oscillator output pin."]
 pub type OSC_CAP_OUT_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, XO32M_CTRL_SPEC, u8, u8, 7, O>;
 #[doc = "Field `ACBUF_PASS_ENABLE` reader - Bypass enable of XO AC buffer enable in pll and top level."]
@@ -173,12 +173,12 @@ impl R {
     pub fn amp(&self) -> AMP_R {
         AMP_R::new(((self.bits >> 5) & 7) as u8)
     }
-    #[doc = "Bits 8:14 - Tune capa banks of High speed Crystal Oscillator input pin"]
+    #[doc = "Bits 8:14 - Tune capa banks of High speed Crystal Oscillator input pin."]
     #[inline(always)]
     pub fn osc_cap_in(&self) -> OSC_CAP_IN_R {
         OSC_CAP_IN_R::new(((self.bits >> 8) & 0x7f) as u8)
     }
-    #[doc = "Bits 15:21 - Tune capa banks of High speed Crystal Oscillator output pin"]
+    #[doc = "Bits 15:21 - Tune capa banks of High speed Crystal Oscillator output pin."]
     #[inline(always)]
     pub fn osc_cap_out(&self) -> OSC_CAP_OUT_R {
         OSC_CAP_OUT_R::new(((self.bits >> 15) & 0x7f) as u8)
@@ -210,12 +210,12 @@ impl W {
     pub fn amp(&mut self) -> AMP_W<5> {
         AMP_W::new(self)
     }
-    #[doc = "Bits 8:14 - Tune capa banks of High speed Crystal Oscillator input pin"]
+    #[doc = "Bits 8:14 - Tune capa banks of High speed Crystal Oscillator input pin."]
     #[inline(always)]
     pub fn osc_cap_in(&mut self) -> OSC_CAP_IN_W<8> {
         OSC_CAP_IN_W::new(self)
     }
-    #[doc = "Bits 15:21 - Tune capa banks of High speed Crystal Oscillator output pin"]
+    #[doc = "Bits 15:21 - Tune capa banks of High speed Crystal Oscillator output pin."]
     #[inline(always)]
     pub fn osc_cap_out(&mut self) -> OSC_CAP_OUT_W<15> {
         OSC_CAP_OUT_W::new(self)
@@ -237,7 +237,7 @@ impl W {
         self
     }
 }
-#[doc = "High speed Crystal Oscillator Control register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [xo32m_ctrl](index.html) module"]
+#[doc = "High speed Crystal Oscillator Control register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [xo32m_ctrl](index.html) module"]
 pub struct XO32M_CTRL_SPEC;
 impl crate::RegisterSpec for XO32M_CTRL_SPEC {
     type Ux = u32;

@@ -22,7 +22,7 @@ impl R {
         TOC_R::new((self.bits & 0xffff) as u16)
     }
 }
-#[doc = "Timeout Counter Value\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tocv](index.html) module"]
+#[doc = "Timeout Counter Value.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tocv](index.html) module"]
 pub struct TOCV_SPEC;
 impl crate::RegisterSpec for TOCV_SPEC {
     type Ux = u32;

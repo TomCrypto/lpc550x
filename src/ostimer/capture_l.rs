@@ -22,7 +22,7 @@ impl R {
         CAPTURE_VALUE_R::new(self.bits)
     }
 }
-#[doc = "Capture Low Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [capture_l](index.html) module"]
+#[doc = "Capture Low Register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [capture_l](index.html) module"]
 pub struct CAPTURE_L_SPEC;
 impl crate::RegisterSpec for CAPTURE_L_SPEC {
     type Ux = u32;

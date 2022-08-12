@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_PORT8_SLAVE1_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FLEXCOMM7_RULE` reader - Flexcomm interface 7"]
+#[doc = "Field `FLEXCOMM7_RULE` reader - Flexcomm interface 7."]
 pub type FLEXCOMM7_RULE_R = crate::FieldReader<u8, FLEXCOMM7_RULE_A>;
-#[doc = "Flexcomm interface 7\n\nValue on reset: 0"]
+#[doc = "Flexcomm interface 7.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLEXCOMM7_RULE_A {
@@ -88,7 +88,7 @@ impl FLEXCOMM7_RULE_R {
         *self == FLEXCOMM7_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLEXCOMM7_RULE` writer - Flexcomm interface 7"]
+#[doc = "Field `FLEXCOMM7_RULE` writer - Flexcomm interface 7."]
 pub type FLEXCOMM7_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -206,9 +206,9 @@ impl<'a, const O: u8> DBG_MAILBOX_RULE_W<'a, O> {
         self.variant(DBG_MAILBOX_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `CAN0_RULE` reader - CAN-FD"]
+#[doc = "Field `CAN0_RULE` reader - CAN-FD."]
 pub type CAN0_RULE_R = crate::FieldReader<u8, CAN0_RULE_A>;
-#[doc = "CAN-FD\n\nValue on reset: 0"]
+#[doc = "CAN-FD.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CAN0_RULE_A {
@@ -260,7 +260,7 @@ impl CAN0_RULE_R {
         *self == CAN0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CAN0_RULE` writer - CAN-FD"]
+#[doc = "Field `CAN0_RULE` writer - CAN-FD."]
 pub type CAN0_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT8_SLAVE1_RULE_SPEC, u8, CAN0_RULE_A, 2, O>;
 impl<'a, const O: u8> CAN0_RULE_W<'a, O> {
@@ -285,9 +285,9 @@ impl<'a, const O: u8> CAN0_RULE_W<'a, O> {
         self.variant(CAN0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `HS_LSPI_RULE` reader - High Speed SPI"]
+#[doc = "Field `HS_LSPI_RULE` reader - High Speed SPI."]
 pub type HS_LSPI_RULE_R = crate::FieldReader<u8, HS_LSPI_RULE_A>;
-#[doc = "High Speed SPI\n\nValue on reset: 0"]
+#[doc = "High Speed SPI.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum HS_LSPI_RULE_A {
@@ -339,7 +339,7 @@ impl HS_LSPI_RULE_R {
         *self == HS_LSPI_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `HS_LSPI_RULE` writer - High Speed SPI"]
+#[doc = "Field `HS_LSPI_RULE` writer - High Speed SPI."]
 pub type HS_LSPI_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT8_SLAVE1_RULE_SPEC, u8, HS_LSPI_RULE_A, 2, O>;
 impl<'a, const O: u8> HS_LSPI_RULE_W<'a, O> {
@@ -365,7 +365,7 @@ impl<'a, const O: u8> HS_LSPI_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Flexcomm interface 7"]
+    #[doc = "Bits 0:1 - Flexcomm interface 7."]
     #[inline(always)]
     pub fn flexcomm7_rule(&self) -> FLEXCOMM7_RULE_R {
         FLEXCOMM7_RULE_R::new((self.bits & 3) as u8)
@@ -375,19 +375,19 @@ impl R {
     pub fn dbg_mailbox_rule(&self) -> DBG_MAILBOX_RULE_R {
         DBG_MAILBOX_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - CAN-FD"]
+    #[doc = "Bits 20:21 - CAN-FD."]
     #[inline(always)]
     pub fn can0_rule(&self) -> CAN0_RULE_R {
         CAN0_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
-    #[doc = "Bits 28:29 - High Speed SPI"]
+    #[doc = "Bits 28:29 - High Speed SPI."]
     #[inline(always)]
     pub fn hs_lspi_rule(&self) -> HS_LSPI_RULE_R {
         HS_LSPI_RULE_R::new(((self.bits >> 28) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Flexcomm interface 7"]
+    #[doc = "Bits 0:1 - Flexcomm interface 7."]
     #[inline(always)]
     pub fn flexcomm7_rule(&mut self) -> FLEXCOMM7_RULE_W<0> {
         FLEXCOMM7_RULE_W::new(self)
@@ -397,12 +397,12 @@ impl W {
     pub fn dbg_mailbox_rule(&mut self) -> DBG_MAILBOX_RULE_W<16> {
         DBG_MAILBOX_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - CAN-FD"]
+    #[doc = "Bits 20:21 - CAN-FD."]
     #[inline(always)]
     pub fn can0_rule(&mut self) -> CAN0_RULE_W<20> {
         CAN0_RULE_W::new(self)
     }
-    #[doc = "Bits 28:29 - High Speed SPI"]
+    #[doc = "Bits 28:29 - High Speed SPI."]
     #[inline(always)]
     pub fn hs_lspi_rule(&mut self) -> HS_LSPI_RULE_W<28> {
         HS_LSPI_RULE_W::new(self)

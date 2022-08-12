@@ -34,20 +34,20 @@ impl From<crate::W<FLASHREMAP_SIZE_DP_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FLASHREMAP_SIZE` reader - no description available"]
+#[doc = "Field `FLASHREMAP_SIZE` reader - no description available."]
 pub type FLASHREMAP_SIZE_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `FLASHREMAP_SIZE` writer - no description available"]
+#[doc = "Field `FLASHREMAP_SIZE` writer - no description available."]
 pub type FLASHREMAP_SIZE_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, FLASHREMAP_SIZE_DP_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn flashremap_size(&self) -> FLASHREMAP_SIZE_R {
         FLASHREMAP_SIZE_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn flashremap_size(&mut self) -> FLASHREMAP_SIZE_W<0> {
         FLASHREMAP_SIZE_W::new(self)

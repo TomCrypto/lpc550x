@@ -34,7 +34,7 @@ impl W {
         self
     }
 }
-#[doc = "Pin interrupt level or rising edge interrupt set register\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sienr](index.html) module"]
+#[doc = "Pin interrupt level or rising edge interrupt set register.\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sienr](index.html) module"]
 pub struct SIENR_SPEC;
 impl crate::RegisterSpec for SIENR_SPEC {
     type Ux = u32;

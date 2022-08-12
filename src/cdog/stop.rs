@@ -19,10 +19,10 @@ impl From<crate::W<STOP_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `STP` writer - Address of stop command access"]
+#[doc = "Field `STP` writer - Address of stop command access."]
 pub type STP_W<'a, const O: u8> = crate::FieldWriter<'a, u32, STOP_SPEC, u32, u32, 32, O>;
 impl W {
-    #[doc = "Bits 0:31 - Address of stop command access"]
+    #[doc = "Bits 0:31 - Address of stop command access."]
     #[inline(always)]
     pub fn stp(&mut self) -> STP_W<0> {
         STP_W::new(self)

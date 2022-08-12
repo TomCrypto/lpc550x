@@ -389,7 +389,7 @@ pub type LSERR_R = crate::BitReader<LSERR_A>;
 #[doc = "Lazy state error flag.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum LSERR_A {
-    #[doc = "0: Error has not occurred"]
+    #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
     #[doc = "1: Error has occurred."]
     ERROR = 1,
@@ -423,7 +423,7 @@ impl LSERR_R {
 #[doc = "Field `LSERR` writer - Lazy state error flag."]
 pub type LSERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, SFSR_SPEC, LSERR_A, O>;
 impl<'a, const O: u8> LSERR_W<'a, O> {
-    #[doc = "Error has not occurred"]
+    #[doc = "Error has not occurred."]
     #[inline(always)]
     pub fn no_error(self) -> &'a mut W {
         self.variant(LSERR_A::NO_ERROR)
@@ -524,7 +524,7 @@ impl W {
         self
     }
 }
-#[doc = "Secure Fault Status Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sfsr](index.html) module"]
+#[doc = "Secure Fault Status Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sfsr](index.html) module"]
 pub struct SFSR_SPEC;
 impl crate::RegisterSpec for SFSR_SPEC {
     type Ux = u32;

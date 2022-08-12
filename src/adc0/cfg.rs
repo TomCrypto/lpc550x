@@ -34,9 +34,9 @@ impl From<crate::W<CFG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `TPRICTRL` reader - ADC trigger priority control"]
+#[doc = "Field `TPRICTRL` reader - ADC trigger priority control."]
 pub type TPRICTRL_R = crate::FieldReader<u8, TPRICTRL_A>;
-#[doc = "ADC trigger priority control\n\nValue on reset: 0"]
+#[doc = "ADC trigger priority control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum TPRICTRL_A {
@@ -81,7 +81,7 @@ impl TPRICTRL_R {
         *self == TPRICTRL_A::TPRICTRL_2
     }
 }
-#[doc = "Field `TPRICTRL` writer - ADC trigger priority control"]
+#[doc = "Field `TPRICTRL` writer - ADC trigger priority control."]
 pub type TPRICTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CFG_SPEC, u8, TPRICTRL_A, 2, O>;
 impl<'a, const O: u8> TPRICTRL_W<'a, O> {
     #[doc = "If a higher priority trigger is detected during command processing, the current conversion is aborted and the new command specified by the trigger is started."]
@@ -101,9 +101,9 @@ will be ignored and the higher priority trigger will be serviced."]
         self.variant(TPRICTRL_A::TPRICTRL_2)
     }
 }
-#[doc = "Field `PWRSEL` reader - Power Configuration Select"]
+#[doc = "Field `PWRSEL` reader - Power Configuration Select."]
 pub type PWRSEL_R = crate::FieldReader<u8, PWRSEL_A>;
-#[doc = "Power Configuration Select\n\nValue on reset: 0"]
+#[doc = "Power Configuration Select.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PWRSEL_A {
@@ -155,7 +155,7 @@ impl PWRSEL_R {
         *self == PWRSEL_A::PWRSEL_3
     }
 }
-#[doc = "Field `PWRSEL` writer - Power Configuration Select"]
+#[doc = "Field `PWRSEL` writer - Power Configuration Select."]
 pub type PWRSEL_W<'a, const O: u8> = crate::FieldWriterSafe<'a, u32, CFG_SPEC, u8, PWRSEL_A, 2, O>;
 impl<'a, const O: u8> PWRSEL_W<'a, O> {
     #[doc = "Lowest power setting."]
@@ -179,9 +179,9 @@ impl<'a, const O: u8> PWRSEL_W<'a, O> {
         self.variant(PWRSEL_A::PWRSEL_3)
     }
 }
-#[doc = "Field `REFSEL` reader - Voltage Reference Selection"]
+#[doc = "Field `REFSEL` reader - Voltage Reference Selection."]
 pub type REFSEL_R = crate::FieldReader<u8, REFSEL_A>;
-#[doc = "Voltage Reference Selection\n\nValue on reset: 0"]
+#[doc = "Voltage Reference Selection.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum REFSEL_A {
@@ -225,7 +225,7 @@ impl REFSEL_R {
         *self == REFSEL_A::REFSEL_2
     }
 }
-#[doc = "Field `REFSEL` writer - Voltage Reference Selection"]
+#[doc = "Field `REFSEL` writer - Voltage Reference Selection."]
 pub type REFSEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CFG_SPEC, u8, REFSEL_A, 2, O>;
 impl<'a, const O: u8> REFSEL_W<'a, O> {
     #[doc = "(Default) Option 1 setting."]
@@ -244,9 +244,9 @@ impl<'a, const O: u8> REFSEL_W<'a, O> {
         self.variant(REFSEL_A::REFSEL_2)
     }
 }
-#[doc = "Field `TRES` reader - Trigger Resume Enable"]
+#[doc = "Field `TRES` reader - Trigger Resume Enable."]
 pub type TRES_R = crate::BitReader<TRES_A>;
-#[doc = "Trigger Resume Enable\n\nValue on reset: 0"]
+#[doc = "Trigger Resume Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TRES_A {
     #[doc = "0: Trigger sequences interrupted by a high priority trigger exception will not be automatically resumed or restarted."]
@@ -280,7 +280,7 @@ impl TRES_R {
         *self == TRES_A::TRES_1
     }
 }
-#[doc = "Field `TRES` writer - Trigger Resume Enable"]
+#[doc = "Field `TRES` writer - Trigger Resume Enable."]
 pub type TRES_W<'a, const O: u8> = crate::BitWriter<'a, u32, CFG_SPEC, TRES_A, O>;
 impl<'a, const O: u8> TRES_W<'a, O> {
     #[doc = "Trigger sequences interrupted by a high priority trigger exception will not be automatically resumed or restarted."]
@@ -294,9 +294,9 @@ impl<'a, const O: u8> TRES_W<'a, O> {
         self.variant(TRES_A::TRES_1)
     }
 }
-#[doc = "Field `TCMDRES` reader - Trigger Command Resume"]
+#[doc = "Field `TCMDRES` reader - Trigger Command Resume."]
 pub type TCMDRES_R = crate::BitReader<TCMDRES_A>;
-#[doc = "Trigger Command Resume\n\nValue on reset: 0"]
+#[doc = "Trigger Command Resume.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TCMDRES_A {
     #[doc = "0: Trigger sequences interrupted by a high priority trigger exception will be automatically restarted."]
@@ -330,7 +330,7 @@ impl TCMDRES_R {
         *self == TCMDRES_A::TCMDRES_1
     }
 }
-#[doc = "Field `TCMDRES` writer - Trigger Command Resume"]
+#[doc = "Field `TCMDRES` writer - Trigger Command Resume."]
 pub type TCMDRES_W<'a, const O: u8> = crate::BitWriter<'a, u32, CFG_SPEC, TCMDRES_A, O>;
 impl<'a, const O: u8> TCMDRES_W<'a, O> {
     #[doc = "Trigger sequences interrupted by a high priority trigger exception will be automatically restarted."]
@@ -344,9 +344,9 @@ impl<'a, const O: u8> TCMDRES_W<'a, O> {
         self.variant(TCMDRES_A::TCMDRES_1)
     }
 }
-#[doc = "Field `HPT_EXDI` reader - High Priority Trigger Exception Disable"]
+#[doc = "Field `HPT_EXDI` reader - High Priority Trigger Exception Disable."]
 pub type HPT_EXDI_R = crate::BitReader<HPT_EXDI_A>;
-#[doc = "High Priority Trigger Exception Disable\n\nValue on reset: 0"]
+#[doc = "High Priority Trigger Exception Disable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum HPT_EXDI_A {
     #[doc = "0: High priority trigger exceptions are enabled."]
@@ -380,7 +380,7 @@ impl HPT_EXDI_R {
         *self == HPT_EXDI_A::HPT_EXDI_1
     }
 }
-#[doc = "Field `HPT_EXDI` writer - High Priority Trigger Exception Disable"]
+#[doc = "Field `HPT_EXDI` writer - High Priority Trigger Exception Disable."]
 pub type HPT_EXDI_W<'a, const O: u8> = crate::BitWriter<'a, u32, CFG_SPEC, HPT_EXDI_A, O>;
 impl<'a, const O: u8> HPT_EXDI_W<'a, O> {
     #[doc = "High priority trigger exceptions are enabled."]
@@ -394,13 +394,13 @@ impl<'a, const O: u8> HPT_EXDI_W<'a, O> {
         self.variant(HPT_EXDI_A::HPT_EXDI_1)
     }
 }
-#[doc = "Field `PUDLY` reader - Power Up Delay"]
+#[doc = "Field `PUDLY` reader - Power Up Delay."]
 pub type PUDLY_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `PUDLY` writer - Power Up Delay"]
+#[doc = "Field `PUDLY` writer - Power Up Delay."]
 pub type PUDLY_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CFG_SPEC, u8, u8, 8, O>;
-#[doc = "Field `PWREN` reader - ADC Analog Pre-Enable"]
+#[doc = "Field `PWREN` reader - ADC Analog Pre-Enable."]
 pub type PWREN_R = crate::BitReader<PWREN_A>;
-#[doc = "ADC Analog Pre-Enable\n\nValue on reset: 0"]
+#[doc = "ADC Analog Pre-Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PWREN_A {
     #[doc = "0: ADC analog circuits are only enabled while conversions are active. Performance is affected due to analog startup delays."]
@@ -434,7 +434,7 @@ impl PWREN_R {
         *self == PWREN_A::PWREN_1
     }
 }
-#[doc = "Field `PWREN` writer - ADC Analog Pre-Enable"]
+#[doc = "Field `PWREN` writer - ADC Analog Pre-Enable."]
 pub type PWREN_W<'a, const O: u8> = crate::BitWriter<'a, u32, CFG_SPEC, PWREN_A, O>;
 impl<'a, const O: u8> PWREN_W<'a, O> {
     #[doc = "ADC analog circuits are only enabled while conversions are active. Performance is affected due to analog startup delays."]
@@ -449,84 +449,84 @@ impl<'a, const O: u8> PWREN_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - ADC trigger priority control"]
+    #[doc = "Bits 0:1 - ADC trigger priority control."]
     #[inline(always)]
     pub fn tprictrl(&self) -> TPRICTRL_R {
         TPRICTRL_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Power Configuration Select"]
+    #[doc = "Bits 4:5 - Power Configuration Select."]
     #[inline(always)]
     pub fn pwrsel(&self) -> PWRSEL_R {
         PWRSEL_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 6:7 - Voltage Reference Selection"]
+    #[doc = "Bits 6:7 - Voltage Reference Selection."]
     #[inline(always)]
     pub fn refsel(&self) -> REFSEL_R {
         REFSEL_R::new(((self.bits >> 6) & 3) as u8)
     }
-    #[doc = "Bit 8 - Trigger Resume Enable"]
+    #[doc = "Bit 8 - Trigger Resume Enable."]
     #[inline(always)]
     pub fn tres(&self) -> TRES_R {
         TRES_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bit 9 - Trigger Command Resume"]
+    #[doc = "Bit 9 - Trigger Command Resume."]
     #[inline(always)]
     pub fn tcmdres(&self) -> TCMDRES_R {
         TCMDRES_R::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bit 10 - High Priority Trigger Exception Disable"]
+    #[doc = "Bit 10 - High Priority Trigger Exception Disable."]
     #[inline(always)]
     pub fn hpt_exdi(&self) -> HPT_EXDI_R {
         HPT_EXDI_R::new(((self.bits >> 10) & 1) != 0)
     }
-    #[doc = "Bits 16:23 - Power Up Delay"]
+    #[doc = "Bits 16:23 - Power Up Delay."]
     #[inline(always)]
     pub fn pudly(&self) -> PUDLY_R {
         PUDLY_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bit 28 - ADC Analog Pre-Enable"]
+    #[doc = "Bit 28 - ADC Analog Pre-Enable."]
     #[inline(always)]
     pub fn pwren(&self) -> PWREN_R {
         PWREN_R::new(((self.bits >> 28) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - ADC trigger priority control"]
+    #[doc = "Bits 0:1 - ADC trigger priority control."]
     #[inline(always)]
     pub fn tprictrl(&mut self) -> TPRICTRL_W<0> {
         TPRICTRL_W::new(self)
     }
-    #[doc = "Bits 4:5 - Power Configuration Select"]
+    #[doc = "Bits 4:5 - Power Configuration Select."]
     #[inline(always)]
     pub fn pwrsel(&mut self) -> PWRSEL_W<4> {
         PWRSEL_W::new(self)
     }
-    #[doc = "Bits 6:7 - Voltage Reference Selection"]
+    #[doc = "Bits 6:7 - Voltage Reference Selection."]
     #[inline(always)]
     pub fn refsel(&mut self) -> REFSEL_W<6> {
         REFSEL_W::new(self)
     }
-    #[doc = "Bit 8 - Trigger Resume Enable"]
+    #[doc = "Bit 8 - Trigger Resume Enable."]
     #[inline(always)]
     pub fn tres(&mut self) -> TRES_W<8> {
         TRES_W::new(self)
     }
-    #[doc = "Bit 9 - Trigger Command Resume"]
+    #[doc = "Bit 9 - Trigger Command Resume."]
     #[inline(always)]
     pub fn tcmdres(&mut self) -> TCMDRES_W<9> {
         TCMDRES_W::new(self)
     }
-    #[doc = "Bit 10 - High Priority Trigger Exception Disable"]
+    #[doc = "Bit 10 - High Priority Trigger Exception Disable."]
     #[inline(always)]
     pub fn hpt_exdi(&mut self) -> HPT_EXDI_W<10> {
         HPT_EXDI_W::new(self)
     }
-    #[doc = "Bits 16:23 - Power Up Delay"]
+    #[doc = "Bits 16:23 - Power Up Delay."]
     #[inline(always)]
     pub fn pudly(&mut self) -> PUDLY_W<16> {
         PUDLY_W::new(self)
     }
-    #[doc = "Bit 28 - ADC Analog Pre-Enable"]
+    #[doc = "Bit 28 - ADC Analog Pre-Enable."]
     #[inline(always)]
     pub fn pwren(&mut self) -> PWREN_W<28> {
         PWREN_W::new(self)
@@ -538,7 +538,7 @@ impl W {
         self
     }
 }
-#[doc = "ADC Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "ADC Configuration Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CFG_SPEC;
 impl crate::RegisterSpec for CFG_SPEC {
     type Ux = u32;

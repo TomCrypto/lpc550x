@@ -43,7 +43,7 @@ impl R {
         ID_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
-#[doc = "IP identifier\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [moduleid](index.html) module"]
+#[doc = "IP identifier.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [moduleid](index.html) module"]
 pub struct MODULEID_SPEC;
 impl crate::RegisterSpec for MODULEID_SPEC {
     type Ux = u32;

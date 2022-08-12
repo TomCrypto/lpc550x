@@ -43,9 +43,9 @@ pub type DEVICE_TYPE_NUM_W<'a, const O: u8> =
 pub type DEVICE_TYPE_SEC_R = crate::BitReader<bool>;
 #[doc = "Field `DEVICE_TYPE_SEC` writer - Security device type: 0: LPC55xxx (Non Secure Familly) 1: LPC55Sxxx (Secure Familly)"]
 pub type DEVICE_TYPE_SEC_W<'a, const O: u8> = crate::BitWriter<'a, u32, DEVICE_TYPE_SPEC, bool, O>;
-#[doc = "Field `DEVICE_TYPE_PKG` reader - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP"]
+#[doc = "Field `DEVICE_TYPE_PKG` reader - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP."]
 pub type DEVICE_TYPE_PKG_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `DEVICE_TYPE_PKG` writer - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP"]
+#[doc = "Field `DEVICE_TYPE_PKG` writer - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP."]
 pub type DEVICE_TYPE_PKG_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, DEVICE_TYPE_SPEC, u8, u8, 4, O>;
 #[doc = "Field `DEVICE_TYPE_PIN` reader - Number of pins on the package."]
@@ -64,7 +64,7 @@ impl R {
     pub fn device_type_sec(&self) -> DEVICE_TYPE_SEC_R {
         DEVICE_TYPE_SEC_R::new(((self.bits >> 16) & 1) != 0)
     }
-    #[doc = "Bits 20:23 - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP"]
+    #[doc = "Bits 20:23 - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP."]
     #[inline(always)]
     pub fn device_type_pkg(&self) -> DEVICE_TYPE_PKG_R {
         DEVICE_TYPE_PKG_R::new(((self.bits >> 20) & 0x0f) as u8)
@@ -86,7 +86,7 @@ impl W {
     pub fn device_type_sec(&mut self) -> DEVICE_TYPE_SEC_W<16> {
         DEVICE_TYPE_SEC_W::new(self)
     }
-    #[doc = "Bits 20:23 - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP"]
+    #[doc = "Bits 20:23 - Device package type: 0000 : HLQFP 0001 : HTQFP 0010 : HVQFN 0100 : VFBGA 1000 : WLCSP."]
     #[inline(always)]
     pub fn device_type_pkg(&mut self) -> DEVICE_TYPE_PKG_W<20> {
         DEVICE_TYPE_PKG_W::new(self)
@@ -103,7 +103,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [device_type](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [device_type](index.html) module"]
 pub struct DEVICE_TYPE_SPEC;
 impl crate::RegisterSpec for DEVICE_TYPE_SPEC {
     type Ux = u32;

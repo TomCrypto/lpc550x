@@ -551,7 +551,7 @@ impl W {
         self
     }
 }
-#[doc = "PLL1 550m control\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pll1ctrl](index.html) module"]
+#[doc = "PLL1 550m control.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pll1ctrl](index.html) module"]
 pub struct PLL1CTRL_SPEC;
 impl crate::RegisterSpec for PLL1CTRL_SPEC {
     type Ux = u32;

@@ -22,7 +22,7 @@ impl R {
         RANDOM_NUMBER_R::new(self.bits)
     }
 }
-#[doc = "This register contains a random 32 bit number which is computed on demand, at each time it is read\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [random_number](index.html) module"]
+#[doc = "This register contains a random 32 bit number which is computed on demand, at each time it is read.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [random_number](index.html) module"]
 pub struct RANDOM_NUMBER_SPEC;
 impl crate::RegisterSpec for RANDOM_NUMBER_SPEC {
     type Ux = u32;

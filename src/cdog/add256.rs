@@ -19,10 +19,10 @@ impl From<crate::W<ADD256_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `AD256` writer - Address of ADD256 command"]
+#[doc = "Field `AD256` writer - Address of ADD256 command."]
 pub type AD256_W<'a, const O: u8> = crate::FieldWriter<'a, u32, ADD256_SPEC, u32, u32, 32, O>;
 impl W {
-    #[doc = "Bits 0:31 - Address of ADD256 command"]
+    #[doc = "Bits 0:31 - Address of ADD256 command."]
     #[inline(always)]
     pub fn ad256(&mut self) -> AD256_W<0> {
         AD256_W::new(self)

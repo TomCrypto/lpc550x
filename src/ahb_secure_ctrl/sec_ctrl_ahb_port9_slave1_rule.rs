@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_PORT9_SLAVE1_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `GPIO1_RULE` reader - Secure High Speed GPIO"]
+#[doc = "Field `GPIO1_RULE` reader - Secure High Speed GPIO."]
 pub type GPIO1_RULE_R = crate::FieldReader<u8, GPIO1_RULE_A>;
-#[doc = "Secure High Speed GPIO\n\nValue on reset: 0"]
+#[doc = "Secure High Speed GPIO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum GPIO1_RULE_A {
@@ -88,7 +88,7 @@ impl GPIO1_RULE_R {
         *self == GPIO1_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `GPIO1_RULE` writer - Secure High Speed GPIO"]
+#[doc = "Field `GPIO1_RULE` writer - Secure High Speed GPIO."]
 pub type GPIO1_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT9_SLAVE1_RULE_SPEC, u8, GPIO1_RULE_A, 2, O>;
 impl<'a, const O: u8> GPIO1_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> GPIO1_RULE_W<'a, O> {
         self.variant(GPIO1_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_RULE` reader - AHB Secure Controller"]
+#[doc = "Field `AHB_SEC_CTRL_RULE` reader - AHB Secure Controller."]
 pub type AHB_SEC_CTRL_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_RULE_A>;
-#[doc = "AHB Secure Controller\n\nValue on reset: 0"]
+#[doc = "AHB Secure Controller.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_RULE_A {
@@ -167,7 +167,7 @@ impl AHB_SEC_CTRL_RULE_R {
         *self == AHB_SEC_CTRL_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_RULE` writer - AHB Secure Controller"]
+#[doc = "Field `AHB_SEC_CTRL_RULE` writer - AHB Secure Controller."]
 pub type AHB_SEC_CTRL_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -200,24 +200,24 @@ impl<'a, const O: u8> AHB_SEC_CTRL_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Secure High Speed GPIO"]
+    #[doc = "Bits 0:1 - Secure High Speed GPIO."]
     #[inline(always)]
     pub fn gpio1_rule(&self) -> GPIO1_RULE_R {
         GPIO1_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - AHB Secure Controller"]
+    #[doc = "Bits 4:5 - AHB Secure Controller."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_rule(&self) -> AHB_SEC_CTRL_RULE_R {
         AHB_SEC_CTRL_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Secure High Speed GPIO"]
+    #[doc = "Bits 0:1 - Secure High Speed GPIO."]
     #[inline(always)]
     pub fn gpio1_rule(&mut self) -> GPIO1_RULE_W<0> {
         GPIO1_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - AHB Secure Controller"]
+    #[doc = "Bits 4:5 - AHB Secure Controller."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_rule(&mut self) -> AHB_SEC_CTRL_RULE_W<4> {
         AHB_SEC_CTRL_RULE_W::new(self)

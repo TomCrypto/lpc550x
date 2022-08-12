@@ -34,9 +34,9 @@ impl From<crate::W<CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `UNIFY` reader - SCT operation"]
+#[doc = "Field `UNIFY` reader - SCT operation."]
 pub type UNIFY_R = crate::BitReader<UNIFY_A>;
-#[doc = "SCT operation\n\nValue on reset: 0"]
+#[doc = "SCT operation.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum UNIFY_A {
     #[doc = "0: The SCT operates as two 16-bit counters named COUNTER_L and COUNTER_H."]
@@ -70,7 +70,7 @@ impl UNIFY_R {
         *self == UNIFY_A::UNIFIED_COUNTER
     }
 }
-#[doc = "Field `UNIFY` writer - SCT operation"]
+#[doc = "Field `UNIFY` writer - SCT operation."]
 pub type UNIFY_W<'a, const O: u8> = crate::BitWriter<'a, u32, CONFIG_SPEC, UNIFY_A, O>;
 impl<'a, const O: u8> UNIFY_W<'a, O> {
     #[doc = "The SCT operates as two 16-bit counters named COUNTER_L and COUNTER_H."]
@@ -84,9 +84,9 @@ impl<'a, const O: u8> UNIFY_W<'a, O> {
         self.variant(UNIFY_A::UNIFIED_COUNTER)
     }
 }
-#[doc = "Field `CLKMODE` reader - SCT clock mode"]
+#[doc = "Field `CLKMODE` reader - SCT clock mode."]
 pub type CLKMODE_R = crate::FieldReader<u8, CLKMODE_A>;
-#[doc = "SCT clock mode\n\nValue on reset: 0"]
+#[doc = "SCT clock mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CLKMODE_A {
@@ -138,7 +138,7 @@ impl CLKMODE_R {
         *self == CLKMODE_A::ASYNCHRONOUS_MODE
     }
 }
-#[doc = "Field `CLKMODE` writer - SCT clock mode"]
+#[doc = "Field `CLKMODE` writer - SCT clock mode."]
 pub type CLKMODE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, CONFIG_SPEC, u8, CLKMODE_A, 2, O>;
 impl<'a, const O: u8> CLKMODE_W<'a, O> {
@@ -418,12 +418,12 @@ pub type AUTOLIMIT_H_R = crate::BitReader<bool>;
 #[doc = "Field `AUTOLIMIT_H` writer - A one in this bit will cause a match on match register 0 to be treated as a de-facto LIMIT condition without the need to define an associated event. As with any LIMIT event, this automatic limit causes the counter to be cleared to zero in unidirectional mode or to change the direction of count in bi-directional mode. Software can write to set or clear this bit at any time. This bit is not used when the UNIFY bit is set."]
 pub type AUTOLIMIT_H_W<'a, const O: u8> = crate::BitWriter<'a, u32, CONFIG_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 0 - SCT operation"]
+    #[doc = "Bit 0 - SCT operation."]
     #[inline(always)]
     pub fn unify(&self) -> UNIFY_R {
         UNIFY_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bits 1:2 - SCT clock mode"]
+    #[doc = "Bits 1:2 - SCT clock mode."]
     #[inline(always)]
     pub fn clkmode(&self) -> CLKMODE_R {
         CLKMODE_R::new(((self.bits >> 1) & 3) as u8)
@@ -460,12 +460,12 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - SCT operation"]
+    #[doc = "Bit 0 - SCT operation."]
     #[inline(always)]
     pub fn unify(&mut self) -> UNIFY_W<0> {
         UNIFY_W::new(self)
     }
-    #[doc = "Bits 1:2 - SCT clock mode"]
+    #[doc = "Bits 1:2 - SCT clock mode."]
     #[inline(always)]
     pub fn clkmode(&mut self) -> CLKMODE_W<1> {
         CLKMODE_W::new(self)
@@ -507,7 +507,7 @@ impl W {
         self
     }
 }
-#[doc = "SCT configuration register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [config](index.html) module"]
+#[doc = "SCT configuration register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [config](index.html) module"]
 pub struct CONFIG_SPEC;
 impl crate::RegisterSpec for CONFIG_SPEC {
     type Ux = u32;

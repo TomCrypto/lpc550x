@@ -19,10 +19,10 @@ impl From<crate::W<ADD16_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `AD16` writer - Address of ADD16"]
+#[doc = "Field `AD16` writer - Address of ADD16."]
 pub type AD16_W<'a, const O: u8> = crate::FieldWriter<'a, u32, ADD16_SPEC, u32, u32, 32, O>;
 impl W {
-    #[doc = "Bits 0:31 - Address of ADD16"]
+    #[doc = "Bits 0:31 - Address of ADD16."]
     #[inline(always)]
     pub fn ad16(&mut self) -> AD16_W<0> {
         AD16_W::new(self)

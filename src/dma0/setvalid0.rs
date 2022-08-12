@@ -19,10 +19,10 @@ impl From<crate::W<SETVALID0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SV` writer - SETVALID control for DMA channel n. Bit n corresponds to DMA channel n. The number of bits = number of DMA channels in this device. Other bits are reserved. 0 = no effect. 1 = sets the VALIDPENDING control bit for DMA channel n"]
+#[doc = "Field `SV` writer - SETVALID control for DMA channel n. Bit n corresponds to DMA channel n. The number of bits = number of DMA channels in this device. Other bits are reserved. 0 = no effect. 1 = sets the VALIDPENDING control bit for DMA channel n."]
 pub type SV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, SETVALID0_SPEC, u32, u32, 32, O>;
 impl W {
-    #[doc = "Bits 0:31 - SETVALID control for DMA channel n. Bit n corresponds to DMA channel n. The number of bits = number of DMA channels in this device. Other bits are reserved. 0 = no effect. 1 = sets the VALIDPENDING control bit for DMA channel n"]
+    #[doc = "Bits 0:31 - SETVALID control for DMA channel n. Bit n corresponds to DMA channel n. The number of bits = number of DMA channels in this device. Other bits are reserved. 0 = no effect. 1 = sets the VALIDPENDING control bit for DMA channel n."]
     #[inline(always)]
     pub fn sv(&mut self) -> SV_W<0> {
         SV_W::new(self)

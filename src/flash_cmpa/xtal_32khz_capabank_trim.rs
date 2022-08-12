@@ -34,14 +34,14 @@ impl From<crate::W<XTAL_32KHZ_CAPABANK_TRIM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `TRIM_VALID` reader - XTAL 32kHz capa bank trimmings"]
+#[doc = "Field `TRIM_VALID` reader - XTAL 32kHz capa bank trimmings."]
 pub type TRIM_VALID_R = crate::BitReader<TRIM_VALID_A>;
-#[doc = "XTAL 32kHz capa bank trimmings\n\nValue on reset: 0"]
+#[doc = "XTAL 32kHz capa bank trimmings.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TRIM_VALID_A {
-    #[doc = "0: Capa Bank trimmings not valid. Default trimmings value are used"]
+    #[doc = "0: Capa Bank trimmings not valid. Default trimmings value are used."]
     NOT_TRIM = 0,
-    #[doc = "1: Capa Bank trimmings valid"]
+    #[doc = "1: Capa Bank trimmings valid."]
     VALID = 1,
 }
 impl From<TRIM_VALID_A> for bool {
@@ -70,16 +70,16 @@ impl TRIM_VALID_R {
         *self == TRIM_VALID_A::VALID
     }
 }
-#[doc = "Field `TRIM_VALID` writer - XTAL 32kHz capa bank trimmings"]
+#[doc = "Field `TRIM_VALID` writer - XTAL 32kHz capa bank trimmings."]
 pub type TRIM_VALID_W<'a, const O: u8> =
     crate::BitWriter<'a, u32, XTAL_32KHZ_CAPABANK_TRIM_SPEC, TRIM_VALID_A, O>;
 impl<'a, const O: u8> TRIM_VALID_W<'a, O> {
-    #[doc = "Capa Bank trimmings not valid. Default trimmings value are used"]
+    #[doc = "Capa Bank trimmings not valid. Default trimmings value are used."]
     #[inline(always)]
     pub fn not_trim(self) -> &'a mut W {
         self.variant(TRIM_VALID_A::NOT_TRIM)
     }
-    #[doc = "Capa Bank trimmings valid"]
+    #[doc = "Capa Bank trimmings valid."]
     #[inline(always)]
     pub fn valid(self) -> &'a mut W {
         self.variant(TRIM_VALID_A::VALID)
@@ -101,7 +101,7 @@ pub type PCB_XOUT_PARA_CAP_PF_X100_R = crate::FieldReader<u16, u16>;
 pub type PCB_XOUT_PARA_CAP_PF_X100_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, XTAL_32KHZ_CAPABANK_TRIM_SPEC, u16, u16, 10, O>;
 impl R {
-    #[doc = "Bit 0 - XTAL 32kHz capa bank trimmings"]
+    #[doc = "Bit 0 - XTAL 32kHz capa bank trimmings."]
     #[inline(always)]
     pub fn trim_valid(&self) -> TRIM_VALID_R {
         TRIM_VALID_R::new((self.bits & 1) != 0)
@@ -123,7 +123,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - XTAL 32kHz capa bank trimmings"]
+    #[doc = "Bit 0 - XTAL 32kHz capa bank trimmings."]
     #[inline(always)]
     pub fn trim_valid(&mut self) -> TRIM_VALID_W<0> {
         TRIM_VALID_W::new(self)

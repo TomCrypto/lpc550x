@@ -549,7 +549,7 @@ impl W {
         self
     }
 }
-#[doc = "LUTn input x MUX\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [lut_inp_mux](index.html) module"]
+#[doc = "LUTn input x MUX.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [lut_inp_mux](index.html) module"]
 pub struct LUT_INP_MUX_SPEC;
 impl crate::RegisterSpec for LUT_INP_MUX_SPEC {
     type Ux = u32;

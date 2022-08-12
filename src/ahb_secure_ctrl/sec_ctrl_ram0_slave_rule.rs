@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_RAM0_SLAVE_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RAM0_RULE` reader - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF"]
+#[doc = "Field `RAM0_RULE` reader - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF."]
 pub type RAM0_RULE_R = crate::FieldReader<u8, RAM0_RULE_A>;
-#[doc = "Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF\n\nValue on reset: 0"]
+#[doc = "Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum RAM0_RULE_A {
@@ -88,7 +88,7 @@ impl RAM0_RULE_R {
         *self == RAM0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `RAM0_RULE` writer - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF"]
+#[doc = "Field `RAM0_RULE` writer - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF."]
 pub type RAM0_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_RAM0_SLAVE_RULE_SPEC, u8, RAM0_RULE_A, 2, O>;
 impl<'a, const O: u8> RAM0_RULE_W<'a, O> {
@@ -114,14 +114,14 @@ impl<'a, const O: u8> RAM0_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF"]
+    #[doc = "Bits 0:1 - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF."]
     #[inline(always)]
     pub fn ram0_rule(&self) -> RAM0_RULE_R {
         RAM0_RULE_R::new((self.bits & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF"]
+    #[doc = "Bits 0:1 - Security access rules for the whole RAM0 : 0x2000_0000 - 0x2000_7FFF."]
     #[inline(always)]
     pub fn ram0_rule(&mut self) -> RAM0_RULE_W<0> {
         RAM0_RULE_W::new(self)

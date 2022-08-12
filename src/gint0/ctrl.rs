@@ -84,9 +84,9 @@ impl<'a, const O: u8> INT_W<'a, O> {
         self.variant(INT_A::REQUEST_ACTIVE)
     }
 }
-#[doc = "Field `COMB` reader - Combine enabled inputs for group interrupt"]
+#[doc = "Field `COMB` reader - Combine enabled inputs for group interrupt."]
 pub type COMB_R = crate::BitReader<COMB_A>;
-#[doc = "Combine enabled inputs for group interrupt\n\nValue on reset: 0"]
+#[doc = "Combine enabled inputs for group interrupt.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum COMB_A {
     #[doc = "0: Or. OR functionality: A grouped interrupt is generated when any one of the enabled inputs is active (based on its programmed polarity)."]
@@ -120,7 +120,7 @@ impl COMB_R {
         *self == COMB_A::AND
     }
 }
-#[doc = "Field `COMB` writer - Combine enabled inputs for group interrupt"]
+#[doc = "Field `COMB` writer - Combine enabled inputs for group interrupt."]
 pub type COMB_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, COMB_A, O>;
 impl<'a, const O: u8> COMB_W<'a, O> {
     #[doc = "Or. OR functionality: A grouped interrupt is generated when any one of the enabled inputs is active (based on its programmed polarity)."]
@@ -134,9 +134,9 @@ impl<'a, const O: u8> COMB_W<'a, O> {
         self.variant(COMB_A::AND)
     }
 }
-#[doc = "Field `TRIG` reader - Group interrupt trigger"]
+#[doc = "Field `TRIG` reader - Group interrupt trigger."]
 pub type TRIG_R = crate::BitReader<TRIG_A>;
-#[doc = "Group interrupt trigger\n\nValue on reset: 0"]
+#[doc = "Group interrupt trigger.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TRIG_A {
     #[doc = "0: Edge-triggered."]
@@ -170,7 +170,7 @@ impl TRIG_R {
         *self == TRIG_A::LEVEL_TRIGGERED
     }
 }
-#[doc = "Field `TRIG` writer - Group interrupt trigger"]
+#[doc = "Field `TRIG` writer - Group interrupt trigger."]
 pub type TRIG_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, TRIG_A, O>;
 impl<'a, const O: u8> TRIG_W<'a, O> {
     #[doc = "Edge-triggered."]
@@ -190,12 +190,12 @@ impl R {
     pub fn int(&self) -> INT_R {
         INT_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - Combine enabled inputs for group interrupt"]
+    #[doc = "Bit 1 - Combine enabled inputs for group interrupt."]
     #[inline(always)]
     pub fn comb(&self) -> COMB_R {
         COMB_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - Group interrupt trigger"]
+    #[doc = "Bit 2 - Group interrupt trigger."]
     #[inline(always)]
     pub fn trig(&self) -> TRIG_R {
         TRIG_R::new(((self.bits >> 2) & 1) != 0)
@@ -207,12 +207,12 @@ impl W {
     pub fn int(&mut self) -> INT_W<0> {
         INT_W::new(self)
     }
-    #[doc = "Bit 1 - Combine enabled inputs for group interrupt"]
+    #[doc = "Bit 1 - Combine enabled inputs for group interrupt."]
     #[inline(always)]
     pub fn comb(&mut self) -> COMB_W<1> {
         COMB_W::new(self)
     }
-    #[doc = "Bit 2 - Group interrupt trigger"]
+    #[doc = "Bit 2 - Group interrupt trigger."]
     #[inline(always)]
     pub fn trig(&mut self) -> TRIG_W<2> {
         TRIG_W::new(self)
@@ -224,7 +224,7 @@ impl W {
         self
     }
 }
-#[doc = "GPIO grouped interrupt control register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](index.html) module"]
+#[doc = "GPIO grouped interrupt control register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](index.html) module"]
 pub struct CTRL_SPEC;
 impl crate::RegisterSpec for CTRL_SPEC {
     type Ux = u32;

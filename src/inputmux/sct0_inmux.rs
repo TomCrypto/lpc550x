@@ -40,78 +40,78 @@ pub type INP_N_R = crate::FieldReader<u8, INP_N_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum INP_N_A {
-    #[doc = "0: SCT_GPI0 function selected from IOCON register"]
+    #[doc = "0: SCT_GPI0 function selected from IOCON register."]
     VAL0 = 0,
-    #[doc = "1: SCT_GPI1 function selected from IOCON register"]
+    #[doc = "1: SCT_GPI1 function selected from IOCON register."]
     VAL1 = 1,
-    #[doc = "2: SCT_GPI2 function selected from IOCON register"]
+    #[doc = "2: SCT_GPI2 function selected from IOCON register."]
     VAL2 = 2,
-    #[doc = "3: SCT_GPI3 function selected from IOCON register"]
+    #[doc = "3: SCT_GPI3 function selected from IOCON register."]
     VAL3 = 3,
-    #[doc = "4: SCT_GPI4 function selected from IOCON register"]
+    #[doc = "4: SCT_GPI4 function selected from IOCON register."]
     VAL4 = 4,
-    #[doc = "5: SCT_GPI5 function selected from IOCON register"]
+    #[doc = "5: SCT_GPI5 function selected from IOCON register."]
     VAL5 = 5,
-    #[doc = "6: SCT_GPI6 function selected from IOCON register"]
+    #[doc = "6: SCT_GPI6 function selected from IOCON register."]
     VAL6 = 6,
-    #[doc = "7: SCT_GPI7 function selected from IOCON register"]
+    #[doc = "7: SCT_GPI7 function selected from IOCON register."]
     VAL7 = 7,
     #[doc = "8: T0_OUT0 ctimer 0 match\\[0\\]
-output"]
+output."]
     VAL8 = 8,
     #[doc = "9: T1_OUT0 ctimer 1 match\\[0\\]
-output"]
+output."]
     VAL9 = 9,
     #[doc = "10: T2_OUT0 ctimer 2 match\\[0\\]
-output"]
+output."]
     VAL10 = 10,
     #[doc = "11: T3_OUT0 ctimer 3 match\\[0\\]
-output"]
+output."]
     VAL11 = 11,
     #[doc = "12: T4_OUT0 ctimer 4 match\\[0\\]
-output"]
+output."]
     VAL12 = 12,
-    #[doc = "13: ADC_IRQ interrupt request from ADC"]
+    #[doc = "13: ADC_IRQ interrupt request from ADC."]
     VAL13 = 13,
-    #[doc = "14: GPIOINT_BMATCH"]
+    #[doc = "14: GPIOINT_BMATCH."]
     VAL14 = 14,
-    #[doc = "15: None"]
+    #[doc = "15: None."]
     VAL15 = 15,
-    #[doc = "16: None"]
+    #[doc = "16: None."]
     VAL16 = 16,
-    #[doc = "17: COMP_OUTPUT output from analog comparator"]
+    #[doc = "17: COMP_OUTPUT output from analog comparator."]
     VAL17 = 17,
     #[doc = "18: I2S_SHARED_SCK\\[0\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     VAL18 = 18,
     #[doc = "19: I2S_SHARED_SCK\\[1\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     VAL19 = 19,
     #[doc = "20: I2S_SHARED_WS\\[0\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     VAL20 = 20,
     #[doc = "21: I2S_SHARED_WS\\[1\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     VAL21 = 21,
-    #[doc = "22: ARM_TXEV interrupt event from cpu0 or cpu1"]
+    #[doc = "22: ARM_TXEV interrupt event from cpu0 or cpu1."]
     VAL22 = 22,
-    #[doc = "23: DEBUG_HALTED from cpu0 or cpu1"]
+    #[doc = "23: DEBUG_HALTED from cpu0 or cpu1."]
     VAL23 = 23,
-    #[doc = "24: None"]
+    #[doc = "24: None."]
     VAL24 = 24,
-    #[doc = "25: None"]
+    #[doc = "25: None."]
     VAL25 = 25,
-    #[doc = "26: None"]
+    #[doc = "26: None."]
     VAL26 = 26,
-    #[doc = "27: None"]
+    #[doc = "27: None."]
     VAL27 = 27,
-    #[doc = "28: None"]
+    #[doc = "28: None."]
     VAL28 = 28,
-    #[doc = "29: None"]
+    #[doc = "29: None."]
     VAL29 = 29,
-    #[doc = "30: None"]
+    #[doc = "30: None."]
     VAL30 = 30,
-    #[doc = "31: None"]
+    #[doc = "31: None."]
     VAL31 = 31,
 }
 impl From<INP_N_A> for u8 {
@@ -325,171 +325,171 @@ impl INP_N_R {
 pub type INP_N_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SCT0_INMUX_SPEC, u8, INP_N_A, 5, O>;
 impl<'a, const O: u8> INP_N_W<'a, O> {
-    #[doc = "SCT_GPI0 function selected from IOCON register"]
+    #[doc = "SCT_GPI0 function selected from IOCON register."]
     #[inline(always)]
     pub fn val0(self) -> &'a mut W {
         self.variant(INP_N_A::VAL0)
     }
-    #[doc = "SCT_GPI1 function selected from IOCON register"]
+    #[doc = "SCT_GPI1 function selected from IOCON register."]
     #[inline(always)]
     pub fn val1(self) -> &'a mut W {
         self.variant(INP_N_A::VAL1)
     }
-    #[doc = "SCT_GPI2 function selected from IOCON register"]
+    #[doc = "SCT_GPI2 function selected from IOCON register."]
     #[inline(always)]
     pub fn val2(self) -> &'a mut W {
         self.variant(INP_N_A::VAL2)
     }
-    #[doc = "SCT_GPI3 function selected from IOCON register"]
+    #[doc = "SCT_GPI3 function selected from IOCON register."]
     #[inline(always)]
     pub fn val3(self) -> &'a mut W {
         self.variant(INP_N_A::VAL3)
     }
-    #[doc = "SCT_GPI4 function selected from IOCON register"]
+    #[doc = "SCT_GPI4 function selected from IOCON register."]
     #[inline(always)]
     pub fn val4(self) -> &'a mut W {
         self.variant(INP_N_A::VAL4)
     }
-    #[doc = "SCT_GPI5 function selected from IOCON register"]
+    #[doc = "SCT_GPI5 function selected from IOCON register."]
     #[inline(always)]
     pub fn val5(self) -> &'a mut W {
         self.variant(INP_N_A::VAL5)
     }
-    #[doc = "SCT_GPI6 function selected from IOCON register"]
+    #[doc = "SCT_GPI6 function selected from IOCON register."]
     #[inline(always)]
     pub fn val6(self) -> &'a mut W {
         self.variant(INP_N_A::VAL6)
     }
-    #[doc = "SCT_GPI7 function selected from IOCON register"]
+    #[doc = "SCT_GPI7 function selected from IOCON register."]
     #[inline(always)]
     pub fn val7(self) -> &'a mut W {
         self.variant(INP_N_A::VAL7)
     }
     #[doc = "T0_OUT0 ctimer 0 match\\[0\\]
-output"]
+output."]
     #[inline(always)]
     pub fn val8(self) -> &'a mut W {
         self.variant(INP_N_A::VAL8)
     }
     #[doc = "T1_OUT0 ctimer 1 match\\[0\\]
-output"]
+output."]
     #[inline(always)]
     pub fn val9(self) -> &'a mut W {
         self.variant(INP_N_A::VAL9)
     }
     #[doc = "T2_OUT0 ctimer 2 match\\[0\\]
-output"]
+output."]
     #[inline(always)]
     pub fn val10(self) -> &'a mut W {
         self.variant(INP_N_A::VAL10)
     }
     #[doc = "T3_OUT0 ctimer 3 match\\[0\\]
-output"]
+output."]
     #[inline(always)]
     pub fn val11(self) -> &'a mut W {
         self.variant(INP_N_A::VAL11)
     }
     #[doc = "T4_OUT0 ctimer 4 match\\[0\\]
-output"]
+output."]
     #[inline(always)]
     pub fn val12(self) -> &'a mut W {
         self.variant(INP_N_A::VAL12)
     }
-    #[doc = "ADC_IRQ interrupt request from ADC"]
+    #[doc = "ADC_IRQ interrupt request from ADC."]
     #[inline(always)]
     pub fn val13(self) -> &'a mut W {
         self.variant(INP_N_A::VAL13)
     }
-    #[doc = "GPIOINT_BMATCH"]
+    #[doc = "GPIOINT_BMATCH."]
     #[inline(always)]
     pub fn val14(self) -> &'a mut W {
         self.variant(INP_N_A::VAL14)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val15(self) -> &'a mut W {
         self.variant(INP_N_A::VAL15)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val16(self) -> &'a mut W {
         self.variant(INP_N_A::VAL16)
     }
-    #[doc = "COMP_OUTPUT output from analog comparator"]
+    #[doc = "COMP_OUTPUT output from analog comparator."]
     #[inline(always)]
     pub fn val17(self) -> &'a mut W {
         self.variant(INP_N_A::VAL17)
     }
     #[doc = "I2S_SHARED_SCK\\[0\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     #[inline(always)]
     pub fn val18(self) -> &'a mut W {
         self.variant(INP_N_A::VAL18)
     }
     #[doc = "I2S_SHARED_SCK\\[1\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     #[inline(always)]
     pub fn val19(self) -> &'a mut W {
         self.variant(INP_N_A::VAL19)
     }
     #[doc = "I2S_SHARED_WS\\[0\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     #[inline(always)]
     pub fn val20(self) -> &'a mut W {
         self.variant(INP_N_A::VAL20)
     }
     #[doc = "I2S_SHARED_WS\\[1\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     #[inline(always)]
     pub fn val21(self) -> &'a mut W {
         self.variant(INP_N_A::VAL21)
     }
-    #[doc = "ARM_TXEV interrupt event from cpu0 or cpu1"]
+    #[doc = "ARM_TXEV interrupt event from cpu0 or cpu1."]
     #[inline(always)]
     pub fn val22(self) -> &'a mut W {
         self.variant(INP_N_A::VAL22)
     }
-    #[doc = "DEBUG_HALTED from cpu0 or cpu1"]
+    #[doc = "DEBUG_HALTED from cpu0 or cpu1."]
     #[inline(always)]
     pub fn val23(self) -> &'a mut W {
         self.variant(INP_N_A::VAL23)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val24(self) -> &'a mut W {
         self.variant(INP_N_A::VAL24)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val25(self) -> &'a mut W {
         self.variant(INP_N_A::VAL25)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val26(self) -> &'a mut W {
         self.variant(INP_N_A::VAL26)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val27(self) -> &'a mut W {
         self.variant(INP_N_A::VAL27)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val28(self) -> &'a mut W {
         self.variant(INP_N_A::VAL28)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val29(self) -> &'a mut W {
         self.variant(INP_N_A::VAL29)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val30(self) -> &'a mut W {
         self.variant(INP_N_A::VAL30)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val31(self) -> &'a mut W {
         self.variant(INP_N_A::VAL31)
@@ -515,7 +515,7 @@ impl W {
         self
     }
 }
-#[doc = "Input mux register for SCT0 input\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sct0_inmux](index.html) module"]
+#[doc = "Input mux register for SCT0 input.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sct0_inmux](index.html) module"]
 pub struct SCT0_INMUX_SPEC;
 impl crate::RegisterSpec for SCT0_INMUX_SPEC {
     type Ux = u32;

@@ -34,19 +34,19 @@ impl From<crate::W<DATAW_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `DATAW` reader - no description available"]
+#[doc = "Field `DATAW` reader - no description available."]
 pub type DATAW_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `DATAW` writer - no description available"]
+#[doc = "Field `DATAW` writer - no description available."]
 pub type DATAW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DATAW_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn dataw(&self) -> DATAW_R {
         DATAW_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn dataw(&mut self) -> DATAW_W<0> {
         DATAW_W::new(self)

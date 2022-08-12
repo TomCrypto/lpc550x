@@ -34,20 +34,20 @@ impl From<crate::W<CODE_GRAY_LSB_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CODE_GRAY_LSB` reader - Gray code (42bits) to be converted back to binary"]
+#[doc = "Field `CODE_GRAY_LSB` reader - Gray code (42bits) to be converted back to binary."]
 pub type CODE_GRAY_LSB_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `CODE_GRAY_LSB` writer - Gray code (42bits) to be converted back to binary"]
+#[doc = "Field `CODE_GRAY_LSB` writer - Gray code (42bits) to be converted back to binary."]
 pub type CODE_GRAY_LSB_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, CODE_GRAY_LSB_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - Gray code (42bits) to be converted back to binary"]
+    #[doc = "Bits 0:31 - Gray code (42bits) to be converted back to binary."]
     #[inline(always)]
     pub fn code_gray_lsb(&self) -> CODE_GRAY_LSB_R {
         CODE_GRAY_LSB_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Gray code (42bits) to be converted back to binary"]
+    #[doc = "Bits 0:31 - Gray code (42bits) to be converted back to binary."]
     #[inline(always)]
     pub fn code_gray_lsb(&mut self) -> CODE_GRAY_LSB_W<0> {
         CODE_GRAY_LSB_W::new(self)
@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "CODE_GRAY LSB input Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [code_gray_lsb](index.html) module"]
+#[doc = "CODE_GRAY LSB input Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [code_gray_lsb](index.html) module"]
 pub struct CODE_GRAY_LSB_SPEC;
 impl crate::RegisterSpec for CODE_GRAY_LSB_SPEC {
     type Ux = u32;

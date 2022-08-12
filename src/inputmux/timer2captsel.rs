@@ -34,77 +34,77 @@ impl From<crate::W<TIMER2CAPTSEL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CAPTSEL` reader - Input number to TIMER2 capture inputs 0 to 4"]
+#[doc = "Field `CAPTSEL` reader - Input number to TIMER2 capture inputs 0 to 4."]
 pub type CAPTSEL_R = crate::FieldReader<u8, CAPTSEL_A>;
-#[doc = "Input number to TIMER2 capture inputs 0 to 4\n\nValue on reset: 31"]
+#[doc = "Input number to TIMER2 capture inputs 0 to 4.\n\nValue on reset: 31"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CAPTSEL_A {
-    #[doc = "0: CT_INP0 function selected from IOCON register"]
+    #[doc = "0: CT_INP0 function selected from IOCON register."]
     VAL0 = 0,
-    #[doc = "1: CT_INP1 function selected from IOCON register"]
+    #[doc = "1: CT_INP1 function selected from IOCON register."]
     VAL1 = 1,
-    #[doc = "2: CT_INP2 function selected from IOCON register"]
+    #[doc = "2: CT_INP2 function selected from IOCON register."]
     VAL2 = 2,
-    #[doc = "3: CT_INP3 function selected from IOCON register"]
+    #[doc = "3: CT_INP3 function selected from IOCON register."]
     VAL3 = 3,
-    #[doc = "4: CT_INP4 function selected from IOCON register"]
+    #[doc = "4: CT_INP4 function selected from IOCON register."]
     VAL4 = 4,
-    #[doc = "5: CT_INP5 function selected from IOCON register"]
+    #[doc = "5: CT_INP5 function selected from IOCON register."]
     VAL5 = 5,
-    #[doc = "6: CT_INP6 function selected from IOCON register"]
+    #[doc = "6: CT_INP6 function selected from IOCON register."]
     VAL6 = 6,
-    #[doc = "7: CT_INP7 function selected from IOCON register"]
+    #[doc = "7: CT_INP7 function selected from IOCON register."]
     VAL7 = 7,
-    #[doc = "8: CT_INP8 function selected from IOCON register"]
+    #[doc = "8: CT_INP8 function selected from IOCON register."]
     VAL8 = 8,
-    #[doc = "9: CT_INP9 function selected from IOCON register"]
+    #[doc = "9: CT_INP9 function selected from IOCON register."]
     VAL9 = 9,
-    #[doc = "10: CT_INP10 function selected from IOCON register"]
+    #[doc = "10: CT_INP10 function selected from IOCON register."]
     VAL10 = 10,
-    #[doc = "11: CT_INP11 function selected from IOCON register"]
+    #[doc = "11: CT_INP11 function selected from IOCON register."]
     VAL11 = 11,
-    #[doc = "12: CT_INP12 function selected from IOCON register"]
+    #[doc = "12: CT_INP12 function selected from IOCON register."]
     VAL12 = 12,
-    #[doc = "13: CT_INP13 function selected from IOCON register"]
+    #[doc = "13: CT_INP13 function selected from IOCON register."]
     VAL13 = 13,
-    #[doc = "14: CT_INP14 function selected from IOCON register"]
+    #[doc = "14: CT_INP14 function selected from IOCON register."]
     VAL14 = 14,
-    #[doc = "15: CT_INP15 function selected from IOCON register"]
+    #[doc = "15: CT_INP15 function selected from IOCON register."]
     VAL15 = 15,
-    #[doc = "16: CT_INP16 function selected from IOCON register"]
+    #[doc = "16: CT_INP16 function selected from IOCON register."]
     VAL16 = 16,
-    #[doc = "17: None"]
+    #[doc = "17: None."]
     VAL17 = 17,
-    #[doc = "18: None"]
+    #[doc = "18: None."]
     VAL18 = 18,
-    #[doc = "19: None"]
+    #[doc = "19: None."]
     VAL19 = 19,
-    #[doc = "20: None"]
+    #[doc = "20: None."]
     VAL20 = 20,
-    #[doc = "21: None"]
+    #[doc = "21: None."]
     VAL21 = 21,
-    #[doc = "22: COMP_OUTPUT output from analog comparator"]
+    #[doc = "22: COMP_OUTPUT output from analog comparator."]
     VAL22 = 22,
     #[doc = "23: I2S_SHARED_WS\\[0\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     VAL23 = 23,
     #[doc = "24: I2S_SHARED_WS\\[1\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     VAL24 = 24,
-    #[doc = "25: None"]
+    #[doc = "25: None."]
     VAL25 = 25,
-    #[doc = "26: None"]
+    #[doc = "26: None."]
     VAL26 = 26,
-    #[doc = "27: None"]
+    #[doc = "27: None."]
     VAL27 = 27,
-    #[doc = "28: None"]
+    #[doc = "28: None."]
     VAL28 = 28,
-    #[doc = "29: None"]
+    #[doc = "29: None."]
     VAL29 = 29,
-    #[doc = "30: None"]
+    #[doc = "30: None."]
     VAL30 = 30,
-    #[doc = "31: None"]
+    #[doc = "31: None."]
     VAL31 = 31,
 }
 impl From<CAPTSEL_A> for u8 {
@@ -314,182 +314,182 @@ impl CAPTSEL_R {
         *self == CAPTSEL_A::VAL31
     }
 }
-#[doc = "Field `CAPTSEL` writer - Input number to TIMER2 capture inputs 0 to 4"]
+#[doc = "Field `CAPTSEL` writer - Input number to TIMER2 capture inputs 0 to 4."]
 pub type CAPTSEL_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, TIMER2CAPTSEL_SPEC, u8, CAPTSEL_A, 5, O>;
 impl<'a, const O: u8> CAPTSEL_W<'a, O> {
-    #[doc = "CT_INP0 function selected from IOCON register"]
+    #[doc = "CT_INP0 function selected from IOCON register."]
     #[inline(always)]
     pub fn val0(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL0)
     }
-    #[doc = "CT_INP1 function selected from IOCON register"]
+    #[doc = "CT_INP1 function selected from IOCON register."]
     #[inline(always)]
     pub fn val1(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL1)
     }
-    #[doc = "CT_INP2 function selected from IOCON register"]
+    #[doc = "CT_INP2 function selected from IOCON register."]
     #[inline(always)]
     pub fn val2(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL2)
     }
-    #[doc = "CT_INP3 function selected from IOCON register"]
+    #[doc = "CT_INP3 function selected from IOCON register."]
     #[inline(always)]
     pub fn val3(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL3)
     }
-    #[doc = "CT_INP4 function selected from IOCON register"]
+    #[doc = "CT_INP4 function selected from IOCON register."]
     #[inline(always)]
     pub fn val4(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL4)
     }
-    #[doc = "CT_INP5 function selected from IOCON register"]
+    #[doc = "CT_INP5 function selected from IOCON register."]
     #[inline(always)]
     pub fn val5(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL5)
     }
-    #[doc = "CT_INP6 function selected from IOCON register"]
+    #[doc = "CT_INP6 function selected from IOCON register."]
     #[inline(always)]
     pub fn val6(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL6)
     }
-    #[doc = "CT_INP7 function selected from IOCON register"]
+    #[doc = "CT_INP7 function selected from IOCON register."]
     #[inline(always)]
     pub fn val7(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL7)
     }
-    #[doc = "CT_INP8 function selected from IOCON register"]
+    #[doc = "CT_INP8 function selected from IOCON register."]
     #[inline(always)]
     pub fn val8(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL8)
     }
-    #[doc = "CT_INP9 function selected from IOCON register"]
+    #[doc = "CT_INP9 function selected from IOCON register."]
     #[inline(always)]
     pub fn val9(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL9)
     }
-    #[doc = "CT_INP10 function selected from IOCON register"]
+    #[doc = "CT_INP10 function selected from IOCON register."]
     #[inline(always)]
     pub fn val10(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL10)
     }
-    #[doc = "CT_INP11 function selected from IOCON register"]
+    #[doc = "CT_INP11 function selected from IOCON register."]
     #[inline(always)]
     pub fn val11(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL11)
     }
-    #[doc = "CT_INP12 function selected from IOCON register"]
+    #[doc = "CT_INP12 function selected from IOCON register."]
     #[inline(always)]
     pub fn val12(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL12)
     }
-    #[doc = "CT_INP13 function selected from IOCON register"]
+    #[doc = "CT_INP13 function selected from IOCON register."]
     #[inline(always)]
     pub fn val13(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL13)
     }
-    #[doc = "CT_INP14 function selected from IOCON register"]
+    #[doc = "CT_INP14 function selected from IOCON register."]
     #[inline(always)]
     pub fn val14(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL14)
     }
-    #[doc = "CT_INP15 function selected from IOCON register"]
+    #[doc = "CT_INP15 function selected from IOCON register."]
     #[inline(always)]
     pub fn val15(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL15)
     }
-    #[doc = "CT_INP16 function selected from IOCON register"]
+    #[doc = "CT_INP16 function selected from IOCON register."]
     #[inline(always)]
     pub fn val16(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL16)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val17(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL17)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val18(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL18)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val19(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL19)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val20(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL20)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val21(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL21)
     }
-    #[doc = "COMP_OUTPUT output from analog comparator"]
+    #[doc = "COMP_OUTPUT output from analog comparator."]
     #[inline(always)]
     pub fn val22(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL22)
     }
     #[doc = "I2S_SHARED_WS\\[0\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     #[inline(always)]
     pub fn val23(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL23)
     }
     #[doc = "I2S_SHARED_WS\\[1\\]
-output from I2S pin sharing"]
+output from I2S pin sharing."]
     #[inline(always)]
     pub fn val24(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL24)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val25(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL25)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val26(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL26)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val27(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL27)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val28(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL28)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val29(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL29)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val30(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL30)
     }
-    #[doc = "None"]
+    #[doc = "None."]
     #[inline(always)]
     pub fn val31(self) -> &'a mut W {
         self.variant(CAPTSEL_A::VAL31)
     }
 }
 impl R {
-    #[doc = "Bits 0:4 - Input number to TIMER2 capture inputs 0 to 4"]
+    #[doc = "Bits 0:4 - Input number to TIMER2 capture inputs 0 to 4."]
     #[inline(always)]
     pub fn captsel(&self) -> CAPTSEL_R {
         CAPTSEL_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:4 - Input number to TIMER2 capture inputs 0 to 4"]
+    #[doc = "Bits 0:4 - Input number to TIMER2 capture inputs 0 to 4."]
     #[inline(always)]
     pub fn captsel(&mut self) -> CAPTSEL_W<0> {
         CAPTSEL_W::new(self)
@@ -501,7 +501,7 @@ impl W {
         self
     }
 }
-#[doc = "Capture select registers for TIMER2 inputs\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [timer2captsel](index.html) module"]
+#[doc = "Capture select registers for TIMER2 inputs.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [timer2captsel](index.html) module"]
 pub struct TIMER2CAPTSEL_SPEC;
 impl crate::RegisterSpec for TIMER2CAPTSEL_SPEC {
     type Ux = u32;

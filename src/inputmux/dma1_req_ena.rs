@@ -198,7 +198,7 @@ impl W {
         self
     }
 }
-#[doc = "Enable DMA1 requests\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma1_req_ena](index.html) module"]
+#[doc = "Enable DMA1 requests.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma1_req_ena](index.html) module"]
 pub struct DMA1_REQ_ENA_SPEC;
 impl crate::RegisterSpec for DMA1_REQ_ENA_SPEC {
     type Ux = u32;

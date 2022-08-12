@@ -384,7 +384,7 @@ impl R {
         DCDC_VAL_R::new(((self.bits >> 8) & 1) != 0)
     }
 }
-#[doc = "BoDs & DCDC interrupts status register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bod_dcdc_int_status](index.html) module"]
+#[doc = "BoDs & DCDC interrupts status register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bod_dcdc_int_status](index.html) module"]
 pub struct BOD_DCDC_INT_STATUS_SPEC;
 impl crate::RegisterSpec for BOD_DCDC_INT_STATUS_SPEC {
     type Ux = u32;

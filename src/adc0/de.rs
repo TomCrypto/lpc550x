@@ -34,9 +34,9 @@ impl From<crate::W<DE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FWMDE0` reader - FIFO 0 Watermark DMA Enable"]
+#[doc = "Field `FWMDE0` reader - FIFO 0 Watermark DMA Enable."]
 pub type FWMDE0_R = crate::BitReader<FWMDE0_A>;
-#[doc = "FIFO 0 Watermark DMA Enable\n\nValue on reset: 0"]
+#[doc = "FIFO 0 Watermark DMA Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FWMDE0_A {
     #[doc = "0: DMA request disabled."]
@@ -70,7 +70,7 @@ impl FWMDE0_R {
         *self == FWMDE0_A::FWMDE0_1
     }
 }
-#[doc = "Field `FWMDE0` writer - FIFO 0 Watermark DMA Enable"]
+#[doc = "Field `FWMDE0` writer - FIFO 0 Watermark DMA Enable."]
 pub type FWMDE0_W<'a, const O: u8> = crate::BitWriter<'a, u32, DE_SPEC, FWMDE0_A, O>;
 impl<'a, const O: u8> FWMDE0_W<'a, O> {
     #[doc = "DMA request disabled."]
@@ -84,9 +84,9 @@ impl<'a, const O: u8> FWMDE0_W<'a, O> {
         self.variant(FWMDE0_A::FWMDE0_1)
     }
 }
-#[doc = "Field `FWMDE1` reader - FIFO1 Watermark DMA Enable"]
+#[doc = "Field `FWMDE1` reader - FIFO1 Watermark DMA Enable."]
 pub type FWMDE1_R = crate::BitReader<FWMDE1_A>;
-#[doc = "FIFO1 Watermark DMA Enable\n\nValue on reset: 0"]
+#[doc = "FIFO1 Watermark DMA Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FWMDE1_A {
     #[doc = "0: DMA request disabled."]
@@ -120,7 +120,7 @@ impl FWMDE1_R {
         *self == FWMDE1_A::FWMDE1_1
     }
 }
-#[doc = "Field `FWMDE1` writer - FIFO1 Watermark DMA Enable"]
+#[doc = "Field `FWMDE1` writer - FIFO1 Watermark DMA Enable."]
 pub type FWMDE1_W<'a, const O: u8> = crate::BitWriter<'a, u32, DE_SPEC, FWMDE1_A, O>;
 impl<'a, const O: u8> FWMDE1_W<'a, O> {
     #[doc = "DMA request disabled."]
@@ -135,24 +135,24 @@ impl<'a, const O: u8> FWMDE1_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - FIFO 0 Watermark DMA Enable"]
+    #[doc = "Bit 0 - FIFO 0 Watermark DMA Enable."]
     #[inline(always)]
     pub fn fwmde0(&self) -> FWMDE0_R {
         FWMDE0_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - FIFO1 Watermark DMA Enable"]
+    #[doc = "Bit 1 - FIFO1 Watermark DMA Enable."]
     #[inline(always)]
     pub fn fwmde1(&self) -> FWMDE1_R {
         FWMDE1_R::new(((self.bits >> 1) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 0 - FIFO 0 Watermark DMA Enable"]
+    #[doc = "Bit 0 - FIFO 0 Watermark DMA Enable."]
     #[inline(always)]
     pub fn fwmde0(&mut self) -> FWMDE0_W<0> {
         FWMDE0_W::new(self)
     }
-    #[doc = "Bit 1 - FIFO1 Watermark DMA Enable"]
+    #[doc = "Bit 1 - FIFO1 Watermark DMA Enable."]
     #[inline(always)]
     pub fn fwmde1(&mut self) -> FWMDE1_W<1> {
         FWMDE1_W::new(self)
@@ -164,7 +164,7 @@ impl W {
         self
     }
 }
-#[doc = "DMA Enable Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [de](index.html) module"]
+#[doc = "DMA Enable Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [de](index.html) module"]
 pub struct DE_SPEC;
 impl crate::RegisterSpec for DE_SPEC {
     type Ux = u32;

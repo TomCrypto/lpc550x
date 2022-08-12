@@ -13,31 +13,31 @@ impl From<crate::R<STATUS_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `NUMTOF` reader - Number of Timeout Faults"]
+#[doc = "Field `NUMTOF` reader - Number of Timeout Faults."]
 pub type NUMTOF_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `NUMMISCOMPF` reader - Number of Miscompare Faults"]
+#[doc = "Field `NUMMISCOMPF` reader - Number of Miscompare Faults."]
 pub type NUMMISCOMPF_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `NUMILSEQF` reader - Number of illegal sequence faults"]
+#[doc = "Field `NUMILSEQF` reader - Number of illegal sequence faults."]
 pub type NUMILSEQF_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `CURST` reader - Current State"]
+#[doc = "Field `CURST` reader - Current State."]
 pub type CURST_R = crate::FieldReader<u8, u8>;
 impl R {
-    #[doc = "Bits 0:7 - Number of Timeout Faults"]
+    #[doc = "Bits 0:7 - Number of Timeout Faults."]
     #[inline(always)]
     pub fn numtof(&self) -> NUMTOF_R {
         NUMTOF_R::new((self.bits & 0xff) as u8)
     }
-    #[doc = "Bits 8:15 - Number of Miscompare Faults"]
+    #[doc = "Bits 8:15 - Number of Miscompare Faults."]
     #[inline(always)]
     pub fn nummiscompf(&self) -> NUMMISCOMPF_R {
         NUMMISCOMPF_R::new(((self.bits >> 8) & 0xff) as u8)
     }
-    #[doc = "Bits 16:23 - Number of illegal sequence faults"]
+    #[doc = "Bits 16:23 - Number of illegal sequence faults."]
     #[inline(always)]
     pub fn numilseqf(&self) -> NUMILSEQF_R {
         NUMILSEQF_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bits 24:27 - Current State"]
+    #[doc = "Bits 24:27 - Current State."]
     #[inline(always)]
     pub fn curst(&self) -> CURST_R {
         CURST_R::new(((self.bits >> 24) & 0x0f) as u8)

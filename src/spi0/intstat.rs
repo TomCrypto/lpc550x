@@ -36,7 +36,7 @@ impl R {
         MSTIDLE_R::new(((self.bits >> 8) & 1) != 0)
     }
 }
-#[doc = "SPI Interrupt Status\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [intstat](index.html) module"]
+#[doc = "SPI Interrupt Status.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [intstat](index.html) module"]
 pub struct INTSTAT_SPEC;
 impl crate::RegisterSpec for INTSTAT_SPEC {
     type Ux = u32;

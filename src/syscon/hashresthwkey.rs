@@ -34,9 +34,9 @@ impl From<crate::W<HASHRESTHWKEY_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `UNLOCKCODE` reader - Code value that controls whether HASH AES hardware secret key is unlocked"]
+#[doc = "Field `UNLOCKCODE` reader - Code value that controls whether HASH AES hardware secret key is unlocked."]
 pub type UNLOCKCODE_R = crate::FieldReader<u32, UNLOCKCODE_A>;
-#[doc = "Code value that controls whether HASH AES hardware secret key is unlocked\n\nValue on reset: 0"]
+#[doc = "Code value that controls whether HASH AES hardware secret key is unlocked.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u32)]
 pub enum UNLOCKCODE_A {
@@ -64,7 +64,7 @@ impl UNLOCKCODE_R {
         *self == UNLOCKCODE_A::UNLOCK
     }
 }
-#[doc = "Field `UNLOCKCODE` writer - Code value that controls whether HASH AES hardware secret key is unlocked"]
+#[doc = "Field `UNLOCKCODE` writer - Code value that controls whether HASH AES hardware secret key is unlocked."]
 pub type UNLOCKCODE_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, HASHRESTHWKEY_SPEC, u32, UNLOCKCODE_A, 32, O>;
 impl<'a, const O: u8> UNLOCKCODE_W<'a, O> {
@@ -75,14 +75,14 @@ impl<'a, const O: u8> UNLOCKCODE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:31 - Code value that controls whether HASH AES hardware secret key is unlocked"]
+    #[doc = "Bits 0:31 - Code value that controls whether HASH AES hardware secret key is unlocked."]
     #[inline(always)]
     pub fn unlockcode(&self) -> UNLOCKCODE_R {
         UNLOCKCODE_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Code value that controls whether HASH AES hardware secret key is unlocked"]
+    #[doc = "Bits 0:31 - Code value that controls whether HASH AES hardware secret key is unlocked."]
     #[inline(always)]
     pub fn unlockcode(&mut self) -> UNLOCKCODE_W<0> {
         UNLOCKCODE_W::new(self)
@@ -94,7 +94,7 @@ impl W {
         self
     }
 }
-#[doc = "Controls whether the HASH AES hardware secret key is restricted to use by secure code\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hashresthwkey](index.html) module"]
+#[doc = "Controls whether the HASH AES hardware secret key is restricted to use by secure code.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hashresthwkey](index.html) module"]
 pub struct HASHRESTHWKEY_SPEC;
 impl crate::RegisterSpec for HASHRESTHWKEY_SPEC {
     type Ux = u32;

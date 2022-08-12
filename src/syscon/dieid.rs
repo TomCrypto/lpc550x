@@ -29,7 +29,7 @@ impl R {
         MCO_NUM_IN_DIE_ID_R::new(((self.bits >> 4) & 0x000f_ffff) as u32)
     }
 }
-#[doc = "Chip revision ID and Number\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dieid](index.html) module"]
+#[doc = "Chip revision ID and Number.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dieid](index.html) module"]
 pub struct DIEID_SPEC;
 impl crate::RegisterSpec for DIEID_SPEC {
     type Ux = u32;

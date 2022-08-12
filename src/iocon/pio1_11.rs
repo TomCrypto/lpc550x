@@ -40,22 +40,12 @@ pub type FUNC_R = crate::FieldReader<u8, FUNC_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FUNC_A {
-    #[doc = "0: Alternative connection 0."]
-    ALT0 = 0,
-    #[doc = "1: Alternative connection 1."]
-    ALT1 = 1,
-    #[doc = "2: Alternative connection 2."]
-    ALT2 = 2,
-    #[doc = "3: Alternative connection 3."]
-    ALT3 = 3,
-    #[doc = "4: Alternative connection 4."]
-    ALT4 = 4,
-    #[doc = "5: Alternative connection 5."]
-    ALT5 = 5,
-    #[doc = "6: Alternative connection 6."]
-    ALT6 = 6,
-    #[doc = "7: Alternative connection 7."]
-    ALT7 = 7,
+    #[doc = "0: General-purpose digital input/output pin."]
+    PIO1_11 = 0,
+    #[doc = "2: Flexcomm 1 USART transmitter, I2C clock, SPI master-in/slave-out data I/O, I2S word-select/frame."]
+    FC1_TXD_SCL_MISO_WS = 2,
+    #[doc = "3: Capture input to CTimer input multiplexers."]
+    CTIMER_INP5 = 3,
 }
 impl From<FUNC_A> for u8 {
     #[inline(always)]
@@ -68,100 +58,45 @@ impl FUNC_R {
     #[inline(always)]
     pub fn variant(&self) -> Option<FUNC_A> {
         match self.bits {
-            0 => Some(FUNC_A::ALT0),
-            1 => Some(FUNC_A::ALT1),
-            2 => Some(FUNC_A::ALT2),
-            3 => Some(FUNC_A::ALT3),
-            4 => Some(FUNC_A::ALT4),
-            5 => Some(FUNC_A::ALT5),
-            6 => Some(FUNC_A::ALT6),
-            7 => Some(FUNC_A::ALT7),
+            0 => Some(FUNC_A::PIO1_11),
+            2 => Some(FUNC_A::FC1_TXD_SCL_MISO_WS),
+            3 => Some(FUNC_A::CTIMER_INP5),
             _ => None,
         }
     }
-    #[doc = "Checks if the value of the field is `ALT0`"]
+    #[doc = "Checks if the value of the field is `PIO1_11`"]
     #[inline(always)]
-    pub fn is_alt0(&self) -> bool {
-        *self == FUNC_A::ALT0
+    pub fn is_pio1_11(&self) -> bool {
+        *self == FUNC_A::PIO1_11
     }
-    #[doc = "Checks if the value of the field is `ALT1`"]
+    #[doc = "Checks if the value of the field is `FC1_TXD_SCL_MISO_WS`"]
     #[inline(always)]
-    pub fn is_alt1(&self) -> bool {
-        *self == FUNC_A::ALT1
+    pub fn is_fc1_txd_scl_miso_ws(&self) -> bool {
+        *self == FUNC_A::FC1_TXD_SCL_MISO_WS
     }
-    #[doc = "Checks if the value of the field is `ALT2`"]
+    #[doc = "Checks if the value of the field is `CTIMER_INP5`"]
     #[inline(always)]
-    pub fn is_alt2(&self) -> bool {
-        *self == FUNC_A::ALT2
-    }
-    #[doc = "Checks if the value of the field is `ALT3`"]
-    #[inline(always)]
-    pub fn is_alt3(&self) -> bool {
-        *self == FUNC_A::ALT3
-    }
-    #[doc = "Checks if the value of the field is `ALT4`"]
-    #[inline(always)]
-    pub fn is_alt4(&self) -> bool {
-        *self == FUNC_A::ALT4
-    }
-    #[doc = "Checks if the value of the field is `ALT5`"]
-    #[inline(always)]
-    pub fn is_alt5(&self) -> bool {
-        *self == FUNC_A::ALT5
-    }
-    #[doc = "Checks if the value of the field is `ALT6`"]
-    #[inline(always)]
-    pub fn is_alt6(&self) -> bool {
-        *self == FUNC_A::ALT6
-    }
-    #[doc = "Checks if the value of the field is `ALT7`"]
-    #[inline(always)]
-    pub fn is_alt7(&self) -> bool {
-        *self == FUNC_A::ALT7
+    pub fn is_ctimer_inp5(&self) -> bool {
+        *self == FUNC_A::CTIMER_INP5
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function."]
 pub type FUNC_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PIO1_11_SPEC, u8, FUNC_A, 4, O>;
 impl<'a, const O: u8> FUNC_W<'a, O> {
-    #[doc = "Alternative connection 0."]
+    #[doc = "General-purpose digital input/output pin."]
     #[inline(always)]
-    pub fn alt0(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT0)
+    pub fn pio1_11(self) -> &'a mut W {
+        self.variant(FUNC_A::PIO1_11)
     }
-    #[doc = "Alternative connection 1."]
+    #[doc = "Flexcomm 1 USART transmitter, I2C clock, SPI master-in/slave-out data I/O, I2S word-select/frame."]
     #[inline(always)]
-    pub fn alt1(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT1)
+    pub fn fc1_txd_scl_miso_ws(self) -> &'a mut W {
+        self.variant(FUNC_A::FC1_TXD_SCL_MISO_WS)
     }
-    #[doc = "Alternative connection 2."]
+    #[doc = "Capture input to CTimer input multiplexers."]
     #[inline(always)]
-    pub fn alt2(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT2)
-    }
-    #[doc = "Alternative connection 3."]
-    #[inline(always)]
-    pub fn alt3(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT3)
-    }
-    #[doc = "Alternative connection 4."]
-    #[inline(always)]
-    pub fn alt4(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT4)
-    }
-    #[doc = "Alternative connection 5."]
-    #[inline(always)]
-    pub fn alt5(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT5)
-    }
-    #[doc = "Alternative connection 6."]
-    #[inline(always)]
-    pub fn alt6(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT6)
-    }
-    #[doc = "Alternative connection 7."]
-    #[inline(always)]
-    pub fn alt7(self) -> &'a mut W {
-        self.variant(FUNC_A::ALT7)
+    pub fn ctimer_inp5(self) -> &'a mut W {
+        self.variant(FUNC_A::CTIMER_INP5)
     }
 }
 #[doc = "Field `MODE` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
@@ -397,7 +332,7 @@ pub type OD_R = crate::BitReader<OD_A>;
 #[doc = "Controls open-drain mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum OD_A {
-    #[doc = "0: Normal. Normal push-pull output"]
+    #[doc = "0: Normal. Normal push-pull output."]
     NORMAL = 0,
     #[doc = "1: Open-drain. Simulated open-drain output (high drive disabled)."]
     OPEN_DRAIN = 1,
@@ -431,7 +366,7 @@ impl OD_R {
 #[doc = "Field `OD` writer - Controls open-drain mode."]
 pub type OD_W<'a, const O: u8> = crate::BitWriter<'a, u32, PIO1_11_SPEC, OD_A, O>;
 impl<'a, const O: u8> OD_W<'a, O> {
-    #[doc = "Normal. Normal push-pull output"]
+    #[doc = "Normal. Normal push-pull output."]
     #[inline(always)]
     pub fn normal(self) -> &'a mut W {
         self.variant(OD_A::NORMAL)
@@ -512,7 +447,7 @@ impl W {
         self
     }
 }
-#[doc = "Digital I/O control for port 1 pins PIO1_11\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pio1_11](index.html) module"]
+#[doc = "Digital I/O control for port 1 pins PIO1_11.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pio1_11](index.html) module"]
 pub struct PIO1_11_SPEC;
 impl crate::RegisterSpec for PIO1_11_SPEC {
     type Ux = u32;

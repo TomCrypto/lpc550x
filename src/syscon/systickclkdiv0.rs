@@ -192,7 +192,7 @@ impl W {
         self
     }
 }
-#[doc = "System Tick Timer divider for CPU0\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [systickclkdiv0](index.html) module"]
+#[doc = "System Tick Timer divider for CPU0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [systickclkdiv0](index.html) module"]
 pub struct SYSTICKCLKDIV0_SPEC;
 impl crate::RegisterSpec for SYSTICKCLKDIV0_SPEC {
     type Ux = u32;

@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `PMC_RULE` reader - Power Management Controller"]
+#[doc = "Field `PMC_RULE` reader - Power Management Controller."]
 pub type PMC_RULE_R = crate::FieldReader<u8, PMC_RULE_A>;
-#[doc = "Power Management Controller\n\nValue on reset: 0"]
+#[doc = "Power Management Controller.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PMC_RULE_A {
@@ -88,7 +88,7 @@ impl PMC_RULE_R {
         *self == PMC_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `PMC_RULE` writer - Power Management Controller"]
+#[doc = "Field `PMC_RULE` writer - Power Management Controller."]
 pub type PMC_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL0_SPEC, u8, PMC_RULE_A, 2, O>;
 impl<'a, const O: u8> PMC_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> PMC_RULE_W<'a, O> {
         self.variant(PMC_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `SYSCTRL_RULE` reader - System Controller"]
+#[doc = "Field `SYSCTRL_RULE` reader - System Controller."]
 pub type SYSCTRL_RULE_R = crate::FieldReader<u8, SYSCTRL_RULE_A>;
-#[doc = "System Controller\n\nValue on reset: 0"]
+#[doc = "System Controller.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum SYSCTRL_RULE_A {
@@ -167,7 +167,7 @@ impl SYSCTRL_RULE_R {
         *self == SYSCTRL_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `SYSCTRL_RULE` writer - System Controller"]
+#[doc = "Field `SYSCTRL_RULE` writer - System Controller."]
 pub type SYSCTRL_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL0_SPEC, u8, SYSCTRL_RULE_A, 2, O>;
 impl<'a, const O: u8> SYSCTRL_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> SYSCTRL_RULE_W<'a, O> {
         self.variant(SYSCTRL_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `SPI_FILTER_RULE` reader - SPI FILTER control"]
+#[doc = "Field `SPI_FILTER_RULE` reader - SPI FILTER control."]
 pub type SPI_FILTER_RULE_R = crate::FieldReader<u8, SPI_FILTER_RULE_A>;
-#[doc = "SPI FILTER control\n\nValue on reset: 0"]
+#[doc = "SPI FILTER control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum SPI_FILTER_RULE_A {
@@ -246,7 +246,7 @@ impl SPI_FILTER_RULE_R {
         *self == SPI_FILTER_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `SPI_FILTER_RULE` writer - SPI FILTER control"]
+#[doc = "Field `SPI_FILTER_RULE` writer - SPI FILTER control."]
 pub type SPI_FILTER_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -279,34 +279,34 @@ impl<'a, const O: u8> SPI_FILTER_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Power Management Controller"]
+    #[doc = "Bits 0:1 - Power Management Controller."]
     #[inline(always)]
     pub fn pmc_rule(&self) -> PMC_RULE_R {
         PMC_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 12:13 - System Controller"]
+    #[doc = "Bits 12:13 - System Controller."]
     #[inline(always)]
     pub fn sysctrl_rule(&self) -> SYSCTRL_RULE_R {
         SYSCTRL_RULE_R::new(((self.bits >> 12) & 3) as u8)
     }
-    #[doc = "Bits 16:17 - SPI FILTER control"]
+    #[doc = "Bits 16:17 - SPI FILTER control."]
     #[inline(always)]
     pub fn spi_filter_rule(&self) -> SPI_FILTER_RULE_R {
         SPI_FILTER_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Power Management Controller"]
+    #[doc = "Bits 0:1 - Power Management Controller."]
     #[inline(always)]
     pub fn pmc_rule(&mut self) -> PMC_RULE_W<0> {
         PMC_RULE_W::new(self)
     }
-    #[doc = "Bits 12:13 - System Controller"]
+    #[doc = "Bits 12:13 - System Controller."]
     #[inline(always)]
     pub fn sysctrl_rule(&mut self) -> SYSCTRL_RULE_W<12> {
         SYSCTRL_RULE_W::new(self)
     }
-    #[doc = "Bits 16:17 - SPI FILTER control"]
+    #[doc = "Bits 16:17 - SPI FILTER control."]
     #[inline(always)]
     pub fn spi_filter_rule(&mut self) -> SPI_FILTER_RULE_W<16> {
         SPI_FILTER_RULE_W::new(self)

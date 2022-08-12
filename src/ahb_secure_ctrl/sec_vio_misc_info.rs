@@ -85,11 +85,11 @@ impl SEC_VIO_INFO_DATA_ACCESS_R {
         *self == SEC_VIO_INFO_DATA_ACCESS_A::DATA
     }
 }
-#[doc = "Field `SEC_VIO_INFO_MASTER_SEC_LEVEL` reader - bit \\[5:4\\]: master sec level and privilege level bit \\[7:6\\]: anti-pol value for master sec level and privilege level"]
+#[doc = "Field `SEC_VIO_INFO_MASTER_SEC_LEVEL` reader - bit \\[5:4\\]: master sec level and privilege level bit \\[7:6\\]: anti-pol value for master sec level and privilege level."]
 pub type SEC_VIO_INFO_MASTER_SEC_LEVEL_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `SEC_VIO_INFO_MASTER` reader - security violation master number"]
+#[doc = "Field `SEC_VIO_INFO_MASTER` reader - security violation master number."]
 pub type SEC_VIO_INFO_MASTER_R = crate::FieldReader<u8, SEC_VIO_INFO_MASTER_A>;
-#[doc = "security violation master number\n\nValue on reset: 0"]
+#[doc = "security violation master number.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum SEC_VIO_INFO_MASTER_A {
@@ -168,18 +168,18 @@ impl R {
     pub fn sec_vio_info_data_access(&self) -> SEC_VIO_INFO_DATA_ACCESS_R {
         SEC_VIO_INFO_DATA_ACCESS_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bits 4:7 - bit \\[5:4\\]: master sec level and privilege level bit \\[7:6\\]: anti-pol value for master sec level and privilege level"]
+    #[doc = "Bits 4:7 - bit \\[5:4\\]: master sec level and privilege level bit \\[7:6\\]: anti-pol value for master sec level and privilege level."]
     #[inline(always)]
     pub fn sec_vio_info_master_sec_level(&self) -> SEC_VIO_INFO_MASTER_SEC_LEVEL_R {
         SEC_VIO_INFO_MASTER_SEC_LEVEL_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bits 8:11 - security violation master number"]
+    #[doc = "Bits 8:11 - security violation master number."]
     #[inline(always)]
     pub fn sec_vio_info_master(&self) -> SEC_VIO_INFO_MASTER_R {
         SEC_VIO_INFO_MASTER_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
 }
-#[doc = "most recent security violation miscellaneous information for AHB layer n\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sec_vio_misc_info](index.html) module"]
+#[doc = "most recent security violation miscellaneous information for AHB layer n.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sec_vio_misc_info](index.html) module"]
 pub struct SEC_VIO_MISC_INFO_SPEC;
 impl crate::RegisterSpec for SEC_VIO_MISC_INFO_SPEC {
     type Ux = u32;

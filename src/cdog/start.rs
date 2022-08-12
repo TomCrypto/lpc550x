@@ -19,10 +19,10 @@ impl From<crate::W<START_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `STRT` writer - Address of start command access"]
+#[doc = "Field `STRT` writer - Address of start command access."]
 pub type STRT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, START_SPEC, u32, u32, 32, O>;
 impl W {
-    #[doc = "Bits 0:31 - Address of start command access"]
+    #[doc = "Bits 0:31 - Address of start command access."]
     #[inline(always)]
     pub fn strt(&mut self) -> STRT_W<0> {
         STRT_W::new(self)

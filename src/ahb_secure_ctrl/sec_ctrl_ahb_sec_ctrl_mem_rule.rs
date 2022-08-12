@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_SEC_CTRL_MEM_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_0_RULE` reader - Address space: 0x400A_0000 - 0x400A_CFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_0_RULE` reader - Address space: 0x400A_0000 - 0x400A_CFFF."]
 pub type AHB_SEC_CTRL_SECT_0_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_0_RULE_A>;
-#[doc = "Address space: 0x400A_0000 - 0x400A_CFFF\n\nValue on reset: 0"]
+#[doc = "Address space: 0x400A_0000 - 0x400A_CFFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_0_RULE_A {
@@ -88,7 +88,7 @@ impl AHB_SEC_CTRL_SECT_0_RULE_R {
         *self == AHB_SEC_CTRL_SECT_0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_0_RULE` writer - Address space: 0x400A_0000 - 0x400A_CFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_0_RULE` writer - Address space: 0x400A_0000 - 0x400A_CFFF."]
 pub type AHB_SEC_CTRL_SECT_0_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -120,9 +120,9 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_0_RULE_W<'a, O> {
         self.variant(AHB_SEC_CTRL_SECT_0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_1_RULE` reader - Address space: 0x400A_D000 - 0x400A_DFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_1_RULE` reader - Address space: 0x400A_D000 - 0x400A_DFFF."]
 pub type AHB_SEC_CTRL_SECT_1_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_1_RULE_A>;
-#[doc = "Address space: 0x400A_D000 - 0x400A_DFFF\n\nValue on reset: 0"]
+#[doc = "Address space: 0x400A_D000 - 0x400A_DFFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_1_RULE_A {
@@ -174,7 +174,7 @@ impl AHB_SEC_CTRL_SECT_1_RULE_R {
         *self == AHB_SEC_CTRL_SECT_1_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_1_RULE` writer - Address space: 0x400A_D000 - 0x400A_DFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_1_RULE` writer - Address space: 0x400A_D000 - 0x400A_DFFF."]
 pub type AHB_SEC_CTRL_SECT_1_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -206,9 +206,9 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_1_RULE_W<'a, O> {
         self.variant(AHB_SEC_CTRL_SECT_1_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_2_RULE` reader - Address space: 0x400A_E000 - 0x400A_EFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_2_RULE` reader - Address space: 0x400A_E000 - 0x400A_EFFF."]
 pub type AHB_SEC_CTRL_SECT_2_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_2_RULE_A>;
-#[doc = "Address space: 0x400A_E000 - 0x400A_EFFF\n\nValue on reset: 0"]
+#[doc = "Address space: 0x400A_E000 - 0x400A_EFFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_2_RULE_A {
@@ -260,7 +260,7 @@ impl AHB_SEC_CTRL_SECT_2_RULE_R {
         *self == AHB_SEC_CTRL_SECT_2_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_2_RULE` writer - Address space: 0x400A_E000 - 0x400A_EFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_2_RULE` writer - Address space: 0x400A_E000 - 0x400A_EFFF."]
 pub type AHB_SEC_CTRL_SECT_2_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -292,9 +292,9 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_2_RULE_W<'a, O> {
         self.variant(AHB_SEC_CTRL_SECT_2_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_3_RULE` reader - Address space: 0x400A_F000 - 0x400A_FFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_3_RULE` reader - Address space: 0x400A_F000 - 0x400A_FFFF."]
 pub type AHB_SEC_CTRL_SECT_3_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_3_RULE_A>;
-#[doc = "Address space: 0x400A_F000 - 0x400A_FFFF\n\nValue on reset: 0"]
+#[doc = "Address space: 0x400A_F000 - 0x400A_FFFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_3_RULE_A {
@@ -346,7 +346,7 @@ impl AHB_SEC_CTRL_SECT_3_RULE_R {
         *self == AHB_SEC_CTRL_SECT_3_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `AHB_SEC_CTRL_SECT_3_RULE` writer - Address space: 0x400A_F000 - 0x400A_FFFF"]
+#[doc = "Field `AHB_SEC_CTRL_SECT_3_RULE` writer - Address space: 0x400A_F000 - 0x400A_FFFF."]
 pub type AHB_SEC_CTRL_SECT_3_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -379,44 +379,44 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_3_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Address space: 0x400A_0000 - 0x400A_CFFF"]
+    #[doc = "Bits 0:1 - Address space: 0x400A_0000 - 0x400A_CFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_0_rule(&self) -> AHB_SEC_CTRL_SECT_0_RULE_R {
         AHB_SEC_CTRL_SECT_0_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Address space: 0x400A_D000 - 0x400A_DFFF"]
+    #[doc = "Bits 4:5 - Address space: 0x400A_D000 - 0x400A_DFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_1_rule(&self) -> AHB_SEC_CTRL_SECT_1_RULE_R {
         AHB_SEC_CTRL_SECT_1_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 8:9 - Address space: 0x400A_E000 - 0x400A_EFFF"]
+    #[doc = "Bits 8:9 - Address space: 0x400A_E000 - 0x400A_EFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_2_rule(&self) -> AHB_SEC_CTRL_SECT_2_RULE_R {
         AHB_SEC_CTRL_SECT_2_RULE_R::new(((self.bits >> 8) & 3) as u8)
     }
-    #[doc = "Bits 12:13 - Address space: 0x400A_F000 - 0x400A_FFFF"]
+    #[doc = "Bits 12:13 - Address space: 0x400A_F000 - 0x400A_FFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_3_rule(&self) -> AHB_SEC_CTRL_SECT_3_RULE_R {
         AHB_SEC_CTRL_SECT_3_RULE_R::new(((self.bits >> 12) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Address space: 0x400A_0000 - 0x400A_CFFF"]
+    #[doc = "Bits 0:1 - Address space: 0x400A_0000 - 0x400A_CFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_0_rule(&mut self) -> AHB_SEC_CTRL_SECT_0_RULE_W<0> {
         AHB_SEC_CTRL_SECT_0_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - Address space: 0x400A_D000 - 0x400A_DFFF"]
+    #[doc = "Bits 4:5 - Address space: 0x400A_D000 - 0x400A_DFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_1_rule(&mut self) -> AHB_SEC_CTRL_SECT_1_RULE_W<4> {
         AHB_SEC_CTRL_SECT_1_RULE_W::new(self)
     }
-    #[doc = "Bits 8:9 - Address space: 0x400A_E000 - 0x400A_EFFF"]
+    #[doc = "Bits 8:9 - Address space: 0x400A_E000 - 0x400A_EFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_2_rule(&mut self) -> AHB_SEC_CTRL_SECT_2_RULE_W<8> {
         AHB_SEC_CTRL_SECT_2_RULE_W::new(self)
     }
-    #[doc = "Bits 12:13 - Address space: 0x400A_F000 - 0x400A_FFFF"]
+    #[doc = "Bits 12:13 - Address space: 0x400A_F000 - 0x400A_FFFF."]
     #[inline(always)]
     pub fn ahb_sec_ctrl_sect_3_rule(&mut self) -> AHB_SEC_CTRL_SECT_3_RULE_W<12> {
         AHB_SEC_CTRL_SECT_3_RULE_W::new(self)

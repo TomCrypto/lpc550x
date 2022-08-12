@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CTIMER0_RULE` reader - Standard counter/Timer 0"]
+#[doc = "Field `CTIMER0_RULE` reader - Standard counter/Timer 0."]
 pub type CTIMER0_RULE_R = crate::FieldReader<u8, CTIMER0_RULE_A>;
-#[doc = "Standard counter/Timer 0\n\nValue on reset: 0"]
+#[doc = "Standard counter/Timer 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTIMER0_RULE_A {
@@ -88,7 +88,7 @@ impl CTIMER0_RULE_R {
         *self == CTIMER0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CTIMER0_RULE` writer - Standard counter/Timer 0"]
+#[doc = "Field `CTIMER0_RULE` writer - Standard counter/Timer 0."]
 pub type CTIMER0_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC, u8, CTIMER0_RULE_A, 2, O>;
 impl<'a, const O: u8> CTIMER0_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> CTIMER0_RULE_W<'a, O> {
         self.variant(CTIMER0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `CTIMER1_RULE` reader - Standard counter/Timer 1"]
+#[doc = "Field `CTIMER1_RULE` reader - Standard counter/Timer 1."]
 pub type CTIMER1_RULE_R = crate::FieldReader<u8, CTIMER1_RULE_A>;
-#[doc = "Standard counter/Timer 1\n\nValue on reset: 0"]
+#[doc = "Standard counter/Timer 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTIMER1_RULE_A {
@@ -167,7 +167,7 @@ impl CTIMER1_RULE_R {
         *self == CTIMER1_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CTIMER1_RULE` writer - Standard counter/Timer 1"]
+#[doc = "Field `CTIMER1_RULE` writer - Standard counter/Timer 1."]
 pub type CTIMER1_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC, u8, CTIMER1_RULE_A, 2, O>;
 impl<'a, const O: u8> CTIMER1_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> CTIMER1_RULE_W<'a, O> {
         self.variant(CTIMER1_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `WWDT_RULE` reader - Windiwed wtachdog Timer"]
+#[doc = "Field `WWDT_RULE` reader - Windiwed wtachdog Timer."]
 pub type WWDT_RULE_R = crate::FieldReader<u8, WWDT_RULE_A>;
-#[doc = "Windiwed wtachdog Timer\n\nValue on reset: 0"]
+#[doc = "Windiwed wtachdog Timer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum WWDT_RULE_A {
@@ -246,7 +246,7 @@ impl WWDT_RULE_R {
         *self == WWDT_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `WWDT_RULE` writer - Windiwed wtachdog Timer"]
+#[doc = "Field `WWDT_RULE` writer - Windiwed wtachdog Timer."]
 pub type WWDT_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC, u8, WWDT_RULE_A, 2, O>;
 impl<'a, const O: u8> WWDT_RULE_W<'a, O> {
@@ -271,9 +271,9 @@ impl<'a, const O: u8> WWDT_RULE_W<'a, O> {
         self.variant(WWDT_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `MRT_RULE` reader - Multi-rate Timer"]
+#[doc = "Field `MRT_RULE` reader - Multi-rate Timer."]
 pub type MRT_RULE_R = crate::FieldReader<u8, MRT_RULE_A>;
-#[doc = "Multi-rate Timer\n\nValue on reset: 0"]
+#[doc = "Multi-rate Timer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum MRT_RULE_A {
@@ -325,7 +325,7 @@ impl MRT_RULE_R {
         *self == MRT_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `MRT_RULE` writer - Multi-rate Timer"]
+#[doc = "Field `MRT_RULE` writer - Multi-rate Timer."]
 pub type MRT_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC, u8, MRT_RULE_A, 2, O>;
 impl<'a, const O: u8> MRT_RULE_W<'a, O> {
@@ -350,9 +350,9 @@ impl<'a, const O: u8> MRT_RULE_W<'a, O> {
         self.variant(MRT_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `UTICK_RULE` reader - Micro-Timer"]
+#[doc = "Field `UTICK_RULE` reader - Micro-Timer."]
 pub type UTICK_RULE_R = crate::FieldReader<u8, UTICK_RULE_A>;
-#[doc = "Micro-Timer\n\nValue on reset: 0"]
+#[doc = "Micro-Timer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum UTICK_RULE_A {
@@ -404,7 +404,7 @@ impl UTICK_RULE_R {
         *self == UTICK_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `UTICK_RULE` writer - Micro-Timer"]
+#[doc = "Field `UTICK_RULE` writer - Micro-Timer."]
 pub type UTICK_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC, u8, UTICK_RULE_A, 2, O>;
 impl<'a, const O: u8> UTICK_RULE_W<'a, O> {
@@ -430,54 +430,54 @@ impl<'a, const O: u8> UTICK_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Standard counter/Timer 0"]
+    #[doc = "Bits 0:1 - Standard counter/Timer 0."]
     #[inline(always)]
     pub fn ctimer0_rule(&self) -> CTIMER0_RULE_R {
         CTIMER0_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Standard counter/Timer 1"]
+    #[doc = "Bits 4:5 - Standard counter/Timer 1."]
     #[inline(always)]
     pub fn ctimer1_rule(&self) -> CTIMER1_RULE_R {
         CTIMER1_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 16:17 - Windiwed wtachdog Timer"]
+    #[doc = "Bits 16:17 - Windiwed wtachdog Timer."]
     #[inline(always)]
     pub fn wwdt_rule(&self) -> WWDT_RULE_R {
         WWDT_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - Multi-rate Timer"]
+    #[doc = "Bits 20:21 - Multi-rate Timer."]
     #[inline(always)]
     pub fn mrt_rule(&self) -> MRT_RULE_R {
         MRT_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
-    #[doc = "Bits 24:25 - Micro-Timer"]
+    #[doc = "Bits 24:25 - Micro-Timer."]
     #[inline(always)]
     pub fn utick_rule(&self) -> UTICK_RULE_R {
         UTICK_RULE_R::new(((self.bits >> 24) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Standard counter/Timer 0"]
+    #[doc = "Bits 0:1 - Standard counter/Timer 0."]
     #[inline(always)]
     pub fn ctimer0_rule(&mut self) -> CTIMER0_RULE_W<0> {
         CTIMER0_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - Standard counter/Timer 1"]
+    #[doc = "Bits 4:5 - Standard counter/Timer 1."]
     #[inline(always)]
     pub fn ctimer1_rule(&mut self) -> CTIMER1_RULE_W<4> {
         CTIMER1_RULE_W::new(self)
     }
-    #[doc = "Bits 16:17 - Windiwed wtachdog Timer"]
+    #[doc = "Bits 16:17 - Windiwed wtachdog Timer."]
     #[inline(always)]
     pub fn wwdt_rule(&mut self) -> WWDT_RULE_W<16> {
         WWDT_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - Multi-rate Timer"]
+    #[doc = "Bits 20:21 - Multi-rate Timer."]
     #[inline(always)]
     pub fn mrt_rule(&mut self) -> MRT_RULE_W<20> {
         MRT_RULE_W::new(self)
     }
-    #[doc = "Bits 24:25 - Micro-Timer"]
+    #[doc = "Bits 24:25 - Micro-Timer."]
     #[inline(always)]
     pub fn utick_rule(&mut self) -> UTICK_RULE_W<24> {
         UTICK_RULE_W::new(self)

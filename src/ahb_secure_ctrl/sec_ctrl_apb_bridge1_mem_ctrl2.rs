@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FLASH_CTRL_RULE` reader - Flash Controller"]
+#[doc = "Field `FLASH_CTRL_RULE` reader - Flash Controller."]
 pub type FLASH_CTRL_RULE_R = crate::FieldReader<u8, FLASH_CTRL_RULE_A>;
-#[doc = "Flash Controller\n\nValue on reset: 0"]
+#[doc = "Flash Controller.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLASH_CTRL_RULE_A {
@@ -88,7 +88,7 @@ impl FLASH_CTRL_RULE_R {
         *self == FLASH_CTRL_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLASH_CTRL_RULE` writer - Flash Controller"]
+#[doc = "Field `FLASH_CTRL_RULE` writer - Flash Controller."]
 pub type FLASH_CTRL_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -120,9 +120,9 @@ impl<'a, const O: u8> FLASH_CTRL_RULE_W<'a, O> {
         self.variant(FLASH_CTRL_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `PRINCE_RULE` reader - Prince"]
+#[doc = "Field `PRINCE_RULE` reader - Prince."]
 pub type PRINCE_RULE_R = crate::FieldReader<u8, PRINCE_RULE_A>;
-#[doc = "Prince\n\nValue on reset: 0"]
+#[doc = "Prince.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PRINCE_RULE_A {
@@ -174,7 +174,7 @@ impl PRINCE_RULE_R {
         *self == PRINCE_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `PRINCE_RULE` writer - Prince"]
+#[doc = "Field `PRINCE_RULE` writer - Prince."]
 pub type PRINCE_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE1_MEM_CTRL2_SPEC, u8, PRINCE_RULE_A, 2, O>;
 impl<'a, const O: u8> PRINCE_RULE_W<'a, O> {
@@ -200,24 +200,24 @@ impl<'a, const O: u8> PRINCE_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 16:17 - Flash Controller"]
+    #[doc = "Bits 16:17 - Flash Controller."]
     #[inline(always)]
     pub fn flash_ctrl_rule(&self) -> FLASH_CTRL_RULE_R {
         FLASH_CTRL_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - Prince"]
+    #[doc = "Bits 20:21 - Prince."]
     #[inline(always)]
     pub fn prince_rule(&self) -> PRINCE_RULE_R {
         PRINCE_RULE_R::new(((self.bits >> 20) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 16:17 - Flash Controller"]
+    #[doc = "Bits 16:17 - Flash Controller."]
     #[inline(always)]
     pub fn flash_ctrl_rule(&mut self) -> FLASH_CTRL_RULE_W<16> {
         FLASH_CTRL_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - Prince"]
+    #[doc = "Bits 20:21 - Prince."]
     #[inline(always)]
     pub fn prince_rule(&mut self) -> PRINCE_RULE_W<20> {
         PRINCE_RULE_W::new(self)

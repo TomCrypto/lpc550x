@@ -22,7 +22,7 @@ impl R {
         ROM_REV_MINOR_R::new(((self.bits >> 20) & 0x0f) as u8)
     }
 }
-#[doc = "Device ID\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [device_id0](index.html) module"]
+#[doc = "Device ID.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [device_id0](index.html) module"]
 pub struct DEVICE_ID0_SPEC;
 impl crate::RegisterSpec for DEVICE_ID0_SPEC {
     type Ux = u32;

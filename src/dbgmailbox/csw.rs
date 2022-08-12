@@ -34,9 +34,9 @@ impl From<crate::W<CSW_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RESYNCH_REQ` reader - Debugger will set this bit to 1 to request a resynchronrisation"]
+#[doc = "Field `RESYNCH_REQ` reader - Debugger will set this bit to 1 to request a resynchronrisation."]
 pub type RESYNCH_REQ_R = crate::BitReader<bool>;
-#[doc = "Field `RESYNCH_REQ` writer - Debugger will set this bit to 1 to request a resynchronrisation"]
+#[doc = "Field `RESYNCH_REQ` writer - Debugger will set this bit to 1 to request a resynchronrisation."]
 pub type RESYNCH_REQ_W<'a, const O: u8> = crate::BitWriter<'a, u32, CSW_SPEC, bool, O>;
 #[doc = "Field `REQ_PENDING` reader - Request is pending from debugger (i.e unread value in REQUEST)"]
 pub type REQ_PENDING_R = crate::BitReader<bool>;
@@ -57,7 +57,7 @@ pub type SOFT_RESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, CSW_SPEC, boo
 #[doc = "Field `CHIP_RESET_REQ` writer - Write only bit. Once written will cause the chip to reset (note that the DM is not reset by this reset as it is only resettable by a SOFT reset or a POR/BOD event)"]
 pub type CHIP_RESET_REQ_W<'a, const O: u8> = crate::BitWriter<'a, u32, CSW_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 0 - Debugger will set this bit to 1 to request a resynchronrisation"]
+    #[doc = "Bit 0 - Debugger will set this bit to 1 to request a resynchronrisation."]
     #[inline(always)]
     pub fn resynch_req(&self) -> RESYNCH_REQ_R {
         RESYNCH_REQ_R::new((self.bits & 1) != 0)
@@ -84,7 +84,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - Debugger will set this bit to 1 to request a resynchronrisation"]
+    #[doc = "Bit 0 - Debugger will set this bit to 1 to request a resynchronrisation."]
     #[inline(always)]
     pub fn resynch_req(&mut self) -> RESYNCH_REQ_W<0> {
         RESYNCH_REQ_W::new(self)
@@ -121,7 +121,7 @@ impl W {
         self
     }
 }
-#[doc = "CRC mode register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [csw](index.html) module"]
+#[doc = "CRC mode register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [csw](index.html) module"]
 pub struct CSW_SPEC;
 impl crate::RegisterSpec for CSW_SPEC {
     type Ux = u32;

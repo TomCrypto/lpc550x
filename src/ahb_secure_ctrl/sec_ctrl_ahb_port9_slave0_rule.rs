@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_AHB_PORT9_SLAVE0_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ADC_RULE` reader - ADC"]
+#[doc = "Field `ADC_RULE` reader - ADC."]
 pub type ADC_RULE_R = crate::FieldReader<u8, ADC_RULE_A>;
-#[doc = "ADC\n\nValue on reset: 0"]
+#[doc = "ADC.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum ADC_RULE_A {
@@ -88,7 +88,7 @@ impl ADC_RULE_R {
         *self == ADC_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `ADC_RULE` writer - ADC"]
+#[doc = "Field `ADC_RULE` writer - ADC."]
 pub type ADC_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT9_SLAVE0_RULE_SPEC, u8, ADC_RULE_A, 2, O>;
 impl<'a, const O: u8> ADC_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> ADC_RULE_W<'a, O> {
         self.variant(ADC_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `HASH_RULE` reader - SHA-2 crypto registers"]
+#[doc = "Field `HASH_RULE` reader - SHA-2 crypto registers."]
 pub type HASH_RULE_R = crate::FieldReader<u8, HASH_RULE_A>;
-#[doc = "SHA-2 crypto registers\n\nValue on reset: 0"]
+#[doc = "SHA-2 crypto registers.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum HASH_RULE_A {
@@ -167,7 +167,7 @@ impl HASH_RULE_R {
         *self == HASH_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `HASH_RULE` writer - SHA-2 crypto registers"]
+#[doc = "Field `HASH_RULE` writer - SHA-2 crypto registers."]
 pub type HASH_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT9_SLAVE0_RULE_SPEC, u8, HASH_RULE_A, 2, O>;
 impl<'a, const O: u8> HASH_RULE_W<'a, O> {
@@ -192,9 +192,9 @@ impl<'a, const O: u8> HASH_RULE_W<'a, O> {
         self.variant(HASH_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `CASPER_RULE` reader - RSA/ECC crypto accelerator"]
+#[doc = "Field `CASPER_RULE` reader - RSA/ECC crypto accelerator."]
 pub type CASPER_RULE_R = crate::FieldReader<u8, CASPER_RULE_A>;
-#[doc = "RSA/ECC crypto accelerator\n\nValue on reset: 0"]
+#[doc = "RSA/ECC crypto accelerator.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CASPER_RULE_A {
@@ -246,7 +246,7 @@ impl CASPER_RULE_R {
         *self == CASPER_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `CASPER_RULE` writer - RSA/ECC crypto accelerator"]
+#[doc = "Field `CASPER_RULE` writer - RSA/ECC crypto accelerator."]
 pub type CASPER_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_AHB_PORT9_SLAVE0_RULE_SPEC, u8, CASPER_RULE_A, 2, O>;
 impl<'a, const O: u8> CASPER_RULE_W<'a, O> {
@@ -351,17 +351,17 @@ impl<'a, const O: u8> DMA1_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - ADC"]
+    #[doc = "Bits 0:1 - ADC."]
     #[inline(always)]
     pub fn adc_rule(&self) -> ADC_RULE_R {
         ADC_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 16:17 - SHA-2 crypto registers"]
+    #[doc = "Bits 16:17 - SHA-2 crypto registers."]
     #[inline(always)]
     pub fn hash_rule(&self) -> HASH_RULE_R {
         HASH_RULE_R::new(((self.bits >> 16) & 3) as u8)
     }
-    #[doc = "Bits 20:21 - RSA/ECC crypto accelerator"]
+    #[doc = "Bits 20:21 - RSA/ECC crypto accelerator."]
     #[inline(always)]
     pub fn casper_rule(&self) -> CASPER_RULE_R {
         CASPER_RULE_R::new(((self.bits >> 20) & 3) as u8)
@@ -373,17 +373,17 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - ADC"]
+    #[doc = "Bits 0:1 - ADC."]
     #[inline(always)]
     pub fn adc_rule(&mut self) -> ADC_RULE_W<0> {
         ADC_RULE_W::new(self)
     }
-    #[doc = "Bits 16:17 - SHA-2 crypto registers"]
+    #[doc = "Bits 16:17 - SHA-2 crypto registers."]
     #[inline(always)]
     pub fn hash_rule(&mut self) -> HASH_RULE_W<16> {
         HASH_RULE_W::new(self)
     }
-    #[doc = "Bits 20:21 - RSA/ECC crypto accelerator"]
+    #[doc = "Bits 20:21 - RSA/ECC crypto accelerator."]
     #[inline(always)]
     pub fn casper_rule(&mut self) -> CASPER_RULE_W<20> {
         CASPER_RULE_W::new(self)

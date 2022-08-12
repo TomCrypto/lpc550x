@@ -34,9 +34,9 @@ impl From<crate::W<STAT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RDY0` reader - Result FIFO 0 Ready Flag"]
+#[doc = "Field `RDY0` reader - Result FIFO 0 Ready Flag."]
 pub type RDY0_R = crate::BitReader<RDY0_A>;
-#[doc = "Result FIFO 0 Ready Flag\n\nValue on reset: 0"]
+#[doc = "Result FIFO 0 Ready Flag.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum RDY0_A {
     #[doc = "0: Result FIFO 0 data level not above watermark level."]
@@ -70,9 +70,9 @@ impl RDY0_R {
         *self == RDY0_A::RDY0_1
     }
 }
-#[doc = "Field `FOF0` reader - Result FIFO 0 Overflow Flag"]
+#[doc = "Field `FOF0` reader - Result FIFO 0 Overflow Flag."]
 pub type FOF0_R = crate::BitReader<FOF0_A>;
-#[doc = "Result FIFO 0 Overflow Flag\n\nValue on reset: 0"]
+#[doc = "Result FIFO 0 Overflow Flag.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FOF0_A {
     #[doc = "0: No result FIFO 0 overflow has occurred since the last time the flag was cleared."]
@@ -106,7 +106,7 @@ impl FOF0_R {
         *self == FOF0_A::FOF0_1
     }
 }
-#[doc = "Field `FOF0` writer - Result FIFO 0 Overflow Flag"]
+#[doc = "Field `FOF0` writer - Result FIFO 0 Overflow Flag."]
 pub type FOF0_W<'a, const O: u8> = crate::BitWriter1C<'a, u32, STAT_SPEC, FOF0_A, O>;
 impl<'a, const O: u8> FOF0_W<'a, O> {
     #[doc = "No result FIFO 0 overflow has occurred since the last time the flag was cleared."]
@@ -120,9 +120,9 @@ impl<'a, const O: u8> FOF0_W<'a, O> {
         self.variant(FOF0_A::FOF0_1)
     }
 }
-#[doc = "Field `RDY1` reader - Result FIFO1 Ready Flag"]
+#[doc = "Field `RDY1` reader - Result FIFO1 Ready Flag."]
 pub type RDY1_R = crate::BitReader<RDY1_A>;
-#[doc = "Result FIFO1 Ready Flag\n\nValue on reset: 0"]
+#[doc = "Result FIFO1 Ready Flag.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum RDY1_A {
     #[doc = "0: Result FIFO1 data level not above watermark level."]
@@ -156,9 +156,9 @@ impl RDY1_R {
         *self == RDY1_A::RDY1_1
     }
 }
-#[doc = "Field `FOF1` reader - Result FIFO1 Overflow Flag"]
+#[doc = "Field `FOF1` reader - Result FIFO1 Overflow Flag."]
 pub type FOF1_R = crate::BitReader<FOF1_A>;
-#[doc = "Result FIFO1 Overflow Flag\n\nValue on reset: 0"]
+#[doc = "Result FIFO1 Overflow Flag.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FOF1_A {
     #[doc = "0: No result FIFO1 overflow has occurred since the last time the flag was cleared."]
@@ -192,7 +192,7 @@ impl FOF1_R {
         *self == FOF1_A::FOF1_1
     }
 }
-#[doc = "Field `FOF1` writer - Result FIFO1 Overflow Flag"]
+#[doc = "Field `FOF1` writer - Result FIFO1 Overflow Flag."]
 pub type FOF1_W<'a, const O: u8> = crate::BitWriter1C<'a, u32, STAT_SPEC, FOF1_A, O>;
 impl<'a, const O: u8> FOF1_W<'a, O> {
     #[doc = "No result FIFO1 overflow has occurred since the last time the flag was cleared."]
@@ -206,9 +206,9 @@ impl<'a, const O: u8> FOF1_W<'a, O> {
         self.variant(FOF1_A::FOF1_1)
     }
 }
-#[doc = "Field `TEXC_INT` reader - Interrupt Flag For High Priority Trigger Exception"]
+#[doc = "Field `TEXC_INT` reader - Interrupt Flag For High Priority Trigger Exception."]
 pub type TEXC_INT_R = crate::BitReader<TEXC_INT_A>;
-#[doc = "Interrupt Flag For High Priority Trigger Exception\n\nValue on reset: 0"]
+#[doc = "Interrupt Flag For High Priority Trigger Exception.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TEXC_INT_A {
     #[doc = "0: No trigger exceptions have occurred."]
@@ -242,7 +242,7 @@ impl TEXC_INT_R {
         *self == TEXC_INT_A::TEXC_INT_1
     }
 }
-#[doc = "Field `TEXC_INT` writer - Interrupt Flag For High Priority Trigger Exception"]
+#[doc = "Field `TEXC_INT` writer - Interrupt Flag For High Priority Trigger Exception."]
 pub type TEXC_INT_W<'a, const O: u8> = crate::BitWriter1C<'a, u32, STAT_SPEC, TEXC_INT_A, O>;
 impl<'a, const O: u8> TEXC_INT_W<'a, O> {
     #[doc = "No trigger exceptions have occurred."]
@@ -256,9 +256,9 @@ impl<'a, const O: u8> TEXC_INT_W<'a, O> {
         self.variant(TEXC_INT_A::TEXC_INT_1)
     }
 }
-#[doc = "Field `TCOMP_INT` reader - Interrupt Flag For Trigger Completion"]
+#[doc = "Field `TCOMP_INT` reader - Interrupt Flag For Trigger Completion."]
 pub type TCOMP_INT_R = crate::BitReader<TCOMP_INT_A>;
-#[doc = "Interrupt Flag For Trigger Completion\n\nValue on reset: 0"]
+#[doc = "Interrupt Flag For Trigger Completion.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TCOMP_INT_A {
     #[doc = "0: Either IE\\[TCOMP_IE\\]
@@ -293,7 +293,7 @@ impl TCOMP_INT_R {
         *self == TCOMP_INT_A::TCOMP_INT_1
     }
 }
-#[doc = "Field `TCOMP_INT` writer - Interrupt Flag For Trigger Completion"]
+#[doc = "Field `TCOMP_INT` writer - Interrupt Flag For Trigger Completion."]
 pub type TCOMP_INT_W<'a, const O: u8> = crate::BitWriter1C<'a, u32, STAT_SPEC, TCOMP_INT_A, O>;
 impl<'a, const O: u8> TCOMP_INT_W<'a, O> {
     #[doc = "Either IE\\[TCOMP_IE\\]
@@ -308,9 +308,9 @@ is set to 0, or no trigger sequences have run to completion."]
         self.variant(TCOMP_INT_A::TCOMP_INT_1)
     }
 }
-#[doc = "Field `CAL_RDY` reader - Calibration Ready"]
+#[doc = "Field `CAL_RDY` reader - Calibration Ready."]
 pub type CAL_RDY_R = crate::BitReader<CAL_RDY_A>;
-#[doc = "Calibration Ready\n\nValue on reset: 0"]
+#[doc = "Calibration Ready.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum CAL_RDY_A {
     #[doc = "0: Calibration is incomplete or hasn't been ran."]
@@ -344,9 +344,9 @@ impl CAL_RDY_R {
         *self == CAL_RDY_A::CAL_RDY_1
     }
 }
-#[doc = "Field `ADC_ACTIVE` reader - ADC Active"]
+#[doc = "Field `ADC_ACTIVE` reader - ADC Active."]
 pub type ADC_ACTIVE_R = crate::BitReader<ADC_ACTIVE_A>;
-#[doc = "ADC Active\n\nValue on reset: 0"]
+#[doc = "ADC Active.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum ADC_ACTIVE_A {
     #[doc = "0: The ADC is IDLE. There are no pending triggers to service and no active commands are being processed."]
@@ -380,9 +380,9 @@ impl ADC_ACTIVE_R {
         *self == ADC_ACTIVE_A::ADC_ACTIVE_1
     }
 }
-#[doc = "Field `TRGACT` reader - Trigger Active"]
+#[doc = "Field `TRGACT` reader - Trigger Active."]
 pub type TRGACT_R = crate::FieldReader<u8, TRGACT_A>;
-#[doc = "Trigger Active\n\nValue on reset: 0"]
+#[doc = "Trigger Active.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum TRGACT_A {
@@ -482,9 +482,9 @@ impl TRGACT_R {
         *self == TRGACT_A::TRGACT_9
     }
 }
-#[doc = "Field `CMDACT` reader - Command Active"]
+#[doc = "Field `CMDACT` reader - Command Active."]
 pub type CMDACT_R = crate::FieldReader<u8, CMDACT_A>;
-#[doc = "Command Active\n\nValue on reset: 0"]
+#[doc = "Command Active.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CMDACT_A {
@@ -585,74 +585,74 @@ impl CMDACT_R {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Result FIFO 0 Ready Flag"]
+    #[doc = "Bit 0 - Result FIFO 0 Ready Flag."]
     #[inline(always)]
     pub fn rdy0(&self) -> RDY0_R {
         RDY0_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - Result FIFO 0 Overflow Flag"]
+    #[doc = "Bit 1 - Result FIFO 0 Overflow Flag."]
     #[inline(always)]
     pub fn fof0(&self) -> FOF0_R {
         FOF0_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - Result FIFO1 Ready Flag"]
+    #[doc = "Bit 2 - Result FIFO1 Ready Flag."]
     #[inline(always)]
     pub fn rdy1(&self) -> RDY1_R {
         RDY1_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bit 3 - Result FIFO1 Overflow Flag"]
+    #[doc = "Bit 3 - Result FIFO1 Overflow Flag."]
     #[inline(always)]
     pub fn fof1(&self) -> FOF1_R {
         FOF1_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 8 - Interrupt Flag For High Priority Trigger Exception"]
+    #[doc = "Bit 8 - Interrupt Flag For High Priority Trigger Exception."]
     #[inline(always)]
     pub fn texc_int(&self) -> TEXC_INT_R {
         TEXC_INT_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bit 9 - Interrupt Flag For Trigger Completion"]
+    #[doc = "Bit 9 - Interrupt Flag For Trigger Completion."]
     #[inline(always)]
     pub fn tcomp_int(&self) -> TCOMP_INT_R {
         TCOMP_INT_R::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bit 10 - Calibration Ready"]
+    #[doc = "Bit 10 - Calibration Ready."]
     #[inline(always)]
     pub fn cal_rdy(&self) -> CAL_RDY_R {
         CAL_RDY_R::new(((self.bits >> 10) & 1) != 0)
     }
-    #[doc = "Bit 11 - ADC Active"]
+    #[doc = "Bit 11 - ADC Active."]
     #[inline(always)]
     pub fn adc_active(&self) -> ADC_ACTIVE_R {
         ADC_ACTIVE_R::new(((self.bits >> 11) & 1) != 0)
     }
-    #[doc = "Bits 16:19 - Trigger Active"]
+    #[doc = "Bits 16:19 - Trigger Active."]
     #[inline(always)]
     pub fn trgact(&self) -> TRGACT_R {
         TRGACT_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
-    #[doc = "Bits 24:27 - Command Active"]
+    #[doc = "Bits 24:27 - Command Active."]
     #[inline(always)]
     pub fn cmdact(&self) -> CMDACT_R {
         CMDACT_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bit 1 - Result FIFO 0 Overflow Flag"]
+    #[doc = "Bit 1 - Result FIFO 0 Overflow Flag."]
     #[inline(always)]
     pub fn fof0(&mut self) -> FOF0_W<1> {
         FOF0_W::new(self)
     }
-    #[doc = "Bit 3 - Result FIFO1 Overflow Flag"]
+    #[doc = "Bit 3 - Result FIFO1 Overflow Flag."]
     #[inline(always)]
     pub fn fof1(&mut self) -> FOF1_W<3> {
         FOF1_W::new(self)
     }
-    #[doc = "Bit 8 - Interrupt Flag For High Priority Trigger Exception"]
+    #[doc = "Bit 8 - Interrupt Flag For High Priority Trigger Exception."]
     #[inline(always)]
     pub fn texc_int(&mut self) -> TEXC_INT_W<8> {
         TEXC_INT_W::new(self)
     }
-    #[doc = "Bit 9 - Interrupt Flag For Trigger Completion"]
+    #[doc = "Bit 9 - Interrupt Flag For Trigger Completion."]
     #[inline(always)]
     pub fn tcomp_int(&mut self) -> TCOMP_INT_W<9> {
         TCOMP_INT_W::new(self)
@@ -664,7 +664,7 @@ impl W {
         self
     }
 }
-#[doc = "ADC Status Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [stat](index.html) module"]
+#[doc = "ADC Status Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [stat](index.html) module"]
 pub struct STAT_SPEC;
 impl crate::RegisterSpec for STAT_SPEC {
     type Ux = u32;

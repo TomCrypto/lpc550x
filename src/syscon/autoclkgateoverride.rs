@@ -596,9 +596,9 @@ impl<'a, const O: u8> SYSCON_W<'a, O> {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u16)]
 pub enum ENABLEUPDATE_AW {
-    #[doc = "0: Bit Fields 0 - 15 of this register are not updated"]
+    #[doc = "0: Bit Fields 0 - 15 of this register are not updated."]
     DISABLE = 0,
-    #[doc = "49374: Bit Fields 0 - 15 of this register are updated"]
+    #[doc = "49374: Bit Fields 0 - 15 of this register are updated."]
     ENABLE = 49374,
 }
 impl From<ENABLEUPDATE_AW> for u16 {
@@ -611,12 +611,12 @@ impl From<ENABLEUPDATE_AW> for u16 {
 pub type ENABLEUPDATE_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, AUTOCLKGATEOVERRIDE_SPEC, u16, ENABLEUPDATE_AW, 16, O>;
 impl<'a, const O: u8> ENABLEUPDATE_W<'a, O> {
-    #[doc = "Bit Fields 0 - 15 of this register are not updated"]
+    #[doc = "Bit Fields 0 - 15 of this register are not updated."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(ENABLEUPDATE_AW::DISABLE)
     }
-    #[doc = "Bit Fields 0 - 15 of this register are updated"]
+    #[doc = "Bit Fields 0 - 15 of this register are updated."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(ENABLEUPDATE_AW::ENABLE)
@@ -747,7 +747,7 @@ impl W {
         self
     }
 }
-#[doc = "Control automatic clock gating\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [autoclkgateoverride](index.html) module"]
+#[doc = "Control automatic clock gating.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [autoclkgateoverride](index.html) module"]
 pub struct AUTOCLKGATEOVERRIDE_SPEC;
 impl crate::RegisterSpec for AUTOCLKGATEOVERRIDE_SPEC {
     type Ux = u32;

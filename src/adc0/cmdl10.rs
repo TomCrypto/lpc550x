@@ -34,36 +34,28 @@ impl From<crate::W<CMDL10_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ADCH` reader - Input channel select"]
+#[doc = "Field `ADCH` reader - Input channel select."]
 pub type ADCH_R = crate::FieldReader<u8, ADCH_A>;
-#[doc = "Input channel select\n\nValue on reset: 0"]
+#[doc = "Input channel select.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum ADCH_A {
     #[doc = "0: Select CH0A or CH0B or CH0A/CH0B pair."]
-    ADCH_0 = 0,
+    CHANNEL_0 = 0,
     #[doc = "1: Select CH1A or CH1B or CH1A/CH1B pair."]
-    ADCH_1 = 1,
+    CHANNEL_1 = 1,
     #[doc = "2: Select CH2A or CH2B or CH2A/CH2B pair."]
-    ADCH_2 = 2,
+    CHANNEL_2 = 2,
     #[doc = "3: Select CH3A or CH3B or CH3A/CH3B pair."]
-    ADCH_3 = 3,
-    #[doc = "4: Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    ADCH_4 = 4,
-    #[doc = "5: Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    ADCH_5 = 5,
-    #[doc = "6: Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    ADCH_6 = 6,
-    #[doc = "7: Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    ADCH_7 = 7,
-    #[doc = "8: Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    ADCH_8 = 8,
-    #[doc = "9: Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    ADCH_9 = 9,
-    #[doc = "30: Select CH30A or CH30B or CH30A/CH30B pair."]
-    ADCH_30 = 30,
-    #[doc = "31: Select CH31A or CH31B or CH31A/CH31B pair."]
-    ADCH_31 = 31,
+    CHANNEL_3 = 3,
+    #[doc = "4: Select CH4B."]
+    CHANNEL_4 = 4,
+    #[doc = "12: Select VDDA."]
+    VDDA = 12,
+    #[doc = "13: Select internal ADC bandgap reference."]
+    BANDGAP = 13,
+    #[doc = "14: Select temperature sensor."]
+    TEMP_SENSOR = 14,
 }
 impl From<ADCH_A> for u8 {
     #[inline(always)]
@@ -76,160 +68,116 @@ impl ADCH_R {
     #[inline(always)]
     pub fn variant(&self) -> Option<ADCH_A> {
         match self.bits {
-            0 => Some(ADCH_A::ADCH_0),
-            1 => Some(ADCH_A::ADCH_1),
-            2 => Some(ADCH_A::ADCH_2),
-            3 => Some(ADCH_A::ADCH_3),
-            4 => Some(ADCH_A::ADCH_4),
-            5 => Some(ADCH_A::ADCH_5),
-            6 => Some(ADCH_A::ADCH_6),
-            7 => Some(ADCH_A::ADCH_7),
-            8 => Some(ADCH_A::ADCH_8),
-            9 => Some(ADCH_A::ADCH_9),
-            30 => Some(ADCH_A::ADCH_30),
-            31 => Some(ADCH_A::ADCH_31),
+            0 => Some(ADCH_A::CHANNEL_0),
+            1 => Some(ADCH_A::CHANNEL_1),
+            2 => Some(ADCH_A::CHANNEL_2),
+            3 => Some(ADCH_A::CHANNEL_3),
+            4 => Some(ADCH_A::CHANNEL_4),
+            12 => Some(ADCH_A::VDDA),
+            13 => Some(ADCH_A::BANDGAP),
+            14 => Some(ADCH_A::TEMP_SENSOR),
             _ => None,
         }
     }
-    #[doc = "Checks if the value of the field is `ADCH_0`"]
+    #[doc = "Checks if the value of the field is `CHANNEL_0`"]
     #[inline(always)]
-    pub fn is_adch_0(&self) -> bool {
-        *self == ADCH_A::ADCH_0
+    pub fn is_channel_0(&self) -> bool {
+        *self == ADCH_A::CHANNEL_0
     }
-    #[doc = "Checks if the value of the field is `ADCH_1`"]
+    #[doc = "Checks if the value of the field is `CHANNEL_1`"]
     #[inline(always)]
-    pub fn is_adch_1(&self) -> bool {
-        *self == ADCH_A::ADCH_1
+    pub fn is_channel_1(&self) -> bool {
+        *self == ADCH_A::CHANNEL_1
     }
-    #[doc = "Checks if the value of the field is `ADCH_2`"]
+    #[doc = "Checks if the value of the field is `CHANNEL_2`"]
     #[inline(always)]
-    pub fn is_adch_2(&self) -> bool {
-        *self == ADCH_A::ADCH_2
+    pub fn is_channel_2(&self) -> bool {
+        *self == ADCH_A::CHANNEL_2
     }
-    #[doc = "Checks if the value of the field is `ADCH_3`"]
+    #[doc = "Checks if the value of the field is `CHANNEL_3`"]
     #[inline(always)]
-    pub fn is_adch_3(&self) -> bool {
-        *self == ADCH_A::ADCH_3
+    pub fn is_channel_3(&self) -> bool {
+        *self == ADCH_A::CHANNEL_3
     }
-    #[doc = "Checks if the value of the field is `ADCH_4`"]
+    #[doc = "Checks if the value of the field is `CHANNEL_4`"]
     #[inline(always)]
-    pub fn is_adch_4(&self) -> bool {
-        *self == ADCH_A::ADCH_4
+    pub fn is_channel_4(&self) -> bool {
+        *self == ADCH_A::CHANNEL_4
     }
-    #[doc = "Checks if the value of the field is `ADCH_5`"]
+    #[doc = "Checks if the value of the field is `VDDA`"]
     #[inline(always)]
-    pub fn is_adch_5(&self) -> bool {
-        *self == ADCH_A::ADCH_5
+    pub fn is_vdda(&self) -> bool {
+        *self == ADCH_A::VDDA
     }
-    #[doc = "Checks if the value of the field is `ADCH_6`"]
+    #[doc = "Checks if the value of the field is `BANDGAP`"]
     #[inline(always)]
-    pub fn is_adch_6(&self) -> bool {
-        *self == ADCH_A::ADCH_6
+    pub fn is_bandgap(&self) -> bool {
+        *self == ADCH_A::BANDGAP
     }
-    #[doc = "Checks if the value of the field is `ADCH_7`"]
+    #[doc = "Checks if the value of the field is `TEMP_SENSOR`"]
     #[inline(always)]
-    pub fn is_adch_7(&self) -> bool {
-        *self == ADCH_A::ADCH_7
-    }
-    #[doc = "Checks if the value of the field is `ADCH_8`"]
-    #[inline(always)]
-    pub fn is_adch_8(&self) -> bool {
-        *self == ADCH_A::ADCH_8
-    }
-    #[doc = "Checks if the value of the field is `ADCH_9`"]
-    #[inline(always)]
-    pub fn is_adch_9(&self) -> bool {
-        *self == ADCH_A::ADCH_9
-    }
-    #[doc = "Checks if the value of the field is `ADCH_30`"]
-    #[inline(always)]
-    pub fn is_adch_30(&self) -> bool {
-        *self == ADCH_A::ADCH_30
-    }
-    #[doc = "Checks if the value of the field is `ADCH_31`"]
-    #[inline(always)]
-    pub fn is_adch_31(&self) -> bool {
-        *self == ADCH_A::ADCH_31
+    pub fn is_temp_sensor(&self) -> bool {
+        *self == ADCH_A::TEMP_SENSOR
     }
 }
-#[doc = "Field `ADCH` writer - Input channel select"]
+#[doc = "Field `ADCH` writer - Input channel select."]
 pub type ADCH_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CMDL10_SPEC, u8, ADCH_A, 5, O>;
 impl<'a, const O: u8> ADCH_W<'a, O> {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
     #[inline(always)]
-    pub fn adch_0(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_0)
+    pub fn channel_0(self) -> &'a mut W {
+        self.variant(ADCH_A::CHANNEL_0)
     }
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
     #[inline(always)]
-    pub fn adch_1(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_1)
+    pub fn channel_1(self) -> &'a mut W {
+        self.variant(ADCH_A::CHANNEL_1)
     }
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
     #[inline(always)]
-    pub fn adch_2(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_2)
+    pub fn channel_2(self) -> &'a mut W {
+        self.variant(ADCH_A::CHANNEL_2)
     }
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
     #[inline(always)]
-    pub fn adch_3(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_3)
+    pub fn channel_3(self) -> &'a mut W {
+        self.variant(ADCH_A::CHANNEL_3)
     }
-    #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
+    #[doc = "Select CH4B."]
     #[inline(always)]
-    pub fn adch_4(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_4)
+    pub fn channel_4(self) -> &'a mut W {
+        self.variant(ADCH_A::CHANNEL_4)
     }
-    #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
+    #[doc = "Select VDDA."]
     #[inline(always)]
-    pub fn adch_5(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_5)
+    pub fn vdda(self) -> &'a mut W {
+        self.variant(ADCH_A::VDDA)
     }
-    #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
+    #[doc = "Select internal ADC bandgap reference."]
     #[inline(always)]
-    pub fn adch_6(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_6)
+    pub fn bandgap(self) -> &'a mut W {
+        self.variant(ADCH_A::BANDGAP)
     }
-    #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
+    #[doc = "Select temperature sensor."]
     #[inline(always)]
-    pub fn adch_7(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_7)
-    }
-    #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    #[inline(always)]
-    pub fn adch_8(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_8)
-    }
-    #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    #[inline(always)]
-    pub fn adch_9(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_9)
-    }
-    #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    #[inline(always)]
-    pub fn adch_30(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_30)
-    }
-    #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    #[inline(always)]
-    pub fn adch_31(self) -> &'a mut W {
-        self.variant(ADCH_A::ADCH_31)
+    pub fn temp_sensor(self) -> &'a mut W {
+        self.variant(ADCH_A::TEMP_SENSOR)
     }
 }
-#[doc = "Field `CTYPE` reader - Conversion Type"]
+#[doc = "Field `CTYPE` reader - Conversion Type."]
 pub type CTYPE_R = crate::FieldReader<u8, CTYPE_A>;
-#[doc = "Conversion Type\n\nValue on reset: 0"]
+#[doc = "Conversion Type.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTYPE_A {
     #[doc = "0: Single-Ended Mode. Only A side channel is converted."]
-    CTYPE_0 = 0,
+    SINGLE_ENDED_A = 0,
     #[doc = "1: Single-Ended Mode. Only B side channel is converted."]
-    CTYPE_1 = 1,
+    SINGLE_ENDED_B = 1,
     #[doc = "2: Differential Mode. A-B."]
-    CTYPE_2 = 2,
+    DIFFERENTIAL = 2,
     #[doc = "3: Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    CTYPE_3 = 3,
+    DUAL_SINGLE_ENDED = 3,
 }
 impl From<CTYPE_A> for u8 {
     #[inline(always)]
@@ -242,67 +190,67 @@ impl CTYPE_R {
     #[inline(always)]
     pub fn variant(&self) -> CTYPE_A {
         match self.bits {
-            0 => CTYPE_A::CTYPE_0,
-            1 => CTYPE_A::CTYPE_1,
-            2 => CTYPE_A::CTYPE_2,
-            3 => CTYPE_A::CTYPE_3,
+            0 => CTYPE_A::SINGLE_ENDED_A,
+            1 => CTYPE_A::SINGLE_ENDED_B,
+            2 => CTYPE_A::DIFFERENTIAL,
+            3 => CTYPE_A::DUAL_SINGLE_ENDED,
             _ => unreachable!(),
         }
     }
-    #[doc = "Checks if the value of the field is `CTYPE_0`"]
+    #[doc = "Checks if the value of the field is `SINGLE_ENDED_A`"]
     #[inline(always)]
-    pub fn is_ctype_0(&self) -> bool {
-        *self == CTYPE_A::CTYPE_0
+    pub fn is_single_ended_a(&self) -> bool {
+        *self == CTYPE_A::SINGLE_ENDED_A
     }
-    #[doc = "Checks if the value of the field is `CTYPE_1`"]
+    #[doc = "Checks if the value of the field is `SINGLE_ENDED_B`"]
     #[inline(always)]
-    pub fn is_ctype_1(&self) -> bool {
-        *self == CTYPE_A::CTYPE_1
+    pub fn is_single_ended_b(&self) -> bool {
+        *self == CTYPE_A::SINGLE_ENDED_B
     }
-    #[doc = "Checks if the value of the field is `CTYPE_2`"]
+    #[doc = "Checks if the value of the field is `DIFFERENTIAL`"]
     #[inline(always)]
-    pub fn is_ctype_2(&self) -> bool {
-        *self == CTYPE_A::CTYPE_2
+    pub fn is_differential(&self) -> bool {
+        *self == CTYPE_A::DIFFERENTIAL
     }
-    #[doc = "Checks if the value of the field is `CTYPE_3`"]
+    #[doc = "Checks if the value of the field is `DUAL_SINGLE_ENDED`"]
     #[inline(always)]
-    pub fn is_ctype_3(&self) -> bool {
-        *self == CTYPE_A::CTYPE_3
+    pub fn is_dual_single_ended(&self) -> bool {
+        *self == CTYPE_A::DUAL_SINGLE_ENDED
     }
 }
-#[doc = "Field `CTYPE` writer - Conversion Type"]
+#[doc = "Field `CTYPE` writer - Conversion Type."]
 pub type CTYPE_W<'a, const O: u8> = crate::FieldWriterSafe<'a, u32, CMDL10_SPEC, u8, CTYPE_A, 2, O>;
 impl<'a, const O: u8> CTYPE_W<'a, O> {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
     #[inline(always)]
-    pub fn ctype_0(self) -> &'a mut W {
-        self.variant(CTYPE_A::CTYPE_0)
+    pub fn single_ended_a(self) -> &'a mut W {
+        self.variant(CTYPE_A::SINGLE_ENDED_A)
     }
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
     #[inline(always)]
-    pub fn ctype_1(self) -> &'a mut W {
-        self.variant(CTYPE_A::CTYPE_1)
+    pub fn single_ended_b(self) -> &'a mut W {
+        self.variant(CTYPE_A::SINGLE_ENDED_B)
     }
     #[doc = "Differential Mode. A-B."]
     #[inline(always)]
-    pub fn ctype_2(self) -> &'a mut W {
-        self.variant(CTYPE_A::CTYPE_2)
+    pub fn differential(self) -> &'a mut W {
+        self.variant(CTYPE_A::DIFFERENTIAL)
     }
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
     #[inline(always)]
-    pub fn ctype_3(self) -> &'a mut W {
-        self.variant(CTYPE_A::CTYPE_3)
+    pub fn dual_single_ended(self) -> &'a mut W {
+        self.variant(CTYPE_A::DUAL_SINGLE_ENDED)
     }
 }
-#[doc = "Field `MODE` reader - Select resolution of conversions"]
+#[doc = "Field `MODE` reader - Select resolution of conversions."]
 pub type MODE_R = crate::BitReader<MODE_A>;
-#[doc = "Select resolution of conversions\n\nValue on reset: 0"]
+#[doc = "Select resolution of conversions.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum MODE_A {
     #[doc = "0: Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    MODE_0 = 0,
+    STANDARD_RESOLUTION = 0,
     #[doc = "1: High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    MODE_1 = 1,
+    HIGH_RESOLUTION = 1,
 }
 impl From<MODE_A> for bool {
     #[inline(always)]
@@ -315,64 +263,64 @@ impl MODE_R {
     #[inline(always)]
     pub fn variant(&self) -> MODE_A {
         match self.bits {
-            false => MODE_A::MODE_0,
-            true => MODE_A::MODE_1,
+            false => MODE_A::STANDARD_RESOLUTION,
+            true => MODE_A::HIGH_RESOLUTION,
         }
     }
-    #[doc = "Checks if the value of the field is `MODE_0`"]
+    #[doc = "Checks if the value of the field is `STANDARD_RESOLUTION`"]
     #[inline(always)]
-    pub fn is_mode_0(&self) -> bool {
-        *self == MODE_A::MODE_0
+    pub fn is_standard_resolution(&self) -> bool {
+        *self == MODE_A::STANDARD_RESOLUTION
     }
-    #[doc = "Checks if the value of the field is `MODE_1`"]
+    #[doc = "Checks if the value of the field is `HIGH_RESOLUTION`"]
     #[inline(always)]
-    pub fn is_mode_1(&self) -> bool {
-        *self == MODE_A::MODE_1
+    pub fn is_high_resolution(&self) -> bool {
+        *self == MODE_A::HIGH_RESOLUTION
     }
 }
-#[doc = "Field `MODE` writer - Select resolution of conversions"]
+#[doc = "Field `MODE` writer - Select resolution of conversions."]
 pub type MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, CMDL10_SPEC, MODE_A, O>;
 impl<'a, const O: u8> MODE_W<'a, O> {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
     #[inline(always)]
-    pub fn mode_0(self) -> &'a mut W {
-        self.variant(MODE_A::MODE_0)
+    pub fn standard_resolution(self) -> &'a mut W {
+        self.variant(MODE_A::STANDARD_RESOLUTION)
     }
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
     #[inline(always)]
-    pub fn mode_1(self) -> &'a mut W {
-        self.variant(MODE_A::MODE_1)
+    pub fn high_resolution(self) -> &'a mut W {
+        self.variant(MODE_A::HIGH_RESOLUTION)
     }
 }
 impl R {
-    #[doc = "Bits 0:4 - Input channel select"]
+    #[doc = "Bits 0:4 - Input channel select."]
     #[inline(always)]
     pub fn adch(&self) -> ADCH_R {
         ADCH_R::new((self.bits & 0x1f) as u8)
     }
-    #[doc = "Bits 5:6 - Conversion Type"]
+    #[doc = "Bits 5:6 - Conversion Type."]
     #[inline(always)]
     pub fn ctype(&self) -> CTYPE_R {
         CTYPE_R::new(((self.bits >> 5) & 3) as u8)
     }
-    #[doc = "Bit 7 - Select resolution of conversions"]
+    #[doc = "Bit 7 - Select resolution of conversions."]
     #[inline(always)]
     pub fn mode(&self) -> MODE_R {
         MODE_R::new(((self.bits >> 7) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bits 0:4 - Input channel select"]
+    #[doc = "Bits 0:4 - Input channel select."]
     #[inline(always)]
     pub fn adch(&mut self) -> ADCH_W<0> {
         ADCH_W::new(self)
     }
-    #[doc = "Bits 5:6 - Conversion Type"]
+    #[doc = "Bits 5:6 - Conversion Type."]
     #[inline(always)]
     pub fn ctype(&mut self) -> CTYPE_W<5> {
         CTYPE_W::new(self)
     }
-    #[doc = "Bit 7 - Select resolution of conversions"]
+    #[doc = "Bit 7 - Select resolution of conversions."]
     #[inline(always)]
     pub fn mode(&mut self) -> MODE_W<7> {
         MODE_W::new(self)
@@ -384,7 +332,7 @@ impl W {
         self
     }
 }
-#[doc = "ADC Command Low Buffer Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cmdl10](index.html) module"]
+#[doc = "ADC Command Low Buffer Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cmdl10](index.html) module"]
 pub struct CMDL10_SPEC;
 impl crate::RegisterSpec for CMDL10_SPEC {
     type Ux = u32;

@@ -34,20 +34,20 @@ impl From<crate::W<FLASHREMAP_OFFSET_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FLASHREMAP_OFFSET` reader - no description available"]
+#[doc = "Field `FLASHREMAP_OFFSET` reader - no description available."]
 pub type FLASHREMAP_OFFSET_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `FLASHREMAP_OFFSET` writer - no description available"]
+#[doc = "Field `FLASHREMAP_OFFSET` writer - no description available."]
 pub type FLASHREMAP_OFFSET_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, FLASHREMAP_OFFSET_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn flashremap_offset(&self) -> FLASHREMAP_OFFSET_R {
         FLASHREMAP_OFFSET_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - no description available"]
+    #[doc = "Bits 0:31 - no description available."]
     #[inline(always)]
     pub fn flashremap_offset(&mut self) -> FLASHREMAP_OFFSET_W<0> {
         FLASHREMAP_OFFSET_W::new(self)

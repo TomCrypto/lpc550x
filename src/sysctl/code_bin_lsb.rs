@@ -22,7 +22,7 @@ impl R {
         CODE_BIN_LSB_R::new(self.bits)
     }
 }
-#[doc = "CODE_BIN LSB output Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [code_bin_lsb](index.html) module"]
+#[doc = "CODE_BIN LSB output Register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [code_bin_lsb](index.html) module"]
 pub struct CODE_BIN_LSB_SPEC;
 impl crate::RegisterSpec for CODE_BIN_LSB_SPEC {
     type Ux = u32;

@@ -34,9 +34,9 @@ impl From<crate::W<TSTAT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `TEXC_NUM` reader - Trigger Exception Number"]
+#[doc = "Field `TEXC_NUM` reader - Trigger Exception Number."]
 pub type TEXC_NUM_R = crate::FieldReader<u16, TEXC_NUM_A>;
-#[doc = "Trigger Exception Number\n\nValue on reset: 0"]
+#[doc = "Trigger Exception Number.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u16)]
 pub enum TEXC_NUM_A {
@@ -145,7 +145,7 @@ impl TEXC_NUM_R {
         *self == TEXC_NUM_A::TEXC_NUM_65535
     }
 }
-#[doc = "Field `TEXC_NUM` writer - Trigger Exception Number"]
+#[doc = "Field `TEXC_NUM` writer - Trigger Exception Number."]
 pub type TEXC_NUM_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, TSTAT_SPEC, u16, TEXC_NUM_A, 16, O>;
 impl<'a, const O: u8> TEXC_NUM_W<'a, O> {
@@ -206,9 +206,9 @@ impl<'a, const O: u8> TEXC_NUM_W<'a, O> {
         self.variant(TEXC_NUM_A::TEXC_NUM_65535)
     }
 }
-#[doc = "Field `TCOMP_FLAG` reader - Trigger Completion Flag"]
+#[doc = "Field `TCOMP_FLAG` reader - Trigger Completion Flag."]
 pub type TCOMP_FLAG_R = crate::FieldReader<u16, TCOMP_FLAG_A>;
-#[doc = "Trigger Completion Flag\n\nValue on reset: 0"]
+#[doc = "Trigger Completion Flag.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u16)]
 pub enum TCOMP_FLAG_A {
@@ -316,7 +316,7 @@ impl TCOMP_FLAG_R {
         *self == TCOMP_FLAG_A::TCOMP_FLAG_65535
     }
 }
-#[doc = "Field `TCOMP_FLAG` writer - Trigger Completion Flag"]
+#[doc = "Field `TCOMP_FLAG` writer - Trigger Completion Flag."]
 pub type TCOMP_FLAG_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, TSTAT_SPEC, u16, TCOMP_FLAG_A, 16, O>;
 impl<'a, const O: u8> TCOMP_FLAG_W<'a, O> {
@@ -377,24 +377,24 @@ impl<'a, const O: u8> TCOMP_FLAG_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:15 - Trigger Exception Number"]
+    #[doc = "Bits 0:15 - Trigger Exception Number."]
     #[inline(always)]
     pub fn texc_num(&self) -> TEXC_NUM_R {
         TEXC_NUM_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bits 16:31 - Trigger Completion Flag"]
+    #[doc = "Bits 16:31 - Trigger Completion Flag."]
     #[inline(always)]
     pub fn tcomp_flag(&self) -> TCOMP_FLAG_R {
         TCOMP_FLAG_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 0:15 - Trigger Exception Number"]
+    #[doc = "Bits 0:15 - Trigger Exception Number."]
     #[inline(always)]
     pub fn texc_num(&mut self) -> TEXC_NUM_W<0> {
         TEXC_NUM_W::new(self)
     }
-    #[doc = "Bits 16:31 - Trigger Completion Flag"]
+    #[doc = "Bits 16:31 - Trigger Completion Flag."]
     #[inline(always)]
     pub fn tcomp_flag(&mut self) -> TCOMP_FLAG_W<16> {
         TCOMP_FLAG_W::new(self)
@@ -406,7 +406,7 @@ impl W {
         self
     }
 }
-#[doc = "Trigger Status Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tstat](index.html) module"]
+#[doc = "Trigger Status Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tstat](index.html) module"]
 pub struct TSTAT_SPEC;
 impl crate::RegisterSpec for TSTAT_SPEC {
     type Ux = u32;

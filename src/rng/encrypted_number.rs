@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "This register contains a random 32 bit number which is pre-computed\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [encrypted_number](index.html) module"]
+#[doc = "This register contains a random 32 bit number which is pre-computed.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [encrypted_number](index.html) module"]
 pub struct ENCRYPTED_NUMBER_SPEC;
 impl crate::RegisterSpec for ENCRYPTED_NUMBER_SPEC {
     type Ux = u32;

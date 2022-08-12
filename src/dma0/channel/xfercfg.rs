@@ -191,7 +191,7 @@ pub type CLRTRIG_R = crate::BitReader<CLRTRIG_A>;
 pub enum CLRTRIG_A {
     #[doc = "0: Not cleared. The trigger is not cleared when this descriptor is exhausted. If there is a reload, the next descriptor will be started."]
     NOT_CLEARED = 0,
-    #[doc = "1: Cleared. The trigger is cleared when this descriptor is exhausted"]
+    #[doc = "1: Cleared. The trigger is cleared when this descriptor is exhausted."]
     CLEARED = 1,
 }
 impl From<CLRTRIG_A> for bool {
@@ -228,7 +228,7 @@ impl<'a, const O: u8> CLRTRIG_W<'a, O> {
     pub fn not_cleared(self) -> &'a mut W {
         self.variant(CLRTRIG_A::NOT_CLEARED)
     }
-    #[doc = "Cleared. The trigger is cleared when this descriptor is exhausted"]
+    #[doc = "Cleared. The trigger is cleared when this descriptor is exhausted."]
     #[inline(always)]
     pub fn cleared(self) -> &'a mut W {
         self.variant(CLRTRIG_A::CLEARED)

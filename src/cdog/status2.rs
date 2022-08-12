@@ -13,24 +13,24 @@ impl From<crate::R<STATUS2_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `NUMCNTF` reader - Number (of) control faults"]
+#[doc = "Field `NUMCNTF` reader - Number (of) control faults."]
 pub type NUMCNTF_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `NUMILLSTF` reader - Number (of) state faults"]
+#[doc = "Field `NUMILLSTF` reader - Number (of) state faults."]
 pub type NUMILLSTF_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `NUMILLA` reader - Number of (illegal) address faults"]
+#[doc = "Field `NUMILLA` reader - Number of (illegal) address faults."]
 pub type NUMILLA_R = crate::FieldReader<u8, u8>;
 impl R {
-    #[doc = "Bits 0:7 - Number (of) control faults"]
+    #[doc = "Bits 0:7 - Number (of) control faults."]
     #[inline(always)]
     pub fn numcntf(&self) -> NUMCNTF_R {
         NUMCNTF_R::new((self.bits & 0xff) as u8)
     }
-    #[doc = "Bits 8:15 - Number (of) state faults"]
+    #[doc = "Bits 8:15 - Number (of) state faults."]
     #[inline(always)]
     pub fn numillstf(&self) -> NUMILLSTF_R {
         NUMILLSTF_R::new(((self.bits >> 8) & 0xff) as u8)
     }
-    #[doc = "Bits 16:23 - Number of (illegal) address faults"]
+    #[doc = "Bits 16:23 - Number of (illegal) address faults."]
     #[inline(always)]
     pub fn numilla(&self) -> NUMILLA_R {
         NUMILLA_R::new(((self.bits >> 16) & 0xff) as u8)

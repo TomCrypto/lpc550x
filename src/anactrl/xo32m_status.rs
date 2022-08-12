@@ -56,7 +56,7 @@ impl R {
         XO_READY_R::new((self.bits & 1) != 0)
     }
 }
-#[doc = "High speed Crystal Oscillator Status register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [xo32m_status](index.html) module"]
+#[doc = "High speed Crystal Oscillator Status register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [xo32m_status](index.html) module"]
 pub struct XO32M_STATUS_SPEC;
 impl crate::RegisterSpec for XO32M_STATUS_SPEC {
     type Ux = u32;

@@ -34,13 +34,13 @@ impl From<crate::W<GCR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `GCALR` reader - Gain Calculation Result"]
+#[doc = "Field `GCALR` reader - Gain Calculation Result."]
 pub type GCALR_R = crate::FieldReader<u16, u16>;
-#[doc = "Field `GCALR` writer - Gain Calculation Result"]
+#[doc = "Field `GCALR` writer - Gain Calculation Result."]
 pub type GCALR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, GCR_SPEC, u16, u16, 16, O>;
-#[doc = "Field `RDY` reader - Gain Calculation Ready"]
+#[doc = "Field `RDY` reader - Gain Calculation Ready."]
 pub type RDY_R = crate::BitReader<RDY_A>;
-#[doc = "Gain Calculation Ready\n\nValue on reset: 0"]
+#[doc = "Gain Calculation Ready.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum RDY_A {
     #[doc = "0: The gain offset calculation value is invalid."]
@@ -74,7 +74,7 @@ impl RDY_R {
         *self == RDY_A::RDY_1
     }
 }
-#[doc = "Field `RDY` writer - Gain Calculation Ready"]
+#[doc = "Field `RDY` writer - Gain Calculation Ready."]
 pub type RDY_W<'a, const O: u8> = crate::BitWriter<'a, u32, GCR_SPEC, RDY_A, O>;
 impl<'a, const O: u8> RDY_W<'a, O> {
     #[doc = "The gain offset calculation value is invalid."]
@@ -89,24 +89,24 @@ impl<'a, const O: u8> RDY_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:15 - Gain Calculation Result"]
+    #[doc = "Bits 0:15 - Gain Calculation Result."]
     #[inline(always)]
     pub fn gcalr(&self) -> GCALR_R {
         GCALR_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bit 24 - Gain Calculation Ready"]
+    #[doc = "Bit 24 - Gain Calculation Ready."]
     #[inline(always)]
     pub fn rdy(&self) -> RDY_R {
         RDY_R::new(((self.bits >> 24) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bits 0:15 - Gain Calculation Result"]
+    #[doc = "Bits 0:15 - Gain Calculation Result."]
     #[inline(always)]
     pub fn gcalr(&mut self) -> GCALR_W<0> {
         GCALR_W::new(self)
     }
-    #[doc = "Bit 24 - Gain Calculation Ready"]
+    #[doc = "Bit 24 - Gain Calculation Ready."]
     #[inline(always)]
     pub fn rdy(&mut self) -> RDY_W<24> {
         RDY_W::new(self)
@@ -118,7 +118,7 @@ impl W {
         self
     }
 }
-#[doc = "Gain Calculation Result\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gcr](index.html) module"]
+#[doc = "Gain Calculation Result.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gcr](index.html) module"]
 pub struct GCR_SPEC;
 impl crate::RegisterSpec for GCR_SPEC {
     type Ux = u32;

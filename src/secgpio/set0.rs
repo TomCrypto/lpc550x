@@ -58,7 +58,7 @@ impl W {
         self
     }
 }
-#[doc = "Write: Set register for port. Read: output bits for port\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [set0](index.html) module"]
+#[doc = "Write: Set register for port. Read: output bits for port.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [set0](index.html) module"]
 pub struct SET0_SPEC;
 impl crate::RegisterSpec for SET0_SPEC {
     type Ux = u32;

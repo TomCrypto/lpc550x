@@ -134,9 +134,9 @@ impl LR_R {
         *self == LR_A::RIGHT_CHANNEL
     }
 }
-#[doc = "Field `DATAPAUSED` reader - Data Paused status flag. Applies to all I2S channels"]
+#[doc = "Field `DATAPAUSED` reader - Data Paused status flag. Applies to all I2S channels."]
 pub type DATAPAUSED_R = crate::BitReader<DATAPAUSED_A>;
-#[doc = "Data Paused status flag. Applies to all I2S channels\n\nValue on reset: 0"]
+#[doc = "Data Paused status flag. Applies to all I2S channels.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum DATAPAUSED_A {
     #[doc = "0: Data is not currently paused. A data pause may have been requested but is not yet in force, waiting for an allowed pause point. Refer to the description of the DATAPAUSE control bit in the CFG1 register."]
@@ -181,7 +181,7 @@ impl R {
     pub fn lr(&self) -> LR_R {
         LR_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bit 3 - Data Paused status flag. Applies to all I2S channels"]
+    #[doc = "Bit 3 - Data Paused status flag. Applies to all I2S channels."]
     #[inline(always)]
     pub fn datapaused(&self) -> DATAPAUSED_R {
         DATAPAUSED_R::new(((self.bits >> 3) & 1) != 0)

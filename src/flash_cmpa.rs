@@ -1,29 +1,29 @@
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    #[doc = "0x00 - no description available"]
+    #[doc = "0x00 - no description available."]
     pub boot_cfg: BOOT_CFG,
-    #[doc = "0x04 - no description available"]
+    #[doc = "0x04 - no description available."]
     pub spi_flash_cfg: SPI_FLASH_CFG,
-    #[doc = "0x08 - no description available"]
+    #[doc = "0x08 - no description available."]
     pub usb_id: USB_ID,
-    #[doc = "0x0c - no description available"]
+    #[doc = "0x0c - no description available."]
     pub sdio_cfg: SDIO_CFG,
-    #[doc = "0x10 - no description available"]
+    #[doc = "0x10 - no description available."]
     pub cc_socu_pin: CC_SOCU_PIN,
-    #[doc = "0x14 - no description available"]
+    #[doc = "0x14 - no description available."]
     pub cc_socu_dflt: CC_SOCU_DFLT,
-    #[doc = "0x18 - no description available"]
+    #[doc = "0x18 - no description available."]
     pub vendor_usage: VENDOR_USAGE,
     #[doc = "0x1c - Secure boot configuration flags."]
     pub secure_boot_cfg: SECURE_BOOT_CFG,
-    #[doc = "0x20 - no description available"]
+    #[doc = "0x20 - no description available."]
     pub prince_base_addr: PRINCE_BASE_ADDR,
-    #[doc = "0x24 - Region 0, sub-region enable"]
+    #[doc = "0x24 - Region 0, sub-region enable."]
     pub prince_sr_0: PRINCE_SR_0,
-    #[doc = "0x28 - Region 1, sub-region enable"]
+    #[doc = "0x28 - Region 1, sub-region enable."]
     pub prince_sr_1: PRINCE_SR_1,
-    #[doc = "0x2c - Region 2, sub-region enable"]
+    #[doc = "0x2c - Region 2, sub-region enable."]
     pub prince_sr_2: PRINCE_SR_2,
     #[doc = "0x30 - Xtal 32kHz capabank triming."]
     pub xtal_32khz_capabank_trim: XTAL_32KHZ_CAPABANK_TRIM,
@@ -44,31 +44,31 @@ pub struct RegisterBlock {
 }
 #[doc = "BOOT_CFG (rw) register accessor: an alias for `Reg<BOOT_CFG_SPEC>`"]
 pub type BOOT_CFG = crate::Reg<boot_cfg::BOOT_CFG_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod boot_cfg;
 #[doc = "SPI_FLASH_CFG (rw) register accessor: an alias for `Reg<SPI_FLASH_CFG_SPEC>`"]
 pub type SPI_FLASH_CFG = crate::Reg<spi_flash_cfg::SPI_FLASH_CFG_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod spi_flash_cfg;
 #[doc = "USB_ID (rw) register accessor: an alias for `Reg<USB_ID_SPEC>`"]
 pub type USB_ID = crate::Reg<usb_id::USB_ID_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod usb_id;
 #[doc = "SDIO_CFG (rw) register accessor: an alias for `Reg<SDIO_CFG_SPEC>`"]
 pub type SDIO_CFG = crate::Reg<sdio_cfg::SDIO_CFG_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod sdio_cfg;
 #[doc = "CC_SOCU_PIN (rw) register accessor: an alias for `Reg<CC_SOCU_PIN_SPEC>`"]
 pub type CC_SOCU_PIN = crate::Reg<cc_socu_pin::CC_SOCU_PIN_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod cc_socu_pin;
 #[doc = "CC_SOCU_DFLT (rw) register accessor: an alias for `Reg<CC_SOCU_DFLT_SPEC>`"]
 pub type CC_SOCU_DFLT = crate::Reg<cc_socu_dflt::CC_SOCU_DFLT_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod cc_socu_dflt;
 #[doc = "VENDOR_USAGE (rw) register accessor: an alias for `Reg<VENDOR_USAGE_SPEC>`"]
 pub type VENDOR_USAGE = crate::Reg<vendor_usage::VENDOR_USAGE_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod vendor_usage;
 #[doc = "SECURE_BOOT_CFG (rw) register accessor: an alias for `Reg<SECURE_BOOT_CFG_SPEC>`"]
 pub type SECURE_BOOT_CFG = crate::Reg<secure_boot_cfg::SECURE_BOOT_CFG_SPEC>;
@@ -76,19 +76,19 @@ pub type SECURE_BOOT_CFG = crate::Reg<secure_boot_cfg::SECURE_BOOT_CFG_SPEC>;
 pub mod secure_boot_cfg;
 #[doc = "PRINCE_BASE_ADDR (rw) register accessor: an alias for `Reg<PRINCE_BASE_ADDR_SPEC>`"]
 pub type PRINCE_BASE_ADDR = crate::Reg<prince_base_addr::PRINCE_BASE_ADDR_SPEC>;
-#[doc = "no description available"]
+#[doc = "no description available."]
 pub mod prince_base_addr;
 #[doc = "PRINCE_SR_0 (rw) register accessor: an alias for `Reg<PRINCE_SR_0_SPEC>`"]
 pub type PRINCE_SR_0 = crate::Reg<prince_sr_0::PRINCE_SR_0_SPEC>;
-#[doc = "Region 0, sub-region enable"]
+#[doc = "Region 0, sub-region enable."]
 pub mod prince_sr_0;
 #[doc = "PRINCE_SR_1 (rw) register accessor: an alias for `Reg<PRINCE_SR_1_SPEC>`"]
 pub type PRINCE_SR_1 = crate::Reg<prince_sr_1::PRINCE_SR_1_SPEC>;
-#[doc = "Region 1, sub-region enable"]
+#[doc = "Region 1, sub-region enable."]
 pub mod prince_sr_1;
 #[doc = "PRINCE_SR_2 (rw) register accessor: an alias for `Reg<PRINCE_SR_2_SPEC>`"]
 pub type PRINCE_SR_2 = crate::Reg<prince_sr_2::PRINCE_SR_2_SPEC>;
-#[doc = "Region 2, sub-region enable"]
+#[doc = "Region 2, sub-region enable."]
 pub mod prince_sr_2;
 #[doc = "XTAL_32KHZ_CAPABANK_TRIM (rw) register accessor: an alias for `Reg<XTAL_32KHZ_CAPABANK_TRIM_SPEC>`"]
 pub type XTAL_32KHZ_CAPABANK_TRIM =

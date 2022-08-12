@@ -97,7 +97,7 @@ impl R {
         FLASH_INIT_ERROR_R::new(((self.bits >> 13) & 1) != 0)
     }
 }
-#[doc = "Analog Macroblock Identity registers, Flash Status registers\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [analog_ctrl_status](index.html) module"]
+#[doc = "Analog Macroblock Identity registers, Flash Status registers.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [analog_ctrl_status](index.html) module"]
 pub struct ANALOG_CTRL_STATUS_SPEC;
 impl crate::RegisterSpec for ANALOG_CTRL_STATUS_SPEC {
     type Ux = u32;

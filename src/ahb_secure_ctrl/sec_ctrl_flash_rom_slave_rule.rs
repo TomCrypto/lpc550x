@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_FLASH_ROM_SLAVE_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FLASH_RULE` reader - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF"]
+#[doc = "Field `FLASH_RULE` reader - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF."]
 pub type FLASH_RULE_R = crate::FieldReader<u8, FLASH_RULE_A>;
-#[doc = "Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF\n\nValue on reset: 0"]
+#[doc = "Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FLASH_RULE_A {
@@ -88,7 +88,7 @@ impl FLASH_RULE_R {
         *self == FLASH_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `FLASH_RULE` writer - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF"]
+#[doc = "Field `FLASH_RULE` writer - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF."]
 pub type FLASH_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_FLASH_ROM_SLAVE_RULE_SPEC, u8, FLASH_RULE_A, 2, O>;
 impl<'a, const O: u8> FLASH_RULE_W<'a, O> {
@@ -113,9 +113,9 @@ impl<'a, const O: u8> FLASH_RULE_W<'a, O> {
         self.variant(FLASH_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `ROM_RULE` reader - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF"]
+#[doc = "Field `ROM_RULE` reader - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF."]
 pub type ROM_RULE_R = crate::FieldReader<u8, ROM_RULE_A>;
-#[doc = "Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF\n\nValue on reset: 0"]
+#[doc = "Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum ROM_RULE_A {
@@ -167,7 +167,7 @@ impl ROM_RULE_R {
         *self == ROM_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `ROM_RULE` writer - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF"]
+#[doc = "Field `ROM_RULE` writer - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF."]
 pub type ROM_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_FLASH_ROM_SLAVE_RULE_SPEC, u8, ROM_RULE_A, 2, O>;
 impl<'a, const O: u8> ROM_RULE_W<'a, O> {
@@ -193,24 +193,24 @@ impl<'a, const O: u8> ROM_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF"]
+    #[doc = "Bits 0:1 - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF."]
     #[inline(always)]
     pub fn flash_rule(&self) -> FLASH_RULE_R {
         FLASH_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF"]
+    #[doc = "Bits 4:5 - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF."]
     #[inline(always)]
     pub fn rom_rule(&self) -> ROM_RULE_R {
         ROM_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF"]
+    #[doc = "Bits 0:1 - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF."]
     #[inline(always)]
     pub fn flash_rule(&mut self) -> FLASH_RULE_W<0> {
         FLASH_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF"]
+    #[doc = "Bits 4:5 - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF."]
     #[inline(always)]
     pub fn rom_rule(&mut self) -> ROM_RULE_W<4> {
         ROM_RULE_W::new(self)

@@ -2,7 +2,7 @@
 #[repr(C)]
 pub struct RegisterBlock {
     _reserved0: [u8; 0x04],
-    #[doc = "0x04 - Power Management Controller FSM (Finite State Machines) status"]
+    #[doc = "0x04 - Power Management Controller FSM (Finite State Machines) status."]
     pub status: STATUS,
     #[doc = "0x08 - Reset Control \\[Reset by: PoR, Pin Reset, Brown Out Detectors Reset, Deep Power Down Reset, Software Reset\\]"]
     pub resetctrl: RESETCTRL,
@@ -28,7 +28,7 @@ pub struct RegisterBlock {
     _reserved9: [u8; 0x10],
     #[doc = "0x64 - Deep Power Down wake-up source \\[Reset by: PoR, Pin Reset, Software Reset\\]"]
     pub wakeupioctrl: WAKEUPIOCTRL,
-    #[doc = "0x68 - Allows to identify the Wake-up I/O source from Deep Power Down mode"]
+    #[doc = "0x68 - Allows to identify the Wake-up I/O source from Deep Power Down mode."]
     pub wakeiocause: WAKEIOCAUSE,
     _reserved11: [u8; 0x08],
     #[doc = "0x74 - FRO and XTAL status register \\[Reset by: PoR, Brown Out Detectors Reset\\]"]
@@ -59,7 +59,7 @@ pub struct RegisterBlock {
 }
 #[doc = "STATUS (r) register accessor: an alias for `Reg<STATUS_SPEC>`"]
 pub type STATUS = crate::Reg<status::STATUS_SPEC>;
-#[doc = "Power Management Controller FSM (Finite State Machines) status"]
+#[doc = "Power Management Controller FSM (Finite State Machines) status."]
 pub mod status;
 #[doc = "RESETCTRL (rw) register accessor: an alias for `Reg<RESETCTRL_SPEC>`"]
 pub type RESETCTRL = crate::Reg<resetctrl::RESETCTRL_SPEC>;
@@ -99,7 +99,7 @@ pub type WAKEUPIOCTRL = crate::Reg<wakeupioctrl::WAKEUPIOCTRL_SPEC>;
 pub mod wakeupioctrl;
 #[doc = "WAKEIOCAUSE (rw) register accessor: an alias for `Reg<WAKEIOCAUSE_SPEC>`"]
 pub type WAKEIOCAUSE = crate::Reg<wakeiocause::WAKEIOCAUSE_SPEC>;
-#[doc = "Allows to identify the Wake-up I/O source from Deep Power Down mode"]
+#[doc = "Allows to identify the Wake-up I/O source from Deep Power Down mode."]
 pub mod wakeiocause;
 #[doc = "STATUSCLK (rw) register accessor: an alias for `Reg<STATUSCLK_SPEC>`"]
 pub type STATUSCLK = crate::Reg<statusclk::STATUSCLK_SPEC>;

@@ -22,7 +22,7 @@ impl R {
         ID_R::new(self.bits)
     }
 }
-#[doc = "Identification register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [id](index.html) module"]
+#[doc = "Identification register.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [id](index.html) module"]
 pub struct ID_SPEC;
 impl crate::RegisterSpec for ID_SPEC {
     type Ux = u32;

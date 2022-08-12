@@ -2,9 +2,9 @@
 #[repr(C)]
 pub struct RegisterBlock {
     _reserved0: [u8; 0x0400],
-    #[doc = "0x400 - SPI Configuration register"]
+    #[doc = "0x400 - SPI Configuration register."]
     pub cfg: CFG,
-    #[doc = "0x404 - SPI Delay register"]
+    #[doc = "0x404 - SPI Delay register."]
     pub dly: DLY,
     #[doc = "0x408 - SPI Status. Some status flags can be cleared by writing a 1 to that bit position."]
     pub stat: STAT,
@@ -13,9 +13,9 @@ pub struct RegisterBlock {
     #[doc = "0x410 - SPI Interrupt Enable Clear. Writing a 1 to any implemented bit position causes the corresponding bit in INTENSET to be cleared."]
     pub intenclr: INTENCLR,
     _reserved5: [u8; 0x10],
-    #[doc = "0x424 - SPI clock Divider"]
+    #[doc = "0x424 - SPI clock Divider."]
     pub div: DIV,
-    #[doc = "0x428 - SPI Interrupt Status"]
+    #[doc = "0x428 - SPI Interrupt Status."]
     pub intstat: INTSTAT,
     _reserved7: [u8; 0x09d4],
     #[doc = "0xe00 - FIFO configuration and enable register."]
@@ -41,7 +41,7 @@ pub struct RegisterBlock {
     #[doc = "0xe40 - FIFO data read with no FIFO pop."]
     pub fifordnopop: FIFORDNOPOP,
     _reserved16: [u8; 0x04],
-    #[doc = "0xe48 - FIFO size register"]
+    #[doc = "0xe48 - FIFO size register."]
     pub fifosize: FIFOSIZE,
     _reserved17: [u8; 0x01b0],
     #[doc = "0xffc - Peripheral identification register."]
@@ -49,11 +49,11 @@ pub struct RegisterBlock {
 }
 #[doc = "CFG (rw) register accessor: an alias for `Reg<CFG_SPEC>`"]
 pub type CFG = crate::Reg<cfg::CFG_SPEC>;
-#[doc = "SPI Configuration register"]
+#[doc = "SPI Configuration register."]
 pub mod cfg;
 #[doc = "DLY (rw) register accessor: an alias for `Reg<DLY_SPEC>`"]
 pub type DLY = crate::Reg<dly::DLY_SPEC>;
-#[doc = "SPI Delay register"]
+#[doc = "SPI Delay register."]
 pub mod dly;
 #[doc = "STAT (rw) register accessor: an alias for `Reg<STAT_SPEC>`"]
 pub type STAT = crate::Reg<stat::STAT_SPEC>;
@@ -69,11 +69,11 @@ pub type INTENCLR = crate::Reg<intenclr::INTENCLR_SPEC>;
 pub mod intenclr;
 #[doc = "DIV (rw) register accessor: an alias for `Reg<DIV_SPEC>`"]
 pub type DIV = crate::Reg<div::DIV_SPEC>;
-#[doc = "SPI clock Divider"]
+#[doc = "SPI clock Divider."]
 pub mod div;
 #[doc = "INTSTAT (r) register accessor: an alias for `Reg<INTSTAT_SPEC>`"]
 pub type INTSTAT = crate::Reg<intstat::INTSTAT_SPEC>;
-#[doc = "SPI Interrupt Status"]
+#[doc = "SPI Interrupt Status."]
 pub mod intstat;
 #[doc = "FIFOCFG (rw) register accessor: an alias for `Reg<FIFOCFG_SPEC>`"]
 pub type FIFOCFG = crate::Reg<fifocfg::FIFOCFG_SPEC>;
@@ -113,7 +113,7 @@ pub type FIFORDNOPOP = crate::Reg<fifordnopop::FIFORDNOPOP_SPEC>;
 pub mod fifordnopop;
 #[doc = "FIFOSIZE (rw) register accessor: an alias for `Reg<FIFOSIZE_SPEC>`"]
 pub type FIFOSIZE = crate::Reg<fifosize::FIFOSIZE_SPEC>;
-#[doc = "FIFO size register"]
+#[doc = "FIFO size register."]
 pub mod fifosize;
 #[doc = "ID (rw) register accessor: an alias for `Reg<ID_SPEC>`"]
 pub type ID = crate::Reg<id::ID_SPEC>;

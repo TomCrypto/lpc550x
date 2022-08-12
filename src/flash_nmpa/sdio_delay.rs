@@ -34,9 +34,9 @@ impl From<crate::W<SDIO_DELAY_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SDIO_0_VALID` reader - no description available"]
+#[doc = "Field `SDIO_0_VALID` reader - no description available."]
 pub type SDIO_0_VALID_R = crate::BitReader<bool>;
-#[doc = "Field `SDIO_0_VALID` writer - no description available"]
+#[doc = "Field `SDIO_0_VALID` writer - no description available."]
 pub type SDIO_0_VALID_W<'a, const O: u8> = crate::BitWriter<'a, u32, SDIO_DELAY_SPEC, bool, O>;
 #[doc = "Field `SDIO_0_DELAY` reader - SDIO_0_DELAY (unit: 100 ps)."]
 pub type SDIO_0_DELAY_R = crate::FieldReader<u16, u16>;
@@ -44,7 +44,7 @@ pub type SDIO_0_DELAY_R = crate::FieldReader<u16, u16>;
 pub type SDIO_0_DELAY_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, SDIO_DELAY_SPEC, u16, u16, 10, O>;
 impl R {
-    #[doc = "Bit 0 - no description available"]
+    #[doc = "Bit 0 - no description available."]
     #[inline(always)]
     pub fn sdio_0_valid(&self) -> SDIO_0_VALID_R {
         SDIO_0_VALID_R::new((self.bits & 1) != 0)
@@ -56,7 +56,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - no description available"]
+    #[doc = "Bit 0 - no description available."]
     #[inline(always)]
     pub fn sdio_0_valid(&mut self) -> SDIO_0_VALID_W<0> {
         SDIO_0_VALID_W::new(self)
@@ -73,7 +73,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sdio_delay](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sdio_delay](index.html) module"]
 pub struct SDIO_DELAY_SPEC;
 impl crate::RegisterSpec for SDIO_DELAY_SPEC {
     type Ux = u32;

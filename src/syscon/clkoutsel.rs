@@ -41,29 +41,21 @@ pub type SEL_R = crate::FieldReader<u8, SEL_A>;
 #[repr(u8)]
 pub enum SEL_A {
     #[doc = "0: Main clock."]
-    ENUM_0X0 = 0,
+    MAIN_CLK = 0,
     #[doc = "1: PLL0 clock."]
-    ENUM_0X1 = 1,
+    PLL0 = 1,
     #[doc = "2: CLKIN clock."]
-    ENUM_0X2 = 2,
+    CLK_IN = 2,
     #[doc = "3: FRO 96 MHz clock."]
-    ENUM_0X3 = 3,
+    FRO_96MHZ = 3,
     #[doc = "4: FRO 1MHz clock."]
-    ENUM_0X4 = 4,
+    FRO_1MHZ = 4,
     #[doc = "5: PLL1 clock."]
-    ENUM_0X5 = 5,
+    PLL1 = 5,
     #[doc = "6: Oscillator 32kHz clock."]
-    ENUM_0X6 = 6,
-    #[doc = "7: No clock."]
-    ENUM_0X7 = 7,
-    #[doc = "12: No clock."]
-    ENUM_0X_C = 12,
-    #[doc = "13: No clock."]
-    ENUM_0X_D = 13,
-    #[doc = "14: No clock."]
-    ENUM_0X_E = 14,
+    OSC_32KHZ = 6,
     #[doc = "15: No clock."]
-    ENUM_0X_F = 15,
+    NONE = 15,
 }
 impl From<SEL_A> for u8 {
     #[inline(always)]
@@ -76,80 +68,56 @@ impl SEL_R {
     #[inline(always)]
     pub fn variant(&self) -> Option<SEL_A> {
         match self.bits {
-            0 => Some(SEL_A::ENUM_0X0),
-            1 => Some(SEL_A::ENUM_0X1),
-            2 => Some(SEL_A::ENUM_0X2),
-            3 => Some(SEL_A::ENUM_0X3),
-            4 => Some(SEL_A::ENUM_0X4),
-            5 => Some(SEL_A::ENUM_0X5),
-            6 => Some(SEL_A::ENUM_0X6),
-            7 => Some(SEL_A::ENUM_0X7),
-            12 => Some(SEL_A::ENUM_0X_C),
-            13 => Some(SEL_A::ENUM_0X_D),
-            14 => Some(SEL_A::ENUM_0X_E),
-            15 => Some(SEL_A::ENUM_0X_F),
+            0 => Some(SEL_A::MAIN_CLK),
+            1 => Some(SEL_A::PLL0),
+            2 => Some(SEL_A::CLK_IN),
+            3 => Some(SEL_A::FRO_96MHZ),
+            4 => Some(SEL_A::FRO_1MHZ),
+            5 => Some(SEL_A::PLL1),
+            6 => Some(SEL_A::OSC_32KHZ),
+            15 => Some(SEL_A::NONE),
             _ => None,
         }
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X0`"]
+    #[doc = "Checks if the value of the field is `MAIN_CLK`"]
     #[inline(always)]
-    pub fn is_enum_0x0(&self) -> bool {
-        *self == SEL_A::ENUM_0X0
+    pub fn is_main_clk(&self) -> bool {
+        *self == SEL_A::MAIN_CLK
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X1`"]
+    #[doc = "Checks if the value of the field is `PLL0`"]
     #[inline(always)]
-    pub fn is_enum_0x1(&self) -> bool {
-        *self == SEL_A::ENUM_0X1
+    pub fn is_pll0(&self) -> bool {
+        *self == SEL_A::PLL0
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X2`"]
+    #[doc = "Checks if the value of the field is `CLK_IN`"]
     #[inline(always)]
-    pub fn is_enum_0x2(&self) -> bool {
-        *self == SEL_A::ENUM_0X2
+    pub fn is_clk_in(&self) -> bool {
+        *self == SEL_A::CLK_IN
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X3`"]
+    #[doc = "Checks if the value of the field is `FRO_96MHZ`"]
     #[inline(always)]
-    pub fn is_enum_0x3(&self) -> bool {
-        *self == SEL_A::ENUM_0X3
+    pub fn is_fro_96mhz(&self) -> bool {
+        *self == SEL_A::FRO_96MHZ
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X4`"]
+    #[doc = "Checks if the value of the field is `FRO_1MHZ`"]
     #[inline(always)]
-    pub fn is_enum_0x4(&self) -> bool {
-        *self == SEL_A::ENUM_0X4
+    pub fn is_fro_1mhz(&self) -> bool {
+        *self == SEL_A::FRO_1MHZ
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X5`"]
+    #[doc = "Checks if the value of the field is `PLL1`"]
     #[inline(always)]
-    pub fn is_enum_0x5(&self) -> bool {
-        *self == SEL_A::ENUM_0X5
+    pub fn is_pll1(&self) -> bool {
+        *self == SEL_A::PLL1
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X6`"]
+    #[doc = "Checks if the value of the field is `OSC_32KHZ`"]
     #[inline(always)]
-    pub fn is_enum_0x6(&self) -> bool {
-        *self == SEL_A::ENUM_0X6
+    pub fn is_osc_32khz(&self) -> bool {
+        *self == SEL_A::OSC_32KHZ
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X7`"]
+    #[doc = "Checks if the value of the field is `NONE`"]
     #[inline(always)]
-    pub fn is_enum_0x7(&self) -> bool {
-        *self == SEL_A::ENUM_0X7
-    }
-    #[doc = "Checks if the value of the field is `ENUM_0X_C`"]
-    #[inline(always)]
-    pub fn is_enum_0x_c(&self) -> bool {
-        *self == SEL_A::ENUM_0X_C
-    }
-    #[doc = "Checks if the value of the field is `ENUM_0X_D`"]
-    #[inline(always)]
-    pub fn is_enum_0x_d(&self) -> bool {
-        *self == SEL_A::ENUM_0X_D
-    }
-    #[doc = "Checks if the value of the field is `ENUM_0X_E`"]
-    #[inline(always)]
-    pub fn is_enum_0x_e(&self) -> bool {
-        *self == SEL_A::ENUM_0X_E
-    }
-    #[doc = "Checks if the value of the field is `ENUM_0X_F`"]
-    #[inline(always)]
-    pub fn is_enum_0x_f(&self) -> bool {
-        *self == SEL_A::ENUM_0X_F
+    pub fn is_none(&self) -> bool {
+        *self == SEL_A::NONE
     }
 }
 #[doc = "Field `SEL` writer - CLKOUT clock source select."]
@@ -157,63 +125,43 @@ pub type SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CLKOUTSEL_SPEC, u8
 impl<'a, const O: u8> SEL_W<'a, O> {
     #[doc = "Main clock."]
     #[inline(always)]
-    pub fn enum_0x0(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X0)
+    pub fn main_clk(self) -> &'a mut W {
+        self.variant(SEL_A::MAIN_CLK)
     }
     #[doc = "PLL0 clock."]
     #[inline(always)]
-    pub fn enum_0x1(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X1)
+    pub fn pll0(self) -> &'a mut W {
+        self.variant(SEL_A::PLL0)
     }
     #[doc = "CLKIN clock."]
     #[inline(always)]
-    pub fn enum_0x2(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X2)
+    pub fn clk_in(self) -> &'a mut W {
+        self.variant(SEL_A::CLK_IN)
     }
     #[doc = "FRO 96 MHz clock."]
     #[inline(always)]
-    pub fn enum_0x3(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X3)
+    pub fn fro_96mhz(self) -> &'a mut W {
+        self.variant(SEL_A::FRO_96MHZ)
     }
     #[doc = "FRO 1MHz clock."]
     #[inline(always)]
-    pub fn enum_0x4(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X4)
+    pub fn fro_1mhz(self) -> &'a mut W {
+        self.variant(SEL_A::FRO_1MHZ)
     }
     #[doc = "PLL1 clock."]
     #[inline(always)]
-    pub fn enum_0x5(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X5)
+    pub fn pll1(self) -> &'a mut W {
+        self.variant(SEL_A::PLL1)
     }
     #[doc = "Oscillator 32kHz clock."]
     #[inline(always)]
-    pub fn enum_0x6(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X6)
+    pub fn osc_32khz(self) -> &'a mut W {
+        self.variant(SEL_A::OSC_32KHZ)
     }
     #[doc = "No clock."]
     #[inline(always)]
-    pub fn enum_0x7(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X7)
-    }
-    #[doc = "No clock."]
-    #[inline(always)]
-    pub fn enum_0x_c(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X_C)
-    }
-    #[doc = "No clock."]
-    #[inline(always)]
-    pub fn enum_0x_d(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X_D)
-    }
-    #[doc = "No clock."]
-    #[inline(always)]
-    pub fn enum_0x_e(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X_E)
-    }
-    #[doc = "No clock."]
-    #[inline(always)]
-    pub fn enum_0x_f(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X_F)
+    pub fn none(self) -> &'a mut W {
+        self.variant(SEL_A::NONE)
     }
 }
 impl R {
@@ -236,7 +184,7 @@ impl W {
         self
     }
 }
-#[doc = "CLKOUT clock source select\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [clkoutsel](index.html) module"]
+#[doc = "CLKOUT clock source select.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [clkoutsel](index.html) module"]
 pub struct CLKOUTSEL_SPEC;
 impl crate::RegisterSpec for CLKOUTSEL_SPEC {
     type Ux = u32;

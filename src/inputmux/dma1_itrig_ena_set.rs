@@ -19,11 +19,11 @@ impl From<crate::W<DMA1_ITRIG_ENA_SET_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SET` writer - Write : If bit #i = 1, bit #i in DMA1_ITRIG_ENA register is set to 1; if bit #i = 0 , no change in DMA1_ITRIG_ENA register"]
+#[doc = "Field `SET` writer - Write : If bit #i = 1, bit #i in DMA1_ITRIG_ENA register is set to 1; if bit #i = 0 , no change in DMA1_ITRIG_ENA register."]
 pub type SET_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, DMA1_ITRIG_ENA_SET_SPEC, u16, u16, 15, O>;
 impl W {
-    #[doc = "Bits 0:14 - Write : If bit #i = 1, bit #i in DMA1_ITRIG_ENA register is set to 1; if bit #i = 0 , no change in DMA1_ITRIG_ENA register"]
+    #[doc = "Bits 0:14 - Write : If bit #i = 1, bit #i in DMA1_ITRIG_ENA register is set to 1; if bit #i = 0 , no change in DMA1_ITRIG_ENA register."]
     #[inline(always)]
     pub fn set(&mut self) -> SET_W<0> {
         SET_W::new(self)
@@ -35,7 +35,7 @@ impl W {
         self
     }
 }
-#[doc = "Set one or several bits in DMA1_ITRIG_ENA register\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma1_itrig_ena_set](index.html) module"]
+#[doc = "Set one or several bits in DMA1_ITRIG_ENA register.\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma1_itrig_ena_set](index.html) module"]
 pub struct DMA1_ITRIG_ENA_SET_SPEC;
 impl crate::RegisterSpec for DMA1_ITRIG_ENA_SET_SPEC {
     type Ux = u32;

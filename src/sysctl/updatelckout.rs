@@ -34,9 +34,9 @@ impl From<crate::W<UPDATELCKOUT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `UPDATELCKOUT` reader - All Registers"]
+#[doc = "Field `UPDATELCKOUT` reader - All Registers."]
 pub type UPDATELCKOUT_R = crate::BitReader<UPDATELCKOUT_A>;
-#[doc = "All Registers\n\nValue on reset: 0"]
+#[doc = "All Registers.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum UPDATELCKOUT_A {
     #[doc = "0: Normal Mode. Can be written to."]
@@ -70,7 +70,7 @@ impl UPDATELCKOUT_R {
         *self == UPDATELCKOUT_A::PROTECTED_MODE
     }
 }
-#[doc = "Field `UPDATELCKOUT` writer - All Registers"]
+#[doc = "Field `UPDATELCKOUT` writer - All Registers."]
 pub type UPDATELCKOUT_W<'a, const O: u8> =
     crate::BitWriter<'a, u32, UPDATELCKOUT_SPEC, UPDATELCKOUT_A, O>;
 impl<'a, const O: u8> UPDATELCKOUT_W<'a, O> {
@@ -86,14 +86,14 @@ impl<'a, const O: u8> UPDATELCKOUT_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - All Registers"]
+    #[doc = "Bit 0 - All Registers."]
     #[inline(always)]
     pub fn updatelckout(&self) -> UPDATELCKOUT_R {
         UPDATELCKOUT_R::new((self.bits & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 0 - All Registers"]
+    #[doc = "Bit 0 - All Registers."]
     #[inline(always)]
     pub fn updatelckout(&mut self) -> UPDATELCKOUT_W<0> {
         UPDATELCKOUT_W::new(self)
@@ -105,7 +105,7 @@ impl W {
         self
     }
 }
-#[doc = "update lock out control\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [updatelckout](index.html) module"]
+#[doc = "update lock out control.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [updatelckout](index.html) module"]
 pub struct UPDATELCKOUT_SPEC;
 impl crate::RegisterSpec for UPDATELCKOUT_SPEC {
     type Ux = u32;

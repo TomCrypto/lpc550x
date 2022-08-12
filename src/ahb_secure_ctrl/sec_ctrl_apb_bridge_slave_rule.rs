@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE_SLAVE_RULE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `APBBRIDGE0_RULE` reader - Security access rules for the whole APB Bridge 0"]
+#[doc = "Field `APBBRIDGE0_RULE` reader - Security access rules for the whole APB Bridge 0."]
 pub type APBBRIDGE0_RULE_R = crate::FieldReader<u8, APBBRIDGE0_RULE_A>;
-#[doc = "Security access rules for the whole APB Bridge 0\n\nValue on reset: 0"]
+#[doc = "Security access rules for the whole APB Bridge 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum APBBRIDGE0_RULE_A {
@@ -88,7 +88,7 @@ impl APBBRIDGE0_RULE_R {
         *self == APBBRIDGE0_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `APBBRIDGE0_RULE` writer - Security access rules for the whole APB Bridge 0"]
+#[doc = "Field `APBBRIDGE0_RULE` writer - Security access rules for the whole APB Bridge 0."]
 pub type APBBRIDGE0_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -120,9 +120,9 @@ impl<'a, const O: u8> APBBRIDGE0_RULE_W<'a, O> {
         self.variant(APBBRIDGE0_RULE_A::ENUM_S_P)
     }
 }
-#[doc = "Field `APBBRIDGE1_RULE` reader - Security access rules for the whole APB Bridge 1"]
+#[doc = "Field `APBBRIDGE1_RULE` reader - Security access rules for the whole APB Bridge 1."]
 pub type APBBRIDGE1_RULE_R = crate::FieldReader<u8, APBBRIDGE1_RULE_A>;
-#[doc = "Security access rules for the whole APB Bridge 1\n\nValue on reset: 0"]
+#[doc = "Security access rules for the whole APB Bridge 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum APBBRIDGE1_RULE_A {
@@ -174,7 +174,7 @@ impl APBBRIDGE1_RULE_R {
         *self == APBBRIDGE1_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `APBBRIDGE1_RULE` writer - Security access rules for the whole APB Bridge 1"]
+#[doc = "Field `APBBRIDGE1_RULE` writer - Security access rules for the whole APB Bridge 1."]
 pub type APBBRIDGE1_RULE_W<'a, const O: u8> = crate::FieldWriterSafe<
     'a,
     u32,
@@ -207,24 +207,24 @@ impl<'a, const O: u8> APBBRIDGE1_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Security access rules for the whole APB Bridge 0"]
+    #[doc = "Bits 0:1 - Security access rules for the whole APB Bridge 0."]
     #[inline(always)]
     pub fn apbbridge0_rule(&self) -> APBBRIDGE0_RULE_R {
         APBBRIDGE0_RULE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 4:5 - Security access rules for the whole APB Bridge 1"]
+    #[doc = "Bits 4:5 - Security access rules for the whole APB Bridge 1."]
     #[inline(always)]
     pub fn apbbridge1_rule(&self) -> APBBRIDGE1_RULE_R {
         APBBRIDGE1_RULE_R::new(((self.bits >> 4) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Security access rules for the whole APB Bridge 0"]
+    #[doc = "Bits 0:1 - Security access rules for the whole APB Bridge 0."]
     #[inline(always)]
     pub fn apbbridge0_rule(&mut self) -> APBBRIDGE0_RULE_W<0> {
         APBBRIDGE0_RULE_W::new(self)
     }
-    #[doc = "Bits 4:5 - Security access rules for the whole APB Bridge 1"]
+    #[doc = "Bits 4:5 - Security access rules for the whole APB Bridge 1."]
     #[inline(always)]
     pub fn apbbridge1_rule(&mut self) -> APBBRIDGE1_RULE_W<4> {
         APBBRIDGE1_RULE_W::new(self)

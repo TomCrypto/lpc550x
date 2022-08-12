@@ -41,13 +41,13 @@ pub type SEL_R = crate::FieldReader<u8, SEL_A>;
 #[repr(u8)]
 pub enum SEL_A {
     #[doc = "0: Main Clock A."]
-    ENUM_0X0 = 0,
+    MAIN_CLOCK_A = 0,
     #[doc = "1: PLL0 clock."]
-    ENUM_0X1 = 1,
+    PLL0 = 1,
     #[doc = "2: PLL1 clock."]
-    ENUM_0X2 = 2,
+    PLL1 = 2,
     #[doc = "3: Oscillator 32 kHz clock."]
-    ENUM_0X3 = 3,
+    OSC_32KHZ = 3,
 }
 impl From<SEL_A> for u8 {
     #[inline(always)]
@@ -60,32 +60,32 @@ impl SEL_R {
     #[inline(always)]
     pub fn variant(&self) -> Option<SEL_A> {
         match self.bits {
-            0 => Some(SEL_A::ENUM_0X0),
-            1 => Some(SEL_A::ENUM_0X1),
-            2 => Some(SEL_A::ENUM_0X2),
-            3 => Some(SEL_A::ENUM_0X3),
+            0 => Some(SEL_A::MAIN_CLOCK_A),
+            1 => Some(SEL_A::PLL0),
+            2 => Some(SEL_A::PLL1),
+            3 => Some(SEL_A::OSC_32KHZ),
             _ => None,
         }
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X0`"]
+    #[doc = "Checks if the value of the field is `MAIN_CLOCK_A`"]
     #[inline(always)]
-    pub fn is_enum_0x0(&self) -> bool {
-        *self == SEL_A::ENUM_0X0
+    pub fn is_main_clock_a(&self) -> bool {
+        *self == SEL_A::MAIN_CLOCK_A
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X1`"]
+    #[doc = "Checks if the value of the field is `PLL0`"]
     #[inline(always)]
-    pub fn is_enum_0x1(&self) -> bool {
-        *self == SEL_A::ENUM_0X1
+    pub fn is_pll0(&self) -> bool {
+        *self == SEL_A::PLL0
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X2`"]
+    #[doc = "Checks if the value of the field is `PLL1`"]
     #[inline(always)]
-    pub fn is_enum_0x2(&self) -> bool {
-        *self == SEL_A::ENUM_0X2
+    pub fn is_pll1(&self) -> bool {
+        *self == SEL_A::PLL1
     }
-    #[doc = "Checks if the value of the field is `ENUM_0X3`"]
+    #[doc = "Checks if the value of the field is `OSC_32KHZ`"]
     #[inline(always)]
-    pub fn is_enum_0x3(&self) -> bool {
-        *self == SEL_A::ENUM_0X3
+    pub fn is_osc_32khz(&self) -> bool {
+        *self == SEL_A::OSC_32KHZ
     }
 }
 #[doc = "Field `SEL` writer - Main clock source select."]
@@ -93,23 +93,23 @@ pub type SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MAINCLKSELB_SPEC, 
 impl<'a, const O: u8> SEL_W<'a, O> {
     #[doc = "Main Clock A."]
     #[inline(always)]
-    pub fn enum_0x0(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X0)
+    pub fn main_clock_a(self) -> &'a mut W {
+        self.variant(SEL_A::MAIN_CLOCK_A)
     }
     #[doc = "PLL0 clock."]
     #[inline(always)]
-    pub fn enum_0x1(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X1)
+    pub fn pll0(self) -> &'a mut W {
+        self.variant(SEL_A::PLL0)
     }
     #[doc = "PLL1 clock."]
     #[inline(always)]
-    pub fn enum_0x2(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X2)
+    pub fn pll1(self) -> &'a mut W {
+        self.variant(SEL_A::PLL1)
     }
     #[doc = "Oscillator 32 kHz clock."]
     #[inline(always)]
-    pub fn enum_0x3(self) -> &'a mut W {
-        self.variant(SEL_A::ENUM_0X3)
+    pub fn osc_32khz(self) -> &'a mut W {
+        self.variant(SEL_A::OSC_32KHZ)
     }
 }
 impl R {
@@ -132,7 +132,7 @@ impl W {
         self
     }
 }
-#[doc = "Main clock source select\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mainclkselb](index.html) module"]
+#[doc = "Main clock source select.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mainclkselb](index.html) module"]
 pub struct MAINCLKSELB_SPEC;
 impl crate::RegisterSpec for MAINCLKSELB_SPEC {
     type Ux = u32;

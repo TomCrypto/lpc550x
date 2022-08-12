@@ -34,20 +34,20 @@ impl From<crate::W<INSTRUCTION_TIMER_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `INSTIM` reader - INSTRUCTION TIMER 32-bit value"]
+#[doc = "Field `INSTIM` reader - INSTRUCTION TIMER 32-bit value."]
 pub type INSTIM_R = crate::FieldReader<u32, u32>;
-#[doc = "Field `INSTIM` writer - INSTRUCTION TIMER 32-bit value"]
+#[doc = "Field `INSTIM` writer - INSTRUCTION TIMER 32-bit value."]
 pub type INSTIM_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, INSTRUCTION_TIMER_SPEC, u32, u32, 32, O>;
 impl R {
-    #[doc = "Bits 0:31 - INSTRUCTION TIMER 32-bit value"]
+    #[doc = "Bits 0:31 - INSTRUCTION TIMER 32-bit value."]
     #[inline(always)]
     pub fn instim(&self) -> INSTIM_R {
         INSTIM_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - INSTRUCTION TIMER 32-bit value"]
+    #[doc = "Bits 0:31 - INSTRUCTION TIMER 32-bit value."]
     #[inline(always)]
     pub fn instim(&mut self) -> INSTIM_W<0> {
         INSTIM_W::new(self)
@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "The INSTRUCTION TIMER itself\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [instruction_timer](index.html) module"]
+#[doc = "The INSTRUCTION TIMER itself.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [instruction_timer](index.html) module"]
 pub struct INSTRUCTION_TIMER_SPEC;
 impl crate::RegisterSpec for INSTRUCTION_TIMER_SPEC {
     type Ux = u32;

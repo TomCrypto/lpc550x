@@ -34,9 +34,9 @@ impl From<crate::W<TEMP_SENS_SLOPE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `VALID` reader - no description available"]
+#[doc = "Field `VALID` reader - no description available."]
 pub type VALID_R = crate::BitReader<bool>;
-#[doc = "Field `VALID` writer - no description available"]
+#[doc = "Field `VALID` writer - no description available."]
 pub type VALID_W<'a, const O: u8> = crate::BitWriter<'a, u32, TEMP_SENS_SLOPE_SPEC, bool, O>;
 #[doc = "Field `SLOPE_x1024` reader - SLOPE_x1024\\[30:0\\]"]
 pub type SLOPE_X1024_R = crate::FieldReader<u32, u32>;
@@ -44,7 +44,7 @@ pub type SLOPE_X1024_R = crate::FieldReader<u32, u32>;
 pub type SLOPE_X1024_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, TEMP_SENS_SLOPE_SPEC, u32, u32, 31, O>;
 impl R {
-    #[doc = "Bit 0 - no description available"]
+    #[doc = "Bit 0 - no description available."]
     #[inline(always)]
     pub fn valid(&self) -> VALID_R {
         VALID_R::new((self.bits & 1) != 0)
@@ -56,7 +56,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - no description available"]
+    #[doc = "Bit 0 - no description available."]
     #[inline(always)]
     pub fn valid(&mut self) -> VALID_W<0> {
         VALID_W::new(self)
@@ -73,7 +73,7 @@ impl W {
         self
     }
 }
-#[doc = "no description available\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [temp_sens_slope](index.html) module"]
+#[doc = "no description available.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [temp_sens_slope](index.html) module"]
 pub struct TEMP_SENS_SLOPE_SPEC;
 impl crate::RegisterSpec for TEMP_SENS_SLOPE_SPEC {
     type Ux = u32;

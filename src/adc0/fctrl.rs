@@ -34,26 +34,26 @@ impl From<crate::W<FCTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FCOUNT` reader - Result FIFO counter"]
+#[doc = "Field `FCOUNT` reader - Result FIFO counter."]
 pub type FCOUNT_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `FWMARK` reader - Watermark level selection"]
+#[doc = "Field `FWMARK` reader - Watermark level selection."]
 pub type FWMARK_R = crate::FieldReader<u8, u8>;
-#[doc = "Field `FWMARK` writer - Watermark level selection"]
+#[doc = "Field `FWMARK` writer - Watermark level selection."]
 pub type FWMARK_W<'a, const O: u8> = crate::FieldWriter<'a, u32, FCTRL_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 0:4 - Result FIFO counter"]
+    #[doc = "Bits 0:4 - Result FIFO counter."]
     #[inline(always)]
     pub fn fcount(&self) -> FCOUNT_R {
         FCOUNT_R::new((self.bits & 0x1f) as u8)
     }
-    #[doc = "Bits 16:19 - Watermark level selection"]
+    #[doc = "Bits 16:19 - Watermark level selection."]
     #[inline(always)]
     pub fn fwmark(&self) -> FWMARK_R {
         FWMARK_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 16:19 - Watermark level selection"]
+    #[doc = "Bits 16:19 - Watermark level selection."]
     #[inline(always)]
     pub fn fwmark(&mut self) -> FWMARK_W<16> {
         FWMARK_W::new(self)
@@ -65,7 +65,7 @@ impl W {
         self
     }
 }
-#[doc = "FIFO Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [fctrl](index.html) module"]
+#[doc = "FIFO Control Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [fctrl](index.html) module"]
 pub struct FCTRL_SPEC;
 impl crate::RegisterSpec for FCTRL_SPEC {
     type Ux = u32;

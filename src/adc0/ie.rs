@@ -34,9 +34,9 @@ impl From<crate::W<IE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `FWMIE0` reader - FIFO 0 Watermark Interrupt Enable"]
+#[doc = "Field `FWMIE0` reader - FIFO 0 Watermark Interrupt Enable."]
 pub type FWMIE0_R = crate::BitReader<FWMIE0_A>;
-#[doc = "FIFO 0 Watermark Interrupt Enable\n\nValue on reset: 0"]
+#[doc = "FIFO 0 Watermark Interrupt Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FWMIE0_A {
     #[doc = "0: FIFO 0 watermark interrupts are not enabled."]
@@ -70,7 +70,7 @@ impl FWMIE0_R {
         *self == FWMIE0_A::FWMIE0_1
     }
 }
-#[doc = "Field `FWMIE0` writer - FIFO 0 Watermark Interrupt Enable"]
+#[doc = "Field `FWMIE0` writer - FIFO 0 Watermark Interrupt Enable."]
 pub type FWMIE0_W<'a, const O: u8> = crate::BitWriter<'a, u32, IE_SPEC, FWMIE0_A, O>;
 impl<'a, const O: u8> FWMIE0_W<'a, O> {
     #[doc = "FIFO 0 watermark interrupts are not enabled."]
@@ -84,9 +84,9 @@ impl<'a, const O: u8> FWMIE0_W<'a, O> {
         self.variant(FWMIE0_A::FWMIE0_1)
     }
 }
-#[doc = "Field `FOFIE0` reader - Result FIFO 0 Overflow Interrupt Enable"]
+#[doc = "Field `FOFIE0` reader - Result FIFO 0 Overflow Interrupt Enable."]
 pub type FOFIE0_R = crate::BitReader<FOFIE0_A>;
-#[doc = "Result FIFO 0 Overflow Interrupt Enable\n\nValue on reset: 0"]
+#[doc = "Result FIFO 0 Overflow Interrupt Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FOFIE0_A {
     #[doc = "0: FIFO 0 overflow interrupts are not enabled."]
@@ -120,7 +120,7 @@ impl FOFIE0_R {
         *self == FOFIE0_A::FOFIE0_1
     }
 }
-#[doc = "Field `FOFIE0` writer - Result FIFO 0 Overflow Interrupt Enable"]
+#[doc = "Field `FOFIE0` writer - Result FIFO 0 Overflow Interrupt Enable."]
 pub type FOFIE0_W<'a, const O: u8> = crate::BitWriter<'a, u32, IE_SPEC, FOFIE0_A, O>;
 impl<'a, const O: u8> FOFIE0_W<'a, O> {
     #[doc = "FIFO 0 overflow interrupts are not enabled."]
@@ -134,9 +134,9 @@ impl<'a, const O: u8> FOFIE0_W<'a, O> {
         self.variant(FOFIE0_A::FOFIE0_1)
     }
 }
-#[doc = "Field `FWMIE1` reader - FIFO1 Watermark Interrupt Enable"]
+#[doc = "Field `FWMIE1` reader - FIFO1 Watermark Interrupt Enable."]
 pub type FWMIE1_R = crate::BitReader<FWMIE1_A>;
-#[doc = "FIFO1 Watermark Interrupt Enable\n\nValue on reset: 0"]
+#[doc = "FIFO1 Watermark Interrupt Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FWMIE1_A {
     #[doc = "0: FIFO1 watermark interrupts are not enabled."]
@@ -170,7 +170,7 @@ impl FWMIE1_R {
         *self == FWMIE1_A::FWMIE1_1
     }
 }
-#[doc = "Field `FWMIE1` writer - FIFO1 Watermark Interrupt Enable"]
+#[doc = "Field `FWMIE1` writer - FIFO1 Watermark Interrupt Enable."]
 pub type FWMIE1_W<'a, const O: u8> = crate::BitWriter<'a, u32, IE_SPEC, FWMIE1_A, O>;
 impl<'a, const O: u8> FWMIE1_W<'a, O> {
     #[doc = "FIFO1 watermark interrupts are not enabled."]
@@ -184,9 +184,9 @@ impl<'a, const O: u8> FWMIE1_W<'a, O> {
         self.variant(FWMIE1_A::FWMIE1_1)
     }
 }
-#[doc = "Field `FOFIE1` reader - Result FIFO1 Overflow Interrupt Enable"]
+#[doc = "Field `FOFIE1` reader - Result FIFO1 Overflow Interrupt Enable."]
 pub type FOFIE1_R = crate::BitReader<FOFIE1_A>;
-#[doc = "Result FIFO1 Overflow Interrupt Enable\n\nValue on reset: 0"]
+#[doc = "Result FIFO1 Overflow Interrupt Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FOFIE1_A {
     #[doc = "0: No result FIFO1 overflow has occurred since the last time the flag was cleared."]
@@ -220,7 +220,7 @@ impl FOFIE1_R {
         *self == FOFIE1_A::FOFIE1_1
     }
 }
-#[doc = "Field `FOFIE1` writer - Result FIFO1 Overflow Interrupt Enable"]
+#[doc = "Field `FOFIE1` writer - Result FIFO1 Overflow Interrupt Enable."]
 pub type FOFIE1_W<'a, const O: u8> = crate::BitWriter<'a, u32, IE_SPEC, FOFIE1_A, O>;
 impl<'a, const O: u8> FOFIE1_W<'a, O> {
     #[doc = "No result FIFO1 overflow has occurred since the last time the flag was cleared."]
@@ -234,9 +234,9 @@ impl<'a, const O: u8> FOFIE1_W<'a, O> {
         self.variant(FOFIE1_A::FOFIE1_1)
     }
 }
-#[doc = "Field `TEXC_IE` reader - Trigger Exception Interrupt Enable"]
+#[doc = "Field `TEXC_IE` reader - Trigger Exception Interrupt Enable."]
 pub type TEXC_IE_R = crate::BitReader<TEXC_IE_A>;
-#[doc = "Trigger Exception Interrupt Enable\n\nValue on reset: 0"]
+#[doc = "Trigger Exception Interrupt Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TEXC_IE_A {
     #[doc = "0: Trigger exception interrupts are disabled."]
@@ -270,7 +270,7 @@ impl TEXC_IE_R {
         *self == TEXC_IE_A::TEXC_IE_1
     }
 }
-#[doc = "Field `TEXC_IE` writer - Trigger Exception Interrupt Enable"]
+#[doc = "Field `TEXC_IE` writer - Trigger Exception Interrupt Enable."]
 pub type TEXC_IE_W<'a, const O: u8> = crate::BitWriter<'a, u32, IE_SPEC, TEXC_IE_A, O>;
 impl<'a, const O: u8> TEXC_IE_W<'a, O> {
     #[doc = "Trigger exception interrupts are disabled."]
@@ -284,9 +284,9 @@ impl<'a, const O: u8> TEXC_IE_W<'a, O> {
         self.variant(TEXC_IE_A::TEXC_IE_1)
     }
 }
-#[doc = "Field `TCOMP_IE` reader - Trigger Completion Interrupt Enable"]
+#[doc = "Field `TCOMP_IE` reader - Trigger Completion Interrupt Enable."]
 pub type TCOMP_IE_R = crate::FieldReader<u16, TCOMP_IE_A>;
-#[doc = "Trigger Completion Interrupt Enable\n\nValue on reset: 0"]
+#[doc = "Trigger Completion Interrupt Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u16)]
 pub enum TCOMP_IE_A {
@@ -394,7 +394,7 @@ impl TCOMP_IE_R {
         *self == TCOMP_IE_A::TCOMP_IE_65535
     }
 }
-#[doc = "Field `TCOMP_IE` writer - Trigger Completion Interrupt Enable"]
+#[doc = "Field `TCOMP_IE` writer - Trigger Completion Interrupt Enable."]
 pub type TCOMP_IE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, IE_SPEC, u16, TCOMP_IE_A, 16, O>;
 impl<'a, const O: u8> TCOMP_IE_W<'a, O> {
     #[doc = "Trigger completion interrupts are disabled."]
@@ -454,64 +454,64 @@ impl<'a, const O: u8> TCOMP_IE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - FIFO 0 Watermark Interrupt Enable"]
+    #[doc = "Bit 0 - FIFO 0 Watermark Interrupt Enable."]
     #[inline(always)]
     pub fn fwmie0(&self) -> FWMIE0_R {
         FWMIE0_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - Result FIFO 0 Overflow Interrupt Enable"]
+    #[doc = "Bit 1 - Result FIFO 0 Overflow Interrupt Enable."]
     #[inline(always)]
     pub fn fofie0(&self) -> FOFIE0_R {
         FOFIE0_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - FIFO1 Watermark Interrupt Enable"]
+    #[doc = "Bit 2 - FIFO1 Watermark Interrupt Enable."]
     #[inline(always)]
     pub fn fwmie1(&self) -> FWMIE1_R {
         FWMIE1_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bit 3 - Result FIFO1 Overflow Interrupt Enable"]
+    #[doc = "Bit 3 - Result FIFO1 Overflow Interrupt Enable."]
     #[inline(always)]
     pub fn fofie1(&self) -> FOFIE1_R {
         FOFIE1_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 8 - Trigger Exception Interrupt Enable"]
+    #[doc = "Bit 8 - Trigger Exception Interrupt Enable."]
     #[inline(always)]
     pub fn texc_ie(&self) -> TEXC_IE_R {
         TEXC_IE_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bits 16:31 - Trigger Completion Interrupt Enable"]
+    #[doc = "Bits 16:31 - Trigger Completion Interrupt Enable."]
     #[inline(always)]
     pub fn tcomp_ie(&self) -> TCOMP_IE_R {
         TCOMP_IE_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
 impl W {
-    #[doc = "Bit 0 - FIFO 0 Watermark Interrupt Enable"]
+    #[doc = "Bit 0 - FIFO 0 Watermark Interrupt Enable."]
     #[inline(always)]
     pub fn fwmie0(&mut self) -> FWMIE0_W<0> {
         FWMIE0_W::new(self)
     }
-    #[doc = "Bit 1 - Result FIFO 0 Overflow Interrupt Enable"]
+    #[doc = "Bit 1 - Result FIFO 0 Overflow Interrupt Enable."]
     #[inline(always)]
     pub fn fofie0(&mut self) -> FOFIE0_W<1> {
         FOFIE0_W::new(self)
     }
-    #[doc = "Bit 2 - FIFO1 Watermark Interrupt Enable"]
+    #[doc = "Bit 2 - FIFO1 Watermark Interrupt Enable."]
     #[inline(always)]
     pub fn fwmie1(&mut self) -> FWMIE1_W<2> {
         FWMIE1_W::new(self)
     }
-    #[doc = "Bit 3 - Result FIFO1 Overflow Interrupt Enable"]
+    #[doc = "Bit 3 - Result FIFO1 Overflow Interrupt Enable."]
     #[inline(always)]
     pub fn fofie1(&mut self) -> FOFIE1_W<3> {
         FOFIE1_W::new(self)
     }
-    #[doc = "Bit 8 - Trigger Exception Interrupt Enable"]
+    #[doc = "Bit 8 - Trigger Exception Interrupt Enable."]
     #[inline(always)]
     pub fn texc_ie(&mut self) -> TEXC_IE_W<8> {
         TEXC_IE_W::new(self)
     }
-    #[doc = "Bits 16:31 - Trigger Completion Interrupt Enable"]
+    #[doc = "Bits 16:31 - Trigger Completion Interrupt Enable."]
     #[inline(always)]
     pub fn tcomp_ie(&mut self) -> TCOMP_IE_W<16> {
         TCOMP_IE_W::new(self)
@@ -523,7 +523,7 @@ impl W {
         self
     }
 }
-#[doc = "Interrupt Enable Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ie](index.html) module"]
+#[doc = "Interrupt Enable Register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ie](index.html) module"]
 pub struct IE_SPEC;
 impl crate::RegisterSpec for IE_SPEC {
     type Ux = u32;

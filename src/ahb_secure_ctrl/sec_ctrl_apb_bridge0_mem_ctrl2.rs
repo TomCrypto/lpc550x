@@ -34,9 +34,9 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE0_MEM_CTRL2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ANACTRL_RULE` reader - Analog Modules controller"]
+#[doc = "Field `ANACTRL_RULE` reader - Analog Modules controller."]
 pub type ANACTRL_RULE_R = crate::FieldReader<u8, ANACTRL_RULE_A>;
-#[doc = "Analog Modules controller\n\nValue on reset: 0"]
+#[doc = "Analog Modules controller.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum ANACTRL_RULE_A {
@@ -88,7 +88,7 @@ impl ANACTRL_RULE_R {
         *self == ANACTRL_RULE_A::ENUM_S_P
     }
 }
-#[doc = "Field `ANACTRL_RULE` writer - Analog Modules controller"]
+#[doc = "Field `ANACTRL_RULE` writer - Analog Modules controller."]
 pub type ANACTRL_RULE_W<'a, const O: u8> =
     crate::FieldWriterSafe<'a, u32, SEC_CTRL_APB_BRIDGE0_MEM_CTRL2_SPEC, u8, ANACTRL_RULE_A, 2, O>;
 impl<'a, const O: u8> ANACTRL_RULE_W<'a, O> {
@@ -114,14 +114,14 @@ impl<'a, const O: u8> ANACTRL_RULE_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bits 12:13 - Analog Modules controller"]
+    #[doc = "Bits 12:13 - Analog Modules controller."]
     #[inline(always)]
     pub fn anactrl_rule(&self) -> ANACTRL_RULE_R {
         ANACTRL_RULE_R::new(((self.bits >> 12) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 12:13 - Analog Modules controller"]
+    #[doc = "Bits 12:13 - Analog Modules controller."]
     #[inline(always)]
     pub fn anactrl_rule(&mut self) -> ANACTRL_RULE_W<12> {
         ANACTRL_RULE_W::new(self)

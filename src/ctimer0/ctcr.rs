@@ -118,13 +118,13 @@ pub type CINSEL_R = crate::FieldReader<u8, CINSEL_A>;
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CINSEL_A {
-    #[doc = "0: Channel 0. CAPn.0 for CTIMERn"]
+    #[doc = "0: Channel 0. CAPn.0 for CTIMERn."]
     CHANNEL_0 = 0,
-    #[doc = "1: Channel 1. CAPn.1 for CTIMERn"]
+    #[doc = "1: Channel 1. CAPn.1 for CTIMERn."]
     CHANNEL_1 = 1,
-    #[doc = "2: Channel 2. CAPn.2 for CTIMERn"]
+    #[doc = "2: Channel 2. CAPn.2 for CTIMERn."]
     CHANNEL_2 = 2,
-    #[doc = "3: Channel 3. CAPn.3 for CTIMERn"]
+    #[doc = "3: Channel 3. CAPn.3 for CTIMERn."]
     CHANNEL_3 = 3,
 }
 impl From<CINSEL_A> for u8 {
@@ -169,22 +169,22 @@ impl CINSEL_R {
 #[doc = "Field `CINSEL` writer - Count Input Select When bits 1:0 in this register are not 00, these bits select which CAP pin is sampled for clocking. Note: If Counter mode is selected for a particular CAPn input in the CTCR, the 3 bits for that input in the Capture Control Register (CCR) must be programmed as 000. However, capture and/or interrupt can be selected for the other 3 CAPn inputs in the same timer."]
 pub type CINSEL_W<'a, const O: u8> = crate::FieldWriterSafe<'a, u32, CTCR_SPEC, u8, CINSEL_A, 2, O>;
 impl<'a, const O: u8> CINSEL_W<'a, O> {
-    #[doc = "Channel 0. CAPn.0 for CTIMERn"]
+    #[doc = "Channel 0. CAPn.0 for CTIMERn."]
     #[inline(always)]
     pub fn channel_0(self) -> &'a mut W {
         self.variant(CINSEL_A::CHANNEL_0)
     }
-    #[doc = "Channel 1. CAPn.1 for CTIMERn"]
+    #[doc = "Channel 1. CAPn.1 for CTIMERn."]
     #[inline(always)]
     pub fn channel_1(self) -> &'a mut W {
         self.variant(CINSEL_A::CHANNEL_1)
     }
-    #[doc = "Channel 2. CAPn.2 for CTIMERn"]
+    #[doc = "Channel 2. CAPn.2 for CTIMERn."]
     #[inline(always)]
     pub fn channel_2(self) -> &'a mut W {
         self.variant(CINSEL_A::CHANNEL_2)
     }
-    #[doc = "Channel 3. CAPn.3 for CTIMERn"]
+    #[doc = "Channel 3. CAPn.3 for CTIMERn."]
     #[inline(always)]
     pub fn channel_3(self) -> &'a mut W {
         self.variant(CINSEL_A::CHANNEL_3)

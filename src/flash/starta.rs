@@ -58,7 +58,7 @@ impl W {
         self
     }
 }
-#[doc = "start (or only) address for next flash command\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [starta](index.html) module"]
+#[doc = "start (or only) address for next flash command.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [starta](index.html) module"]
 pub struct STARTA_SPEC;
 impl crate::RegisterSpec for STARTA_SPEC {
     type Ux = u32;

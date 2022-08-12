@@ -34,20 +34,20 @@ impl From<crate::W<CAL_GAR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CAL_GAR_VAL` reader - Calibration General A Side Register Element"]
+#[doc = "Field `CAL_GAR_VAL` reader - Calibration General A Side Register Element."]
 pub type CAL_GAR_VAL_R = crate::FieldReader<u16, u16>;
-#[doc = "Field `CAL_GAR_VAL` writer - Calibration General A Side Register Element"]
+#[doc = "Field `CAL_GAR_VAL` writer - Calibration General A Side Register Element."]
 pub type CAL_GAR_VAL_W<'a, const O: u8> =
     crate::FieldWriter<'a, u32, CAL_GAR_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 0:15 - Calibration General A Side Register Element"]
+    #[doc = "Bits 0:15 - Calibration General A Side Register Element."]
     #[inline(always)]
     pub fn cal_gar_val(&self) -> CAL_GAR_VAL_R {
         CAL_GAR_VAL_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 0:15 - Calibration General A Side Register Element"]
+    #[doc = "Bits 0:15 - Calibration General A Side Register Element."]
     #[inline(always)]
     pub fn cal_gar_val(&mut self) -> CAL_GAR_VAL_W<0> {
         CAL_GAR_VAL_W::new(self)
@@ -59,7 +59,7 @@ impl W {
         self
     }
 }
-#[doc = "Calibration General A-Side Registers\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cal_gar](index.html) module"]
+#[doc = "Calibration General A-Side Registers.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cal_gar](index.html) module"]
 pub struct CAL_GAR_SPEC;
 impl crate::RegisterSpec for CAL_GAR_SPEC {
     type Ux = u32;

@@ -34,9 +34,9 @@ impl From<crate::W<CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SWRESET` reader - Software reset control"]
+#[doc = "Field `SWRESET` reader - Software reset control."]
 pub type SWRESET_R = crate::BitReader<SWRESET_A>;
-#[doc = "Software reset control\n\nValue on reset: 1"]
+#[doc = "Software reset control.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SWRESET_A {
     #[doc = "0: Not in reset. The RTC is not held in reset. This bit must be cleared prior to configuring or initiating any operation of the RTC."]
@@ -70,7 +70,7 @@ impl SWRESET_R {
         *self == SWRESET_A::IN_RESET
     }
 }
-#[doc = "Field `SWRESET` writer - Software reset control"]
+#[doc = "Field `SWRESET` writer - Software reset control."]
 pub type SWRESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, SWRESET_A, O>;
 impl<'a, const O: u8> SWRESET_W<'a, O> {
     #[doc = "Not in reset. The RTC is not held in reset. This bit must be cleared prior to configuring or initiating any operation of the RTC."]
@@ -389,7 +389,7 @@ pub type RTC_OSC_PD_R = crate::BitReader<RTC_OSC_PD_A>;
 #[doc = "RTC oscillator power-down control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum RTC_OSC_PD_A {
-    #[doc = "0: See RTC_OSC_BYPASS"]
+    #[doc = "0: See RTC_OSC_BYPASS."]
     POWER_UP = 0,
     #[doc = "1: RTC oscillator is powered-down."]
     POWERED_DOWN = 1,
@@ -423,7 +423,7 @@ impl RTC_OSC_PD_R {
 #[doc = "Field `RTC_OSC_PD` writer - RTC oscillator power-down control."]
 pub type RTC_OSC_PD_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, RTC_OSC_PD_A, O>;
 impl<'a, const O: u8> RTC_OSC_PD_W<'a, O> {
-    #[doc = "See RTC_OSC_BYPASS"]
+    #[doc = "See RTC_OSC_BYPASS."]
     #[inline(always)]
     pub fn power_up(self) -> &'a mut W {
         self.variant(RTC_OSC_PD_A::POWER_UP)
@@ -537,7 +537,7 @@ impl<'a, const O: u8> RTC_SUBSEC_ENA_W<'a, O> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Software reset control"]
+    #[doc = "Bit 0 - Software reset control."]
     #[inline(always)]
     pub fn swreset(&self) -> SWRESET_R {
         SWRESET_R::new((self.bits & 1) != 0)
@@ -589,7 +589,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - Software reset control"]
+    #[doc = "Bit 0 - Software reset control."]
     #[inline(always)]
     pub fn swreset(&mut self) -> SWRESET_W<0> {
         SWRESET_W::new(self)
@@ -646,7 +646,7 @@ impl W {
         self
     }
 }
-#[doc = "RTC control register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](index.html) module"]
+#[doc = "RTC control register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](index.html) module"]
 pub struct CTRL_SPEC;
 impl crate::RegisterSpec for CTRL_SPEC {
     type Ux = u32;
