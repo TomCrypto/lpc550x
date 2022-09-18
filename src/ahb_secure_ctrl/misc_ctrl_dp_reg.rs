@@ -37,7 +37,7 @@ impl From<crate::W<MISC_CTRL_DP_REG_SPEC>> for W {
 #[doc = "Field `WRITE_LOCK` reader - Write lock."]
 pub type WRITE_LOCK_R = crate::FieldReader<u8, WRITE_LOCK_A>;
 #[doc = "Write lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum WRITE_LOCK_A {
     #[doc = "1: Restricted mode."]
@@ -90,7 +90,7 @@ impl<'a, const O: u8> WRITE_LOCK_W<'a, O> {
 #[doc = "Field `ENABLE_SECURE_CHECKING` reader - Enable secure check for AHB matrix."]
 pub type ENABLE_SECURE_CHECKING_R = crate::FieldReader<u8, ENABLE_SECURE_CHECKING_A>;
 #[doc = "Enable secure check for AHB matrix.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ENABLE_SECURE_CHECKING_A {
     #[doc = "1: Restricted mode."]
@@ -143,7 +143,7 @@ impl<'a, const O: u8> ENABLE_SECURE_CHECKING_W<'a, O> {
 #[doc = "Field `ENABLE_S_PRIV_CHECK` reader - Enable secure privilege check for AHB matrix."]
 pub type ENABLE_S_PRIV_CHECK_R = crate::FieldReader<u8, ENABLE_S_PRIV_CHECK_A>;
 #[doc = "Enable secure privilege check for AHB matrix.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ENABLE_S_PRIV_CHECK_A {
     #[doc = "1: Restricted mode."]
@@ -196,7 +196,7 @@ impl<'a, const O: u8> ENABLE_S_PRIV_CHECK_W<'a, O> {
 #[doc = "Field `ENABLE_NS_PRIV_CHECK` reader - Enable non-secure privilege check for AHB matrix."]
 pub type ENABLE_NS_PRIV_CHECK_R = crate::FieldReader<u8, ENABLE_NS_PRIV_CHECK_A>;
 #[doc = "Enable non-secure privilege check for AHB matrix.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ENABLE_NS_PRIV_CHECK_A {
     #[doc = "1: Restricted mode."]
@@ -249,7 +249,7 @@ impl<'a, const O: u8> ENABLE_NS_PRIV_CHECK_W<'a, O> {
 #[doc = "Field `DISABLE_VIOLATION_ABORT` reader - Disable secure violation abort."]
 pub type DISABLE_VIOLATION_ABORT_R = crate::FieldReader<u8, DISABLE_VIOLATION_ABORT_A>;
 #[doc = "Disable secure violation abort.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DISABLE_VIOLATION_ABORT_A {
     #[doc = "1: Disable abort fort secure checker."]
@@ -303,7 +303,7 @@ impl<'a, const O: u8> DISABLE_VIOLATION_ABORT_W<'a, O> {
 pub type DISABLE_SIMPLE_MASTER_STRICT_MODE_R =
     crate::FieldReader<u8, DISABLE_SIMPLE_MASTER_STRICT_MODE_A>;
 #[doc = "Disable simple master strict mode.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DISABLE_SIMPLE_MASTER_STRICT_MODE_A {
     #[doc = "1: Simple master in tier mode."]
@@ -364,7 +364,7 @@ impl<'a, const O: u8> DISABLE_SIMPLE_MASTER_STRICT_MODE_W<'a, O> {
 pub type DISABLE_SMART_MASTER_STRICT_MODE_R =
     crate::FieldReader<u8, DISABLE_SMART_MASTER_STRICT_MODE_A>;
 #[doc = "Disable smart master strict mode.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DISABLE_SMART_MASTER_STRICT_MODE_A {
     #[doc = "1: Smart master in tier mode."]
@@ -424,7 +424,7 @@ impl<'a, const O: u8> DISABLE_SMART_MASTER_STRICT_MODE_W<'a, O> {
 #[doc = "Field `IDAU_ALL_NS` reader - Disable IDAU."]
 pub type IDAU_ALL_NS_R = crate::FieldReader<u8, IDAU_ALL_NS_A>;
 #[doc = "Disable IDAU.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum IDAU_ALL_NS_A {
     #[doc = "1: IDAU is disable."]

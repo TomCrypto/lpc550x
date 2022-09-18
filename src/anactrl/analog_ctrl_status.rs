@@ -16,7 +16,7 @@ impl From<crate::R<ANALOG_CTRL_STATUS_SPEC>> for R {
 #[doc = "Field `FLASH_PWRDWN` reader - Flash Power Down status."]
 pub type FLASH_PWRDWN_R = crate::BitReader<FLASH_PWRDWN_A>;
 #[doc = "Flash Power Down status.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FLASH_PWRDWN_A {
     #[doc = "0: Flash is not in power down mode."]
     PWRUP = 0,
@@ -52,7 +52,7 @@ impl FLASH_PWRDWN_R {
 #[doc = "Field `FLASH_INIT_ERROR` reader - Flash initialization error status."]
 pub type FLASH_INIT_ERROR_R = crate::BitReader<FLASH_INIT_ERROR_A>;
 #[doc = "Flash initialization error status.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FLASH_INIT_ERROR_A {
     #[doc = "0: No error."]
     NOERROR = 0,

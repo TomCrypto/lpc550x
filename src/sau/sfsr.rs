@@ -37,7 +37,7 @@ impl From<crate::W<SFSR_SPEC>> for W {
 #[doc = "Field `INVEP` reader - Invalid entry point."]
 pub type INVEP_R = crate::BitReader<INVEP_A>;
 #[doc = "Invalid entry point.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INVEP_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> INVEP_W<'a, O> {
 #[doc = "Field `INVIS` reader - Invalid integrity signature flag."]
 pub type INVIS_R = crate::BitReader<INVIS_A>;
 #[doc = "Invalid integrity signature flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INVIS_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> INVIS_W<'a, O> {
 #[doc = "Field `INVER` reader - Invalid exception return flag."]
 pub type INVER_R = crate::BitReader<INVER_A>;
 #[doc = "Invalid exception return flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INVER_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> INVER_W<'a, O> {
 #[doc = "Field `AUVIOL` reader - Attribution unit violation flag."]
 pub type AUVIOL_R = crate::BitReader<AUVIOL_A>;
 #[doc = "Attribution unit violation flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AUVIOL_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> AUVIOL_W<'a, O> {
 #[doc = "Field `INVTRAN` reader - Invalid transition flag."]
 pub type INVTRAN_R = crate::BitReader<INVTRAN_A>;
 #[doc = "Invalid transition flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INVTRAN_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> INVTRAN_W<'a, O> {
 #[doc = "Field `LSPERR` reader - Lazy state preservation error flag."]
 pub type LSPERR_R = crate::BitReader<LSPERR_A>;
 #[doc = "Lazy state preservation error flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LSPERR_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> LSPERR_W<'a, O> {
 #[doc = "Field `SFARVALID` reader - Secure fault address valid."]
 pub type SFARVALID_R = crate::BitReader<SFARVALID_A>;
 #[doc = "Secure fault address valid.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SFARVALID_A {
     #[doc = "0: SFAR content not valid."]
     NOT_VALID = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> SFARVALID_W<'a, O> {
 #[doc = "Field `LSERR` reader - Lazy state error flag."]
 pub type LSERR_R = crate::BitReader<LSERR_A>;
 #[doc = "Lazy state error flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LSERR_A {
     #[doc = "0: Error has not occurred."]
     NO_ERROR = 0,

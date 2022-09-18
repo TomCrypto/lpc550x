@@ -45,7 +45,7 @@ pub type NOB_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MODCFG_SPEC, u8, u
 #[doc = "Field `MULTITASK` reader - Selects the operating mode for the INUSE flags and the IDLE_CH register."]
 pub type MULTITASK_R = crate::BitReader<MULTITASK_A>;
 #[doc = "Selects the operating mode for the INUSE flags and the IDLE_CH register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MULTITASK_A {
     #[doc = "0: Hardware status mode. In this mode, the INUSE(n) flags for all channels are reset."]
     HARDWARE_STATUS_MODE = 0,

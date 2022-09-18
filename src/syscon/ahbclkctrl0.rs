@@ -37,7 +37,7 @@ impl From<crate::W<AHBCLKCTRL0_SPEC>> for W {
 #[doc = "Field `ROM` reader - Enables the clock for the ROM."]
 pub type ROM_R = crate::BitReader<ROM_A>;
 #[doc = "Enables the clock for the ROM.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ROM_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ROM_W<'a, O> {
 #[doc = "Field `SRAM_CTRL1` reader - Enables the clock for the SRAM Controller 1."]
 pub type SRAM_CTRL1_R = crate::BitReader<SRAM_CTRL1_A>;
 #[doc = "Enables the clock for the SRAM Controller 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SRAM_CTRL1_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -138,7 +138,7 @@ impl<'a, const O: u8> SRAM_CTRL1_W<'a, O> {
 #[doc = "Field `SRAM_CTRL2` reader - Enables the clock for the SRAM Controller 2."]
 pub type SRAM_CTRL2_R = crate::BitReader<SRAM_CTRL2_A>;
 #[doc = "Enables the clock for the SRAM Controller 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SRAM_CTRL2_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -189,7 +189,7 @@ impl<'a, const O: u8> SRAM_CTRL2_W<'a, O> {
 #[doc = "Field `FLASH` reader - Enables the clock for the Flash controller."]
 pub type FLASH_R = crate::BitReader<FLASH_A>;
 #[doc = "Enables the clock for the Flash controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FLASH_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -239,7 +239,7 @@ impl<'a, const O: u8> FLASH_W<'a, O> {
 #[doc = "Field `FMC` reader - Enables the clock for the FMC controller."]
 pub type FMC_R = crate::BitReader<FMC_A>;
 #[doc = "Enables the clock for the FMC controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FMC_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -289,7 +289,7 @@ impl<'a, const O: u8> FMC_W<'a, O> {
 #[doc = "Field `MUX` reader - Enables the clock for the Input Mux."]
 pub type MUX_R = crate::BitReader<MUX_A>;
 #[doc = "Enables the clock for the Input Mux.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MUX_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -339,7 +339,7 @@ impl<'a, const O: u8> MUX_W<'a, O> {
 #[doc = "Field `IOCON` reader - Enables the clock for the I/O controller."]
 pub type IOCON_R = crate::BitReader<IOCON_A>;
 #[doc = "Enables the clock for the I/O controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum IOCON_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -389,7 +389,7 @@ impl<'a, const O: u8> IOCON_W<'a, O> {
 #[doc = "Field `GPIO0` reader - Enables the clock for the GPIO0."]
 pub type GPIO0_R = crate::BitReader<GPIO0_A>;
 #[doc = "Enables the clock for the GPIO0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GPIO0_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -439,7 +439,7 @@ impl<'a, const O: u8> GPIO0_W<'a, O> {
 #[doc = "Field `GPIO1` reader - Enables the clock for the GPIO1."]
 pub type GPIO1_R = crate::BitReader<GPIO1_A>;
 #[doc = "Enables the clock for the GPIO1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GPIO1_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -489,7 +489,7 @@ impl<'a, const O: u8> GPIO1_W<'a, O> {
 #[doc = "Field `PINT` reader - Enables the clock for the Pin interrupt (PINT)."]
 pub type PINT_R = crate::BitReader<PINT_A>;
 #[doc = "Enables the clock for the Pin interrupt (PINT).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PINT_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -539,7 +539,7 @@ impl<'a, const O: u8> PINT_W<'a, O> {
 #[doc = "Field `GINT` reader - Enables the clock for the Group interrupt (GINT)."]
 pub type GINT_R = crate::BitReader<GINT_A>;
 #[doc = "Enables the clock for the Group interrupt (GINT).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GINT_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -589,7 +589,7 @@ impl<'a, const O: u8> GINT_W<'a, O> {
 #[doc = "Field `DMA0` reader - Enables the clock for the DMA0."]
 pub type DMA0_R = crate::BitReader<DMA0_A>;
 #[doc = "Enables the clock for the DMA0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DMA0_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -639,7 +639,7 @@ impl<'a, const O: u8> DMA0_W<'a, O> {
 #[doc = "Field `CRCGEN` reader - Enables the clock for the CRCGEN."]
 pub type CRCGEN_R = crate::BitReader<CRCGEN_A>;
 #[doc = "Enables the clock for the CRCGEN.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CRCGEN_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -689,7 +689,7 @@ impl<'a, const O: u8> CRCGEN_W<'a, O> {
 #[doc = "Field `WWDT` reader - Enables the clock for the Watchdog Timer."]
 pub type WWDT_R = crate::BitReader<WWDT_A>;
 #[doc = "Enables the clock for the Watchdog Timer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WWDT_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -739,7 +739,7 @@ impl<'a, const O: u8> WWDT_W<'a, O> {
 #[doc = "Field `RTC` reader - Enables the clock for the Real Time Clock (RTC)."]
 pub type RTC_R = crate::BitReader<RTC_A>;
 #[doc = "Enables the clock for the Real Time Clock (RTC).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -789,7 +789,7 @@ impl<'a, const O: u8> RTC_W<'a, O> {
 #[doc = "Field `MAILBOX` reader - Enables the clock for the Inter CPU communication Mailbox."]
 pub type MAILBOX_R = crate::BitReader<MAILBOX_A>;
 #[doc = "Enables the clock for the Inter CPU communication Mailbox.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MAILBOX_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -839,7 +839,7 @@ impl<'a, const O: u8> MAILBOX_W<'a, O> {
 #[doc = "Field `ADC` reader - Enables the clock for the ADC."]
 pub type ADC_R = crate::BitReader<ADC_A>;
 #[doc = "Enables the clock for the ADC.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ADC_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,

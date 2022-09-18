@@ -37,7 +37,7 @@ impl From<crate::W<MOD_SPEC>> for W {
 #[doc = "Field `WDEN` reader - Watchdog enable bit. Once this bit is set to one and a watchdog feed is performed, the watchdog timer will run permanently."]
 pub type WDEN_R = crate::BitReader<WDEN_A>;
 #[doc = "Watchdog enable bit. Once this bit is set to one and a watchdog feed is performed, the watchdog timer will run permanently.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WDEN_A {
     #[doc = "0: Stop. The watchdog timer is stopped."]
     STOP = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> WDEN_W<'a, O> {
 #[doc = "Field `WDRESET` reader - Watchdog reset enable bit. Once this bit has been written with a 1 it cannot be re-written with a 0."]
 pub type WDRESET_R = crate::BitReader<WDRESET_A>;
 #[doc = "Watchdog reset enable bit. Once this bit has been written with a 1 it cannot be re-written with a 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WDRESET_A {
     #[doc = "0: Interrupt. A watchdog time-out will not cause a chip reset."]
     INTERRUPT = 0,
@@ -145,7 +145,7 @@ pub type WDINT_W<'a, const O: u8> = crate::BitWriter<'a, u32, MOD_SPEC, bool, O>
 #[doc = "Field `WDPROTECT` reader - Watchdog update mode. This bit can be set once by software and is only cleared by a reset."]
 pub type WDPROTECT_R = crate::BitReader<WDPROTECT_A>;
 #[doc = "Watchdog update mode. This bit can be set once by software and is only cleared by a reset.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WDPROTECT_A {
     #[doc = "0: Flexible. The watchdog time-out value (TC) can be changed at any time."]
     FLEXIBLE = 0,

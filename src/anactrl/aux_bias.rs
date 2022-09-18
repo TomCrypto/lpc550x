@@ -37,7 +37,7 @@ impl From<crate::W<AUX_BIAS_SPEC>> for W {
 #[doc = "Field `VREF1VENABLE` reader - Control output of 1V reference voltage."]
 pub type VREF1VENABLE_R = crate::BitReader<VREF1VENABLE_A>;
 #[doc = "Control output of 1V reference voltage.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VREF1VENABLE_A {
     #[doc = "0: Output of 1V reference voltage buffer is bypassed."]
     DISABLE = 0,

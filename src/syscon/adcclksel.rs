@@ -37,7 +37,7 @@ impl From<crate::W<ADCCLKSEL_SPEC>> for W {
 #[doc = "Field `SEL` reader - ADC clock source select."]
 pub type SEL_R = crate::FieldReader<u8, SEL_A>;
 #[doc = "ADC clock source select.\n\nValue on reset: 7"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEL_A {
     #[doc = "0: Main clock."]

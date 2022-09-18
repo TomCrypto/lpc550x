@@ -37,7 +37,7 @@ impl From<crate::W<MEMORYREMAP_SPEC>> for W {
 #[doc = "Field `MAP` reader - Select the location of the vector table :."]
 pub type MAP_R = crate::FieldReader<u8, MAP_A>;
 #[doc = "Select the location of the vector table :.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MAP_A {
     #[doc = "0: Vector Table in ROM."]

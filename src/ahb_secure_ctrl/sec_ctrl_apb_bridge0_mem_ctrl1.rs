@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE0_MEM_CTRL1_SPEC>> for W {
 #[doc = "Field `CTIMER0_RULE` reader - Standard counter/Timer 0."]
 pub type CTIMER0_RULE_R = crate::FieldReader<u8, CTIMER0_RULE_A>;
 #[doc = "Standard counter/Timer 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CTIMER0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> CTIMER0_RULE_W<'a, O> {
 #[doc = "Field `CTIMER1_RULE` reader - Standard counter/Timer 1."]
 pub type CTIMER1_RULE_R = crate::FieldReader<u8, CTIMER1_RULE_A>;
 #[doc = "Standard counter/Timer 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CTIMER1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> CTIMER1_RULE_W<'a, O> {
 #[doc = "Field `WWDT_RULE` reader - Windiwed wtachdog Timer."]
 pub type WWDT_RULE_R = crate::FieldReader<u8, WWDT_RULE_A>;
 #[doc = "Windiwed wtachdog Timer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum WWDT_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> WWDT_RULE_W<'a, O> {
 #[doc = "Field `MRT_RULE` reader - Multi-rate Timer."]
 pub type MRT_RULE_R = crate::FieldReader<u8, MRT_RULE_A>;
 #[doc = "Multi-rate Timer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MRT_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -353,7 +353,7 @@ impl<'a, const O: u8> MRT_RULE_W<'a, O> {
 #[doc = "Field `UTICK_RULE` reader - Micro-Timer."]
 pub type UTICK_RULE_R = crate::FieldReader<u8, UTICK_RULE_A>;
 #[doc = "Micro-Timer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum UTICK_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

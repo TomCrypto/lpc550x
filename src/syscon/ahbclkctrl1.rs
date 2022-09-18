@@ -37,7 +37,7 @@ impl From<crate::W<AHBCLKCTRL1_SPEC>> for W {
 #[doc = "Field `MRT` reader - Enables the clock for the MRT."]
 pub type MRT_R = crate::BitReader<MRT_A>;
 #[doc = "Enables the clock for the MRT.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MRT_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> MRT_W<'a, O> {
 #[doc = "Field `OSTIMER` reader - Enables the clock for the OS Event Timer."]
 pub type OSTIMER_R = crate::BitReader<OSTIMER_A>;
 #[doc = "Enables the clock for the OS Event Timer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OSTIMER_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> OSTIMER_W<'a, O> {
 #[doc = "Field `SCT` reader - Enables the clock for the SCT."]
 pub type SCT_R = crate::BitReader<SCT_A>;
 #[doc = "Enables the clock for the SCT.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SCT_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> SCT_W<'a, O> {
 #[doc = "Field `CAN` reader - Enables the clock for the CAN."]
 pub type CAN_R = crate::BitReader<CAN_A>;
 #[doc = "Enables the clock for the CAN.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CAN_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> CAN_W<'a, O> {
 #[doc = "Field `UTICK` reader - Enables the clock for the UTICK."]
 pub type UTICK_R = crate::BitReader<UTICK_A>;
 #[doc = "Enables the clock for the UTICK.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum UTICK_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> UTICK_W<'a, O> {
 #[doc = "Field `FC0` reader - Enables the clock for the FC0."]
 pub type FC0_R = crate::BitReader<FC0_A>;
 #[doc = "Enables the clock for the FC0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC0_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> FC0_W<'a, O> {
 #[doc = "Field `FC1` reader - Enables the clock for the FC1."]
 pub type FC1_R = crate::BitReader<FC1_A>;
 #[doc = "Enables the clock for the FC1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC1_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> FC1_W<'a, O> {
 #[doc = "Field `FC2` reader - Enables the clock for the FC2."]
 pub type FC2_R = crate::BitReader<FC2_A>;
 #[doc = "Enables the clock for the FC2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC2_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -437,7 +437,7 @@ impl<'a, const O: u8> FC2_W<'a, O> {
 #[doc = "Field `FC3` reader - Enables the clock for the FC3."]
 pub type FC3_R = crate::BitReader<FC3_A>;
 #[doc = "Enables the clock for the FC3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC3_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -487,7 +487,7 @@ impl<'a, const O: u8> FC3_W<'a, O> {
 #[doc = "Field `FC4` reader - Enables the clock for the FC4."]
 pub type FC4_R = crate::BitReader<FC4_A>;
 #[doc = "Enables the clock for the FC4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC4_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -537,7 +537,7 @@ impl<'a, const O: u8> FC4_W<'a, O> {
 #[doc = "Field `FC5` reader - Enables the clock for the FC5."]
 pub type FC5_R = crate::BitReader<FC5_A>;
 #[doc = "Enables the clock for the FC5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC5_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -587,7 +587,7 @@ impl<'a, const O: u8> FC5_W<'a, O> {
 #[doc = "Field `FC6` reader - Enables the clock for the FC6."]
 pub type FC6_R = crate::BitReader<FC6_A>;
 #[doc = "Enables the clock for the FC6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC6_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -637,7 +637,7 @@ impl<'a, const O: u8> FC6_W<'a, O> {
 #[doc = "Field `FC7` reader - Enables the clock for the FC7."]
 pub type FC7_R = crate::BitReader<FC7_A>;
 #[doc = "Enables the clock for the FC7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC7_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -687,7 +687,7 @@ impl<'a, const O: u8> FC7_W<'a, O> {
 #[doc = "Field `TIMER2` reader - Enables the clock for the Timer 2."]
 pub type TIMER2_R = crate::BitReader<TIMER2_A>;
 #[doc = "Enables the clock for the Timer 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TIMER2_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -737,7 +737,7 @@ impl<'a, const O: u8> TIMER2_W<'a, O> {
 #[doc = "Field `TIMER0` reader - Enables the clock for the Timer 0."]
 pub type TIMER0_R = crate::BitReader<TIMER0_A>;
 #[doc = "Enables the clock for the Timer 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TIMER0_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,
@@ -787,7 +787,7 @@ impl<'a, const O: u8> TIMER0_W<'a, O> {
 #[doc = "Field `TIMER1` reader - Enables the clock for the Timer 1."]
 pub type TIMER1_R = crate::BitReader<TIMER1_A>;
 #[doc = "Enables the clock for the Timer 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TIMER1_A {
     #[doc = "0: Disable Clock."]
     DISABLE = 0,

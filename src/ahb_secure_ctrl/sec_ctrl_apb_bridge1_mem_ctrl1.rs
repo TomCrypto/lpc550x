@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL1_SPEC>> for W {
 #[doc = "Field `CTIMER2_RULE` reader - Standard counter/Timer 2."]
 pub type CTIMER2_RULE_R = crate::FieldReader<u8, CTIMER2_RULE_A>;
 #[doc = "Standard counter/Timer 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CTIMER2_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> CTIMER2_RULE_W<'a, O> {
 #[doc = "Field `CTIMER3_RULE` reader - Standard counter/Timer 3."]
 pub type CTIMER3_RULE_R = crate::FieldReader<u8, CTIMER3_RULE_A>;
 #[doc = "Standard counter/Timer 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CTIMER3_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> CTIMER3_RULE_W<'a, O> {
 #[doc = "Field `CTIMER4_RULE` reader - Standard counter/Timer 4."]
 pub type CTIMER4_RULE_R = crate::FieldReader<u8, CTIMER4_RULE_A>;
 #[doc = "Standard counter/Timer 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CTIMER4_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> CTIMER4_RULE_W<'a, O> {
 #[doc = "Field `RTC_RULE` reader - Real Time Counter."]
 pub type RTC_RULE_R = crate::FieldReader<u8, RTC_RULE_A>;
 #[doc = "Real Time Counter.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RTC_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -353,7 +353,7 @@ impl<'a, const O: u8> RTC_RULE_W<'a, O> {
 #[doc = "Field `OSEVENT_RULE` reader - OS Event Timer."]
 pub type OSEVENT_RULE_R = crate::FieldReader<u8, OSEVENT_RULE_A>;
 #[doc = "OS Event Timer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum OSEVENT_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

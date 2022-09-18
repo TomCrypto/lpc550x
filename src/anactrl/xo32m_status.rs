@@ -16,7 +16,7 @@ impl From<crate::R<XO32M_STATUS_SPEC>> for R {
 #[doc = "Field `XO_READY` reader - Indicates XO out frequency statibilty."]
 pub type XO_READY_R = crate::BitReader<XO_READY_A>;
 #[doc = "Indicates XO out frequency statibilty.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum XO_READY_A {
     #[doc = "0: XO output frequency is not yet stable."]
     NOT_STABLE = 0,

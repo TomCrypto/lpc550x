@@ -37,7 +37,7 @@ impl From<crate::W<PSELID_SPEC>> for W {
 #[doc = "Field `PERSEL` reader - Peripheral Select. This field is writable by software."]
 pub type PERSEL_R = crate::FieldReader<u8, PERSEL_A>;
 #[doc = "Peripheral Select. This field is writable by software.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PERSEL_A {
     #[doc = "0: No peripheral selected."]
@@ -141,7 +141,7 @@ impl<'a, const O: u8> PERSEL_W<'a, O> {
 #[doc = "Field `LOCK` reader - Lock the peripheral select. This field is writable by software."]
 pub type LOCK_R = crate::BitReader<LOCK_A>;
 #[doc = "Lock the peripheral select. This field is writable by software.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOCK_A {
     #[doc = "0: Peripheral select can be changed by software."]
     UNLOCKED = 0,
@@ -191,7 +191,7 @@ impl<'a, const O: u8> LOCK_W<'a, O> {
 #[doc = "Field `USARTPRESENT` reader - USART present indicator. This field is Read-only."]
 pub type USARTPRESENT_R = crate::BitReader<USARTPRESENT_A>;
 #[doc = "USART present indicator. This field is Read-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum USARTPRESENT_A {
     #[doc = "0: This Flexcomm does not include the USART function."]
     NOT_PRESENT = 0,
@@ -227,7 +227,7 @@ impl USARTPRESENT_R {
 #[doc = "Field `SPIPRESENT` reader - SPI present indicator. This field is Read-only."]
 pub type SPIPRESENT_R = crate::BitReader<SPIPRESENT_A>;
 #[doc = "SPI present indicator. This field is Read-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPIPRESENT_A {
     #[doc = "0: This Flexcomm does not include the SPI function."]
     NOT_PRESENT = 0,
@@ -263,7 +263,7 @@ impl SPIPRESENT_R {
 #[doc = "Field `I2CPRESENT` reader - I2C present indicator. This field is Read-only."]
 pub type I2CPRESENT_R = crate::BitReader<I2CPRESENT_A>;
 #[doc = "I2C present indicator. This field is Read-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum I2CPRESENT_A {
     #[doc = "0: This Flexcomm does not include the I2C function."]
     NOT_PRESENT = 0,
@@ -299,7 +299,7 @@ impl I2CPRESENT_R {
 #[doc = "Field `I2SPRESENT` reader - I 2S present indicator. This field is Read-only."]
 pub type I2SPRESENT_R = crate::BitReader<I2SPRESENT_A>;
 #[doc = "I 2S present indicator. This field is Read-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum I2SPRESENT_A {
     #[doc = "0: This Flexcomm does not include the I2S function."]
     NOT_PRESENT = 0,

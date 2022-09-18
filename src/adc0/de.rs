@@ -37,7 +37,7 @@ impl From<crate::W<DE_SPEC>> for W {
 #[doc = "Field `FWMDE0` reader - FIFO 0 Watermark DMA Enable."]
 pub type FWMDE0_R = crate::BitReader<FWMDE0_A>;
 #[doc = "FIFO 0 Watermark DMA Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FWMDE0_A {
     #[doc = "0: DMA request disabled."]
     FWMDE0_0 = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> FWMDE0_W<'a, O> {
 #[doc = "Field `FWMDE1` reader - FIFO1 Watermark DMA Enable."]
 pub type FWMDE1_R = crate::BitReader<FWMDE1_A>;
 #[doc = "FIFO1 Watermark DMA Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FWMDE1_A {
     #[doc = "0: DMA request disabled."]
     FWMDE1_0 = 0,

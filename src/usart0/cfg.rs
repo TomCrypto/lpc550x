@@ -37,7 +37,7 @@ impl From<crate::W<CFG_SPEC>> for W {
 #[doc = "Field `ENABLE` reader - USART Enable."]
 pub type ENABLE_R = crate::BitReader<ENABLE_A>;
 #[doc = "USART Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLE_A {
     #[doc = "0: Disabled. The USART is disabled and the internal state machine and counters are reset. While Enable = 0, all USART interrupts and DMA transfers are disabled. When Enable is set again, CFG and most other control bits remain unchanged. When re-enabled, the USART will immediately be ready to transmit because the transmitter has been reset and is therefore available."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ENABLE_W<'a, O> {
 #[doc = "Field `DATALEN` reader - Selects the data size for the USART."]
 pub type DATALEN_R = crate::FieldReader<u8, DATALEN_A>;
 #[doc = "Selects the data size for the USART.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DATALEN_A {
     #[doc = "0: 7 bit Data length."]
@@ -152,7 +152,7 @@ impl<'a, const O: u8> DATALEN_W<'a, O> {
 #[doc = "Field `PARITYSEL` reader - Selects what type of parity is used by the USART."]
 pub type PARITYSEL_R = crate::FieldReader<u8, PARITYSEL_A>;
 #[doc = "Selects what type of parity is used by the USART.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PARITYSEL_A {
     #[doc = "0: No parity."]
@@ -218,7 +218,7 @@ impl<'a, const O: u8> PARITYSEL_W<'a, O> {
 #[doc = "Field `STOPLEN` reader - Number of stop bits appended to transmitted data. Only a single stop bit is required for received data."]
 pub type STOPLEN_R = crate::BitReader<STOPLEN_A>;
 #[doc = "Number of stop bits appended to transmitted data. Only a single stop bit is required for received data.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum STOPLEN_A {
     #[doc = "0: 1 stop bit."]
     BIT_1 = 0,
@@ -268,7 +268,7 @@ impl<'a, const O: u8> STOPLEN_W<'a, O> {
 #[doc = "Field `MODE32K` reader - Selects standard or 32 kHz clocking mode."]
 pub type MODE32K_R = crate::BitReader<MODE32K_A>;
 #[doc = "Selects standard or 32 kHz clocking mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MODE32K_A {
     #[doc = "0: Disabled. USART uses standard clocking."]
     DISABLED = 0,
@@ -318,7 +318,7 @@ impl<'a, const O: u8> MODE32K_W<'a, O> {
 #[doc = "Field `LINMODE` reader - LIN break mode enable."]
 pub type LINMODE_R = crate::BitReader<LINMODE_A>;
 #[doc = "LIN break mode enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LINMODE_A {
     #[doc = "0: Disabled. Break detect and generate is configured for normal operation."]
     DISABLED = 0,
@@ -368,7 +368,7 @@ impl<'a, const O: u8> LINMODE_W<'a, O> {
 #[doc = "Field `CTSEN` reader - CTS Enable. Determines whether CTS is used for flow control. CTS can be from the input pin, or from the USART's own RTS if loopback mode is enabled."]
 pub type CTSEN_R = crate::BitReader<CTSEN_A>;
 #[doc = "CTS Enable. Determines whether CTS is used for flow control. CTS can be from the input pin, or from the USART's own RTS if loopback mode is enabled.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CTSEN_A {
     #[doc = "0: No flow control. The transmitter does not receive any automatic flow control signal."]
     DISABLED = 0,
@@ -418,7 +418,7 @@ impl<'a, const O: u8> CTSEN_W<'a, O> {
 #[doc = "Field `SYNCEN` reader - Selects synchronous or asynchronous operation."]
 pub type SYNCEN_R = crate::BitReader<SYNCEN_A>;
 #[doc = "Selects synchronous or asynchronous operation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SYNCEN_A {
     #[doc = "0: Asynchronous mode."]
     ASYNCHRONOUS_MODE = 0,
@@ -468,7 +468,7 @@ impl<'a, const O: u8> SYNCEN_W<'a, O> {
 #[doc = "Field `CLKPOL` reader - Selects the clock polarity and sampling edge of received data in synchronous mode."]
 pub type CLKPOL_R = crate::BitReader<CLKPOL_A>;
 #[doc = "Selects the clock polarity and sampling edge of received data in synchronous mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CLKPOL_A {
     #[doc = "0: Falling edge. Un_RXD is sampled on the falling edge of SCLK."]
     FALLING_EDGE = 0,
@@ -518,7 +518,7 @@ impl<'a, const O: u8> CLKPOL_W<'a, O> {
 #[doc = "Field `SYNCMST` reader - Synchronous mode Master select."]
 pub type SYNCMST_R = crate::BitReader<SYNCMST_A>;
 #[doc = "Synchronous mode Master select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SYNCMST_A {
     #[doc = "0: Slave. When synchronous mode is enabled, the USART is a slave."]
     SLAVE = 0,
@@ -568,7 +568,7 @@ impl<'a, const O: u8> SYNCMST_W<'a, O> {
 #[doc = "Field `LOOP` reader - Selects data loopback mode."]
 pub type LOOP_R = crate::BitReader<LOOP_A>;
 #[doc = "Selects data loopback mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOOP_A {
     #[doc = "0: Normal operation."]
     NORMAL = 0,
@@ -618,7 +618,7 @@ impl<'a, const O: u8> LOOP_W<'a, O> {
 #[doc = "Field `OETA` reader - Output Enable Turnaround time enable for RS-485 operation."]
 pub type OETA_R = crate::BitReader<OETA_A>;
 #[doc = "Output Enable Turnaround time enable for RS-485 operation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OETA_A {
     #[doc = "0: Disabled. If selected by OESEL, the Output Enable signal deasserted at the end of the last stop bit of a transmission."]
     DISABLED = 0,
@@ -668,7 +668,7 @@ impl<'a, const O: u8> OETA_W<'a, O> {
 #[doc = "Field `AUTOADDR` reader - Automatic Address matching enable."]
 pub type AUTOADDR_R = crate::BitReader<AUTOADDR_A>;
 #[doc = "Automatic Address matching enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AUTOADDR_A {
     #[doc = "0: Disabled. When addressing is enabled by ADDRDET, address matching is done by software. This provides the possibility of versatile addressing (e.g. respond to more than one address)."]
     DISABLED = 0,
@@ -718,7 +718,7 @@ impl<'a, const O: u8> AUTOADDR_W<'a, O> {
 #[doc = "Field `OESEL` reader - Output Enable Select."]
 pub type OESEL_R = crate::BitReader<OESEL_A>;
 #[doc = "Output Enable Select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OESEL_A {
     #[doc = "0: Standard. The RTS signal is used as the standard flow control function."]
     STANDARD = 0,
@@ -768,7 +768,7 @@ impl<'a, const O: u8> OESEL_W<'a, O> {
 #[doc = "Field `OEPOL` reader - Output Enable Polarity."]
 pub type OEPOL_R = crate::BitReader<OEPOL_A>;
 #[doc = "Output Enable Polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OEPOL_A {
     #[doc = "0: Low. If selected by OESEL, the output enable is active low."]
     LOW = 0,
@@ -818,7 +818,7 @@ impl<'a, const O: u8> OEPOL_W<'a, O> {
 #[doc = "Field `RXPOL` reader - Receive data polarity."]
 pub type RXPOL_R = crate::BitReader<RXPOL_A>;
 #[doc = "Receive data polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RXPOL_A {
     #[doc = "0: Standard. The RX signal is used as it arrives from the pin. This means that the RX rest value is 1, start bit is 0, data is not inverted, and the stop bit is 1."]
     STANDARD = 0,
@@ -868,7 +868,7 @@ impl<'a, const O: u8> RXPOL_W<'a, O> {
 #[doc = "Field `TXPOL` reader - Transmit data polarity."]
 pub type TXPOL_R = crate::BitReader<TXPOL_A>;
 #[doc = "Transmit data polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXPOL_A {
     #[doc = "0: Standard. The TX signal is sent out without change. This means that the TX rest value is 1, start bit is 0, data is not inverted, and the stop bit is 1."]
     STANDARD = 0,

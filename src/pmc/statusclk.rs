@@ -39,7 +39,7 @@ pub type XTAL32KOK_R = crate::BitReader<bool>;
 #[doc = "Field `XTAL32KOSCFAILURE` reader - XTAL32 KHZ oscillator oscillation failure detection indicator."]
 pub type XTAL32KOSCFAILURE_R = crate::BitReader<XTAL32KOSCFAILURE_A>;
 #[doc = "XTAL32 KHZ oscillator oscillation failure detection indicator.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum XTAL32KOSCFAILURE_A {
     #[doc = "0: No oscillation failure has been detetced since the last time this bit has been cleared."]
     NOFAIL = 0,

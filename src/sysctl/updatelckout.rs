@@ -37,7 +37,7 @@ impl From<crate::W<UPDATELCKOUT_SPEC>> for W {
 #[doc = "Field `UPDATELCKOUT` reader - All Registers."]
 pub type UPDATELCKOUT_R = crate::BitReader<UPDATELCKOUT_A>;
 #[doc = "All Registers.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum UPDATELCKOUT_A {
     #[doc = "0: Normal Mode. Can be written to."]
     NORMAL_MODE = 0,

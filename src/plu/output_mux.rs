@@ -37,7 +37,7 @@ impl From<crate::W<OUTPUT_MUX_SPEC>> for W {
 #[doc = "Field `OUTPUTn` reader - Selects the source to be connected to PLU Output 0."]
 pub type OUTPUTN_R = crate::FieldReader<u8, OUTPUTN_A>;
 #[doc = "Selects the source to be connected to PLU Output 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum OUTPUTN_A {
     #[doc = "0: The PLU output 0."]

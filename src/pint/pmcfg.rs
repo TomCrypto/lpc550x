@@ -37,7 +37,7 @@ impl From<crate::W<PMCFG_SPEC>> for W {
 #[doc = "Field `PROD_ENDPTS0` reader - Determines whether slice 0 is an endpoint."]
 pub type PROD_ENDPTS0_R = crate::BitReader<PROD_ENDPTS0_A>;
 #[doc = "Determines whether slice 0 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS0_A {
     #[doc = "0: No effect. Slice 0 is not an endpoint."]
     NO_EFFECT = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> PROD_ENDPTS0_W<'a, O> {
 #[doc = "Field `PROD_ENDPTS1` reader - Determines whether slice 1 is an endpoint."]
 pub type PROD_ENDPTS1_R = crate::BitReader<PROD_ENDPTS1_A>;
 #[doc = "Determines whether slice 1 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS1_A {
     #[doc = "0: No effect. Slice 1 is not an endpoint."]
     NO_EFFECT = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> PROD_ENDPTS1_W<'a, O> {
 #[doc = "Field `PROD_ENDPTS2` reader - Determines whether slice 2 is an endpoint."]
 pub type PROD_ENDPTS2_R = crate::BitReader<PROD_ENDPTS2_A>;
 #[doc = "Determines whether slice 2 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS2_A {
     #[doc = "0: No effect. Slice 2 is not an endpoint."]
     NO_EFFECT = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> PROD_ENDPTS2_W<'a, O> {
 #[doc = "Field `PROD_ENDPTS3` reader - Determines whether slice 3 is an endpoint."]
 pub type PROD_ENDPTS3_R = crate::BitReader<PROD_ENDPTS3_A>;
 #[doc = "Determines whether slice 3 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS3_A {
     #[doc = "0: No effect. Slice 3 is not an endpoint."]
     NO_EFFECT = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> PROD_ENDPTS3_W<'a, O> {
 #[doc = "Field `PROD_ENDPTS4` reader - Determines whether slice 4 is an endpoint."]
 pub type PROD_ENDPTS4_R = crate::BitReader<PROD_ENDPTS4_A>;
 #[doc = "Determines whether slice 4 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS4_A {
     #[doc = "0: No effect. Slice 4 is not an endpoint."]
     NO_EFFECT = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> PROD_ENDPTS4_W<'a, O> {
 #[doc = "Field `PROD_ENDPTS5` reader - Determines whether slice 5 is an endpoint."]
 pub type PROD_ENDPTS5_R = crate::BitReader<PROD_ENDPTS5_A>;
 #[doc = "Determines whether slice 5 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS5_A {
     #[doc = "0: No effect. Slice 5 is not an endpoint."]
     NO_EFFECT = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> PROD_ENDPTS5_W<'a, O> {
 #[doc = "Field `PROD_ENDPTS6` reader - Determines whether slice 6 is an endpoint."]
 pub type PROD_ENDPTS6_R = crate::BitReader<PROD_ENDPTS6_A>;
 #[doc = "Determines whether slice 6 is an endpoint.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PROD_ENDPTS6_A {
     #[doc = "0: No effect. Slice 6 is not an endpoint."]
     NO_EFFECT = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> PROD_ENDPTS6_W<'a, O> {
 #[doc = "Field `CFG0` reader - Specifies the match contribution condition for bit slice 0."]
 pub type CFG0_R = crate::FieldReader<u8, CFG0_A>;
 #[doc = "Specifies the match contribution condition for bit slice 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG0_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -517,7 +517,7 @@ impl<'a, const O: u8> CFG0_W<'a, O> {
 #[doc = "Field `CFG1` reader - Specifies the match contribution condition for bit slice 1."]
 pub type CFG1_R = crate::FieldReader<u8, CFG1_A>;
 #[doc = "Specifies the match contribution condition for bit slice 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG1_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -647,7 +647,7 @@ impl<'a, const O: u8> CFG1_W<'a, O> {
 #[doc = "Field `CFG2` reader - Specifies the match contribution condition for bit slice 2."]
 pub type CFG2_R = crate::FieldReader<u8, CFG2_A>;
 #[doc = "Specifies the match contribution condition for bit slice 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG2_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -777,7 +777,7 @@ impl<'a, const O: u8> CFG2_W<'a, O> {
 #[doc = "Field `CFG3` reader - Specifies the match contribution condition for bit slice 3."]
 pub type CFG3_R = crate::FieldReader<u8, CFG3_A>;
 #[doc = "Specifies the match contribution condition for bit slice 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG3_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -907,7 +907,7 @@ impl<'a, const O: u8> CFG3_W<'a, O> {
 #[doc = "Field `CFG4` reader - Specifies the match contribution condition for bit slice 4."]
 pub type CFG4_R = crate::FieldReader<u8, CFG4_A>;
 #[doc = "Specifies the match contribution condition for bit slice 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG4_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -1037,7 +1037,7 @@ impl<'a, const O: u8> CFG4_W<'a, O> {
 #[doc = "Field `CFG5` reader - Specifies the match contribution condition for bit slice 5."]
 pub type CFG5_R = crate::FieldReader<u8, CFG5_A>;
 #[doc = "Specifies the match contribution condition for bit slice 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG5_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -1167,7 +1167,7 @@ impl<'a, const O: u8> CFG5_W<'a, O> {
 #[doc = "Field `CFG6` reader - Specifies the match contribution condition for bit slice 6."]
 pub type CFG6_R = crate::FieldReader<u8, CFG6_A>;
 #[doc = "Specifies the match contribution condition for bit slice 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG6_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]
@@ -1297,7 +1297,7 @@ impl<'a, const O: u8> CFG6_W<'a, O> {
 #[doc = "Field `CFG7` reader - Specifies the match contribution condition for bit slice 7."]
 pub type CFG7_R = crate::FieldReader<u8, CFG7_A>;
 #[doc = "Specifies the match contribution condition for bit slice 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CFG7_A {
     #[doc = "0: Constant HIGH. This bit slice always contributes to a product term match."]

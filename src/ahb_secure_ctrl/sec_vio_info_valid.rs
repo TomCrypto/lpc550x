@@ -37,7 +37,7 @@ impl From<crate::W<SEC_VIO_INFO_VALID_SPEC>> for W {
 #[doc = "Field `VIO_INFO_VALID0` reader - violation information valid flag for AHB port 0. Write 1 to clear."]
 pub type VIO_INFO_VALID0_R = crate::BitReader<VIO_INFO_VALID0_A>;
 #[doc = "violation information valid flag for AHB port 0. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID0_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> VIO_INFO_VALID0_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID1` reader - violation information valid flag for AHB port 1. Write 1 to clear."]
 pub type VIO_INFO_VALID1_R = crate::BitReader<VIO_INFO_VALID1_A>;
 #[doc = "violation information valid flag for AHB port 1. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID1_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> VIO_INFO_VALID1_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID2` reader - violation information valid flag for AHB port 2. Write 1 to clear."]
 pub type VIO_INFO_VALID2_R = crate::BitReader<VIO_INFO_VALID2_A>;
 #[doc = "violation information valid flag for AHB port 2. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID2_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> VIO_INFO_VALID2_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID3` reader - violation information valid flag for AHB port 3. Write 1 to clear."]
 pub type VIO_INFO_VALID3_R = crate::BitReader<VIO_INFO_VALID3_A>;
 #[doc = "violation information valid flag for AHB port 3. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID3_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -241,7 +241,7 @@ impl<'a, const O: u8> VIO_INFO_VALID3_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID4` reader - violation information valid flag for AHB port 4. Write 1 to clear."]
 pub type VIO_INFO_VALID4_R = crate::BitReader<VIO_INFO_VALID4_A>;
 #[doc = "violation information valid flag for AHB port 4. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID4_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -292,7 +292,7 @@ impl<'a, const O: u8> VIO_INFO_VALID4_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID5` reader - violation information valid flag for AHB port 5. Write 1 to clear."]
 pub type VIO_INFO_VALID5_R = crate::BitReader<VIO_INFO_VALID5_A>;
 #[doc = "violation information valid flag for AHB port 5. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID5_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -343,7 +343,7 @@ impl<'a, const O: u8> VIO_INFO_VALID5_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID6` reader - violation information valid flag for AHB port 6. Write 1 to clear."]
 pub type VIO_INFO_VALID6_R = crate::BitReader<VIO_INFO_VALID6_A>;
 #[doc = "violation information valid flag for AHB port 6. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID6_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -394,7 +394,7 @@ impl<'a, const O: u8> VIO_INFO_VALID6_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID7` reader - violation information valid flag for AHB port 7. Write 1 to clear."]
 pub type VIO_INFO_VALID7_R = crate::BitReader<VIO_INFO_VALID7_A>;
 #[doc = "violation information valid flag for AHB port 7. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID7_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -445,7 +445,7 @@ impl<'a, const O: u8> VIO_INFO_VALID7_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID8` reader - violation information valid flag for AHB port 8. Write 1 to clear."]
 pub type VIO_INFO_VALID8_R = crate::BitReader<VIO_INFO_VALID8_A>;
 #[doc = "violation information valid flag for AHB port 8. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID8_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,
@@ -496,7 +496,7 @@ impl<'a, const O: u8> VIO_INFO_VALID8_W<'a, O> {
 #[doc = "Field `VIO_INFO_VALID9` reader - violation information valid flag for AHB port 9. Write 1 to clear."]
 pub type VIO_INFO_VALID9_R = crate::BitReader<VIO_INFO_VALID9_A>;
 #[doc = "violation information valid flag for AHB port 9. Write 1 to clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VIO_INFO_VALID9_A {
     #[doc = "0: Not valid."]
     NOT_VALID = 0,

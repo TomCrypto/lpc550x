@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_RAM3_SLAVE_RULE_SPEC>> for W {
 #[doc = "Field `RAM3_RULE` reader - Security access rules for the whole RAM3 : 0x2001_0000 - 0x2001_3FFF."]
 pub type RAM3_RULE_R = crate::FieldReader<u8, RAM3_RULE_A>;
 #[doc = "Security access rules for the whole RAM3 : 0x2001_0000 - 0x2001_3FFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RAM3_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

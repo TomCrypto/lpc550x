@@ -37,7 +37,7 @@ impl From<crate::W<SHAREDCTRLSET_SPEC>> for W {
 #[doc = "Field `SHAREDSCKSEL` reader - Selects the source for SCK of this shared signal set."]
 pub type SHAREDSCKSEL_R = crate::FieldReader<u8, SHAREDSCKSEL_A>;
 #[doc = "Selects the source for SCK of this shared signal set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SHAREDSCKSEL_A {
     #[doc = "0: SCK for this shared signal set comes from Flexcomm 0."]
@@ -168,7 +168,7 @@ impl<'a, const O: u8> SHAREDSCKSEL_W<'a, O> {
 #[doc = "Field `SHAREDWSSEL` reader - Selects the source for WS of this shared signal set."]
 pub type SHAREDWSSEL_R = crate::FieldReader<u8, SHAREDWSSEL_A>;
 #[doc = "Selects the source for WS of this shared signal set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SHAREDWSSEL_A {
     #[doc = "0: WS for this shared signal set comes from Flexcomm 0."]
@@ -299,7 +299,7 @@ impl<'a, const O: u8> SHAREDWSSEL_W<'a, O> {
 #[doc = "Field `SHAREDDATASEL` reader - Selects the source for DATA input for this shared signal set."]
 pub type SHAREDDATASEL_R = crate::FieldReader<u8, SHAREDDATASEL_A>;
 #[doc = "Selects the source for DATA input for this shared signal set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SHAREDDATASEL_A {
     #[doc = "0: DATA input for this shared signal set comes from Flexcomm 0."]
@@ -430,7 +430,7 @@ impl<'a, const O: u8> SHAREDDATASEL_W<'a, O> {
 #[doc = "Field `FC0DATAOUTEN` reader - Controls FC0 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC0DATAOUTEN_R = crate::BitReader<FC0DATAOUTEN_A>;
 #[doc = "Controls FC0 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC0DATAOUTEN_A {
     #[doc = "0: Data output from FC0 does not contribute to this shared set."]
     INPUT = 0,
@@ -481,7 +481,7 @@ impl<'a, const O: u8> FC0DATAOUTEN_W<'a, O> {
 #[doc = "Field `FC1DATAOUTEN` reader - Controls FC1 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC1DATAOUTEN_R = crate::BitReader<FC1DATAOUTEN_A>;
 #[doc = "Controls FC1 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC1DATAOUTEN_A {
     #[doc = "0: Data output from FC1 does not contribute to this shared set."]
     INPUT = 0,
@@ -532,7 +532,7 @@ impl<'a, const O: u8> FC1DATAOUTEN_W<'a, O> {
 #[doc = "Field `FC2DATAOUTEN` reader - Controls FC2 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC2DATAOUTEN_R = crate::BitReader<FC2DATAOUTEN_A>;
 #[doc = "Controls FC2 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC2DATAOUTEN_A {
     #[doc = "0: Data output from FC2 does not contribute to this shared set."]
     INPUT = 0,
@@ -583,7 +583,7 @@ impl<'a, const O: u8> FC2DATAOUTEN_W<'a, O> {
 #[doc = "Field `FC4DATAOUTEN` reader - Controls FC4 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC4DATAOUTEN_R = crate::BitReader<FC4DATAOUTEN_A>;
 #[doc = "Controls FC4 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC4DATAOUTEN_A {
     #[doc = "0: Data output from FC4 does not contribute to this shared set."]
     INPUT = 0,
@@ -634,7 +634,7 @@ impl<'a, const O: u8> FC4DATAOUTEN_W<'a, O> {
 #[doc = "Field `FC5DATAOUTEN` reader - Controls FC5 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC5DATAOUTEN_R = crate::BitReader<FC5DATAOUTEN_A>;
 #[doc = "Controls FC5 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC5DATAOUTEN_A {
     #[doc = "0: Data output from FC5 does not contribute to this shared set."]
     INPUT = 0,
@@ -685,7 +685,7 @@ impl<'a, const O: u8> FC5DATAOUTEN_W<'a, O> {
 #[doc = "Field `FC6DATAOUTEN` reader - Controls FC6 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC6DATAOUTEN_R = crate::BitReader<FC6DATAOUTEN_A>;
 #[doc = "Controls FC6 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC6DATAOUTEN_A {
     #[doc = "0: Data output from FC6 does not contribute to this shared set."]
     INPUT = 0,
@@ -736,7 +736,7 @@ impl<'a, const O: u8> FC6DATAOUTEN_W<'a, O> {
 #[doc = "Field `FC7DATAOUTEN` reader - Controls FC7 contribution to SHAREDDATAOUT for this shared set."]
 pub type FC7DATAOUTEN_R = crate::BitReader<FC7DATAOUTEN_A>;
 #[doc = "Controls FC7 contribution to SHAREDDATAOUT for this shared set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC7DATAOUTEN_A {
     #[doc = "0: Data output from FC7 does not contribute to this shared set."]
     INPUT = 0,

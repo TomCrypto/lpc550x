@@ -37,7 +37,7 @@ impl From<crate::W<CPPWR_SPEC>> for W {
 #[doc = "Field `SU0` reader - State UNKNOWN 0."]
 pub type SU0_R = crate::BitReader<SU0_A>;
 #[doc = "State UNKNOWN 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU0_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> SU0_W<'a, O> {
 #[doc = "Field `SUS0` reader - State UNKNOWN Secure only 0."]
 pub type SUS0_R = crate::BitReader<SUS0_A>;
 #[doc = "State UNKNOWN Secure only 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS0_A {
     #[doc = "0: The SU0 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> SUS0_W<'a, O> {
 #[doc = "Field `SU1` reader - State UNKNOWN 1."]
 pub type SU1_R = crate::BitReader<SU1_A>;
 #[doc = "State UNKNOWN 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU1_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> SU1_W<'a, O> {
 #[doc = "Field `SUS1` reader - State UNKNOWN Secure only 1."]
 pub type SUS1_R = crate::BitReader<SUS1_A>;
 #[doc = "State UNKNOWN Secure only 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS1_A {
     #[doc = "0: The SU7 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> SUS1_W<'a, O> {
 #[doc = "Field `SU2` reader - State UNKNOWN 2."]
 pub type SU2_R = crate::BitReader<SU2_A>;
 #[doc = "State UNKNOWN 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU2_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> SU2_W<'a, O> {
 #[doc = "Field `SUS2` reader - State UNKNOWN Secure only 2."]
 pub type SUS2_R = crate::BitReader<SUS2_A>;
 #[doc = "State UNKNOWN Secure only 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS2_A {
     #[doc = "0: The SU2 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> SUS2_W<'a, O> {
 #[doc = "Field `SU3` reader - State UNKNOWN 3."]
 pub type SU3_R = crate::BitReader<SU3_A>;
 #[doc = "State UNKNOWN 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU3_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> SU3_W<'a, O> {
 #[doc = "Field `SUS3` reader - State UNKNOWN Secure only 3."]
 pub type SUS3_R = crate::BitReader<SUS3_A>;
 #[doc = "State UNKNOWN Secure only 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS3_A {
     #[doc = "0: The SU3 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -437,7 +437,7 @@ impl<'a, const O: u8> SUS3_W<'a, O> {
 #[doc = "Field `SU4` reader - State UNKNOWN 4."]
 pub type SU4_R = crate::BitReader<SU4_A>;
 #[doc = "State UNKNOWN 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU4_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -487,7 +487,7 @@ impl<'a, const O: u8> SU4_W<'a, O> {
 #[doc = "Field `SUS4` reader - State UNKNOWN Secure only 4."]
 pub type SUS4_R = crate::BitReader<SUS4_A>;
 #[doc = "State UNKNOWN Secure only 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS4_A {
     #[doc = "0: The SU4 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -537,7 +537,7 @@ impl<'a, const O: u8> SUS4_W<'a, O> {
 #[doc = "Field `SU5` reader - State UNKNOWN 5."]
 pub type SU5_R = crate::BitReader<SU5_A>;
 #[doc = "State UNKNOWN 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU5_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -587,7 +587,7 @@ impl<'a, const O: u8> SU5_W<'a, O> {
 #[doc = "Field `SUS5` reader - State UNKNOWN Secure only 5."]
 pub type SUS5_R = crate::BitReader<SUS5_A>;
 #[doc = "State UNKNOWN Secure only 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS5_A {
     #[doc = "0: The SU5 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -637,7 +637,7 @@ impl<'a, const O: u8> SUS5_W<'a, O> {
 #[doc = "Field `SU6` reader - State UNKNOWN 6."]
 pub type SU6_R = crate::BitReader<SU6_A>;
 #[doc = "State UNKNOWN 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU6_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -687,7 +687,7 @@ impl<'a, const O: u8> SU6_W<'a, O> {
 #[doc = "Field `SUS6` reader - State UNKNOWN Secure only 6."]
 pub type SUS6_R = crate::BitReader<SUS6_A>;
 #[doc = "State UNKNOWN Secure only 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS6_A {
     #[doc = "0: The SU6 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -737,7 +737,7 @@ impl<'a, const O: u8> SUS6_W<'a, O> {
 #[doc = "Field `SU7` reader - State UNKNOWN 7."]
 pub type SU7_R = crate::BitReader<SU7_A>;
 #[doc = "State UNKNOWN 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU7_A {
     #[doc = "0: The coprocessor state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -787,7 +787,7 @@ impl<'a, const O: u8> SU7_W<'a, O> {
 #[doc = "Field `SUS7` reader - State UNKNOWN Secure only 7."]
 pub type SUS7_R = crate::BitReader<SUS7_A>;
 #[doc = "State UNKNOWN Secure only 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS7_A {
     #[doc = "0: The SU7 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,
@@ -837,7 +837,7 @@ impl<'a, const O: u8> SUS7_W<'a, O> {
 #[doc = "Field `SU10` reader - State UNKNOWN 10."]
 pub type SU10_R = crate::BitReader<SU10_A>;
 #[doc = "State UNKNOWN 10.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SU10_A {
     #[doc = "0: The floating-point state is not permitted to become UNKNOWN."]
     UNKNOWN_NOT_PERMITTED = 0,
@@ -887,7 +887,7 @@ impl<'a, const O: u8> SU10_W<'a, O> {
 #[doc = "Field `SUS10` reader - State UNKNOWN Secure only 10."]
 pub type SUS10_R = crate::BitReader<SUS10_A>;
 #[doc = "State UNKNOWN Secure only 10.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SUS10_A {
     #[doc = "0: The SU10 field is accessible from both Security states."]
     SECURE_AND_NON_SECURE = 0,

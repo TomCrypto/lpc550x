@@ -37,7 +37,7 @@ impl From<crate::W<RES_SPEC>> for W {
 #[doc = "Field `O0RES` reader - Effect of simultaneous set and clear on output 0."]
 pub type O0RES_R = crate::FieldReader<u8, O0RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O0RES_A {
     #[doc = "0: No change."]
@@ -115,7 +115,7 @@ impl<'a, const O: u8> O0RES_W<'a, O> {
 #[doc = "Field `O1RES` reader - Effect of simultaneous set and clear on output 1."]
 pub type O1RES_R = crate::FieldReader<u8, O1RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O1RES_A {
     #[doc = "0: No change."]
@@ -193,7 +193,7 @@ impl<'a, const O: u8> O1RES_W<'a, O> {
 #[doc = "Field `O2RES` reader - Effect of simultaneous set and clear on output 2."]
 pub type O2RES_R = crate::FieldReader<u8, O2RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O2RES_A {
     #[doc = "0: No change."]
@@ -271,7 +271,7 @@ impl<'a, const O: u8> O2RES_W<'a, O> {
 #[doc = "Field `O3RES` reader - Effect of simultaneous set and clear on output 3."]
 pub type O3RES_R = crate::FieldReader<u8, O3RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O3RES_A {
     #[doc = "0: No change."]
@@ -349,7 +349,7 @@ impl<'a, const O: u8> O3RES_W<'a, O> {
 #[doc = "Field `O4RES` reader - Effect of simultaneous set and clear on output 4."]
 pub type O4RES_R = crate::FieldReader<u8, O4RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O4RES_A {
     #[doc = "0: No change."]
@@ -427,7 +427,7 @@ impl<'a, const O: u8> O4RES_W<'a, O> {
 #[doc = "Field `O5RES` reader - Effect of simultaneous set and clear on output 5."]
 pub type O5RES_R = crate::FieldReader<u8, O5RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O5RES_A {
     #[doc = "0: No change."]
@@ -505,7 +505,7 @@ impl<'a, const O: u8> O5RES_W<'a, O> {
 #[doc = "Field `O6RES` reader - Effect of simultaneous set and clear on output 6."]
 pub type O6RES_R = crate::FieldReader<u8, O6RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O6RES_A {
     #[doc = "0: No change."]
@@ -583,7 +583,7 @@ impl<'a, const O: u8> O6RES_W<'a, O> {
 #[doc = "Field `O7RES` reader - Effect of simultaneous set and clear on output 7."]
 pub type O7RES_R = crate::FieldReader<u8, O7RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O7RES_A {
     #[doc = "0: No change."]
@@ -661,7 +661,7 @@ impl<'a, const O: u8> O7RES_W<'a, O> {
 #[doc = "Field `O8RES` reader - Effect of simultaneous set and clear on output 8."]
 pub type O8RES_R = crate::FieldReader<u8, O8RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 8.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O8RES_A {
     #[doc = "0: No change."]
@@ -739,7 +739,7 @@ impl<'a, const O: u8> O8RES_W<'a, O> {
 #[doc = "Field `O9RES` reader - Effect of simultaneous set and clear on output 9."]
 pub type O9RES_R = crate::FieldReader<u8, O9RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 9.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O9RES_A {
     #[doc = "0: No change."]
@@ -817,7 +817,7 @@ impl<'a, const O: u8> O9RES_W<'a, O> {
 #[doc = "Field `O10RES` reader - Effect of simultaneous set and clear on output 10."]
 pub type O10RES_R = crate::FieldReader<u8, O10RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 10.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O10RES_A {
     #[doc = "0: No change."]
@@ -895,7 +895,7 @@ impl<'a, const O: u8> O10RES_W<'a, O> {
 #[doc = "Field `O11RES` reader - Effect of simultaneous set and clear on output 11."]
 pub type O11RES_R = crate::FieldReader<u8, O11RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 11.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O11RES_A {
     #[doc = "0: No change."]
@@ -973,7 +973,7 @@ impl<'a, const O: u8> O11RES_W<'a, O> {
 #[doc = "Field `O12RES` reader - Effect of simultaneous set and clear on output 12."]
 pub type O12RES_R = crate::FieldReader<u8, O12RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 12.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O12RES_A {
     #[doc = "0: No change."]
@@ -1051,7 +1051,7 @@ impl<'a, const O: u8> O12RES_W<'a, O> {
 #[doc = "Field `O13RES` reader - Effect of simultaneous set and clear on output 13."]
 pub type O13RES_R = crate::FieldReader<u8, O13RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 13.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O13RES_A {
     #[doc = "0: No change."]
@@ -1129,7 +1129,7 @@ impl<'a, const O: u8> O13RES_W<'a, O> {
 #[doc = "Field `O14RES` reader - Effect of simultaneous set and clear on output 14."]
 pub type O14RES_R = crate::FieldReader<u8, O14RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 14.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O14RES_A {
     #[doc = "0: No change."]
@@ -1207,7 +1207,7 @@ impl<'a, const O: u8> O14RES_W<'a, O> {
 #[doc = "Field `O15RES` reader - Effect of simultaneous set and clear on output 15."]
 pub type O15RES_R = crate::FieldReader<u8, O15RES_A>;
 #[doc = "Effect of simultaneous set and clear on output 15.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum O15RES_A {
     #[doc = "0: No change."]

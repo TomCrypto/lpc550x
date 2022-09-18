@@ -37,7 +37,7 @@ impl From<crate::W<FCCLKSEL0_SPEC>> for W {
 #[doc = "Field `SEL` reader - Flexcomm Interface 0 clock source select for Fractional Rate Divider."]
 pub type SEL_R = crate::FieldReader<u8, SEL_A>;
 #[doc = "Flexcomm Interface 0 clock source select for Fractional Rate Divider.\n\nValue on reset: 7"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEL_A {
     #[doc = "0: Main clock."]

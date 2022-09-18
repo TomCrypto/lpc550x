@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL0_SPEC>> for W {
 #[doc = "Field `PMC_RULE` reader - Power Management Controller."]
 pub type PMC_RULE_R = crate::FieldReader<u8, PMC_RULE_A>;
 #[doc = "Power Management Controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PMC_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> PMC_RULE_W<'a, O> {
 #[doc = "Field `SYSCTRL_RULE` reader - System Controller."]
 pub type SYSCTRL_RULE_R = crate::FieldReader<u8, SYSCTRL_RULE_A>;
 #[doc = "System Controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SYSCTRL_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> SYSCTRL_RULE_W<'a, O> {
 #[doc = "Field `SPI_FILTER_RULE` reader - SPI FILTER control."]
 pub type SPI_FILTER_RULE_R = crate::FieldReader<u8, SPI_FILTER_RULE_A>;
 #[doc = "SPI FILTER control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SPI_FILTER_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

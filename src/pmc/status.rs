@@ -16,7 +16,7 @@ impl From<crate::R<STATUS_SPEC>> for R {
 #[doc = "Field `BOOTMODE` reader - Latest IC Boot cause:."]
 pub type BOOTMODE_R = crate::FieldReader<u8, BOOTMODE_A>;
 #[doc = "Latest IC Boot cause:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BOOTMODE_A {
     #[doc = "0: Latest IC boot was a Full power cycle boot sequence (PoR, Pin Reset, Brown Out Detectors Reset, Software Reset)."]

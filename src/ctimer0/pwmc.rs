@@ -37,7 +37,7 @@ impl From<crate::W<PWMC_SPEC>> for W {
 #[doc = "Field `PWMEN0` reader - PWM mode enable for channel0."]
 pub type PWMEN0_R = crate::BitReader<PWMEN0_A>;
 #[doc = "PWM mode enable for channel0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PWMEN0_A {
     #[doc = "0: Match. CTIMERn_MAT0 is controlled by EM0."]
     MATCH = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> PWMEN0_W<'a, O> {
 #[doc = "Field `PWMEN1` reader - PWM mode enable for channel1."]
 pub type PWMEN1_R = crate::BitReader<PWMEN1_A>;
 #[doc = "PWM mode enable for channel1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PWMEN1_A {
     #[doc = "0: Match. CTIMERn_MAT01 is controlled by EM1."]
     MATCH = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> PWMEN1_W<'a, O> {
 #[doc = "Field `PWMEN2` reader - PWM mode enable for channel2."]
 pub type PWMEN2_R = crate::BitReader<PWMEN2_A>;
 #[doc = "PWM mode enable for channel2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PWMEN2_A {
     #[doc = "0: Match. CTIMERn_MAT2 is controlled by EM2."]
     MATCH = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> PWMEN2_W<'a, O> {
 #[doc = "Field `PWMEN3` reader - PWM mode enable for channel3. Note: It is recommended to use match channel 3 to set the PWM cycle."]
 pub type PWMEN3_R = crate::BitReader<PWMEN3_A>;
 #[doc = "PWM mode enable for channel3. Note: It is recommended to use match channel 3 to set the PWM cycle.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PWMEN3_A {
     #[doc = "0: Match. CTIMERn_MAT3 is controlled by EM3."]
     MATCH = 0,

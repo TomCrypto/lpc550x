@@ -37,7 +37,7 @@ impl From<crate::W<DUMMY_CTRL_SPEC>> for W {
 #[doc = "Field `XO32M_ADC_CLK_MODE` reader - Control High speed Crystal oscillator mode of the ADC clock."]
 pub type XO32M_ADC_CLK_MODE_R = crate::FieldReader<u8, XO32M_ADC_CLK_MODE_A>;
 #[doc = "Control High speed Crystal oscillator mode of the ADC clock.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum XO32M_ADC_CLK_MODE_A {
     #[doc = "0: High speed Crystal oscillator output to ADC is disabled."]

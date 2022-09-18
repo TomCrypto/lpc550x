@@ -37,7 +37,7 @@ impl From<crate::W<DMA0_REQ_ENA_SPEC>> for W {
 #[doc = "Field `REQ_ENA` reader - Controls the 23 request inputs of DMA0. If bit i is '1' the DMA request input #i is enabled."]
 pub type REQ_ENA_R = crate::FieldReader<u32, REQ_ENA_A>;
 #[doc = "Controls the 23 request inputs of DMA0. If bit i is '1' the DMA request input #i is enabled.\n\nValue on reset: 8388607"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u32)]
 pub enum REQ_ENA_A {
     #[doc = "0: Hash-Crypt DMA request."]

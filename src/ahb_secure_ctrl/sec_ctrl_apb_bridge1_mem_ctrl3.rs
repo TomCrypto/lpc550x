@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL3_SPEC>> for W {
 #[doc = "Field `RNG_RULE` reader - True Random Number Generator."]
 pub type RNG_RULE_R = crate::FieldReader<u8, RNG_RULE_A>;
 #[doc = "True Random Number Generator.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RNG_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> RNG_RULE_W<'a, O> {
 #[doc = "Field `PUF_RULE` reader - PUF."]
 pub type PUF_RULE_R = crate::FieldReader<u8, PUF_RULE_A>;
 #[doc = "PUF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PUF_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> PUF_RULE_W<'a, O> {
 #[doc = "Field `PLU_RULE` reader - Programmable Look-Up logic."]
 pub type PLU_RULE_R = crate::FieldReader<u8, PLU_RULE_A>;
 #[doc = "Programmable Look-Up logic.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PLU_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

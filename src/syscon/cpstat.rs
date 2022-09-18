@@ -37,7 +37,7 @@ impl From<crate::W<CPSTAT_SPEC>> for W {
 #[doc = "Field `CPU0SLEEPING` reader - The CPU0 sleeping state."]
 pub type CPU0SLEEPING_R = crate::BitReader<CPU0SLEEPING_A>;
 #[doc = "The CPU0 sleeping state.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CPU0SLEEPING_A {
     #[doc = "0: the CPU is not sleeping."]
     AWAKE = 0,
@@ -73,7 +73,7 @@ impl CPU0SLEEPING_R {
 #[doc = "Field `CPU0LOCKUP` reader - The CPU0 lockup state."]
 pub type CPU0LOCKUP_R = crate::BitReader<CPU0LOCKUP_A>;
 #[doc = "The CPU0 lockup state.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CPU0LOCKUP_A {
     #[doc = "0: the CPU is not in lockup."]
     AWAKE = 0,

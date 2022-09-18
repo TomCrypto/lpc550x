@@ -37,7 +37,7 @@ impl From<crate::W<SWD_ACCESS_CPU0_SPEC>> for W {
 #[doc = "Field `SEC_CODE` reader - CPU0 SWD-AP: 0x12345678."]
 pub type SEC_CODE_R = crate::FieldReader<u32, SEC_CODE_A>;
 #[doc = "CPU0 SWD-AP: 0x12345678.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u32)]
 pub enum SEC_CODE_A {
     #[doc = "0: CPU0 DAP is not allowed. Reading back register will be read as 0x5."]

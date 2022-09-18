@@ -20,7 +20,7 @@ impl From<crate::W<FMCFLUSH_SPEC>> for W {
     }
 }
 #[doc = "Flush control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FLUSH_AW {
     #[doc = "0: No action is performed."]
     NO_FLUSH = 0,

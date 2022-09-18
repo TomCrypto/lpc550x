@@ -37,7 +37,7 @@ impl From<crate::W<CFG1_SPEC>> for W {
 #[doc = "Field `MAINENABLE` reader - Main enable for I 2S function in this Flexcomm."]
 pub type MAINENABLE_R = crate::BitReader<MAINENABLE_A>;
 #[doc = "Main enable for I 2S function in this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MAINENABLE_A {
     #[doc = "0: All I 2S channel pairs in this Flexcomm are disabled and the internal state machines, counters, and flags are reset. No other channel pairs can be enabled."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> MAINENABLE_W<'a, O> {
 #[doc = "Field `DATAPAUSE` reader - Data flow Pause. Allows pausing data flow between the I2S serializer/deserializer and the FIFO. This could be done in order to change streams, or while restarting after a data underflow or overflow. When paused, FIFO operations can be done without corrupting data that is in the process of being sent or received. Once a data pause has been requested, the interface may need to complete sending data that was in progress before interrupting the flow of data. Software must check that the pause is actually in effect before taking action. This is done by monitoring the DATAPAUSED flag in the STAT register. When DATAPAUSE is cleared, data transfer will resume at the beginning of the next frame."]
 pub type DATAPAUSE_R = crate::BitReader<DATAPAUSE_A>;
 #[doc = "Data flow Pause. Allows pausing data flow between the I2S serializer/deserializer and the FIFO. This could be done in order to change streams, or while restarting after a data underflow or overflow. When paused, FIFO operations can be done without corrupting data that is in the process of being sent or received. Once a data pause has been requested, the interface may need to complete sending data that was in progress before interrupting the flow of data. Software must check that the pause is actually in effect before taking action. This is done by monitoring the DATAPAUSED flag in the STAT register. When DATAPAUSE is cleared, data transfer will resume at the beginning of the next frame.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DATAPAUSE_A {
     #[doc = "0: Normal operation, or resuming normal operation at the next frame if the I2S has already been paused."]
     NORMAL = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> DATAPAUSE_W<'a, O> {
 #[doc = "Field `PAIRCOUNT` reader - Provides the number of I2S channel pairs in this Flexcomm This is a read-only field whose value may be different in other Flexcomms. 00 = there is 1 I2S channel pair in this Flexcomm. 01 = there are 2 I2S channel pairs in this Flexcomm. 10 = there are 3 I2S channel pairs in this Flexcomm. 11 = there are 4 I2S channel pairs in this Flexcomm."]
 pub type PAIRCOUNT_R = crate::FieldReader<u8, PAIRCOUNT_A>;
 #[doc = "Provides the number of I2S channel pairs in this Flexcomm This is a read-only field whose value may be different in other Flexcomms. 00 = there is 1 I2S channel pair in this Flexcomm. 01 = there are 2 I2S channel pairs in this Flexcomm. 10 = there are 3 I2S channel pairs in this Flexcomm. 11 = there are 4 I2S channel pairs in this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PAIRCOUNT_A {
     #[doc = "0: 1 I2S channel pairs in this flexcomm."]
@@ -216,7 +216,7 @@ impl<'a, const O: u8> PAIRCOUNT_W<'a, O> {
 #[doc = "Field `MSTSLVCFG` reader - Master / slave configuration selection, determining how SCK and WS are used by all channel pairs in this Flexcomm."]
 pub type MSTSLVCFG_R = crate::FieldReader<u8, MSTSLVCFG_A>;
 #[doc = "Master / slave configuration selection, determining how SCK and WS are used by all channel pairs in this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MSTSLVCFG_A {
     #[doc = "0: Normal slave mode, the default mode. SCK and WS are received from a master and used to transmit or receive data."]
@@ -295,7 +295,7 @@ impl<'a, const O: u8> MSTSLVCFG_W<'a, O> {
 #[doc = "Field `MODE` reader - Selects the basic I2S operating mode. Other configurations modify this to obtain all supported cases. See Formats and modes for examples."]
 pub type MODE_R = crate::FieldReader<u8, MODE_A>;
 #[doc = "Selects the basic I2S operating mode. Other configurations modify this to obtain all supported cases. See Formats and modes for examples.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODE_A {
     #[doc = "0: I2S mode a.k.a. 'classic' mode. WS has a 50% duty cycle, with (for each enabled channel pair) one piece of left channel data occurring during the first phase, and one pieces of right channel data occurring during the second phase. In this mode, the data region begins one clock after the leading WS edge for the frame. For a 50% WS duty cycle, FRAMELEN must define an even number of I2S clocks for the frame. If FRAMELEN defines an odd number of clocks per frame, the extra clock will occur on the right."]
@@ -373,7 +373,7 @@ impl<'a, const O: u8> MODE_W<'a, O> {
 #[doc = "Field `RIGHTLOW` reader - Right channel data is in the Low portion of FIFO data. Essentially, this swaps left and right channel data as it is transferred to or from the FIFO. This bit is not used if the data width is greater than 24 bits or if PDMDATA = 1. Note that if the ONECHANNEL field (bit 10 of this register) = 1, the one channel to be used is the nominally the left channel. POSITION can still place that data in the frame where right channel data is normally located. if all enabled channel pairs have ONECHANNEL = 1, then RIGHTLOW = 1 is not allowed."]
 pub type RIGHTLOW_R = crate::BitReader<RIGHTLOW_A>;
 #[doc = "Right channel data is in the Low portion of FIFO data. Essentially, this swaps left and right channel data as it is transferred to or from the FIFO. This bit is not used if the data width is greater than 24 bits or if PDMDATA = 1. Note that if the ONECHANNEL field (bit 10 of this register) = 1, the one channel to be used is the nominally the left channel. POSITION can still place that data in the frame where right channel data is normally located. if all enabled channel pairs have ONECHANNEL = 1, then RIGHTLOW = 1 is not allowed.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RIGHTLOW_A {
     #[doc = "0: The right channel is taken from the high part of the FIFO data. For example, when data is 16 bits, FIFO bits 31:16 are used for the right channel."]
     RIGHT_HIGH = 0,
@@ -423,7 +423,7 @@ impl<'a, const O: u8> RIGHTLOW_W<'a, O> {
 #[doc = "Field `LEFTJUST` reader - Left Justify data."]
 pub type LEFTJUST_R = crate::BitReader<LEFTJUST_A>;
 #[doc = "Left Justify data.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LEFTJUST_A {
     #[doc = "0: Data is transferred between the FIFO and the I2S serializer/deserializer right justified, i.e. starting from bit 0 and continuing to the position defined by DATALEN. This would correspond to right justified data in the stream on the data bus."]
     RIGHT_JUSTIFIED = 0,
@@ -473,7 +473,7 @@ impl<'a, const O: u8> LEFTJUST_W<'a, O> {
 #[doc = "Field `ONECHANNEL` reader - Single channel mode. Applies to both transmit and receive. This configuration bit applies only to the first I2S channel pair. Other channel pairs may select this mode independently in their separate CFG1 registers."]
 pub type ONECHANNEL_R = crate::BitReader<ONECHANNEL_A>;
 #[doc = "Single channel mode. Applies to both transmit and receive. This configuration bit applies only to the first I2S channel pair. Other channel pairs may select this mode independently in their separate CFG1 registers.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ONECHANNEL_A {
     #[doc = "0: I2S data for this channel pair is treated as left and right channels."]
     DUAL_CHANNEL = 0,
@@ -523,7 +523,7 @@ impl<'a, const O: u8> ONECHANNEL_W<'a, O> {
 #[doc = "Field `SCK_POL` reader - SCK polarity."]
 pub type SCK_POL_R = crate::BitReader<SCK_POL_A>;
 #[doc = "SCK polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SCK_POL_A {
     #[doc = "0: Data is launched on SCK falling edges and sampled on SCK rising edges (standard for I2S)."]
     FALLING_EDGE = 0,
@@ -573,7 +573,7 @@ impl<'a, const O: u8> SCK_POL_W<'a, O> {
 #[doc = "Field `WS_POL` reader - WS polarity."]
 pub type WS_POL_R = crate::BitReader<WS_POL_A>;
 #[doc = "WS polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WS_POL_A {
     #[doc = "0: Data frames begin at a falling edge of WS (standard for classic I2S)."]
     NOT_INVERTED = 0,

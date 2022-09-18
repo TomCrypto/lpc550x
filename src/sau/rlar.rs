@@ -37,7 +37,7 @@ impl From<crate::W<RLAR_SPEC>> for W {
 #[doc = "Field `ENABLE` reader - Enable. SAU region enable."]
 pub type ENABLE_R = crate::BitReader<ENABLE_A>;
 #[doc = "Enable. SAU region enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLE_A {
     #[doc = "0: SAU region is enabled."]
     ENABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ENABLE_W<'a, O> {
 #[doc = "Field `NSC` reader - Non-secure callable. Controls whether Non-secure state is permitted to execute an SG instruction from this region."]
 pub type NSC_R = crate::BitReader<NSC_A>;
 #[doc = "Non-secure callable. Controls whether Non-secure state is permitted to execute an SG instruction from this region.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum NSC_A {
     #[doc = "0: Region is not Non-secure callable."]
     NOT_NON_SECURE_CALLABLE = 0,

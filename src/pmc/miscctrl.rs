@@ -37,7 +37,7 @@ impl From<crate::W<MISCCTRL_SPEC>> for W {
 #[doc = "Field `LDOMEMHIGHZMODE` reader - Control the activation of LDO MEM High Z mode."]
 pub type LDOMEMHIGHZMODE_R = crate::BitReader<LDOMEMHIGHZMODE_A>;
 #[doc = "Control the activation of LDO MEM High Z mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LDOMEMHIGHZMODE_A {
     #[doc = "0: LDO MEM High Z mode is disabled."]
     DISABLE = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> LDOMEMHIGHZMODE_W<'a, O> {
 #[doc = "Field `DISABLE_BLEED` reader - Controls LDO MEM bleed current. This field is expected to be controlled by the Low Power Software only in DEEP SLEEP low power mode."]
 pub type DISABLE_BLEED_R = crate::BitReader<DISABLE_BLEED_A>;
 #[doc = "Controls LDO MEM bleed current. This field is expected to be controlled by the Low Power Software only in DEEP SLEEP low power mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DISABLE_BLEED_A {
     #[doc = "0: LDO_MEM bleed current is enabled."]
     BLEED_ENABLE = 0,

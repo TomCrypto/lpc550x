@@ -37,7 +37,7 @@ impl From<crate::W<CTRL_SPEC>> for W {
 #[doc = "Field `INTEN` reader - Enable the TIMERn interrupt."]
 pub type INTEN_R = crate::BitReader<INTEN_A>;
 #[doc = "Enable the TIMERn interrupt.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INTEN_A {
     #[doc = "0: Disabled. TIMERn interrupt is disabled."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> INTEN_W<'a, O> {
 #[doc = "Field `MODE` reader - Selects timer mode."]
 pub type MODE_R = crate::FieldReader<u8, MODE_A>;
 #[doc = "Selects timer mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODE_A {
     #[doc = "0: Repeat interrupt mode."]

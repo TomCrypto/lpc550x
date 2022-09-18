@@ -37,7 +37,7 @@ impl From<crate::W<SRAMCTRL_SPEC>> for W {
 #[doc = "Field `SMB` reader - Source Biasing voltage."]
 pub type SMB_R = crate::FieldReader<u8, SMB_A>;
 #[doc = "Source Biasing voltage.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SMB_A {
     #[doc = "0: Low leakage."]

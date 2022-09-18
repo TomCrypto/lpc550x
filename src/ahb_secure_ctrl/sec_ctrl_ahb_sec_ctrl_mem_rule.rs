@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_SEC_CTRL_MEM_RULE_SPEC>> for W {
 #[doc = "Field `AHB_SEC_CTRL_SECT_0_RULE` reader - Address space: 0x400A_0000 - 0x400A_CFFF."]
 pub type AHB_SEC_CTRL_SECT_0_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_0_RULE_A>;
 #[doc = "Address space: 0x400A_0000 - 0x400A_CFFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -123,7 +123,7 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_0_RULE_W<'a, O> {
 #[doc = "Field `AHB_SEC_CTRL_SECT_1_RULE` reader - Address space: 0x400A_D000 - 0x400A_DFFF."]
 pub type AHB_SEC_CTRL_SECT_1_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_1_RULE_A>;
 #[doc = "Address space: 0x400A_D000 - 0x400A_DFFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -209,7 +209,7 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_1_RULE_W<'a, O> {
 #[doc = "Field `AHB_SEC_CTRL_SECT_2_RULE` reader - Address space: 0x400A_E000 - 0x400A_EFFF."]
 pub type AHB_SEC_CTRL_SECT_2_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_2_RULE_A>;
 #[doc = "Address space: 0x400A_E000 - 0x400A_EFFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_2_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -295,7 +295,7 @@ impl<'a, const O: u8> AHB_SEC_CTRL_SECT_2_RULE_W<'a, O> {
 #[doc = "Field `AHB_SEC_CTRL_SECT_3_RULE` reader - Address space: 0x400A_F000 - 0x400A_FFFF."]
 pub type AHB_SEC_CTRL_SECT_3_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_SECT_3_RULE_A>;
 #[doc = "Address space: 0x400A_F000 - 0x400A_FFFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_SECT_3_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

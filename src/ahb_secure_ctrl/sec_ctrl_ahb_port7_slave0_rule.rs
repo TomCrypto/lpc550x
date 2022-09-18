@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_PORT7_SLAVE0_RULE_SPEC>> for W {
 #[doc = "Field `DMA0_RULE` reader - DMA Controller."]
 pub type DMA0_RULE_R = crate::FieldReader<u8, DMA0_RULE_A>;
 #[doc = "DMA Controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DMA0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> DMA0_RULE_W<'a, O> {
 #[doc = "Field `SCT_RULE` reader - SCTimer."]
 pub type SCT_RULE_R = crate::FieldReader<u8, SCT_RULE_A>;
 #[doc = "SCTimer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SCT_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> SCT_RULE_W<'a, O> {
 #[doc = "Field `FLEXCOMM0_RULE` reader - Flexcomm interface 0."]
 pub type FLEXCOMM0_RULE_R = crate::FieldReader<u8, FLEXCOMM0_RULE_A>;
 #[doc = "Flexcomm interface 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -281,7 +281,7 @@ impl<'a, const O: u8> FLEXCOMM0_RULE_W<'a, O> {
 #[doc = "Field `FLEXCOMM1_RULE` reader - Flexcomm interface 1."]
 pub type FLEXCOMM1_RULE_R = crate::FieldReader<u8, FLEXCOMM1_RULE_A>;
 #[doc = "Flexcomm interface 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

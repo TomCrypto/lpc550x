@@ -37,7 +37,7 @@ impl From<crate::W<DMA0_ITRIG_INMUX_SPEC>> for W {
 #[doc = "Field `INP` reader - Trigger input number (decimal value) for DMA channel n (n = 0 to 22)."]
 pub type INP_R = crate::FieldReader<u8, INP_A>;
 #[doc = "Trigger input number (decimal value) for DMA channel n (n = 0 to 22).\n\nValue on reset: 31"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum INP_A {
     #[doc = "0: Pin interrupt 0."]

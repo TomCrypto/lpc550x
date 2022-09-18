@@ -37,7 +37,7 @@ impl From<crate::W<CFG_SPEC>> for W {
 #[doc = "Field `ENABLE` reader - SPI enable."]
 pub type ENABLE_R = crate::BitReader<ENABLE_A>;
 #[doc = "SPI enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLE_A {
     #[doc = "0: Disabled. The SPI is disabled and the internal state machine and counters are reset."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ENABLE_W<'a, O> {
 #[doc = "Field `MASTER` reader - Master mode select."]
 pub type MASTER_R = crate::BitReader<MASTER_A>;
 #[doc = "Master mode select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MASTER_A {
     #[doc = "0: Slave mode. The SPI will operate in slave mode. SCK, MOSI, and the SSEL signals are inputs, MISO is an output."]
     SLAVE_MODE = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> MASTER_W<'a, O> {
 #[doc = "Field `LSBF` reader - LSB First mode enable."]
 pub type LSBF_R = crate::BitReader<LSBF_A>;
 #[doc = "LSB First mode enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LSBF_A {
     #[doc = "0: Standard. Data is transmitted and received in standard MSB first order."]
     STANDARD = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> LSBF_W<'a, O> {
 #[doc = "Field `CPHA` reader - Clock Phase select."]
 pub type CPHA_R = crate::BitReader<CPHA_A>;
 #[doc = "Clock Phase select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CPHA_A {
     #[doc = "0: Change. The SPI captures serial data on the first clock transition of the transfer (when the clock changes away from the rest state). Data is changed on the following edge."]
     CHANGE = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> CPHA_W<'a, O> {
 #[doc = "Field `CPOL` reader - Clock Polarity select."]
 pub type CPOL_R = crate::BitReader<CPOL_A>;
 #[doc = "Clock Polarity select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CPOL_A {
     #[doc = "0: Low. The rest state of the clock (between transfers) is low."]
     LOW = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> CPOL_W<'a, O> {
 #[doc = "Field `LOOP` reader - Loopback mode enable. Loopback mode applies only to Master mode, and connects transmit and receive data connected together to allow simple software testing."]
 pub type LOOP_R = crate::BitReader<LOOP_A>;
 #[doc = "Loopback mode enable. Loopback mode applies only to Master mode, and connects transmit and receive data connected together to allow simple software testing.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOOP_A {
     #[doc = "0: Disabled."]
     DISABLED = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> LOOP_W<'a, O> {
 #[doc = "Field `SPOL0` reader - SSEL0 Polarity select."]
 pub type SPOL0_R = crate::BitReader<SPOL0_A>;
 #[doc = "SSEL0 Polarity select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPOL0_A {
     #[doc = "0: Low. The SSEL0 pin is active low."]
     LOW = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> SPOL0_W<'a, O> {
 #[doc = "Field `SPOL1` reader - SSEL1 Polarity select."]
 pub type SPOL1_R = crate::BitReader<SPOL1_A>;
 #[doc = "SSEL1 Polarity select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPOL1_A {
     #[doc = "0: Low. The SSEL1 pin is active low."]
     LOW = 0,
@@ -437,7 +437,7 @@ impl<'a, const O: u8> SPOL1_W<'a, O> {
 #[doc = "Field `SPOL2` reader - SSEL2 Polarity select."]
 pub type SPOL2_R = crate::BitReader<SPOL2_A>;
 #[doc = "SSEL2 Polarity select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPOL2_A {
     #[doc = "0: Low. The SSEL2 pin is active low."]
     LOW = 0,
@@ -487,7 +487,7 @@ impl<'a, const O: u8> SPOL2_W<'a, O> {
 #[doc = "Field `SPOL3` reader - SSEL3 Polarity select."]
 pub type SPOL3_R = crate::BitReader<SPOL3_A>;
 #[doc = "SSEL3 Polarity select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPOL3_A {
     #[doc = "0: Low. The SSEL3 pin is active low."]
     LOW = 0,

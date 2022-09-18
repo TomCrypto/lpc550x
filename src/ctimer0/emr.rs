@@ -53,7 +53,7 @@ pub type EM3_W<'a, const O: u8> = crate::BitWriter<'a, u32, EMR_SPEC, bool, O>;
 #[doc = "Field `EMC0` reader - External Match Control 0. Determines the functionality of External Match 0."]
 pub type EMC0_R = crate::FieldReader<u8, EMC0_A>;
 #[doc = "External Match Control 0. Determines the functionality of External Match 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum EMC0_A {
     #[doc = "0: Do Nothing."]
@@ -131,7 +131,7 @@ impl<'a, const O: u8> EMC0_W<'a, O> {
 #[doc = "Field `EMC1` reader - External Match Control 1. Determines the functionality of External Match 1."]
 pub type EMC1_R = crate::FieldReader<u8, EMC1_A>;
 #[doc = "External Match Control 1. Determines the functionality of External Match 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum EMC1_A {
     #[doc = "0: Do Nothing."]
@@ -209,7 +209,7 @@ impl<'a, const O: u8> EMC1_W<'a, O> {
 #[doc = "Field `EMC2` reader - External Match Control 2. Determines the functionality of External Match 2."]
 pub type EMC2_R = crate::FieldReader<u8, EMC2_A>;
 #[doc = "External Match Control 2. Determines the functionality of External Match 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum EMC2_A {
     #[doc = "0: Do Nothing."]
@@ -287,7 +287,7 @@ impl<'a, const O: u8> EMC2_W<'a, O> {
 #[doc = "Field `EMC3` reader - External Match Control 3. Determines the functionality of External Match 3."]
 pub type EMC3_R = crate::FieldReader<u8, EMC3_A>;
 #[doc = "External Match Control 3. Determines the functionality of External Match 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum EMC3_A {
     #[doc = "0: Do Nothing."]

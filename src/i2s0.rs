@@ -55,7 +55,7 @@ pub struct RegisterBlock {
     pub id: ID,
 }
 #[doc = "no description available."]
-pub use secchannel::SECCHANNEL;
+pub use self::secchannel::SECCHANNEL;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod secchannel;

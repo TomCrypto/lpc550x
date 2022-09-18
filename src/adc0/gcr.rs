@@ -41,7 +41,7 @@ pub type GCALR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, GCR_SPEC, u16, u
 #[doc = "Field `RDY` reader - Gain Calculation Ready."]
 pub type RDY_R = crate::BitReader<RDY_A>;
 #[doc = "Gain Calculation Ready.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RDY_A {
     #[doc = "0: The gain offset calculation value is invalid."]
     RDY_0 = 0,

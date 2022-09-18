@@ -37,7 +37,7 @@ impl From<crate::W<RESETCTRL_SPEC>> for W {
 #[doc = "Field `DPDWAKEUPRESETENABLE` reader - Wake-up from DEEP POWER DOWN reset event (either from wake up I/O or RTC or OS Event Timer)."]
 pub type DPDWAKEUPRESETENABLE_R = crate::BitReader<DPDWAKEUPRESETENABLE_A>;
 #[doc = "Wake-up from DEEP POWER DOWN reset event (either from wake up I/O or RTC or OS Event Timer).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DPDWAKEUPRESETENABLE_A {
     #[doc = "0: Reset event from DEEP POWER DOWN mode is disable."]
     DISABLE = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> DPDWAKEUPRESETENABLE_W<'a, O> {
 #[doc = "Field `SWRRESETENABLE` reader - Software reset enable."]
 pub type SWRRESETENABLE_R = crate::BitReader<SWRRESETENABLE_A>;
 #[doc = "Software reset enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWRRESETENABLE_A {
     #[doc = "0: Software reset is disable."]
     DISABLE = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> SWRRESETENABLE_W<'a, O> {
 #[doc = "Field `BODVBATRESETENA_SECURE` reader - BOD VBAT reset enable."]
 pub type BODVBATRESETENA_SECURE_R = crate::FieldReader<u8, BODVBATRESETENA_SECURE_A>;
 #[doc = "BOD VBAT reset enable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BODVBATRESETENA_SECURE_A {
     #[doc = "1: Any other value than b10, BOD VBAT reset is enable."]
@@ -192,7 +192,7 @@ impl<'a, const O: u8> BODVBATRESETENA_SECURE_W<'a, O> {
 #[doc = "Field `BODCORERESETENA_SECURE` reader - BOD Core reset enable."]
 pub type BODCORERESETENA_SECURE_R = crate::FieldReader<u8, BODCORERESETENA_SECURE_A>;
 #[doc = "BOD Core reset enable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BODCORERESETENA_SECURE_A {
     #[doc = "1: Any other value than b10, BOD Core reset is enable."]
@@ -245,7 +245,7 @@ impl<'a, const O: u8> BODCORERESETENA_SECURE_W<'a, O> {
 #[doc = "Field `BODVBATRESETENA_SECURE_DP` reader - BOD VBAT reset enable."]
 pub type BODVBATRESETENA_SECURE_DP_R = crate::FieldReader<u8, BODVBATRESETENA_SECURE_DP_A>;
 #[doc = "BOD VBAT reset enable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BODVBATRESETENA_SECURE_DP_A {
     #[doc = "1: Any other value than b10, BOD VBAT reset is enable."]
@@ -298,7 +298,7 @@ impl<'a, const O: u8> BODVBATRESETENA_SECURE_DP_W<'a, O> {
 #[doc = "Field `BODCORERESETENA_SECURE_DP` reader - BOD Core reset enable."]
 pub type BODCORERESETENA_SECURE_DP_R = crate::FieldReader<u8, BODCORERESETENA_SECURE_DP_A>;
 #[doc = "BOD Core reset enable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BODCORERESETENA_SECURE_DP_A {
     #[doc = "1: Any other value than b10, BOD Core reset is enable."]

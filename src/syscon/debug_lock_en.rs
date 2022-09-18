@@ -37,7 +37,7 @@ impl From<crate::W<DEBUG_LOCK_EN_SPEC>> for W {
 #[doc = "Field `LOCK_ALL` reader - Control write access to security registers."]
 pub type LOCK_ALL_R = crate::FieldReader<u8, LOCK_ALL_A>;
 #[doc = "Control write access to security registers.\n\nValue on reset: 5"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_ALL_A {
     #[doc = "0: Any other value than b1010: disable write access to all registers."]

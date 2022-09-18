@@ -37,7 +37,7 @@ impl From<crate::W<RTCOSC32K_SPEC>> for W {
 #[doc = "Field `SEL` reader - Select the 32K oscillator to be used in Deep Power Down Mode for the RTC (either XTAL32KHz or FRO32KHz) ."]
 pub type SEL_R = crate::BitReader<SEL_A>;
 #[doc = "Select the 32K oscillator to be used in Deep Power Down Mode for the RTC (either XTAL32KHz or FRO32KHz) .\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SEL_A {
     #[doc = "0: FRO 32 KHz."]
     FRO32K = 0,

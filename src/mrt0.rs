@@ -12,7 +12,7 @@ pub struct RegisterBlock {
     pub irq_flag: IRQ_FLAG,
 }
 #[doc = "no description available."]
-pub use channel::CHANNEL;
+pub use self::channel::CHANNEL;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod channel;

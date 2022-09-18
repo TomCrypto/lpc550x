@@ -37,7 +37,7 @@ impl From<crate::W<PDRUNCFG0_SPEC>> for W {
 #[doc = "Field `PDEN_BODVBAT` reader - Controls power to VBAT Brown Out Detector (BOD)."]
 pub type PDEN_BODVBAT_R = crate::BitReader<PDEN_BODVBAT_A>;
 #[doc = "Controls power to VBAT Brown Out Detector (BOD).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_BODVBAT_A {
     #[doc = "0: BOD VBAT is powered."]
     POWEREDON = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> PDEN_BODVBAT_W<'a, O> {
 #[doc = "Field `PDEN_FRO32K` reader - Controls power to the Free Running Oscillator (FRO) 32 KHz."]
 pub type PDEN_FRO32K_R = crate::BitReader<PDEN_FRO32K_A>;
 #[doc = "Controls power to the Free Running Oscillator (FRO) 32 KHz.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_FRO32K_A {
     #[doc = "0: FRO32KHz is powered."]
     POWEREDON = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> PDEN_FRO32K_W<'a, O> {
 #[doc = "Field `PDEN_XTAL32K` reader - Controls power to crystal 32 KHz."]
 pub type PDEN_XTAL32K_R = crate::BitReader<PDEN_XTAL32K_A>;
 #[doc = "Controls power to crystal 32 KHz.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_XTAL32K_A {
     #[doc = "0: Crystal 32KHz is powered."]
     POWEREDON = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> PDEN_XTAL32K_W<'a, O> {
 #[doc = "Field `PDEN_XTAL32M` reader - Controls power to high speed crystal."]
 pub type PDEN_XTAL32M_R = crate::BitReader<PDEN_XTAL32M_A>;
 #[doc = "Controls power to high speed crystal.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_XTAL32M_A {
     #[doc = "0: High speed crystal is powered."]
     POWEREDON = 0,
@@ -241,7 +241,7 @@ impl<'a, const O: u8> PDEN_XTAL32M_W<'a, O> {
 #[doc = "Field `PDEN_PLL0` reader - Controls power to PLL0."]
 pub type PDEN_PLL0_R = crate::BitReader<PDEN_PLL0_A>;
 #[doc = "Controls power to PLL0.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_PLL0_A {
     #[doc = "0: PLL0 is powered."]
     POWEREDON = 0,
@@ -291,7 +291,7 @@ impl<'a, const O: u8> PDEN_PLL0_W<'a, O> {
 #[doc = "Field `PDEN_PLL1` reader - Controls power to PLL1."]
 pub type PDEN_PLL1_R = crate::BitReader<PDEN_PLL1_A>;
 #[doc = "Controls power to PLL1.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_PLL1_A {
     #[doc = "0: PLL1 is powered."]
     POWEREDON = 0,
@@ -341,7 +341,7 @@ impl<'a, const O: u8> PDEN_PLL1_W<'a, O> {
 #[doc = "Field `PDEN_COMP` reader - Controls power to Analog Comparator."]
 pub type PDEN_COMP_R = crate::BitReader<PDEN_COMP_A>;
 #[doc = "Controls power to Analog Comparator.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_COMP_A {
     #[doc = "0: Analog Comparator is powered."]
     POWEREDON = 0,
@@ -391,7 +391,7 @@ impl<'a, const O: u8> PDEN_COMP_W<'a, O> {
 #[doc = "Field `PDEN_AUXBIAS` reader - Controls power to auxiliary biasing (AUXBIAS)"]
 pub type PDEN_AUXBIAS_R = crate::BitReader<PDEN_AUXBIAS_A>;
 #[doc = "Controls power to auxiliary biasing (AUXBIAS)\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_AUXBIAS_A {
     #[doc = "0: auxiliary biasing is powered."]
     POWEREDON = 0,
@@ -442,7 +442,7 @@ impl<'a, const O: u8> PDEN_AUXBIAS_W<'a, O> {
 #[doc = "Field `PDEN_LDOXO32M` reader - Controls power to high speed crystal LDO."]
 pub type PDEN_LDOXO32M_R = crate::BitReader<PDEN_LDOXO32M_A>;
 #[doc = "Controls power to high speed crystal LDO.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_LDOXO32M_A {
     #[doc = "0: High speed crystal LDO is powered."]
     POWEREDON = 0,
@@ -493,7 +493,7 @@ impl<'a, const O: u8> PDEN_LDOXO32M_W<'a, O> {
 #[doc = "Field `PDEN_RNG` reader - Controls power to all True Random Number Genetaor (TRNG) clock sources."]
 pub type PDEN_RNG_R = crate::BitReader<PDEN_RNG_A>;
 #[doc = "Controls power to all True Random Number Genetaor (TRNG) clock sources.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_RNG_A {
     #[doc = "0: TRNG clocks are powered."]
     POWEREDON = 0,
@@ -543,7 +543,7 @@ impl<'a, const O: u8> PDEN_RNG_W<'a, O> {
 #[doc = "Field `PDEN_PLL0_SSCG` reader - Controls power to PLL0 Spread Spectrum module."]
 pub type PDEN_PLL0_SSCG_R = crate::BitReader<PDEN_PLL0_SSCG_A>;
 #[doc = "Controls power to PLL0 Spread Spectrum module.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PDEN_PLL0_SSCG_A {
     #[doc = "0: PLL0 Sread spectrum module is powered."]
     POWEREDON = 0,

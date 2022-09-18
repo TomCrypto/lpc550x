@@ -37,7 +37,7 @@ impl From<crate::W<FIFOINTENSET_SPEC>> for W {
 #[doc = "Field `TXERR` reader - Determines whether an interrupt occurs when a transmit error occurs, based on the TXERR flag in the FIFOSTAT register."]
 pub type TXERR_R = crate::BitReader<TXERR_A>;
 #[doc = "Determines whether an interrupt occurs when a transmit error occurs, based on the TXERR flag in the FIFOSTAT register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXERR_A {
     #[doc = "0: No interrupt will be generated for a transmit error."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> TXERR_W<'a, O> {
 #[doc = "Field `RXERR` reader - Determines whether an interrupt occurs when a receive error occurs, based on the RXERR flag in the FIFOSTAT register."]
 pub type RXERR_R = crate::BitReader<RXERR_A>;
 #[doc = "Determines whether an interrupt occurs when a receive error occurs, based on the RXERR flag in the FIFOSTAT register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RXERR_A {
     #[doc = "0: No interrupt will be generated for a receive error."]
     DISABLED = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> RXERR_W<'a, O> {
 #[doc = "Field `TXLVL` reader - Determines whether an interrupt occurs when a the transmit FIFO reaches the level specified by the TXLVL field in the FIFOTRIG register."]
 pub type TXLVL_R = crate::BitReader<TXLVL_A>;
 #[doc = "Determines whether an interrupt occurs when a the transmit FIFO reaches the level specified by the TXLVL field in the FIFOTRIG register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXLVL_A {
     #[doc = "0: No interrupt will be generated based on the TX FIFO level."]
     DISABLED = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> TXLVL_W<'a, O> {
 #[doc = "Field `RXLVL` reader - Determines whether an interrupt occurs when a the receive FIFO reaches the level specified by the TXLVL field in the FIFOTRIG register."]
 pub type RXLVL_R = crate::BitReader<RXLVL_A>;
 #[doc = "Determines whether an interrupt occurs when a the receive FIFO reaches the level specified by the TXLVL field in the FIFOTRIG register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RXLVL_A {
     #[doc = "0: No interrupt will be generated based on the RX FIFO level."]
     DISABLED = 0,

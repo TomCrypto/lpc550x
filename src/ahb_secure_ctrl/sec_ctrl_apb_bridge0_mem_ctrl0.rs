@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE0_MEM_CTRL0_SPEC>> for W {
 #[doc = "Field `SYSCON_RULE` reader - System Configuration."]
 pub type SYSCON_RULE_R = crate::FieldReader<u8, SYSCON_RULE_A>;
 #[doc = "System Configuration.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SYSCON_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> SYSCON_RULE_W<'a, O> {
 #[doc = "Field `IOCON_RULE` reader - I/O Configuration."]
 pub type IOCON_RULE_R = crate::FieldReader<u8, IOCON_RULE_A>;
 #[doc = "I/O Configuration.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum IOCON_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> IOCON_RULE_W<'a, O> {
 #[doc = "Field `GINT0_RULE` reader - GPIO input Interrupt 0."]
 pub type GINT0_RULE_R = crate::FieldReader<u8, GINT0_RULE_A>;
 #[doc = "GPIO input Interrupt 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum GINT0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> GINT0_RULE_W<'a, O> {
 #[doc = "Field `GINT1_RULE` reader - GPIO input Interrupt 1."]
 pub type GINT1_RULE_R = crate::FieldReader<u8, GINT1_RULE_A>;
 #[doc = "GPIO input Interrupt 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum GINT1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -353,7 +353,7 @@ impl<'a, const O: u8> GINT1_RULE_W<'a, O> {
 #[doc = "Field `PINT_RULE` reader - Pin Interrupt and Pattern match."]
 pub type PINT_RULE_R = crate::FieldReader<u8, PINT_RULE_A>;
 #[doc = "Pin Interrupt and Pattern match.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PINT_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -432,7 +432,7 @@ impl<'a, const O: u8> PINT_RULE_W<'a, O> {
 #[doc = "Field `SEC_PINT_RULE` reader - Secure Pin Interrupt and Pattern match."]
 pub type SEC_PINT_RULE_R = crate::FieldReader<u8, SEC_PINT_RULE_A>;
 #[doc = "Secure Pin Interrupt and Pattern match.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEC_PINT_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -511,7 +511,7 @@ impl<'a, const O: u8> SEC_PINT_RULE_W<'a, O> {
 #[doc = "Field `INPUTMUX_RULE` reader - Peripheral input multiplexing."]
 pub type INPUTMUX_RULE_R = crate::FieldReader<u8, INPUTMUX_RULE_A>;
 #[doc = "Peripheral input multiplexing.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum INPUTMUX_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

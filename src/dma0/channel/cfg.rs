@@ -37,7 +37,7 @@ impl From<crate::W<CFG_SPEC>> for W {
 #[doc = "Field `PERIPHREQEN` reader - Peripheral request Enable. If a DMA channel is used to perform a memory-to-memory move, any peripheral DMA request associated with that channel can be disabled to prevent any interaction between the peripheral and the DMA controller."]
 pub type PERIPHREQEN_R = crate::BitReader<PERIPHREQEN_A>;
 #[doc = "Peripheral request Enable. If a DMA channel is used to perform a memory-to-memory move, any peripheral DMA request associated with that channel can be disabled to prevent any interaction between the peripheral and the DMA controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PERIPHREQEN_A {
     #[doc = "0: Disabled. Peripheral DMA requests are disabled."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> PERIPHREQEN_W<'a, O> {
 #[doc = "Field `HWTRIGEN` reader - Hardware Triggering Enable for this channel."]
 pub type HWTRIGEN_R = crate::BitReader<HWTRIGEN_A>;
 #[doc = "Hardware Triggering Enable for this channel.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HWTRIGEN_A {
     #[doc = "0: Disabled. Hardware triggering is not used."]
     DISABLED = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> HWTRIGEN_W<'a, O> {
 #[doc = "Field `TRIGPOL` reader - Trigger Polarity. Selects the polarity of a hardware trigger for this channel."]
 pub type TRIGPOL_R = crate::BitReader<TRIGPOL_A>;
 #[doc = "Trigger Polarity. Selects the polarity of a hardware trigger for this channel.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRIGPOL_A {
     #[doc = "0: Active low - falling edge. Hardware trigger is active low or falling edge triggered, based on TRIGTYPE."]
     ACTIVE_LOW_FALLING = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> TRIGPOL_W<'a, O> {
 #[doc = "Field `TRIGTYPE` reader - Trigger Type. Selects hardware trigger as edge triggered or level triggered."]
 pub type TRIGTYPE_R = crate::BitReader<TRIGTYPE_A>;
 #[doc = "Trigger Type. Selects hardware trigger as edge triggered or level triggered.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRIGTYPE_A {
     #[doc = "0: Edge. Hardware trigger is edge triggered. Transfers will be initiated and completed, as specified for a single trigger."]
     EDGE = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> TRIGTYPE_W<'a, O> {
 #[doc = "Field `TRIGBURST` reader - Trigger Burst. Selects whether hardware triggers cause a single or burst transfer."]
 pub type TRIGBURST_R = crate::BitReader<TRIGBURST_A>;
 #[doc = "Trigger Burst. Selects whether hardware triggers cause a single or burst transfer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRIGBURST_A {
     #[doc = "0: Single transfer. Hardware trigger causes a single transfer."]
     SINGLE = 0,
@@ -291,7 +291,7 @@ pub type BURSTPOWER_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CFG_SPEC, u
 #[doc = "Field `SRCBURSTWRAP` reader - Source Burst Wrap. When enabled, the source data address for the DMA is 'wrapped', meaning that the source address range for each burst will be the same. As an example, this could be used to read several sequential registers from a peripheral for each DMA burst, reading the same registers again for each burst."]
 pub type SRCBURSTWRAP_R = crate::BitReader<SRCBURSTWRAP_A>;
 #[doc = "Source Burst Wrap. When enabled, the source data address for the DMA is 'wrapped', meaning that the source address range for each burst will be the same. As an example, this could be used to read several sequential registers from a peripheral for each DMA burst, reading the same registers again for each burst.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SRCBURSTWRAP_A {
     #[doc = "0: Disabled. Source burst wrapping is not enabled for this DMA channel."]
     DISABLED = 0,
@@ -341,7 +341,7 @@ impl<'a, const O: u8> SRCBURSTWRAP_W<'a, O> {
 #[doc = "Field `DSTBURSTWRAP` reader - Destination Burst Wrap. When enabled, the destination data address for the DMA is 'wrapped', meaning that the destination address range for each burst will be the same. As an example, this could be used to write several sequential registers to a peripheral for each DMA burst, writing the same registers again for each burst."]
 pub type DSTBURSTWRAP_R = crate::BitReader<DSTBURSTWRAP_A>;
 #[doc = "Destination Burst Wrap. When enabled, the destination data address for the DMA is 'wrapped', meaning that the destination address range for each burst will be the same. As an example, this could be used to write several sequential registers to a peripheral for each DMA burst, writing the same registers again for each burst.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DSTBURSTWRAP_A {
     #[doc = "0: Disabled. Destination burst wrapping is not enabled for this DMA channel."]
     DISABLED = 0,

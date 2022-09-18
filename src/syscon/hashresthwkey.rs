@@ -37,7 +37,7 @@ impl From<crate::W<HASHRESTHWKEY_SPEC>> for W {
 #[doc = "Field `UNLOCKCODE` reader - Code value that controls whether HASH AES hardware secret key is unlocked."]
 pub type UNLOCKCODE_R = crate::FieldReader<u32, UNLOCKCODE_A>;
 #[doc = "Code value that controls whether HASH AES hardware secret key is unlocked.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u32)]
 pub enum UNLOCKCODE_A {
     #[doc = "3275531610: HASH AES hardware secret key is unlocked for use by non-secure code. Any other value means that the hardware secret key is restricted to use by secure code only."]

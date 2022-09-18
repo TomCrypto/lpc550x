@@ -37,7 +37,7 @@ impl From<crate::W<CMDH14_SPEC>> for W {
 #[doc = "Field `WAIT_TRIG` reader - Wait for trigger assertion before execution."]
 pub type WAIT_TRIG_R = crate::BitReader<WAIT_TRIG_A>;
 #[doc = "Wait for trigger assertion before execution.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAIT_TRIG_A {
     #[doc = "0: This command will be automatically executed."]
     WAIT_TRIG_0 = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> WAIT_TRIG_W<'a, O> {
 #[doc = "Field `LWI` reader - Loop with Increment."]
 pub type LWI_R = crate::BitReader<LWI_A>;
 #[doc = "Loop with Increment.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LWI_A {
     #[doc = "0: Auto channel increment disabled."]
     LWI_0 = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> LWI_W<'a, O> {
 #[doc = "Field `STS` reader - Sample Time Select."]
 pub type STS_R = crate::FieldReader<u8, STS_A>;
 #[doc = "Sample Time Select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum STS_A {
     #[doc = "0: Minimum sample time of 3 ADCK cycles."]
@@ -267,7 +267,7 @@ impl<'a, const O: u8> STS_W<'a, O> {
 #[doc = "Field `AVGS` reader - Hardware Average Select."]
 pub type AVGS_R = crate::FieldReader<u8, AVGS_A>;
 #[doc = "Hardware Average Select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum AVGS_A {
     #[doc = "0: Single conversion."]
@@ -397,7 +397,7 @@ impl<'a, const O: u8> AVGS_W<'a, O> {
 #[doc = "Field `LOOP` reader - Loop Count Select."]
 pub type LOOP_R = crate::FieldReader<u8, LOOP_A>;
 #[doc = "Loop Count Select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOOP_A {
     #[doc = "0: Looping not enabled. Command executes 1 time."]
@@ -566,7 +566,7 @@ impl<'a, const O: u8> LOOP_W<'a, O> {
 #[doc = "Field `NEXT` reader - Next Command Select."]
 pub type NEXT_R = crate::FieldReader<u8, NEXT_A>;
 #[doc = "Next Command Select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum NEXT_A {
     #[doc = "0: No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]

@@ -37,7 +37,7 @@ impl From<crate::W<TIMER4CAPTSEL_SPEC>> for W {
 #[doc = "Field `CAPTSEL` reader - Input number to TIMER4 capture inputs 0 to 4."]
 pub type CAPTSEL_R = crate::FieldReader<u8, CAPTSEL_A>;
 #[doc = "Input number to TIMER4 capture inputs 0 to 4.\n\nValue on reset: 31"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CAPTSEL_A {
     #[doc = "0: CT_INP0 function selected from IOCON register."]

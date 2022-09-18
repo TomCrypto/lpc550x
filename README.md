@@ -15,6 +15,12 @@ Install the `svd2rust` and `form` tools and run the `generate.sh` script to gene
 
 ## Changelog
 
+### 0.3.0
+
+ - Cleaned up register field enumerations relating to ADC channels
+ - Corrected ADC temperature sensor channel value which was wrong
+ - Regenerated crate using svd2rust 0.26.0
+
 ### 0.2.0
 
  - General register/field description cleanups

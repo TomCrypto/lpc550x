@@ -53,7 +53,7 @@ pub type CLRCTR_L_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, bool
 #[doc = "Field `BIDIR_L` reader - L or unified counter direction select."]
 pub type BIDIR_L_R = crate::BitReader<BIDIR_L_A>;
 #[doc = "L or unified counter direction select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BIDIR_L_A {
     #[doc = "0: Up. The counter counts up to a limit condition, then is cleared to zero."]
     UP = 0,
@@ -123,7 +123,7 @@ pub type CLRCTR_H_W<'a, const O: u8> = crate::BitWriter<'a, u32, CTRL_SPEC, bool
 #[doc = "Field `BIDIR_H` reader - Direction select."]
 pub type BIDIR_H_R = crate::BitReader<BIDIR_H_A>;
 #[doc = "Direction select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BIDIR_H_A {
     #[doc = "0: The H counter counts up to its limit condition, then is cleared to zero."]
     UP = 0,

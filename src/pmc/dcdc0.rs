@@ -41,7 +41,7 @@ pub type CONFIG0_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DCDC0_SPEC, u3
 #[doc = "Field `VOUT` reader - Set output regulation voltage."]
 pub type VOUT_R = crate::FieldReader<u8, VOUT_A>;
 #[doc = "Set output regulation voltage.\n\nValue on reset: 6"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum VOUT_A {
     #[doc = "0: 0.95 V."]

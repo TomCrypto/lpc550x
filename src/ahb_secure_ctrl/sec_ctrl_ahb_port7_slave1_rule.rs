@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_PORT7_SLAVE1_RULE_SPEC>> for W {
 #[doc = "Field `FLEXCOMM2_RULE` reader - Flexcomm interface 2."]
 pub type FLEXCOMM2_RULE_R = crate::FieldReader<u8, FLEXCOMM2_RULE_A>;
 #[doc = "Flexcomm interface 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM2_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -123,7 +123,7 @@ impl<'a, const O: u8> FLEXCOMM2_RULE_W<'a, O> {
 #[doc = "Field `FLEXCOMM3_RULE` reader - Flexcomm interface 3."]
 pub type FLEXCOMM3_RULE_R = crate::FieldReader<u8, FLEXCOMM3_RULE_A>;
 #[doc = "Flexcomm interface 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM3_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -209,7 +209,7 @@ impl<'a, const O: u8> FLEXCOMM3_RULE_W<'a, O> {
 #[doc = "Field `FLEXCOMM4_RULE` reader - Flexcomm interface 4."]
 pub type FLEXCOMM4_RULE_R = crate::FieldReader<u8, FLEXCOMM4_RULE_A>;
 #[doc = "Flexcomm interface 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM4_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -295,7 +295,7 @@ impl<'a, const O: u8> FLEXCOMM4_RULE_W<'a, O> {
 #[doc = "Field `GPIO0_RULE` reader - High Speed GPIO."]
 pub type GPIO0_RULE_R = crate::FieldReader<u8, GPIO0_RULE_A>;
 #[doc = "High Speed GPIO.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum GPIO0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

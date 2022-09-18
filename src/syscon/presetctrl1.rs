@@ -37,7 +37,7 @@ impl From<crate::W<PRESETCTRL1_SPEC>> for W {
 #[doc = "Field `MRT_RST` reader - MRT reset control."]
 pub type MRT_RST_R = crate::BitReader<MRT_RST_A>;
 #[doc = "MRT reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MRT_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> MRT_RST_W<'a, O> {
 #[doc = "Field `OSTIMER_RST` reader - OS Event Timer reset control."]
 pub type OSTIMER_RST_R = crate::BitReader<OSTIMER_RST_A>;
 #[doc = "OS Event Timer reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OSTIMER_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -138,7 +138,7 @@ impl<'a, const O: u8> OSTIMER_RST_W<'a, O> {
 #[doc = "Field `SCT_RST` reader - SCT reset control."]
 pub type SCT_RST_R = crate::BitReader<SCT_RST_A>;
 #[doc = "SCT reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SCT_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -188,7 +188,7 @@ impl<'a, const O: u8> SCT_RST_W<'a, O> {
 #[doc = "Field `CAN_RST` reader - CAN reset control."]
 pub type CAN_RST_R = crate::BitReader<CAN_RST_A>;
 #[doc = "CAN reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CAN_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -238,7 +238,7 @@ impl<'a, const O: u8> CAN_RST_W<'a, O> {
 #[doc = "Field `UTICK_RST` reader - UTICK reset control."]
 pub type UTICK_RST_R = crate::BitReader<UTICK_RST_A>;
 #[doc = "UTICK reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum UTICK_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -288,7 +288,7 @@ impl<'a, const O: u8> UTICK_RST_W<'a, O> {
 #[doc = "Field `FC0_RST` reader - FC0 reset control."]
 pub type FC0_RST_R = crate::BitReader<FC0_RST_A>;
 #[doc = "FC0 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC0_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -338,7 +338,7 @@ impl<'a, const O: u8> FC0_RST_W<'a, O> {
 #[doc = "Field `FC1_RST` reader - FC1 reset control."]
 pub type FC1_RST_R = crate::BitReader<FC1_RST_A>;
 #[doc = "FC1 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC1_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -388,7 +388,7 @@ impl<'a, const O: u8> FC1_RST_W<'a, O> {
 #[doc = "Field `FC2_RST` reader - FC2 reset control."]
 pub type FC2_RST_R = crate::BitReader<FC2_RST_A>;
 #[doc = "FC2 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC2_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -438,7 +438,7 @@ impl<'a, const O: u8> FC2_RST_W<'a, O> {
 #[doc = "Field `FC3_RST` reader - FC3 reset control."]
 pub type FC3_RST_R = crate::BitReader<FC3_RST_A>;
 #[doc = "FC3 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC3_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -488,7 +488,7 @@ impl<'a, const O: u8> FC3_RST_W<'a, O> {
 #[doc = "Field `FC4_RST` reader - FC4 reset control."]
 pub type FC4_RST_R = crate::BitReader<FC4_RST_A>;
 #[doc = "FC4 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC4_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -538,7 +538,7 @@ impl<'a, const O: u8> FC4_RST_W<'a, O> {
 #[doc = "Field `FC5_RST` reader - FC5 reset control."]
 pub type FC5_RST_R = crate::BitReader<FC5_RST_A>;
 #[doc = "FC5 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC5_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -588,7 +588,7 @@ impl<'a, const O: u8> FC5_RST_W<'a, O> {
 #[doc = "Field `FC6_RST` reader - FC6 reset control."]
 pub type FC6_RST_R = crate::BitReader<FC6_RST_A>;
 #[doc = "FC6 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC6_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -638,7 +638,7 @@ impl<'a, const O: u8> FC6_RST_W<'a, O> {
 #[doc = "Field `FC7_RST` reader - FC7 reset control."]
 pub type FC7_RST_R = crate::BitReader<FC7_RST_A>;
 #[doc = "FC7 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FC7_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -688,7 +688,7 @@ impl<'a, const O: u8> FC7_RST_W<'a, O> {
 #[doc = "Field `TIMER2_RST` reader - Timer 2 reset control."]
 pub type TIMER2_RST_R = crate::BitReader<TIMER2_RST_A>;
 #[doc = "Timer 2 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TIMER2_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -739,7 +739,7 @@ impl<'a, const O: u8> TIMER2_RST_W<'a, O> {
 #[doc = "Field `TIMER0_RST` reader - Timer 0 reset control."]
 pub type TIMER0_RST_R = crate::BitReader<TIMER0_RST_A>;
 #[doc = "Timer 0 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TIMER0_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -790,7 +790,7 @@ impl<'a, const O: u8> TIMER0_RST_W<'a, O> {
 #[doc = "Field `TIMER1_RST` reader - Timer 1 reset control."]
 pub type TIMER1_RST_R = crate::BitReader<TIMER1_RST_A>;
 #[doc = "Timer 1 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TIMER1_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,

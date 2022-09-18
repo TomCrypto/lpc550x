@@ -37,7 +37,7 @@ impl From<crate::W<PMCTRL_SPEC>> for W {
 #[doc = "Field `SEL_PMATCH` reader - Specifies whether the 8 pin interrupts are controlled by the pin interrupt function or by the pattern match function."]
 pub type SEL_PMATCH_R = crate::BitReader<SEL_PMATCH_A>;
 #[doc = "Specifies whether the 8 pin interrupts are controlled by the pin interrupt function or by the pattern match function.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SEL_PMATCH_A {
     #[doc = "0: Pin interrupt. Interrupts are driven in response to the standard pin interrupt function."]
     PIN_INTERRUPT = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> SEL_PMATCH_W<'a, O> {
 #[doc = "Field `ENA_RXEV` reader - Enables the RXEV output to the CPU and/or to a GPIO output when the specified boolean expression evaluates to true."]
 pub type ENA_RXEV_R = crate::BitReader<ENA_RXEV_A>;
 #[doc = "Enables the RXEV output to the CPU and/or to a GPIO output when the specified boolean expression evaluates to true.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENA_RXEV_A {
     #[doc = "0: Disabled. RXEV output to the CPU is disabled."]
     DISABLED = 0,

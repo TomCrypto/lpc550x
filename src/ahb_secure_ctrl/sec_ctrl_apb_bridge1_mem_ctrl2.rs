@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE1_MEM_CTRL2_SPEC>> for W {
 #[doc = "Field `FLASH_CTRL_RULE` reader - Flash Controller."]
 pub type FLASH_CTRL_RULE_R = crate::FieldReader<u8, FLASH_CTRL_RULE_A>;
 #[doc = "Flash Controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLASH_CTRL_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -123,7 +123,7 @@ impl<'a, const O: u8> FLASH_CTRL_RULE_W<'a, O> {
 #[doc = "Field `PRINCE_RULE` reader - Prince."]
 pub type PRINCE_RULE_R = crate::FieldReader<u8, PRINCE_RULE_A>;
 #[doc = "Prince.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PRINCE_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

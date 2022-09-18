@@ -18,7 +18,7 @@ pub type D_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `TSRC` reader - Trigger Source."]
 pub type TSRC_R = crate::FieldReader<u8, TSRC_A>;
 #[doc = "Trigger Source.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TSRC_A {
     #[doc = "0: Trigger source 0 initiated this conversion."]
@@ -128,7 +128,7 @@ impl TSRC_R {
 #[doc = "Field `LOOPCNT` reader - Loop count value."]
 pub type LOOPCNT_R = crate::FieldReader<u8, LOOPCNT_A>;
 #[doc = "Loop count value.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOOPCNT_A {
     #[doc = "0: Result is from initial conversion in command."]
@@ -238,7 +238,7 @@ impl LOOPCNT_R {
 #[doc = "Field `CMDSRC` reader - Command Buffer Source."]
 pub type CMDSRC_R = crate::FieldReader<u8, CMDSRC_A>;
 #[doc = "Command Buffer Source.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CMDSRC_A {
     #[doc = "0: Not a valid value CMDSRC value for a dataword in RESFIFO. 0x0 is only found in initial FIFO state prior to an ADC conversion result dataword being stored to a RESFIFO buffer."]
@@ -348,7 +348,7 @@ impl CMDSRC_R {
 #[doc = "Field `VALID` reader - FIFO entry is valid."]
 pub type VALID_R = crate::BitReader<VALID_A>;
 #[doc = "FIFO entry is valid.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VALID_A {
     #[doc = "0: FIFO is empty. Discard any read from RESFIFO."]
     VALID_0 = 0,

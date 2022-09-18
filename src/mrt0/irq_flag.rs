@@ -37,7 +37,7 @@ impl From<crate::W<IRQ_FLAG_SPEC>> for W {
 #[doc = "Field `GFLAG0` reader - Monitors the interrupt flag of TIMER0."]
 pub type GFLAG0_R = crate::BitReader<GFLAG0_A>;
 #[doc = "Monitors the interrupt flag of TIMER0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GFLAG0_A {
     #[doc = "0: No pending interrupt. Writing a zero is equivalent to no operation."]
     NO_PENDING_INTERRUPT = 0,

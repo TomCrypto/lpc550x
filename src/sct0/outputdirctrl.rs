@@ -37,7 +37,7 @@ impl From<crate::W<OUTPUTDIRCTRL_SPEC>> for W {
 #[doc = "Field `SETCLR0` reader - Set/clear operation on output 0."]
 pub type SETCLR0_R = crate::FieldReader<u8, SETCLR0_A>;
 #[doc = "Set/clear operation on output 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR0_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -103,7 +103,7 @@ impl<'a, const O: u8> SETCLR0_W<'a, O> {
 #[doc = "Field `SETCLR1` reader - Set/clear operation on output 1."]
 pub type SETCLR1_R = crate::FieldReader<u8, SETCLR1_A>;
 #[doc = "Set/clear operation on output 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR1_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -169,7 +169,7 @@ impl<'a, const O: u8> SETCLR1_W<'a, O> {
 #[doc = "Field `SETCLR2` reader - Set/clear operation on output 2."]
 pub type SETCLR2_R = crate::FieldReader<u8, SETCLR2_A>;
 #[doc = "Set/clear operation on output 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR2_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -235,7 +235,7 @@ impl<'a, const O: u8> SETCLR2_W<'a, O> {
 #[doc = "Field `SETCLR3` reader - Set/clear operation on output 3."]
 pub type SETCLR3_R = crate::FieldReader<u8, SETCLR3_A>;
 #[doc = "Set/clear operation on output 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR3_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -301,7 +301,7 @@ impl<'a, const O: u8> SETCLR3_W<'a, O> {
 #[doc = "Field `SETCLR4` reader - Set/clear operation on output 4."]
 pub type SETCLR4_R = crate::FieldReader<u8, SETCLR4_A>;
 #[doc = "Set/clear operation on output 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR4_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -367,7 +367,7 @@ impl<'a, const O: u8> SETCLR4_W<'a, O> {
 #[doc = "Field `SETCLR5` reader - Set/clear operation on output 5."]
 pub type SETCLR5_R = crate::FieldReader<u8, SETCLR5_A>;
 #[doc = "Set/clear operation on output 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR5_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -433,7 +433,7 @@ impl<'a, const O: u8> SETCLR5_W<'a, O> {
 #[doc = "Field `SETCLR6` reader - Set/clear operation on output 6."]
 pub type SETCLR6_R = crate::FieldReader<u8, SETCLR6_A>;
 #[doc = "Set/clear operation on output 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR6_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -499,7 +499,7 @@ impl<'a, const O: u8> SETCLR6_W<'a, O> {
 #[doc = "Field `SETCLR7` reader - Set/clear operation on output 7."]
 pub type SETCLR7_R = crate::FieldReader<u8, SETCLR7_A>;
 #[doc = "Set/clear operation on output 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR7_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -565,7 +565,7 @@ impl<'a, const O: u8> SETCLR7_W<'a, O> {
 #[doc = "Field `SETCLR8` reader - Set/clear operation on output 8."]
 pub type SETCLR8_R = crate::FieldReader<u8, SETCLR8_A>;
 #[doc = "Set/clear operation on output 8.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR8_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -631,7 +631,7 @@ impl<'a, const O: u8> SETCLR8_W<'a, O> {
 #[doc = "Field `SETCLR9` reader - Set/clear operation on output 9."]
 pub type SETCLR9_R = crate::FieldReader<u8, SETCLR9_A>;
 #[doc = "Set/clear operation on output 9.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR9_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -697,7 +697,7 @@ impl<'a, const O: u8> SETCLR9_W<'a, O> {
 #[doc = "Field `SETCLR10` reader - Set/clear operation on output 10."]
 pub type SETCLR10_R = crate::FieldReader<u8, SETCLR10_A>;
 #[doc = "Set/clear operation on output 10.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR10_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -763,7 +763,7 @@ impl<'a, const O: u8> SETCLR10_W<'a, O> {
 #[doc = "Field `SETCLR11` reader - Set/clear operation on output 11."]
 pub type SETCLR11_R = crate::FieldReader<u8, SETCLR11_A>;
 #[doc = "Set/clear operation on output 11.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR11_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -829,7 +829,7 @@ impl<'a, const O: u8> SETCLR11_W<'a, O> {
 #[doc = "Field `SETCLR12` reader - Set/clear operation on output 12."]
 pub type SETCLR12_R = crate::FieldReader<u8, SETCLR12_A>;
 #[doc = "Set/clear operation on output 12.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR12_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -895,7 +895,7 @@ impl<'a, const O: u8> SETCLR12_W<'a, O> {
 #[doc = "Field `SETCLR13` reader - Set/clear operation on output 13."]
 pub type SETCLR13_R = crate::FieldReader<u8, SETCLR13_A>;
 #[doc = "Set/clear operation on output 13.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR13_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -961,7 +961,7 @@ impl<'a, const O: u8> SETCLR13_W<'a, O> {
 #[doc = "Field `SETCLR14` reader - Set/clear operation on output 14."]
 pub type SETCLR14_R = crate::FieldReader<u8, SETCLR14_A>;
 #[doc = "Set/clear operation on output 14.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR14_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]
@@ -1027,7 +1027,7 @@ impl<'a, const O: u8> SETCLR14_W<'a, O> {
 #[doc = "Field `SETCLR15` reader - Set/clear operation on output 15."]
 pub type SETCLR15_R = crate::FieldReader<u8, SETCLR15_A>;
 #[doc = "Set/clear operation on output 15.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SETCLR15_A {
     #[doc = "0: Set and clear do not depend on the direction of any counter."]

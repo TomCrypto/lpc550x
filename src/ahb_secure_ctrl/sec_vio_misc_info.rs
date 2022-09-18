@@ -16,7 +16,7 @@ impl From<crate::R<SEC_VIO_MISC_INFO_SPEC>> for R {
 #[doc = "Field `SEC_VIO_INFO_WRITE` reader - security violation access read/write indicator."]
 pub type SEC_VIO_INFO_WRITE_R = crate::BitReader<SEC_VIO_INFO_WRITE_A>;
 #[doc = "security violation access read/write indicator.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SEC_VIO_INFO_WRITE_A {
     #[doc = "0: Read access."]
     READ = 0,
@@ -52,7 +52,7 @@ impl SEC_VIO_INFO_WRITE_R {
 #[doc = "Field `SEC_VIO_INFO_DATA_ACCESS` reader - security violation access data/code indicator."]
 pub type SEC_VIO_INFO_DATA_ACCESS_R = crate::BitReader<SEC_VIO_INFO_DATA_ACCESS_A>;
 #[doc = "security violation access data/code indicator.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SEC_VIO_INFO_DATA_ACCESS_A {
     #[doc = "0: Code access."]
     CODE = 0,
@@ -90,7 +90,7 @@ pub type SEC_VIO_INFO_MASTER_SEC_LEVEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `SEC_VIO_INFO_MASTER` reader - security violation master number."]
 pub type SEC_VIO_INFO_MASTER_R = crate::FieldReader<u8, SEC_VIO_INFO_MASTER_A>;
 #[doc = "security violation master number.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEC_VIO_INFO_MASTER_A {
     #[doc = "0: CPU0 Code."]

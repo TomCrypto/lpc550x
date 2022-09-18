@@ -37,7 +37,7 @@ impl From<crate::W<INTENSET_SPEC>> for W {
 #[doc = "Field `MSTPENDINGEN` reader - Master Pending interrupt Enable."]
 pub type MSTPENDINGEN_R = crate::BitReader<MSTPENDINGEN_A>;
 #[doc = "Master Pending interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTPENDINGEN_A {
     #[doc = "0: Disabled. The MstPending interrupt is disabled."]
     DISABLED = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> MSTPENDINGEN_W<'a, O> {
 #[doc = "Field `MSTARBLOSSEN` reader - Master Arbitration Loss interrupt Enable."]
 pub type MSTARBLOSSEN_R = crate::BitReader<MSTARBLOSSEN_A>;
 #[doc = "Master Arbitration Loss interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTARBLOSSEN_A {
     #[doc = "0: Disabled. The MstArbLoss interrupt is disabled."]
     DISABLED = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> MSTARBLOSSEN_W<'a, O> {
 #[doc = "Field `MSTSTSTPERREN` reader - Master Start/Stop Error interrupt Enable."]
 pub type MSTSTSTPERREN_R = crate::BitReader<MSTSTSTPERREN_A>;
 #[doc = "Master Start/Stop Error interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTSTSTPERREN_A {
     #[doc = "0: Disabled. The MstStStpErr interrupt is disabled."]
     DISABLED = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> MSTSTSTPERREN_W<'a, O> {
 #[doc = "Field `SLVPENDINGEN` reader - Slave Pending interrupt Enable."]
 pub type SLVPENDINGEN_R = crate::BitReader<SLVPENDINGEN_A>;
 #[doc = "Slave Pending interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVPENDINGEN_A {
     #[doc = "0: Disabled. The SlvPending interrupt is disabled."]
     DISABLED = 0,
@@ -241,7 +241,7 @@ impl<'a, const O: u8> SLVPENDINGEN_W<'a, O> {
 #[doc = "Field `SLVNOTSTREN` reader - Slave Not Stretching interrupt Enable."]
 pub type SLVNOTSTREN_R = crate::BitReader<SLVNOTSTREN_A>;
 #[doc = "Slave Not Stretching interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVNOTSTREN_A {
     #[doc = "0: Disabled. The SlvNotStr interrupt is disabled."]
     DISABLED = 0,
@@ -292,7 +292,7 @@ impl<'a, const O: u8> SLVNOTSTREN_W<'a, O> {
 #[doc = "Field `SLVDESELEN` reader - Slave Deselect interrupt Enable."]
 pub type SLVDESELEN_R = crate::BitReader<SLVDESELEN_A>;
 #[doc = "Slave Deselect interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVDESELEN_A {
     #[doc = "0: Disabled. The SlvDeSel interrupt is disabled."]
     DISABLED = 0,
@@ -342,7 +342,7 @@ impl<'a, const O: u8> SLVDESELEN_W<'a, O> {
 #[doc = "Field `MONRDYEN` reader - Monitor data Ready interrupt Enable."]
 pub type MONRDYEN_R = crate::BitReader<MONRDYEN_A>;
 #[doc = "Monitor data Ready interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONRDYEN_A {
     #[doc = "0: Disabled. The MonRdy interrupt is disabled."]
     DISABLED = 0,
@@ -392,7 +392,7 @@ impl<'a, const O: u8> MONRDYEN_W<'a, O> {
 #[doc = "Field `MONOVEN` reader - Monitor Overrun interrupt Enable."]
 pub type MONOVEN_R = crate::BitReader<MONOVEN_A>;
 #[doc = "Monitor Overrun interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONOVEN_A {
     #[doc = "0: Disabled. The MonOv interrupt is disabled."]
     DISABLED = 0,
@@ -442,7 +442,7 @@ impl<'a, const O: u8> MONOVEN_W<'a, O> {
 #[doc = "Field `MONIDLEEN` reader - Monitor Idle interrupt Enable."]
 pub type MONIDLEEN_R = crate::BitReader<MONIDLEEN_A>;
 #[doc = "Monitor Idle interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONIDLEEN_A {
     #[doc = "0: Disabled. The MonIdle interrupt is disabled."]
     DISABLED = 0,
@@ -492,7 +492,7 @@ impl<'a, const O: u8> MONIDLEEN_W<'a, O> {
 #[doc = "Field `EVENTTIMEOUTEN` reader - Event time-out interrupt Enable."]
 pub type EVENTTIMEOUTEN_R = crate::BitReader<EVENTTIMEOUTEN_A>;
 #[doc = "Event time-out interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EVENTTIMEOUTEN_A {
     #[doc = "0: Disabled. The Event time-out interrupt is disabled."]
     DISABLED = 0,
@@ -543,7 +543,7 @@ impl<'a, const O: u8> EVENTTIMEOUTEN_W<'a, O> {
 #[doc = "Field `SCLTIMEOUTEN` reader - SCL time-out interrupt Enable."]
 pub type SCLTIMEOUTEN_R = crate::BitReader<SCLTIMEOUTEN_A>;
 #[doc = "SCL time-out interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SCLTIMEOUTEN_A {
     #[doc = "0: Disabled. The SCL time-out interrupt is disabled."]
     DISABLED = 0,

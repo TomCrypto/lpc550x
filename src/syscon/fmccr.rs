@@ -37,7 +37,7 @@ impl From<crate::W<FMCCR_SPEC>> for W {
 #[doc = "Field `FETCHCFG` reader - Instruction fetch configuration."]
 pub type FETCHCFG_R = crate::FieldReader<u8, FETCHCFG_A>;
 #[doc = "Instruction fetch configuration.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FETCHCFG_A {
     #[doc = "0: Instruction fetches from flash are not buffered."]
@@ -103,7 +103,7 @@ impl<'a, const O: u8> FETCHCFG_W<'a, O> {
 #[doc = "Field `DATACFG` reader - Data read configuration."]
 pub type DATACFG_R = crate::FieldReader<u8, DATACFG_A>;
 #[doc = "Data read configuration.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DATACFG_A {
     #[doc = "0: Data accesses from flash are not buffered."]
@@ -168,7 +168,7 @@ impl<'a, const O: u8> DATACFG_W<'a, O> {
 #[doc = "Field `ACCEL` reader - Acceleration enable."]
 pub type ACCEL_R = crate::BitReader<ACCEL_A>;
 #[doc = "Acceleration enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ACCEL_A {
     #[doc = "0: Flash acceleration is disabled."]
     DISABLE = 0,
@@ -218,7 +218,7 @@ impl<'a, const O: u8> ACCEL_W<'a, O> {
 #[doc = "Field `PREFEN` reader - Prefetch enable."]
 pub type PREFEN_R = crate::BitReader<PREFEN_A>;
 #[doc = "Prefetch enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PREFEN_A {
     #[doc = "0: No instruction prefetch is performed."]
     DISABLE = 0,
@@ -268,7 +268,7 @@ impl<'a, const O: u8> PREFEN_W<'a, O> {
 #[doc = "Field `PREFOVR` reader - Prefetch override."]
 pub type PREFOVR_R = crate::BitReader<PREFOVR_A>;
 #[doc = "Prefetch override.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PREFOVR_A {
     #[doc = "0: Any previously initiated prefetch will be completed."]
     NORMAL = 0,
@@ -318,7 +318,7 @@ impl<'a, const O: u8> PREFOVR_W<'a, O> {
 #[doc = "Field `FLASHTIM` reader - Flash memory access time."]
 pub type FLASHTIM_R = crate::FieldReader<u8, FLASHTIM_A>;
 #[doc = "Flash memory access time.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLASHTIM_A {
     #[doc = "0: 1 system clock flash access time (for system clock rates up to 11 MHz)."]

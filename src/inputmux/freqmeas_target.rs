@@ -37,7 +37,7 @@ impl From<crate::W<FREQMEAS_TARGET_SPEC>> for W {
 #[doc = "Field `CLKIN` reader - Clock source number (decimal value) for frequency measure function target clock:"]
 pub type CLKIN_R = crate::FieldReader<u8, CLKIN_A>;
 #[doc = "Clock source number (decimal value) for frequency measure function target clock:\n\nValue on reset: 31"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CLKIN_A {
     #[doc = "0: External main crystal oscilator (Clock_in)."]

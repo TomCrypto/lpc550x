@@ -37,7 +37,7 @@ impl From<crate::W<FCCTRLSEL_SPEC>> for W {
 #[doc = "Field `SCKINSEL` reader - Selects the source for SCK going into this Flexcomm."]
 pub type SCKINSEL_R = crate::FieldReader<u8, SCKINSEL_A>;
 #[doc = "Selects the source for SCK going into this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SCKINSEL_A {
     #[doc = "0: Selects the dedicated FCn_SCK function for this Flexcomm."]
@@ -103,7 +103,7 @@ impl<'a, const O: u8> SCKINSEL_W<'a, O> {
 #[doc = "Field `WSINSEL` reader - Selects the source for WS going into this Flexcomm."]
 pub type WSINSEL_R = crate::FieldReader<u8, WSINSEL_A>;
 #[doc = "Selects the source for WS going into this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum WSINSEL_A {
     #[doc = "0: Selects the dedicated (FCn_TXD_SCL_MISO_WS) function for this Flexcomm."]
@@ -169,7 +169,7 @@ impl<'a, const O: u8> WSINSEL_W<'a, O> {
 #[doc = "Field `DATAINSEL` reader - Selects the source for DATA input to this Flexcomm."]
 pub type DATAINSEL_R = crate::FieldReader<u8, DATAINSEL_A>;
 #[doc = "Selects the source for DATA input to this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DATAINSEL_A {
     #[doc = "0: Selects the dedicated FCn_RXD_SDA_MOSI_DATA input for this Flexcomm."]
@@ -235,7 +235,7 @@ impl<'a, const O: u8> DATAINSEL_W<'a, O> {
 #[doc = "Field `DATAOUTSEL` reader - Selects the source for DATA output from this Flexcomm."]
 pub type DATAOUTSEL_R = crate::FieldReader<u8, DATAOUTSEL_A>;
 #[doc = "Selects the source for DATA output from this Flexcomm.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DATAOUTSEL_A {
     #[doc = "0: Selects the dedicated FCn_RXD_SDA_MOSI_DATA output from this Flexcomm."]

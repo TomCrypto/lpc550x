@@ -37,7 +37,7 @@ impl From<crate::W<SLVCTL_SPEC>> for W {
 #[doc = "Field `SLVCONTINUE` reader - Slave Continue."]
 pub type SLVCONTINUE_R = crate::BitReader<SLVCONTINUE_A>;
 #[doc = "Slave Continue.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVCONTINUE_A {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> SLVCONTINUE_W<'a, O> {
 #[doc = "Field `SLVNACK` reader - Slave NACK."]
 pub type SLVNACK_R = crate::BitReader<SLVNACK_A>;
 #[doc = "Slave NACK.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVNACK_A {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> SLVNACK_W<'a, O> {
 #[doc = "Field `SLVDMA` reader - Slave DMA enable."]
 pub type SLVDMA_R = crate::BitReader<SLVDMA_A>;
 #[doc = "Slave DMA enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVDMA_A {
     #[doc = "0: Disabled. No DMA requests are issued for Slave mode operation."]
     DISABLED = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> SLVDMA_W<'a, O> {
 #[doc = "Field `AUTOACK` reader - Automatic Acknowledge.When this bit is set, it will cause an I2C header which matches SLVADR0 and the direction set by AUTOMATCHREAD to be ACKed immediately; this is used with DMA to allow processing of the data without intervention. If this bit is clear and a header matches SLVADR0, the behavior is controlled by AUTONACK in the SLVADR0 register: allowing NACK or interrupt."]
 pub type AUTOACK_R = crate::BitReader<AUTOACK_A>;
 #[doc = "Automatic Acknowledge.When this bit is set, it will cause an I2C header which matches SLVADR0 and the direction set by AUTOMATCHREAD to be ACKed immediately; this is used with DMA to allow processing of the data without intervention. If this bit is clear and a header matches SLVADR0, the behavior is controlled by AUTONACK in the SLVADR0 register: allowing NACK or interrupt.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AUTOACK_A {
     #[doc = "0: Normal, non-automatic operation. If AUTONACK = 0, an SlvPending interrupt is generated when a matching address is received. If AUTONACK = 1, received addresses are NACKed (ignored)."]
     NORMAL = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> AUTOACK_W<'a, O> {
 #[doc = "Field `AUTOMATCHREAD` reader - When AUTOACK is set, this bit controls whether it matches a read or write request on the next header with an address matching SLVADR0. Since DMA needs to be configured to match the transfer direction, the direction needs to be specified. This bit allows a direction to be chosen for the next operation."]
 pub type AUTOMATCHREAD_R = crate::BitReader<AUTOMATCHREAD_A>;
 #[doc = "When AUTOACK is set, this bit controls whether it matches a read or write request on the next header with an address matching SLVADR0. Since DMA needs to be configured to match the transfer direction, the direction needs to be specified. This bit allows a direction to be chosen for the next operation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AUTOMATCHREAD_A {
     #[doc = "0: The expected next operation in Automatic Mode is an I2C write."]
     I2C_WRITE = 0,

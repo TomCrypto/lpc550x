@@ -52,7 +52,7 @@ pub type ADDR2_PRG_W<'a, const O: u8> =
 #[doc = "Field `LOCK_REG0` reader - Lock PRINCE region0 settings."]
 pub type LOCK_REG0_R = crate::FieldReader<u8, LOCK_REG0_A>;
 #[doc = "Lock PRINCE region0 settings.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_REG0_A {
     #[doc = "0: Region is not locked."]
@@ -131,7 +131,7 @@ impl<'a, const O: u8> LOCK_REG0_W<'a, O> {
 #[doc = "Field `LOCK_REG1` reader - Lock PRINCE region1 settings."]
 pub type LOCK_REG1_R = crate::FieldReader<u8, LOCK_REG1_A>;
 #[doc = "Lock PRINCE region1 settings.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_REG1_A {
     #[doc = "0: Region is not locked."]
@@ -210,7 +210,7 @@ impl<'a, const O: u8> LOCK_REG1_W<'a, O> {
 #[doc = "Field `REG0_ERASE_CHECK_EN` reader - For PRINCE region0 enable checking whether all encrypted pages are erased together."]
 pub type REG0_ERASE_CHECK_EN_R = crate::FieldReader<u8, REG0_ERASE_CHECK_EN_A>;
 #[doc = "For PRINCE region0 enable checking whether all encrypted pages are erased together.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum REG0_ERASE_CHECK_EN_A {
     #[doc = "0: Region is disabled."]
@@ -289,7 +289,7 @@ impl<'a, const O: u8> REG0_ERASE_CHECK_EN_W<'a, O> {
 #[doc = "Field `REG1_ERASE_CHECK_EN` reader - For PRINCE region1 enable checking whether all encrypted pages are erased together."]
 pub type REG1_ERASE_CHECK_EN_R = crate::FieldReader<u8, REG1_ERASE_CHECK_EN_A>;
 #[doc = "For PRINCE region1 enable checking whether all encrypted pages are erased together.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum REG1_ERASE_CHECK_EN_A {
     #[doc = "0: Region is disabled."]
@@ -368,7 +368,7 @@ impl<'a, const O: u8> REG1_ERASE_CHECK_EN_W<'a, O> {
 #[doc = "Field `REG2_ERASE_CHECK_EN` reader - For PRINCE region2 enable checking whether all encrypted pages are erased together."]
 pub type REG2_ERASE_CHECK_EN_R = crate::FieldReader<u8, REG2_ERASE_CHECK_EN_A>;
 #[doc = "For PRINCE region2 enable checking whether all encrypted pages are erased together.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum REG2_ERASE_CHECK_EN_A {
     #[doc = "0: Region is disabled."]

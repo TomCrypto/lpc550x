@@ -22,7 +22,7 @@ impl From<crate::W<FIFOWR_SPEC>> for W {
 #[doc = "Field `TXDATA` writer - Transmit data to the FIFO."]
 pub type TXDATA_W<'a, const O: u8> = crate::FieldWriter<'a, u32, FIFOWR_SPEC, u16, u16, 16, O>;
 #[doc = "Transmit slave select. This field asserts SSEL0 in master mode. The output on the pin is active LOW by default.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXSSEL0_N_AW {
     #[doc = "0: SSEL0 asserted."]
     ASSERTED = 0,
@@ -50,7 +50,7 @@ impl<'a, const O: u8> TXSSEL0_N_W<'a, O> {
     }
 }
 #[doc = "Transmit slave select. This field asserts SSEL1 in master mode. The output on the pin is active LOW by default.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXSSEL1_N_AW {
     #[doc = "0: SSEL1 asserted."]
     ASSERTED = 0,
@@ -78,7 +78,7 @@ impl<'a, const O: u8> TXSSEL1_N_W<'a, O> {
     }
 }
 #[doc = "Transmit slave select. This field asserts SSEL2 in master mode. The output on the pin is active LOW by default.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXSSEL2_N_AW {
     #[doc = "0: SSEL2 asserted."]
     ASSERTED = 0,
@@ -106,7 +106,7 @@ impl<'a, const O: u8> TXSSEL2_N_W<'a, O> {
     }
 }
 #[doc = "Transmit slave select. This field asserts SSEL3 in master mode. The output on the pin is active LOW by default.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXSSEL3_N_AW {
     #[doc = "0: SSEL3 asserted."]
     ASSERTED = 0,
@@ -134,7 +134,7 @@ impl<'a, const O: u8> TXSSEL3_N_W<'a, O> {
     }
 }
 #[doc = "End of transfer. The asserted SSEL will be deasserted at the end of a transfer and remain so far at least the time specified by the Transfer_delay value in the DLY register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EOT_AW {
     #[doc = "0: SSEL not deasserted. This piece of data is not treated as the end of a transfer. SSEL will not be deasserted at the end of this data."]
     NOT_DEASSERTED = 0,
@@ -162,7 +162,7 @@ impl<'a, const O: u8> EOT_W<'a, O> {
     }
 }
 #[doc = "End of frame. Between frames, a delay may be inserted, as defined by the Frame_delay value in the DLY register. The end of a frame may not be particularly meaningful if the Frame_delay value = 0. This control can be used as part of the support for frame lengths greater than 16 bits.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EOF_AW {
     #[doc = "0: Data not EOF. This piece of data transmitted is not treated as the end of a frame."]
     NOT_EOF = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> EOF_W<'a, O> {
     }
 }
 #[doc = "Receive Ignore. This allows data to be transmitted using the SPI without the need to read unneeded data from the receiver. Setting this bit simplifies the transmit process and can be used with the DMA.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RXIGNORE_AW {
     #[doc = "0: Read received data. Received data must be read in order to allow transmission to progress. SPI transmit will halt when the receive data FIFO is full. In slave mode, an overrun error will occur if received data is not read before new data is received."]
     READ = 0,
@@ -218,7 +218,7 @@ impl<'a, const O: u8> RXIGNORE_W<'a, O> {
     }
 }
 #[doc = "Transmit Ignore. This allows data to be received using the SPI without the need to read unneeded data from the receiver. Setting this bit simplifies the transmit process and can be used with the DMA.This bit can only be set by writing to the upper 16 bits only of FIFOWR, i.e., a half-word write to offset 0xE22.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXIGNORE_AW {
     #[doc = "0: Write transmit data. Transmit data must be written for each data exchange between master and slave. In slave mode, an underrun error occurs if transmit data is not provided before needed in a data frame."]
     WRITE = 0,

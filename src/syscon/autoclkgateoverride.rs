@@ -37,7 +37,7 @@ impl From<crate::W<AUTOCLKGATEOVERRIDE_SPEC>> for W {
 #[doc = "Field `ROM` reader - Control automatic clock gating of ROM controller."]
 pub type ROM_R = crate::BitReader<ROM_A>;
 #[doc = "Control automatic clock gating of ROM controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ROM_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ROM_W<'a, O> {
 #[doc = "Field `RAMX_CTRL` reader - Control automatic clock gating of RAMX controller."]
 pub type RAMX_CTRL_R = crate::BitReader<RAMX_CTRL_A>;
 #[doc = "Control automatic clock gating of RAMX controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RAMX_CTRL_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -138,7 +138,7 @@ impl<'a, const O: u8> RAMX_CTRL_W<'a, O> {
 #[doc = "Field `RAM0_CTRL` reader - Control automatic clock gating of RAM0 controller."]
 pub type RAM0_CTRL_R = crate::BitReader<RAM0_CTRL_A>;
 #[doc = "Control automatic clock gating of RAM0 controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RAM0_CTRL_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -189,7 +189,7 @@ impl<'a, const O: u8> RAM0_CTRL_W<'a, O> {
 #[doc = "Field `RAM1_CTRL` reader - Control automatic clock gating of RAM1 controller."]
 pub type RAM1_CTRL_R = crate::BitReader<RAM1_CTRL_A>;
 #[doc = "Control automatic clock gating of RAM1 controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RAM1_CTRL_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -240,7 +240,7 @@ impl<'a, const O: u8> RAM1_CTRL_W<'a, O> {
 #[doc = "Field `RAM2_CTRL` reader - Control automatic clock gating of RAM2 controller."]
 pub type RAM2_CTRL_R = crate::BitReader<RAM2_CTRL_A>;
 #[doc = "Control automatic clock gating of RAM2 controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RAM2_CTRL_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -291,7 +291,7 @@ impl<'a, const O: u8> RAM2_CTRL_W<'a, O> {
 #[doc = "Field `SYNC0_APB` reader - Control automatic clock gating of synchronous bridge controller 0."]
 pub type SYNC0_APB_R = crate::BitReader<SYNC0_APB_A>;
 #[doc = "Control automatic clock gating of synchronous bridge controller 0.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SYNC0_APB_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -342,7 +342,7 @@ impl<'a, const O: u8> SYNC0_APB_W<'a, O> {
 #[doc = "Field `SYNC1_APB` reader - Control automatic clock gating of synchronous bridge controller 1."]
 pub type SYNC1_APB_R = crate::BitReader<SYNC1_APB_A>;
 #[doc = "Control automatic clock gating of synchronous bridge controller 1.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SYNC1_APB_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -393,7 +393,7 @@ impl<'a, const O: u8> SYNC1_APB_W<'a, O> {
 #[doc = "Field `CRCGEN` reader - Control automatic clock gating of CRCGEN controller."]
 pub type CRCGEN_R = crate::BitReader<CRCGEN_A>;
 #[doc = "Control automatic clock gating of CRCGEN controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CRCGEN_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -444,7 +444,7 @@ impl<'a, const O: u8> CRCGEN_W<'a, O> {
 #[doc = "Field `SDMA0` reader - Control automatic clock gating of DMA0 controller."]
 pub type SDMA0_R = crate::BitReader<SDMA0_A>;
 #[doc = "Control automatic clock gating of DMA0 controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SDMA0_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -494,7 +494,7 @@ impl<'a, const O: u8> SDMA0_W<'a, O> {
 #[doc = "Field `SDMA1` reader - Control automatic clock gating of DMA1 controller."]
 pub type SDMA1_R = crate::BitReader<SDMA1_A>;
 #[doc = "Control automatic clock gating of DMA1 controller.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SDMA1_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -544,7 +544,7 @@ impl<'a, const O: u8> SDMA1_W<'a, O> {
 #[doc = "Field `SYSCON` reader - Control automatic clock gating of synchronous system controller registers bank."]
 pub type SYSCON_R = crate::BitReader<SYSCON_A>;
 #[doc = "Control automatic clock gating of synchronous system controller registers bank.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SYSCON_A {
     #[doc = "0: Automatic clock gating is not overridden."]
     DISABLE = 0,
@@ -593,7 +593,7 @@ impl<'a, const O: u8> SYSCON_W<'a, O> {
     }
 }
 #[doc = "The value 0xC0DE must be written for AUTOCLKGATEOVERRIDE registers fields updates to have effect.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum ENABLEUPDATE_AW {
     #[doc = "0: Bit Fields 0 - 15 of this register are not updated."]

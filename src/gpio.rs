@@ -38,12 +38,12 @@ pub struct RegisterBlock {
     pub dirnot: [DIRNOT; 2],
 }
 #[doc = "no description available."]
-pub use b::B;
+pub use self::b::B;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod b;
 #[doc = "no description available."]
-pub use w::W;
+pub use self::w::W;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod w;

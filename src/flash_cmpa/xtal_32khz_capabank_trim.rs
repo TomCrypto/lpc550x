@@ -37,7 +37,7 @@ impl From<crate::W<XTAL_32KHZ_CAPABANK_TRIM_SPEC>> for W {
 #[doc = "Field `TRIM_VALID` reader - XTAL 32kHz capa bank trimmings."]
 pub type TRIM_VALID_R = crate::BitReader<TRIM_VALID_A>;
 #[doc = "XTAL 32kHz capa bank trimmings.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRIM_VALID_A {
     #[doc = "0: Capa Bank trimmings not valid. Default trimmings value are used."]
     NOT_TRIM = 0,

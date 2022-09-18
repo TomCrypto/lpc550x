@@ -16,7 +16,7 @@ impl From<crate::R<INTSTAT_SPEC>> for R {
 #[doc = "Field `ACTIVEINT` reader - Summarizes whether any enabled interrupts (other than error interrupts) are pending."]
 pub type ACTIVEINT_R = crate::BitReader<ACTIVEINT_A>;
 #[doc = "Summarizes whether any enabled interrupts (other than error interrupts) are pending.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ACTIVEINT_A {
     #[doc = "0: Not pending. No enabled interrupts are pending."]
     NOT_PENDING = 0,
@@ -52,7 +52,7 @@ impl ACTIVEINT_R {
 #[doc = "Field `ACTIVEERRINT` reader - Summarizes whether any error interrupts are pending."]
 pub type ACTIVEERRINT_R = crate::BitReader<ACTIVEERRINT_A>;
 #[doc = "Summarizes whether any error interrupts are pending.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ACTIVEERRINT_A {
     #[doc = "0: Not pending. No error interrupts are pending."]
     NOT_PENDING = 0,

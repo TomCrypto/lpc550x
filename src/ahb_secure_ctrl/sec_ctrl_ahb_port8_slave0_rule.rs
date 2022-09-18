@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_PORT8_SLAVE0_RULE_SPEC>> for W {
 #[doc = "Field `CRC_RULE` reader - CRC engine."]
 pub type CRC_RULE_R = crate::FieldReader<u8, CRC_RULE_A>;
 #[doc = "CRC engine.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CRC_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> CRC_RULE_W<'a, O> {
 #[doc = "Field `FLEXCOMM5_RULE` reader - Flexcomm interface 5."]
 pub type FLEXCOMM5_RULE_R = crate::FieldReader<u8, FLEXCOMM5_RULE_A>;
 #[doc = "Flexcomm interface 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM5_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -202,7 +202,7 @@ impl<'a, const O: u8> FLEXCOMM5_RULE_W<'a, O> {
 #[doc = "Field `FLEXCOMM6_RULE` reader - Flexcomm interface 6."]
 pub type FLEXCOMM6_RULE_R = crate::FieldReader<u8, FLEXCOMM6_RULE_A>;
 #[doc = "Flexcomm interface 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM6_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

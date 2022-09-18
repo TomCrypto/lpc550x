@@ -37,7 +37,7 @@ impl From<crate::W<BOD_DCDC_INT_CTRL_SPEC>> for W {
 #[doc = "Field `BODVBAT_INT_ENABLE` reader - BOD VBAT interrupt control."]
 pub type BODVBAT_INT_ENABLE_R = crate::BitReader<BODVBAT_INT_ENABLE_A>;
 #[doc = "BOD VBAT interrupt control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODVBAT_INT_ENABLE_A {
     #[doc = "0: BOD VBAT interrupt is disabled."]
     DISABLE = 0,
@@ -93,7 +93,7 @@ pub type BODVBAT_INT_CLEAR_W<'a, const O: u8> =
 #[doc = "Field `BODCORE_INT_ENABLE` reader - BOD CORE interrupt control."]
 pub type BODCORE_INT_ENABLE_R = crate::BitReader<BODCORE_INT_ENABLE_A>;
 #[doc = "BOD CORE interrupt control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODCORE_INT_ENABLE_A {
     #[doc = "0: BOD CORE interrupt is disabled."]
     DISABLE = 0,
@@ -149,7 +149,7 @@ pub type BODCORE_INT_CLEAR_W<'a, const O: u8> =
 #[doc = "Field `DCDC_INT_ENABLE` reader - DCDC interrupt control."]
 pub type DCDC_INT_ENABLE_R = crate::BitReader<DCDC_INT_ENABLE_A>;
 #[doc = "DCDC interrupt control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DCDC_INT_ENABLE_A {
     #[doc = "0: DCDC interrupt is disabled."]
     DISABLE = 0,

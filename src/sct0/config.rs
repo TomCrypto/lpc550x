@@ -37,7 +37,7 @@ impl From<crate::W<CONFIG_SPEC>> for W {
 #[doc = "Field `UNIFY` reader - SCT operation."]
 pub type UNIFY_R = crate::BitReader<UNIFY_A>;
 #[doc = "SCT operation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum UNIFY_A {
     #[doc = "0: The SCT operates as two 16-bit counters named COUNTER_L and COUNTER_H."]
     DUAL_COUNTER = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> UNIFY_W<'a, O> {
 #[doc = "Field `CLKMODE` reader - SCT clock mode."]
 pub type CLKMODE_R = crate::FieldReader<u8, CLKMODE_A>;
 #[doc = "SCT clock mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CLKMODE_A {
     #[doc = "0: System Clock Mode. The system clock clocks the entire SCT module including the counter(s) and counter prescalers."]
@@ -166,7 +166,7 @@ impl<'a, const O: u8> CLKMODE_W<'a, O> {
 #[doc = "Field `CKSEL` reader - SCT clock select. The specific functionality of the designated input/edge is dependent on the CLKMODE bit selection in this register."]
 pub type CKSEL_R = crate::FieldReader<u8, CKSEL_A>;
 #[doc = "SCT clock select. The specific functionality of the designated input/edge is dependent on the CLKMODE bit selection in this register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CKSEL_A {
     #[doc = "0: Rising edges on input 0."]

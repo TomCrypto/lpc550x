@@ -37,7 +37,7 @@ impl From<crate::W<SLVADR0_SPEC>> for W {
 #[doc = "Field `SADISABLE` reader - Slave Address n Disable."]
 pub type SADISABLE_R = crate::BitReader<SADISABLE_A>;
 #[doc = "Slave Address n Disable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SADISABLE_A {
     #[doc = "0: Enabled. Slave Address n is enabled."]
     ENABLED = 0,
@@ -91,7 +91,7 @@ pub type SLVADR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, SLVADR0_SPEC, u
 #[doc = "Field `AUTONACK` reader - Automatic NACK operation. Used in conjunction with AUTOACK and AUTOMATCHREAD, allows software to ignore I2C traffic while handling previous I2C data or other operations."]
 pub type AUTONACK_R = crate::BitReader<AUTONACK_A>;
 #[doc = "Automatic NACK operation. Used in conjunction with AUTOACK and AUTOMATCHREAD, allows software to ignore I2C traffic while handling previous I2C data or other operations.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AUTONACK_A {
     #[doc = "0: Normal operation, matching I2C addresses are not ignored."]
     NORMAL = 0,

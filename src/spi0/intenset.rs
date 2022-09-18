@@ -37,7 +37,7 @@ impl From<crate::W<INTENSET_SPEC>> for W {
 #[doc = "Field `SSAEN` reader - Slave select assert interrupt enable. Determines whether an interrupt occurs when the Slave Select is asserted."]
 pub type SSAEN_R = crate::BitReader<SSAEN_A>;
 #[doc = "Slave select assert interrupt enable. Determines whether an interrupt occurs when the Slave Select is asserted.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SSAEN_A {
     #[doc = "0: Disabled. No interrupt will be generated when any Slave Select transitions from deasserted to asserted."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> SSAEN_W<'a, O> {
 #[doc = "Field `SSDEN` reader - Slave select deassert interrupt enable. Determines whether an interrupt occurs when the Slave Select is deasserted."]
 pub type SSDEN_R = crate::BitReader<SSDEN_A>;
 #[doc = "Slave select deassert interrupt enable. Determines whether an interrupt occurs when the Slave Select is deasserted.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SSDEN_A {
     #[doc = "0: Disabled. No interrupt will be generated when all asserted Slave Selects transition to deasserted."]
     DISABLED = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> SSDEN_W<'a, O> {
 #[doc = "Field `MSTIDLEEN` reader - Master idle interrupt enable."]
 pub type MSTIDLEEN_R = crate::BitReader<MSTIDLEEN_A>;
 #[doc = "Master idle interrupt enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTIDLEEN_A {
     #[doc = "0: No interrupt will be generated when the SPI master function is idle."]
     DISABLED = 0,

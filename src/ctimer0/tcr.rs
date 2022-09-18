@@ -37,7 +37,7 @@ impl From<crate::W<TCR_SPEC>> for W {
 #[doc = "Field `CEN` reader - Counter enable."]
 pub type CEN_R = crate::BitReader<CEN_A>;
 #[doc = "Counter enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CEN_A {
     #[doc = "0: Disabled.The counters are disabled."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> CEN_W<'a, O> {
 #[doc = "Field `CRST` reader - Counter reset."]
 pub type CRST_R = crate::BitReader<CRST_A>;
 #[doc = "Counter reset.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CRST_A {
     #[doc = "0: Disabled. Do nothing."]
     DISABLED = 0,

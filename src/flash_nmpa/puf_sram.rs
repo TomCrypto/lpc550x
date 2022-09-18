@@ -49,7 +49,7 @@ pub type CKGATING_W<'a, const O: u8> = crate::BitWriter<'a, u32, PUF_SRAM_SPEC, 
 #[doc = "Field `SMB` reader - Source Biasing voltage."]
 pub type SMB_R = crate::FieldReader<u8, SMB_A>;
 #[doc = "Source Biasing voltage.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SMB_A {
     #[doc = "0: Low leakage."]

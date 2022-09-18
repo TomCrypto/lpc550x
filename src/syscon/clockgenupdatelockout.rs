@@ -37,7 +37,7 @@ impl From<crate::W<CLOCKGENUPDATELOCKOUT_SPEC>> for W {
 #[doc = "Field `CLOCKGENUPDATELOCKOUT` reader - Control clock configuration registers access (for example, xxxDIV, xxxSEL)."]
 pub type CLOCKGENUPDATELOCKOUT_R = crate::FieldReader<u32, CLOCKGENUPDATELOCKOUT_A>;
 #[doc = "Control clock configuration registers access (for example, xxxDIV, xxxSEL).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u32)]
 pub enum CLOCKGENUPDATELOCKOUT_A {
     #[doc = "0: all hardware clock configruration are freeze."]

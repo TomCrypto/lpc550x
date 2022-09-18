@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE0_MEM_CTRL2_SPEC>> for W {
 #[doc = "Field `ANACTRL_RULE` reader - Analog Modules controller."]
 pub type ANACTRL_RULE_R = crate::FieldReader<u8, ANACTRL_RULE_A>;
 #[doc = "Analog Modules controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ANACTRL_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

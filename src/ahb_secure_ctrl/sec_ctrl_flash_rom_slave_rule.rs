@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_FLASH_ROM_SLAVE_RULE_SPEC>> for W {
 #[doc = "Field `FLASH_RULE` reader - Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF."]
 pub type FLASH_RULE_R = crate::FieldReader<u8, FLASH_RULE_A>;
 #[doc = "Security access rules for the whole FLASH : 0x0000_0000 - 0x0003_FFFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLASH_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> FLASH_RULE_W<'a, O> {
 #[doc = "Field `ROM_RULE` reader - Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF."]
 pub type ROM_RULE_R = crate::FieldReader<u8, ROM_RULE_A>;
 #[doc = "Security access rules for the whole ROM : 0x0300_0000 - 0x0301_FFFF.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ROM_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

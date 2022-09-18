@@ -37,7 +37,7 @@ impl From<crate::W<SEC_MASK_LOCK_SPEC>> for W {
 #[doc = "Field `SEC_GPIO_MASK0_LOCK` reader - SEC_GPIO_MASK0 register write-lock."]
 pub type SEC_GPIO_MASK0_LOCK_R = crate::FieldReader<u8, SEC_GPIO_MASK0_LOCK_A>;
 #[doc = "SEC_GPIO_MASK0 register write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEC_GPIO_MASK0_LOCK_A {
     #[doc = "1: Restricted mode."]
@@ -90,7 +90,7 @@ impl<'a, const O: u8> SEC_GPIO_MASK0_LOCK_W<'a, O> {
 #[doc = "Field `SEC_GPIO_MASK1_LOCK` reader - SEC_GPIO_MASK1 register write-lock."]
 pub type SEC_GPIO_MASK1_LOCK_R = crate::FieldReader<u8, SEC_GPIO_MASK1_LOCK_A>;
 #[doc = "SEC_GPIO_MASK1 register write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEC_GPIO_MASK1_LOCK_A {
     #[doc = "1: Restricted mode."]

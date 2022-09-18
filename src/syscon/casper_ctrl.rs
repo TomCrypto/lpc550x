@@ -37,7 +37,7 @@ impl From<crate::W<CASPER_CTRL_SPEC>> for W {
 #[doc = "Field `INTERLEAVE` reader - Control RAM access for RAMX0 and RAMX1."]
 pub type INTERLEAVE_R = crate::BitReader<INTERLEAVE_A>;
 #[doc = "Control RAM access for RAMX0 and RAMX1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INTERLEAVE_A {
     #[doc = "0: RAM access to RAMX0 and RAMX1 is consecutive."]
     NORMAL = 0,

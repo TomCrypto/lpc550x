@@ -1,7 +1,7 @@
 [package]
 name = "lpc550x"
 edition = "2021"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Thomas Bénéteau <thomas@bitwise.me>"]
 description = "Register mappings for the NXP LPC550x/LPC55S0x family of Cortex-M33 microcontrollers"
 documentation = "https://docs.rs/lpc550x"
@@ -18,6 +18,10 @@ version = "0.7"
 [dependencies.cortex-m-rt]
 optional = true
 version = "0.6.13"
+
+[dependencies.critical-section]
+optional = true
+version = "1.0"
 
 [dependencies.vcell]
 version = "0.1.2"

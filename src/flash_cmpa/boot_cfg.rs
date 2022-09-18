@@ -37,7 +37,7 @@ impl From<crate::W<BOOT_CFG_SPEC>> for W {
 #[doc = "Field `DEFAULT_ISP_MODE` reader - Default ISP mode:"]
 pub type DEFAULT_ISP_MODE_R = crate::FieldReader<u8, DEFAULT_ISP_MODE_A>;
 #[doc = "Default ISP mode:\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DEFAULT_ISP_MODE_A {
     #[doc = "0: Auto ISP."]
@@ -142,7 +142,7 @@ impl<'a, const O: u8> DEFAULT_ISP_MODE_W<'a, O> {
 #[doc = "Field `BOOT_SPEED` reader - Core clock:"]
 pub type BOOT_SPEED_R = crate::FieldReader<u8, BOOT_SPEED_A>;
 #[doc = "Core clock:\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BOOT_SPEED_A {
     #[doc = "0: Defined by NMPA.SYSTEM_SPEED_CODE."]

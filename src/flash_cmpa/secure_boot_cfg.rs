@@ -37,7 +37,7 @@ impl From<crate::W<SECURE_BOOT_CFG_SPEC>> for W {
 #[doc = "Field `RSA4K` reader - Use RSA4096 keys only."]
 pub type RSA4K_R = crate::FieldReader<u8, RSA4K_A>;
 #[doc = "Use RSA4096 keys only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RSA4K_A {
     #[doc = "0: Allow RSA2048 and higher."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> RSA4K_W<'a, O> {
 #[doc = "Field `DICE_INC_NXP_CFG` reader - Include NXP area in DICE computation."]
 pub type DICE_INC_NXP_CFG_R = crate::FieldReader<u8, DICE_INC_NXP_CFG_A>;
 #[doc = "Include NXP area in DICE computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DICE_INC_NXP_CFG_A {
     #[doc = "0: not included."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> DICE_INC_NXP_CFG_W<'a, O> {
 #[doc = "Field `DICE_CUST_CFG` reader - Include Customer factory area (including keys) in DICE computation."]
 pub type DICE_CUST_CFG_R = crate::FieldReader<u8, DICE_CUST_CFG_A>;
 #[doc = "Include Customer factory area (including keys) in DICE computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DICE_CUST_CFG_A {
     #[doc = "0: not included."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> DICE_CUST_CFG_W<'a, O> {
 #[doc = "Field `SKIP_DICE` reader - Skip DICE computation."]
 pub type SKIP_DICE_R = crate::FieldReader<u8, SKIP_DICE_A>;
 #[doc = "Skip DICE computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SKIP_DICE_A {
     #[doc = "0: Enable DICE."]
@@ -353,7 +353,7 @@ impl<'a, const O: u8> SKIP_DICE_W<'a, O> {
 #[doc = "Field `TZM_IMAGE_TYPE` reader - TrustZone-M mode."]
 pub type TZM_IMAGE_TYPE_R = crate::FieldReader<u8, TZM_IMAGE_TYPE_A>;
 #[doc = "TrustZone-M mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TZM_IMAGE_TYPE_A {
     #[doc = "0: TZ-M image mode is taken from application image header."]
@@ -432,7 +432,7 @@ impl<'a, const O: u8> TZM_IMAGE_TYPE_W<'a, O> {
 #[doc = "Field `BLOCK_SET_KEY` reader - Block PUF key code generation."]
 pub type BLOCK_SET_KEY_R = crate::FieldReader<u8, BLOCK_SET_KEY_A>;
 #[doc = "Block PUF key code generation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BLOCK_SET_KEY_A {
     #[doc = "0: Allow PUF Key Code generation."]
@@ -511,7 +511,7 @@ impl<'a, const O: u8> BLOCK_SET_KEY_W<'a, O> {
 #[doc = "Field `BLOCK_ENROLL` reader - Block PUF enrollement."]
 pub type BLOCK_ENROLL_R = crate::FieldReader<u8, BLOCK_ENROLL_A>;
 #[doc = "Block PUF enrollement.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BLOCK_ENROLL_A {
     #[doc = "0: Allow PUF enroll operation."]
@@ -590,7 +590,7 @@ impl<'a, const O: u8> BLOCK_ENROLL_W<'a, O> {
 #[doc = "Field `DICE_INC_SEC_EPOCH` reader - Include security EPOCH in DICE."]
 pub type DICE_INC_SEC_EPOCH_R = crate::FieldReader<u8, DICE_INC_SEC_EPOCH_A>;
 #[doc = "Include security EPOCH in DICE.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DICE_INC_SEC_EPOCH_A {
     #[doc = "0: not included."]
@@ -669,7 +669,7 @@ impl<'a, const O: u8> DICE_INC_SEC_EPOCH_W<'a, O> {
 #[doc = "Field `SKIP_BOOT_SEED` reader - Skip boot seed computation."]
 pub type SKIP_BOOT_SEED_R = crate::FieldReader<u8, SKIP_BOOT_SEED_A>;
 #[doc = "Skip boot seed computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SKIP_BOOT_SEED_A {
     #[doc = "0: Enable BOOT_SEED."]
@@ -748,7 +748,7 @@ impl<'a, const O: u8> SKIP_BOOT_SEED_W<'a, O> {
 #[doc = "Field `BOOT_SEED_INC_NXP_CFG` reader - Include NXP area in BOOT SEED computation."]
 pub type BOOT_SEED_INC_NXP_CFG_R = crate::FieldReader<u8, BOOT_SEED_INC_NXP_CFG_A>;
 #[doc = "Include NXP area in BOOT SEED computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BOOT_SEED_INC_NXP_CFG_A {
     #[doc = "0: not included."]
@@ -827,7 +827,7 @@ impl<'a, const O: u8> BOOT_SEED_INC_NXP_CFG_W<'a, O> {
 #[doc = "Field `BOOT_SEED_CUST_CFG` reader - Include CMPA area in BOOT SEED computation."]
 pub type BOOT_SEED_CUST_CFG_R = crate::FieldReader<u8, BOOT_SEED_CUST_CFG_A>;
 #[doc = "Include CMPA area in BOOT SEED computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BOOT_SEED_CUST_CFG_A {
     #[doc = "0: not included."]
@@ -906,7 +906,7 @@ impl<'a, const O: u8> BOOT_SEED_CUST_CFG_W<'a, O> {
 #[doc = "Field `BOOT_SEED_INC_EPOCH` reader - Include security epoch area in BOOT_SEED computation."]
 pub type BOOT_SEED_INC_EPOCH_R = crate::FieldReader<u8, BOOT_SEED_INC_EPOCH_A>;
 #[doc = "Include security epoch area in BOOT_SEED computation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum BOOT_SEED_INC_EPOCH_A {
     #[doc = "0: not included."]
@@ -985,7 +985,7 @@ impl<'a, const O: u8> BOOT_SEED_INC_EPOCH_W<'a, O> {
 #[doc = "Field `SEC_BOOT_EN` reader - Secure boot enable."]
 pub type SEC_BOOT_EN_R = crate::FieldReader<u8, SEC_BOOT_EN_A>;
 #[doc = "Secure boot enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEC_BOOT_EN_A {
     #[doc = "0: Plain image (internal flash with or without CRC)"]

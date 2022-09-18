@@ -37,7 +37,7 @@ impl From<crate::W<LDOPMU_SPEC>> for W {
 #[doc = "Field `VADJ` reader - Sets the Always-On domain LDO output level."]
 pub type VADJ_R = crate::FieldReader<u8, VADJ_A>;
 #[doc = "Sets the Always-On domain LDO output level.\n\nValue on reset: 24"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum VADJ_A {
     #[doc = "1: 0.7 V."]
@@ -466,7 +466,7 @@ impl<'a, const O: u8> VADJ_W<'a, O> {
 #[doc = "Field `VADJ_BOOST` reader - Sets the Always-On domain LDO Boost output level."]
 pub type VADJ_BOOST_R = crate::FieldReader<u8, VADJ_BOOST_A>;
 #[doc = "Sets the Always-On domain LDO Boost output level.\n\nValue on reset: 29"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum VADJ_BOOST_A {
     #[doc = "1: 0.7 V."]

@@ -41,7 +41,7 @@ pub type MASK_W<'a, const O: u8> = crate::FieldWriter<'a, u32, WAKEINT_CTRL_SPEC
 #[doc = "Field `FILTER_MODE` reader - control input of the PLU, add filtering for glitch."]
 pub type FILTER_MODE_R = crate::FieldReader<u8, FILTER_MODE_A>;
 #[doc = "control input of the PLU, add filtering for glitch.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FILTER_MODE_A {
     #[doc = "0: Bypass mode."]
@@ -120,7 +120,7 @@ impl<'a, const O: u8> FILTER_MODE_W<'a, O> {
 #[doc = "Field `FILTER_CLKSEL` reader - hclk is divided by 2**filter_clksel."]
 pub type FILTER_CLKSEL_R = crate::FieldReader<u8, FILTER_CLKSEL_A>;
 #[doc = "hclk is divided by 2**filter_clksel.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FILTER_CLKSEL_A {
     #[doc = "0: Selects the 1 MHz low-power oscillator as the filter clock."]

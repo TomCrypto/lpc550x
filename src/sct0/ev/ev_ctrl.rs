@@ -41,7 +41,7 @@ pub type MATCHSEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, EV_CTRL_SPEC,
 #[doc = "Field `HEVENT` reader - Select L/H counter. Do not set this bit if UNIFY = 1."]
 pub type HEVENT_R = crate::BitReader<HEVENT_A>;
 #[doc = "Select L/H counter. Do not set this bit if UNIFY = 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HEVENT_A {
     #[doc = "0: Selects the L state and the L match register selected by MATCHSEL."]
     L_COUNTER = 0,
@@ -91,7 +91,7 @@ impl<'a, const O: u8> HEVENT_W<'a, O> {
 #[doc = "Field `OUTSEL` reader - Input/output select."]
 pub type OUTSEL_R = crate::BitReader<OUTSEL_A>;
 #[doc = "Input/output select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OUTSEL_A {
     #[doc = "0: Selects the inputs selected by IOSEL."]
     INPUT = 0,
@@ -145,7 +145,7 @@ pub type IOSEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, EV_CTRL_SPEC, u8
 #[doc = "Field `IOCOND` reader - Selects the I/O condition for event n. (The detection of edges on outputs lag the conditions that switch the outputs by one SCT clock). In order to guarantee proper edge/state detection, an input must have a minimum pulse width of at least one SCT clock period ."]
 pub type IOCOND_R = crate::FieldReader<u8, IOCOND_A>;
 #[doc = "Selects the I/O condition for event n. (The detection of edges on outputs lag the conditions that switch the outputs by one SCT clock). In order to guarantee proper edge/state detection, an input must have a minimum pulse width of at least one SCT clock period .\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum IOCOND_A {
     #[doc = "0: LOW."]
@@ -224,7 +224,7 @@ impl<'a, const O: u8> IOCOND_W<'a, O> {
 #[doc = "Field `COMBMODE` reader - Selects how the specified match and I/O condition are used and combined."]
 pub type COMBMODE_R = crate::FieldReader<u8, COMBMODE_A>;
 #[doc = "Selects how the specified match and I/O condition are used and combined.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum COMBMODE_A {
     #[doc = "0: OR. The event occurs when either the specified match or I/O condition occurs."]
@@ -303,7 +303,7 @@ impl<'a, const O: u8> COMBMODE_W<'a, O> {
 #[doc = "Field `STATELD` reader - This bit controls how the STATEV value modifies the state selected by HEVENT when this event is the highest-numbered event occurring for that state."]
 pub type STATELD_R = crate::BitReader<STATELD_A>;
 #[doc = "This bit controls how the STATEV value modifies the state selected by HEVENT when this event is the highest-numbered event occurring for that state.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum STATELD_A {
     #[doc = "0: STATEV value is added into STATE (the carry-out is ignored)."]
     ADD = 0,
@@ -361,7 +361,7 @@ pub type MATCHMEM_W<'a, const O: u8> = crate::BitWriter<'a, u32, EV_CTRL_SPEC, b
 #[doc = "Field `DIRECTION` reader - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field."]
 pub type DIRECTION_R = crate::FieldReader<u8, DIRECTION_A>;
 #[doc = "Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DIRECTION_A {
     #[doc = "0: Direction independent. This event is triggered regardless of the count direction."]

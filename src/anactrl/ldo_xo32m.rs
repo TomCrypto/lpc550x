@@ -37,7 +37,7 @@ impl From<crate::W<LDO_XO32M_SPEC>> for W {
 #[doc = "Field `BYPASS` reader - Activate LDO bypass."]
 pub type BYPASS_R = crate::BitReader<BYPASS_A>;
 #[doc = "Activate LDO bypass.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BYPASS_A {
     #[doc = "0: Disable bypass mode (for normal operations)."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> BYPASS_W<'a, O> {
 #[doc = "Field `HIGHZ` reader - ."]
 pub type HIGHZ_R = crate::BitReader<HIGHZ_A>;
 #[doc = ".\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HIGHZ_A {
     #[doc = "0: Output in High normal state."]
     NORMALMPEDANCE = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> HIGHZ_W<'a, O> {
 #[doc = "Field `VOUT` reader - Sets the LDO output level."]
 pub type VOUT_R = crate::FieldReader<u8, VOUT_A>;
 #[doc = "Sets the LDO output level.\n\nValue on reset: 4"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum VOUT_A {
     #[doc = "0: 0.750 V."]

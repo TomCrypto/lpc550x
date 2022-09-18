@@ -37,7 +37,7 @@ impl From<crate::W<CC_SOCU_PIN_SPEC>> for W {
 #[doc = "Field `NIDEN` reader - Non Secure non-invasive debug enable."]
 pub type NIDEN_R = crate::BitReader<NIDEN_A>;
 #[doc = "Non Secure non-invasive debug enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum NIDEN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> NIDEN_W<'a, O> {
 #[doc = "Field `DBGEN` reader - Non Secure debug enable."]
 pub type DBGEN_R = crate::BitReader<DBGEN_A>;
 #[doc = "Non Secure debug enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DBGEN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> DBGEN_W<'a, O> {
 #[doc = "Field `SPNIDEN` reader - Secure non-invasive debug enable."]
 pub type SPNIDEN_R = crate::BitReader<SPNIDEN_A>;
 #[doc = "Secure non-invasive debug enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPNIDEN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> SPNIDEN_W<'a, O> {
 #[doc = "Field `SPIDEN` reader - Secure invasive debug enable."]
 pub type SPIDEN_R = crate::BitReader<SPIDEN_A>;
 #[doc = "Secure invasive debug enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SPIDEN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> SPIDEN_W<'a, O> {
 #[doc = "Field `TAPEN` reader - JTAG TAP enable."]
 pub type TAPEN_R = crate::BitReader<TAPEN_A>;
 #[doc = "JTAG TAP enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TAPEN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> TAPEN_W<'a, O> {
 #[doc = "Field `ISP_CMD_EN` reader - ISP Boot Command enable."]
 pub type ISP_CMD_EN_R = crate::BitReader<ISP_CMD_EN_A>;
 #[doc = "ISP Boot Command enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ISP_CMD_EN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,
@@ -338,7 +338,7 @@ impl<'a, const O: u8> ISP_CMD_EN_W<'a, O> {
 #[doc = "Field `FA_ME_CMD_EN` reader - FA Command enable."]
 pub type FA_ME_CMD_EN_R = crate::BitReader<FA_ME_CMD_EN_A>;
 #[doc = "FA Command enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FA_ME_CMD_EN_A {
     #[doc = "0: Use DAP to enable."]
     ENABLE = 0,

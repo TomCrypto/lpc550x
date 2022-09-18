@@ -91,7 +91,7 @@ pub struct RegisterBlock {
     pub output_mux: [OUTPUT_MUX; 8],
 }
 #[doc = "no description available."]
-pub use lut::LUT;
+pub use self::lut::LUT;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod lut;

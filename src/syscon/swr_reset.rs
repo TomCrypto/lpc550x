@@ -20,7 +20,7 @@ impl From<crate::W<SWR_RESET_SPEC>> for W {
     }
 }
 #[doc = "Write 0x5A00_0001 to generate a software_reset.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u32)]
 pub enum SWR_RESET_AW {
     #[doc = "0: Bloc is not reset."]

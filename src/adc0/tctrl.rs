@@ -37,7 +37,7 @@ impl From<crate::W<TCTRL_SPEC>> for W {
 #[doc = "Field `HTEN` reader - Trigger enable."]
 pub type HTEN_R = crate::BitReader<HTEN_A>;
 #[doc = "Trigger enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HTEN_A {
     #[doc = "0: Hardware trigger source disabled."]
     HTEN_0 = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> HTEN_W<'a, O> {
 #[doc = "Field `FIFO_SEL_A` reader - SAR Result Destination For Channel A."]
 pub type FIFO_SEL_A_R = crate::BitReader<FIFO_SEL_A_A>;
 #[doc = "SAR Result Destination For Channel A.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FIFO_SEL_A_A {
     #[doc = "0: Result written to FIFO 0."]
     FIFO_SEL_A_0 = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> FIFO_SEL_A_W<'a, O> {
 #[doc = "Field `FIFO_SEL_B` reader - SAR Result Destination For Channel B."]
 pub type FIFO_SEL_B_R = crate::BitReader<FIFO_SEL_B_A>;
 #[doc = "SAR Result Destination For Channel B.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FIFO_SEL_B_A {
     #[doc = "0: Result written to FIFO 0."]
     FIFO_SEL_B_0 = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> FIFO_SEL_B_W<'a, O> {
 #[doc = "Field `TPRI` reader - Trigger priority setting."]
 pub type TPRI_R = crate::FieldReader<u8, TPRI_A>;
 #[doc = "Trigger priority setting.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TPRI_A {
     #[doc = "0: Set to highest priority, Level 1."]
@@ -364,7 +364,7 @@ pub type TDLY_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TCTRL_SPEC, u8, u
 #[doc = "Field `TCMD` reader - Trigger command select."]
 pub type TCMD_R = crate::FieldReader<u8, TCMD_A>;
 #[doc = "Trigger command select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TCMD_A {
     #[doc = "0: Not a valid selection from the command buffer. Trigger event is ignored."]

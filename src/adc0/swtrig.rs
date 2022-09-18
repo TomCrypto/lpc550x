@@ -37,7 +37,7 @@ impl From<crate::W<SWTRIG_SPEC>> for W {
 #[doc = "Field `SWT0` reader - Software trigger 0 event."]
 pub type SWT0_R = crate::BitReader<SWT0_A>;
 #[doc = "Software trigger 0 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT0_A {
     #[doc = "0: No trigger 0 event generated."]
     SWT0_0 = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> SWT0_W<'a, O> {
 #[doc = "Field `SWT1` reader - Software trigger 1 event."]
 pub type SWT1_R = crate::BitReader<SWT1_A>;
 #[doc = "Software trigger 1 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT1_A {
     #[doc = "0: No trigger 1 event generated."]
     SWT1_0 = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> SWT1_W<'a, O> {
 #[doc = "Field `SWT2` reader - Software trigger 2 event."]
 pub type SWT2_R = crate::BitReader<SWT2_A>;
 #[doc = "Software trigger 2 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT2_A {
     #[doc = "0: No trigger 2 event generated."]
     SWT2_0 = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> SWT2_W<'a, O> {
 #[doc = "Field `SWT3` reader - Software trigger 3 event."]
 pub type SWT3_R = crate::BitReader<SWT3_A>;
 #[doc = "Software trigger 3 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT3_A {
     #[doc = "0: No trigger 3 event generated."]
     SWT3_0 = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> SWT3_W<'a, O> {
 #[doc = "Field `SWT4` reader - Software trigger 4 event."]
 pub type SWT4_R = crate::BitReader<SWT4_A>;
 #[doc = "Software trigger 4 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT4_A {
     #[doc = "0: No trigger 4 event generated."]
     SWT4_0 = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> SWT4_W<'a, O> {
 #[doc = "Field `SWT5` reader - Software trigger 5 event."]
 pub type SWT5_R = crate::BitReader<SWT5_A>;
 #[doc = "Software trigger 5 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT5_A {
     #[doc = "0: No trigger 5 event generated."]
     SWT5_0 = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> SWT5_W<'a, O> {
 #[doc = "Field `SWT6` reader - Software trigger 6 event."]
 pub type SWT6_R = crate::BitReader<SWT6_A>;
 #[doc = "Software trigger 6 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT6_A {
     #[doc = "0: No trigger 6 event generated."]
     SWT6_0 = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> SWT6_W<'a, O> {
 #[doc = "Field `SWT7` reader - Software trigger 7 event."]
 pub type SWT7_R = crate::BitReader<SWT7_A>;
 #[doc = "Software trigger 7 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT7_A {
     #[doc = "0: No trigger 7 event generated."]
     SWT7_0 = 0,
@@ -437,7 +437,7 @@ impl<'a, const O: u8> SWT7_W<'a, O> {
 #[doc = "Field `SWT8` reader - Software trigger 8 event."]
 pub type SWT8_R = crate::BitReader<SWT8_A>;
 #[doc = "Software trigger 8 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT8_A {
     #[doc = "0: No trigger 8 event generated."]
     SWT8_0 = 0,
@@ -487,7 +487,7 @@ impl<'a, const O: u8> SWT8_W<'a, O> {
 #[doc = "Field `SWT9` reader - Software trigger 9 event."]
 pub type SWT9_R = crate::BitReader<SWT9_A>;
 #[doc = "Software trigger 9 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT9_A {
     #[doc = "0: No trigger 9 event generated."]
     SWT9_0 = 0,
@@ -537,7 +537,7 @@ impl<'a, const O: u8> SWT9_W<'a, O> {
 #[doc = "Field `SWT10` reader - Software trigger 10 event."]
 pub type SWT10_R = crate::BitReader<SWT10_A>;
 #[doc = "Software trigger 10 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT10_A {
     #[doc = "0: No trigger 10 event generated."]
     SWT10_0 = 0,
@@ -587,7 +587,7 @@ impl<'a, const O: u8> SWT10_W<'a, O> {
 #[doc = "Field `SWT11` reader - Software trigger 11 event."]
 pub type SWT11_R = crate::BitReader<SWT11_A>;
 #[doc = "Software trigger 11 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT11_A {
     #[doc = "0: No trigger 11 event generated."]
     SWT11_0 = 0,
@@ -637,7 +637,7 @@ impl<'a, const O: u8> SWT11_W<'a, O> {
 #[doc = "Field `SWT12` reader - Software trigger 12 event."]
 pub type SWT12_R = crate::BitReader<SWT12_A>;
 #[doc = "Software trigger 12 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT12_A {
     #[doc = "0: No trigger 12 event generated."]
     SWT12_0 = 0,
@@ -687,7 +687,7 @@ impl<'a, const O: u8> SWT12_W<'a, O> {
 #[doc = "Field `SWT13` reader - Software trigger 13 event."]
 pub type SWT13_R = crate::BitReader<SWT13_A>;
 #[doc = "Software trigger 13 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT13_A {
     #[doc = "0: No trigger 13 event generated."]
     SWT13_0 = 0,
@@ -737,7 +737,7 @@ impl<'a, const O: u8> SWT13_W<'a, O> {
 #[doc = "Field `SWT14` reader - Software trigger 14 event."]
 pub type SWT14_R = crate::BitReader<SWT14_A>;
 #[doc = "Software trigger 14 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT14_A {
     #[doc = "0: No trigger 14 event generated."]
     SWT14_0 = 0,
@@ -787,7 +787,7 @@ impl<'a, const O: u8> SWT14_W<'a, O> {
 #[doc = "Field `SWT15` reader - Software trigger 15 event."]
 pub type SWT15_R = crate::BitReader<SWT15_A>;
 #[doc = "Software trigger 15 event.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWT15_A {
     #[doc = "0: No trigger 15 event generated."]
     SWT15_0 = 0,

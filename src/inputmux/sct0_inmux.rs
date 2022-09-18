@@ -37,7 +37,7 @@ impl From<crate::W<SCT0_INMUX_SPEC>> for W {
 #[doc = "Field `INP_N` reader - Input number to SCT0 inputs 0 to 6.."]
 pub type INP_N_R = crate::FieldReader<u8, INP_N_A>;
 #[doc = "Input number to SCT0 inputs 0 to 6..\n\nValue on reset: 31"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum INP_N_A {
     #[doc = "0: SCT_GPI0 function selected from IOCON register."]

@@ -37,7 +37,7 @@ impl From<crate::W<PIO0_3_SPEC>> for W {
 #[doc = "Field `FUNC` reader - Selects pin function."]
 pub type FUNC_R = crate::FieldReader<u8, FUNC_A>;
 #[doc = "Selects pin function.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FUNC_A {
     #[doc = "0: General-purpose digital input/output pin."]
@@ -141,7 +141,7 @@ impl<'a, const O: u8> FUNC_W<'a, O> {
 #[doc = "Field `MODE` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
 pub type MODE_R = crate::FieldReader<u8, MODE_A>;
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODE_A {
     #[doc = "0: Inactive. Inactive (no pull-down/pull-up resistor enabled)."]
@@ -219,7 +219,7 @@ impl<'a, const O: u8> MODE_W<'a, O> {
 #[doc = "Field `SLEW` reader - Driver slew rate."]
 pub type SLEW_R = crate::BitReader<SLEW_A>;
 #[doc = "Driver slew rate.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLEW_A {
     #[doc = "0: Standard-mode, output slew rate is slower. More outputs can be switched simultaneously."]
     STANDARD = 0,
@@ -269,7 +269,7 @@ impl<'a, const O: u8> SLEW_W<'a, O> {
 #[doc = "Field `INVERT` reader - Input polarity."]
 pub type INVERT_R = crate::BitReader<INVERT_A>;
 #[doc = "Input polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INVERT_A {
     #[doc = "0: Disabled. Input function is not inverted."]
     DISABLED = 0,
@@ -319,7 +319,7 @@ impl<'a, const O: u8> INVERT_W<'a, O> {
 #[doc = "Field `DIGIMODE` reader - Select Digital mode."]
 pub type DIGIMODE_R = crate::BitReader<DIGIMODE_A>;
 #[doc = "Select Digital mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DIGIMODE_A {
     #[doc = "0: Disable digital mode. Digital input set to 0."]
     ANALOG = 0,
@@ -369,7 +369,7 @@ impl<'a, const O: u8> DIGIMODE_W<'a, O> {
 #[doc = "Field `OD` reader - Controls open-drain mode."]
 pub type OD_R = crate::BitReader<OD_A>;
 #[doc = "Controls open-drain mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OD_A {
     #[doc = "0: Normal. Normal push-pull output."]
     NORMAL = 0,

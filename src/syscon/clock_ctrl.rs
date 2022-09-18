@@ -37,7 +37,7 @@ impl From<crate::W<CLOCK_CTRL_SPEC>> for W {
 #[doc = "Field `XTAL32MHZ_FREQM_ENA` reader - Enable XTAL32MHz clock for Frequency Measure module."]
 pub type XTAL32MHZ_FREQM_ENA_R = crate::BitReader<XTAL32MHZ_FREQM_ENA_A>;
 #[doc = "Enable XTAL32MHz clock for Frequency Measure module.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum XTAL32MHZ_FREQM_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> XTAL32MHZ_FREQM_ENA_W<'a, O> {
 #[doc = "Field `FRO1MHZ_UTICK_ENA` reader - Enable FRO 1MHz clock for Frequency Measure module and for UTICK."]
 pub type FRO1MHZ_UTICK_ENA_R = crate::BitReader<FRO1MHZ_UTICK_ENA_A>;
 #[doc = "Enable FRO 1MHz clock for Frequency Measure module and for UTICK.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FRO1MHZ_UTICK_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> FRO1MHZ_UTICK_ENA_W<'a, O> {
 #[doc = "Field `FRO12MHZ_FREQM_ENA` reader - Enable FRO 12MHz clock for Frequency Measure module."]
 pub type FRO12MHZ_FREQM_ENA_R = crate::BitReader<FRO12MHZ_FREQM_ENA_A>;
 #[doc = "Enable FRO 12MHz clock for Frequency Measure module.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FRO12MHZ_FREQM_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> FRO12MHZ_FREQM_ENA_W<'a, O> {
 #[doc = "Field `FRO_HF_FREQM_ENA` reader - Enable FRO 96MHz clock for Frequency Measure module."]
 pub type FRO_HF_FREQM_ENA_R = crate::BitReader<FRO_HF_FREQM_ENA_A>;
 #[doc = "Enable FRO 96MHz clock for Frequency Measure module.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FRO_HF_FREQM_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -241,7 +241,7 @@ impl<'a, const O: u8> FRO_HF_FREQM_ENA_W<'a, O> {
 #[doc = "Field `CLKIN_ENA` reader - Enable clock_in clock for clock module."]
 pub type CLKIN_ENA_R = crate::BitReader<CLKIN_ENA_A>;
 #[doc = "Enable clock_in clock for clock module.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CLKIN_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -291,7 +291,7 @@ impl<'a, const O: u8> CLKIN_ENA_W<'a, O> {
 #[doc = "Field `FRO1MHZ_CLK_ENA` reader - Enable FRO 1MHz clock for clock muxing in clock gen."]
 pub type FRO1MHZ_CLK_ENA_R = crate::BitReader<FRO1MHZ_CLK_ENA_A>;
 #[doc = "Enable FRO 1MHz clock for clock muxing in clock gen.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FRO1MHZ_CLK_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -342,7 +342,7 @@ impl<'a, const O: u8> FRO1MHZ_CLK_ENA_W<'a, O> {
 #[doc = "Field `ANA_FRO12M_CLK_ENA` reader - Enable FRO 12MHz clock for analog control of the FRO 192MHz."]
 pub type ANA_FRO12M_CLK_ENA_R = crate::BitReader<ANA_FRO12M_CLK_ENA_A>;
 #[doc = "Enable FRO 12MHz clock for analog control of the FRO 192MHz.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ANA_FRO12M_CLK_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -393,7 +393,7 @@ impl<'a, const O: u8> ANA_FRO12M_CLK_ENA_W<'a, O> {
 #[doc = "Field `XO_CAL_CLK_ENA` reader - Enable clock for cristal oscilator calibration."]
 pub type XO_CAL_CLK_ENA_R = crate::BitReader<XO_CAL_CLK_ENA_A>;
 #[doc = "Enable clock for cristal oscilator calibration.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum XO_CAL_CLK_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,
@@ -444,7 +444,7 @@ impl<'a, const O: u8> XO_CAL_CLK_ENA_W<'a, O> {
 #[doc = "Field `PLU_DEGLITCH_CLK_ENA` reader - Enable clocks FRO_1MHz and FRO_12MHz for PLU deglitching."]
 pub type PLU_DEGLITCH_CLK_ENA_R = crate::BitReader<PLU_DEGLITCH_CLK_ENA_A>;
 #[doc = "Enable clocks FRO_1MHz and FRO_12MHz for PLU deglitching.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PLU_DEGLITCH_CLK_ENA_A {
     #[doc = "0: The clock is not enabled."]
     DISABLE = 0,

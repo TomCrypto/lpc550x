@@ -37,7 +37,7 @@ impl From<crate::W<STAT_SPEC>> for W {
 #[doc = "Field `RDY0` reader - Result FIFO 0 Ready Flag."]
 pub type RDY0_R = crate::BitReader<RDY0_A>;
 #[doc = "Result FIFO 0 Ready Flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RDY0_A {
     #[doc = "0: Result FIFO 0 data level not above watermark level."]
     RDY0_0 = 0,
@@ -73,7 +73,7 @@ impl RDY0_R {
 #[doc = "Field `FOF0` reader - Result FIFO 0 Overflow Flag."]
 pub type FOF0_R = crate::BitReader<FOF0_A>;
 #[doc = "Result FIFO 0 Overflow Flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FOF0_A {
     #[doc = "0: No result FIFO 0 overflow has occurred since the last time the flag was cleared."]
     FOF0_0 = 0,
@@ -123,7 +123,7 @@ impl<'a, const O: u8> FOF0_W<'a, O> {
 #[doc = "Field `RDY1` reader - Result FIFO1 Ready Flag."]
 pub type RDY1_R = crate::BitReader<RDY1_A>;
 #[doc = "Result FIFO1 Ready Flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RDY1_A {
     #[doc = "0: Result FIFO1 data level not above watermark level."]
     RDY1_0 = 0,
@@ -159,7 +159,7 @@ impl RDY1_R {
 #[doc = "Field `FOF1` reader - Result FIFO1 Overflow Flag."]
 pub type FOF1_R = crate::BitReader<FOF1_A>;
 #[doc = "Result FIFO1 Overflow Flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FOF1_A {
     #[doc = "0: No result FIFO1 overflow has occurred since the last time the flag was cleared."]
     FOF1_0 = 0,
@@ -209,7 +209,7 @@ impl<'a, const O: u8> FOF1_W<'a, O> {
 #[doc = "Field `TEXC_INT` reader - Interrupt Flag For High Priority Trigger Exception."]
 pub type TEXC_INT_R = crate::BitReader<TEXC_INT_A>;
 #[doc = "Interrupt Flag For High Priority Trigger Exception.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TEXC_INT_A {
     #[doc = "0: No trigger exceptions have occurred."]
     TEXC_INT_0 = 0,
@@ -259,7 +259,7 @@ impl<'a, const O: u8> TEXC_INT_W<'a, O> {
 #[doc = "Field `TCOMP_INT` reader - Interrupt Flag For Trigger Completion."]
 pub type TCOMP_INT_R = crate::BitReader<TCOMP_INT_A>;
 #[doc = "Interrupt Flag For Trigger Completion.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TCOMP_INT_A {
     #[doc = "0: Either IE\\[TCOMP_IE\\]
 is set to 0, or no trigger sequences have run to completion."]
@@ -311,7 +311,7 @@ is set to 0, or no trigger sequences have run to completion."]
 #[doc = "Field `CAL_RDY` reader - Calibration Ready."]
 pub type CAL_RDY_R = crate::BitReader<CAL_RDY_A>;
 #[doc = "Calibration Ready.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CAL_RDY_A {
     #[doc = "0: Calibration is incomplete or hasn't been ran."]
     CAL_RDY_0 = 0,
@@ -347,7 +347,7 @@ impl CAL_RDY_R {
 #[doc = "Field `ADC_ACTIVE` reader - ADC Active."]
 pub type ADC_ACTIVE_R = crate::BitReader<ADC_ACTIVE_A>;
 #[doc = "ADC Active.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ADC_ACTIVE_A {
     #[doc = "0: The ADC is IDLE. There are no pending triggers to service and no active commands are being processed."]
     ADC_ACTIVE_0 = 0,
@@ -383,7 +383,7 @@ impl ADC_ACTIVE_R {
 #[doc = "Field `TRGACT` reader - Trigger Active."]
 pub type TRGACT_R = crate::FieldReader<u8, TRGACT_A>;
 #[doc = "Trigger Active.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TRGACT_A {
     #[doc = "0: Command (sequence) associated with Trigger 0 currently being executed."]
@@ -485,7 +485,7 @@ impl TRGACT_R {
 #[doc = "Field `CMDACT` reader - Command Active."]
 pub type CMDACT_R = crate::FieldReader<u8, CMDACT_A>;
 #[doc = "Command Active.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CMDACT_A {
     #[doc = "0: No command is currently in progress."]

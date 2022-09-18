@@ -37,7 +37,7 @@ impl From<crate::W<PIO0_14_SPEC>> for W {
 #[doc = "Field `FUNC` reader - Selects pin function."]
 pub type FUNC_R = crate::FieldReader<u8, FUNC_A>;
 #[doc = "Selects pin function.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FUNC_A {
     #[doc = "0: General-purpose digital input/output pin."]
@@ -167,7 +167,7 @@ impl<'a, const O: u8> FUNC_W<'a, O> {
 #[doc = "Field `MODE` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
 pub type MODE_R = crate::FieldReader<u8, MODE_A>;
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODE_A {
     #[doc = "0: Inactive. Inactive (no pull-down/pull-up resistor enabled)."]
@@ -245,7 +245,7 @@ impl<'a, const O: u8> MODE_W<'a, O> {
 #[doc = "Field `SLEW` reader - Driver slew rate."]
 pub type SLEW_R = crate::BitReader<SLEW_A>;
 #[doc = "Driver slew rate.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLEW_A {
     #[doc = "0: Standard-mode, output slew rate is slower. More outputs can be switched simultaneously."]
     STANDARD = 0,
@@ -295,7 +295,7 @@ impl<'a, const O: u8> SLEW_W<'a, O> {
 #[doc = "Field `INVERT` reader - Input polarity."]
 pub type INVERT_R = crate::BitReader<INVERT_A>;
 #[doc = "Input polarity.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INVERT_A {
     #[doc = "0: Disabled. Input function is not inverted."]
     DISABLED = 0,
@@ -345,7 +345,7 @@ impl<'a, const O: u8> INVERT_W<'a, O> {
 #[doc = "Field `DIGIMODE` reader - Select Digital mode."]
 pub type DIGIMODE_R = crate::BitReader<DIGIMODE_A>;
 #[doc = "Select Digital mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DIGIMODE_A {
     #[doc = "0: Disable digital mode. Digital input set to 0."]
     ANALOG = 0,
@@ -395,7 +395,7 @@ impl<'a, const O: u8> DIGIMODE_W<'a, O> {
 #[doc = "Field `OD` reader - Controls open-drain mode in standard GPIO mode (EGP = 1). This bit has no effect in I2C mode (EGP=0)."]
 pub type OD_R = crate::BitReader<OD_A>;
 #[doc = "Controls open-drain mode in standard GPIO mode (EGP = 1). This bit has no effect in I2C mode (EGP=0).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OD_A {
     #[doc = "0: Normal. Normal push-pull output."]
     NORMAL = 0,
@@ -445,7 +445,7 @@ impl<'a, const O: u8> OD_W<'a, O> {
 #[doc = "Field `SSEL` reader - Supply Selection bit."]
 pub type SSEL_R = crate::BitReader<SSEL_A>;
 #[doc = "Supply Selection bit.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SSEL_A {
     #[doc = "0: 3V3 Signaling in I2C Mode."]
     SEL3V3 = 0,
@@ -495,7 +495,7 @@ impl<'a, const O: u8> SSEL_W<'a, O> {
 #[doc = "Field `FILTEROFF` reader - Controls input glitch filter."]
 pub type FILTEROFF_R = crate::BitReader<FILTEROFF_A>;
 #[doc = "Controls input glitch filter.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FILTEROFF_A {
     #[doc = "0: Filter enabled."]
     ENABLED = 0,
@@ -545,7 +545,7 @@ impl<'a, const O: u8> FILTEROFF_W<'a, O> {
 #[doc = "Field `ECS` reader - Pull-up current source enable in I2C mode."]
 pub type ECS_R = crate::BitReader<ECS_A>;
 #[doc = "Pull-up current source enable in I2C mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ECS_A {
     #[doc = "0: Disabled. IO is in open drain cell."]
     DISABLED = 0,
@@ -595,7 +595,7 @@ impl<'a, const O: u8> ECS_W<'a, O> {
 #[doc = "Field `EGP` reader - Switch between GPIO mode and I2C mode."]
 pub type EGP_R = crate::BitReader<EGP_A>;
 #[doc = "Switch between GPIO mode and I2C mode.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EGP_A {
     #[doc = "0: I2C mode."]
     I2C_MODE = 0,
@@ -645,7 +645,7 @@ impl<'a, const O: u8> EGP_W<'a, O> {
 #[doc = "Field `I2CFILTER` reader - Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation and High-Speed mode operation."]
 pub type I2CFILTER_R = crate::BitReader<I2CFILTER_A>;
 #[doc = "Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation and High-Speed mode operation.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum I2CFILTER_A {
     #[doc = "0: I2C 50 ns glitch filter enabled. Typically used for Standard-mode, Fast-mode and Fast-mode Plus I2C."]
     FAST_MODE = 0,

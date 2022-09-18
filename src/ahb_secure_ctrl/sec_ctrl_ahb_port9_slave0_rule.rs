@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_PORT9_SLAVE0_RULE_SPEC>> for W {
 #[doc = "Field `ADC_RULE` reader - ADC."]
 pub type ADC_RULE_R = crate::FieldReader<u8, ADC_RULE_A>;
 #[doc = "ADC.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ADC_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> ADC_RULE_W<'a, O> {
 #[doc = "Field `HASH_RULE` reader - SHA-2 crypto registers."]
 pub type HASH_RULE_R = crate::FieldReader<u8, HASH_RULE_A>;
 #[doc = "SHA-2 crypto registers.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum HASH_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> HASH_RULE_W<'a, O> {
 #[doc = "Field `CASPER_RULE` reader - RSA/ECC crypto accelerator."]
 pub type CASPER_RULE_R = crate::FieldReader<u8, CASPER_RULE_A>;
 #[doc = "RSA/ECC crypto accelerator.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CASPER_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> CASPER_RULE_W<'a, O> {
 #[doc = "Field `DMA1_RULE` reader - DMA Controller (Secure)"]
 pub type DMA1_RULE_R = crate::FieldReader<u8, DMA1_RULE_A>;
 #[doc = "DMA Controller (Secure)\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DMA1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

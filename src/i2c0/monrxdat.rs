@@ -18,7 +18,7 @@ pub type MONRXDAT_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `MONSTART` reader - Monitor Received Start."]
 pub type MONSTART_R = crate::BitReader<MONSTART_A>;
 #[doc = "Monitor Received Start.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONSTART_A {
     #[doc = "0: No start detected. The Monitor function has not detected a Start event on the I2C bus."]
     NO_START_DETECTED = 0,
@@ -54,7 +54,7 @@ impl MONSTART_R {
 #[doc = "Field `MONRESTART` reader - Monitor Received Repeated Start."]
 pub type MONRESTART_R = crate::BitReader<MONRESTART_A>;
 #[doc = "Monitor Received Repeated Start.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONRESTART_A {
     #[doc = "0: No repeated start detected. The Monitor function has not detected a Repeated Start event on the I2C bus."]
     NOT_DETECTED = 0,
@@ -90,7 +90,7 @@ impl MONRESTART_R {
 #[doc = "Field `MONNACK` reader - Monitor Received NACK."]
 pub type MONNACK_R = crate::BitReader<MONNACK_A>;
 #[doc = "Monitor Received NACK.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONNACK_A {
     #[doc = "0: Acknowledged. The data currently being provided by the Monitor function was acknowledged by at least one master or slave receiver."]
     ACKNOWLEDGED = 0,

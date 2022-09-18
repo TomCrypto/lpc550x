@@ -37,7 +37,7 @@ impl From<crate::W<SLVQUAL0_SPEC>> for W {
 #[doc = "Field `QUALMODE0` reader - Qualify mode for slave address 0."]
 pub type QUALMODE0_R = crate::BitReader<QUALMODE0_A>;
 #[doc = "Qualify mode for slave address 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum QUALMODE0_A {
     #[doc = "0: Mask. The SLVQUAL0 field is used as a logical mask for matching address 0."]
     MASK = 0,

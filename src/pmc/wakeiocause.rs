@@ -37,7 +37,7 @@ impl From<crate::W<WAKEIOCAUSE_SPEC>> for W {
 #[doc = "Field `WAKEUP0` reader - Allows to identify Wake up I/O 0 as the wake-up source from Deep Power Down mode."]
 pub type WAKEUP0_R = crate::BitReader<WAKEUP0_A>;
 #[doc = "Allows to identify Wake up I/O 0 as the wake-up source from Deep Power Down mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEUP0_A {
     #[doc = "0: Last wake up from Deep Power down mode was NOT triggred by wake up I/O 0."]
     NOEVENT = 0,
@@ -73,7 +73,7 @@ impl WAKEUP0_R {
 #[doc = "Field `WAKEUP1` reader - Allows to identify Wake up I/O 1 as the wake-up source from Deep Power Down mode."]
 pub type WAKEUP1_R = crate::BitReader<WAKEUP1_A>;
 #[doc = "Allows to identify Wake up I/O 1 as the wake-up source from Deep Power Down mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEUP1_A {
     #[doc = "0: Last wake up from Deep Power down mode was NOT triggred by wake up I/O 1."]
     NOEVENT = 0,
@@ -123,7 +123,7 @@ impl<'a, const O: u8> WAKEUP1_W<'a, O> {
 #[doc = "Field `WAKEUP2` reader - Allows to identify Wake up I/O 2 as the wake-up source from Deep Power Down mode."]
 pub type WAKEUP2_R = crate::BitReader<WAKEUP2_A>;
 #[doc = "Allows to identify Wake up I/O 2 as the wake-up source from Deep Power Down mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEUP2_A {
     #[doc = "0: Last wake up from Deep Power down mode was NOT triggred by wake up I/O 2."]
     NOEVENT = 0,
@@ -173,7 +173,7 @@ impl<'a, const O: u8> WAKEUP2_W<'a, O> {
 #[doc = "Field `WAKEUP3` reader - Allows to identify Wake up I/O 3 as the wake-up source from Deep Power Down mode."]
 pub type WAKEUP3_R = crate::BitReader<WAKEUP3_A>;
 #[doc = "Allows to identify Wake up I/O 3 as the wake-up source from Deep Power Down mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEUP3_A {
     #[doc = "0: Last wake up from Deep Power down mode was NOT triggred by wake up I/O 3."]
     NOEVENT = 0,

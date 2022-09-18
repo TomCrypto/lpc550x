@@ -35,7 +35,7 @@ impl From<crate::W<MSTCTL_SPEC>> for W {
     }
 }
 #[doc = "Master Continue. This bit is write-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTCONTINUE_AW {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -65,7 +65,7 @@ impl<'a, const O: u8> MSTCONTINUE_W<'a, O> {
 #[doc = "Field `MSTSTART` reader - Master Start control. This bit is write-only."]
 pub type MSTSTART_R = crate::BitReader<MSTSTART_A>;
 #[doc = "Master Start control. This bit is write-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTSTART_A {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -115,7 +115,7 @@ impl<'a, const O: u8> MSTSTART_W<'a, O> {
 #[doc = "Field `MSTSTOP` reader - Master Stop control. This bit is write-only."]
 pub type MSTSTOP_R = crate::BitReader<MSTSTOP_A>;
 #[doc = "Master Stop control. This bit is write-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTSTOP_A {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -165,7 +165,7 @@ impl<'a, const O: u8> MSTSTOP_W<'a, O> {
 #[doc = "Field `MSTDMA` reader - Master DMA enable. Data operations of the I2C can be performed with DMA. Protocol type operations such as Start, address, Stop, and address match must always be done with software, typically via an interrupt. Address acknowledgement must also be done by software except when the I2C is configured to be HSCAPABLE (and address acknowledgement is handled entirely by hardware) or when Automatic Operation is enabled. When a DMA data transfer is complete, MSTDMA must be cleared prior to beginning the next operation, typically a Start or Stop.This bit is read/write."]
 pub type MSTDMA_R = crate::BitReader<MSTDMA_A>;
 #[doc = "Master DMA enable. Data operations of the I2C can be performed with DMA. Protocol type operations such as Start, address, Stop, and address match must always be done with software, typically via an interrupt. Address acknowledgement must also be done by software except when the I2C is configured to be HSCAPABLE (and address acknowledgement is handled entirely by hardware) or when Automatic Operation is enabled. When a DMA data transfer is complete, MSTDMA must be cleared prior to beginning the next operation, typically a Start or Stop.This bit is read/write.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTDMA_A {
     #[doc = "0: Disable. No DMA requests are generated for master operation."]
     DISABLED = 0,

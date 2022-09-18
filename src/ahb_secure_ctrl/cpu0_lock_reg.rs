@@ -37,7 +37,7 @@ impl From<crate::W<CPU0_LOCK_REG_SPEC>> for W {
 #[doc = "Field `LOCK_NS_VTOR` reader - Cortex M33 (CPU0) VTOR_NS register write-lock."]
 pub type LOCK_NS_VTOR_R = crate::FieldReader<u8, LOCK_NS_VTOR_A>;
 #[doc = "Cortex M33 (CPU0) VTOR_NS register write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_NS_VTOR_A {
     #[doc = "1: Restricted mode."]
@@ -90,7 +90,7 @@ impl<'a, const O: u8> LOCK_NS_VTOR_W<'a, O> {
 #[doc = "Field `LOCK_NS_MPU` reader - Cortex M33 (CPU0) non-secure MPU register write-lock."]
 pub type LOCK_NS_MPU_R = crate::FieldReader<u8, LOCK_NS_MPU_A>;
 #[doc = "Cortex M33 (CPU0) non-secure MPU register write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_NS_MPU_A {
     #[doc = "1: Restricted mode."]
@@ -143,7 +143,7 @@ impl<'a, const O: u8> LOCK_NS_MPU_W<'a, O> {
 #[doc = "Field `LOCK_S_VTAIRCR` reader - Cortex M33 (CPU0) VTOR_S, AIRCR.PRIS, IRCR.BFHFNMINS registers write-lock."]
 pub type LOCK_S_VTAIRCR_R = crate::FieldReader<u8, LOCK_S_VTAIRCR_A>;
 #[doc = "Cortex M33 (CPU0) VTOR_S, AIRCR.PRIS, IRCR.BFHFNMINS registers write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_S_VTAIRCR_A {
     #[doc = "1: Restricted mode."]
@@ -196,7 +196,7 @@ impl<'a, const O: u8> LOCK_S_VTAIRCR_W<'a, O> {
 #[doc = "Field `LOCK_S_MPU` reader - Cortex M33 (CPU0) Secure MPU registers write-lock."]
 pub type LOCK_S_MPU_R = crate::FieldReader<u8, LOCK_S_MPU_A>;
 #[doc = "Cortex M33 (CPU0) Secure MPU registers write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_S_MPU_A {
     #[doc = "1: Restricted mode."]
@@ -249,7 +249,7 @@ impl<'a, const O: u8> LOCK_S_MPU_W<'a, O> {
 #[doc = "Field `LOCK_SAU` reader - Cortex M33 (CPU0) SAU registers write-lock."]
 pub type LOCK_SAU_R = crate::FieldReader<u8, LOCK_SAU_A>;
 #[doc = "Cortex M33 (CPU0) SAU registers write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LOCK_SAU_A {
     #[doc = "1: Restricted mode."]
@@ -302,7 +302,7 @@ impl<'a, const O: u8> LOCK_SAU_W<'a, O> {
 #[doc = "Field `CPU0_LOCK_REG_LOCK` reader - CPU0_LOCK_REG write-lock."]
 pub type CPU0_LOCK_REG_LOCK_R = crate::FieldReader<u8, CPU0_LOCK_REG_LOCK_A>;
 #[doc = "CPU0_LOCK_REG write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CPU0_LOCK_REG_LOCK_A {
     #[doc = "1: Restricted mode."]

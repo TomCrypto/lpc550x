@@ -41,7 +41,7 @@ pub type IVALUE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, INTVAL_SPEC, u3
 #[doc = "Field `LOAD` reader - Determines how the timer interval value IVALUE -1 is loaded into the TIMERn register. This bit is write-only. Reading this bit always returns 0."]
 pub type LOAD_R = crate::BitReader<LOAD_A>;
 #[doc = "Determines how the timer interval value IVALUE -1 is loaded into the TIMERn register. This bit is write-only. Reading this bit always returns 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOAD_A {
     #[doc = "0: No force load. The load from the INTVALn register to the TIMERn register is processed at the end of the time interval if the repeat mode is selected."]
     NO_FORCE_LOAD = 0,

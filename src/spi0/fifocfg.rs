@@ -37,7 +37,7 @@ impl From<crate::W<FIFOCFG_SPEC>> for W {
 #[doc = "Field `ENABLETX` reader - Enable the transmit FIFO."]
 pub type ENABLETX_R = crate::BitReader<ENABLETX_A>;
 #[doc = "Enable the transmit FIFO.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLETX_A {
     #[doc = "0: The transmit FIFO is not enabled."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ENABLETX_W<'a, O> {
 #[doc = "Field `ENABLERX` reader - Enable the receive FIFO."]
 pub type ENABLERX_R = crate::BitReader<ENABLERX_A>;
 #[doc = "Enable the receive FIFO.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLERX_A {
     #[doc = "0: The receive FIFO is not enabled."]
     DISABLED = 0,
@@ -139,7 +139,7 @@ pub type SIZE_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `DMATX` reader - DMA configuration for transmit."]
 pub type DMATX_R = crate::BitReader<DMATX_A>;
 #[doc = "DMA configuration for transmit.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DMATX_A {
     #[doc = "0: DMA is not used for the transmit function."]
     DISABLED = 0,
@@ -189,7 +189,7 @@ impl<'a, const O: u8> DMATX_W<'a, O> {
 #[doc = "Field `DMARX` reader - DMA configuration for receive."]
 pub type DMARX_R = crate::BitReader<DMARX_A>;
 #[doc = "DMA configuration for receive.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DMARX_A {
     #[doc = "0: DMA is not used for the receive function."]
     DISABLED = 0,
@@ -239,7 +239,7 @@ impl<'a, const O: u8> DMARX_W<'a, O> {
 #[doc = "Field `WAKETX` reader - Wake-up for transmit FIFO level. This allows the device to be woken from reduced power modes (up to power-down, as long as the peripheral function works in that power mode) without enabling the TXLVL interrupt. Only DMA wakes up, processes data, and goes back to sleep. The CPU will remain stopped until woken by another cause, such as DMA completion. See Hardware Wake-up control register."]
 pub type WAKETX_R = crate::BitReader<WAKETX_A>;
 #[doc = "Wake-up for transmit FIFO level. This allows the device to be woken from reduced power modes (up to power-down, as long as the peripheral function works in that power mode) without enabling the TXLVL interrupt. Only DMA wakes up, processes data, and goes back to sleep. The CPU will remain stopped until woken by another cause, such as DMA completion. See Hardware Wake-up control register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKETX_A {
     #[doc = "0: Only enabled interrupts will wake up the device form reduced power modes."]
     DISABLED = 0,
@@ -289,7 +289,7 @@ impl<'a, const O: u8> WAKETX_W<'a, O> {
 #[doc = "Field `WAKERX` reader - Wake-up for receive FIFO level. This allows the device to be woken from reduced power modes (up to power-down, as long as the peripheral function works in that power mode) without enabling the TXLVL interrupt. Only DMA wakes up, processes data, and goes back to sleep. The CPU will remain stopped until woken by another cause, such as DMA completion. See Hardware Wake-up control register."]
 pub type WAKERX_R = crate::BitReader<WAKERX_A>;
 #[doc = "Wake-up for receive FIFO level. This allows the device to be woken from reduced power modes (up to power-down, as long as the peripheral function works in that power mode) without enabling the TXLVL interrupt. Only DMA wakes up, processes data, and goes back to sleep. The CPU will remain stopped until woken by another cause, such as DMA completion. See Hardware Wake-up control register.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKERX_A {
     #[doc = "0: Only enabled interrupts will wake up the device form reduced power modes."]
     DISABLED = 0,

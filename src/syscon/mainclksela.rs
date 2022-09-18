@@ -37,7 +37,7 @@ impl From<crate::W<MAINCLKSELA_SPEC>> for W {
 #[doc = "Field `SEL` reader - Main clock A source select."]
 pub type SEL_R = crate::FieldReader<u8, SEL_A>;
 #[doc = "Main clock A source select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEL_A {
     #[doc = "0: FRO 12 MHz clock."]

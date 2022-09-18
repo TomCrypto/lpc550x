@@ -37,7 +37,7 @@ impl From<crate::W<MCLKIO_SPEC>> for W {
 #[doc = "Field `MCLKIO` reader - MCLK control."]
 pub type MCLKIO_R = crate::BitReader<MCLKIO_A>;
 #[doc = "MCLK control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MCLKIO_A {
     #[doc = "0: input mode."]
     INPUT = 0,

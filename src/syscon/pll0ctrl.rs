@@ -49,7 +49,7 @@ pub type SELP_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PLL0CTRL_SPEC, u8
 #[doc = "Field `BYPASSPLL` reader - Bypass PLL input clock is sent directly to the PLL output (default)."]
 pub type BYPASSPLL_R = crate::BitReader<BYPASSPLL_A>;
 #[doc = "Bypass PLL input clock is sent directly to the PLL output (default).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BYPASSPLL_A {
     #[doc = "0: use PLL."]
     USED = 0,
@@ -99,7 +99,7 @@ impl<'a, const O: u8> BYPASSPLL_W<'a, O> {
 #[doc = "Field `BYPASSPOSTDIV2` reader - bypass of the divide-by-2 divider in the post-divider."]
 pub type BYPASSPOSTDIV2_R = crate::BitReader<BYPASSPOSTDIV2_A>;
 #[doc = "bypass of the divide-by-2 divider in the post-divider.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BYPASSPOSTDIV2_A {
     #[doc = "0: use the divide-by-2 divider in the post-divider."]
     USED = 0,
@@ -154,7 +154,7 @@ pub type LIMUPOFF_W<'a, const O: u8> = crate::BitWriter<'a, u32, PLL0CTRL_SPEC, 
 #[doc = "Field `BWDIRECT` reader - Control of the bandwidth of the PLL."]
 pub type BWDIRECT_R = crate::BitReader<BWDIRECT_A>;
 #[doc = "Control of the bandwidth of the PLL.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BWDIRECT_A {
     #[doc = "0: the bandwidth is changed synchronously with the feedback-divider."]
     SYNC = 0,
@@ -204,7 +204,7 @@ impl<'a, const O: u8> BWDIRECT_W<'a, O> {
 #[doc = "Field `BYPASSPREDIV` reader - bypass of the pre-divider."]
 pub type BYPASSPREDIV_R = crate::BitReader<BYPASSPREDIV_A>;
 #[doc = "bypass of the pre-divider.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BYPASSPREDIV_A {
     #[doc = "0: use the pre-divider."]
     USED = 0,
@@ -255,7 +255,7 @@ impl<'a, const O: u8> BYPASSPREDIV_W<'a, O> {
 #[doc = "Field `BYPASSPOSTDIV` reader - bypass of the post-divider."]
 pub type BYPASSPOSTDIV_R = crate::BitReader<BYPASSPOSTDIV_A>;
 #[doc = "bypass of the post-divider.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BYPASSPOSTDIV_A {
     #[doc = "0: use the post-divider."]
     USED = 0,
@@ -306,7 +306,7 @@ impl<'a, const O: u8> BYPASSPOSTDIV_W<'a, O> {
 #[doc = "Field `CLKEN` reader - enable the output clock."]
 pub type CLKEN_R = crate::BitReader<CLKEN_A>;
 #[doc = "enable the output clock.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CLKEN_A {
     #[doc = "0: disable the output clock."]
     DISABLE = 0,
@@ -356,7 +356,7 @@ impl<'a, const O: u8> CLKEN_W<'a, O> {
 #[doc = "Field `FRMEN` reader - free running mode."]
 pub type FRMEN_R = crate::BitReader<FRMEN_A>;
 #[doc = "free running mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FRMEN_A {
     #[doc = "0: free running mode is disable."]
     DISABLE = 0,
@@ -410,7 +410,7 @@ pub type FRMCLKSTABLE_W<'a, const O: u8> = crate::BitWriter<'a, u32, PLL0CTRL_SP
 #[doc = "Field `SKEWEN` reader - skew mode."]
 pub type SKEWEN_R = crate::BitReader<SKEWEN_A>;
 #[doc = "skew mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SKEWEN_A {
     #[doc = "0: skew mode is disable."]
     DISABLE = 0,

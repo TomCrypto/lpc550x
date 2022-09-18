@@ -37,7 +37,7 @@ impl From<crate::W<CTRL_SPEC>> for W {
 #[doc = "Field `ENABLE` reader - DMA controller master enable."]
 pub type ENABLE_R = crate::BitReader<ENABLE_A>;
 #[doc = "DMA controller master enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLE_A {
     #[doc = "0: Disabled. The DMA controller is disabled. This clears any triggers that were asserted at the point when disabled, but does not prevent re-triggering when the DMA controller is re-enabled."]
     DISABLED = 0,

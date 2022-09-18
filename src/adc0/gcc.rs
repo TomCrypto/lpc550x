@@ -18,7 +18,7 @@ pub type GAIN_CAL_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `RDY` reader - Gain Calibration Value Valid."]
 pub type RDY_R = crate::BitReader<RDY_A>;
 #[doc = "Gain Calibration Value Valid.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RDY_A {
     #[doc = "0: The gain calibration value is invalid. Run the auto-calibration routine for this value to be written."]
     RDY_0 = 0,

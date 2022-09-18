@@ -37,7 +37,7 @@ impl From<crate::W<PCFG1_SPEC>> for W {
 #[doc = "Field `PAIRENABLE` reader - Enable for this channel pair."]
 pub type PAIRENABLE_R = crate::BitReader<PAIRENABLE_A>;
 #[doc = "Enable for this channel pair.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PAIRENABLE_A {
     #[doc = "0: This I2S channel pair is disabled."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> PAIRENABLE_W<'a, O> {
 #[doc = "Field `ONECHANNEL` reader - Single channel mode."]
 pub type ONECHANNEL_R = crate::BitReader<ONECHANNEL_A>;
 #[doc = "Single channel mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ONECHANNEL_A {
     #[doc = "0: I2S data for this channel pair is treated as left and right channels."]
     STEREO = 0,

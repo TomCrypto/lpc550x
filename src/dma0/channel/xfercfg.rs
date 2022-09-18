@@ -37,7 +37,7 @@ impl From<crate::W<XFERCFG_SPEC>> for W {
 #[doc = "Field `CFGVALID` reader - Configuration Valid flag. This bit indicates whether the current channel descriptor is valid and can potentially be acted upon, if all other activation criteria are fulfilled."]
 pub type CFGVALID_R = crate::BitReader<CFGVALID_A>;
 #[doc = "Configuration Valid flag. This bit indicates whether the current channel descriptor is valid and can potentially be acted upon, if all other activation criteria are fulfilled.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CFGVALID_A {
     #[doc = "0: Not valid. The channel descriptor is not considered valid until validated by an associated SETVALID0 setting."]
     NOT_VALID = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> CFGVALID_W<'a, O> {
 #[doc = "Field `RELOAD` reader - Indicates whether the channel's control structure will be reloaded when the current descriptor is exhausted. Reloading allows ping-pong and linked transfers."]
 pub type RELOAD_R = crate::BitReader<RELOAD_A>;
 #[doc = "Indicates whether the channel's control structure will be reloaded when the current descriptor is exhausted. Reloading allows ping-pong and linked transfers.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RELOAD_A {
     #[doc = "0: Disabled. Do not reload the channels' control structure when the current descriptor is exhausted."]
     DISABLED = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> RELOAD_W<'a, O> {
 #[doc = "Field `SWTRIG` reader - Software Trigger."]
 pub type SWTRIG_R = crate::BitReader<SWTRIG_A>;
 #[doc = "Software Trigger.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWTRIG_A {
     #[doc = "0: Not set. When written by software, the trigger for this channel is not set. A new trigger, as defined by the HWTRIGEN, TRIGPOL, and TRIGTYPE will be needed to start the channel."]
     NOT_SET = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> SWTRIG_W<'a, O> {
 #[doc = "Field `CLRTRIG` reader - Clear Trigger."]
 pub type CLRTRIG_R = crate::BitReader<CLRTRIG_A>;
 #[doc = "Clear Trigger.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CLRTRIG_A {
     #[doc = "0: Not cleared. The trigger is not cleared when this descriptor is exhausted. If there is a reload, the next descriptor will be started."]
     NOT_CLEARED = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> CLRTRIG_W<'a, O> {
 #[doc = "Field `SETINTA` reader - Set Interrupt flag A for this channel. There is no hardware distinction between interrupt A and B. They can be used by software to assist with more complex descriptor usage. By convention, interrupt A may be used when only one interrupt flag is needed."]
 pub type SETINTA_R = crate::BitReader<SETINTA_A>;
 #[doc = "Set Interrupt flag A for this channel. There is no hardware distinction between interrupt A and B. They can be used by software to assist with more complex descriptor usage. By convention, interrupt A may be used when only one interrupt flag is needed.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SETINTA_A {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> SETINTA_W<'a, O> {
 #[doc = "Field `SETINTB` reader - Set Interrupt flag B for this channel. There is no hardware distinction between interrupt A and B. They can be used by software to assist with more complex descriptor usage. By convention, interrupt A may be used when only one interrupt flag is needed."]
 pub type SETINTB_R = crate::BitReader<SETINTB_A>;
 #[doc = "Set Interrupt flag B for this channel. There is no hardware distinction between interrupt A and B. They can be used by software to assist with more complex descriptor usage. By convention, interrupt A may be used when only one interrupt flag is needed.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SETINTB_A {
     #[doc = "0: No effect."]
     NO_EFFECT = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> SETINTB_W<'a, O> {
 #[doc = "Field `WIDTH` reader - Transfer width used for this DMA channel."]
 pub type WIDTH_R = crate::FieldReader<u8, WIDTH_A>;
 #[doc = "Transfer width used for this DMA channel.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum WIDTH_A {
     #[doc = "0: 8-bit. 8-bit transfers are performed (8-bit source reads and destination writes)."]
@@ -402,7 +402,7 @@ impl<'a, const O: u8> WIDTH_W<'a, O> {
 #[doc = "Field `SRCINC` reader - Determines whether the source address is incremented for each DMA transfer."]
 pub type SRCINC_R = crate::FieldReader<u8, SRCINC_A>;
 #[doc = "Determines whether the source address is incremented for each DMA transfer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRCINC_A {
     #[doc = "0: No increment. The source address is not incremented for each transfer. This is the usual case when the source is a peripheral device."]
@@ -481,7 +481,7 @@ impl<'a, const O: u8> SRCINC_W<'a, O> {
 #[doc = "Field `DSTINC` reader - Determines whether the destination address is incremented for each DMA transfer."]
 pub type DSTINC_R = crate::FieldReader<u8, DSTINC_A>;
 #[doc = "Determines whether the destination address is incremented for each DMA transfer.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DSTINC_A {
     #[doc = "0: No increment. The destination address is not incremented for each transfer. This is the usual case when the destination is a peripheral device."]

@@ -47,7 +47,7 @@ pub type TEMP_TRIM_W<'a, const O: u8> =
 #[doc = "Field `ENA_12MHZCLK` reader - 12 MHz clock control."]
 pub type ENA_12MHZCLK_R = crate::BitReader<ENA_12MHZCLK_A>;
 #[doc = "12 MHz clock control.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENA_12MHZCLK_A {
     #[doc = "0: 12 MHz clock is disabled."]
     DISABLE = 0,
@@ -102,7 +102,7 @@ pub type DAC_TRIM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, FRO192M_CTRL_
 #[doc = "Field `ENA_96MHZCLK` reader - 96 MHz clock control."]
 pub type ENA_96MHZCLK_R = crate::BitReader<ENA_96MHZCLK_A>;
 #[doc = "96 MHz clock control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENA_96MHZCLK_A {
     #[doc = "0: 96 MHz clock is disabled."]
     DISABLE = 0,

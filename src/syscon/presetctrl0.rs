@@ -37,7 +37,7 @@ impl From<crate::W<PRESETCTRL0_SPEC>> for W {
 #[doc = "Field `ROM_RST` reader - ROM reset control."]
 pub type ROM_RST_R = crate::BitReader<ROM_RST_A>;
 #[doc = "ROM reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ROM_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ROM_RST_W<'a, O> {
 #[doc = "Field `SRAM_CTRL1_RST` reader - SRAM Controller 1 reset control."]
 pub type SRAM_CTRL1_RST_R = crate::BitReader<SRAM_CTRL1_RST_A>;
 #[doc = "SRAM Controller 1 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SRAM_CTRL1_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -138,7 +138,7 @@ impl<'a, const O: u8> SRAM_CTRL1_RST_W<'a, O> {
 #[doc = "Field `SRAM_CTRL2_RST` reader - SRAM Controller 2 reset control."]
 pub type SRAM_CTRL2_RST_R = crate::BitReader<SRAM_CTRL2_RST_A>;
 #[doc = "SRAM Controller 2 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SRAM_CTRL2_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -189,7 +189,7 @@ impl<'a, const O: u8> SRAM_CTRL2_RST_W<'a, O> {
 #[doc = "Field `FLASH_RST` reader - Flash controller reset control."]
 pub type FLASH_RST_R = crate::BitReader<FLASH_RST_A>;
 #[doc = "Flash controller reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FLASH_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -239,7 +239,7 @@ impl<'a, const O: u8> FLASH_RST_W<'a, O> {
 #[doc = "Field `FMC_RST` reader - FMC controller reset control."]
 pub type FMC_RST_R = crate::BitReader<FMC_RST_A>;
 #[doc = "FMC controller reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FMC_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -289,7 +289,7 @@ impl<'a, const O: u8> FMC_RST_W<'a, O> {
 #[doc = "Field `MUX_RST` reader - Input Mux reset control."]
 pub type MUX_RST_R = crate::BitReader<MUX_RST_A>;
 #[doc = "Input Mux reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MUX_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -339,7 +339,7 @@ impl<'a, const O: u8> MUX_RST_W<'a, O> {
 #[doc = "Field `IOCON_RST` reader - I/O controller reset control."]
 pub type IOCON_RST_R = crate::BitReader<IOCON_RST_A>;
 #[doc = "I/O controller reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum IOCON_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -389,7 +389,7 @@ impl<'a, const O: u8> IOCON_RST_W<'a, O> {
 #[doc = "Field `GPIO0_RST` reader - GPIO0 reset control."]
 pub type GPIO0_RST_R = crate::BitReader<GPIO0_RST_A>;
 #[doc = "GPIO0 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GPIO0_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -439,7 +439,7 @@ impl<'a, const O: u8> GPIO0_RST_W<'a, O> {
 #[doc = "Field `GPIO1_RST` reader - GPIO1 reset control."]
 pub type GPIO1_RST_R = crate::BitReader<GPIO1_RST_A>;
 #[doc = "GPIO1 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GPIO1_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -489,7 +489,7 @@ impl<'a, const O: u8> GPIO1_RST_W<'a, O> {
 #[doc = "Field `PINT_RST` reader - Pin interrupt (PINT) reset control."]
 pub type PINT_RST_R = crate::BitReader<PINT_RST_A>;
 #[doc = "Pin interrupt (PINT) reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PINT_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -539,7 +539,7 @@ impl<'a, const O: u8> PINT_RST_W<'a, O> {
 #[doc = "Field `GINT_RST` reader - Group interrupt (GINT) reset control."]
 pub type GINT_RST_R = crate::BitReader<GINT_RST_A>;
 #[doc = "Group interrupt (GINT) reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum GINT_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -589,7 +589,7 @@ impl<'a, const O: u8> GINT_RST_W<'a, O> {
 #[doc = "Field `DMA0_RST` reader - DMA0 reset control."]
 pub type DMA0_RST_R = crate::BitReader<DMA0_RST_A>;
 #[doc = "DMA0 reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DMA0_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -639,7 +639,7 @@ impl<'a, const O: u8> DMA0_RST_W<'a, O> {
 #[doc = "Field `CRCGEN_RST` reader - CRCGEN reset control."]
 pub type CRCGEN_RST_R = crate::BitReader<CRCGEN_RST_A>;
 #[doc = "CRCGEN reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CRCGEN_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -690,7 +690,7 @@ impl<'a, const O: u8> CRCGEN_RST_W<'a, O> {
 #[doc = "Field `WWDT_RST` reader - Watchdog Timer reset control."]
 pub type WWDT_RST_R = crate::BitReader<WWDT_RST_A>;
 #[doc = "Watchdog Timer reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WWDT_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -740,7 +740,7 @@ impl<'a, const O: u8> WWDT_RST_W<'a, O> {
 #[doc = "Field `RTC_RST` reader - Real Time Clock (RTC) reset control."]
 pub type RTC_RST_R = crate::BitReader<RTC_RST_A>;
 #[doc = "Real Time Clock (RTC) reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -790,7 +790,7 @@ impl<'a, const O: u8> RTC_RST_W<'a, O> {
 #[doc = "Field `MAILBOX_RST` reader - Inter CPU communication Mailbox reset control."]
 pub type MAILBOX_RST_R = crate::BitReader<MAILBOX_RST_A>;
 #[doc = "Inter CPU communication Mailbox reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MAILBOX_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,
@@ -841,7 +841,7 @@ impl<'a, const O: u8> MAILBOX_RST_W<'a, O> {
 #[doc = "Field `ADC_RST` reader - ADC reset control."]
 pub type ADC_RST_R = crate::BitReader<ADC_RST_A>;
 #[doc = "ADC reset control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ADC_RST_A {
     #[doc = "0: Bloc is not reset."]
     RELEASED = 0,

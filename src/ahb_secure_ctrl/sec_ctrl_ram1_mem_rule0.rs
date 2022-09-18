@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_RAM1_MEM_RULE0_SPEC>> for W {
 #[doc = "Field `RULE0` reader - secure control rule0. it can be set when check_reg's write_lock is '0'"]
 pub type RULE0_R = crate::FieldReader<u8, RULE0_A>;
 #[doc = "secure control rule0. it can be set when check_reg's write_lock is '0'\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RULE0_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> RULE0_W<'a, O> {
 #[doc = "Field `RULE1` reader - secure control rule1. it can be set when check_reg's write_lock is '0'"]
 pub type RULE1_R = crate::FieldReader<u8, RULE1_A>;
 #[doc = "secure control rule1. it can be set when check_reg's write_lock is '0'\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RULE1_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> RULE1_W<'a, O> {
 #[doc = "Field `RULE2` reader - secure control rule2. it can be set when check_reg's write_lock is '0'"]
 pub type RULE2_R = crate::FieldReader<u8, RULE2_A>;
 #[doc = "secure control rule2. it can be set when check_reg's write_lock is '0'\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RULE2_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> RULE2_W<'a, O> {
 #[doc = "Field `RULE3` reader - secure control rule3. it can be set when check_reg's write_lock is '0'"]
 pub type RULE3_R = crate::FieldReader<u8, RULE3_A>;
 #[doc = "secure control rule3. it can be set when check_reg's write_lock is '0'\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum RULE3_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

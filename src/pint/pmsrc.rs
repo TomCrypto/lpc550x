@@ -37,7 +37,7 @@ impl From<crate::W<PMSRC_SPEC>> for W {
 #[doc = "Field `SRC0` reader - Selects the input source for bit slice 0."]
 pub type SRC0_R = crate::FieldReader<u8, SRC0_A>;
 #[doc = "Selects the input source for bit slice 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC0_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 0."]
@@ -167,7 +167,7 @@ impl<'a, const O: u8> SRC0_W<'a, O> {
 #[doc = "Field `SRC1` reader - Selects the input source for bit slice 1."]
 pub type SRC1_R = crate::FieldReader<u8, SRC1_A>;
 #[doc = "Selects the input source for bit slice 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC1_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 1."]
@@ -297,7 +297,7 @@ impl<'a, const O: u8> SRC1_W<'a, O> {
 #[doc = "Field `SRC2` reader - Selects the input source for bit slice 2."]
 pub type SRC2_R = crate::FieldReader<u8, SRC2_A>;
 #[doc = "Selects the input source for bit slice 2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC2_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 2."]
@@ -427,7 +427,7 @@ impl<'a, const O: u8> SRC2_W<'a, O> {
 #[doc = "Field `SRC3` reader - Selects the input source for bit slice 3."]
 pub type SRC3_R = crate::FieldReader<u8, SRC3_A>;
 #[doc = "Selects the input source for bit slice 3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC3_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 3."]
@@ -557,7 +557,7 @@ impl<'a, const O: u8> SRC3_W<'a, O> {
 #[doc = "Field `SRC4` reader - Selects the input source for bit slice 4."]
 pub type SRC4_R = crate::FieldReader<u8, SRC4_A>;
 #[doc = "Selects the input source for bit slice 4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC4_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 4."]
@@ -687,7 +687,7 @@ impl<'a, const O: u8> SRC4_W<'a, O> {
 #[doc = "Field `SRC5` reader - Selects the input source for bit slice 5."]
 pub type SRC5_R = crate::FieldReader<u8, SRC5_A>;
 #[doc = "Selects the input source for bit slice 5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC5_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 5."]
@@ -817,7 +817,7 @@ impl<'a, const O: u8> SRC5_W<'a, O> {
 #[doc = "Field `SRC6` reader - Selects the input source for bit slice 6."]
 pub type SRC6_R = crate::FieldReader<u8, SRC6_A>;
 #[doc = "Selects the input source for bit slice 6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC6_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 6."]
@@ -947,7 +947,7 @@ impl<'a, const O: u8> SRC6_W<'a, O> {
 #[doc = "Field `SRC7` reader - Selects the input source for bit slice 7."]
 pub type SRC7_R = crate::FieldReader<u8, SRC7_A>;
 #[doc = "Selects the input source for bit slice 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SRC7_A {
     #[doc = "0: Input 0. Selects the pin selected in the PINTSEL0 register as the source to bit slice 7."]

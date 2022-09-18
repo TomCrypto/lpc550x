@@ -39,7 +39,7 @@ pub type DIV_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `DIV` writer - Clock divider value."]
 pub type DIV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, WDTCLKDIV_SPEC, u8, u8, 6, O>;
 #[doc = "Resets the divider counter.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RESET_AW {
     #[doc = "0: Divider is not reset."]
     RELEASED = 0,
@@ -69,7 +69,7 @@ impl<'a, const O: u8> RESET_W<'a, O> {
 #[doc = "Field `HALT` reader - Halts the divider counter."]
 pub type HALT_R = crate::BitReader<HALT_A>;
 #[doc = "Halts the divider counter.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HALT_A {
     #[doc = "0: Divider clock is running."]
     RUN = 0,
@@ -119,7 +119,7 @@ impl<'a, const O: u8> HALT_W<'a, O> {
 #[doc = "Field `REQFLAG` reader - Divider status flag."]
 pub type REQFLAG_R = crate::BitReader<REQFLAG_A>;
 #[doc = "Divider status flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum REQFLAG_A {
     #[doc = "0: Divider clock is stable."]
     STABLE = 0,

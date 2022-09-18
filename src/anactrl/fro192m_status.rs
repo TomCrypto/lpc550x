@@ -37,7 +37,7 @@ impl From<crate::W<FRO192M_STATUS_SPEC>> for W {
 #[doc = "Field `CLK_VALID` reader - Output clock valid signal. Indicates that CCO clock has settled."]
 pub type CLK_VALID_R = crate::BitReader<CLK_VALID_A>;
 #[doc = "Output clock valid signal. Indicates that CCO clock has settled.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CLK_VALID_A {
     #[doc = "0: No output clock present (None of 12 MHz, 48 MHz or 96 MHz clock is available)."]
     NOCLKOUT = 0,

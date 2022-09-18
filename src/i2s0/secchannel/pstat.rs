@@ -37,7 +37,7 @@ impl From<crate::W<PSTAT_SPEC>> for W {
 #[doc = "Field `BUSY` reader - Busy status for this channel pair."]
 pub type BUSY_R = crate::BitReader<BUSY_A>;
 #[doc = "Busy status for this channel pair.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BUSY_A {
     #[doc = "0: The transmitter/receiver for this channel pair is currently idle."]
     IDLE = 0,
@@ -95,7 +95,7 @@ pub type LR_W<'a, const O: u8> = crate::BitWriter<'a, u32, PSTAT_SPEC, bool, O>;
 #[doc = "Field `DATAPAUSED` reader - Data Paused status flag."]
 pub type DATAPAUSED_R = crate::BitReader<DATAPAUSED_A>;
 #[doc = "Data Paused status flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DATAPAUSED_A {
     #[doc = "0: Data is not currently paused."]
     PAUSE = 0,

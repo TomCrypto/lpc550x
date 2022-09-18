@@ -37,7 +37,7 @@ impl From<crate::W<CTL_SPEC>> for W {
 #[doc = "Field `TXBRKEN` reader - Break Enable."]
 pub type TXBRKEN_R = crate::BitReader<TXBRKEN_A>;
 #[doc = "Break Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXBRKEN_A {
     #[doc = "0: Normal operation."]
     NORMAL = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> TXBRKEN_W<'a, O> {
 #[doc = "Field `ADDRDET` reader - Enable address detect mode."]
 pub type ADDRDET_R = crate::BitReader<ADDRDET_A>;
 #[doc = "Enable address detect mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ADDRDET_A {
     #[doc = "0: Disabled. The USART presents all incoming data."]
     DISABLED = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> ADDRDET_W<'a, O> {
 #[doc = "Field `TXDIS` reader - Transmit Disable."]
 pub type TXDIS_R = crate::BitReader<TXDIS_A>;
 #[doc = "Transmit Disable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXDIS_A {
     #[doc = "0: Not disabled. USART transmitter is not disabled."]
     ENABLED = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> TXDIS_W<'a, O> {
 #[doc = "Field `CC` reader - Continuous Clock generation. By default, SCLK is only output while data is being transmitted in synchronous mode."]
 pub type CC_R = crate::BitReader<CC_A>;
 #[doc = "Continuous Clock generation. By default, SCLK is only output while data is being transmitted in synchronous mode.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CC_A {
     #[doc = "0: Clock on character. In synchronous mode, SCLK cycles only when characters are being sent on Un_TXD or to complete a character that is being received."]
     CLOCK_ON_CHARACTER = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> CC_W<'a, O> {
 #[doc = "Field `CLRCCONRX` reader - Clear Continuous Clock."]
 pub type CLRCCONRX_R = crate::BitReader<CLRCCONRX_A>;
 #[doc = "Clear Continuous Clock.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CLRCCONRX_A {
     #[doc = "0: No effect. No effect on the CC bit."]
     NO_EFFECT = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> CLRCCONRX_W<'a, O> {
 #[doc = "Field `AUTOBAUD` reader - Autobaud enable."]
 pub type AUTOBAUD_R = crate::BitReader<AUTOBAUD_A>;
 #[doc = "Autobaud enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AUTOBAUD_A {
     #[doc = "0: Disabled. USART is in normal operating mode."]
     DISABLED = 0,

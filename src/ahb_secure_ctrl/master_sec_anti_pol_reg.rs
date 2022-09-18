@@ -37,7 +37,7 @@ impl From<crate::W<MASTER_SEC_ANTI_POL_REG_SPEC>> for W {
 #[doc = "Field `SDMA0` reader - System DMA 0. Must be equal to NOT(MASTER_SEC_LEVEL.SDMA0)"]
 pub type SDMA0_R = crate::FieldReader<u8, SDMA0_A>;
 #[doc = "System DMA 0. Must be equal to NOT(MASTER_SEC_LEVEL.SDMA0)\n\nValue on reset: 3"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SDMA0_A {
     #[doc = "0: Secure and Priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> SDMA0_W<'a, O> {
 #[doc = "Field `HASH` reader - Hash. Must be equal to NOT(MASTER_SEC_LEVEL.HASH)"]
 pub type HASH_R = crate::FieldReader<u8, HASH_A>;
 #[doc = "Hash. Must be equal to NOT(MASTER_SEC_LEVEL.HASH)\n\nValue on reset: 3"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum HASH_A {
     #[doc = "0: Secure and Priviledge user access allowed."]
@@ -195,7 +195,7 @@ impl<'a, const O: u8> HASH_W<'a, O> {
 #[doc = "Field `SDMA1` reader - System DMA 1 security level. Must be equal to NOT(MASTER_SEC_LEVEL.SDMA1)"]
 pub type SDMA1_R = crate::FieldReader<u8, SDMA1_A>;
 #[doc = "System DMA 1 security level. Must be equal to NOT(MASTER_SEC_LEVEL.SDMA1)\n\nValue on reset: 3"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SDMA1_A {
     #[doc = "0: Secure and Priviledge user access allowed."]
@@ -274,7 +274,7 @@ impl<'a, const O: u8> SDMA1_W<'a, O> {
 #[doc = "Field `CANFD` reader - CAN FD. Must be equal to NOT(MASTER_SEC_LEVEL.CANFD)"]
 pub type CANFD_R = crate::FieldReader<u8, CANFD_A>;
 #[doc = "CAN FD. Must be equal to NOT(MASTER_SEC_LEVEL.CANFD)\n\nValue on reset: 3"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CANFD_A {
     #[doc = "0: Secure and Priviledge user access allowed."]
@@ -353,7 +353,7 @@ impl<'a, const O: u8> CANFD_W<'a, O> {
 #[doc = "Field `MASTER_SEC_LEVEL_ANTIPOL_LOCK` reader - MASTER_SEC_ANTI_POL_REG register write-lock."]
 pub type MASTER_SEC_LEVEL_ANTIPOL_LOCK_R = crate::FieldReader<u8, MASTER_SEC_LEVEL_ANTIPOL_LOCK_A>;
 #[doc = "MASTER_SEC_ANTI_POL_REG register write-lock.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MASTER_SEC_LEVEL_ANTIPOL_LOCK_A {
     #[doc = "1: Restricted mode."]

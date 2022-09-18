@@ -18,7 +18,7 @@ pub type TRIG_NUM_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `FIFOSIZE` reader - Result FIFO Depth."]
 pub type FIFOSIZE_R = crate::FieldReader<u8, FIFOSIZE_A>;
 #[doc = "Result FIFO Depth.\n\nValue on reset: 16"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FIFOSIZE_A {
     #[doc = "1: Result FIFO depth = 1 dataword."]

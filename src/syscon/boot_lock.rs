@@ -37,7 +37,7 @@ impl From<crate::W<BOOT_LOCK_SPEC>> for W {
 #[doc = "Field `LOCK_BOOT_SEED` reader - Control write access to BOOT_SEED_REG registers."]
 pub type LOCK_BOOT_SEED_R = crate::BitReader<LOCK_BOOT_SEED_A>;
 #[doc = "Control write access to BOOT_SEED_REG registers.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOCK_BOOT_SEED_A {
     #[doc = "1: write access to all 8 registers BOOT_SEED_REG is locked. This register is write once."]
     LOCK = 1,
@@ -76,7 +76,7 @@ impl<'a, const O: u8> LOCK_BOOT_SEED_W<'a, O> {
 #[doc = "Field `LOCK_HMAC` reader - Control write access to HMAC_REG registers."]
 pub type LOCK_HMAC_R = crate::BitReader<LOCK_HMAC_A>;
 #[doc = "Control write access to HMAC_REG registers.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOCK_HMAC_A {
     #[doc = "1: write access to all 8 registers HMAC_REG is locked. This register is write once."]
     LOCK = 1,

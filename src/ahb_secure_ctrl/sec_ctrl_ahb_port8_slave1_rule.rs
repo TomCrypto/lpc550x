@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_PORT8_SLAVE1_RULE_SPEC>> for W {
 #[doc = "Field `FLEXCOMM7_RULE` reader - Flexcomm interface 7."]
 pub type FLEXCOMM7_RULE_R = crate::FieldReader<u8, FLEXCOMM7_RULE_A>;
 #[doc = "Flexcomm interface 7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FLEXCOMM7_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -123,7 +123,7 @@ impl<'a, const O: u8> FLEXCOMM7_RULE_W<'a, O> {
 #[doc = "Field `DBG_MAILBOX_RULE` reader - Debug mailbox (aka ISP-AP)"]
 pub type DBG_MAILBOX_RULE_R = crate::FieldReader<u8, DBG_MAILBOX_RULE_A>;
 #[doc = "Debug mailbox (aka ISP-AP)\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum DBG_MAILBOX_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -209,7 +209,7 @@ impl<'a, const O: u8> DBG_MAILBOX_RULE_W<'a, O> {
 #[doc = "Field `CAN0_RULE` reader - CAN-FD."]
 pub type CAN0_RULE_R = crate::FieldReader<u8, CAN0_RULE_A>;
 #[doc = "CAN-FD.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CAN0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -288,7 +288,7 @@ impl<'a, const O: u8> CAN0_RULE_W<'a, O> {
 #[doc = "Field `HS_LSPI_RULE` reader - High Speed SPI."]
 pub type HS_LSPI_RULE_R = crate::FieldReader<u8, HS_LSPI_RULE_A>;
 #[doc = "High Speed SPI.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum HS_LSPI_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

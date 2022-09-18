@@ -20,7 +20,7 @@ impl From<crate::W<SET_SPEC>> for W {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO0_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -48,7 +48,7 @@ impl<'a, const O: u8> PIO0_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -76,7 +76,7 @@ impl<'a, const O: u8> PIO1_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO2_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -104,7 +104,7 @@ impl<'a, const O: u8> PIO2_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO3_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -132,7 +132,7 @@ impl<'a, const O: u8> PIO3_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO4_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -160,7 +160,7 @@ impl<'a, const O: u8> PIO4_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO5_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -188,7 +188,7 @@ impl<'a, const O: u8> PIO5_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO6_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -216,7 +216,7 @@ impl<'a, const O: u8> PIO6_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO7_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -244,7 +244,7 @@ impl<'a, const O: u8> PIO7_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_8.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO8_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -272,7 +272,7 @@ impl<'a, const O: u8> PIO8_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_9.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO9_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -300,7 +300,7 @@ impl<'a, const O: u8> PIO9_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_10.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO10_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -328,7 +328,7 @@ impl<'a, const O: u8> PIO10_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_11.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO11_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -356,7 +356,7 @@ impl<'a, const O: u8> PIO11_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_12.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO12_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -384,7 +384,7 @@ impl<'a, const O: u8> PIO12_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_13.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO13_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -412,7 +412,7 @@ impl<'a, const O: u8> PIO13_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_14.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO14_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -440,7 +440,7 @@ impl<'a, const O: u8> PIO14_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_15.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO15_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -468,7 +468,7 @@ impl<'a, const O: u8> PIO15_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_16.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO16_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -496,7 +496,7 @@ impl<'a, const O: u8> PIO16_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_17.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO17_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -524,7 +524,7 @@ impl<'a, const O: u8> PIO17_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_18.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO18_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -552,7 +552,7 @@ impl<'a, const O: u8> PIO18_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_19.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO19_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -580,7 +580,7 @@ impl<'a, const O: u8> PIO19_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_20.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO20_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -608,7 +608,7 @@ impl<'a, const O: u8> PIO20_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_21.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO21_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -636,7 +636,7 @@ impl<'a, const O: u8> PIO21_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_22.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO22_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -664,7 +664,7 @@ impl<'a, const O: u8> PIO22_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_23.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO23_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -692,7 +692,7 @@ impl<'a, const O: u8> PIO23_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_24.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO24_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -720,7 +720,7 @@ impl<'a, const O: u8> PIO24_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_25.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO25_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -748,7 +748,7 @@ impl<'a, const O: u8> PIO25_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_26.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO26_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -776,7 +776,7 @@ impl<'a, const O: u8> PIO26_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_27.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO27_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -804,7 +804,7 @@ impl<'a, const O: u8> PIO27_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_28.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO28_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -832,7 +832,7 @@ impl<'a, const O: u8> PIO28_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_29.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO29_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -860,7 +860,7 @@ impl<'a, const O: u8> PIO29_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_30.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO30_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,
@@ -888,7 +888,7 @@ impl<'a, const O: u8> PIO30_W<'a, O> {
     }
 }
 #[doc = "Sets pin state to high for pin PIOn_31.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO31_AW {
     #[doc = "0: Pin state is unchanged."]
     UNCHANGED = 0,

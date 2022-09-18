@@ -37,7 +37,7 @@ impl From<crate::W<WAKEUPIOCTRL_SPEC>> for W {
 #[doc = "Field `RISINGEDGEWAKEUP0` reader - Enable / disable detection of rising edge events on Wake Up 0 pin in Deep Power Down modes:."]
 pub type RISINGEDGEWAKEUP0_R = crate::BitReader<RISINGEDGEWAKEUP0_A>;
 #[doc = "Enable / disable detection of rising edge events on Wake Up 0 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RISINGEDGEWAKEUP0_A {
     #[doc = "0: Rising edge detection is disable."]
     DISABLE = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> RISINGEDGEWAKEUP0_W<'a, O> {
 #[doc = "Field `FALLINGEDGEWAKEUP0` reader - Enable / disable detection of falling edge events on Wake Up 0 pin in Deep Power Down modes:."]
 pub type FALLINGEDGEWAKEUP0_R = crate::BitReader<FALLINGEDGEWAKEUP0_A>;
 #[doc = "Enable / disable detection of falling edge events on Wake Up 0 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FALLINGEDGEWAKEUP0_A {
     #[doc = "0: Falling edge detection is disable."]
     DISABLE = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> FALLINGEDGEWAKEUP0_W<'a, O> {
 #[doc = "Field `RISINGEDGEWAKEUP1` reader - Enable / disable detection of rising edge events on Wake Up 1 pin in Deep Power Down modes:."]
 pub type RISINGEDGEWAKEUP1_R = crate::BitReader<RISINGEDGEWAKEUP1_A>;
 #[doc = "Enable / disable detection of rising edge events on Wake Up 1 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RISINGEDGEWAKEUP1_A {
     #[doc = "0: Rising edge detection is disable."]
     DISABLE = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> RISINGEDGEWAKEUP1_W<'a, O> {
 #[doc = "Field `FALLINGEDGEWAKEUP1` reader - Enable / disable detection of falling edge events on Wake Up 1 pin in Deep Power Down modes:."]
 pub type FALLINGEDGEWAKEUP1_R = crate::BitReader<FALLINGEDGEWAKEUP1_A>;
 #[doc = "Enable / disable detection of falling edge events on Wake Up 1 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FALLINGEDGEWAKEUP1_A {
     #[doc = "0: Falling edge detection is disable."]
     DISABLE = 0,
@@ -241,7 +241,7 @@ impl<'a, const O: u8> FALLINGEDGEWAKEUP1_W<'a, O> {
 #[doc = "Field `RISINGEDGEWAKEUP2` reader - Enable / disable detection of rising edge events on Wake Up 2 pin in Deep Power Down modes:."]
 pub type RISINGEDGEWAKEUP2_R = crate::BitReader<RISINGEDGEWAKEUP2_A>;
 #[doc = "Enable / disable detection of rising edge events on Wake Up 2 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RISINGEDGEWAKEUP2_A {
     #[doc = "0: Rising edge detection is disable."]
     DISABLE = 0,
@@ -292,7 +292,7 @@ impl<'a, const O: u8> RISINGEDGEWAKEUP2_W<'a, O> {
 #[doc = "Field `FALLINGEDGEWAKEUP2` reader - Enable / disable detection of falling edge events on Wake Up 2 pin in Deep Power Down modes:."]
 pub type FALLINGEDGEWAKEUP2_R = crate::BitReader<FALLINGEDGEWAKEUP2_A>;
 #[doc = "Enable / disable detection of falling edge events on Wake Up 2 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FALLINGEDGEWAKEUP2_A {
     #[doc = "0: Falling edge detection is disable."]
     DISABLE = 0,
@@ -343,7 +343,7 @@ impl<'a, const O: u8> FALLINGEDGEWAKEUP2_W<'a, O> {
 #[doc = "Field `RISINGEDGEWAKEUP3` reader - Enable / disable detection of rising edge events on Wake Up 3 pin in Deep Power Down modes:."]
 pub type RISINGEDGEWAKEUP3_R = crate::BitReader<RISINGEDGEWAKEUP3_A>;
 #[doc = "Enable / disable detection of rising edge events on Wake Up 3 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RISINGEDGEWAKEUP3_A {
     #[doc = "0: Rising edge detection is disable."]
     DISABLE = 0,
@@ -394,7 +394,7 @@ impl<'a, const O: u8> RISINGEDGEWAKEUP3_W<'a, O> {
 #[doc = "Field `FALLINGEDGEWAKEUP3` reader - Enable / disable detection of falling edge events on Wake Up 3 pin in Deep Power Down modes:."]
 pub type FALLINGEDGEWAKEUP3_R = crate::BitReader<FALLINGEDGEWAKEUP3_A>;
 #[doc = "Enable / disable detection of falling edge events on Wake Up 3 pin in Deep Power Down modes:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FALLINGEDGEWAKEUP3_A {
     #[doc = "0: Falling edge detection is disable."]
     DISABLE = 0,
@@ -445,7 +445,7 @@ impl<'a, const O: u8> FALLINGEDGEWAKEUP3_W<'a, O> {
 #[doc = "Field `MODEWAKEUPIOPAD0` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
 pub type MODEWAKEUPIOPAD0_R = crate::FieldReader<u8, MODEWAKEUPIOPAD0_A>;
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODEWAKEUPIOPAD0_A {
     #[doc = "0: Inactive. Inactive (no pull-down/pull-up resistor enabled)."]
@@ -524,7 +524,7 @@ impl<'a, const O: u8> MODEWAKEUPIOPAD0_W<'a, O> {
 #[doc = "Field `MODEWAKEUPIOPAD1` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
 pub type MODEWAKEUPIOPAD1_R = crate::FieldReader<u8, MODEWAKEUPIOPAD1_A>;
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODEWAKEUPIOPAD1_A {
     #[doc = "0: Inactive. Inactive (no pull-down/pull-up resistor enabled)."]
@@ -603,7 +603,7 @@ impl<'a, const O: u8> MODEWAKEUPIOPAD1_W<'a, O> {
 #[doc = "Field `MODEWAKEUPIOPAD2` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
 pub type MODEWAKEUPIOPAD2_R = crate::FieldReader<u8, MODEWAKEUPIOPAD2_A>;
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODEWAKEUPIOPAD2_A {
     #[doc = "0: Inactive. Inactive (no pull-down/pull-up resistor enabled)."]
@@ -682,7 +682,7 @@ impl<'a, const O: u8> MODEWAKEUPIOPAD2_W<'a, O> {
 #[doc = "Field `MODEWAKEUPIOPAD3` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
 pub type MODEWAKEUPIOPAD3_R = crate::FieldReader<u8, MODEWAKEUPIOPAD3_A>;
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MODEWAKEUPIOPAD3_A {
     #[doc = "0: Inactive. Inactive (no pull-down/pull-up resistor enabled)."]
@@ -761,7 +761,7 @@ impl<'a, const O: u8> MODEWAKEUPIOPAD3_W<'a, O> {
 #[doc = "Field `WAKEUPIO_ENABLE_CTRL` reader - Enable WAKEUP IO PAD control from MODEWAKEUPIOPAD (bits 12 to 19)."]
 pub type WAKEUPIO_ENABLE_CTRL_R = crate::BitReader<WAKEUPIO_ENABLE_CTRL_A>;
 #[doc = "Enable WAKEUP IO PAD control from MODEWAKEUPIOPAD (bits 12 to 19).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEUPIO_ENABLE_CTRL_A {
     #[doc = "0: WAKEUP IO PAD mode control comes from IOCON."]
     DISABLE = 0,
@@ -812,7 +812,7 @@ impl<'a, const O: u8> WAKEUPIO_ENABLE_CTRL_W<'a, O> {
 #[doc = "Field `WAKEUPIO_RSTN` reader - WAKEUP IO event detector reset control."]
 pub type WAKEUPIO_RSTN_R = crate::BitReader<WAKEUPIO_RSTN_A>;
 #[doc = "WAKEUP IO event detector reset control.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEUPIO_RSTN_A {
     #[doc = "0: Bloc is reset."]
     ASSERTED = 0,

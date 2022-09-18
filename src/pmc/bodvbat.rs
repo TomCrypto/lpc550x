@@ -37,7 +37,7 @@ impl From<crate::W<BODVBAT_SPEC>> for W {
 #[doc = "Field `TRIGLVL` reader - BoD trigger level."]
 pub type TRIGLVL_R = crate::FieldReader<u8, TRIGLVL_A>;
 #[doc = "BoD trigger level.\n\nValue on reset: 7"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TRIGLVL_A {
     #[doc = "0: 1.00 V."]
@@ -480,7 +480,7 @@ impl<'a, const O: u8> TRIGLVL_W<'a, O> {
 #[doc = "Field `HYST` reader - BoD Hysteresis control."]
 pub type HYST_R = crate::FieldReader<u8, HYST_A>;
 #[doc = "BoD Hysteresis control.\n\nValue on reset: 2"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum HYST_A {
     #[doc = "0: 25 mV."]

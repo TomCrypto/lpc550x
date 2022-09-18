@@ -37,7 +37,7 @@ impl From<crate::W<SLVADR1_SPEC>> for W {
 #[doc = "Field `SADISABLE` reader - Slave Address n Disable."]
 pub type SADISABLE_R = crate::BitReader<SADISABLE_A>;
 #[doc = "Slave Address n Disable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SADISABLE_A {
     #[doc = "0: Enabled. Slave Address n is enabled."]
     ENABLED = 0,

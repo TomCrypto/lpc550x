@@ -37,7 +37,7 @@ impl From<crate::W<LUT_INP_MUX_SPEC>> for W {
 #[doc = "Field `LUTn_INPx` reader - Selects the input source to be connected to LUT0 input0. For each LUT, the slot associated with the output from LUTn itself is tied low."]
 pub type LUTN_INPX_R = crate::FieldReader<u8, LUTN_INPX_A>;
 #[doc = "Selects the input source to be connected to LUT0 input0. For each LUT, the slot associated with the output from LUTn itself is tied low.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum LUTN_INPX_A {
     #[doc = "0: The PLU primary inputs 0."]

@@ -37,7 +37,7 @@ impl From<crate::W<CTRL_SPEC>> for W {
 #[doc = "Field `SWRESET` reader - Software reset control."]
 pub type SWRESET_R = crate::BitReader<SWRESET_A>;
 #[doc = "Software reset control.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SWRESET_A {
     #[doc = "0: Not in reset. The RTC is not held in reset. This bit must be cleared prior to configuring or initiating any operation of the RTC."]
     NOT_IN_RESET = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> SWRESET_W<'a, O> {
 #[doc = "Field `ALARM1HZ` reader - RTC 1 Hz timer alarm flag status."]
 pub type ALARM1HZ_R = crate::BitReader<ALARM1HZ_A>;
 #[doc = "RTC 1 Hz timer alarm flag status.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ALARM1HZ_A {
     #[doc = "0: No match. No match has occurred on the 1 Hz RTC timer. Writing a 0 has no effect."]
     NO_MATCH = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> ALARM1HZ_W<'a, O> {
 #[doc = "Field `WAKE1KHZ` reader - RTC 1 kHz timer wake-up flag status."]
 pub type WAKE1KHZ_R = crate::BitReader<WAKE1KHZ_A>;
 #[doc = "RTC 1 kHz timer wake-up flag status.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKE1KHZ_A {
     #[doc = "0: Run. The RTC 1 kHz timer is running. Writing a 0 has no effect."]
     RUN = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> WAKE1KHZ_W<'a, O> {
 #[doc = "Field `ALARMDPD_EN` reader - RTC 1 Hz timer alarm enable for Deep power-down."]
 pub type ALARMDPD_EN_R = crate::BitReader<ALARMDPD_EN_A>;
 #[doc = "RTC 1 Hz timer alarm enable for Deep power-down.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ALARMDPD_EN_A {
     #[doc = "0: Disable. A match on the 1 Hz RTC timer will not bring the part out of Deep power-down mode."]
     DISABLE = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> ALARMDPD_EN_W<'a, O> {
 #[doc = "Field `WAKEDPD_EN` reader - RTC 1 kHz timer wake-up enable for Deep power-down."]
 pub type WAKEDPD_EN_R = crate::BitReader<WAKEDPD_EN_A>;
 #[doc = "RTC 1 kHz timer wake-up enable for Deep power-down.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WAKEDPD_EN_A {
     #[doc = "0: Disable. A match on the 1 kHz RTC timer will not bring the part out of Deep power-down mode."]
     DISABLE = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> WAKEDPD_EN_W<'a, O> {
 #[doc = "Field `RTC1KHZ_EN` reader - RTC 1 kHz clock enable. This bit can be set to 0 to conserve power if the 1 kHz timer is not used. This bit has no effect when the RTC is disabled (bit 7 of this register is 0)."]
 pub type RTC1KHZ_EN_R = crate::BitReader<RTC1KHZ_EN_A>;
 #[doc = "RTC 1 kHz clock enable. This bit can be set to 0 to conserve power if the 1 kHz timer is not used. This bit has no effect when the RTC is disabled (bit 7 of this register is 0).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC1KHZ_EN_A {
     #[doc = "0: Disable. A match on the 1 kHz RTC timer will not bring the part out of Deep power-down mode."]
     DISABLE = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> RTC1KHZ_EN_W<'a, O> {
 #[doc = "Field `RTC_EN` reader - RTC enable."]
 pub type RTC_EN_R = crate::BitReader<RTC_EN_A>;
 #[doc = "RTC enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC_EN_A {
     #[doc = "0: Disable. The RTC 1 Hz and 1 kHz clocks are shut down and the RTC operation is disabled. This bit should be 0 when writing to load a value in the RTC counter register."]
     DISABLE = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> RTC_EN_W<'a, O> {
 #[doc = "Field `RTC_OSC_PD` reader - RTC oscillator power-down control."]
 pub type RTC_OSC_PD_R = crate::BitReader<RTC_OSC_PD_A>;
 #[doc = "RTC oscillator power-down control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC_OSC_PD_A {
     #[doc = "0: See RTC_OSC_BYPASS."]
     POWER_UP = 0,
@@ -437,7 +437,7 @@ impl<'a, const O: u8> RTC_OSC_PD_W<'a, O> {
 #[doc = "Field `RTC_OSC_BYPASS` reader - RTC oscillator bypass control."]
 pub type RTC_OSC_BYPASS_R = crate::BitReader<RTC_OSC_BYPASS_A>;
 #[doc = "RTC oscillator bypass control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC_OSC_BYPASS_A {
     #[doc = "0: The RTC Oscillator operates normally as a crystal oscillator with the crystal connected between the RTC_XTALIN and RTC_XTALOUT pins."]
     USED = 0,
@@ -488,7 +488,7 @@ impl<'a, const O: u8> RTC_OSC_BYPASS_W<'a, O> {
 #[doc = "Field `RTC_SUBSEC_ENA` reader - RTC Sub-second counter control."]
 pub type RTC_SUBSEC_ENA_R = crate::BitReader<RTC_SUBSEC_ENA_A>;
 #[doc = "RTC Sub-second counter control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RTC_SUBSEC_ENA_A {
     #[doc = "0: The sub-second counter (if implemented) is disabled. This bit is cleared by a system-level POR or BOD reset as well as a by the RTC_ENA bit (bit 7 in this register). On modules not equipped with a sub-second counter, this bit will always read-back as a '0'."]
     POWER_UP = 0,

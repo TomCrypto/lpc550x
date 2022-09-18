@@ -37,7 +37,7 @@ impl From<crate::W<CTRL_SPEC>> for W {
 #[doc = "Field `ADCEN` reader - ADC Enable."]
 pub type ADCEN_R = crate::BitReader<ADCEN_A>;
 #[doc = "ADC Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ADCEN_A {
     #[doc = "0: ADC is disabled."]
     ADCEN_0 = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ADCEN_W<'a, O> {
 #[doc = "Field `RST` reader - Software Reset."]
 pub type RST_R = crate::BitReader<RST_A>;
 #[doc = "Software Reset.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RST_A {
     #[doc = "0: ADC logic is not reset."]
     RST_0 = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> RST_W<'a, O> {
 #[doc = "Field `DOZEN` reader - Doze Enable."]
 pub type DOZEN_R = crate::BitReader<DOZEN_A>;
 #[doc = "Doze Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DOZEN_A {
     #[doc = "0: ADC is enabled in Doze mode."]
     DOZEN_0 = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> DOZEN_W<'a, O> {
 #[doc = "Field `CAL_REQ` reader - Auto-Calibration Request."]
 pub type CAL_REQ_R = crate::BitReader<CAL_REQ_A>;
 #[doc = "Auto-Calibration Request.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CAL_REQ_A {
     #[doc = "0: No request for auto-calibration has been made."]
     CAL_REQ_0 = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> CAL_REQ_W<'a, O> {
 #[doc = "Field `CALOFS` reader - Configure for offset calibration function."]
 pub type CALOFS_R = crate::BitReader<CALOFS_A>;
 #[doc = "Configure for offset calibration function.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CALOFS_A {
     #[doc = "0: Calibration function disabled."]
     CALOFS_0 = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> CALOFS_W<'a, O> {
 #[doc = "Field `RSTFIFO0` reader - Reset FIFO 0."]
 pub type RSTFIFO0_R = crate::BitReader<RSTFIFO0_A>;
 #[doc = "Reset FIFO 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RSTFIFO0_A {
     #[doc = "0: No effect."]
     RSTFIFO0_0 = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> RSTFIFO0_W<'a, O> {
 #[doc = "Field `RSTFIFO1` reader - Reset FIFO 1."]
 pub type RSTFIFO1_R = crate::BitReader<RSTFIFO1_A>;
 #[doc = "Reset FIFO 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RSTFIFO1_A {
     #[doc = "0: No effect."]
     RSTFIFO1_0 = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> RSTFIFO1_W<'a, O> {
 #[doc = "Field `CAL_AVGS` reader - Auto-Calibration Averages."]
 pub type CAL_AVGS_R = crate::FieldReader<u8, CAL_AVGS_A>;
 #[doc = "Auto-Calibration Averages.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CAL_AVGS_A {
     #[doc = "0: Single conversion."]

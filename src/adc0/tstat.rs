@@ -37,7 +37,7 @@ impl From<crate::W<TSTAT_SPEC>> for W {
 #[doc = "Field `TEXC_NUM` reader - Trigger Exception Number."]
 pub type TEXC_NUM_R = crate::FieldReader<u16, TEXC_NUM_A>;
 #[doc = "Trigger Exception Number.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum TEXC_NUM_A {
     #[doc = "0: No triggers have been interrupted by a high priority exception. Or CFG\\[TRES\\]
@@ -209,7 +209,7 @@ impl<'a, const O: u8> TEXC_NUM_W<'a, O> {
 #[doc = "Field `TCOMP_FLAG` reader - Trigger Completion Flag."]
 pub type TCOMP_FLAG_R = crate::FieldReader<u16, TCOMP_FLAG_A>;
 #[doc = "Trigger Completion Flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum TCOMP_FLAG_A {
     #[doc = "0: No triggers have been completed. Trigger completion interrupts are disabled."]

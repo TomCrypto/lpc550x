@@ -37,7 +37,7 @@ impl From<crate::W<CTRL_SPEC>> for W {
 #[doc = "Field `INT` reader - Group interrupt status. This bit is cleared by writing a one to it. Writing zero has no effect."]
 pub type INT_R = crate::BitReader<INT_A>;
 #[doc = "Group interrupt status. This bit is cleared by writing a one to it. Writing zero has no effect.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INT_A {
     #[doc = "0: No request. No interrupt request is pending."]
     NO_REQUEST = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> INT_W<'a, O> {
 #[doc = "Field `COMB` reader - Combine enabled inputs for group interrupt."]
 pub type COMB_R = crate::BitReader<COMB_A>;
 #[doc = "Combine enabled inputs for group interrupt.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum COMB_A {
     #[doc = "0: Or. OR functionality: A grouped interrupt is generated when any one of the enabled inputs is active (based on its programmed polarity)."]
     OR = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> COMB_W<'a, O> {
 #[doc = "Field `TRIG` reader - Group interrupt trigger."]
 pub type TRIG_R = crate::BitReader<TRIG_A>;
 #[doc = "Group interrupt trigger.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRIG_A {
     #[doc = "0: Edge-triggered."]
     EDGE_TRIGGERED = 0,

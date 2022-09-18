@@ -53,7 +53,7 @@ pub type OSC32KPD_W<'a, const O: u8> = crate::BitWriter<'a, u32, OSTIMER_SPEC, b
 #[doc = "Field `OSTIMERCLKSEL` reader - OS event timer clock select."]
 pub type OSTIMERCLKSEL_R = crate::FieldReader<u8, OSTIMERCLKSEL_A>;
 #[doc = "OS event timer clock select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum OSTIMERCLKSEL_A {
     #[doc = "0: Oscillator 32 kHz clock."]

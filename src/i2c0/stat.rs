@@ -37,7 +37,7 @@ impl From<crate::W<STAT_SPEC>> for W {
 #[doc = "Field `MSTPENDING` reader - Master Pending. Indicates that the Master is waiting to continue communication on the I2C-bus (pending) or is idle. When the master is pending, the MSTSTATE bits indicate what type of software service if any the master expects. This flag will cause an interrupt when set if, enabled via the INTENSET register. The MSTPENDING flag is not set when the DMA is handling an event (if the MSTDMA bit in the MSTCTL register is set). If the master is in the idle state, and no communication is needed, mask this interrupt."]
 pub type MSTPENDING_R = crate::BitReader<MSTPENDING_A>;
 #[doc = "Master Pending. Indicates that the Master is waiting to continue communication on the I2C-bus (pending) or is idle. When the master is pending, the MSTSTATE bits indicate what type of software service if any the master expects. This flag will cause an interrupt when set if, enabled via the INTENSET register. The MSTPENDING flag is not set when the DMA is handling an event (if the MSTDMA bit in the MSTCTL register is set). If the master is in the idle state, and no communication is needed, mask this interrupt.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTPENDING_A {
     #[doc = "0: In progress. Communication is in progress and the Master function is busy and cannot currently accept a command."]
     IN_PROGRESS = 0,
@@ -73,7 +73,7 @@ impl MSTPENDING_R {
 #[doc = "Field `MSTSTATE` reader - Master State code. The master state code reflects the master state when the MSTPENDING bit is set, that is the master is pending or in the idle state. Each value of this field indicates a specific required service for the Master function. All other values are reserved. See Table 400 for details of state values and appropriate responses."]
 pub type MSTSTATE_R = crate::FieldReader<u8, MSTSTATE_A>;
 #[doc = "Master State code. The master state code reflects the master state when the MSTPENDING bit is set, that is the master is pending or in the idle state. Each value of this field indicates a specific required service for the Master function. All other values are reserved. See Table 400 for details of state values and appropriate responses.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum MSTSTATE_A {
     #[doc = "0: Idle. The Master function is available to be used for a new transaction."]
@@ -135,7 +135,7 @@ impl MSTSTATE_R {
 #[doc = "Field `MSTARBLOSS` reader - Master Arbitration Loss flag. This flag can be cleared by software writing a 1 to this bit. It is also cleared automatically a 1 is written to MSTCONTINUE."]
 pub type MSTARBLOSS_R = crate::BitReader<MSTARBLOSS_A>;
 #[doc = "Master Arbitration Loss flag. This flag can be cleared by software writing a 1 to this bit. It is also cleared automatically a 1 is written to MSTCONTINUE.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTARBLOSS_A {
     #[doc = "0: No Arbitration Loss has occurred."]
     NO_LOSS = 0,
@@ -185,7 +185,7 @@ impl<'a, const O: u8> MSTARBLOSS_W<'a, O> {
 #[doc = "Field `MSTSTSTPERR` reader - Master Start/Stop Error flag. This flag can be cleared by software writing a 1 to this bit. It is also cleared automatically a 1 is written to MSTCONTINUE."]
 pub type MSTSTSTPERR_R = crate::BitReader<MSTSTSTPERR_A>;
 #[doc = "Master Start/Stop Error flag. This flag can be cleared by software writing a 1 to this bit. It is also cleared automatically a 1 is written to MSTCONTINUE.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MSTSTSTPERR_A {
     #[doc = "0: No Start/Stop Error has occurred."]
     NO_ERROR = 0,
@@ -235,7 +235,7 @@ impl<'a, const O: u8> MSTSTSTPERR_W<'a, O> {
 #[doc = "Field `SLVPENDING` reader - Slave Pending. Indicates that the Slave function is waiting to continue communication on the I2C-bus and needs software service. This flag will cause an interrupt when set if enabled via INTENSET. The SLVPENDING flag is not set when the DMA is handling an event (if the SLVDMA bit in the SLVCTL register is set). The SLVPENDING flag is read-only and is automatically cleared when a 1 is written to the SLVCONTINUE bit in the SLVCTL register. The point in time when SlvPending is set depends on whether the I2C interface is in HSCAPABLE mode. See Section 25.7.2.2.2. When the I2C interface is configured to be HSCAPABLE, HS master codes are detected automatically. Due to the requirements of the HS I2C specification, slave addresses must also be detected automatically, since the address must be acknowledged before the clock can be stretched."]
 pub type SLVPENDING_R = crate::BitReader<SLVPENDING_A>;
 #[doc = "Slave Pending. Indicates that the Slave function is waiting to continue communication on the I2C-bus and needs software service. This flag will cause an interrupt when set if enabled via INTENSET. The SLVPENDING flag is not set when the DMA is handling an event (if the SLVDMA bit in the SLVCTL register is set). The SLVPENDING flag is read-only and is automatically cleared when a 1 is written to the SLVCONTINUE bit in the SLVCTL register. The point in time when SlvPending is set depends on whether the I2C interface is in HSCAPABLE mode. See Section 25.7.2.2.2. When the I2C interface is configured to be HSCAPABLE, HS master codes are detected automatically. Due to the requirements of the HS I2C specification, slave addresses must also be detected automatically, since the address must be acknowledged before the clock can be stretched.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVPENDING_A {
     #[doc = "0: In progress. The Slave function does not currently need service."]
     IN_PROGRESS = 0,
@@ -271,7 +271,7 @@ impl SLVPENDING_R {
 #[doc = "Field `SLVSTATE` reader - Slave State code. Each value of this field indicates a specific required service for the Slave function. All other values are reserved. See Table 401 for state values and actions. note that the occurrence of some states and how they are handled are affected by DMA mode and Automatic Operation modes."]
 pub type SLVSTATE_R = crate::FieldReader<u8, SLVSTATE_A>;
 #[doc = "Slave State code. Each value of this field indicates a specific required service for the Slave function. All other values are reserved. See Table 401 for state values and actions. note that the occurrence of some states and how they are handled are affected by DMA mode and Automatic Operation modes.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SLVSTATE_A {
     #[doc = "0: Slave address. Address plus R/W received. At least one of the four slave addresses has been matched by hardware."]
@@ -317,7 +317,7 @@ impl SLVSTATE_R {
 #[doc = "Field `SLVNOTSTR` reader - Slave Not Stretching. Indicates when the slave function is stretching the I2C clock. This is needed in order to gracefully invoke Deep Sleep or Power-down modes during slave operation. This read-only flag reflects the slave function status in real time."]
 pub type SLVNOTSTR_R = crate::BitReader<SLVNOTSTR_A>;
 #[doc = "Slave Not Stretching. Indicates when the slave function is stretching the I2C clock. This is needed in order to gracefully invoke Deep Sleep or Power-down modes during slave operation. This read-only flag reflects the slave function status in real time.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVNOTSTR_A {
     #[doc = "0: Stretching. The slave function is currently stretching the I2C bus clock. Deep-Sleep or Power-down mode cannot be entered at this time."]
     STRETCHING = 0,
@@ -353,7 +353,7 @@ impl SLVNOTSTR_R {
 #[doc = "Field `SLVIDX` reader - Slave address match Index. This field is valid when the I2C slave function has been selected by receiving an address that matches one of the slave addresses defined by any enabled slave address registers, and provides an identification of the address that was matched. It is possible that more than one address could be matched, but only one match can be reported here."]
 pub type SLVIDX_R = crate::FieldReader<u8, SLVIDX_A>;
 #[doc = "Slave address match Index. This field is valid when the I2C slave function has been selected by receiving an address that matches one of the slave addresses defined by any enabled slave address registers, and provides an identification of the address that was matched. It is possible that more than one address could be matched, but only one match can be reported here.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SLVIDX_A {
     #[doc = "0: Address 0. Slave address 0 was matched."]
@@ -407,7 +407,7 @@ impl SLVIDX_R {
 #[doc = "Field `SLVSEL` reader - Slave selected flag. SLVSEL is set after an address match when software tells the Slave function to acknowledge the address, or when the address has been automatically acknowledged. It is cleared when another address cycle presents an address that does not match an enabled address on the Slave function, when slave software decides to NACK a matched address, when there is a Stop detected on the bus, when the master NACKs slave data, and in some combinations of Automatic Operation. SLVSEL is not cleared if software NACKs data."]
 pub type SLVSEL_R = crate::BitReader<SLVSEL_A>;
 #[doc = "Slave selected flag. SLVSEL is set after an address match when software tells the Slave function to acknowledge the address, or when the address has been automatically acknowledged. It is cleared when another address cycle presents an address that does not match an enabled address on the Slave function, when slave software decides to NACK a matched address, when there is a Stop detected on the bus, when the master NACKs slave data, and in some combinations of Automatic Operation. SLVSEL is not cleared if software NACKs data.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVSEL_A {
     #[doc = "0: Not selected. The Slave function is not currently selected."]
     NOT_SELECTED = 0,
@@ -443,7 +443,7 @@ impl SLVSEL_R {
 #[doc = "Field `SLVDESEL` reader - Slave Deselected flag. This flag will cause an interrupt when set if enabled via INTENSET. This flag can be cleared by writing a 1 to this bit."]
 pub type SLVDESEL_R = crate::BitReader<SLVDESEL_A>;
 #[doc = "Slave Deselected flag. This flag will cause an interrupt when set if enabled via INTENSET. This flag can be cleared by writing a 1 to this bit.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SLVDESEL_A {
     #[doc = "0: Not deselected. The Slave function has not become deselected. This does not mean that it is currently selected. That information can be found in the SLVSEL flag."]
     NOT_DESELECTED = 0,
@@ -493,7 +493,7 @@ impl<'a, const O: u8> SLVDESEL_W<'a, O> {
 #[doc = "Field `MONRDY` reader - Monitor Ready. This flag is cleared when the MONRXDAT register is read."]
 pub type MONRDY_R = crate::BitReader<MONRDY_A>;
 #[doc = "Monitor Ready. This flag is cleared when the MONRXDAT register is read.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONRDY_A {
     #[doc = "0: No data. The Monitor function does not currently have data available."]
     NO_DATA = 0,
@@ -529,7 +529,7 @@ impl MONRDY_R {
 #[doc = "Field `MONOV` reader - Monitor Overflow flag."]
 pub type MONOV_R = crate::BitReader<MONOV_A>;
 #[doc = "Monitor Overflow flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONOV_A {
     #[doc = "0: No overrun. Monitor data has not overrun."]
     NO_OVERRUN = 0,
@@ -579,7 +579,7 @@ impl<'a, const O: u8> MONOV_W<'a, O> {
 #[doc = "Field `MONACTIVE` reader - Monitor Active flag. Indicates when the Monitor function considers the I 2C bus to be active. Active is defined here as when some Master is on the bus: a bus Start has occurred more recently than a bus Stop."]
 pub type MONACTIVE_R = crate::BitReader<MONACTIVE_A>;
 #[doc = "Monitor Active flag. Indicates when the Monitor function considers the I 2C bus to be active. Active is defined here as when some Master is on the bus: a bus Start has occurred more recently than a bus Stop.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONACTIVE_A {
     #[doc = "0: Inactive. The Monitor function considers the I2C bus to be inactive."]
     INACTIVE = 0,
@@ -615,7 +615,7 @@ impl MONACTIVE_R {
 #[doc = "Field `MONIDLE` reader - Monitor Idle flag. This flag is set when the Monitor function sees the I2C bus change from active to inactive. This can be used by software to decide when to process data accumulated by the Monitor function. This flag will cause an interrupt when set if enabled via the INTENSET register. The flag can be cleared by writing a 1 to this bit."]
 pub type MONIDLE_R = crate::BitReader<MONIDLE_A>;
 #[doc = "Monitor Idle flag. This flag is set when the Monitor function sees the I2C bus change from active to inactive. This can be used by software to decide when to process data accumulated by the Monitor function. This flag will cause an interrupt when set if enabled via the INTENSET register. The flag can be cleared by writing a 1 to this bit.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MONIDLE_A {
     #[doc = "0: Not idle. The I2C bus is not idle, or this flag has been cleared by software."]
     NOT_IDLE = 0,
@@ -665,7 +665,7 @@ impl<'a, const O: u8> MONIDLE_W<'a, O> {
 #[doc = "Field `EVENTTIMEOUT` reader - Event Time-out Interrupt flag. Indicates when the time between events has been longer than the time specified by the TIMEOUT register. Events include Start, Stop, and clock edges. The flag is cleared by writing a 1 to this bit. No time-out is created when the I2C-bus is idle."]
 pub type EVENTTIMEOUT_R = crate::BitReader<EVENTTIMEOUT_A>;
 #[doc = "Event Time-out Interrupt flag. Indicates when the time between events has been longer than the time specified by the TIMEOUT register. Events include Start, Stop, and clock edges. The flag is cleared by writing a 1 to this bit. No time-out is created when the I2C-bus is idle.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EVENTTIMEOUT_A {
     #[doc = "0: No time-out. I2C bus events have not caused a time-out."]
     NO_TIMEOUT = 0,
@@ -715,7 +715,7 @@ impl<'a, const O: u8> EVENTTIMEOUT_W<'a, O> {
 #[doc = "Field `SCLTIMEOUT` reader - SCL Time-out Interrupt flag. Indicates when SCL has remained low longer than the time specific by the TIMEOUT register. The flag is cleared by writing a 1 to this bit."]
 pub type SCLTIMEOUT_R = crate::BitReader<SCLTIMEOUT_A>;
 #[doc = "SCL Time-out Interrupt flag. Indicates when SCL has remained low longer than the time specific by the TIMEOUT register. The flag is cleared by writing a 1 to this bit.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SCLTIMEOUT_A {
     #[doc = "0: No time-out. SCL low time has not caused a time-out."]
     NO_TIMEOUT = 0,

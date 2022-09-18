@@ -37,7 +37,7 @@ impl From<crate::W<CTRL_SPEC>> for W {
 #[doc = "Field `ENABLE` reader - Enable. Enables the SAU. This bit is RAZ/WI when the Security Extension is implemented without an SAU region."]
 pub type ENABLE_R = crate::BitReader<ENABLE_A>;
 #[doc = "Enable. Enables the SAU. This bit is RAZ/WI when the Security Extension is implemented without an SAU region.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLE_A {
     #[doc = "0: The SAU is disabled."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> ENABLE_W<'a, O> {
 #[doc = "Field `ALLNS` reader - All Non-secure."]
 pub type ALLNS_R = crate::BitReader<ALLNS_A>;
 #[doc = "All Non-secure.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ALLNS_A {
     #[doc = "0: Memory is marked as Secure and is not Non-secure callable."]
     SECURED_MEMORY = 0,

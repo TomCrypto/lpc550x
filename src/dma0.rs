@@ -174,7 +174,7 @@ pub type ABORT0 = crate::Reg<abort0::ABORT0_SPEC>;
 #[doc = "Channel Abort control for all DMA channels."]
 pub mod abort0;
 #[doc = "no description available."]
-pub use channel::CHANNEL;
+pub use self::channel::CHANNEL;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod channel;

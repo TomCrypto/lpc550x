@@ -37,7 +37,7 @@ impl From<crate::W<IE_SPEC>> for W {
 #[doc = "Field `FWMIE0` reader - FIFO 0 Watermark Interrupt Enable."]
 pub type FWMIE0_R = crate::BitReader<FWMIE0_A>;
 #[doc = "FIFO 0 Watermark Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FWMIE0_A {
     #[doc = "0: FIFO 0 watermark interrupts are not enabled."]
     FWMIE0_0 = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> FWMIE0_W<'a, O> {
 #[doc = "Field `FOFIE0` reader - Result FIFO 0 Overflow Interrupt Enable."]
 pub type FOFIE0_R = crate::BitReader<FOFIE0_A>;
 #[doc = "Result FIFO 0 Overflow Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FOFIE0_A {
     #[doc = "0: FIFO 0 overflow interrupts are not enabled."]
     FOFIE0_0 = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> FOFIE0_W<'a, O> {
 #[doc = "Field `FWMIE1` reader - FIFO1 Watermark Interrupt Enable."]
 pub type FWMIE1_R = crate::BitReader<FWMIE1_A>;
 #[doc = "FIFO1 Watermark Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FWMIE1_A {
     #[doc = "0: FIFO1 watermark interrupts are not enabled."]
     FWMIE1_0 = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> FWMIE1_W<'a, O> {
 #[doc = "Field `FOFIE1` reader - Result FIFO1 Overflow Interrupt Enable."]
 pub type FOFIE1_R = crate::BitReader<FOFIE1_A>;
 #[doc = "Result FIFO1 Overflow Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FOFIE1_A {
     #[doc = "0: No result FIFO1 overflow has occurred since the last time the flag was cleared."]
     FOFIE1_0 = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> FOFIE1_W<'a, O> {
 #[doc = "Field `TEXC_IE` reader - Trigger Exception Interrupt Enable."]
 pub type TEXC_IE_R = crate::BitReader<TEXC_IE_A>;
 #[doc = "Trigger Exception Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TEXC_IE_A {
     #[doc = "0: Trigger exception interrupts are disabled."]
     TEXC_IE_0 = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> TEXC_IE_W<'a, O> {
 #[doc = "Field `TCOMP_IE` reader - Trigger Completion Interrupt Enable."]
 pub type TCOMP_IE_R = crate::FieldReader<u16, TCOMP_IE_A>;
 #[doc = "Trigger Completion Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum TCOMP_IE_A {
     #[doc = "0: Trigger completion interrupts are disabled."]

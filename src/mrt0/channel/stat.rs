@@ -37,7 +37,7 @@ impl From<crate::W<STAT_SPEC>> for W {
 #[doc = "Field `INTFLAG` reader - Monitors the interrupt flag."]
 pub type INTFLAG_R = crate::BitReader<INTFLAG_A>;
 #[doc = "Monitors the interrupt flag.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INTFLAG_A {
     #[doc = "0: No pending interrupt. Writing a zero is equivalent to no operation."]
     NO_PENDING_INTERRUPT = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> INTFLAG_W<'a, O> {
 #[doc = "Field `RUN` reader - Indicates the state of TIMERn. This bit is read-only."]
 pub type RUN_R = crate::BitReader<RUN_A>;
 #[doc = "Indicates the state of TIMERn. This bit is read-only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RUN_A {
     #[doc = "0: Idle state. TIMERn is stopped."]
     IDLE_STATE = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> RUN_W<'a, O> {
 #[doc = "Field `INUSE` reader - Channel In Use flag. Operating details depend on the MULTITASK bit in the MODCFG register, and affects the use of IDLE_CH. See Idle channel register for details of the two operating modes."]
 pub type INUSE_R = crate::BitReader<INUSE_A>;
 #[doc = "Channel In Use flag. Operating details depend on the MULTITASK bit in the MODCFG register, and affects the use of IDLE_CH. See Idle channel register for details of the two operating modes.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INUSE_A {
     #[doc = "0: This channel is not in use."]
     NO = 0,

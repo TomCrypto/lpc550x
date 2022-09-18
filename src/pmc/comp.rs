@@ -37,7 +37,7 @@ impl From<crate::W<COMP_SPEC>> for W {
 #[doc = "Field `HYST` reader - Hysteris when hyst = '1'."]
 pub type HYST_R = crate::BitReader<HYST_A>;
 #[doc = "Hysteris when hyst = '1'.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HYST_A {
     #[doc = "0: Hysteresis is disable."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> HYST_W<'a, O> {
 #[doc = "Field `VREFINPUT` reader - Dedicated control bit to select between internal VREF and VDDA (for the resistive ladder)."]
 pub type VREFINPUT_R = crate::BitReader<VREFINPUT_A>;
 #[doc = "Dedicated control bit to select between internal VREF and VDDA (for the resistive ladder).\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VREFINPUT_A {
     #[doc = "0: Select internal VREF."]
     INTERNALREF = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> VREFINPUT_W<'a, O> {
 #[doc = "Field `LOWPOWER` reader - Low power mode."]
 pub type LOWPOWER_R = crate::BitReader<LOWPOWER_A>;
 #[doc = "Low power mode.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LOWPOWER_A {
     #[doc = "0: High speed mode."]
     HIGHSPEED = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> LOWPOWER_W<'a, O> {
 #[doc = "Field `PMUX` reader - Control word for P multiplexer:."]
 pub type PMUX_R = crate::FieldReader<u8, PMUX_A>;
 #[doc = "Control word for P multiplexer:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PMUX_A {
     #[doc = "0: VREF (See fiedl VREFINPUT)."]
@@ -291,7 +291,7 @@ impl<'a, const O: u8> PMUX_W<'a, O> {
 #[doc = "Field `NMUX` reader - Control word for N multiplexer:."]
 pub type NMUX_R = crate::FieldReader<u8, NMUX_A>;
 #[doc = "Control word for N multiplexer:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum NMUX_A {
     #[doc = "0: VREF (See field VREFINPUT)."]
@@ -399,7 +399,7 @@ pub type VREF_W<'a, const O: u8> = crate::FieldWriter<'a, u32, COMP_SPEC, u8, u8
 #[doc = "Field `FILTERCGF_SAMPLEMODE` reader - Control the filtering of the Analog Comparator output."]
 pub type FILTERCGF_SAMPLEMODE_R = crate::FieldReader<u8, FILTERCGF_SAMPLEMODE_A>;
 #[doc = "Control the filtering of the Analog Comparator output.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FILTERCGF_SAMPLEMODE_A {
     #[doc = "0: Bypass mode."]
@@ -478,7 +478,7 @@ impl<'a, const O: u8> FILTERCGF_SAMPLEMODE_W<'a, O> {
 #[doc = "Field `FILTERCGF_CLKDIV` reader - Filter Clock divider."]
 pub type FILTERCGF_CLKDIV_R = crate::FieldReader<u8, FILTERCGF_CLKDIV_A>;
 #[doc = "Filter Clock divider.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum FILTERCGF_CLKDIV_A {
     #[doc = "0: Filter clock period duration equals 1 Analog Comparator clock period."]

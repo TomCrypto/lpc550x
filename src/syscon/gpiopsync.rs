@@ -37,7 +37,7 @@ impl From<crate::W<GPIOPSYNC_SPEC>> for W {
 #[doc = "Field `PSYNC` reader - Enable bypass of the first stage of synchonization inside GPIO_INT module."]
 pub type PSYNC_R = crate::BitReader<PSYNC_A>;
 #[doc = "Enable bypass of the first stage of synchonization inside GPIO_INT module.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PSYNC_A {
     #[doc = "0: use the first stage of synchonization inside GPIO_INT module."]
     USED = 0,

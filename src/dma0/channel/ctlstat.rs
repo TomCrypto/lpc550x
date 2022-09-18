@@ -16,7 +16,7 @@ impl From<crate::R<CTLSTAT_SPEC>> for R {
 #[doc = "Field `VALIDPENDING` reader - Valid pending flag for this channel. This bit is set when a 1 is written to the corresponding bit in the related SETVALID register when CFGVALID = 1 for the same channel."]
 pub type VALIDPENDING_R = crate::BitReader<VALIDPENDING_A>;
 #[doc = "Valid pending flag for this channel. This bit is set when a 1 is written to the corresponding bit in the related SETVALID register when CFGVALID = 1 for the same channel.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VALIDPENDING_A {
     #[doc = "0: No effect. No effect on DMA operation."]
     NO_EFFECT = 0,
@@ -52,7 +52,7 @@ impl VALIDPENDING_R {
 #[doc = "Field `TRIG` reader - Trigger flag. Indicates that the trigger for this channel is currently set. This bit is cleared at the end of an entire transfer or upon reload when CLRTRIG = 1."]
 pub type TRIG_R = crate::BitReader<TRIG_A>;
 #[doc = "Trigger flag. Indicates that the trigger for this channel is currently set. This bit is cleared at the end of an entire transfer or upon reload when CLRTRIG = 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRIG_A {
     #[doc = "0: Not triggered. The trigger for this DMA channel is not set. DMA operations will not be carried out."]
     NOT_TRIGGERED = 0,

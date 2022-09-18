@@ -37,7 +37,7 @@ impl From<crate::W<FLASHREMAP_LOCK_SPEC>> for W {
 #[doc = "Field `LOCK` reader - Control write access to FLASHREMAP_SIZE and FLASHREMAP_OFFSET registers. Any value other than 0xC33CA55A and 0x3CC35AA5 does not modify the state."]
 pub type LOCK_R = crate::FieldReader<u32, LOCK_A>;
 #[doc = "Control write access to FLASHREMAP_SIZE and FLASHREMAP_OFFSET registers. Any value other than 0xC33CA55A and 0x3CC35AA5 does not modify the state.\n\nValue on reset: 3275531610"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u32)]
 pub enum LOCK_A {
     #[doc = "1019435685: Write access to 4 registers FLASHREMAP_SIZE* and FLASHREMAP_OFFSET* is unlocked."]

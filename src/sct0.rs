@@ -736,12 +736,12 @@ pub type MATCHREL15 = crate::Reg<matchrel15::MATCHREL15_SPEC>;
 #[doc = "SCT match reload value register."]
 pub mod matchrel15;
 #[doc = "no description available."]
-pub use ev::EV;
+pub use self::ev::EV;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod ev;
 #[doc = "no description available."]
-pub use out::OUT;
+pub use self::out::OUT;
 #[doc = r"Cluster"]
 #[doc = "no description available."]
 pub mod out;

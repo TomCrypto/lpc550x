@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_APB_BRIDGE_SLAVE_RULE_SPEC>> for W {
 #[doc = "Field `APBBRIDGE0_RULE` reader - Security access rules for the whole APB Bridge 0."]
 pub type APBBRIDGE0_RULE_R = crate::FieldReader<u8, APBBRIDGE0_RULE_A>;
 #[doc = "Security access rules for the whole APB Bridge 0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum APBBRIDGE0_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -123,7 +123,7 @@ impl<'a, const O: u8> APBBRIDGE0_RULE_W<'a, O> {
 #[doc = "Field `APBBRIDGE1_RULE` reader - Security access rules for the whole APB Bridge 1."]
 pub type APBBRIDGE1_RULE_R = crate::FieldReader<u8, APBBRIDGE1_RULE_A>;
 #[doc = "Security access rules for the whole APB Bridge 1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum APBBRIDGE1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

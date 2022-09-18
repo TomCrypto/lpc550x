@@ -37,7 +37,7 @@ impl From<crate::W<HSLSPICLKSEL_SPEC>> for W {
 #[doc = "Field `SEL` reader - HS LSPI clock source select."]
 pub type SEL_R = crate::FieldReader<u8, SEL_A>;
 #[doc = "HS LSPI clock source select.\n\nValue on reset: 7"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum SEL_A {
     #[doc = "0: Main clock."]

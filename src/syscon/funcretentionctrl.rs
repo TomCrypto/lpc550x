@@ -37,7 +37,7 @@ impl From<crate::W<FUNCRETENTIONCTRL_SPEC>> for W {
 #[doc = "Field `FUNCRETENA` reader - functional retention in power down only."]
 pub type FUNCRETENA_R = crate::BitReader<FUNCRETENA_A>;
 #[doc = "functional retention in power down only.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum FUNCRETENA_A {
     #[doc = "0: disable functional retention."]
     DISABLE = 0,

@@ -58,7 +58,7 @@ pub type OSC_CAP_OUT_W<'a, const O: u8> =
 #[doc = "Field `ACBUF_PASS_ENABLE` reader - Bypass enable of XO AC buffer enable in pll and top level."]
 pub type ACBUF_PASS_ENABLE_R = crate::BitReader<ACBUF_PASS_ENABLE_A>;
 #[doc = "Bypass enable of XO AC buffer enable in pll and top level.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ACBUF_PASS_ENABLE_A {
     #[doc = "0: XO AC buffer bypass is disabled."]
     DISABLE = 0,
@@ -109,7 +109,7 @@ impl<'a, const O: u8> ACBUF_PASS_ENABLE_W<'a, O> {
 #[doc = "Field `ENABLE_SYSTEM_CLK_OUT` reader - Enable High speed Crystal oscillator output to CPU system."]
 pub type ENABLE_SYSTEM_CLK_OUT_R = crate::BitReader<ENABLE_SYSTEM_CLK_OUT_A>;
 #[doc = "Enable High speed Crystal oscillator output to CPU system.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ENABLE_SYSTEM_CLK_OUT_A {
     #[doc = "0: High speed Crystal oscillator output to CPU system is disabled."]
     DISABLE = 0,

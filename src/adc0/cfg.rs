@@ -37,7 +37,7 @@ impl From<crate::W<CFG_SPEC>> for W {
 #[doc = "Field `TPRICTRL` reader - ADC trigger priority control."]
 pub type TPRICTRL_R = crate::FieldReader<u8, TPRICTRL_A>;
 #[doc = "ADC trigger priority control.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum TPRICTRL_A {
     #[doc = "0: If a higher priority trigger is detected during command processing, the current conversion is aborted and the new command specified by the trigger is started."]
@@ -104,7 +104,7 @@ will be ignored and the higher priority trigger will be serviced."]
 #[doc = "Field `PWRSEL` reader - Power Configuration Select."]
 pub type PWRSEL_R = crate::FieldReader<u8, PWRSEL_A>;
 #[doc = "Power Configuration Select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PWRSEL_A {
     #[doc = "0: Lowest power setting."]
@@ -182,7 +182,7 @@ impl<'a, const O: u8> PWRSEL_W<'a, O> {
 #[doc = "Field `REFSEL` reader - Voltage Reference Selection."]
 pub type REFSEL_R = crate::FieldReader<u8, REFSEL_A>;
 #[doc = "Voltage Reference Selection.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum REFSEL_A {
     #[doc = "0: (Default) Option 1 setting."]
@@ -247,7 +247,7 @@ impl<'a, const O: u8> REFSEL_W<'a, O> {
 #[doc = "Field `TRES` reader - Trigger Resume Enable."]
 pub type TRES_R = crate::BitReader<TRES_A>;
 #[doc = "Trigger Resume Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TRES_A {
     #[doc = "0: Trigger sequences interrupted by a high priority trigger exception will not be automatically resumed or restarted."]
     TRES_0 = 0,
@@ -297,7 +297,7 @@ impl<'a, const O: u8> TRES_W<'a, O> {
 #[doc = "Field `TCMDRES` reader - Trigger Command Resume."]
 pub type TCMDRES_R = crate::BitReader<TCMDRES_A>;
 #[doc = "Trigger Command Resume.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TCMDRES_A {
     #[doc = "0: Trigger sequences interrupted by a high priority trigger exception will be automatically restarted."]
     TCMDRES_0 = 0,
@@ -347,7 +347,7 @@ impl<'a, const O: u8> TCMDRES_W<'a, O> {
 #[doc = "Field `HPT_EXDI` reader - High Priority Trigger Exception Disable."]
 pub type HPT_EXDI_R = crate::BitReader<HPT_EXDI_A>;
 #[doc = "High Priority Trigger Exception Disable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HPT_EXDI_A {
     #[doc = "0: High priority trigger exceptions are enabled."]
     HPT_EXDI_0 = 0,
@@ -401,7 +401,7 @@ pub type PUDLY_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CFG_SPEC, u8, u8
 #[doc = "Field `PWREN` reader - ADC Analog Pre-Enable."]
 pub type PWREN_R = crate::BitReader<PWREN_A>;
 #[doc = "ADC Analog Pre-Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PWREN_A {
     #[doc = "0: ADC analog circuits are only enabled while conversions are active. Performance is affected due to analog startup delays."]
     PWREN_0 = 0,

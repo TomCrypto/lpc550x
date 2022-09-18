@@ -37,7 +37,7 @@ impl From<crate::W<SEC_GPIO_MASK1_SPEC>> for W {
 #[doc = "Field `PIO1_PIN0_SEC_MASK` reader - Secure mask for pin P1_0."]
 pub type PIO1_PIN0_SEC_MASK_R = crate::BitReader<PIO1_PIN0_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_0.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN0_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> PIO1_PIN0_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN1_SEC_MASK` reader - Secure mask for pin P1_1."]
 pub type PIO1_PIN1_SEC_MASK_R = crate::BitReader<PIO1_PIN1_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_1.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN1_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> PIO1_PIN1_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN2_SEC_MASK` reader - Secure mask for pin P1_2."]
 pub type PIO1_PIN2_SEC_MASK_R = crate::BitReader<PIO1_PIN2_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_2.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN2_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -190,7 +190,7 @@ impl<'a, const O: u8> PIO1_PIN2_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN3_SEC_MASK` reader - Secure mask for pin P1_3."]
 pub type PIO1_PIN3_SEC_MASK_R = crate::BitReader<PIO1_PIN3_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_3.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN3_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -241,7 +241,7 @@ impl<'a, const O: u8> PIO1_PIN3_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN4_SEC_MASK` reader - Secure mask for pin P1_4."]
 pub type PIO1_PIN4_SEC_MASK_R = crate::BitReader<PIO1_PIN4_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_4.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN4_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -292,7 +292,7 @@ impl<'a, const O: u8> PIO1_PIN4_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN5_SEC_MASK` reader - Secure mask for pin P1_5."]
 pub type PIO1_PIN5_SEC_MASK_R = crate::BitReader<PIO1_PIN5_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_5.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN5_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -343,7 +343,7 @@ impl<'a, const O: u8> PIO1_PIN5_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN6_SEC_MASK` reader - Secure mask for pin P1_6."]
 pub type PIO1_PIN6_SEC_MASK_R = crate::BitReader<PIO1_PIN6_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_6.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN6_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -394,7 +394,7 @@ impl<'a, const O: u8> PIO1_PIN6_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN7_SEC_MASK` reader - Secure mask for pin P1_7."]
 pub type PIO1_PIN7_SEC_MASK_R = crate::BitReader<PIO1_PIN7_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_7.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN7_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -445,7 +445,7 @@ impl<'a, const O: u8> PIO1_PIN7_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN8_SEC_MASK` reader - Secure mask for pin P1_8."]
 pub type PIO1_PIN8_SEC_MASK_R = crate::BitReader<PIO1_PIN8_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_8.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN8_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -496,7 +496,7 @@ impl<'a, const O: u8> PIO1_PIN8_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN9_SEC_MASK` reader - Secure mask for pin P1_9."]
 pub type PIO1_PIN9_SEC_MASK_R = crate::BitReader<PIO1_PIN9_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_9.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN9_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -547,7 +547,7 @@ impl<'a, const O: u8> PIO1_PIN9_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN10_SEC_MASK` reader - Secure mask for pin P1_10."]
 pub type PIO1_PIN10_SEC_MASK_R = crate::BitReader<PIO1_PIN10_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_10.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN10_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -598,7 +598,7 @@ impl<'a, const O: u8> PIO1_PIN10_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN11_SEC_MASK` reader - Secure mask for pin P1_11."]
 pub type PIO1_PIN11_SEC_MASK_R = crate::BitReader<PIO1_PIN11_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_11.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN11_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -649,7 +649,7 @@ impl<'a, const O: u8> PIO1_PIN11_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN12_SEC_MASK` reader - Secure mask for pin P1_12."]
 pub type PIO1_PIN12_SEC_MASK_R = crate::BitReader<PIO1_PIN12_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_12.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN12_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -700,7 +700,7 @@ impl<'a, const O: u8> PIO1_PIN12_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN13_SEC_MASK` reader - Secure mask for pin P1_13."]
 pub type PIO1_PIN13_SEC_MASK_R = crate::BitReader<PIO1_PIN13_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_13.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN13_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -751,7 +751,7 @@ impl<'a, const O: u8> PIO1_PIN13_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN14_SEC_MASK` reader - Secure mask for pin P1_14."]
 pub type PIO1_PIN14_SEC_MASK_R = crate::BitReader<PIO1_PIN14_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_14.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN14_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -802,7 +802,7 @@ impl<'a, const O: u8> PIO1_PIN14_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN15_SEC_MASK` reader - Secure mask for pin P1_15."]
 pub type PIO1_PIN15_SEC_MASK_R = crate::BitReader<PIO1_PIN15_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_15.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN15_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -853,7 +853,7 @@ impl<'a, const O: u8> PIO1_PIN15_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN16_SEC_MASK` reader - Secure mask for pin P1_16."]
 pub type PIO1_PIN16_SEC_MASK_R = crate::BitReader<PIO1_PIN16_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_16.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN16_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -904,7 +904,7 @@ impl<'a, const O: u8> PIO1_PIN16_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN17_SEC_MASK` reader - Secure mask for pin P1_17."]
 pub type PIO1_PIN17_SEC_MASK_R = crate::BitReader<PIO1_PIN17_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_17.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN17_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -955,7 +955,7 @@ impl<'a, const O: u8> PIO1_PIN17_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN18_SEC_MASK` reader - Secure mask for pin P1_18."]
 pub type PIO1_PIN18_SEC_MASK_R = crate::BitReader<PIO1_PIN18_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_18.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN18_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1006,7 +1006,7 @@ impl<'a, const O: u8> PIO1_PIN18_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN19_SEC_MASK` reader - Secure mask for pin P1_19."]
 pub type PIO1_PIN19_SEC_MASK_R = crate::BitReader<PIO1_PIN19_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_19.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN19_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1057,7 +1057,7 @@ impl<'a, const O: u8> PIO1_PIN19_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN20_SEC_MASK` reader - Secure mask for pin P1_20."]
 pub type PIO1_PIN20_SEC_MASK_R = crate::BitReader<PIO1_PIN20_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_20.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN20_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1108,7 +1108,7 @@ impl<'a, const O: u8> PIO1_PIN20_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN21_SEC_MASK` reader - Secure mask for pin P1_21."]
 pub type PIO1_PIN21_SEC_MASK_R = crate::BitReader<PIO1_PIN21_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_21.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN21_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1159,7 +1159,7 @@ impl<'a, const O: u8> PIO1_PIN21_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN22_SEC_MASK` reader - Secure mask for pin P1_22."]
 pub type PIO1_PIN22_SEC_MASK_R = crate::BitReader<PIO1_PIN22_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_22.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN22_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1210,7 +1210,7 @@ impl<'a, const O: u8> PIO1_PIN22_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN23_SEC_MASK` reader - Secure mask for pin P1_23."]
 pub type PIO1_PIN23_SEC_MASK_R = crate::BitReader<PIO1_PIN23_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_23.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN23_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1261,7 +1261,7 @@ impl<'a, const O: u8> PIO1_PIN23_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN24_SEC_MASK` reader - Secure mask for pin P1_24."]
 pub type PIO1_PIN24_SEC_MASK_R = crate::BitReader<PIO1_PIN24_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_24.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN24_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1312,7 +1312,7 @@ impl<'a, const O: u8> PIO1_PIN24_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN25_SEC_MASK` reader - Secure mask for pin P1_25."]
 pub type PIO1_PIN25_SEC_MASK_R = crate::BitReader<PIO1_PIN25_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_25.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN25_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1363,7 +1363,7 @@ impl<'a, const O: u8> PIO1_PIN25_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN26_SEC_MASK` reader - Secure mask for pin P1_26."]
 pub type PIO1_PIN26_SEC_MASK_R = crate::BitReader<PIO1_PIN26_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_26.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN26_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1414,7 +1414,7 @@ impl<'a, const O: u8> PIO1_PIN26_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN27_SEC_MASK` reader - Secure mask for pin P1_27."]
 pub type PIO1_PIN27_SEC_MASK_R = crate::BitReader<PIO1_PIN27_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_27.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN27_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1465,7 +1465,7 @@ impl<'a, const O: u8> PIO1_PIN27_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN28_SEC_MASK` reader - Secure mask for pin P1_28."]
 pub type PIO1_PIN28_SEC_MASK_R = crate::BitReader<PIO1_PIN28_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_28.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN28_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1516,7 +1516,7 @@ impl<'a, const O: u8> PIO1_PIN28_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN29_SEC_MASK` reader - Secure mask for pin P1_29."]
 pub type PIO1_PIN29_SEC_MASK_R = crate::BitReader<PIO1_PIN29_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_29.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN29_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1567,7 +1567,7 @@ impl<'a, const O: u8> PIO1_PIN29_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN30_SEC_MASK` reader - Secure mask for pin P1_30."]
 pub type PIO1_PIN30_SEC_MASK_R = crate::BitReader<PIO1_PIN30_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_30.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN30_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,
@@ -1618,7 +1618,7 @@ impl<'a, const O: u8> PIO1_PIN30_SEC_MASK_W<'a, O> {
 #[doc = "Field `PIO1_PIN31_SEC_MASK` reader - Secure mask for pin P1_31."]
 pub type PIO1_PIN31_SEC_MASK_R = crate::BitReader<PIO1_PIN31_SEC_MASK_A>;
 #[doc = "Secure mask for pin P1_31.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_PIN31_SEC_MASK_A {
     #[doc = "0: Pin state is blocked to non-secure world."]
     BLOCKED = 0,

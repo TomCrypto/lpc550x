@@ -37,7 +37,7 @@ impl From<crate::W<FIFOTRIG_SPEC>> for W {
 #[doc = "Field `TXLVLENA` reader - Transmit FIFO level trigger enable. This trigger will become an interrupt if enabled in FIFOINTENSET, or a DMA trigger if DMATX in FIFOCFG is set."]
 pub type TXLVLENA_R = crate::BitReader<TXLVLENA_A>;
 #[doc = "Transmit FIFO level trigger enable. This trigger will become an interrupt if enabled in FIFOINTENSET, or a DMA trigger if DMATX in FIFOCFG is set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TXLVLENA_A {
     #[doc = "0: Transmit FIFO level does not generate a FIFO level trigger."]
     DISABLED = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> TXLVLENA_W<'a, O> {
 #[doc = "Field `RXLVLENA` reader - Receive FIFO level trigger enable. This trigger will become an interrupt if enabled in FIFOINTENSET, or a DMA trigger if DMARX in FIFOCFG is set."]
 pub type RXLVLENA_R = crate::BitReader<RXLVLENA_A>;
 #[doc = "Receive FIFO level trigger enable. This trigger will become an interrupt if enabled in FIFOINTENSET, or a DMA trigger if DMARX in FIFOCFG is set.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RXLVLENA_A {
     #[doc = "0: Receive FIFO level does not generate a FIFO level trigger."]
     DISABLED = 0,

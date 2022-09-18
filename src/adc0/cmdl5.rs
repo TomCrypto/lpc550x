@@ -37,25 +37,25 @@ impl From<crate::W<CMDL5_SPEC>> for W {
 #[doc = "Field `ADCH` reader - Input channel select."]
 pub type ADCH_R = crate::FieldReader<u8, ADCH_A>;
 #[doc = "Input channel select.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum ADCH_A {
-    #[doc = "0: Select CH0A or CH0B or CH0A/CH0B pair."]
+    #[doc = "0: Select CH0A/ADC0_0 or CH0B/ADC0_8."]
     CHANNEL_0 = 0,
-    #[doc = "1: Select CH1A or CH1B or CH1A/CH1B pair."]
+    #[doc = "1: Select CH1A/ADC0_1 or CH1B/ADC0_9."]
     CHANNEL_1 = 1,
-    #[doc = "2: Select CH2A or CH2B or CH2A/CH2B pair."]
+    #[doc = "2: Select CH2A/ADC0_2 or CH2B/ADC0_10."]
     CHANNEL_2 = 2,
-    #[doc = "3: Select CH3A or CH3B or CH3A/CH3B pair."]
+    #[doc = "3: Select CH3A/ADC0_3 or CH3B/ADC0_11."]
     CHANNEL_3 = 3,
-    #[doc = "4: Select CH4B."]
+    #[doc = "4: Select CH4B/ADC0_12."]
     CHANNEL_4 = 4,
     #[doc = "12: Select VDDA."]
     VDDA = 12,
     #[doc = "13: Select internal ADC bandgap reference."]
     BANDGAP = 13,
-    #[doc = "14: Select temperature sensor."]
-    TEMP_SENSOR = 14,
+    #[doc = "26: Select temperature sensor."]
+    TEMP_SENSOR = 26,
 }
 impl From<ADCH_A> for u8 {
     #[inline(always)]
@@ -75,7 +75,7 @@ impl ADCH_R {
             4 => Some(ADCH_A::CHANNEL_4),
             12 => Some(ADCH_A::VDDA),
             13 => Some(ADCH_A::BANDGAP),
-            14 => Some(ADCH_A::TEMP_SENSOR),
+            26 => Some(ADCH_A::TEMP_SENSOR),
             _ => None,
         }
     }
@@ -123,27 +123,27 @@ impl ADCH_R {
 #[doc = "Field `ADCH` writer - Input channel select."]
 pub type ADCH_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CMDL5_SPEC, u8, ADCH_A, 5, O>;
 impl<'a, const O: u8> ADCH_W<'a, O> {
-    #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
+    #[doc = "Select CH0A/ADC0_0 or CH0B/ADC0_8."]
     #[inline(always)]
     pub fn channel_0(self) -> &'a mut W {
         self.variant(ADCH_A::CHANNEL_0)
     }
-    #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
+    #[doc = "Select CH1A/ADC0_1 or CH1B/ADC0_9."]
     #[inline(always)]
     pub fn channel_1(self) -> &'a mut W {
         self.variant(ADCH_A::CHANNEL_1)
     }
-    #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
+    #[doc = "Select CH2A/ADC0_2 or CH2B/ADC0_10."]
     #[inline(always)]
     pub fn channel_2(self) -> &'a mut W {
         self.variant(ADCH_A::CHANNEL_2)
     }
-    #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
+    #[doc = "Select CH3A/ADC0_3 or CH3B/ADC0_11."]
     #[inline(always)]
     pub fn channel_3(self) -> &'a mut W {
         self.variant(ADCH_A::CHANNEL_3)
     }
-    #[doc = "Select CH4B."]
+    #[doc = "Select CH4B/ADC0_12."]
     #[inline(always)]
     pub fn channel_4(self) -> &'a mut W {
         self.variant(ADCH_A::CHANNEL_4)
@@ -167,7 +167,7 @@ impl<'a, const O: u8> ADCH_W<'a, O> {
 #[doc = "Field `CTYPE` reader - Conversion Type."]
 pub type CTYPE_R = crate::FieldReader<u8, CTYPE_A>;
 #[doc = "Conversion Type.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CTYPE_A {
     #[doc = "0: Single-Ended Mode. Only A side channel is converted."]
@@ -245,7 +245,7 @@ impl<'a, const O: u8> CTYPE_W<'a, O> {
 #[doc = "Field `MODE` reader - Select resolution of conversions."]
 pub type MODE_R = crate::BitReader<MODE_A>;
 #[doc = "Select resolution of conversions.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MODE_A {
     #[doc = "0: Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
     STANDARD_RESOLUTION = 0,

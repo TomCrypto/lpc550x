@@ -54503,27 +54503,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -54539,7 +54539,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -54910,27 +54910,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -54946,7 +54946,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -55317,27 +55317,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -55353,7 +55353,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -55724,27 +55724,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -55760,7 +55760,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -56131,27 +56131,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -56167,7 +56167,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -56514,27 +56514,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -56550,7 +56550,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -56897,27 +56897,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -56933,7 +56933,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -57280,27 +57280,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -57316,7 +57316,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -57663,27 +57663,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -57699,7 +57699,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -58046,27 +58046,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -58082,7 +58082,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -58429,27 +58429,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -58465,7 +58465,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -58812,27 +58812,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -58848,7 +58848,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -59195,27 +59195,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -59231,7 +59231,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -59578,27 +59578,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -59614,7 +59614,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -59961,27 +59961,27 @@ SPDX-License-Identifier: BSD-3-Clause
               <enumeratedValues>
                 <enumeratedValue>
                   <name>CHANNEL_0</name>
-                  <description>Select CH0A or CH0B or CH0A/CH0B pair.</description>
+                  <description>Select CH0A/ADC0_0 or CH0B/ADC0_8.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_1</name>
-                  <description>Select CH1A or CH1B or CH1A/CH1B pair.</description>
+                  <description>Select CH1A/ADC0_1 or CH1B/ADC0_9.</description>
                   <value>0x1</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_2</name>
-                  <description>Select CH2A or CH2B or CH2A/CH2B pair.</description>
+                  <description>Select CH2A/ADC0_2 or CH2B/ADC0_10.</description>
                   <value>0x2</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_3</name>
-                  <description>Select CH3A or CH3B or CH3A/CH3B pair.</description>
+                  <description>Select CH3A/ADC0_3 or CH3B/ADC0_11.</description>
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>CHANNEL_4</name>
-                  <description>Select CH4B.</description>
+                  <description>Select CH4B/ADC0_12.</description>
                   <value>0x4</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -59997,7 +59997,7 @@ SPDX-License-Identifier: BSD-3-Clause
                 <enumeratedValue>
                   <name>TEMP_SENSOR</name>
                   <description>Select temperature sensor.</description>
-                  <value>0xe</value>
+                  <value>0x1a</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>

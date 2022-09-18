@@ -37,7 +37,7 @@ impl From<crate::W<SEC_CTRL_AHB_PORT9_SLAVE1_RULE_SPEC>> for W {
 #[doc = "Field `GPIO1_RULE` reader - Secure High Speed GPIO."]
 pub type GPIO1_RULE_R = crate::FieldReader<u8, GPIO1_RULE_A>;
 #[doc = "Secure High Speed GPIO.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum GPIO1_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]
@@ -116,7 +116,7 @@ impl<'a, const O: u8> GPIO1_RULE_W<'a, O> {
 #[doc = "Field `AHB_SEC_CTRL_RULE` reader - AHB Secure Controller."]
 pub type AHB_SEC_CTRL_RULE_R = crate::FieldReader<u8, AHB_SEC_CTRL_RULE_A>;
 #[doc = "AHB Secure Controller.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum AHB_SEC_CTRL_RULE_A {
     #[doc = "0: Non-secure and Non-priviledge user access allowed."]

@@ -37,7 +37,7 @@ impl From<crate::W<COMP_INT_STATUS_SPEC>> for W {
 #[doc = "Field `STATUS` reader - Interrupt status BEFORE Interrupt Enable."]
 pub type STATUS_R = crate::BitReader<STATUS_A>;
 #[doc = "Interrupt status BEFORE Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum STATUS_A {
     #[doc = "0: no interrupt pending."]
     NO_INT = 0,
@@ -73,7 +73,7 @@ impl STATUS_R {
 #[doc = "Field `INT_STATUS` reader - Interrupt status AFTER Interrupt Enable."]
 pub type INT_STATUS_R = crate::BitReader<INT_STATUS_A>;
 #[doc = "Interrupt status AFTER Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INT_STATUS_A {
     #[doc = "0: no interrupt pending."]
     NO_INT = 0,
@@ -109,7 +109,7 @@ impl INT_STATUS_R {
 #[doc = "Field `VAL` reader - comparator analog output."]
 pub type VAL_R = crate::BitReader<VAL_A>;
 #[doc = "comparator analog output.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum VAL_A {
     #[doc = "0: P+ is smaller than P-."]
     SMALLER = 0,

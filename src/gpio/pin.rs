@@ -37,7 +37,7 @@ impl From<crate::W<PIN_SPEC>> for W {
 #[doc = "Field `PIO0` reader - Reads or writes pin state for pin PIOn_0."]
 pub type PIO0_R = crate::BitReader<PIO0_A>;
 #[doc = "Reads or writes pin state for pin PIOn_0.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO0_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> PIO0_W<'a, O> {
 #[doc = "Field `PIO1` reader - Reads or writes pin state for pin PIOn_1."]
 pub type PIO1_R = crate::BitReader<PIO1_A>;
 #[doc = "Reads or writes pin state for pin PIOn_1.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO1_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -137,7 +137,7 @@ impl<'a, const O: u8> PIO1_W<'a, O> {
 #[doc = "Field `PIO2` reader - Reads or writes pin state for pin PIOn_2."]
 pub type PIO2_R = crate::BitReader<PIO2_A>;
 #[doc = "Reads or writes pin state for pin PIOn_2.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO2_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -187,7 +187,7 @@ impl<'a, const O: u8> PIO2_W<'a, O> {
 #[doc = "Field `PIO3` reader - Reads or writes pin state for pin PIOn_3."]
 pub type PIO3_R = crate::BitReader<PIO3_A>;
 #[doc = "Reads or writes pin state for pin PIOn_3.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO3_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -237,7 +237,7 @@ impl<'a, const O: u8> PIO3_W<'a, O> {
 #[doc = "Field `PIO4` reader - Reads or writes pin state for pin PIOn_4."]
 pub type PIO4_R = crate::BitReader<PIO4_A>;
 #[doc = "Reads or writes pin state for pin PIOn_4.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO4_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -287,7 +287,7 @@ impl<'a, const O: u8> PIO4_W<'a, O> {
 #[doc = "Field `PIO5` reader - Reads or writes pin state for pin PIOn_5."]
 pub type PIO5_R = crate::BitReader<PIO5_A>;
 #[doc = "Reads or writes pin state for pin PIOn_5.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO5_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -337,7 +337,7 @@ impl<'a, const O: u8> PIO5_W<'a, O> {
 #[doc = "Field `PIO6` reader - Reads or writes pin state for pin PIOn_6."]
 pub type PIO6_R = crate::BitReader<PIO6_A>;
 #[doc = "Reads or writes pin state for pin PIOn_6.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO6_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -387,7 +387,7 @@ impl<'a, const O: u8> PIO6_W<'a, O> {
 #[doc = "Field `PIO7` reader - Reads or writes pin state for pin PIOn_7."]
 pub type PIO7_R = crate::BitReader<PIO7_A>;
 #[doc = "Reads or writes pin state for pin PIOn_7.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO7_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -437,7 +437,7 @@ impl<'a, const O: u8> PIO7_W<'a, O> {
 #[doc = "Field `PIO8` reader - Reads or writes pin state for pin PIOn_8."]
 pub type PIO8_R = crate::BitReader<PIO8_A>;
 #[doc = "Reads or writes pin state for pin PIOn_8.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO8_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -487,7 +487,7 @@ impl<'a, const O: u8> PIO8_W<'a, O> {
 #[doc = "Field `PIO9` reader - Reads or writes pin state for pin PIOn_9."]
 pub type PIO9_R = crate::BitReader<PIO9_A>;
 #[doc = "Reads or writes pin state for pin PIOn_9.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO9_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -537,7 +537,7 @@ impl<'a, const O: u8> PIO9_W<'a, O> {
 #[doc = "Field `PIO10` reader - Reads or writes pin state for pin PIOn_10."]
 pub type PIO10_R = crate::BitReader<PIO10_A>;
 #[doc = "Reads or writes pin state for pin PIOn_10.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO10_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -587,7 +587,7 @@ impl<'a, const O: u8> PIO10_W<'a, O> {
 #[doc = "Field `PIO11` reader - Reads or writes pin state for pin PIOn_11."]
 pub type PIO11_R = crate::BitReader<PIO11_A>;
 #[doc = "Reads or writes pin state for pin PIOn_11.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO11_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -637,7 +637,7 @@ impl<'a, const O: u8> PIO11_W<'a, O> {
 #[doc = "Field `PIO12` reader - Reads or writes pin state for pin PIOn_12."]
 pub type PIO12_R = crate::BitReader<PIO12_A>;
 #[doc = "Reads or writes pin state for pin PIOn_12.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO12_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -687,7 +687,7 @@ impl<'a, const O: u8> PIO12_W<'a, O> {
 #[doc = "Field `PIO13` reader - Reads or writes pin state for pin PIOn_13."]
 pub type PIO13_R = crate::BitReader<PIO13_A>;
 #[doc = "Reads or writes pin state for pin PIOn_13.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO13_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -737,7 +737,7 @@ impl<'a, const O: u8> PIO13_W<'a, O> {
 #[doc = "Field `PIO14` reader - Reads or writes pin state for pin PIOn_14."]
 pub type PIO14_R = crate::BitReader<PIO14_A>;
 #[doc = "Reads or writes pin state for pin PIOn_14.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO14_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -787,7 +787,7 @@ impl<'a, const O: u8> PIO14_W<'a, O> {
 #[doc = "Field `PIO15` reader - Reads or writes pin state for pin PIOn_15."]
 pub type PIO15_R = crate::BitReader<PIO15_A>;
 #[doc = "Reads or writes pin state for pin PIOn_15.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO15_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -837,7 +837,7 @@ impl<'a, const O: u8> PIO15_W<'a, O> {
 #[doc = "Field `PIO16` reader - Reads or writes pin state for pin PIOn_16."]
 pub type PIO16_R = crate::BitReader<PIO16_A>;
 #[doc = "Reads or writes pin state for pin PIOn_16.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO16_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -887,7 +887,7 @@ impl<'a, const O: u8> PIO16_W<'a, O> {
 #[doc = "Field `PIO17` reader - Reads or writes pin state for pin PIOn_17."]
 pub type PIO17_R = crate::BitReader<PIO17_A>;
 #[doc = "Reads or writes pin state for pin PIOn_17.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO17_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -937,7 +937,7 @@ impl<'a, const O: u8> PIO17_W<'a, O> {
 #[doc = "Field `PIO18` reader - Reads or writes pin state for pin PIOn_18."]
 pub type PIO18_R = crate::BitReader<PIO18_A>;
 #[doc = "Reads or writes pin state for pin PIOn_18.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO18_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -987,7 +987,7 @@ impl<'a, const O: u8> PIO18_W<'a, O> {
 #[doc = "Field `PIO19` reader - Reads or writes pin state for pin PIOn_19."]
 pub type PIO19_R = crate::BitReader<PIO19_A>;
 #[doc = "Reads or writes pin state for pin PIOn_19.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO19_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1037,7 +1037,7 @@ impl<'a, const O: u8> PIO19_W<'a, O> {
 #[doc = "Field `PIO20` reader - Reads or writes pin state for pin PIOn_20."]
 pub type PIO20_R = crate::BitReader<PIO20_A>;
 #[doc = "Reads or writes pin state for pin PIOn_20.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO20_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1087,7 +1087,7 @@ impl<'a, const O: u8> PIO20_W<'a, O> {
 #[doc = "Field `PIO21` reader - Reads or writes pin state for pin PIOn_21."]
 pub type PIO21_R = crate::BitReader<PIO21_A>;
 #[doc = "Reads or writes pin state for pin PIOn_21.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO21_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1137,7 +1137,7 @@ impl<'a, const O: u8> PIO21_W<'a, O> {
 #[doc = "Field `PIO22` reader - Reads or writes pin state for pin PIOn_22."]
 pub type PIO22_R = crate::BitReader<PIO22_A>;
 #[doc = "Reads or writes pin state for pin PIOn_22.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO22_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1187,7 +1187,7 @@ impl<'a, const O: u8> PIO22_W<'a, O> {
 #[doc = "Field `PIO23` reader - Reads or writes pin state for pin PIOn_23."]
 pub type PIO23_R = crate::BitReader<PIO23_A>;
 #[doc = "Reads or writes pin state for pin PIOn_23.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO23_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1237,7 +1237,7 @@ impl<'a, const O: u8> PIO23_W<'a, O> {
 #[doc = "Field `PIO24` reader - Reads or writes pin state for pin PIOn_24."]
 pub type PIO24_R = crate::BitReader<PIO24_A>;
 #[doc = "Reads or writes pin state for pin PIOn_24.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO24_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1287,7 +1287,7 @@ impl<'a, const O: u8> PIO24_W<'a, O> {
 #[doc = "Field `PIO25` reader - Reads or writes pin state for pin PIOn_25."]
 pub type PIO25_R = crate::BitReader<PIO25_A>;
 #[doc = "Reads or writes pin state for pin PIOn_25.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO25_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1337,7 +1337,7 @@ impl<'a, const O: u8> PIO25_W<'a, O> {
 #[doc = "Field `PIO26` reader - Reads or writes pin state for pin PIOn_26."]
 pub type PIO26_R = crate::BitReader<PIO26_A>;
 #[doc = "Reads or writes pin state for pin PIOn_26.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO26_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1387,7 +1387,7 @@ impl<'a, const O: u8> PIO26_W<'a, O> {
 #[doc = "Field `PIO27` reader - Reads or writes pin state for pin PIOn_27."]
 pub type PIO27_R = crate::BitReader<PIO27_A>;
 #[doc = "Reads or writes pin state for pin PIOn_27.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO27_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1437,7 +1437,7 @@ impl<'a, const O: u8> PIO27_W<'a, O> {
 #[doc = "Field `PIO28` reader - Reads or writes pin state for pin PIOn_28."]
 pub type PIO28_R = crate::BitReader<PIO28_A>;
 #[doc = "Reads or writes pin state for pin PIOn_28.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO28_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1487,7 +1487,7 @@ impl<'a, const O: u8> PIO28_W<'a, O> {
 #[doc = "Field `PIO29` reader - Reads or writes pin state for pin PIOn_29."]
 pub type PIO29_R = crate::BitReader<PIO29_A>;
 #[doc = "Reads or writes pin state for pin PIOn_29.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO29_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1537,7 +1537,7 @@ impl<'a, const O: u8> PIO29_W<'a, O> {
 #[doc = "Field `PIO30` reader - Reads or writes pin state for pin PIOn_30."]
 pub type PIO30_R = crate::BitReader<PIO30_A>;
 #[doc = "Reads or writes pin state for pin PIOn_30.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO30_A {
     #[doc = "0: Pin is low."]
     LOW = 0,
@@ -1587,7 +1587,7 @@ impl<'a, const O: u8> PIO30_W<'a, O> {
 #[doc = "Field `PIO31` reader - Reads or writes pin state for pin PIOn_31."]
 pub type PIO31_R = crate::BitReader<PIO31_A>;
 #[doc = "Reads or writes pin state for pin PIOn_31.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum PIO31_A {
     #[doc = "0: Pin is low."]
     LOW = 0,

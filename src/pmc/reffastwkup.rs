@@ -37,7 +37,7 @@ impl From<crate::W<REFFASTWKUP_SPEC>> for W {
 #[doc = "Field `LPWKUP` reader - Analog References fast wake-up in case of wake-up from a low power mode (DEEP SLEEP, POWER DOWN and DEEP POWER DOWN): ."]
 pub type LPWKUP_R = crate::BitReader<LPWKUP_A>;
 #[doc = "Analog References fast wake-up in case of wake-up from a low power mode (DEEP SLEEP, POWER DOWN and DEEP POWER DOWN): .\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum LPWKUP_A {
     #[doc = "0: Analog References fast wake-up feature is disabled in case of wake-up from any Low power mode."]
     DISABLE = 0,
@@ -87,7 +87,7 @@ impl<'a, const O: u8> LPWKUP_W<'a, O> {
 #[doc = "Field `HWWKUP` reader - Analog References fast wake-up in case of Hardware Pin reset: ."]
 pub type HWWKUP_R = crate::BitReader<HWWKUP_A>;
 #[doc = "Analog References fast wake-up in case of Hardware Pin reset: .\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HWWKUP_A {
     #[doc = "0: Analog References fast wake-up feature is disabled in case of Hardware Pin reset."]
     DISABLE = 0,

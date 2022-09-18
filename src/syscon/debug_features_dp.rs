@@ -37,7 +37,7 @@ impl From<crate::W<DEBUG_FEATURES_DP_SPEC>> for W {
 #[doc = "Field `CPU0_DBGEN` reader - CPU0 (CPU0) Invasive debug control:."]
 pub type CPU0_DBGEN_R = crate::FieldReader<u8, CPU0_DBGEN_A>;
 #[doc = "CPU0 (CPU0) Invasive debug control:.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CPU0_DBGEN_A {
     #[doc = "1: Any other value than b10: invasive debug is disable."]
@@ -90,7 +90,7 @@ impl<'a, const O: u8> CPU0_DBGEN_W<'a, O> {
 #[doc = "Field `CPU0_NIDEN` reader - CPU0 Non Invasive debug control:."]
 pub type CPU0_NIDEN_R = crate::FieldReader<u8, CPU0_NIDEN_A>;
 #[doc = "CPU0 Non Invasive debug control:.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CPU0_NIDEN_A {
     #[doc = "1: Any other value than b10: invasive debug is disable."]
@@ -143,7 +143,7 @@ impl<'a, const O: u8> CPU0_NIDEN_W<'a, O> {
 #[doc = "Field `CPU0_SPIDEN` reader - CPU0 Secure Invasive debug control:."]
 pub type CPU0_SPIDEN_R = crate::FieldReader<u8, CPU0_SPIDEN_A>;
 #[doc = "CPU0 Secure Invasive debug control:.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CPU0_SPIDEN_A {
     #[doc = "1: Any other value than b10: invasive debug is disable."]
@@ -196,7 +196,7 @@ impl<'a, const O: u8> CPU0_SPIDEN_W<'a, O> {
 #[doc = "Field `CPU0_SPNIDEN` reader - CPU0 Secure Non Invasive debug control:."]
 pub type CPU0_SPNIDEN_R = crate::FieldReader<u8, CPU0_SPNIDEN_A>;
 #[doc = "CPU0 Secure Non Invasive debug control:.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum CPU0_SPNIDEN_A {
     #[doc = "1: Any other value than b10: invasive debug is disable."]

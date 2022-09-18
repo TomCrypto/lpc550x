@@ -37,7 +37,7 @@ impl From<crate::W<COMP_INT_CTRL_SPEC>> for W {
 #[doc = "Field `INT_ENABLE` reader - Analog Comparator interrupt enable control:."]
 pub type INT_ENABLE_R = crate::BitReader<INT_ENABLE_A>;
 #[doc = "Analog Comparator interrupt enable control:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INT_ENABLE_A {
     #[doc = "0: interrupt disable."]
     INT_DISABLE = 0,
@@ -88,7 +88,7 @@ impl<'a, const O: u8> INT_ENABLE_W<'a, O> {
 #[doc = "Field `INT_CLEAR` reader - Analog Comparator interrupt clear."]
 pub type INT_CLEAR_R = crate::BitReader<INT_CLEAR_A>;
 #[doc = "Analog Comparator interrupt clear.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INT_CLEAR_A {
     #[doc = "0: No effect."]
     NONE = 0,
@@ -139,7 +139,7 @@ impl<'a, const O: u8> INT_CLEAR_W<'a, O> {
 #[doc = "Field `INT_CTRL` reader - Comparator interrupt type selector:."]
 pub type INT_CTRL_R = crate::FieldReader<u8, INT_CTRL_A>;
 #[doc = "Comparator interrupt type selector:.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum INT_CTRL_A {
     #[doc = "0: The analog comparator interrupt edge sensitive is disabled."]
@@ -270,7 +270,7 @@ impl<'a, const O: u8> INT_CTRL_W<'a, O> {
 #[doc = "Field `INT_SOURCE` reader - Select which Analog comparator output (filtered our un-filtered) is used for interrupt detection."]
 pub type INT_SOURCE_R = crate::BitReader<INT_SOURCE_A>;
 #[doc = "Select which Analog comparator output (filtered our un-filtered) is used for interrupt detection.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum INT_SOURCE_A {
     #[doc = "0: Select Analog Comparator filtered output as input for interrupt detection."]
     FILTER_INT = 0,

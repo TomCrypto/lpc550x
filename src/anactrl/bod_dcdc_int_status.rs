@@ -16,7 +16,7 @@ impl From<crate::R<BOD_DCDC_INT_STATUS_SPEC>> for R {
 #[doc = "Field `BODVBAT_STATUS` reader - BOD VBAT Interrupt status before Interrupt Enable."]
 pub type BODVBAT_STATUS_R = crate::BitReader<BODVBAT_STATUS_A>;
 #[doc = "BOD VBAT Interrupt status before Interrupt Enable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODVBAT_STATUS_A {
     #[doc = "0: No interrupt pending.."]
     NOT_PENDING = 0,
@@ -52,7 +52,7 @@ impl BODVBAT_STATUS_R {
 #[doc = "Field `BODVBAT_INT_STATUS` reader - BOD VBAT Interrupt status after Interrupt Enable."]
 pub type BODVBAT_INT_STATUS_R = crate::BitReader<BODVBAT_INT_STATUS_A>;
 #[doc = "BOD VBAT Interrupt status after Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODVBAT_INT_STATUS_A {
     #[doc = "0: No interrupt pending.."]
     NOT_PENDING = 0,
@@ -88,7 +88,7 @@ impl BODVBAT_INT_STATUS_R {
 #[doc = "Field `BODVBAT_VAL` reader - Current value of BOD VBAT power status output."]
 pub type BODVBAT_VAL_R = crate::BitReader<BODVBAT_VAL_A>;
 #[doc = "Current value of BOD VBAT power status output.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODVBAT_VAL_A {
     #[doc = "0: VBAT voltage level is below the threshold."]
     NOT_OK = 0,
@@ -124,7 +124,7 @@ impl BODVBAT_VAL_R {
 #[doc = "Field `BODCORE_STATUS` reader - BOD CORE Interrupt status before Interrupt Enable."]
 pub type BODCORE_STATUS_R = crate::BitReader<BODCORE_STATUS_A>;
 #[doc = "BOD CORE Interrupt status before Interrupt Enable.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODCORE_STATUS_A {
     #[doc = "0: No interrupt pending.."]
     NOT_PENDING = 0,
@@ -160,7 +160,7 @@ impl BODCORE_STATUS_R {
 #[doc = "Field `BODCORE_INT_STATUS` reader - BOD CORE Interrupt status after Interrupt Enable."]
 pub type BODCORE_INT_STATUS_R = crate::BitReader<BODCORE_INT_STATUS_A>;
 #[doc = "BOD CORE Interrupt status after Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODCORE_INT_STATUS_A {
     #[doc = "0: No interrupt pending.."]
     NOT_PENDING = 0,
@@ -196,7 +196,7 @@ impl BODCORE_INT_STATUS_R {
 #[doc = "Field `BODCORE_VAL` reader - Current value of BOD CORE power status output."]
 pub type BODCORE_VAL_R = crate::BitReader<BODCORE_VAL_A>;
 #[doc = "Current value of BOD CORE power status output.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BODCORE_VAL_A {
     #[doc = "0: CORE voltage level is below the threshold."]
     NOT_OK = 0,
@@ -232,7 +232,7 @@ impl BODCORE_VAL_R {
 #[doc = "Field `DCDC_STATUS` reader - DCDC Interrupt status before Interrupt Enable."]
 pub type DCDC_STATUS_R = crate::BitReader<DCDC_STATUS_A>;
 #[doc = "DCDC Interrupt status before Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DCDC_STATUS_A {
     #[doc = "0: No interrupt pending.."]
     NOT_PENDING = 0,
@@ -268,7 +268,7 @@ impl DCDC_STATUS_R {
 #[doc = "Field `DCDC_INT_STATUS` reader - DCDC Interrupt status after Interrupt Enable."]
 pub type DCDC_INT_STATUS_R = crate::BitReader<DCDC_INT_STATUS_A>;
 #[doc = "DCDC Interrupt status after Interrupt Enable.\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DCDC_INT_STATUS_A {
     #[doc = "0: No interrupt pending.."]
     NOT_PENDING = 0,
@@ -304,7 +304,7 @@ impl DCDC_INT_STATUS_R {
 #[doc = "Field `DCDC_VAL` reader - Current value of DCDC power status output."]
 pub type DCDC_VAL_R = crate::BitReader<DCDC_VAL_A>;
 #[doc = "Current value of DCDC power status output.\n\nValue on reset: 1"]
-#[derive(Clone, Copy, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DCDC_VAL_A {
     #[doc = "0: DCDC output Voltage is below the targeted regulation level."]
     NOT_OK = 0,
